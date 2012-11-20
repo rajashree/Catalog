@@ -1,0 +1,31 @@
+<html>
+<body>
+
+<script type="text/javascript">
+if (window.XMLHttpRequest)
+  {
+  xhttp=new XMLHttpRequest();
+  }
+else // Internet Explorer 5/6
+  {
+  xhttp=new ActiveXObject("Microsoft.XMLHTTP");
+  }
+xhttp.open("GET","cd_catalog.xml",false);
+xhttp.send("");
+xmlDoc=xhttp.responseXML;
+
+document.write("<table border='1'>");
+var x=xmlDoc.getElementsByTagName("CD");
+for (i=0;i<x.length;i++)
+  {
+  document.write("<tr><td>");
+  document.write(x[i].getElementsByTagName("ARTIST")[0].childNodes[0].nodeValue);
+  document.write("</td><td>");
+  document.write(x[i].getElementsByTagName("TITLE")[0].childNodes[0].nodeValue);
+  document.write("</td></tr>");
+  }
+document.write("</table>");
+</script>
+
+</body>
+</html>
