@@ -7,21 +7,7 @@
     <version>1.0</version>
     <name>JSP Maven Webapp</name>
     <url>http://maven.apache.org</url>
-    <build>
-        <finalName>JSP</finalName>
-        <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <version>2.5.1</version>
-                <artifactId>maven-compiler-plugin</artifactId>
-            </plugin>
-            <plugin>
-                <groupId>org.codehaus.mojo</groupId>
-                <artifactId>tomcat-maven-plugin</artifactId>
-                <version>1.1</version>
-            </plugin>
-        </plugins>
-    </build>
+
     <dependencies>
         <!-- JUnit -->
         <dependency>
@@ -63,5 +49,19 @@
         </dependency>
 
     </dependencies>
-
+    <build>
+        <finalName>JSP</finalName>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <version>2.5.1</version>
+                <artifactId>maven-compiler-plugin</artifactId>
+            </plugin>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>tomcat-maven-plugin</artifactId>
+                <version>1.1</version>
+            </plugin>
+        </plugins>
+    </build>
 </project>

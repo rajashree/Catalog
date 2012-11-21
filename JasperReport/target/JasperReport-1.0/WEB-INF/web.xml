@@ -1,0 +1,41 @@
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+         version="3.0">
+
+<servlet>
+		<servlet-name>JR</servlet-name>
+		<servlet-class>JasperReportServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>JR</servlet-name>
+		<url-pattern>/JR</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>JR2</servlet-name>
+		<servlet-class>JasperReportServlet2</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>JR2</servlet-name>
+		<url-pattern>/JR2</url-pattern>
+	</servlet-mapping>
+
+    <filter>
+       <filter-name>struts2</filter-name>
+       <filter-class>org.apache.struts2.dispatcher.FilterDispatcher</filter-class>
+     </filter>
+
+     <filter-mapping>
+       <filter-name>struts2</filter-name>
+       <url-pattern>/*</url-pattern>
+     </filter-mapping>
+
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.htm</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>default.html</welcome-file>
+		<welcome-file>default.htm</welcome-file>
+		<welcome-file>default.jsp</welcome-file>
+	</welcome-file-list>
+</web-app>

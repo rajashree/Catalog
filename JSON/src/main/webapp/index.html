@@ -1,0 +1,56 @@
+<html>
+<head>
+<script type="text/javascript" src="prototype.js"></script>
+<script type="text/javascript" src="JSON.js"></script>
+<script>
+
+function SubmitRequest()
+{
+new Ajax.Request('test.json', {
+
+//new Ajax.Request('http://www.people.com/people/static/includes/top5/json/index.js',{
+  method: 'get',
+  evalJSON: 'force',
+  sanitizeJSON : 'true',
+  onSuccess: successFunc,
+  onFailure:  failureFunc
+  });
+ 
+}
+
+function parseResposnse(data){
+		var data = JSON.parse(data, function (key, value) {
+			var type;
+			if (value && typeof value === 'object') {
+			type = value.type;
+			if (typeof type === 'string' && typeof window[type] === 'function') {
+			return new (window[type])(value);
+			}
+			}
+			return value;
+			});
+		
+		return data;
+	}
+	
+
+function successFunc(transport){
+   
+	 var resText = transport.responseText; 
+	 var data = parseResposnse(resText);
+     alert(data["top5 articles"]["values"][0][0]);
+}
+ 
+
+function failureFunc(response){
+
+     alert("Call is failed" );
+    
+}
+</script>
+</head>
+
+<body>
+<input type="button" value="Submit" onclick="SubmitRequest();" />
+</body>
+</html>

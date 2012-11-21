@@ -2,71 +2,89 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1ba42a2c-87e7-4d8f-a9fc-e8a75ff81ea9" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Catalog.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JSP/JSP.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/Java.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/pom.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/main/designpatterns/com/behavioral/chainofresponsibility/ex1/EmailLogger.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/main/designpatterns/com/behavioral/chainofresponsibility/ex1/Logger.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/main/designpatterns/com/behavioral/chainofresponsibility/ex1/StderrLogger.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/main/designpatterns/com/behavioral/chainofresponsibility/ex1/StdoutLogger.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/main/designpatterns/com/behavioral/interpreter/Evaluator.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/main/designpatterns/com/behavioral/interpreter/Minus.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/main/designpatterns/com/behavioral/interpreter/Number.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/main/designpatterns/com/behavioral/interpreter/Plus.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/main/designpatterns/com/behavioral/interpreter/Variable.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/main/designpatterns/com/behavioral/memento/ex1/Originator.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/main/designpatterns/com/behavioral/observer/ex2/MyModel.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/main/designpatterns/com/behavioral/observer/ex3/ObserverDemo.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/main/designpatterns/com/behavioral/state/ex1/Actor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/main/designpatterns/com/behavioral/state/ex1/HappyActor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/main/designpatterns/com/behavioral/state/ex1/SadActor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/main/designpatterns/com/behavioral/state/ex1/Stage.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/main/designpatterns/com/behavioral/strategy/ex1/StrategyExample.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/main/designpatterns/com/behavioral/visitor/Demo.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/main/designpatterns/com/behavioral/visitor/NumberElement.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/main/designpatterns/com/behavioral/visitor/NumberVisitor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/main/designpatterns/com/behavioral/visitor/SumVisitor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/main/designpatterns/com/behavioral/visitor/ThreeElement.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/main/designpatterns/com/behavioral/visitor/TotalSumVisitor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/main/designpatterns/com/behavioral/visitor/TwoElement.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/main/designpatterns/com/creational/abstractfactorypattern/ex2/Application.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/main/designpatterns/com/creational/abstractfactorypattern/ex2/Button.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/main/designpatterns/com/creational/abstractfactorypattern/ex2/GUIFactory.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/main/designpatterns/com/creational/abstractfactorypattern/ex2/OSXButton.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/main/designpatterns/com/creational/abstractfactorypattern/ex2/OSXFactory.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/main/designpatterns/com/creational/abstractfactorypattern/ex2/WinButton.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/main/designpatterns/com/creational/abstractfactorypattern/ex2/WinFactory.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/main/designpatterns/com/creational/builder/ex1/Cook.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/main/designpatterns/com/creational/builder/ex1/HawaiianPizzaBuilder.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/main/designpatterns/com/creational/builder/ex1/Pizza.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/main/designpatterns/com/creational/builder/ex1/PizzaBuilder.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/main/designpatterns/com/creational/builder/ex1/SpicyPizzaBuilder.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/main/designpatterns/com/creational/prototype/ex2/RunPrototypePattern.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/main/designpatterns/com/creational/singleton/ex2/InstanceSpooler.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/main/designpatterns/com/creational/singleton/ex3/Logger.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/main/designpatterns/com/structural/adapter/ex1/LegacyLine.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/main/designpatterns/com/structural/adapter/ex1/LegacyRectangle.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/main/designpatterns/com/structural/adapter/ex1/Line.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/main/designpatterns/com/structural/adapter/ex1/Rectangle.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/main/designpatterns/com/structural/adapter/ex1/Shape.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/main/designpatterns/com/structural/bridge/ex2/RunBridgePattern_Ex1.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/main/designpatterns/com/structural/composite/ex1/CompositeGraphic.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/main/designpatterns/com/structural/composite/ex1/Ellipse.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java/src/main/designpatterns/com/structural/composite/ex1/Graphic.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/KB/KB.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/KB/pom.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/XML/XML.iml" />
-      <change type="DELETED" beforePath="E:\IdeaWorkspace\Catalog\XML\XML.doc" afterPath="" />
-      <change type="DELETED" beforePath="E:\IdeaWorkspace\Catalog\XML\Xsl-XML\simple.xml" afterPath="" />
-      <change type="DELETED" beforePath="E:\IdeaWorkspace\Catalog\XML\Xsl-XML\simple.xsl" afterPath="" />
-      <change type="DELETED" beforePath="E:\IdeaWorkspace\Catalog\XML\Xsl-XML\simplexsl.xml" afterPath="" />
-      <change type="DELETED" beforePath="E:\IdeaWorkspace\Catalog\XML\cd_catalog.css" afterPath="" />
-      <change type="DELETED" beforePath="E:\IdeaWorkspace\Catalog\XML\cd_catalog.xml" afterPath="" />
-      <change type="DELETED" beforePath="E:\IdeaWorkspace\Catalog\XML\cd_catalog_with_css.xml" afterPath="" />
-      <change type="DELETED" beforePath="E:\IdeaWorkspace\Catalog\XML\xmlApp.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\IdeaWorkspace\Catalog\XML\xmlHttpRequest.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\IdeaWorkspace\Catalog\XML\xmlParser.html" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SiteMesh/SiteMeshExamples/src/main/webapp/decorators/velocity.vm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JSON/JSON.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JSON/pom.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JSON/src/main/java/org/json/CDL.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JSON/src/main/java/org/json/Cookie.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JSON/src/main/java/org/json/CookieList.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JSON/src/main/java/org/json/HTTP.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JSON/src/main/java/org/json/HTTPTokener.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JSON/src/main/java/org/json/JSONArray.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JSON/src/main/java/org/json/JSONExampleMain.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JSON/src/main/java/org/json/JSONException.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JSON/src/main/java/org/json/JSONML.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JSON/src/main/java/org/json/JSONObject.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JSON/src/main/java/org/json/JSONString.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JSON/src/main/java/org/json/JSONStringer.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JSON/src/main/java/org/json/JSONTokener.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JSON/src/main/java/org/json/JSONWriter.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JSON/src/main/java/org/json/README" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JSON/src/main/java/org/json/XML.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JSON/src/main/java/org/json/XMLTokener.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JSON/src/main/webapp/JSON.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JSON/src/main/webapp/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JSON/src/main/webapp/prototype.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JSON/src/main/webapp/test.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JasperReport/pom.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JasperReport/src/main/java/JasperReportServlet.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JasperReport/src/main/java/JasperReportServlet2.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JasperReport/src/main/java/JasperSampleReport.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JasperReport/src/main/webapp/report2.jrxml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SiteMesh/SiteMeshExamples/SiteMeshExamples.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SiteMesh/SiteMeshExamples/pom.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SiteMesh/SiteMeshExamples/src/main/webapp/WEB-INF/decorators.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SiteMesh/SiteMeshExamples/src/main/webapp/agent.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SiteMesh/SiteMeshExamples/src/main/webapp/badpanel.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SiteMesh/SiteMeshExamples/src/main/webapp/badsource.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SiteMesh/SiteMeshExamples/src/main/webapp/counter-syntaxerror.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SiteMesh/SiteMeshExamples/src/main/webapp/counter.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SiteMesh/SiteMeshExamples/src/main/webapp/decorators/badpanelsource.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SiteMesh/SiteMeshExamples/src/main/webapp/decorators/black.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SiteMesh/SiteMeshExamples/src/main/webapp/decorators/freemarker.ftl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SiteMesh/SiteMeshExamples/src/main/webapp/decorators/main.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SiteMesh/SiteMeshExamples/src/main/webapp/decorators/main.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SiteMesh/SiteMeshExamples/src/main/webapp/decorators/nopanelsource.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SiteMesh/SiteMeshExamples/src/main/webapp/decorators/panel.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SiteMesh/SiteMeshExamples/src/main/webapp/decorators/printable.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SiteMesh/SiteMeshExamples/src/main/webapp/decorators/test-ie.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SiteMesh/SiteMeshExamples/src/main/webapp/decorators/test-lynx.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SiteMesh/SiteMeshExamples/src/main/webapp/decorators/test-ns.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SiteMesh/SiteMeshExamples/src/main/webapp/decorators/test-opera.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SiteMesh/SiteMeshExamples/src/main/webapp/decorators/test.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SiteMesh/SiteMeshExamples/src/main/webapp/freemarker.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SiteMesh/SiteMeshExamples/src/main/webapp/google.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SiteMesh/SiteMeshExamples/src/main/webapp/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SiteMesh/SiteMeshExamples/src/main/webapp/inline.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SiteMesh/SiteMeshExamples/src/main/webapp/mandelbrot.pl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SiteMesh/SiteMeshExamples/src/main/webapp/meta.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SiteMesh/SiteMeshExamples/src/main/webapp/meta2.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SiteMesh/SiteMeshExamples/src/main/webapp/random.pl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SiteMesh/SiteMeshExamples/src/main/webapp/tiny-panel.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SiteMesh/SiteMeshExamples/src/main/webapp/toggledecorator.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SiteMesh/SiteMeshExamples/src/main/webapp/velocity.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SiteMesh/SitemeshBlank/SitemeshBlank.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SiteMesh/SitemeshBlank/pom.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SiteMesh/SitemeshBlank/src/main/webapp/WEB-INF/decorators.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SiteMesh/SitemeshBlank/src/main/webapp/decorators/main.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SiteMesh/SitemeshBlank/src/main/webapp/decorators/panel.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SiteMesh/SitemeshBlank/src/main/webapp/decorators/printable.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SiteMesh/SitemeshDemo/SitemeshDemo.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SiteMesh/SitemeshDemo/pom.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SiteMesh/SitemeshDemo/src/main/webapp/WEB-INF/decorators.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SiteMesh/SitemeshDemo/src/main/webapp/decorators/layout.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SiteMesh/SitemeshDemo/src/main/webapp/includes/footer.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SiteMesh/SitemeshDemo/src/main/webapp/includes/header.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SiteMesh/SitemeshDemo/src/main/webapp/includes/navigation.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SiteMesh/SitemeshDemo/src/main/webapp/page1.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SiteMesh/SitemeshDemo/src/main/webapp/page2.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Ajax_Ex/Ajax_Ex.iml" afterPath="$PROJECT_DIR$/Ajax_Ex/Ajax_Ex.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Catalog.ipr" afterPath="$PROJECT_DIR$/Catalog.ipr" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Catalog.iws" afterPath="$PROJECT_DIR$/Catalog.iws" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Java/Java.iml" afterPath="$PROJECT_DIR$/Java/Java.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Java/pom.xml" afterPath="$PROJECT_DIR$/Java/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OldScheduler/OldScheduler.iml" afterPath="$PROJECT_DIR$/OldScheduler/OldScheduler.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/XML/XML.iml" afterPath="$PROJECT_DIR$/XML/XML.iml" />
     </list>
     <ignored path="Catalog.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -125,7 +143,17 @@
     <favorites_list name="Catalog" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="ServletContext.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="jar://$MAVEN_REPOSITORY$/javax/servlet/servlet-api/2.5/servlet-api-2.5-sources.jar!/javax/servlet/ServletContext.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="435" column="33" selection-start="14868" selection-end="14868" vertical-scroll-proportion="0.28519195">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -139,19 +167,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/Java/src/main/designpatterns/com/dp/ex1/SwedishBuyer.java" />
+        <option value="$PROJECT_DIR$/Java/src/main/java/com/java/jms/TopicSendRecvClient.java" />
+        <option value="$PROJECT_DIR$/Java/src/main/java/com/java/database/StudentDaoImpl.java" />
+        <option value="$PROJECT_DIR$/Java/src/main/java/com/java/database/dao/StudentDao.java" />
+        <option value="$PROJECT_DIR$/Java/src/main/java/com/java/database/manager/impl/StudentManagerImpl.java" />
+        <option value="$PROJECT_DIR$/Java/src/main/java/com/java/database/manager/StudentManager.java" />
+        <option value="$PROJECT_DIR$/Java/src/main/java/com/java/database/pojo/Student.java" />
         <option value="$PROJECT_DIR$/Java/pom.xml" />
-        <option value="$PROJECT_DIR$/Java/src/main/designpatterns/Behavioral Patterns/com/dp/visitor/TwoElement.java" />
-        <option value="$PROJECT_DIR$/Java/src/main/designpatterns/org/behavioral/visitor/TwoElement.java" />
-        <option value="$PROJECT_DIR$/Java/src/main/designpatterns/com/behavioral/strategy/ex1/StrategyExample.java" />
-        <option value="$PROJECT_DIR$/JSP/src/main/webapp/index.jsp" />
-        <option value="$PROJECT_DIR$/JSP/src/main/java/com/sourcen/Employee.java" />
-        <option value="$PROJECT_DIR$/JSP/src/main/webapp/core.jsp" />
-        <option value="$PROJECT_DIR$/JSP/src/main/webapp/emp.xml" />
-        <option value="$PROJECT_DIR$/JSP/src/main/webapp/emp.xsl" />
-        <option value="$PROJECT_DIR$/JSP/src/main/resources/docs/Information.txt" />
-        <option value="$PROJECT_DIR$/JSP/src/main/webapp/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/JSP/pom.xml" />
+        <option value="$PROJECT_DIR$/Java/src/main/java/com/java/database/dao/impl/StudentDaoImpl.java" />
+        <option value="$PROJECT_DIR$/JasperReport/src/main/java/JasperSampleReport.java" />
+        <option value="$PROJECT_DIR$/Ajax_Ex/src/main/java/JasperReportServlet2.java" />
+        <option value="$PROJECT_DIR$/JasperReport/src/main/java/JasperReportServlet.java" />
+        <option value="$PROJECT_DIR$/JasperReport/src/main/java/JasperReportServlet2.java" />
+        <option value="$PROJECT_DIR$/JasperReport/pom.xml" />
+        <option value="$PROJECT_DIR$/JasperReport/src/main/java/action/JasperAction.java" />
+        <option value="$PROJECT_DIR$/JasperReport/src/main/webapp/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/JasperReport/src/main/webapp/index.jsp" />
       </list>
     </option>
   </component>
@@ -161,6 +192,16 @@
         <option name="importAutomatically" value="true" />
       </MavenImportingSettings>
     </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
+        </PATH_ELEMENT>
+      </PATH>
+    </treeState>
   </component>
   <component name="MavenRunner">
     <option name="jreName" value="#JAVA_INTERNAL" />
@@ -234,11 +275,35 @@
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="options.searchVisible" value="true" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="dynamic.classpath" value="false" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
-  <component name="RunManager" selected="Jetty Server.JSP">
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\IdeaWorkspace\Catalog\JasperReport\src\main\java" />
+      <recent name="E:\IdeaWorkspace\Catalog\JasperReport\src\main\webapp" />
+      <recent name="E:\IdeaWorkspace\Catalog\JasperReport\src\main\resources" />
+      <recent name="E:\IdeaWorkspace\Catalog\Ajax_Ex\src\main\java" />
+      <recent name="E:\IdeaWorkspace\Catalog\Java\src\main\java" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Jetty Server.JasperReport">
+    <configuration default="false" name="Myapplet" type="Applet" factoryName="Applet" temporary="true">
+      <module name="Java" />
+      <option name="MAIN_CLASS_NAME" value="com.java.applet.Myapplet" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="file://$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" value="" />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
     <configuration default="true" type="org.codebrewer.idea.jetty.JettyRunConfigurationType" factoryName="Local">
       <deployment />
       <server-settings />
@@ -302,9 +367,20 @@
     </configuration>
     <configuration default="true" type="JavascriptDebugSession" factoryName="Remote">
       <JSRemoteDebuggerConfigurationSettings>
-        <option name="engineId" />
+        <option name="engineId" value="embedded" />
         <option name="fileUrl" />
       </JSRemoteDebuggerConfigurationSettings>
+      <method>
+        <option name="AntTarget" enabled="false" />
+        <option name="BuildArtifacts" enabled="false" />
+        <option name="Maven.BeforeRunTask" enabled="false" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JavascriptDebugSession" factoryName="Local">
+      <JSDebuggerConfigurationSettings>
+        <option name="engineId" />
+        <option name="fileUrl" />
+      </JSDebuggerConfigurationSettings>
       <method>
         <option name="AntTarget" enabled="false" />
         <option name="BuildArtifacts" enabled="false" />
@@ -406,8 +482,394 @@
         </option>
       </method>
     </configuration>
-    <list size="1">
-      <item index="0" class="java.lang.String" itemvalue="Jetty Server.JSP" />
+    <configuration default="false" name="Ajax_Ex" type="org.codebrewer.idea.jetty.JettyRunConfigurationType" factoryName="Local" APPLICATION_SERVER_NAME="JETTY_8080">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/Ajax_Ex" />
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="Ajax_Ex:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/Ajax_Ex" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings />
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="3932" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="$USER_HOME$/.IntelliJIdea10/config/plugins/JettyIntegration/bin/jetty.bat" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value=" E:\jetty-distribution-7.3.0.v20110203\etc\jetty.xml context-deployer.xml" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="$USER_HOME$/.IntelliJIdea10/config/plugins/JettyIntegration/bin/jetty.bat" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="$USER_HOME$/.IntelliJIdea10/config/plugins/JettyIntegration/bin/jetty.bat" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value=" E:\jetty-distribution-7.3.0.v20110203\etc\jetty.xml context-deployer.xml" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="$USER_HOME$/.IntelliJIdea10/config/plugins/JettyIntegration/bin/jetty.bat" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method>
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="Ajax_Ex:war exploded" />
+        </option>
+      </method>
+    </configuration>
+    <configuration default="false" name="JSON" type="org.codebrewer.idea.jetty.JettyRunConfigurationType" factoryName="Local" APPLICATION_SERVER_NAME="JETTY_8080">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/JSON" />
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="JSON:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/JSON" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings />
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="2572" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="$USER_HOME$/.IntelliJIdea10/config/plugins/JettyIntegration/bin/jetty.bat" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value=" E:\jetty-distribution-7.3.0.v20110203\etc\jetty.xml context-deployer.xml" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="$USER_HOME$/.IntelliJIdea10/config/plugins/JettyIntegration/bin/jetty.bat" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="$USER_HOME$/.IntelliJIdea10/config/plugins/JettyIntegration/bin/jetty.bat" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value=" E:\jetty-distribution-7.3.0.v20110203\etc\jetty.xml context-deployer.xml" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="$USER_HOME$/.IntelliJIdea10/config/plugins/JettyIntegration/bin/jetty.bat" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method>
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="JSON:war exploded" />
+        </option>
+      </method>
+    </configuration>
+    <configuration default="false" name="SitemeshBlank" type="org.codebrewer.idea.jetty.JettyRunConfigurationType" factoryName="Local" APPLICATION_SERVER_NAME="JETTY_8080">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/SitemeshBlank" />
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="SitemeshBlank:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/SitemeshBlank" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings />
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="3494" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="$USER_HOME$/.IntelliJIdea10/config/plugins/JettyIntegration/bin/jetty.bat" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value=" E:\jetty-distribution-7.3.0.v20110203\etc\jetty.xml context-deployer.xml" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="$USER_HOME$/.IntelliJIdea10/config/plugins/JettyIntegration/bin/jetty.bat" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="$USER_HOME$/.IntelliJIdea10/config/plugins/JettyIntegration/bin/jetty.bat" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value=" E:\jetty-distribution-7.3.0.v20110203\etc\jetty.xml context-deployer.xml" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="$USER_HOME$/.IntelliJIdea10/config/plugins/JettyIntegration/bin/jetty.bat" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method>
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="SitemeshBlank:war exploded" />
+        </option>
+      </method>
+    </configuration>
+    <configuration default="false" name="SitemeshDemo" type="org.codebrewer.idea.jetty.JettyRunConfigurationType" factoryName="Local" APPLICATION_SERVER_NAME="JETTY_8080">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/SitemeshDemo" />
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="SitemeshDemo:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/SitemeshDemo" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings />
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="3040" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="$USER_HOME$/.IntelliJIdea10/config/plugins/JettyIntegration/bin/jetty.bat" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value=" E:\jetty-distribution-7.3.0.v20110203\etc\jetty.xml context-deployer.xml" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="$USER_HOME$/.IntelliJIdea10/config/plugins/JettyIntegration/bin/jetty.bat" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="$USER_HOME$/.IntelliJIdea10/config/plugins/JettyIntegration/bin/jetty.bat" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value=" E:\jetty-distribution-7.3.0.v20110203\etc\jetty.xml context-deployer.xml" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="$USER_HOME$/.IntelliJIdea10/config/plugins/JettyIntegration/bin/jetty.bat" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method>
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="SitemeshDemo:war exploded" />
+        </option>
+      </method>
+    </configuration>
+    <configuration default="false" name="SiteMeshExamples" type="org.codebrewer.idea.jetty.JettyRunConfigurationType" factoryName="Local" APPLICATION_SERVER_NAME="JETTY_8080">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/SiteMeshExamples" />
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="SiteMeshExamples:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/SiteMeshExamples" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings />
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="4112" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="$USER_HOME$/.IntelliJIdea10/config/plugins/JettyIntegration/bin/jetty.bat" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value=" E:\jetty-distribution-7.3.0.v20110203\etc\jetty.xml context-deployer.xml" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="$USER_HOME$/.IntelliJIdea10/config/plugins/JettyIntegration/bin/jetty.bat" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="$USER_HOME$/.IntelliJIdea10/config/plugins/JettyIntegration/bin/jetty.bat" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value=" E:\jetty-distribution-7.3.0.v20110203\etc\jetty.xml context-deployer.xml" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="$USER_HOME$/.IntelliJIdea10/config/plugins/JettyIntegration/bin/jetty.bat" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method>
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="SiteMeshExamples:war exploded" />
+        </option>
+      </method>
+    </configuration>
+    <configuration default="false" name="SiteSprings" type="org.codebrewer.idea.jetty.JettyRunConfigurationType" factoryName="Local" APPLICATION_SERVER_NAME="JETTY_8080">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/SiteSprings" />
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="SiteSprings:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/SiteSprings" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings />
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="2044" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="$USER_HOME$/.IntelliJIdea10/config/plugins/JettyIntegration/bin/jetty.bat" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value=" E:\jetty-distribution-7.3.0.v20110203\etc\jetty.xml context-deployer.xml" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="$USER_HOME$/.IntelliJIdea10/config/plugins/JettyIntegration/bin/jetty.bat" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="$USER_HOME$/.IntelliJIdea10/config/plugins/JettyIntegration/bin/jetty.bat" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value=" E:\jetty-distribution-7.3.0.v20110203\etc\jetty.xml context-deployer.xml" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="$USER_HOME$/.IntelliJIdea10/config/plugins/JettyIntegration/bin/jetty.bat" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method>
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="SiteSprings:war exploded" />
+        </option>
+      </method>
+    </configuration>
+    <configuration default="false" name="JasperReport" type="org.codebrewer.idea.jetty.JettyRunConfigurationType" factoryName="Local" APPLICATION_SERVER_NAME="JETTY_8080">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/JasperReport" />
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="JasperReport:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/JasperReport" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings />
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="4961" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="$USER_HOME$/.IntelliJIdea10/config/plugins/JettyIntegration/bin/jetty.bat" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value=" E:\jetty-distribution-7.3.0.v20110203\etc\jetty.xml context-deployer.xml" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="$USER_HOME$/.IntelliJIdea10/config/plugins/JettyIntegration/bin/jetty.bat" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="$USER_HOME$/.IntelliJIdea10/config/plugins/JettyIntegration/bin/jetty.bat" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value=" E:\jetty-distribution-7.3.0.v20110203\etc\jetty.xml context-deployer.xml" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="$USER_HOME$/.IntelliJIdea10/config/plugins/JettyIntegration/bin/jetty.bat" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method>
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="JasperReport:war exploded" />
+        </option>
+      </method>
+    </configuration>
+    <list size="9">
+      <item index="0" class="java.lang.String" itemvalue="Applet.Myapplet" />
+      <item index="1" class="java.lang.String" itemvalue="Jetty Server.JSP" />
+      <item index="2" class="java.lang.String" itemvalue="Jetty Server.Ajax_Ex" />
+      <item index="3" class="java.lang.String" itemvalue="Jetty Server.JSON" />
+      <item index="4" class="java.lang.String" itemvalue="Jetty Server.SitemeshBlank" />
+      <item index="5" class="java.lang.String" itemvalue="Jetty Server.SitemeshDemo" />
+      <item index="6" class="java.lang.String" itemvalue="Jetty Server.SiteMeshExamples" />
+      <item index="7" class="java.lang.String" itemvalue="Jetty Server.SiteSprings" />
+      <item index="8" class="java.lang.String" itemvalue="Jetty Server.JasperReport" />
     </list>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
@@ -439,30 +901,50 @@
     </task>
     <servers />
   </component>
+  <component name="TodoView" selected-index="0">
+    <todo-panel id="selected-file">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="default-changelist">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1024" height="715" extended-state="0" />
+    <frame x="0" y="0" width="1024" height="715" extended-state="1" />
     <editor active="false" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.249742" sideWeight="0.49916527" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32888147" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39899832" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32888147" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.6594324" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32817337" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.07178631" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="left" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.32920536" sideWeight="0.5" order="0" side_tool="true" content_ui="combo" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30959752" sideWeight="0.23372287" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Analysis" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33023736" sideWeight="0.6010017" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.44073457" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.249742" sideWeight="0.48747912" order="5" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32920536" sideWeight="0.67111856" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.39009288" sideWeight="0.34056762" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30217028" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsManagerConfiguration">
@@ -502,116 +984,128 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Java/src/main/designpatterns/com/structural/bridge/ex2/RunBridgePattern_Ex1.java">
+    <entry file="file://$PROJECT_DIR$/Java/src/main/java/com/java/database/dao/impl/StudentDaoImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="17" selection-start="1207" selection-end="1207" vertical-scroll-proportion="0.3148148">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Java/src/main/designpatterns/com/creational/abstractfactorypattern/ex2/GUIFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="48" selection-start="130" selection-end="130" vertical-scroll-proportion="0.27546296">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Java/src/main/designpatterns/com/behavioral/strategy/ex1/StrategyExample.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="65" column="22" selection-start="1848" selection-end="1848" vertical-scroll-proportion="1.537037">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JSP/src/main/webapp/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="73" column="0" selection-start="2398" selection-end="2398" vertical-scroll-proportion="4.1530943">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JSP/src/main/webapp/C-Import.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JSP/src/main/java/com/sourcen/Employee.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="0" selection-start="112" selection-end="112" vertical-scroll-proportion="0.17832167">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.6.0_24/src.zip!/java/lang/Thread.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="661" column="0" selection-start="24792" selection-end="24792" vertical-scroll-proportion="0.33333334">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JSP/src/main/webapp/core.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="56" selection-start="338" selection-end="338" vertical-scroll-proportion="0.27037773">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JSP/src/main/webapp/emp.xsl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JSP/src/main/webapp/emp.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JSP/src/main/webapp/xml.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="30" selection-start="430" selection-end="430" vertical-scroll-proportion="0.4047619">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JSP/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="55" selection-start="515" selection-end="515" vertical-scroll-proportion="0.33876812">
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleGeneralEditorProvider">
-        <state />
-      </provider>
-      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorProvider">
-        <state />
-      </provider>
-      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorReferencesProvider">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JSP/src/main/resources/docs/Information.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="0" selection-start="89" selection-end="140" vertical-scroll-proportion="0.08916084">
-          <folding />
+        <state line="44" column="96" selection-start="943" selection-end="943" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/JSP/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="41" selection-start="1600" selection-end="1600" vertical-scroll-proportion="0.23465703">
+        <state line="49" column="34" selection-start="898" selection-end="1680" vertical-scroll-proportion="0.8321678">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/JSP/src/main/webapp/sql.jsp">
+    <entry file="file://$PROJECT_DIR$/Java/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="8" selection-start="542" selection-end="542" vertical-scroll-proportion="0.35416666">
+        <state line="42" column="31" selection-start="1169" selection-end="1338" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Java/src/main/java/com/java/database/manager/impl/StudentManagerImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="28" selection-start="353" selection-end="353" vertical-scroll-proportion="0.32692307">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Ajax_Ex/src/main/webapp/WEB-INF/web.xml">
+      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorProvider">
+        <state />
+      </provider>
+      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleGeneralEditorProvider">
+        <state />
+      </provider>
+      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorReferencesProvider">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="251" vertical-scroll-proportion="-0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JasperReport/src/main/webapp/report2.jrxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JasperReport/src/main/java/JasperSampleReport.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="36" column="133" selection-start="1034" selection-end="1156" vertical-scroll-proportion="0.529517">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JasperReport/src/main/java/JasperReportServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="45" column="39" selection-start="1569" selection-end="1569" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JasperReport/src/main/java/JasperReportServlet2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="48" column="26" selection-start="1901" selection-end="1901" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/struts/xwork/xwork-core/2.3.4.1/xwork-core-2.3.4.1.jar!/com/opensymphony/xwork2/Action.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="21" selection-start="196" selection-end="196" vertical-scroll-proportion="-4.08">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JasperReport/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="50" selection-start="796" selection-end="796" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JasperReport/src/main/webapp/WEB-INF/web.xml">
+      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorProvider">
+        <state />
+      </provider>
+      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleGeneralEditorProvider">
+        <state />
+      </provider>
+      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorReferencesProvider">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="0" selection-start="689" selection-end="689" vertical-scroll-proportion="-18.7">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JasperReport/src/main/webapp/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="0" selection-start="52" selection-end="52" vertical-scroll-proportion="0.15567766">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/javax/servlet/servlet-api/2.5/servlet-api-2.5-sources.jar!/javax/servlet/ServletContext.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="435" column="33" selection-start="14868" selection-end="14868" vertical-scroll-proportion="0.28519195">
           <folding />
         </state>
       </provider>
@@ -670,7 +1164,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>XML</last-edited>
+          <last-edited>SitemeshBlank</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

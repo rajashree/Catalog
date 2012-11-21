@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<project name="Scheduler" default="compile" basedir=".">
+
+    <property environment="env"/>
+    <property name="java.home" value="${env.JAVA_HOME}" />    
+    <property name="lib" value="lib" />
+	<property name="build.dir" value="build" />
+	<property name="src.dir" value="src"/>
+	<property name="jar.file.name" value="scheduler"/>
+	
+	<target name="prepare">
+		<mkdir dir="${build.dir}" />
+	</target>
+
+	<path id="compile.path">
+	  <fileset dir="${lib}">       
+	    <include name="*.jar"/>
+	  </fileset>
+	</path>
+	
+	
+	<target 
+		name="compile" 
+		depends="prepare" 
+		description="source code compilation">
+		<javac
+			destdir="${build.dir}"
+			deprecation="on"
+			debug="on"				
+			srcdir = "src">
+			<include name="**/*.java"/>
+			<include name="**/*.xml"/>
+			<classpath refid="compile.path"/>
+		</javac>
+	</target>
+	
+	<target 
+	  name="clean" 
+	  description="First delete all .class files ">
+	  <delete includeemptydirs="true" failonerror="false">
+	    <fileset dir="${build.dir}">
+		<include name="**/*.class"/>	
+	    </fileset>	
+		<fileset dir="${build.dir}">       
+	    <include name="*.jar"/>
+	  </fileset>
+	  </delete>
+	</target>
+	
+	<target name="jar"  depends="clean,prepare,compile"
+		        description="jar all the classes, using the last release number">               
+	    <echo message="local directory : ${build.dir} " />
+	    <jar destfile="${build.dir}/${jar.file.name}-1.0.jar">
+	           <fileset dir="${build.dir}">
+		 		<include name="**/**"/>
+				</fileset> 
+		</jar>		    
+		</target>
+   </project>

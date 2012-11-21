@@ -45,7 +45,7 @@ Add Maven dependencies for Mockitio.
 
 Step 2:
 
-Now create the JUNIT Test Class using @RunWith Annotation to implement Mockitio.
+Now create the JUNIT Test Class using @RunWith com.java.annotations.Annotation to implement Mockitio.
 
 eg:
 

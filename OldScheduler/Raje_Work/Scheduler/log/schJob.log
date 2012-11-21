@@ -1,0 +1,55 @@
+2011-01-06 10:39:12,781 DEBUG (Log4jSetup.java:36) - Debug is on.  
+2011-01-06 10:39:12,828 INFO  (JobManager.java:71) -  Scheduling Tasks for Job Type: Schedular
+2011-01-06 10:39:12,843 INFO  (JobManager.java:83) -  Task Name : SchedulerActivity Schedule with delay : 0ms  Sleep Duration:60000ms
+2011-01-06 10:39:12,843 INFO  (JobManager.java:71) -  Scheduling Tasks for Job Type: Schedular1
+2011-01-06 10:39:12,843 INFO  (JobManager.java:83) -  Task Name : SchedulerActivity1 Schedule with delay : 0ms  Sleep Duration:120000ms
+2011-01-06 10:39:12,843 DEBUG (JobScheduler.java:53) - run:scheduled job SchedulerActivity
+2011-01-06 10:39:12,843 DEBUG (SchedulerActivity.java:16) - Scheduler Activity 1
+2011-01-06 10:39:12,843 DEBUG (JobScheduler.java:53) - run:scheduled job SchedulerActivity1
+2011-01-06 10:39:12,859 DEBUG (SchedulerActivity1.java:16) - Scheduler Activity 1
+2011-01-06 10:40:12,843 DEBUG (JobScheduler.java:53) - run:scheduled job SchedulerActivity
+2011-01-06 10:40:12,843 DEBUG (SchedulerActivity.java:16) - Scheduler Activity 1
+2011-01-06 10:41:12,843 DEBUG (JobScheduler.java:53) - run:scheduled job SchedulerActivity
+2011-01-06 10:41:12,843 DEBUG (JobScheduler.java:53) - run:scheduled job SchedulerActivity1
+2011-01-06 10:41:12,843 DEBUG (SchedulerActivity.java:16) - Scheduler Activity 1
+2011-01-06 10:41:12,843 DEBUG (SchedulerActivity1.java:16) - Scheduler Activity 1
+2011-01-06 10:42:12,843 DEBUG (JobScheduler.java:53) - run:scheduled job SchedulerActivity
+2011-01-06 10:42:12,843 DEBUG (SchedulerActivity.java:16) - Scheduler Activity 1
+2011-01-06 10:43:12,843 DEBUG (JobScheduler.java:53) - run:scheduled job SchedulerActivity
+2011-01-06 10:43:12,843 DEBUG (JobScheduler.java:53) - run:scheduled job SchedulerActivity1
+2011-01-06 10:43:12,843 DEBUG (SchedulerActivity.java:16) - Scheduler Activity 1
+2011-01-06 10:43:12,843 DEBUG (SchedulerActivity1.java:16) - Scheduler Activity 1
+2011-01-06 10:44:12,843 DEBUG (JobScheduler.java:53) - run:scheduled job SchedulerActivity
+2011-01-06 10:44:12,843 DEBUG (SchedulerActivity.java:16) - Scheduler Activity 1
+2011-01-06 10:45:12,843 DEBUG (JobScheduler.java:53) - run:scheduled job SchedulerActivity1
+2011-01-06 10:45:12,843 DEBUG (SchedulerActivity1.java:16) - Scheduler Activity 1
+2011-01-06 10:45:12,843 DEBUG (JobScheduler.java:53) - run:scheduled job SchedulerActivity
+2011-01-06 10:45:12,843 DEBUG (SchedulerActivity.java:16) - Scheduler Activity 1
+2011-01-06 10:46:12,843 DEBUG (JobScheduler.java:53) - run:scheduled job SchedulerActivity
+2011-01-06 10:46:12,843 DEBUG (SchedulerActivity.java:16) - Scheduler Activity 1
+2011-01-06 10:47:12,843 DEBUG (JobScheduler.java:53) - run:scheduled job SchedulerActivity
+2011-01-06 10:47:12,843 DEBUG (JobScheduler.java:53) - run:scheduled job SchedulerActivity1
+2011-01-06 10:47:12,843 DEBUG (SchedulerActivity.java:16) - Scheduler Activity 1
+2011-01-06 10:47:12,843 DEBUG (SchedulerActivity1.java:16) - Scheduler Activity 1
+2011-01-06 10:48:12,843 DEBUG (JobScheduler.java:53) - run:scheduled job SchedulerActivity
+2011-01-06 10:48:12,843 DEBUG (SchedulerActivity.java:16) - Scheduler Activity 1
+2011-01-06 10:49:12,843 DEBUG (JobScheduler.java:53) - run:scheduled job SchedulerActivity1
+2011-01-06 10:49:12,843 DEBUG (SchedulerActivity1.java:16) - Scheduler Activity 1
+2011-01-06 10:49:12,843 DEBUG (JobScheduler.java:53) - run:scheduled job SchedulerActivity
+2011-01-06 10:49:12,843 DEBUG (SchedulerActivity.java:16) - Scheduler Activity 1
+2011-01-06 10:50:12,843 DEBUG (JobScheduler.java:53) - run:scheduled job SchedulerActivity
+2011-01-06 10:50:12,843 DEBUG (SchedulerActivity.java:16) - Scheduler Activity 1
+2011-01-06 10:51:12,843 DEBUG (JobScheduler.java:53) - run:scheduled job SchedulerActivity1
+2011-01-06 10:51:12,843 DEBUG (SchedulerActivity1.java:16) - Scheduler Activity 1
+2011-01-06 10:51:12,843 DEBUG (JobScheduler.java:53) - run:scheduled job SchedulerActivity
+2011-01-06 10:51:12,843 DEBUG (SchedulerActivity.java:16) - Scheduler Activity 1
+2011-01-06 10:52:12,843 DEBUG (JobScheduler.java:53) - run:scheduled job SchedulerActivity
+2011-01-06 10:52:12,843 DEBUG (SchedulerActivity.java:16) - Scheduler Activity 1
+06 10:49:28,281 DEBUG (JobScheduler.java:53) - run:scheduled job SchedulerActivity
+2011-01-06 10:49:28,281 DEBUG (SchedulerActivity.java:16) - Scheduler Activity
+2011-01-06 10:50:28,281 DEBUG (JobScheduler.java:53) - run:scheduled job SchedulerActivity
+2011-01-06 10:50:28,281 DEBUG (SchedulerActivity.java:16) - Scheduler Activity
+2011-01-06 10:51:28,281 DEBUG (JobScheduler.java:53) - run:scheduled job SchedulerActivity1
+2011-01-06 10:51:28,281 DEBUG (SchedulerActivity1.java:16) - Scheduler Activity 1
+2011-01-06 10:51:28,281 DEBUG (JobScheduler.java:53) - run:scheduled job SchedulerActivity
+2011-01-06 10:51:28,281 DEBUG (SchedulerActivity.java:16) - Scheduler Activity

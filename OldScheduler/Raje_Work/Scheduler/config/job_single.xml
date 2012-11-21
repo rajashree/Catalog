@@ -1,0 +1,5 @@
+<jobs>
+	<job type="Schedular" >
+		<task name="SchedulerActivity" class="com.activity.SchedulerActivity" delayDuration="0" sleepDuration="1"/>
+	</job>
+</jobs>

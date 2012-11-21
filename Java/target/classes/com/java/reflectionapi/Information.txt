@@ -1,0 +1,2 @@
+http://java.sun.com/docs/books/tutorial/reflect/TOC.html
+http://www.javaolympus.com/J2SE/Reflection/Reflection.jsp

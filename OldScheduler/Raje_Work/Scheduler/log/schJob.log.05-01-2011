@@ -1,0 +1,14 @@
+2011-01-05 19:48:46,984 DEBUG (Log4jSetup.java:36) - Debug is on.  
+2011-01-05 19:48:47,000 INFO  (JobManager.java:71) -  Scheduling Tasks for Job Type: Schedular
+2011-01-05 19:48:47,015 INFO  (JobManager.java:83) -  Task Name : SchedulerActivity Schedule with delay : 0ms  Sleep Duration:60000ms
+2011-01-05 19:48:47,015 DEBUG (JobScheduler.java:53) - run:scheduled job SchedulerActivity
+2011-01-05 19:48:47,015 DEBUG (SchedulerActivity.java:16) - HELLO IN LOGGER
+2011-01-05 19:49:47,015 DEBUG (JobScheduler.java:53) - run:scheduled job SchedulerActivity
+2011-01-05 19:49:47,015 DEBUG (SchedulerActivity.java:16) - HELLO IN LOGGER
+2011-01-05 19:50:59,562 DEBUG (Log4jSetup.java:36) - Debug is on.  
+2011-01-05 19:50:59,578 INFO  (JobManager.java:71) -  Scheduling Tasks for Job Type: Schedular
+2011-01-05 19:50:59,578 INFO  (JobManager.java:83) -  Task Name : SchedulerActivity Schedule with delay : 0ms  Sleep Duration:60000ms
+2011-01-05 19:50:59,578 DEBUG (JobScheduler.java:53) - run:scheduled job SchedulerActivity
+2011-01-05 19:50:59,578 DEBUG (SchedulerActivity.java:16) - HELLO IN LOGGER
+2011-01-05 19:51:59,578 DEBUG (JobScheduler.java:53) - run:scheduled job SchedulerActivity
+2011-01-05 19:51:59,578 DEBUG (SchedulerActivity.java:16) - HELLO IN LOGGER
