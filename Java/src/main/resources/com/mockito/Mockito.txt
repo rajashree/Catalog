@@ -1,0 +1,129 @@
+Mockito
+
+In a simple way we can say that it is the mocking framework like EasyMock or jMock, but in technically it is a Test Spy framework.
+
+Limitation For Mockito
+
+1) Need Java 1.5+
+
+2) Cannot mock final classes.
+
+3) Cannot mock static methods.
+
+4) Cannot mock final methods[Note: if you mock the final method, then it will execute it without any exception.]
+
+5) Never mock the hashCode() and equals().
+
+6) Supported VMS List:
+
+ List of currently supported VMs
+
+    Sun Hotspot VM, versions 1.3, 1.4, 1.5 and 1.6
+    GCJ version 3.4.4 (tested on Windows/Cygwin)
+    BEA JRockit versions 7.0 (1.3.1), 1.4.2 and 1.5
+    Aonix PERC (no serialization support), tested on version 5.0.0667.
+
+7) Mockito doesn't support constructor injection.
+
+Steps to Write the Mockito
+
+Step 1:
+
+Add Maven dependencies for Mockitio.
+
+        <dependency>
+
+            <groupId>org.mockito</groupId>
+
+            <artifactId>mockito-all</artifactId>
+
+            <version>1.9.0</version>
+
+            <scope>test</scope>
+
+        </dependency>
+
+Step 2:
+
+Now create the JUNIT Test Class using @RunWith Annotation to implement Mockitio.
+
+eg:
+
+@RunWith(MockitoJUnitRunner.class)
+
+public class UserManagerTest{}
+
+Step 3:
+
+Now create the mock obejcts as per your requirements.
+
+eg:
+
+@RunWith(MockitoJUnitRunner.class)
+
+public class UserManagerTest{
+
+//Creating the demo object
+
+private static final Address address=new Address(1L,”123 Main Street”,”New York”);
+
+private static final User user=new User(1L,”Ashish”,”Kumar”,address);
+
+// Creating the mock object using annotation.
+
+@MockitoAnnotations.Mock
+
+private UserManager userManager=new UserManagerImpl();
+
+@MockitoAnnotations.Mock
+
+private UserRepository userRepository = new UserRepository();
+
+@Test
+
+public void createUser(){
+
+
+
+        when(this.userManager.createUser(user)).thenReturn(user);
+
+        User testUser = this.userManager.createUser(user);
+
+        logger.info("User Created: " + testUser );
+
+        verify(this.userManager).createUser(testUser );
+
+}
+
+}
+
+Note:
+
+1) When you used the @RunWith(MockitoJUnitRunner.class), then no need to use @Before annotation to initialize the Mock object.
+
+@RunWith is used to initialize the mock object .
+
+@RunWith(MockitoJUnitRunner.class) annotation.
+
+The above mock object initialization can be achieved by using
+
+@Before
+
+ public void setUp(){
+
+        MockitoAnnotations.initMocks(this);
+
+}
+
+so no need to use class level annotation @RunWith , if you are using the @Before annotation.
+
+2) when() method takes call method as argument which will return something. So if method has no return type it will shows compiling time errors.
+
+For more details , please refere the below link:
+
+http://www.agile-engineering.net/2011/11/test-doubles-with-mockito.html
+
+Hamcrest - anagram for matchers
+Hamcrest is a framework for writing matcher objects allowing 'match' rules to be defined declaratively.
+
+http://code.google.com/p/hamcrest/wiki/Tutorial

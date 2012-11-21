@@ -1,0 +1,5 @@
+http://tech.zhenhua.info/2009/01/version-matching-of-jsp-jstl-and.html
+
+Linked Articles:
+http://www.coderanch.com/how-to/java/ServletsWebXml
+http://www.coderanch.com/how-to/java/JstlTagLibDefinitions
