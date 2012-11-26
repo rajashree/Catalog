@@ -1,0 +1,592 @@
+/* body */
+body {
+	/* margin: 10px; */
+	margin: 0px;
+	padding: 0px; 
+	font-family: Verdana, Helvetica, Arial, sans-serif;
+	font-size: 10px;
+	width: 100%;
+}
+
+/* this is all for the footer placement */
+html
+{
+height: 100%;
+}
+
+body
+{
+height: 100%;
+}
+
+#nonFooter
+{
+position: relative;
+min-height: 100%;
+}
+
+* html #nonFooter
+{
+	height: 80%;
+}
+
+#footer
+{
+clear: both;
+background-color: #CECFFF;
+height: 25px;
+position: relative;
+line-height: 25px;
+} 
+
+/* top level layout divs */
+div#top {
+	height: 51px;
+	//background-color: #FFFFFF;
+	background-image:url(assets/images/bg_logo.jpg);
+	background-repeat: repeat-x;
+}
+
+div#topNav {
+	clear: both;
+	height: 25px;
+	top: -1px;
+	background-image: url(images/bg_menu.jpg);
+}
+
+div#leftCol {
+top: -1px;
+	float: left;
+	width: 160px;
+	background-color: #DCDCDC;
+	height: 85%;
+}
+div#leftNav {
+	width: 160px;
+	background-color: #DCDCDC;
+	height: 90%;
+}
+div#leftLogo {
+	width: 160px;
+	background-color: #DCDCDC;
+}
+div.popup-alert {
+	positioning: absolute;
+	clear: both;
+	padding: 8px;
+	margin: 5px 0px;
+	width: 100px;
+	border: solid 2px red;
+	font-weight: bold;
+	font-size: 11px;
+	background-color: #FFCCCC;
+	z-index: 20;
+}
+
+a.closeButton {
+	border: solid 1px #EEBBBB;;
+	align: right;
+	background-color: #FFDDDD;
+	float: right;
+	color: black;
+}
+
+div#content {
+	padding: 10px 10px 5px 10px;
+	margin: 0px;
+	position: absolute;
+	left: 160px;
+	top: 100px;
+}
+
+div#clear {
+		  clear: both;
+		  display: block;
+		  height: 1px;
+		  overflow: hidden;
+		  margin: 0;
+		  padding: 0;
+}
+
+/*div#footer {
+	clear: both;
+	background-color: #CECFFF;
+	padding: 10px;
+	height: 10px;
+}*/
+/* top nav links */
+.smallbutton:link,
+.smallbutton:visited {
+    color: #788FA0;
+        }
+
+.smallbutton:hover,
+.smallbutton:active {
+    color: #CC3300;
+        }
+
+/* left nav links */
+#leftNav a:link,
+#leftNav a:visited {
+    color: #788FA0;
+        }
+
+#leftNav a:hover,
+#leftNav a:active {
+    color: #CC3300;
+        }
+
+/* content links */
+#content a:link,
+#content a:visited {
+    color: #788FA0;
+        }
+
+#content a:hover,
+#content a:active {
+    color: #CC3300;
+        }
+
+/* left column */
+div#leftColHeader {
+	height: 30px;
+	width: 160px;
+	background-image: url(images/bg_title.gif);
+	background-repeat: no-repeat;
+	background-color: #CC3300;
+	float: left;
+}
+
+/* new quick icons bar on top of content */
+div#quickIcons {
+	background-color: #DCDCDC;
+	height: 30px;
+	padding-left: 0px;
+	margin-left: 0px;
+}
+
+/* top-left role icons */
+.roleIcon {
+	position:absolute;
+	top:6px;
+	left:10px;
+	width:154px;
+	height:39px;
+}
+
+.roleIcon#manufacturer {
+	background-image: url(../assets/images/icn_manufacturer.gif);
+	background-repeat: no-repeat;
+}
+ 
+.roleIcon#distributor {
+	background-image: url(../assets/images/icn_distributor.gif);
+	background-repeat: no-repeat;
+}
+ 
+.roleIcon#pharmacy {
+	background-image: url(../assets/images/icn_pharmacy.gif);
+	background-repeat: no-repeat;
+}
+ 
+.roleIcon#hospital {
+	background-image: url(../assets/images/icn_hospital.gif);
+	background-repeat: no-repeat;
+}
+ 
+/* TODO: lose the 2 px gap and remove this -1px for top */
+.logo {
+	position:relative;
+	top:0px;
+	left:0px;
+	margin:0px;
+	text-align:right;
+	height:51px;
+	width:auto;
+	background-image: url(images/bg_logo.jpg);
+}
+img.navIcon {
+	width:auto;
+	height:auto;
+	float: right;
+	z-index: 1;
+	border: none;
+}
+a.navIcon {
+	border: none;
+}
+
+/* basic general page elements */
+p { 
+	font-family: "Verdana", "Arial", "Helvetica", "sans-serif";
+	font-size: 10px;
+	color: #000000;
+	}
+
+TH	{
+	font-family: "Verdana", "Arial", "Helvetica", "sans-serif";
+	font-size: 10px;
+	color: #000000;
+	background-color: #8494CA;
+}
+
+TD {
+	font-family: "Verdana", "Arial", "Helvetica", "sans-serif";
+	font-size: 10px;
+	color: #000000;
+	}
+	
+.bold{
+	font-weight: bold;
+}
+
+.italic{
+	font-style: italic;
+}
+
+a,
+a:hover
+a:active {
+	font-family: "Verdana", "Arial", "Helvetica", "sans-serif";
+	font-size: 10px;
+	color: #666666;
+	text-decoration: none;
+}
+a:visited {
+	color:#788FA0;
+}
+
+a:link {
+	color:#0000FF;
+}
+
+/* Specific Styles */
+
+/* Type Red Link, to highlight a link in the page */
+.typered-link,
+.typered-link:link,
+.typered-link:visited {
+	font-family: "Verdana", "Arial", "Helvetica", "sans-serif";
+	font-size: 11px;
+	color: #CC3300;
+	text-decoration: none;
+}
+.typered-link:hover {
+	color: #000000;
+}
+
+/* Type Red text, not a link, to bold something */
+.type-red {
+	font-family: "Arial", "Helvetica", "sans-serif";
+	font-size: 11px;
+	color: #CC3300;
+	font-weight: bold;
+}
+
+/* Type Blue Link, for general use */
+.typeblue-link,
+.typeblue-link:link
+.typeblue-link:visited {
+	font-family: "Verdana", "Arial", "Helvetica", "sans-serif";
+	font-size: 10px;
+	color: #0000FF;
+	text-decoration: underline;
+}
+
+.typeblue-link:hover {
+	color: #000000;
+}
+
+/* Type White ? */
+.type-white {
+	font-family: "Verdana", "Arial", "Helvetica", "sans-serif";
+	font-size: 10px;
+	color: #FFFFFF;
+	padding-left: 5px;
+}
+
+/* Type Gray Link */
+.typegray-link,
+.typegray-link:link,
+.typegray-link:visited {
+	font-family: "Verdana", "Arial", "Helvetica", "sans-serif";
+	font-size: 10px;
+	color: #999999;
+	text-decoration: underline;
+}
+.typegray-link:hover {
+	color: #000000;
+}
+
+.typegray1-link,
+.typegray1-link:link,
+.typegray1-link:visited {
+	font-family: "Verdana", "Arial", "Helvetica", "sans-serif";
+	font-size: 10px;
+	color: #999999;
+	text-decoration: underline;
+	font-style: italic;
+}
+
+.typegray1-link:hover {
+	color: #000000;
+}
+
+/* Titles and Menus */
+.title{
+	font-size: 12px;
+	color: #ffffff;
+	font-family: "Verdana", "Arial", "Helvetica", "sans-serif";
+	font-weight: bold;
+}
+
+.titleBlack{
+	font-size: 12px;
+	color: #000000;
+	font-family: "Verdana", "Arial", "Helvetica", "sans-serif";
+	font-weight: bold;
+	padding-left: 5px;
+}
+
+.subtitle{
+	font-size: 10px;
+	color: #999966;
+	font-family: "Verdana", "Arial", "Helvetica", "sans-serif";
+}
+
+.menu {
+	font-family: "Arial", "Helvetica", "sans-serif";
+	font-size: 10px;
+	color: #000000;
+}
+
+/* Table Classes */
+.td-content {
+	font-size: 10px;
+	color: #000000;
+	font-family: "Verdana", "Arial", "Helvetica", "sans-serif";
+	line-height: 135%;
+	vertical-align: top;
+}
+
+.td-left {
+	background-color: #DCDCDC;
+	width: 170px;
+	background-position: center;
+}
+
+.td-leftred {
+	font-family: "Arial", "Helvetica", "sans-serif";
+	font-size: 11px;
+	font-weight: bold;
+	color: #FFFFFF;
+	padding-left: 10px;
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #FFFFFF;
+	height: 30px;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #CC3300;
+	width: 170px;
+	background-image: url(images/bg_title.gif);
+	background-repeat: no-repeat;
+	background-color: #CC3300;
+}
+
+.td-rightmenu {
+	height: 29px;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #999999;
+}
+
+.td-menu {
+	font-family: "Verdana", "Arial", "Helvetica", "sans-serif";
+	font-size: 10px;
+	color: #000000;
+	padding-left: 5px;
+}
+
+.leftNavlevel2 {
+	font-family: "Verdana", "Arial", "Helvetica", "sans-serif";
+	font-size: 10px;
+	color: #000000;
+	padding-left: 10px;
+}
+
+
+.redtab {
+	font-family: "Verdana", "Arial", "Helvetica", "sans-serif";
+	font-size: 11px;
+	color: #FFFFFF;
+	font-weight: bold;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	padding-left: 8px;
+}
+
+.blackText {
+	color: #000000;
+}
+
+.td-typeblack {
+	font-family: "Verdana", "Arial", "Helvetica", "sans-serif";
+	font-size: 11px;
+	color: #000000;
+	font-weight: bold;
+	padding-top: 8px;
+	padding-bottom: 8px;
+}
+.td-typeredd {
+	font-family: "Verdana", "Arial", "Helvetica", "sans-serif";
+	font-size: 11px;
+	color: #996600;
+	font-weight: bold;
+	padding-top: 8px;
+	padding-bottom: 0px;
+}
+
+.td-typegray {
+	font-family: "Verdana", "Arial", "Helvetica", "sans-serif";
+	font-size: 10px;
+	color: #999999;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+/* Menu links */
+.menu-link,
+.menu-link:link,
+.menu-link:visited {
+	font-family: "Verdana", "Arial", "Helvetica", "sans-serif";
+	font-size: 10px;
+	color: #666666;
+	text-decoration: none;
+}
+
+.menu-link:hover {
+	color: #000000;
+	font-weight: bold;
+}
+.menuBlack {
+	font-family: "Verdana", "Arial", "Helvetica", "sans-serif";
+	font-size: 10px;
+	color: #000000;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+/* Table Row background colors */
+.tableRow_On {
+	background-color: #DCDCDC;
+}
+.tableRow_Off {
+	background-color: #ffffff;	
+}
+.tableRow_Header {
+	background-color: #8494CA;	
+}
+.tableRow_Yellow {
+	background-color: #FFCC33;	
+}
+.tableRow_Red {
+	background-color: #FF0000;	
+}
+
+.rightAction{
+	background-color: #FFFFCC;
+	width: auto;
+	height: 16px;
+	border-color: #CC3300;
+	border-style: solid;
+	border-width: 1px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #666666;
+}
+/* Form elements */
+.fButton{
+	background-color: #FFFFCC;
+	width: 100px;
+	height: 16px;
+	border-color: #CC3300;
+	border-style: solid;
+	border-width: 1px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #666666;
+}
+.fButton_huge{
+	background-color: #FFFFCC;
+	width: 450px;
+	height: 16px;
+	border-color: #CC3300;
+	border-style: solid;
+	border-width: 1px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #666666;
+}
+.fButton_large{
+	background-color: #FFFFCC;
+	width: 155px;
+	height: 16px;
+	border-color: #CC3300;
+	border-style: solid;
+	border-width: 1px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #666666;
+}
+.fButton_large_pwd{
+	background-color: #FFFFFF;
+	width: 155px;
+	height: 16px;
+	border-color: #CC3300;
+	border-style: solid;
+	border-width: 1px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #666666;
+}
+.fButton_off{
+	background-color: #cccccc;
+	width: 100px;
+	height: 16px;
+	border-color: #CC3300;
+	border-style: solid;
+	border-width: 1px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #666666;
+}
+.fButton_large_off{
+	background-color: #cccccc;
+	width: 155px;
+	height: 16px;
+	border-color: #CC3300;
+	border-style: solid;
+	border-width: 1px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #666666;
+}
+.fButton_small{
+	background-color: #ffffff;
+	width: 40px;
+	height: 20px;
+	border-color: #CC3300;
+	border-style: solid;
+	border-width: 1px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #666666;
+}

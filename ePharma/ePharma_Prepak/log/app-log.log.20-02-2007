@@ -1,0 +1,46 @@
+2007-02-20 10:36:25,296 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-20 10:36:25,343 INFO  (LoginAction.java:57) - In execute method
+2007-02-20 10:36:25,359 INFO  (SecurityServiceImpl.java:140) - In authenticate method
+2007-02-20 10:36:25,359 INFO  (SecurityServiceImpl.java:54) - In getUser method
+2007-02-20 10:36:25,375 INFO  (SecurityServiceImpl.java:56) - Query:tlsp:loginUserInfo('test')
+2007-02-20 10:36:27,046 INFO  (User.java:146) - In passwordMatch method
+2007-02-20 10:36:27,046 INFO  (User.java:176) - In valueBound method
+2007-02-20 10:36:27,046 INFO  (SecurityServiceImpl.java:101) - In insertSessionDoc method
+2007-02-20 10:36:27,062 INFO  (SecurityServiceImpl.java:85) - In replaceString method
+2007-02-20 10:36:27,062 INFO  (SecurityServiceImpl.java:128) - Query:tig:insert-document( 'tig:///EAGRFID/SysSessions/', <session><sessionid>12700120070220103627</sessionid><userid>23802960038774853494040455282174</userid><username>raje raje</username><accesslevel>epedigree</accesslevel><sessionstart>2007-02-20T10:36:27</sessionstart><userip>127.0.0.1</userip><lastuse>2007-02-20T10:36:27</lastuse><tp_company_nm>Southwood</tp_company_nm><tp_company_id>null</tp_company_id></session>)
+2007-02-20 10:36:27,265 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-20 10:36:27,453 INFO  (EpedigreeAction.java:67) - ********Inside Action EpedigreeAction....... 
+2007-02-20 10:36:27,453 INFO  (EpedigreeAction.java:68) - Inside Action execute of EpedigreeAction....
+2007-02-20 10:36:27,468 INFO  (EpedigreeAction.java:78) - Validating The Session
+2007-02-20 10:36:27,468 INFO  (EpedigreeAction.java:82) - sessionID in EpedigreeAction :12700120070220103627
+2007-02-20 10:36:27,734 INFO  (EpedigreeAction.java:92) - The readStatus is : true
+2007-02-20 10:36:27,734 INFO  (EpedigreeAction.java:99) - My Query in EpedigreeAction class.....tlsp:DisplayMessage('12700120070220103627') 
+2007-02-20 10:36:28,312 INFO  (EpedigreeAction.java:128) - Before returning to success
+2007-02-20 10:36:32,750 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-20 10:36:32,781 WARN  (RequestUtils.java:177) - No FormBeanConfig found under 'ProcessedEnteredPedigreesForm'
+2007-02-20 10:36:32,828 INFO  (ProcessedEnteredPedigreesAction.java:77) - Inside Action ProcessedEnteredPedigreesAction....... 
+2007-02-20 10:36:32,828 INFO  (ProcessedEnteredPedigreesAction.java:93) - query for FaxDetails is:tlsp:GetProcessedEnteredPedigrees()
+2007-02-20 10:36:33,406 INFO  (ProcessedEnteredPedigreesAction.java:115) - vendorNamevendorNamevendorNamenull
+2007-02-20 10:36:50,546 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-20 10:36:50,609 INFO  (EpedigreeAction.java:67) - ********Inside Action EpedigreeAction....... 
+2007-02-20 10:36:50,609 INFO  (EpedigreeAction.java:68) - Inside Action execute of EpedigreeAction....
+2007-02-20 10:36:50,609 INFO  (EpedigreeAction.java:78) - Validating The Session
+2007-02-20 10:36:50,625 INFO  (EpedigreeAction.java:82) - sessionID in EpedigreeAction :12700120070220103627
+2007-02-20 10:36:50,640 INFO  (EpedigreeAction.java:92) - The readStatus is : true
+2007-02-20 10:36:50,640 INFO  (EpedigreeAction.java:99) - My Query in EpedigreeAction class.....tlsp:DisplayMessage('12700120070220103627') 
+2007-02-20 10:36:50,656 INFO  (EpedigreeAction.java:128) - Before returning to success
+2007-02-20 10:36:54,578 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-20 10:36:54,625 DEBUG (AdminUser.java:56) - sessionID :12700120070220103627
+2007-02-20 10:37:02,859 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-20 10:37:02,921 INFO  (TradingPartnerListAction.java:77) - Inside Action TradingPartnerListAction....... 
+2007-02-20 10:37:02,921 INFO  (TradingPartnerListAction.java:78) - Inside Action execute of TradingPartnerListAction....
+2007-02-20 10:37:02,921 INFO  (TradingPartnerListAction.java:100) - query tlsp:validateAccess('12700120070220103627','4.0','Read')
+2007-02-20 10:37:02,937 INFO  (TradingPartnerListAction.java:103) - The insertStatus is true
+2007-02-20 10:37:16,390 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-20 10:37:16,421 INFO  (EpedigreeAction.java:67) - ********Inside Action EpedigreeAction....... 
+2007-02-20 10:37:16,421 INFO  (EpedigreeAction.java:68) - Inside Action execute of EpedigreeAction....
+2007-02-20 10:37:16,437 INFO  (EpedigreeAction.java:78) - Validating The Session
+2007-02-20 10:37:16,437 INFO  (EpedigreeAction.java:82) - sessionID in EpedigreeAction :12700120070220103627
+2007-02-20 10:37:16,453 INFO  (EpedigreeAction.java:92) - The readStatus is : true
+2007-02-20 10:37:16,453 INFO  (EpedigreeAction.java:99) - My Query in EpedigreeAction class.....tlsp:DisplayMessage('12700120070220103627') 
+2007-02-20 10:37:16,484 INFO  (EpedigreeAction.java:128) - Before returning to success

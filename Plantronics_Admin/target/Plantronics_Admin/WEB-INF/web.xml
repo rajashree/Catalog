@@ -1,0 +1,28 @@
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+         version="3.0">
+      <servlet>
+        <servlet-name>ControlServlet</servlet-name>
+        <servlet-class>com.ControlServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ControlServlet</servlet-name>
+        <url-pattern>/ControlServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>LoginVerify</servlet-name>
+        <servlet-class>com.LoginVerify</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LoginVerify</servlet-name>
+        <url-pattern>/LoginVerify</url-pattern>
+    </servlet-mapping>
+
+
+
+    <welcome-file-list>
+        <welcome-file>index.html</welcome-file>
+    </welcome-file-list>
+</web-app>

@@ -1,0 +1,61 @@
+<Products>
+<Product>
+
+    <ProductID>PROD20050729124208</ProductID>
+
+    <NDC>NDC123</NDC>
+
+    <TagID>    </TagID>
+
+   <Barcode>    </Barcode>
+
+    <ServerID>123</ServerID>
+
+    <UnitsInStock>40</UnitsInStock>
+
+    <ReorderLevel>10</ReorderLevel>
+
+    <extensions>
+
+        <ext>
+
+            <extType>extType</extType>
+
+            <extValue>extType</extValue>
+
+        </ext>
+
+   </extensions>
+
+</Product>
+<Product>
+
+    <ProductID>PROD20050729124207</ProductID>
+
+    <NDC>NDC122</NDC>
+
+    <TagID>    </TagID>
+
+   <Barcode>    </Barcode>
+
+    <ServerID>123</ServerID>
+
+    <UnitsInStock>40</UnitsInStock>
+
+    <ReorderLevel>10</ReorderLevel>
+
+    <extensions>
+
+        <ext>
+
+            <extType>extType</extType>
+
+            <extValue>extType</extValue>
+
+        </ext>
+
+   </extensions>
+
+</Product>
+</Products>
+

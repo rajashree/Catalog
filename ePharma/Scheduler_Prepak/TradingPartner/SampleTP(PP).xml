@@ -1,0 +1,33 @@
+<TradingPartner>
+	<genId>fff36a73-b605-14c0-c001-c170bea5abcd</genId>
+	<name>PrePak Systems, Inc.</name>
+	<partnerType>Distributor</partnerType>
+	<businessId>1</businessId>
+	<description>PrePak Systems, Inc.</description>
+	<status>Active</status>
+	<webURL/>
+	<contact>David A. Loy</contact>
+	<title>Director of Quality</title>
+	<deaNumber>RP0300892</deaNumber>
+	<phone>931-372-2041 x314</phone>
+	<fax/>
+	<email>dloy@prepaksys.com</email>
+	<destinationRoutingCode>DDC</destinationRoutingCode>
+	<notifyURI/>
+	<businessAddress>
+		<line1>1920 Fisk Road</line1>
+		<line2/>
+		<city>Cookeville</city>
+		<state>TN</state>
+		<country>USA</country>
+		<zip>38506</zip>
+	</businessAddress>
+	<shippingAddress>
+		<line1>1920 Fisk Road</line1>
+		<line2/>
+		<city>Cookeville</city>
+		<state>TN</state>
+		<country>USA</country>
+		<zip>38506</zip>
+	</shippingAddress>
+</TradingPartner>

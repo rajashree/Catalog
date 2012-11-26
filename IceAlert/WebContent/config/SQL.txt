@@ -1,0 +1,267 @@
+/*New Schema on 30-aug-2007*/
+
+CREATE TABLE  `sms`.`alert_receiver_details` (
+  `alert_id` int(10) unsigned NOT NULL,
+  `receiver_id` varchar(50) NOT NULL default '0',
+  `flag` tinyint(3) unsigned NOT NULL,
+  `del_flag` tinyint(1) unsigned NOT NULL default '0'
+) 
+
+CREATE TABLE  `sms`.`alert_sender_details` (
+  `alert_id` int(10) unsigned NOT NULL auto_increment,
+  `sender_id` int(10) unsigned NOT NULL,
+  `subject` varchar(45) NOT NULL,
+  `body` longtext NOT NULL,
+  `type` tinyint(3) unsigned NOT NULL default '0',
+  `date_time` datetime NOT NULL,
+  `alter_flag` tinyint(1) unsigned NOT NULL default '0',
+  PRIMARY KEY  (`alert_id`)
+) 
+
+
+CREATE TABLE  `sms`.`community_assigned` (
+  `comm_id` int(10) unsigned NOT NULL,
+  `user_id` int(10) unsigned NOT NULL,
+  `flag` tinyint(1) NOT NULL default '0'
+) 
+
+CREATE TABLE  `sms`.`community_details` (
+  `id` int(10) unsigned NOT NULL auto_increment,
+  `name` varchar(45) NOT NULL,
+  `owner` int(10) unsigned NOT NULL,
+  `creation_date` datetime NOT NULL,
+  `description` varchar(1000) default '',
+  `no_users` int(10) unsigned NOT NULL default '1',
+  PRIMARY KEY  (`id`)
+) 
+
+CREATE TABLE  `sms`.`community_dump` (
+  `comm_id` int(10) unsigned NOT NULL,
+  `user_emailid` varchar(45) NOT NULL
+) 
+
+CREATE TABLE  `sms`.`community_photo` (
+  `community_id` int(10) unsigned NOT NULL,
+  `image` blob NOT NULL
+)
+
+
+CREATE TABLE  `sms`.`feedback_details` (
+  `fd_id` int(10) unsigned NOT NULL auto_increment,
+  `user_id` int(10) unsigned NOT NULL,
+  `comment` varchar(255) NOT NULL,
+  `status` int(10) unsigned NOT NULL default '0',
+  PRIMARY KEY  (`fd_id`)
+) 
+
+CREATE TABLE  `sms`.`ice_contacts` (
+  `user_id` int(10) unsigned NOT NULL,
+  `contact_name` varchar(45) NOT NULL,
+  `contact_no` varchar(15) NOT NULL default '',
+  `contact_email` varchar(45) NOT NULL,
+  `Country` varchar(45) NOT NULL,
+  `S_Provider` varchar(45) NOT NULL,
+  KEY `FK_ice_contacts_1` (`user_id`),
+  CONSTRAINT `FK_ice_contacts_1` FOREIGN KEY (`user_id`) REFERENCES `user_details` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
+) 
+
+
+CREATE TABLE  `sms`.`report_bug` (
+  `rep_id` int(10) unsigned NOT NULL auto_increment,
+  `user_id` int(10) unsigned NOT NULL,
+  `bug` varchar(255) NOT NULL default '',
+  `status` int(10) unsigned NOT NULL,
+  `btype` varchar(45) NOT NULL,
+  `bversion` varchar(45) NOT NULL,
+  `category` varchar(45) NOT NULL,
+  PRIMARY KEY  (`rep_id`)
+) 
+
+CREATE TABLE  `sms`.`user_details` (
+  `id` int(10) unsigned NOT NULL auto_increment,
+  `F_Name` varchar(45) NOT NULL,
+  `L_Name` varchar(45) NOT NULL,
+  `Email` varchar(45) NOT NULL,
+  `MobileExt` varchar(10) NOT NULL default '',
+  `Mobile` varchar(10) NOT NULL default '',
+  `S_Provider` varchar(45) default '',
+  `Country` varchar(45) NOT NULL,
+  `Zip_Code` varchar(45) NOT NULL,
+  `Role` tinyint(3) unsigned NOT NULL default '0',
+  `Flag` tinyint(1) NOT NULL default '0',
+  `Code` int(10) unsigned NOT NULL,
+  `Password` varchar(45) NOT NULL,
+  `Occupation` varchar(150) NOT NULL default '',
+  `Street` varchar(45) NOT NULL,
+  `City` varchar(45) NOT NULL,
+  `State` varchar(45) NOT NULL,
+  `Area` varchar(45) NOT NULL,
+  `BloodGroup` varchar(10) NOT NULL default '',
+  `Meds` varchar(250) NOT NULL default '',
+  `Conditions` varchar(250) NOT NULL default '',
+  `Allergies` varchar(250) NOT NULL default '',
+  `ICEID` varchar(45) NOT NULL,
+  `E_Occupation` varchar(45) NOT NULL default '',
+  `Phone` varchar(45) NOT NULL default '',
+  `Disease` varchar(250) NOT NULL,
+  `Card_Flag` int(10) unsigned NOT NULL default '0',
+  `PhoneExt` varchar(45) NOT NULL,
+  `Dob` date NOT NULL,
+  PRIMARY KEY  (`id`)
+) 
+
+CREATE TABLE  `sms`.`user_photo` (
+  `id` int(10) unsigned NOT NULL,
+  `image` blob,
+  PRIMARY KEY  (`id`)
+) 
+
+CREATE TABLE  `blog_info` (
+  `comments` varchar(500) NOT NULL,
+  `user_id` int(10) unsigned NOT NULL,
+  `doc` date NOT NULL
+) 
+
+
+
+
+
+/*Old Schema*/
+
+CREATE TABLE  `sms`.`alert_receiver_details` (
+  `alert_id` int(10) unsigned NOT NULL,
+  `receiver_id` varchar(50) NOT NULL default '0',
+  `flag` tinyint(3) unsigned NOT NULL
+)
+
+CREATE TABLE  `sms`.`alert_sender_details` (
+  `alert_id` int(10) unsigned NOT NULL auto_increment,
+  `sender_id` int(10) unsigned NOT NULL,
+  `subject` varchar(45) NOT NULL,
+  `body` longtext NOT NULL,
+  `type` tinyint(3) unsigned NOT NULL default '0',
+  `date_time` datetime NOT NULL,
+  `alter_flag` tinyint(1) NOT NULL default '0',
+  PRIMARY KEY  (`alert_id`)
+) 
+
+CREATE TABLE `user_photo` (
+`id` int(10) unsigned NOT NULL,
+`image` blob,
+PRIMARY KEY (`id`)
+) 
+
+
+CREATE TABLE  `sms`.`community_assigned` (
+  `comm_id` int(10) unsigned NOT NULL,
+  `user_id` int(10) unsigned NOT NULL,
+  `flag` tinyint(1) NOT NULL default '0'
+) 
+
+
+CREATE TABLE  `sms`.`community_details` (
+  `id` int(10) unsigned NOT NULL auto_increment,
+  `name` varchar(45) NOT NULL,
+  `owner` int(10) unsigned NOT NULL,
+  `creation_date` datetime NOT NULL,
+  `description` varchar(100) default '',
+  `no_users` int(10) unsigned NOT NULL default '1',
+  PRIMARY KEY  (`id`)
+)
+
+
+CREATE TABLE  `sms`.`community_trash` (
+  `id` int(10) unsigned NOT NULL,
+  `name` varchar(45) NOT NULL,
+  `owner` varchar(45) NOT NULL,
+  `creation_date` datetime NOT NULL,
+  `desc` varchar(100) NOT NULL,
+  `no_users` int(10) unsigned NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+
+CREATE TABLE `sms`.`ice_contacts` (
+`user_id` int(10) unsigned NOT NULL,
+`contact_name` varchar(45) NOT NULL,
+`contact_no`  varchar(15) NOT NULL,
+`contact_email` varchar(45) NOT NULL,
+`Country` varchar(45) NOT NULL,
+`S_Provider` varchar(45) NOT NULL,
+KEY `FK_ice_contacts_1` (`user_id`),
+CONSTRAINT `FK_ice_contacts_1` FOREIGN KEY (`user_id`) REFERENCES `user_details` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
+) 
+
+
+
+CREATE TABLE  `sms`.`user_details` (
+  `id` int(10) unsigned NOT NULL auto_increment,
+  `F_Name` varchar(45) NOT NULL,
+  `L_Name` varchar(45) NOT NULL,
+  `Email` varchar(45) NOT NULL,
+  `MobileExt` varchar(10) NOT NULL default '',
+  `Mobile` varchar(15) NOT NULL default '',
+  `S_Provider` varchar(45) default '',
+  `Country` varchar(45) NOT NULL,
+  `Zip_Code` varchar(45) NOT NULL,
+  `Role` tinyint(3) unsigned NOT NULL default '0',
+  `Flag` tinyint(1) NOT NULL default '0',
+  `Code` int(10) unsigned NOT NULL,
+  `Password` varchar(45) NOT NULL,
+  `Occupation` varchar(45) NOT NULL,
+  `Street` varchar(45) NOT NULL,
+  `City` varchar(45) NOT NULL,
+  `State` varchar(45) NOT NULL,
+  `Area` varchar(45) NOT NULL,
+  PRIMARY KEY  (`id`)
+)
+
+
+
+CREATE TABLE  `sms`.`user_trash` (
+  `id` int(10) unsigned NOT NULL,
+  `F_Name` varchar(45) NOT NULL,
+  `L_Name` varchar(45) NOT NULL,
+  `Email` varchar(45) NOT NULL,
+  `Mobile` varchar(45) NOT NULL,
+  `S_Provider` varchar(45) NOT NULL,
+  `Country` varchar(45) NOT NULL,
+  `Zip_Code` varchar(45) NOT NULL,
+  `Role` tinyint(3) unsigned NOT NULL,
+  `Flag` tinyint(1) unsigned NOT NULL,
+  `Code` int(10) unsigned NOT NULL,
+  `Password` varchar(45) NOT NULL,
+  `MobileExt` varchar(45) NOT NULL
+) 
+
+
+CREATE TABLE  `sms`.`community_photo` (
+  `community_id` int(10) unsigned NOT NULL auto_increment,
+  `image` blob NOT NULL,
+  PRIMARY KEY  (`community_id`)
+)
+
+CREATE TABLE  `sms`.`community_dump` (
+  `comm_id` int(10) unsigned NOT NULL,
+  `user_emailid` varchar(45) NOT NULL
+)
+
+CREATE TABLE  `sms`.`feedback_details` (
+  `fd_id` int(10) unsigned NOT NULL auto_increment,
+  `user_id` int(10) unsigned NOT NULL,
+  `comment` varchar(255) NOT NULL,
+  `status` int(10) unsigned NOT NULL default '0',
+  PRIMARY KEY  (`fd_id`)
+)
+
+
+CREATE TABLE  `sms`.`report_bug` (
+  `rep_id` int(10) unsigned NOT NULL auto_increment,
+  `user_id` int(10) unsigned NOT NULL,
+  `bug` varchar(255) NOT NULL,
+  `status` int(10) unsigned NOT NULL,
+  `btype` varchar(45) NOT NULL,
+  `bversion` varchar(45) NOT NULL,
+  `category` varchar(45) NOT NULL,
+  PRIMARY KEY  (`rep_id`)
+)
+

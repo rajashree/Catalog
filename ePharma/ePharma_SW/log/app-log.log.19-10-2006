@@ -1,0 +1,38 @@
+2006-10-19 11:26:22,267 INFO  (?:?) - In processPreprocess method::Requested action::/ePharma
+2006-10-19 11:26:22,282 INFO  (?:?) - In execute method
+2006-10-19 11:26:22,282 INFO  (?:?) - In authenticate method
+2006-10-19 11:26:22,282 INFO  (?:?) - In getUser method
+2006-10-19 11:26:22,282 INFO  (?:?) - Query:tlsp:loginUserInfo('test')
+2006-10-19 11:26:22,892 INFO  (?:?) - In passwordMatch method
+2006-10-19 11:26:22,892 INFO  (?:?) - In valueBound method
+2006-10-19 11:26:22,907 INFO  (?:?) - In insertSessionDoc method
+2006-10-19 11:26:22,907 INFO  (?:?) - In replaceString method
+2006-10-19 11:26:22,907 INFO  (?:?) - Query:tig:insert-document( 'tig:///EAGRFID/SysSessions/', <session><sessionid>12700120061019112622</sessionid><userid>6120645223803314407198380497886</userid><username>Test Test</username><accesslevel>epedigree</accesslevel><sessionstart>2006-10-19T11:26:22</sessionstart><userip>127.0.0.1</userip><lastuse>2006-10-19T11:26:22</lastuse><tp_company_nm>Southwood</tp_company_nm><tp_company_id>null</tp_company_id></session>)
+2006-10-19 11:26:22,923 INFO  (?:?) - In processPreprocess method::Requested action::/ePharma
+2006-10-19 11:26:23,001 INFO  (?:?) - ********Inside Action EpedigreeAction....... 
+2006-10-19 11:26:23,001 INFO  (?:?) - Inside Action execute of EpedigreeAction....
+2006-10-19 11:26:23,001 INFO  (?:?) - Validating The Session
+2006-10-19 11:26:23,017 INFO  (?:?) - sessionID in EpedigreeAction :12700120061019112622
+2006-10-19 11:26:23,079 INFO  (?:?) - The readStatus is : true
+2006-10-19 11:26:23,079 INFO  (?:?) - My Query in EpedigreeAction class.....tlsp:DisplayMessage('12700120061019112622') 
+2006-10-19 11:26:23,142 INFO  (?:?) - Before returning to success
+2006-10-19 11:26:24,845 INFO  (?:?) - In processPreprocess method::Requested action::/ePharma
+2006-10-19 11:26:24,892 INFO  (?:?) - Inside Action ReceivingManagerAction....... 
+2006-10-19 11:26:24,892 INFO  (?:?) - Hi..................*********** offsetnull
+2006-10-19 11:26:24,892 INFO  (?:?) - Hi..................*********** off :null
+2006-10-19 11:26:24,907 INFO  (?:?) - Validating The Session
+2006-10-19 11:26:24,907 INFO  (?:?) - sessionID in Action :12700120061019112622
+2006-10-19 11:26:24,907 INFO  (?:?) - ****** recvng
+2006-10-19 11:26:24,923 INFO  (?:?) - Query[true]
+2006-10-19 11:26:24,939 INFO  (?:?) - the string valuetrue
+2006-10-19 11:26:24,954 INFO  (?:?) - TP Names : [Abbott Laboratories, ALPHAGEN LABORATORIES,INC., McKESSON CORP, ANDA GENERICS, INC., MEDSOURCE DIRECT, BARNES WHOLESALE, MODERN MEDICAL PRODUCTS, INC., BARR LABORATORIES INC., NUTRAMAX LABS, BERGEN BRUNSWIG DRUG COMPANY, PARMED PHARMACEUTICALS, INC., CALPAC CONTAINER CO, PHARMACEUTICAL INNOVATORS INC., COBB RX, QUEST PHARMACEUTICALS, INC., CONNAUGHT LABORATORIES, R and S SALES, INC., DBS TRADING, INC., RICHIE PHARMACAL CO., INC., DURAMED PHARMACEUTICALS, INC., SEARLE, FDC PACKAGING INC, SKINNER'S RX PHARMACY INC., GENETCO, INC., H.D. SMITH WHOLESALE DRUG, SOUTHWOOD PHARMACEUTICALS, INC., Spectrum Label, HARVARD DRUG GROUP, LLC, STAT PHARMACEUTICALS, INTERPHARM INC, STERIS LABORATORIES, INC., MAJOR PHARMACEUTICALS, SUPERIOR PHARMACEUTICAL C0., Masters Pharmaceuticals, erter, VALLEY DRUG COMPANY SOUTH -VDP]
+2006-10-19 11:26:25,032 INFO  (?:?) - Before returning to success
+2006-10-19 11:26:44,985 INFO  (?:?) - In processPreprocess method::Requested action::/ePharma
+2006-10-19 11:26:45,064 INFO  (?:?) - Query for Getting Trading partners in InitialPedigreeAction for $i in collection('tig:///CatalogManager/TradingPartner')/TradingPartner order by $i/name ascending return data($i/name) 
+2006-10-19 11:26:50,392 INFO  (?:?) - In processPreprocess method::Requested action::/ePharma
+2006-10-19 11:26:50,470 INFO  (?:?) - Query for Getting Trading partners in InitialPedigreeAction for $i in collection('tig:///CatalogManager/TradingPartner')/TradingPartner order by $i/name ascending return data($i/name) 
+2006-10-19 11:26:54,157 INFO  (?:?) - In sessionDestroyed method
+2006-10-19 11:26:54,157 INFO  (?:?) - Query:tlsp:deleteInvlidSessionID('12700120061012053953')
+2006-10-19 11:36:55,470 INFO  (?:?) - In sessionDestroyed method
+2006-10-19 11:36:55,470 INFO  (?:?) - Query:tlsp:deleteInvlidSessionID('12700120061019112622')
+2006-10-19 11:36:55,485 INFO  (?:?) - In valueUnbound method

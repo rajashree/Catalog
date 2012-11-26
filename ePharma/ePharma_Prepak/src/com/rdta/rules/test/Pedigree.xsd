@@ -1,0 +1,153 @@
+<!-- edited with XMLSPY v5 rel. 3 U (http://www.xmlspy.com) by Robert Smik (Raining Data) -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://www.w3.org/2000/09/xmldsig#" xmlns:rdta="http://www.rainingdata.com/Pedigree" targetNamespace="http://www.rainingdata.com/Pedigree" elementFormDefault="qualified">
+	<xs:import namespace="http://www.w3.org/2000/09/xmldsig#" schemaLocation="xmldsig-core-schema.xsd"/>
+	<xs:element name="Pedigree" type="rdta:PedigreeType">
+		<xs:annotation>
+			<xs:documentation>Root element of electronic pedigree document. Order attribute is used to mark order in which included pedigree instances were created.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:complexType name="ProductType">
+		<xs:sequence>
+			<xs:element name="EPC" type="xs:string" minOccurs="0"/>
+			<xs:element name="ParentEPC" type="xs:string" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Used for containment level reference: pallet, case or any other</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="BarCode" type="xs:string" minOccurs="0"/>
+			<xs:element name="NDC" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>6 digit code for NDC (fda)</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="LegendDrugName" type="xs:string"/>
+			<xs:element name="DosageForm" type="xs:string"/>
+			<xs:element name="DosageStrength" type="xs:string"/>
+			<xs:element name="ContainerSize" type="xs:string"/>
+			<xs:element name="LotNumber" type="xs:string"/>
+			<xs:element name="LotExpireDate" type="xs:dateTime"/>
+			<xs:element name="PackageUPC" type="xs:string" minOccurs="0"/>
+			<xs:element name="MarketingStatus" type="xs:string" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>indicates how a drug product is sold in the United States - Prescription </xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="Description" type="xs:string" minOccurs="0"/>
+			<xs:element name="Quantity">
+				<xs:complexType>
+					<xs:simpleContent>
+						<xs:extension base="xs:string">
+							<xs:attribute name="quantityUnitCode"/>
+						</xs:extension>
+					</xs:simpleContent>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="ManufacturerLicense" type="xs:string"/>
+			<xs:element name="CustodyLicenseNumber" type="xs:string"/>
+			<xs:element name="TagKillCode" type="xs:string" minOccurs="0"/>
+			<xs:element name="EnvironmentalConstraints" type="rdta:EnvironmentalConstraintsType" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Used for capturing envirnmental information. example: - temp, humidity, motion, light, etc.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element ref="Signature" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="ManufacturerType">
+		<xs:sequence>
+			<xs:element name="Name" type="xs:string"/>
+			<xs:element name="Address" type="xs:string"/>
+			<xs:element name="Contact" type="xs:string"/>
+			<xs:element name="ContactPhone" type="xs:string"/>
+			<xs:element name="ContactEmail" type="xs:string"/>
+			<xs:element name="LicenseNumber" type="xs:string"/>
+			<xs:element ref="Signature" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="CustodyType">
+		<xs:sequence>
+			<xs:element name="Name" type="xs:string"/>
+			<xs:element name="Address" type="xs:string"/>
+			<xs:element name="Contact" type="xs:string"/>
+			<xs:element name="TransactionDate" type="xs:dateTime"/>
+			<xs:element name="TransactionType" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>holds value like: invoice, order, po</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="TransactionNumber" type="xs:string"/>
+			<xs:element name="AuthenticatorName" type="xs:string"/>
+			<xs:element name="AuthenticatorEmail" type="xs:string"/>
+			<xs:element name="AuthenticatorPhone" type="xs:string"/>
+			<xs:element name="LicenseNumber" type="xs:string"/>
+			<xs:element name="InCustodyFromDate" type="xs:dateTime"/>
+			<xs:element name="InCustodyToDate" type="xs:dateTime"/>
+			<xs:element ref="Signature" minOccurs="0"/>
+		</xs:sequence>
+		<xs:attribute name="order" type="xs:int" use="required"/>
+		<xs:attribute name="type" type="xs:string" use="required"/>
+	</xs:complexType>
+	<xs:complexType name="PedigreeType">
+		<xs:sequence>
+			<xs:element name="DocumentId" type="xs:string"/>
+			<xs:element name="IssueDate" type="xs:dateTime"/>
+			<xs:element name="Products">
+				<xs:complexType>
+					<xs:sequence maxOccurs="unbounded">
+						<xs:element name="Product" type="rdta:ProductType"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="Manufacturer" type="rdta:ManufacturerType"/>
+			<xs:element name="Custody" type="rdta:CustodyType" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation>This can represent wholesaler, retailer, distributor, repackager, pharmacy, or any other party in the supply chain. Order attribute maintains the order of custody. Type attribute contains wholesaler, retailer, distributor, repackager, pharmacy, or any other party in the supply chain.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="PedigreeStatus">
+				<xs:annotation>
+					<xs:documentation>Holds N number of statuses</xs:documentation>
+				</xs:annotation>
+				<xs:complexType>
+					<xs:sequence maxOccurs="unbounded">
+						<xs:element name="Status">
+							<xs:complexType>
+								<xs:sequence>
+									<xs:element name="StatusChangedOn" type="xs:dateTime"/>
+									<xs:element name="Status" type="xs:string">
+										<xs:annotation>
+											<xs:documentation>holds value of status like: received, authenticated, certified, pending, etc...</xs:documentation>
+										</xs:annotation>
+									</xs:element>
+									<xs:element name="Comments" type="xs:string" minOccurs="0"/>
+								</xs:sequence>
+							</xs:complexType>
+						</xs:element>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element ref="Signature" minOccurs="0"/>
+		</xs:sequence>
+		<xs:attribute name="order" type="xs:int" use="required"/>
+	</xs:complexType>
+	<xs:complexType name="EnvironmentalConstraintsType">
+		<xs:sequence minOccurs="0" maxOccurs="unbounded">
+			<xs:element name="Constraint" type="rdta:ConstraintType" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="CustodyReferenceType">
+		<xs:sequence>
+			<xs:element name="CustodianName"/>
+			<xs:element name="CustodyOrderReference" minOccurs="0"/>
+			<xs:element name="CustodianLicenseNumber"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="ConstraintType">
+		<xs:sequence minOccurs="0">
+			<xs:element name="ConstraintType" minOccurs="0"/>
+			<xs:element name="UOM" minOccurs="0"/>
+			<xs:element name="ConstraintValue" minOccurs="0"/>
+			<xs:element name="ConstraintOperator" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>

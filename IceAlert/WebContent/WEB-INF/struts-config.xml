@@ -1,0 +1,596 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+
+<!DOCTYPE struts-config PUBLIC
+          "-//Apache Software Foundation//DTD Struts Configuration 1.2//EN"
+          "http://jakarta.apache.org/struts/dtds/struts-config_1_2.dtd">
+
+
+
+<struts-config>
+
+<!-- ================================================ Form Bean Definitions -->
+
+    <form-beans>
+    
+			<form-bean name="registerForm" type="com.snipl.ice.registration.RegisterForm"/>	
+					
+			<form-bean name="register_ConformForm" type="com.snipl.ice.registration.Register_ConformForm"/>
+			
+			<form-bean name="providersForm" type="com.snipl.ice.provider.ProvidersForm"/>	
+			
+			<form-bean name="loginForm" type="com.snipl.ice.security.LoginForm"/>
+			
+			<form-bean name="passwordManagerForm" type="com.snipl.ice.settings.PasswordManagerForm"/>
+			
+			<form-bean name="searchCommunityForm" type="com.snipl.ice.community.SearchCommunityForm"/>
+			
+			<form-bean name="addCommunityForm" type="com.snipl.ice.community.AddCommunityForm"/>
+			
+			<form-bean name="iceSaveForm" type="com.snipl.ice.icemem.IceSaveForm" /> 
+			
+			<form-bean name="photoForm" type="com.snipl.ice.settings.Upload_BuddyphotoForm"/>
+			
+			<form-bean name="IceAlterForm" type="com.snipl.ice.icemem.IceAlterForm" /> 	
+			
+			<form-bean name="forgotPasswordForm" type="com.snipl.ice.security.ForgotPasswordForm"/>
+			
+			<form-bean name="communityownedForm" type="com.snipl.ice.community.AllCommunitiesForm"/>
+			
+			<form-bean name="communitysubscribedForm" type="com.snipl.ice.community.AllCommunitiesForm"/>
+			
+			<form-bean name="inviteCommunityForm" type="com.snipl.ice.community.InviteCommunityForm"/>
+			
+ 			<form-bean name="dummyBeanForm" type="com.snipl.ice.icemem.DummyBeanForm"/>
+ 			
+ 			<form-bean name="commDummyBeanForm" type="com.snipl.ice.community.DummyBeanForm"/>
+    	
+    		<form-bean name="alterbeanForm" type="com.snipl.ice.alert.AlertBeanForm"/>
+    		
+    		<form-bean name="contactInfoForm" type="com.snipl.ice.settings.ContactInfoForm"/>
+    		
+    		<form-bean name="sendCommunityAlertForm" type="com.snipl.ice.community.SendCommunityAlertForm"/>
+    	
+    		<form-bean name="invitebeanForm" type="com.snipl.ice.alert.InviteBeanForm"/>
+    		
+    		<form-bean name="alertnavigateForm" type="com.snipl.ice.alert.AlterNavigationForm"/>
+    		
+    		<form-bean name="feedbackForm" type="com.snipl.ice.feedback.FeedbackForm"/>
+    		
+    		<form-bean name="reportBugForm" type="com.snipl.ice.report.ReportBugForm"/>
+    		
+    		<form-bean name="medicalInfoForm" type="com.snipl.ice.settings.MedicalInfoForm"/>
+    		
+    		<form-bean name="fetchContactsForm" type="com.snipl.ice.community.FetchContactsForm"/>
+    		
+    		<form-bean name="selectedContactsForm" type="com.snipl.ice.community.SelectedContactsForm"/>
+    		
+    		<form-bean name="backToInviteForm" type="com.snipl.ice.community.BackToInviteForm"/>
+    	
+    		<form-bean name="feedbackbeanForm" type="com.snipl.ice.admin.FeedbackBeanForm"/>
+    		
+    		<form-bean name="bugbeanForm" type="com.snipl.ice.admin.BugBeanForm"/>
+    		
+    </form-beans>
+
+
+<!-- ========================================= Global Exception Definitions -->
+
+    <global-exceptions>
+        <!-- sample exception handler
+        <exception
+            key="expired.password"
+            type="app.ExpiredPasswordException"
+            path="/changePassword.jsp"/>
+        end sample -->
+    </global-exceptions>
+
+
+<!-- =========================================== Global Forward Definitions -->
+
+    <global-forwards>
+        <!-- Default forward to "Welcome" action -->
+        <!-- Demonstrates using index.jsp to forward -->
+        <forward name="sessionExpaired" path="/pages/index.jsp?sessionExpaired=true"/>
+        <forward name="sessionExpaired_Frame" path="/pages/SessionExpire.jsp?sessionExpaired=true"/>
+
+    </global-forwards>
+
+
+<!-- =========================================== Action Mapping Definitions -->
+
+    <action-mappings>
+    
+    
+    		<!-- Comments -->
+	    	<action path="/backToInviteAction" type="com.snipl.ice.community.BackToInviteAction" name="backToInviteForm">
+		    	<forward name="success" path="/InviteCommunity.ice"/>
+		  	</action>
+		  	
+    		<!-- Comments -->
+	    	<action path="/selectedContactsAction" type="com.snipl.ice.community.SelectedContactsAction" name="selectedContactsForm">
+		    	<forward name="success" path="/InviteCommunity.ice"/>
+		    	<forward name="friend" path="/Home_Frame.ice"/>
+		  	</action>
+		  	
+    		<!-- Comments -->
+	    	<action path="/fetchContactsAction" type="com.snipl.ice.community.FetchContactsAction" name="fetchContactsForm">
+		    	<forward name="success" path="/pages/community/ContactsList.jsp"/>
+		    	<forward name="failure" path="/pages/community/ProviderSelect.jsp"/>
+		  	</action>
+		  	
+    		<!-- Comments -->
+	    	<action path="/SaveFeedback" type="com.snipl.ice.feedback.SaveFeedbackAction" name="feedbackForm">
+		    	<forward name="home" path="/Home.ice"/>
+	    		<forward name="ice" path="/ListIce.ice" />
+	    		<forward name="alert" path="/ViewReceivedAlertsDB.ice" /> 
+	    		<forward name="community" path="/Community.ice" /> 
+	    		<forward name="settings" path="/Settings.ice" />
+	    		<forward name="help" path="/ICEHelp.ice" /> 
+	    		<forward name="admin" path="/SendAlert.ice" />  
+		  	</action>
+		  	
+		  	<!-- Comments -->
+	    	<action path="/ICECard" type="com.snipl.ice.card.ICEPdfCardAction">
+		    	<forward name="success" path="/ICECardPreview.ice"/>
+				<forward name="failure" path="/Home.ice" /> 
+		  	</action>
+		  	
+		  	
+		  	<!-- Comments -->
+	    	<action path="/SaveBug" type="com.snipl.ice.report.SaveBugAction" name="reportBugForm">
+	    		<forward name="home" path="/Home.ice"/>
+	    		<forward name="ice" path="/ListIce.ice" />
+	    		<forward name="alert" path="/ViewReceivedAlertsDB.ice" /> 
+	    		<forward name="community" path="/Community.ice" /> 
+	    		<forward name="settings" path="/Settings.ice" />
+	    		<forward name="help" path="/ICEHelp.ice" /> 
+	    		<forward name="admin" path="/SendAlert.ice" />  
+		  	</action>
+		  	
+    		<action path="/Communityjoin" type="com.snipl.ice.community.CommunityJoinAction" >
+    			<forward name="success" path="/Community.ice?community_flag=view"/>
+	    		<forward name="failure" path="/pages/alert/Alerts.jsp"/>
+    		</action>
+    
+    		<action path="/CheckForm" type="com.snipl.ice.community.CommunitySubscribed" name="dummyBeanForm"/>
+    	<!-- Comments -->
+    		<action path="/CommunityView_Subscribed" type="com.snipl.ice.community.CommunitySubscribedAction" name="communitysubscribedForm">
+	    		<forward name="success" path="/pages/community/AllCommunities.jsp"/>
+	    		<forward name="failure" path="/pages/community/ListCommunity_Frame.jsp"/>
+    		</action>
+    	<!-- Comments -->
+    	
+    	<action path="/ContactInfo" type="com.snipl.ice.settings.ContactInfoAction" name="contactInfoForm">
+    		<forward name="success" path="/Personal.ice?personal=true"/>
+    		<forward name="failure" path="/Personal.ice"/>		
+    	</action>
+    	
+    		<action path="/CommunityView_Owned" type="com.snipl.ice.community.CommunityOwnedAction" name="communityownedForm">
+	    		<forward name="success" path="/pages/community/AllCommunities.jsp"/>
+	    		<forward name="failure" path="/pages/community/ListCommunity_Frame.jsp"/>
+    		</action>
+    
+    	 <!-- Comments -->
+    		<action path="/ListCommunity_Frame" type="com.snipl.ice.community.CommunityListAction">
+	    		<forward name="success" path="/pages/community/ListCommunity_Frame.jsp"/>
+	    		<forward name="failure" path="/Home.ice" /> 
+    		</action>
+    		
+    		<action path="/Community" forward="/pages/community/ListCommunity.jsp" />
+    
+    	 <!-- Comments -->
+	    	<action path="/ViewCommunity" type="com.snipl.ice.community.CommunityViewAction">
+		    	<forward name="view" path="/pages/community/ViewCommunity.jsp"/>
+		    	<forward name="alert" path="/CommunityAlert.ice"/>
+				<forward name="failure" path="/Home.ice" /> 
+		  	</action>
+		  	
+		  	
+		  <!-- Comments --> 	
+		  	<action path="/CommunityAlert" type="com.snipl.ice.community.CommunityAlertAction">
+		    	<forward name="success" path="/pages/community/CommunityAlert.jsp"/>
+				<forward name="failure" path="/pages/community/ViewCommunity.jsp" /> 
+		  	</action>
+    
+     	<!-- Comments -->	
+		  	<action path="/SendCommunityAlert" type="com.snipl.ice.community.SendCommunityAlertAction" name="sendCommunityAlertForm">
+		    	<forward name="failure" path="/pages/community/CommunityAlert.jsp"/>
+				<forward name="success" path="/Home.ice" /> 
+		  	</action> 
+		  	
+    	<!-- Comments -->
+    		<action path="/CommunityPhoto" type="com.snipl.ice.community.CommunityphotoAction" />
+    
+    	<!-- Comments -->
+    		<action path="/PersonalICEAlertAction" type="com.snipl.ice.alert.PersonalICEAlertAction">
+				<forward name="success" path="/ListIce_Frame.ice"/>
+			</action>
+    	
+    	<!-- Comments -->
+    	<action path="/ForgotPasswordDB" type="com.snipl.ice.security.ForgotPasswordAction" name="forgotPasswordForm">
+			<forward name="success" path="/pages/index.jsp"/>
+			<forward name="failure" path="/pages/index.jsp"/>
+		</action>
+		
+    	<!-- Comments -->
+			<action path="/IceAlter" type="com.snipl.ice.icemem.IceAlterAction" name="IceAlterForm" parameter="method">
+				<forward name="Delete" path="/pages/icemem/ListIce_Frame.jsp" /> 
+				<forward name="Edit" path="/pages/icemem/AddICEMembers_Frame.jsp" />  
+				<forward name="failure" path="/pages/icemem/ListIce_Frame.jsp" /> 
+		  	</action>
+	  	
+	  	<!-- Comments -->
+	  		<action path="/ListIce" forward="/pages/icemem/ListIce.jsp" />
+	  		
+	  		
+	  		
+			<action path="/ListIce_Frame" type="com.snipl.ice.icemem.ListIceAction">
+				<forward name="success" path="/pages/icemem/ListIce_Frame.jsp" /> 
+			</action>
+			
+    	<!-- Comments -->
+	    	<action path="/delete" type="com.snipl.ice.settings.Delete_BuddyphotoAction">
+	    		<forward name="success" path="/Personal.ice?image=true"/>
+			</action>
+		
+		<!-- Comments -->
+	    	<action path="/updatephoto" type="com.snipl.ice.settings.Upload_BuddyphotoAction" name="photoForm">
+	    		<forward name="success" path="/Personal.ice?image=true"/>
+			</action>
+    
+    	<!-- Comments -->
+	    	<action path="/IceSave" type="com.snipl.ice.icemem.IceSaveAction" name="iceSaveForm" parameter="method">
+				<forward name="success" path="/pages/icemem/ListIce_Frame.jsp" />
+				<forward name="failure" path="/pages/icemem/AddICEMembers_Frame.jsp" /> 
+			</action>
+		
+		<!-- Comments -->
+    		<action path="/photo" type="com.snipl.ice.settings.BuddyphotoAction" />
+    		
+   		<!-- Comments -->
+	    	<action path="/Registration" type="com.snipl.ice.registration.RegistrationAction" name="registerForm" scope="request">
+				<forward name="success" path="/pages/registration/Request.jsp"/>
+				<forward name="failure" path="/pages/registration/Registration_Frame.jsp"/>		
+			</action>
+		
+		<!-- Comments -->		
+			<action path="/SearchCommunityDB" type="com.snipl.ice.community.SearchCommunityAction" name="communityownedForm">
+				<forward name="success" path="/pages/community/AllCommunities.jsp"/>
+			</action>
+
+		<!-- Comments -->
+			<action path="/PasswordManager" type="com.snipl.ice.settings.PasswordManagerAction" name="passwordManagerForm">
+				<forward name="success" path="/Personal.ice?pass=true"/>
+				<forward name="failure" path="/Personal.ice"/>
+			</action>
+		
+		<!-- Comments -->
+			<action path="/Getproviders" type="com.snipl.ice.provider.ProvidersAction" name="providersForm"/>
+		
+		<!-- Comments -->
+			<action path="/Register_Conform" type="com.snipl.ice.registration.Register_ConformAction" name="register_ConformForm">
+				<forward name="success" path="/pages/registration/Reg_ActiveSuccess.jsp"/>
+				<forward name="failure" path="/pages/registration/Request.jsp"/>		
+			</action>
+			
+			<action path="/EmailICECard" type="com.snipl.ice.card.EmailICECardAction">
+				<forward name="done" path="/Home.ice"/>
+			</action>
+			
+			
+			<action path="/ActivateAccount" type="com.snipl.ice.registration.ActivateAccountAction">
+				<forward name="Activated" path="/pages/registration/ActiveSuccess.jsp"/>
+			</action>
+			
+		<!-- Comments -->
+			<action path="/InviteForCommunity" type="com.snipl.ice.community.InviteCommunityAction" name="inviteCommunityForm">
+				<forward name="success" path="/ListCommunity_Frame.ice"/>
+				<forward name="failure" path="/pages/community/InviteCommunity.jsp"/>		
+			</action>
+		
+		<!-- Comments -->
+			<action path="/Register" forward="/pages/registration/Registration.jsp"/>
+			
+			<action path="/Register_Request" forward="/pages/registration/Request.jsp"/>
+			
+		<!-- Comments -->
+			<action path="/Session" forward="/pages/Session.jsp"/>
+			
+			<action path="/ICEHelp" forward="/pages/ICEHelp.jsp"/>
+			
+			
+			<action path="/ICECardPreview" forward="/pages/card/PdfCardView.jsp"/>
+			
+		<!-- Comments -->
+			<action path="/About" forward="/pages/About.jsp"/>
+			
+			<action path="/Feedback" forward="/pages/feedback/Feedback.jsp"/>
+			<action path="/ReportBug" forward="/pages/report/ReportBug.jsp"/>
+			
+		<!-- Comments -->
+			<action path="/Blog" forward="/pages/blog/Index.jsp"/>
+
+<!-- Blog -->
+			<action path="/Blog_Frame" type="com.snipl.ice.blog.ListBlogAction">
+				<forward name="success" path="/pages/blog/Blog_Frame.jsp" /> 
+			</action>
+			
+			<action path="/PostComment" type="com.snipl.ice.blog.PostComment">
+				<forward name="success" path="/pages/blog/Blog_PostComment.jsp" /> 
+				<forward name="failure" path="/pages/blog/Blog_Login.jsp" />
+			</action>
+								
+			<action path="/BlogLogin" type="com.snipl.ice.blog.BlogLoginAction">
+				<forward name="success" path="/pages/blog/Blog_PostComment.jsp" /> 
+				<forward name="failure" path="/pages/blog/Blog_Login.jsp" /> 
+			</action>
+			
+			<action path="/BlogLogout" type="com.snipl.ice.blog.BlogLogoutAction">
+				<forward name="success" path="/pages/blog/Blog_Frame.jsp" /> 
+			</action>
+			
+					
+			<action path="/SaveBlogComment" type="com.snipl.ice.blog.SaveBlogCommentAction">
+				<forward name="failure" path="/pages/blog/Blog_PostComment.jsp" /> 
+				<forward name="success" path="/pages/blog/Blog_Frame.jsp" /> 
+			</action>
+			
+<!-- Blog -->		
+			
+		<!-- Comments -->
+			<action path="/Help" forward="/pages/Help.jsp"/>
+		
+		<!-- Comments -->
+			<action path="/InviteCommunity" type="com.snipl.ice.community.CommunityListForInvitationAction" name="commDummyBeanForm">
+				<forward name="success" path="/pages/community/InviteCommunity.jsp"/>
+				<forward name="failure" path="/pages/community/ListCommunity.jsp"/>		
+			</action>
+			
+		<!-- Comments -->
+			<action path="/SearchCommunity" forward="/pages/community/SearchCommunity.jsp"/>
+		
+		<!-- Comments -->
+			<action path="/AddCommunity" forward="/pages/community/AddCommunity.jsp"/>
+		
+		<!-- Comments -->
+			<action path="/Settings" forward="/pages/settings/Settings.jsp"/>
+		
+		<!-- Comments -->
+			<action path="/SendAlert" forward="/pages/admin/SendAlert.jsp"/>
+			
+			<action path="/SendAlert_Frame" forward="/pages/admin/SendAlert_Frame.jsp"/>
+			
+		<!-- Comments -->	
+			<action path="/Home" forward="/pages/Home.jsp"/>				
+			
+			<action path="/Home_Frame" type="com.snipl.ice.HomeAction">
+				<forward name="success" path="/pages/Home_Frame.jsp"/>
+				<forward name="failure" path="/pages/index.jsp"/>	
+			</action>
+			
+		<!-- Comments -->
+			<action path="/Index" forward="/pages/index.jsp"/>
+		
+		<!-- Comments 
+			<action path="/AddICEMembers" forward="/pages/icemem/AddICEMembers.jsp"/>-->
+			<action path="/AddICEMembers_Frame" forward="/pages/icemem/AddICEMembers_Frame.jsp"/>
+    	
+    	<!-- Chethan-->
+    	<action path="/Alert" forward="/pages/alert/Alerts.jsp"/>
+    	<action path="/ViewAlert" forward="/pages/alert/ViewAlertinfo.jsp"/>
+    	<!-- Chethan-->		
+				
+		<!-- Comments -->
+			<action path="/Logout" type="com.snipl.ice.security.LogoutAction">
+				<forward name="success" path="/pages/index.jsp"/>
+			</action>
+		
+		<!-- Comments -->
+		<!--<action path="/ViewCommunity" type="com.snipl.ice.community.ViewCommunityAction">
+				<forward name="success" path="/pages/community/ViewCommunity.jsp"/>
+			</action>-->
+		
+		<!-- Comments -->
+			<action path="/JoinCommunity" type="com.snipl.ice.community.JoinCommunityAction">
+				<forward name="success" path="/CommunityView_Subscribed.ice"/>
+				<forward name="failure" path="/Home.ice"/>
+			</action>
+		
+		<!-- Comments -->
+			<action path="/LoginManager" type="com.snipl.ice.security.LoginManagerAction" name="loginForm" scope="request">
+				<forward name="success" path="/Home.ice"/>
+				<forward name="conform_reg" path="/pages/registration/Registration_Request.jsp"/>
+				<forward name="failure" path="/pages/index.jsp"/>		
+			</action>
+		
+		<!-- Comments -->
+			<action path="/AddCommunityDB" type="com.snipl.ice.community.AddCommunityAction" name="addCommunityForm">
+				<forward name="success" path="/pages/community/InviteCommunity.jsp"/>
+				<forward name="failure" path="/pages/community/AddCommunity.jsp"/>		
+			</action>
+		
+		<!-- Comments -->
+			<action path="/SearchAlertDB" type="com.snipl.ice.admin.SearchAlertAction">
+				<forward name="success" path="/pages/admin/SendAlert_Frame.jsp"/>
+				<forward name="failure" path="/pages/admin/SendAlert_Frame.jsp"/>		
+			</action>
+		
+		<!-- Comments -->
+			<action path="/SendAdminAlert" type="com.snipl.ice.admin.SendAdminAlertAction">
+				<forward name="success" path="/SendAlert_Frame.ice"/>
+				<forward name="failure" path="/SendAlert_Frame.ice"/>
+			</action>
+    	
+    	<!-- Chethan -->
+    	
+    		<action path="/UploadSettings" forward="/pages/settings/Settings.jsp?image=true"/>
+    	
+    		<action path="/Personal" forward="/pages/settings/Settings_Frame.jsp"/>	 
+    		
+   			<action path="/AlertList" forward="/pages/alert/Alerts_Frame.jsp"/>
+   			
+    		<action path="/Captcha" type="com.snipl.ice.settings.CaptchaAction" />
+    		
+    		<action path="/ViewAlert" forward="/pages/alert/Viewalertinfo_Frame.jsp"/>
+    		
+    		<action path="/ViewReceivedAlertsDB" forward="/pages/alert/Alerts.jsp" />
+    		    		
+    		<action path="/Reg" forward="/pages/registration/Registration_Frame.jsp" />
+    		
+    		<action path="/SelectProvider" forward="/pages/community/ProviderSelect.jsp" />	
+    		
+
+	    	<action path="/ViewReceivedAlertsDB_Frame" type="com.snipl.ice.alert.ReceivedAlertsAction" name="alertnavigateForm"><!--  name="alertnavigateForm">name="alterbeanForm">-->
+	    		<forward name="success" path="/pages/alert/Alerts_Frame.jsp"/>
+	    		<forward name="failure" path="/pages/alert/Error.jsp"/>
+	    	</action>
+	    	
+	    	<action path="/ViewSentAlertDB" type="com.snipl.ice.alert.SentAlertsAction" name="alertnavigateForm">
+	    		<forward name="success" path="/pages/alert/Alerts_Frame.jsp"/>
+	    		<forward name="failure" path="/pages/alert/Error.jsp"/>
+	    	</action>
+	    	
+	    	<action path="/ViewReceivedInviteDB" type="com.snipl.ice.alert.ReceivedInvitesAction" name="alertnavigateForm">
+	    		<forward name="success" path="/pages/alert/Alerts_Frame.jsp"/>
+	    		<forward name="failure" path="/pages/alert/Error.jsp"/>
+	    	</action>
+	    	
+	    	<action path="/ViewRalertDB" type="com.snipl.ice.alert.ViewRalertAction" name="alterbeanForm">
+	    		<forward name="success" path="/pages/alert/Viewalertinfo_Frame.jsp"/>
+	    		<forward name="failure" path="/pages/alert/Error.jsp"/>
+	    	</action>
+	    	
+	    	<action path="/ViewSalertDB" type="com.snipl.ice.alert.ViewSalertAction" name="alterbeanForm">
+	    		<forward name="success" path="/pages/alert/Viewalertinfo_Frame.jsp"/>
+	    		<forward name="failure" path="/pages/alert/Error.jsp"/>
+	    	</action>
+	    	
+	    	<action path="/ViewRinviteDB" type="com.snipl.ice.alert.ViewRinviteAction" name="invitebeanForm">
+	    		<forward name="success" path="/pages/alert/Viewalertinfo_Frame.jsp"/>
+	    		<forward name="failure" path="/pages/alert/Error.jsp"/>
+	    	</action>
+	    	
+	    	<action path="/DeleteRalertDB" type="com.snipl.ice.alert.DeleteRalertAction">
+	    		<forward name="received" path="/ViewReceivedAlertsDB_Frame.ice"/>
+	    		<forward name="sented" path="/ViewSentAlertDB.ice"/>
+	    	</action>
+	    	
+	    	<action path="/DeleteAlertinfo" type="com.snipl.ice.alert.DeleteAlertInfoAction">
+	    		<forward name="ralert" path="/ViewReceivedAlertsDB_Frame.ice"/>
+	    		<forward name="salert" path="/ViewSentAlertDB.ice"/>
+	    	</action>
+    		
+    		<action path="/MedicalInfo" type="com.snipl.ice.settings.MedicalInfoAction" name="medicalInfoForm">
+    			<forward name="success" path="/Personal.ice?medical=true"/>
+    			<forward name="failure" path="/Personal.ice"/>		
+    		</action>
+    	
+    		<action path="/FriendSearch" type="com.snipl.ice.community.SearchFriendsAction">
+    			<forward name="success" path="/pages/community/FriendsList.jsp"/>
+    			<forward name="failure" path="/pages/community/InviteCommunity.jsp"/>
+    		</action>
+    	
+    		<action path="/FriendInvite" type="com.snipl.ice.InviteFriendsAction">
+    			<forward name="success" path="/Home_Frame.ice"/>
+    			<forward name="failure" path="/Home_Frame.ice"/>
+    		</action>
+    	
+    		
+    		<action path="/FeedbacksDB" type="com.snipl.ice.admin.FeedbackListAction">
+    			<forward name="success" path="/SendAlert_Frame.ice"/>
+    			<forward name="failure" path="/SendAlert_Frame.ice"/>
+    		</action>
+    		
+    		<action path="/BugsDB" type="com.snipl.ice.admin.BugListAction">
+    			<forward name="success" path="/SendAlert_Frame.ice"/>
+    			<forward name="failure" path="/SendAlert_Frame.ice"/>
+    		</action>
+    	
+    		<action path="/DeleteCommentDB" type="com.snipl.ice.admin.DeleteCommentAction">
+    			<forward name="feedback" path="/FeedbacksDB.ice"/>
+    			<forward name="bug" path="/BugsDB.ice"/>
+    		</action>
+    	
+    		<action path="/ViewFeedbackDB" type="com.snipl.ice.admin.ViewFeedbackAction" name="feedbackbeanForm">
+    			<forward name="success" path="/pages/admin/ViewCommentinfo_Frame.jsp"/>
+    			<forward name="failure" path="/pages/admin/ViewCommentinfo_Frame.jsp"/>
+    		</action>
+    	
+    		<action path="/ViewBugDB" type="com.snipl.ice.admin.ViewBugAction" name="bugbeanForm">
+    			<forward name="success" path="/pages/admin/ViewCommentinfo_Frame.jsp"/>
+    			<forward name="failure" path="/pages/admin/ViewCommentinfo_Frame.jsp"/>
+    		</action>
+    	
+    		<action path="/DeleteCommentinfo" type="com.snipl.ice.admin.DeleteCommentinfoAction">
+    			<forward name="feedback" path="/FeedbacksDB.ice"/>
+    			<forward name="bug" path="/BugsDB.ice"/>
+    		</action>
+    	
+    	<action path="/BugFixed" type="com.snipl.ice.admin.BugFixedAction">
+    		<forward name="success" path="/BugsDB.ice"/>
+    		<forward name="failure" path="/BugsDB.ice"/>
+    	</action>
+    		
+    	<!-- Chethan -->
+		
+    </action-mappings>
+<!-- ============================================= Controller Configuration -->
+
+    <controller
+       processorClass="org.apache.struts.tiles.TilesRequestProcessor"/>
+
+
+<!-- ======================================== Message Resources Definitions -->
+
+    <message-resources parameter="MessageResources" />
+
+
+<!-- =============================================== Plug Ins Configuration -->
+
+  <!-- ======================================================= Tiles plugin -->
+  <!--
+     This plugin initialize Tiles definition factory. This later can takes some
+	 parameters explained here after. The plugin first read parameters from
+	 web.xml, thenoverload them with parameters defined here. All parameters
+	 are optional.
+     The plugin should be declared in each struts-config file.
+       - definitions-config: (optional)
+            Specify configuration file names. There can be several comma
+		    separated file names (default: ?? )
+       - moduleAware: (optional - struts1.1)
+            Specify if the Tiles definition factory is module aware. If true
+            (default), there will be one factory for each Struts module.
+			If false, there will be one common factory for all module. In this
+            later case, it is still needed to declare one plugin per module.
+            The factory will be initialized with parameters found in the first
+            initialized plugin (generally the one associated with the default
+            module).
+			  true : One factory per module. (default)
+			  false : one single shared factory for all modules
+	   - definitions-parser-validate: (optional)
+	        Specify if xml parser should validate the Tiles configuration file.
+			  true : validate. DTD should be specified in file header (default)
+			  false : no validation
+
+	  Paths found in Tiles definitions are relative to the main context.
+  -->
+
+    <plug-in className="org.apache.struts.tiles.TilesPlugin" >
+
+      <!-- Path to XML definition file -->
+      <set-property property="definitions-config"
+                       value="/WEB-INF/tiles-defs.xml" />
+      <!-- Set Module-awareness to true -->
+      <set-property property="moduleAware" value="true" />
+    </plug-in>
+
+
+  <!-- =================================================== Validator plugin -->
+
+  <plug-in className="org.apache.struts.validator.ValidatorPlugIn">
+    <set-property
+        property="pathnames"
+        value="/WEB-INF/validator-rules.xml,/WEB-INF/validation.xml"/>
+  </plug-in>
+
+</struts-config>

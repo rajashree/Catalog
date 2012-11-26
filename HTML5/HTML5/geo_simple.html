@@ -1,0 +1,15 @@
+<script>
+function success(position) {
+	alert(":::"+position.coords.latitude);
+	alert(":::"+position.coords.longitude);
+}
+function error(msg) {
+	alert(msg);
+}
+if (navigator.geolocation) {
+  navigator.geolocation.getCurrentPosition(success, error);
+} else {
+  error('not supported');
+}
+</script>
+

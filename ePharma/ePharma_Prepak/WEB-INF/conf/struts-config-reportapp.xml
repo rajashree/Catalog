@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+
+<!DOCTYPE struts-config PUBLIC
+ "-//Apache Software Foundation//DTD Struts Configuration 1.0//EN"
+ "http://jakarta.apache.org/struts/dtds/struts-config_1_1.dtd">
+<struts-config>
+
+
+
+	  <form-beans>
+		<form-bean  name="ReportCubeForm" 	type="com.rdta.epharma.reports.form.ReportCubesForm"/>   
+		<form-bean  name="ReportForm" 	type="com.rdta.epharma.reports.form.ReportForm"/>   
+	    <form-bean  name="OutPutFieldForm" 	type="com.rdta.epharma.reports.form.OutPutFieldForm"/>   
+	 	<form-bean  name="ShowOutPutFields" 	
+	 				type="com.rdta.epharma.reports.form.ShowOutPutFieldForm"/>
+	 				
+	 				
+	 	 
+	
+	 <form-bean
+            name="ReportCubeForm"
+            type="org.apache.struts.action.DynaActionForm">
+            <form-property
+                name="cubeName"
+                type="java.lang.String"/>
+        </form-bean>
+	  </form-beans>
+
+ 
+  <!-- ========== Action Mapping Definitions ============ -->
+  <action-mappings>
+  	
+
+	
+
+		<!-- ==========  REPORT ACTIONS  ========== -->
+	 <action   path="/manu/reports/AdvancedReports"   type="com.rdta.epharma.reports.action.ShowReportCubesAction" scope="request">
+	 	<forward name="success" path="/manu/reports/ReportCubes.jsp"/>
+     	 </action> 
+         <action  path="/manu/reports/ShowAdvancedReports"   forward="/manu/reports/ReportCubes.jsp">
+         </action> 
+	 <action  path="/manu/reports/DisplayReportOutputFields"   type="com.rdta.epharma.reports.action.SelectReportOutputFieldsAction" scope="request">
+	 	<forward name="success" path="/manu/reports/ReportOutputField.jsp"/>
+     	 </action> 
+	 <action  path="/manu/reports/DisplayReportFilters" 
+	 		  name="OutPutFieldForm"  
+	 		  type="com.rdta.epharma.reports.action.ShowReportFilterAction" scope="request">
+	 	<forward name="success" path="/manu/reports/ReportFilters.jsp"/>
+     	 </action> 
+         
+	 <action  path="/manu/reports/SubmitReportFilters"  
+	 			name="ShowOutPutFields"
+	 		 type="com.rdta.epharma.reports.action.SubmitReportFilters" scope="request">
+	 	<forward name="success" path="/manu/reports/ReportsResult.jsp"/>
+     	 </action> 
+         <action  path="/manu/reports/ShowReports"   forward="/manu/reports/Reports.jsp">
+         </action> 
+        <action  path="/manu/reports/ReportsSchedule"   forward="/manu/reports/ReportsSchedule.jsp">
+         </action> 
+        <action  path="/manu/reports/ReportsScheduleResult"   forward="/manu/reports/ReportsScheduleResult.jsp">
+         </action> 
+
+	 	
+
+ </action-mappings> 
+
+	
+</struts-config>

@@ -1,0 +1,29 @@
+<?xml version="1.0"?><!-- This file is used by CodeCharge for locking edited files. It may be removed when file locking is not desired. --><Files><File name="adminbooks.jsp" time="25.06.2001 19:45:57" page="AdminBooks"/>
+<File name="adminmenu.jsp" time="25.06.2001 19:45:57" page="AdminMenu"/>
+<File name="advsearch.jsp" time="25.06.2001 19:45:57" page="AdvSearch"/>
+<File name="bookdetail.jsp" time="25.06.2001 19:45:57" page="BookDetail"/>
+<File name="bookmaint.jsp" time="25.06.2001 19:45:57" page="BookMaint"/>
+<File name="books.jsp" time="25.06.2001 19:45:57" page="Books"/>
+<File name="cardtypesgrid.jsp" time="25.06.2001 19:45:57" page="CardTypesGrid"/>
+<File name="cardtypesrecord.jsp" time="25.06.2001 19:45:57" page="CardTypesRecord"/>
+<File name="categoriesgrid.jsp" time="25.06.2001 19:45:57" page="CategoriesGrid"/>
+<File name="categoriesrecord.jsp" time="25.06.2001 19:45:57" page="CategoriesRecord"/>
+<File name="common.jsp" time="25.06.2001 19:45:57" page=""/>
+<File name="default.jsp" time="25.06.2001 19:45:57" page="Default"/>
+<File name="editorialcatgrid.jsp" time="25.06.2001 19:45:57" page="EditorialCatGrid"/>
+<File name="editorialcatrecord.jsp" time="25.06.2001 19:45:57" page="EditorialCatRecord"/>
+<File name="editorialsgrid.jsp" time="25.06.2001 19:45:57" page="EditorialsGrid"/>
+<File name="editorialsrecord.jsp" time="25.06.2001 19:45:57" page="EditorialsRecord"/>
+<File name="footer.jsp" time="25.06.2001 19:45:57" page="Footer"/>
+<File name="header.jsp" time="25.06.2001 19:45:57" page="Header"/>
+<File name="login.jsp" time="25.06.2001 19:45:57" page="Login"/>
+<File name="membersgrid.jsp" time="25.06.2001 19:45:57" page="MembersGrid"/>
+<File name="membersinfo.jsp" time="25.06.2001 19:45:57" page="MembersInfo"/>
+<File name="membersrecord.jsp" time="25.06.2001 19:45:57" page="MembersRecord"/>
+<File name="myinfo.jsp" time="25.06.2001 19:45:57" page="MyInfo"/>
+<File name="ordersgrid.jsp" time="25.06.2001 19:45:57" page="OrdersGrid"/>
+<File name="ordersrecord.jsp" time="25.06.2001 19:45:57" page="OrdersRecord"/>
+<File name="registration.jsp" time="25.06.2001 19:45:57" page="Registration"/>
+<File name="shoppingcart.jsp" time="25.06.2001 19:45:57" page="ShoppingCart"/>
+<File name="shoppingcartrecord.jsp" time="25.06.2001 19:45:57" page="ShoppingCartRecord"/>
+</Files>

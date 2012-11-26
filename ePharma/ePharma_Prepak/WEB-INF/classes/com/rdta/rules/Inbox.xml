@@ -1,0 +1,9 @@
+<Inbox>
+<User>John Doe</User>
+<TransactionType>purchaseorder</TransactionType>
+<TransactionNumber>PO45677</TransactionNumber>
+<Message>Pedigree Needs to be Certify</Message>
+<Severity>High</Severity>
+<Status>Generated</Status>
+<CreatedOn>10</CreatedOn>
+</Inbox>

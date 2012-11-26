@@ -1,0 +1,91 @@
+<PaperPedigree>
+	<DocumentId>I12345</DocumentId>
+	<initialPedigree>
+								<productInfo>
+									<drugName>Vicks</drugName>
+									<manufacturer>Pfizer</manufacturer>
+									<productCode type="NDC">NDC 67158-157-23</productCode>
+									<dosageForm>Tablet</dosageForm>
+									<strength>40mg</strength>
+									<containerSize>Cases</containerSize>
+								</productInfo>
+								<itemInfo>
+									<lot>L001</lot>
+									<expirationDate>2009-06-01T09:30:47</expirationDate>
+									<quantity>100</quantity>
+									<itemSerialNumber>1222 3578 6654 1245</itemSerialNumber>
+								</itemInfo>
+								<transactionInfo>
+									<senderInfo>
+										<businessAddress>
+											<businessName>Pfizer</businessName>
+											<street1>Spring St.</street1>
+											<street2>Oak Avenue</street2>
+											<city>Orlando</city>
+											<stateOrRegion>FL</stateOrRegion>
+											<postalCode>60123</postalCode>
+											<country>USA</country>
+										</businessAddress>
+										<shippingAddress>
+											<businessName>Pfizer Shipping Division</businessName>
+											<street1>Spring St.</street1>
+											<street2>Oak Avenue</street2>
+											<city>Orlando</city>
+											<stateOrRegion>FL</stateOrRegion>
+											<postalCode>60123</postalCode>
+											<country>USA</country>
+										</shippingAddress>
+										<licenseNumber state="FL" agency="Florida DOH">CV234156</licenseNumber>
+										<contactInfo>
+											<name>Johny Herbert</name>
+											<title>Shipping Manager</title>
+											<telephone>(222) 342-4563</telephone>
+											<email>herbert@pfizershipping.com</email>
+											<url>http://www.pfizershipping.com</url>
+										</contactInfo>
+									</senderInfo>
+									<recipientInfo>
+										<businessAddress>
+											<businessName>Cardinal Health</businessName>
+											<street1>Lakeshore Dr</street1>
+											<street2>                                            </street2>
+											<city>LakeLand</city>
+											<stateOrRegion>FL</stateOrRegion>
+											<postalCode>60022</postalCode>
+											<country>USA</country>
+										</businessAddress>
+										<shippingAddress>
+											<businessName>Lakeland Distribution Center</businessName>
+											<street1>Lakeshore Dr</street1>
+											<street2>                                            </street2>
+											<city>LakeLand</city>
+											<stateOrRegion>FL</stateOrRegion>
+											<postalCode>60022</postalCode>
+											<country>USA</country>
+										</shippingAddress>
+										<licenseNumber state="FL" agency="Florida DOH">CL00886543</licenseNumber>
+										<contactInfo>
+											<name>Kimi Raikkonen</name>
+											<title>Receiving Manager</title>
+											<telephone>(212) 234-2345</telephone>
+											<email>kimi@cardinalhealth.com</email>
+											<url>http://cardinalhealth.com</url>
+										</contactInfo>
+									</recipientInfo>
+									<transactionIdentifier>
+										<identifier>C28785100006</identifier>
+										<identifierType>Dispatch Advice</identifierType>
+									</transactionIdentifier>
+									<transactionType>Sale</transactionType>
+									<transactionDate>2005-12-02T08:30:47</transactionDate>
+								</transactionInfo>
+								<scannedPedigree wasRepackaged="false">
+									<mimeType>String</mimeType>
+									<encoding>UjBsR09EbGhjZ0dTQUxNQUFBUUNBRU1tQ1p0dU1GUXhEUzhi</encoding>
+								</scannedPedigree>
+								<attachment>
+									<mimeType>pdf</mimeType>
+									<encoding>UjBsR09EbGhjZ0dTQUxNQUFBUUNBRU1tQ1p0dU1GUXhEUzhi</encoding>
+								</attachment>
+							</initialPedigree>
+</PaperPedigree>

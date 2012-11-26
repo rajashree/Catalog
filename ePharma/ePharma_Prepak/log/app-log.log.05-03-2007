@@ -1,0 +1,90 @@
+2007-03-05 12:59:23,078 INFO  (SessionListener.java:55) - In sessionDestroyed method
+2007-03-05 12:59:23,187 INFO  (SessionListener.java:60) - Query:tlsp:deleteInvlidSessionID('12700120070301124852')
+2007-03-05 12:59:23,250 INFO  (User.java:189) - In valueUnbound method
+2007-03-05 13:04:48,218 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-03-05 13:04:51,265 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-03-05 13:04:51,265 INFO  (LoginAction.java:57) - In execute method
+2007-03-05 13:04:51,265 INFO  (SecurityServiceImpl.java:140) - In authenticate method
+2007-03-05 13:04:51,265 INFO  (SecurityServiceImpl.java:54) - In getUser method
+2007-03-05 13:04:51,265 INFO  (SecurityServiceImpl.java:56) - Query:tlsp:loginUserInfo('test')
+2007-03-05 13:04:52,046 INFO  (User.java:146) - In passwordMatch method
+2007-03-05 13:04:52,046 INFO  (User.java:176) - In valueBound method
+2007-03-05 13:04:52,046 INFO  (SecurityServiceImpl.java:101) - In insertSessionDoc method
+2007-03-05 13:04:52,046 INFO  (SecurityServiceImpl.java:85) - In replaceString method
+2007-03-05 13:04:52,046 INFO  (SecurityServiceImpl.java:128) - Query:tig:insert-document( 'tig:///EAGRFID/SysSessions/', <session><sessionid>12700120070305010452</sessionid><userid>23802960038774853494040455282174</userid><username>raje raje</username><accesslevel>epedigree</accesslevel><sessionstart>2007-03-05T13:04:52</sessionstart><userip>127.0.0.1</userip><lastuse>2007-03-05T13:04:52</lastuse><tp_company_nm>Southwood</tp_company_nm><tp_company_id>null</tp_company_id></session>)
+2007-03-05 13:04:52,109 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-03-05 13:04:52,218 INFO  (EpedigreeAction.java:67) - ********Inside Action EpedigreeAction....... 
+2007-03-05 13:04:52,218 INFO  (EpedigreeAction.java:68) - Inside Action execute of EpedigreeAction....
+2007-03-05 13:04:52,218 INFO  (EpedigreeAction.java:78) - Validating The Session
+2007-03-05 13:04:52,218 INFO  (EpedigreeAction.java:82) - sessionID in EpedigreeAction :12700120070305010452
+2007-03-05 13:04:52,296 INFO  (EpedigreeAction.java:92) - The readStatus is : true
+2007-03-05 13:04:52,296 INFO  (EpedigreeAction.java:99) - My Query in EpedigreeAction class.....tlsp:DisplayMessage('12700120070305010452') 
+2007-03-05 13:04:52,421 INFO  (EpedigreeAction.java:128) - Before returning to success
+2007-03-05 13:04:54,203 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-03-05 13:04:54,390 DEBUG (AdminUser.java:56) - sessionID :12700120070305010452
+2007-03-05 13:04:56,343 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-03-05 13:04:56,437 DEBUG (AddUser.java:309) - Inside EditUserList ......
+2007-03-05 13:04:56,437 INFO  (UserUtility.java:258) - Inside method getUsersList
+2007-03-05 13:04:56,437 INFO  (UserUtility.java:269) - Query<root> { for $l in collection('tig:///EAGRFID/SysUsers')/User order by $l/UserID return <output> { <UserID>{data($l/UserID)}</UserID>, <UserName>{data($l/UserName)}</UserName>, <Email>{data($l/Email)}</Email>, <Disable>{data($l/Disable)}</Disable> } </output> } </root>
+2007-03-05 13:04:56,484 INFO  (UserUtility.java:271) - QueryResult<root> <output> <UserID>1504099645602399336672297196518</UserID><UserName>dloy</UserName><Email>dloy@prepak.com</Email><Disable>false</Disable> </output><output> <UserID>16921391597248925266257825496982</UserID><UserName>holmes</UserName><Email>jholmes@prepak.com</Email><Disable>false</Disable> </output><output> <UserID>224793791150493102680841912214</UserID><UserName>paul</UserName><Email>PedigreeAdmin@MorrisDickson.com</Email><Disable>false</Disable> </output><output> <UserID>23802960038774853494040455282174</UserID><UserName>test</UserName><Email>raje</Email><Disable>false</Disable> </output><output> <UserID>29383916519049139238555285454701</UserID><UserName>rhgoodrich</UserName><Email>rhg@southwoodhealthcare.com</Email><Disable>false</Disable> </output> </root>
+2007-03-05 13:04:58,984 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-03-05 13:04:59,078 INFO  (AddUser.java:359) - Inside fetchDetails ......
+2007-03-05 13:04:59,078 INFO  (UserUtility.java:60) - Inside method getGroupList
+2007-03-05 13:04:59,093 INFO  (UserUtility.java:66) - Query<GroupData>{for $i in collection('tig:///EAGRFID/SysGroups') return <data>{$i/Group/GroupID}{$i/Group/GroupName}</data>}</GroupData>
+2007-03-05 13:04:59,125 INFO  (UserUtility.java:68) - QueryResult<GroupData><data><GroupID>ac22243afaddbf1a:282d90d:109797c2a3b:-80001140223742617</GroupID><GroupName>admin</GroupName></data></GroupData>
+2007-03-05 13:04:59,125 INFO  (AddUser.java:443) - Queryfor $l in collection('tig:///EAGRFID/SysUsers')/User where $l/UserID ='16921391597248925266257825496982' return <root>{$l}</root>
+2007-03-05 13:04:59,156 INFO  (AddUser.java:445) - QueryResult<root><User><UserID>16921391597248925266257825496982</UserID><FirstName>Jenny</FirstName><LastName>Holmes</LastName><UserName>holmes</UserName><Email>jholmes@prepak.com</Email><Password>holmes</Password><Disable>false</Disable><Signer>false</Signer><AccessLevel><Access>ac22243afaddbf1a:282d90d:109797c2a3b:-80001140223742617</Access></AccessLevel><UserRole>InternalUser</UserRole><Phone>(314) 555-7865</Phone><Fax>(314) 555-7867</Fax><Keys><Private>string</Private><Public>string</Public></Keys><BelongsToCompany>Southwood</BelongsToCompany><EAG-TimeStamp><origin-serverID></origin-serverID><updated-timestamp>2005-10-05T06:02:25</updated-timestamp><updated-serverID/><reported>false</reported></EAG-TimeStamp></User></root>
+2007-03-05 13:04:59,156 INFO  (AddUser.java:370) - <root><User><UserID>16921391597248925266257825496982</UserID><FirstName>Jenny</FirstName><LastName>Holmes</LastName><UserName>holmes</UserName><Email>jholmes@prepak.com</Email><Password>holmes</Password><Disable>false</Disable><Signer>false</Signer><AccessLevel><Access>ac22243afaddbf1a:282d90d:109797c2a3b:-80001140223742617</Access></AccessLevel><UserRole>InternalUser</UserRole><Phone>(314) 555-7865</Phone><Fax>(314) 555-7867</Fax><Keys><Private>string</Private><Public>string</Public></Keys><BelongsToCompany>Southwood</BelongsToCompany><EAG-TimeStamp><origin-serverID></origin-serverID><updated-timestamp>2005-10-05T06:02:25</updated-timestamp><updated-serverID/><reported>false</reported></EAG-TimeStamp></User></root>
+2007-03-05 13:04:59,156 INFO  (AddUser.java:389) - Inside method showSelctedInfo()
+2007-03-05 13:04:59,156 INFO  (AddUser.java:503) - Inside method DispalyImage()
+2007-03-05 13:04:59,156 INFO  (AddUser.java:513) - Query :declare binary-encoding none; for $D in collection('tig:///EAGRFID/UserSign') where $D/User/UserID ='16921391597248925266257825496982' return $D/User/UserSign/binary()
+2007-03-05 13:04:59,187 INFO  (AddUser.java:515) - QueryResults :[B@6e1f8f
+2007-03-05 13:05:07,234 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-03-05 13:05:07,328 INFO  (AddUser.java:105) - Inside method SaveUser ......
+2007-03-05 13:05:07,328 INFO  (UserUtility.java:60) - Inside method getGroupList
+2007-03-05 13:05:07,343 INFO  (UserUtility.java:66) - Query<GroupData>{for $i in collection('tig:///EAGRFID/SysGroups') return <data>{$i/Group/GroupID}{$i/Group/GroupName}</data>}</GroupData>
+2007-03-05 13:05:07,359 INFO  (UserUtility.java:68) - QueryResult<GroupData><data><GroupID>ac22243afaddbf1a:282d90d:109797c2a3b:-80001140223742617</GroupID><GroupName>admin</GroupName></data></GroupData>
+2007-03-05 13:05:07,375 INFO  (AddUser.java:148) - Query let $j := 'holmes'  let $i := collection('tig:///EAGRFID/SysUsers')/User[UserID = '16921391597248925266257825496982'] return  if(compare($j,data($i/UserName))) then  let $s :=(for $k in collection('tig:///EAGRFID/SysUsers')/User where $k/UserID != '16921391597248925266257825496982' and not(compare($j,data($k/UserName))) return 	'true')return 	if(exists($s)) then	'true' else	'noevents' 	else 'noevents' 
+2007-03-05 13:05:07,406 INFO  (AddUser.java:150) - QueryResultnoevents
+2007-03-05 13:05:07,468 INFO  (AddUser.java:454) - Inside method SaveImage
+2007-03-05 13:05:07,500 INFO  (AddUser.java:468) - Query :for $b in collection('tig:///EAGRFID/UserSign') where $b/User/UserID='16921391597248925266257825496982' return tig:delete-document(document-uri( $b ))
+2007-03-05 13:05:07,531 INFO  (AddUser.java:470) - QueryResult :[B@1a76e19
+2007-03-05 13:05:07,531 INFO  (AddUser.java:493) - Querydeclare binary-encoding none; tig:insert-document( 'tig:///EAGRFID/UserSign/', <User><UserID>16921391597248925266257825496982</UserID><UserSign>{binary{$1}}</UserSign></User> )
+2007-03-05 13:05:07,671 INFO  (GetImage.java:83) - Inside getNodeConditions.... in GetImage servlet.........
+2007-03-05 13:05:07,671 INFO  (GetImage.java:69) - Inside isMandatoryParam.... in GetImage servlet.........
+2007-03-05 13:05:07,671 INFO  (GetImage.java:69) - Inside isMandatoryParam.... in GetImage servlet.........
+2007-03-05 13:05:07,671 INFO  (GetImage.java:69) - Inside isMandatoryParam.... in GetImage servlet.........
+2007-03-05 13:05:07,671 INFO  (GetImage.java:69) - Inside isMandatoryParam.... in GetImage servlet.........
+2007-03-05 13:05:07,687 INFO  (GetImage.java:69) - Inside isMandatoryParam.... in GetImage servlet.........
+2007-03-05 13:05:07,687 INFO  (GetImage.java:154) - Query to retrieve image type is :declare namespace bin ='http://www.rainingdata.com/TigerLogic/binary-support'; declare binary-encoding none;  for $i in collection('tig:///EAGRFID/UserSign')//User[UserID='16921391597248925266257825496982']/descendant::*:* where $i/name()='UserSign' return data($i/@type)
+2007-03-05 13:05:07,734 INFO  (GetImage.java:162) - Image Type not found............
+2007-03-05 13:05:07,734 INFO  (GetImage.java:173) - The query in GetImage servlet is declare namespace bin ='http://www.rainingdata.com/TigerLogic/binary-support'; declare binary-encoding none;  for $i in collection('tig:///EAGRFID/UserSign')//User[UserID='16921391597248925266257825496982']/descendant::*:* where $i/name()='UserSign' return  if( exists( $i/binary() ) ) then $i/binary() else tlsp:GetBinaryImage(binary{$i},'UserSign')
+2007-03-05 13:06:42,375 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-03-05 13:06:42,484 INFO  (AddUser.java:105) - Inside method SaveUser ......
+2007-03-05 13:06:42,484 INFO  (UserUtility.java:60) - Inside method getGroupList
+2007-03-05 13:06:42,484 INFO  (UserUtility.java:66) - Query<GroupData>{for $i in collection('tig:///EAGRFID/SysGroups') return <data>{$i/Group/GroupID}{$i/Group/GroupName}</data>}</GroupData>
+2007-03-05 13:06:42,562 INFO  (UserUtility.java:68) - QueryResult<GroupData><data><GroupID>ac22243afaddbf1a:282d90d:109797c2a3b:-80001140223742617</GroupID><GroupName>admin</GroupName></data></GroupData>
+2007-03-05 13:06:42,578 INFO  (AddUser.java:148) - Query let $j := 'holmes'  let $i := collection('tig:///EAGRFID/SysUsers')/User[UserID = '16921391597248925266257825496982'] return  if(compare($j,data($i/UserName))) then  let $s :=(for $k in collection('tig:///EAGRFID/SysUsers')/User where $k/UserID != '16921391597248925266257825496982' and not(compare($j,data($k/UserName))) return 	'true')return 	if(exists($s)) then	'true' else	'noevents' 	else 'noevents' 
+2007-03-05 13:06:42,640 INFO  (AddUser.java:150) - QueryResultnoevents
+2007-03-05 13:06:42,718 INFO  (AddUser.java:454) - Inside method SaveImage
+2007-03-05 13:06:42,750 INFO  (AddUser.java:468) - Query :for $b in collection('tig:///EAGRFID/UserSign') where $b/User/UserID='16921391597248925266257825496982' return tig:delete-document(document-uri( $b ))
+2007-03-05 13:06:42,765 INFO  (AddUser.java:470) - QueryResult :[B@138b4ed
+2007-03-05 13:06:42,937 INFO  (AddUser.java:493) - Querydeclare binary-encoding none; tig:insert-document( 'tig:///EAGRFID/UserSign/', <User><UserID>16921391597248925266257825496982</UserID><UserSign>{binary{$1}}</UserSign></User> )
+2007-03-05 13:06:43,140 INFO  (GetImage.java:83) - Inside getNodeConditions.... in GetImage servlet.........
+2007-03-05 13:06:43,140 INFO  (GetImage.java:69) - Inside isMandatoryParam.... in GetImage servlet.........
+2007-03-05 13:06:43,140 INFO  (GetImage.java:69) - Inside isMandatoryParam.... in GetImage servlet.........
+2007-03-05 13:06:43,140 INFO  (GetImage.java:69) - Inside isMandatoryParam.... in GetImage servlet.........
+2007-03-05 13:06:43,140 INFO  (GetImage.java:69) - Inside isMandatoryParam.... in GetImage servlet.........
+2007-03-05 13:06:43,140 INFO  (GetImage.java:69) - Inside isMandatoryParam.... in GetImage servlet.........
+2007-03-05 13:06:43,140 INFO  (GetImage.java:154) - Query to retrieve image type is :declare namespace bin ='http://www.rainingdata.com/TigerLogic/binary-support'; declare binary-encoding none;  for $i in collection('tig:///EAGRFID/UserSign')//User[UserID='16921391597248925266257825496982']/descendant::*:* where $i/name()='UserSign' return data($i/@type)
+2007-03-05 13:06:43,218 INFO  (GetImage.java:162) - Image Type not found............
+2007-03-05 13:06:43,218 INFO  (GetImage.java:173) - The query in GetImage servlet is declare namespace bin ='http://www.rainingdata.com/TigerLogic/binary-support'; declare binary-encoding none;  for $i in collection('tig:///EAGRFID/UserSign')//User[UserID='16921391597248925266257825496982']/descendant::*:* where $i/name()='UserSign' return  if( exists( $i/binary() ) ) then $i/binary() else tlsp:GetBinaryImage(binary{$i},'UserSign')
+2007-03-05 13:15:25,796 INFO  (SessionListener.java:55) - In sessionDestroyed method
+2007-03-05 13:15:25,796 INFO  (SessionListener.java:60) - Query:tlsp:deleteInvlidSessionID('null')
+2007-03-05 13:15:25,828 INFO  (SessionListener.java:55) - In sessionDestroyed method
+2007-03-05 13:15:25,828 INFO  (SessionListener.java:60) - Query:tlsp:deleteInvlidSessionID('null')
+2007-03-05 13:15:25,843 INFO  (SessionListener.java:55) - In sessionDestroyed method
+2007-03-05 13:15:25,843 INFO  (SessionListener.java:60) - Query:tlsp:deleteInvlidSessionID('null')
+2007-03-05 13:17:26,156 INFO  (SessionListener.java:55) - In sessionDestroyed method
+2007-03-05 13:17:26,156 INFO  (SessionListener.java:60) - Query:tlsp:deleteInvlidSessionID('12700120070305010452')
+2007-03-05 13:17:26,171 INFO  (User.java:189) - In valueUnbound method

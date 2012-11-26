@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <xsd:element name="Group">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="GroupID" type="xsd:string"/>
+                <xsd:element name="GroupName" type="xsd:string"/>
+                <xsd:element name="Permissions">
+                    <xsd:complexType>
+                        <xsd:sequence maxOccurs="unbounded" minOccurs="0">
+                            <xsd:element name="Permission">
+                                <xsd:complexType>
+                                    <xsd:sequence minOccurs="0" maxOccurs="1">
+                                        <xsd:element name="ModuleID" type="xsd:string"/>
+                                        <xsd:element name="ModuleName" type="xsd:string"/>
+                                        <xsd:element name="Insert" type="xsd:boolean"/>
+                                        <xsd:element name="Update" type="xsd:boolean"/>
+                                        <xsd:element name="Delete" type="xsd:boolean"/>
+                                        <xsd:element name="Read" type="xsd:boolean"/>
+                                    </xsd:sequence>
+                                </xsd:complexType>
+                            </xsd:element>
+                        </xsd:sequence>
+                    </xsd:complexType>
+                </xsd:element>
+                <xsd:element name="Users">
+                    <xsd:complexType>
+                        <xsd:sequence maxOccurs="unbounded" minOccurs="0">
+                            <xsd:element name="UserID" type="xsd:string">
+                            </xsd:element>
+                        </xsd:sequence>
+                    </xsd:complexType>
+                </xsd:element>
+		<xsd:element name="EAG-TimeStamp">
+				<xsd:annotation>
+					<xsd:documentation>EAG internal timestamp node to be used for ONS and P2P replication of content</xsd:documentation>
+				</xsd:annotation>
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="origin-serverID">
+							<xsd:annotation>
+								<xsd:documentation>created on server ID</xsd:documentation>
+							</xsd:annotation>
+						</xsd:element>
+						<xsd:element name="updated-timestamp" type="xsd:dateTime">
+							<xsd:annotation>
+								<xsd:documentation>created/updated timestamp</xsd:documentation>
+							</xsd:annotation>
+						</xsd:element>
+						<xsd:element name="updated-serverID">
+							<xsd:annotation>
+								<xsd:documentation>last server updated on</xsd:documentation>
+							</xsd:annotation>
+						</xsd:element>
+						<xsd:element name="reported" type="xsd:boolean">
+							<xsd:annotation>
+								<xsd:documentation>true or false - marks this record as reported. otherwise will be picked up by replication service.</xsd:documentation>
+							</xsd:annotation>
+						</xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+		</xsd:element>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+</xsd:schema>

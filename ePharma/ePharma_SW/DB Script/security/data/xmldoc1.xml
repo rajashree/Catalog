@@ -1,0 +1,9 @@
+<APN><DocumentId>12348</DocumentId><DateTime>2005-08-21T01:07:56.554Z</DateTime><From><Name>Pfizer</Name><Address>123 First St,
+3211,
+New York,
+11022,
+NY</Address><LicenseNumber></LicenseNumber><PartyType>Pharmacy</PartyType><ContactName>Nick Danger</ContactName><Phone>(312) 865-2194</Phone><Fax></Fax><Email></Email></From><To><Name>Cardinal Health</Name><Address>Lakeshore Dr,
+32 W.,
+LakeLand,
+60022,
+FL</Address><LicenseNumber></LicenseNumber><PartyType>Distributor</PartyType><ContactName></ContactName><Phone></Phone><Fax></Fax><Email></Email><TransactionType>despatchAdvice</TransactionType><TransactionNumber>C28785100006</TransactionNumber></To><Pedigrees><Pedigree order="0"><DocumentId></DocumentId><IssueDate>2005-08-21T01:07:56.554Z</IssueDate><Products><Product><EPC>C28785100004</EPC><ParentEPC>C28785100004</ParentEPC><NDC>65837-421-66</NDC><LegendDrugName>Viagra</LegendDrugName><DosageForm>Tablets</DosageForm><DosageStrength>50 mg</DosageStrength><ContainerSize>Bottle</ContainerSize><LotNumber>5C017</LotNumber><LotExpireDate>March 2007</LotExpireDate><PackageUPC>365837421663</PackageUPC><Quantity quantityUnitCode="">100</Quantity><ManufacturerLicense>32:1117</ManufacturerLicense><CustodyLicenseNumber/></Product></Products><Manufacturer><Name></Name><Address></Address><Contact></Contact><ContactPhone></ContactPhone><ContactEmail></ContactEmail><LicenseNumber></LicenseNumber></Manufacturer><PedigreeStatus><Status><StatusChangedOn>2005-08-21T01:07:56.554Z</StatusChangedOn><Status>Created</Status></Status></PedigreeStatus></Pedigree></Pedigrees></APN>

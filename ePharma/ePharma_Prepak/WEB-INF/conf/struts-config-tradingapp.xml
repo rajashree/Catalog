@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+
+<!DOCTYPE struts-config PUBLIC
+ "-//Apache Software Foundation//DTD Struts Configuration 1.0//EN"
+ "http://jakarta.apache.org/struts/dtds/struts-config_1_1.dtd">
+<struts-config>
+
+
+
+	  <form-beans>
+		<form-bean  name="TradingPartnerForm" 	type="com.rdta.catalog.trading.action.TradingPartnerForm"/>   
+	  </form-beans>
+
+	  
+	  <form-beans>
+		<form-bean  name="CatalogUploadForm" 	type="com.rdta.catalog.trading.action.CatalogUploadForm"/>   
+	  </form-beans>
+
+ 
+  <!-- ========== Action Mapping Definitions ============ -->
+  <action-mappings>
+  	
+		<!-- ==========  TRADING PARTNER ACTIONS  ========== -->
+	 <action  path="/TradingPartnerNew"   forward="/manu/tradingPartnerManager/TradingPartnerManager_Detail.jsp">
+     </action> 
+
+
+	 <action  path="/TradingPartnerList"   type="com.rdta.catalog.trading.action.TradingPartnerListAction" scope="request">
+	 	<forward name="success" path="/manu/tradingPartnerManager/index.jsp"/>
+     </action> 
+
+
+    <action path="/TradingPartner" name="TradingPartnerForm"  input="/manu/tradingPartnerManager/TradingPartnerManager_Detail.jsp" 			type="com.rdta.catalog.trading.action.TradingPartnerAction" scope="request">
+			<forward name="success" path="/manu/tradingPartnerManager/TradingPartnerManager_Detail.jsp"/>          
+    </action>   
+
+
+	<action path="/TradingPartnerView" 	type="com.rdta.catalog.trading.action.TradingPartnerViewAction" scope="request">
+			<forward name="success" path="/manu/tradingPartnerManager/TradingPartnerManager_Detail.jsp"/>          
+    </action>   
+
+
+
+
+		<!-- ==========  Location ACTIONS  ========== -->
+	 <action  path="/LocationNew"   forward="/manu/tradingPartnerManager/Location_Detail.jsp">
+     </action> 
+
+
+	 <action  path="/TPLocationList"   type="com.rdta.catalog.trading.action.LocationListAction" scope="request">
+	 	<forward name="success" path="/manu/tradingPartnerManager/TradingPartnerManager_Detail_Locations.jsp"/>
+     </action> 
+
+
+	<action path="/Location" 	type="com.rdta.catalog.trading.action.LocationAction" scope="request">
+			<forward name="success" path="/manu/tradingPartnerManager/Location_Detail.jsp"/>          
+    </action>   
+
+
+
+		<!-- ==========  Catalog ACTIONS  ========== -->
+	 <action  path="/CatalogNew"   forward="/manu/tradingPartnerManager/Catalog_Detail.jsp">
+     </action> 
+
+
+	 <action  path="/TPCatalogList"   type="com.rdta.catalog.trading.action.CatalogListAction" scope="request">
+	 	<forward name="success" path="/manu/tradingPartnerManager/TradingPartnerManager_Detail_Catalogs.jsp"/>
+     </action> 
+
+	<action path="/Catalog" 	type="com.rdta.catalog.trading.action.CatalogAction" scope="request">
+			<forward name="success" path="/manu/tradingPartnerManager/Catalog_Detail.jsp"/>          
+    </action>   
+
+
+
+	<!--  ====================  Schema  Tree Related links  ========================  --> 
+	<action path="/OpenCatalogSchemaDef" 	type="com.rdta.catalog.trading.action.CatalogSchemaDefAction" scope="request">
+		<forward name="success" path="/manu/tradingPartnerManager/CatalogSchemaDef.jsp"/>
+    </action>   
+
+	<action path="/SchemaElementTree" forward="/manu/tradingPartnerManager/SchemaElementTree.jsp">
+    </action>
+
+	<action path="/SchemaElementEdit" 	forward="/manu/tradingPartnerManager/SchemaElementEdit.jsp">
+    </action>   
+
+	<action path="/UpdateSchemaElementTree" 	type="com.rdta.catalog.trading.action.UpdateSchemaTreeAction" scope="request">	
+			<forward name="success" path="/manu/tradingPartnerManager/CatalogSchemaDef.jsp"/>
+    </action>   
+
+	<action path="/CreateCatalogSchemaFromFile" name="CatalogUploadForm"  input="/manu/tradingPartnerManager/Catalog_Detail.jsp"	type="com.rdta.catalog.trading.action.CatalogSchemaDefAction" scope="request">	
+			<forward name="success" path="/manu/tradingPartnerManager/CatalogSchemaDef.jsp"/>
+    </action>  
+
+
+	<action path="/UploadCatalog" name="CatalogUploadForm"  input="/manu/tradingPartnerManager/Catalog_Detail.jsp"	type="com.rdta.catalog.trading.action.UploadCatalogAction" scope="request">	
+			<forward name="success" path="/manu/tradingPartnerManager/UploadCatalogReview.jsp"/>
+    </action> 
+
+
+	<!--  =======================  Mapping Catalog Schemas ======================== --> 
+    <action path="/MapCatalogSchemas" 	type="com.rdta.catalog.trading.action.MappingSchemaAction" scope="request">	
+			<forward name="success" path="/manu/tradingPartnerManager/MapCatalogSchemas.jsp"/>
+    </action>  
+
+
+	<action path="/CatalogMappingEdit"  type="com.rdta.catalog.trading.action.UpdateMapCatalogsAction" scope="request">	
+			<forward name="success" path="/manu/tradingPartnerManager/CatalogMappingEdit.jsp"/>
+   </action>   
+
+    
+
+
+	<!--  ======================= Product Master URLS ======================== --> 
+
+	 <action  path="/ProductMasterNew"   forward="/manu/catalog/ProductMasterEdit.jsp">
+     </action> 
+
+
+	 <action  path="/ProductMasterSearchEmpty"   forward="/manu/catalog/ProductMasterSearch.jsp">
+     </action> 
+
+
+	 <action  path="/ProductMasterSearch"   type="com.rdta.catalog.trading.action.ProductMasterSearchAction" scope="request">
+	 	<forward name="success" path="/manu/catalog/ProductMasterSearch.jsp"/>
+     </action> 
+
+
+	<action path="/ProductMaster" 	type="com.rdta.catalog.trading.action.ProductMasterAction" scope="request">
+			<forward name="success" path="/manu/catalog/ProductMasterEdit.jsp"/>          
+    </action>   
+
+
+	<!--  ======================= Kit URLS ======================== --> 
+	<action  path="/KitNew"   forward="/manu/catalog/KitEdit.jsp">
+     </action> 
+
+	<action path="/Kit" 	type="com.rdta.catalog.trading.action.KitAction" scope="request">
+			<forward name="success" path="/manu/catalog/KitEdit.jsp"/>        
+    </action> 
+
+	<action path="/ProductAddToKit" 	type="com.rdta.catalog.trading.action.ProductAddToKitAction" scope="request">
+			<forward name="success" path="/manu/catalog/KitEdit.jsp"/>    
+			<forward name="searchPage" path="/manu/catalog/ProductMasterSearch.jsp"/> 
+    </action> 
+
+
+   <!-- ==========  TRADING PARTNER  Service Level ACTIONS  ========== -->
+	 <action  path="/TPServiceLevelNew"   forward="/manu/tradingPartnerManager/TradingPartnerManager_Detail_SLAs.jsp">
+     </action> 
+
+
+	<!-- ==========  TRADING PARTNER  KPI ACTIONS  ========== -->
+	 <action  path="/TPKPINew"   forward="/manu/tradingPartnerManager/TradingPartnerManager_Detail_KPIs.jsp">
+     </action> 
+		
+
+ </action-mappings> 
+
+	
+</struts-config>

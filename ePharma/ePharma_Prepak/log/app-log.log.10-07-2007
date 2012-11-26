@@ -1,0 +1,9 @@
+2007-07-10 14:36:51,031 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-07-10 14:36:51,156 INFO  (LoginAction.java:57) - In execute method
+2007-07-10 14:36:51,187 INFO  (SecurityServiceImpl.java:140) - In authenticate method
+2007-07-10 14:36:51,187 INFO  (SecurityServiceImpl.java:54) - In getUser method
+2007-07-10 14:36:51,187 INFO  (SecurityServiceImpl.java:56) - Query:tlsp:loginUserInfo('admin')
+2007-07-10 14:36:51,312 ERROR (SecurityServiceImpl.java:77) - Error in getUser ..com.rdta.commons.persistence.PersistanceException: [system-security-00001] - Authentication failed: server failure. [admin], [[C@898587].
+2007-07-10 14:47:22,578 INFO  (SessionListener.java:55) - In sessionDestroyed method
+2007-07-10 14:47:22,578 INFO  (SessionListener.java:60) - Query:tlsp:deleteInvlidSessionID('null')
+2007-07-10 14:47:22,765 ERROR (SessionListener.java:63) - error:com.rdta.commons.persistence.PersistanceException: [system-security-00001] - Authentication failed: server failure. [admin], [[C@11fb68f].

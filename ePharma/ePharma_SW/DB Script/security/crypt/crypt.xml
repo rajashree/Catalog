@@ -1,0 +1,37 @@
+<function-descriptor id='crypt' author='Anthony Sangha'>
+
+  <classpath url="file:///c:/Security/crypt/crypt.jar"/>
+  <classpath url="file:///c:/Security/lib/xmlsec-1.2.1.jar"/>
+  <classpath url="file:///c:/Security/lib/commons-logging.jar"/>
+  <classpath url="file:///c:/Security/lib/jaxen-core.jar"/>
+  <classpath url="file:///c:/Security/lib/jaxen-dom.jar"/>
+  <classpath url="file:///c:/Security/lib/saxpath.jar"/>
+  <classpath url="file:///c:/Security/lib/xercesImpl.jar"/>
+  <classpath url="file:///c:/Security/lib/xml-apis.jar"/>
+  <classpath url="file:///c:/Security/lib/xmlparser.jar"/>
+  <classpath url="file:///c:/Security/lib/xalan.jar"/>
+  <classpath url="file:///c:/Security/lib/bcprov-jdk14-129.jar"/>
+
+  <function package='com.rdta.eag.crypt' class='GenEncryptionKey' name='generateKey' bound-name='generateKey'>
+   <java return='string' mode='primitive'>
+    <arg type='string' mode='primitive'/>
+   </java>
+  </function>
+
+  <function package='com.rdta.eag.crypt' class='Encrypt' name='encryptDoc' bound-name='encryptDoc'>
+   <java return='string' mode='primitive'>
+       <arg type='string' mode='primitive'/>
+       <arg type='string' mode='primitive'/>
+       <arg type='string' mode='primitive'/>
+   </java>
+  </function>
+  <function package='com.rdta.eag.crypt' class='Decrypt' name='decryptDoc' bound-name='decryptDoc'>
+   <java return='string' mode='primitive'>
+       <arg type='string' mode='primitive'/>
+       <arg type='string' mode='primitive'/>
+       <arg type='string' mode='primitive'/>
+   </java>
+  </function>
+
+
+</function-descriptor>

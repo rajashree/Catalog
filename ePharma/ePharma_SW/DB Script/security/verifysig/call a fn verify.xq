@@ -1,0 +1,1 @@
+local:verifySig1(xs:string("c:\\signatureFile1.xml"))

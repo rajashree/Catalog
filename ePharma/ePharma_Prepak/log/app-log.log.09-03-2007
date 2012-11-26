@@ -1,0 +1,25 @@
+2007-03-09 18:34:49,671 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-03-09 18:34:49,750 INFO  (LoginAction.java:57) - In execute method
+2007-03-09 18:34:49,765 INFO  (SecurityServiceImpl.java:140) - In authenticate method
+2007-03-09 18:34:49,765 INFO  (SecurityServiceImpl.java:54) - In getUser method
+2007-03-09 18:34:49,781 INFO  (SecurityServiceImpl.java:56) - Query:tlsp:loginUserInfo('test')
+2007-03-09 18:34:51,250 INFO  (User.java:146) - In passwordMatch method
+2007-03-09 18:34:51,250 INFO  (User.java:176) - In valueBound method
+2007-03-09 18:34:51,250 INFO  (SecurityServiceImpl.java:101) - In insertSessionDoc method
+2007-03-09 18:34:51,250 INFO  (SecurityServiceImpl.java:85) - In replaceString method
+2007-03-09 18:34:51,250 INFO  (SecurityServiceImpl.java:128) - Query:tig:insert-document( 'tig:///EAGRFID/SysSessions/', <session><sessionid>12700120070309063451</sessionid><userid>23802960038774853494040455282174</userid><username>raje raje</username><accesslevel>epedigree</accesslevel><sessionstart>2007-03-09T18:34:51</sessionstart><userip>127.0.0.1</userip><lastuse>2007-03-09T18:34:51</lastuse><tp_company_nm>Southwood</tp_company_nm><tp_company_id>null</tp_company_id></session>)
+2007-03-09 18:34:51,328 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-03-09 18:34:51,765 INFO  (EpedigreeAction.java:67) - ********Inside Action EpedigreeAction....... 
+2007-03-09 18:34:51,765 INFO  (EpedigreeAction.java:68) - Inside Action execute of EpedigreeAction....
+2007-03-09 18:34:51,796 INFO  (EpedigreeAction.java:78) - Validating The Session
+2007-03-09 18:34:51,796 INFO  (EpedigreeAction.java:82) - sessionID in EpedigreeAction :12700120070309063451
+2007-03-09 18:34:52,078 INFO  (EpedigreeAction.java:92) - The readStatus is : true
+2007-03-09 18:34:52,078 INFO  (EpedigreeAction.java:99) - My Query in EpedigreeAction class.....tlsp:DisplayMessage('12700120070309063451') 
+2007-03-09 18:34:52,703 INFO  (EpedigreeAction.java:128) - Before returning to success
+2007-03-09 18:35:01,203 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-03-09 18:35:01,265 DEBUG (AdminUser.java:56) - sessionID :12700120070309063451
+2007-03-09 18:35:07,359 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-03-09 18:35:07,453 INFO  (AddUser.java:83) - Inside method AddNewUser
+2007-03-09 18:35:07,484 INFO  (UserUtility.java:60) - Inside method getGroupList
+2007-03-09 18:35:07,484 INFO  (UserUtility.java:66) - Query<GroupData>{for $i in collection('tig:///EAGRFID/SysGroups') return <data>{$i/Group/GroupID}{$i/Group/GroupName}</data>}</GroupData>
+2007-03-09 18:35:07,531 INFO  (UserUtility.java:68) - QueryResult<GroupData><data><GroupID>8418737044586836262501551177581</GroupID><GroupName>viv</GroupName></data><data><GroupID>22446472733630946761456657891181</GroupID><GroupName>test</GroupName></data><data><GroupID>26913000290237854405790663180141</GroupID><GroupName>rest</GroupName></data><data><GroupID>29567575320621459578625558314861</GroupID><GroupName>testing</GroupName></data><data><GroupID>ac22243afaddbf1a:282d90d:109797c2a3b:-80001140223742617</GroupID><GroupName>admin</GroupName></data><data><GroupID>3fe29258d1efb468:bfd66a:10730185438:-80001130422954515</GroupID><GroupName>Group9</GroupName></data><data><GroupID>3fe29258d1efb468:bfd66a:10730185438:-80001130422954516</GroupID><GroupName>Group10</GroupName></data><data><GroupID>16075183416912828642579285802861</GroupID><GroupName>abc</GroupName></data><data><GroupID>26619065693159003344865905344365</GroupID><GroupName>testing</GroupName></data></GroupData>

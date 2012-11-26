@@ -1,0 +1,1180 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- edited with XMLSPY v5 rel. 4 U (http://www.xmlspy.com) by TEAM (RENEGADE) -->
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:fo="http://www.w3.org/1999/XSL/Format">
+	<xsl:template match="shippedPedigree">
+		<fo:root xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:fox="http://xml.apache.org/fop/extensions">
+			<!-- Creator="html2fo" Version="0.4.2" -->
+			<fo:layout-master-set>
+				<fo:simple-page-master margin-right="0.5cm" margin-left="0.5cm" margin-bottom="0.5cm" margin-top="0.5cm" page-height="21.59cm" page-width="27.94cm" master-name="first">
+					<fo:region-body margin-bottom="1.0cm"/>
+				</fo:simple-page-master>
+			</fo:layout-master-set>
+			<fo:page-sequence master-reference="first" language="en" hyphenate="true">
+				<fo:flow flow-name="xsl-region-body">
+					<fo:table text-align="left" table-layout="fixed">
+						<fo:table-column column-width="100%" margin-right="1.0cm"/>
+						<fo:table-body>
+							<fo:table-row>
+								<fo:table-cell margin-right="5px" margin-left="5px" margin-bottom="5px" margin-top="5px">
+									<fo:table text-align="left" table-layout="fixed">
+										<fo:table-column column-width="20%"/>
+										<fo:table-column column-width="80%"/>
+										<fo:table-body>
+											<fo:table-row>
+												<fo:table-cell number-rows-spanned="2">
+													<fo:block>
+														<!--<fo:external-graphic src="xsl/logo.gif" vertical-align="top"/>-->
+														<xsl:apply-templates select="path"/>
+													</fo:block>
+												</fo:table-cell>
+											</fo:table-row>
+											<fo:table-row>
+												<fo:table-cell>
+													<fo:table text-align="left" table-layout="fixed">
+														<fo:table-column column-width="70%"/>
+														<fo:table-column column-width="30%"/>
+														<fo:table-body>
+															<fo:table-row>
+																<fo:table-cell number-columns-spanned="2">
+																	<fo:block font-size="9px">
+																		<fo:table>
+																			<fo:table-column column-width="65%"/>
+																			<fo:table-column column-width="35%"/>
+																			<fo:table-body>
+																				<fo:table-row>
+																					<fo:table-cell>
+																						<fo:block border-bottom="0.5px solid #000000" text-align="center" font-size="9px" margin-top="10px">
+																							<xsl:value-of select="businessName"/>
+																						</fo:block>
+																					</fo:table-cell>
+																					<fo:table-cell>
+																						<fo:block font-style="italic" font-size="9px" margin-top="10px">(Repackager&#8216;s Name)</fo:block>
+																					</fo:table-cell>
+																				</fo:table-row>
+																			</fo:table-body>
+																		</fo:table>
+																	</fo:block>
+																</fo:table-cell>
+															</fo:table-row>
+															<fo:table-row>
+																<fo:table-cell>
+																	<fo:block text-align="center" font-size="9px" text-decoration="italic">PRESCRIPTION (LEGEND) DRUG PEDIGREE</fo:block>
+																</fo:table-cell>
+																<fo:table-cell>
+																	<fo:block text-align="center" font-size="9px">
+																		<fo:inline white-space-collapse="false"> </fo:inline>
+																	</fo:block>
+																</fo:table-cell>
+															</fo:table-row>
+															<fo:table-row>
+																<fo:table-cell>
+																	<fo:block font-size="9px" text-decoration="italic" text-align="center">
+														History of Drug Sales and Distributions for a Repackaged Prescription Drug</fo:block>
+																</fo:table-cell>
+															</fo:table-row>
+														</fo:table-body>
+													</fo:table>
+												</fo:table-cell>
+											</fo:table-row>
+										</fo:table-body>
+									</fo:table>
+								</fo:table-cell>
+							</fo:table-row>
+							<fo:table-row margin-top="5px">
+								<fo:table-cell>
+									<fo:block font-size="9px">Description of drug being distributed: </fo:block>
+								</fo:table-cell>
+							</fo:table-row>
+							<fo:table-row>
+								<fo:table-cell margin-right="5px" margin-top="5px" font-size="9px">
+									<fo:block>
+										<fo:table>
+											<fo:table-column column-width="275px"/>
+											<fo:table-column column-width="200px"/>
+											<fo:table-body>
+												<fo:table-row>
+													<fo:table-cell>
+														<fo:block>Legend Drug Name, Strength, Dosage Form Container Size:</fo:block>
+													</fo:table-cell>
+													<fo:table-cell border-bottom="0.5px solid #000000" text-align="left">
+														<fo:block font-size="9px">
+															<xsl:value-of select="drugName"/>
+															<xsl:if test="string(strength)">,
+													</xsl:if>
+															<xsl:value-of select="strength"/>
+															<xsl:if test="string(dosageForm)">,
+													</xsl:if>
+															<xsl:value-of select="dosageForm"/>
+															<xsl:if test="string(containerSize)">,
+													</xsl:if>
+															<xsl:value-of select="containerSize"/>
+														</fo:block>
+													</fo:table-cell>
+												</fo:table-row>
+											</fo:table-body>
+										</fo:table>
+									</fo:block>
+								</fo:table-cell>
+							</fo:table-row>
+							<fo:table-row>
+								<fo:table-cell margin-right="5px" font-size="9px">
+									<fo:table>
+										<fo:table-column column-width="205px"/>
+										<fo:table-column column-width="400px"/>
+										<fo:table-body>
+											<fo:table-row>
+												<fo:table-cell>
+													<fo:block>Maufacturer / Repacker Name on container: </fo:block>
+												</fo:table-cell>
+												<fo:table-cell border-bottom="0.5px solid #000000" text-align="left">
+													<fo:block>
+														<xsl:value-of select="manufacturer"/>
+													</fo:block>
+												</fo:table-cell>
+											</fo:table-row>
+										</fo:table-body>
+									</fo:table>
+								</fo:table-cell>
+							</fo:table-row>
+							<fo:table-row>
+								<fo:table-cell margin-right="5px" font-size="9px">
+									<fo:table>
+										<fo:table-column column-width="135px"/>
+										<fo:table-column column-width="200px"/>
+										<fo:table-body>
+											<fo:table-row>
+												<fo:table-cell>
+													<fo:block>NDC on container (optional):</fo:block>
+												</fo:table-cell>
+												<fo:table-cell border-bottom="0.5px solid #000000">
+													<fo:block>
+														<xsl:value-of select="productCode"/>
+													</fo:block>
+												</fo:table-cell>
+											</fo:table-row>
+										</fo:table-body>
+									</fo:table>
+								</fo:table-cell>
+							</fo:table-row>
+							<!--begining for lot info-->
+							<fo:table-row>
+								<fo:table-cell padding-after="5px" padding-before="5px">
+									<fo:table text-align="left" table-layout="fixed">
+										<fo:table-column column-width="480px"/>
+										<fo:table-column column-width="250px"/>
+										<fo:table-body>
+											<fo:table-row>
+												<fo:table-cell>
+													<fo:table>
+														<fo:table-column column-width="25%"/>
+														<fo:table-column column-width="15%"/>
+														<fo:table-column column-width="40%"/>
+														<fo:table-body>
+															<fo:table-row>
+																<fo:table-cell border-style="solid" border-color="black" border-width="1px" padding="2px">
+																	<fo:block line-height="10px" font-size="9px" font-weight="bold" keep-together="always" width="50px">Lot Number </fo:block>
+																</fo:table-cell>
+																<fo:table-cell border-style="solid" border-color="black" border-width="1px" padding="2px">
+																	<fo:block line-height="10px" font-size="9px" font-weight="bold">Quantity</fo:block>
+																</fo:table-cell>
+																<fo:table-cell border-style="solid" border-color="black" border-width="1px" padding="2px">
+																	<fo:block line-height="10px" font-size="9px" font-weight="bold">Unique Serial#</fo:block>
+																</fo:table-cell>
+															</fo:table-row>
+															<xsl:for-each select="itemInfo">
+																<fo:table-row>
+																	<fo:table-cell border-style="solid" border-color="black" border-width="1px" padding="2px">
+																		<fo:block line-height="10px" font-size="9px" space-before.opximum="1.5px" space-after.opximum="1.5px" keep-together="always">
+																			<xsl:value-of select="lot"/>
+																		</fo:block>
+																	</fo:table-cell>
+																	<fo:table-cell border-style="solid" border-color="black" border-width="1px" padding="2px">
+																		<fo:block line-height="10px" font-size="9px" space-before.opximum="1.5px" space-after.opximum="1.5px" keep-together="always">
+																			<xsl:value-of select="quantity"/>
+																		</fo:block>
+																	</fo:table-cell>
+																	<fo:table-cell border-style="solid" border-color="black" border-width="1px" padding="2px">
+																		<fo:block line-height="10px" font-size="9px">
+																			<fo:inline>
+																				<xsl:value-of select="itemSerialNumber"/>
+																			</fo:inline>
+																		</fo:block>
+																	</fo:table-cell>
+																</fo:table-row>
+															</xsl:for-each>
+															<xsl:choose>
+																<xsl:when test="(count(itemInfo))=1">
+																	<fo:table-row>
+																		<fo:table-cell border-style="solid" border-color="black" border-width="1px" padding="2px" height="10px">
+																			<fo:block line-height="10px" font-size="9px" space-before.opximum="1.5px" space-after.opximum="1.5px" keep-together="always">
+																			
+																		</fo:block>
+																		</fo:table-cell>
+																		<fo:table-cell border-style="solid" border-color="black" border-width="1px" padding="2px">
+																			<fo:block line-height="10px" font-size="9px" space-before.opximum="1.5px" space-after.opximum="1.5px" keep-together="always">
+																			
+																		</fo:block>
+																		</fo:table-cell>
+																		<fo:table-cell border-style="solid" border-color="black" border-width="1px" padding="2px">
+																			<fo:block line-height="10px" font-size="10px">
+																			
+																		</fo:block>
+																		</fo:table-cell>
+																	</fo:table-row>
+																	<!--<fo:table-row>
+																		<fo:table-cell border-style="solid" border-color="black" border-width="1px" padding="2px" height="10px">
+																			<fo:block line-height="10px" font-size="9px" space-before.opximum="1.5px" space-after.opximum="1.5px" keep-together="always">
+																			
+																		</fo:block>
+																		</fo:table-cell>
+																		<fo:table-cell border-style="solid" border-color="black" border-width="1px" padding="2px">
+																			<fo:block line-height="10px" font-size="9px" space-before.opximum="1.5px" space-after.opximum="1.5px" keep-together="always">
+																			
+																		</fo:block>
+																		</fo:table-cell>
+																		<fo:table-cell border-style="solid" border-color="black" border-width="1px" padding="2px">
+																			<fo:block line-height="10px" font-size="9px">
+																			
+																		</fo:block>
+																		</fo:table-cell>
+																	</fo:table-row>-->
+																</xsl:when>
+																<xsl:otherwise>
+																	<xsl:if test="(count(itemInfo))=2">
+																		<fo:table-row>
+																			<fo:table-cell border-style="solid" border-color="black" border-width="1px" padding="2px" height="10px">
+																				<fo:block line-height="10px" font-size="9px" space-before.opximum="1.5px" space-after.opximum="1.5px" keep-together="always">
+																			
+																		</fo:block>
+																			</fo:table-cell>
+																			<fo:table-cell border-style="solid" border-color="black" border-width="1px" padding="2px">
+																				<fo:block line-height="10px" font-size="9px" space-before.opximum="1.5px" space-after.opximum="1.5px" keep-together="always">
+																			
+																		</fo:block>
+																			</fo:table-cell>
+																			<fo:table-cell border-style="solid" border-color="black" border-width="1px" padding="2px">
+																				<fo:block line-height="10px" font-size="9px">
+																			
+																		</fo:block>
+																			</fo:table-cell>
+																		</fo:table-row>
+																	</xsl:if>
+																</xsl:otherwise>
+															</xsl:choose>
+														</fo:table-body>
+													</fo:table>
+												</fo:table-cell>
+												<fo:table-cell padding="2px">
+													<fo:table text-align="right" table-layout="fixed">
+														<fo:table-column/>
+														<fo:table-body>
+															<fo:table-row>
+																<fo:table-cell border-style="solid" border-color="black" border-width="1px">
+																	<fo:table text-align="left" table-layout="fixed">
+																		<fo:table-column column-width="200px"/>
+																		<fo:table-body>
+																			<fo:table-row>
+																				<fo:table-cell padding-before="2px">
+																					<fo:block>
+																						<fo:table>
+																							<fo:table-column column-width="100px"/>
+																							<fo:table-column/>
+																							<fo:table-body>
+																								<fo:table-row>
+																									<fo:table-cell>
+																										<fo:block font-size="8px" margin-left="5px">Reference* Number: 
+</fo:block>
+																									</fo:table-cell>
+																									<fo:table-cell border-bottom="0.5px solid #000000" text-align="left" margin-bottom="2px" font-size="8px">
+																										<fo:block>
+																											<xsl:value-of select="identifier"/>
+																										</fo:block>
+																									</fo:table-cell>
+																								</fo:table-row>
+																							</fo:table-body>
+																						</fo:table>
+																					</fo:block>
+																					<fo:block margin-top="2px">
+																						<fo:table>
+																							<fo:table-column column-width="85px"/>
+																							<fo:table-column/>
+																							<fo:table-body>
+																								<fo:table-row>
+																									<fo:table-cell>
+																										<fo:block font-size="8px" margin-left="5px">Document Type: 
+</fo:block>
+																									</fo:table-cell>
+																									<fo:table-cell border-bottom="0.5px solid #000000" text-align="left" margin-bottom="2px" font-size="8px">
+																										<fo:block>
+																											<xsl:value-of select="identifierType"/>
+																										</fo:block>
+																									</fo:table-cell>
+																								</fo:table-row>
+																							</fo:table-body>
+																						</fo:table>
+																					</fo:block>
+																					<fo:block margin-top="2px">
+																						<fo:table>
+																							<fo:table-column column-width="87px"/>
+																							<fo:table-column/>
+																							<fo:table-body>
+																								<fo:table-row>
+																									<fo:table-cell>
+																										<fo:block font-size="8px" margin-left="5px">Reference* Date: 
+</fo:block>
+																									</fo:table-cell>
+																									<fo:table-cell border-bottom="0.5px solid #000000" text-align="left" margin-bottom="2px" font-size="8px">
+																										<fo:block>
+																											<xsl:value-of select="transactionDate"/>
+																										</fo:block>
+																									</fo:table-cell>
+																								</fo:table-row>
+																							</fo:table-body>
+																						</fo:table>
+																					</fo:block>
+																				</fo:table-cell>
+																			</fo:table-row>
+																			<fo:table-row>
+																				<fo:table-cell margin-right="5px" margin-left="5px" margin-bottom="5px" margin-top="5px">
+																					<fo:block line-height="10px" font-size="8px" keep-together="always" padding-bottom="3px" font-style="italic">(related to the sale by the repacker identified 
+                        above) 
+        </fo:block>
+																				</fo:table-cell>
+																			</fo:table-row>
+																		</fo:table-body>
+																	</fo:table>
+																</fo:table-cell>
+															</fo:table-row>
+														</fo:table-body>
+													</fo:table>
+												</fo:table-cell>
+											</fo:table-row>
+										</fo:table-body>
+									</fo:table>
+								</fo:table-cell>
+							</fo:table-row>
+							<fo:table-row>
+								<fo:table-cell>
+									<fo:block line-height="10px" font-size="10px" space-before.opximum="1.5px" space-after.opximum="1.5px" keep-together="always">History of the drugs included in the repackaged lot identified above: (include pedigrees for additional drugs on attached pages as necessary) </fo:block>
+								</fo:table-cell>
+							</fo:table-row>
+							<!-- BEIGINNING-->
+							
+							<fo:table-row>
+								<fo:table-cell>
+									<fo:table>
+										<fo:table-column column-width="20%"/>
+										<fo:table-column column-width="75%"/>
+										<fo:table-body>
+											<fo:table-row>
+												<fo:table-cell space-after="5px" padding-right="7px">
+													<fo:table>
+														<fo:table-body>
+															<fo:table-row>
+																<fo:table-cell border="1px solid #000000">
+																	<xsl:for-each select="previousProducts">
+																		<fo:block margin-left="2px" font-size="10px" margin-top="5px">
+																			<fo:inline font-weight="bold">Lot Number: 
+														</fo:inline>
+																			<fo:inline text-decoration="underline">
+																				<xsl:value-of select="itemInfo/lot"/>
+																			</fo:inline>
+																		</fo:block>
+																		<fo:block margin-left="2px" font-size="10px" margin-bottom="5px">
+																			<fo:inline font-weight="bold">Quantity: 
+														</fo:inline>
+																			<fo:inline text-decoration="underline">
+																				<xsl:value-of select="itemInfo/quantity"/>
+																			</fo:inline>
+																		</fo:block>
+																		<fo:block margin-left="2px" font-size="10px" margin-bottom="5px">
+																			<fo:inline font-weight="bold">Manufacturer &amp; information for authentication:														                                        </fo:inline>
+																			<fo:inline text-decoration="underline">
+																				<xsl:value-of select="previousProductInfo/manufacturer"/>
+																				<xsl:if test="string(contactInfo/name)">,
+																				</xsl:if>
+																				<xsl:value-of select="contactInfo/name"/>
+																				<xsl:if test="string(contactInfo/title)">,
+																				</xsl:if>
+																				<xsl:value-of select="contactInfo/title"/>
+																				<xsl:if test="string(contactInfo/telphone)">,
+																				</xsl:if>
+																				<xsl:value-of select="contactInfo/telphone"/>
+																				<xsl:if test="string(contactInfo/url)">,
+																				</xsl:if>
+																				<xsl:value-of select="contactInfo/url"/>
+																				<xsl:choose>
+																					<xsl:when test="string(contactInfo/email)">,
+															  <xsl:value-of select="contactInfo/email"/>
+																					</xsl:when>
+																					<xsl:otherwise>
+																						<!--<fo:block>
+																							<fo:leader leader-length.optimum="140pt" leader-pattern="rule" rule-thickness="1pt"/>
+																						</fo:block>-->
+																						
+																					</xsl:otherwise>
+																				</xsl:choose>
+																			</fo:inline>
+																		</fo:block>
+																		<fo:block margin-left="2px" font-size="10px" margin-bottom="5px">
+																			<fo:inline font-weight="bold">NDC: 
+														</fo:inline>
+																			<fo:inline text-decoration="underline">
+																				<xsl:value-of select="previousProductInfo/productCode"/>
+																			</fo:inline>
+																		</fo:block>
+																		<fo:block margin-left="2px" font-size="10px" margin-bottom="5px">
+																			<fo:inline font-weight="bold">Unique Serial#: 
+														</fo:inline>
+																			<fo:inline text-decoration="underline">
+																				<xsl:value-of select="itemInfo/itemSerialNumber"/>
+																			</fo:inline>
+																			<!--<fo:block>
+																				<fo:leader leader-length.optimum="140pt" leader-pattern="rule" rule-thickness="1pt"/>
+																			</fo:block>-->
+																		</fo:block>
+																		<fo:block margin-left="2px" font-size="10px" margin-bottom="10px">
+																			<fo:inline>
+														</fo:inline>
+																			<fo:leader leader-length.optimum="140pt" leader-pattern="rule" rule-thickness="1pt"/>
+																			<fo:inline font-style="italic">
+																Repeat as applicable
+															</fo:inline>
+																		</fo:block>
+																	</xsl:for-each>
+																	<xsl:if test="count(previousProducts)&lt;2">
+																		<fo:block margin-left="2px" font-size="10px" margin-bottom="5px" margin-right="2px">
+																			<fo:table>
+																				<fo:table-column column-width="48%"/>
+																				<fo:table-column/>
+																				<fo:table-body>
+																					<fo:table-row>
+																						<fo:table-cell>
+																							<fo:block font-weight="bold">Lot Number:
+																	</fo:block>
+																						</fo:table-cell>
+																						<fo:table-cell border-bottom="0.5px solid #000000">
+																							<fo:block>
+																	</fo:block>
+																						</fo:table-cell>
+																					</fo:table-row>
+																				</fo:table-body>
+																			</fo:table>
+																		</fo:block>
+																		<fo:block margin-left="2px" font-size="10px" margin-bottom="5px" margin-right="2px">
+																			<fo:table>
+																				<fo:table-column column-width="30%"/>
+																				<fo:table-column/>
+																				<fo:table-body>
+																					<fo:table-row>
+																						<fo:table-cell>
+																							<fo:block font-weight="bold">Quantity: 																						</fo:block>
+																						</fo:table-cell>
+																						<fo:table-cell border-bottom="0.5px solid #000000">
+																							<fo:block>
+																	</fo:block>
+																						</fo:table-cell>
+																					</fo:table-row>
+																				</fo:table-body>
+																			</fo:table>
+																		</fo:block>
+																		<fo:block margin-left="2px" font-size="10px" margin-bottom="6px">
+																			<fo:inline font-weight="bold" margin-left="5px">Manufacturer &amp; information for authentication:_________
+														</fo:inline>
+																			<!--<fo:block>
+																				<fo:leader leader-length.optimum="140pt" leader-pattern="rule" rule-thickness="1pt"/>
+																			</fo:block>-->
+																		 
+																		</fo:block>
+																		<fo:block border-bottom="0.5px solid #000000" margin-left="2px" margin-right="2px" margin-top="5px">
+														</fo:block>
+																		<fo:block margin-left="2px" font-size="10px" margin-bottom="6px" margin-right="2px">
+																			<fo:table>
+																				<fo:table-column column-width="20%"/>
+																				<fo:table-column/>
+																				<fo:table-body>
+																					<fo:table-row>
+																						<fo:table-cell>
+																							<fo:block font-weight="bold">NDC:																													</fo:block>
+																						</fo:table-cell>
+																						<fo:table-cell border-bottom="1px solid #000000">
+																							<fo:block>
+																	</fo:block>
+																						</fo:table-cell>
+																					</fo:table-row>
+																				</fo:table-body>
+																			</fo:table>
+																		</fo:block>
+																		<fo:block margin-left="2px" font-size="10px" margin-bottom="5px" margin-right="2px">
+																			<fo:table>
+																				<fo:table-column column-width="55%"/>
+																				<fo:table-column/>
+																				<fo:table-body>
+																					<fo:table-row>
+																						<fo:table-cell>
+																							<fo:block padding-bottom="1px" font-weight="bold">Unique Serial#: 
+																	</fo:block>
+																						</fo:table-cell>
+																					</fo:table-row>
+																				</fo:table-body>
+																			</fo:table>
+																		</fo:block>
+																		<fo:block margin-left="2px" font-size="10px" margin-bottom="12px">
+																			<fo:inline/>
+																			<fo:leader leader-length.optimum="140pt" leader-pattern="rule" rule-thickness="1pt"/>
+																			<!--<fo:inline font-style="italic">
+																Repeat as applicable
+															</fo:inline>-->
+																		</fo:block>
+																	</xsl:if>
+																</fo:table-cell>
+															</fo:table-row>
+														</fo:table-body>
+													</fo:table>
+													<!-- Previous lot information-->
+													<!-- Previous lot information-->
+												</fo:table-cell>
+												<fo:table-cell padding-left="5px" border-style="solid" border-color="black" border-width="1px" padding="4px" padding-bottom="1px">
+													<fo:table>
+														<fo:table-column/>
+														<fo:table-column/>
+														<fo:table-body>
+															<fo:table-row>
+																<fo:table-cell>
+																	<fo:block line-height="4px" font-size="9px" font-weight="bold" text-align="center" padding-top="1px">OWNERSHIP HISTORY</fo:block>
+																</fo:table-cell>
+																<fo:table-cell>
+																	<fo:block line-height="4px" font-size="9px" font-weight="bold" text-align="center" padding-top="1px">PHYSICAL DISTRIBUTION HISTORY(if different)</fo:block>
+																</fo:table-cell>
+															</fo:table-row>
+															<fo:table-row>
+																<fo:table-cell number-columns-spanned="2">
+																	<fo:block font-size="9px" font-weight="bold" font-style="italic" padding-top="4px">1. WHOLESALER/REPACKAGER THAT PURCHASED FROM THE MANUFACTURER</fo:block>
+																</fo:table-cell>
+															</fo:table-row>
+															<xsl:for-each select="custodyChain/transactionInfo">
+																<!-- EDITED -->
+																<fo:table-row>
+																	<fo:table-cell margin-left="5px">
+																		<fo:block line-height="10px" font-size="9px" keep-together="always" text-align="center" width="80%" padding="5px" padding-top="1px">
+																			<fo:table width="100%">
+																				<fo:table-body>
+																					<fo:table-row>
+																						<fo:table-cell space-before="1px" border-style="solid" border-color="black" border-width="1px" padding="4px">
+																							<!--<fo:block text-align="left" margin-left="1px" margin-bottom="10px" font-weight="bold">
+																								<fo:inline>#1 Above SOLD TO: </fo:inline>
+																							</fo:block>-->
+																							<fo:block text-align="left">
+																								<fo:inline>Name: </fo:inline>
+																								<xsl:choose>
+																									<xsl:when test="businessAddress/businessName">
+																										<fo:inline text-decoration="underline">
+																											<xsl:value-of select="businessAddress/businessName"/>
+																										</fo:inline>
+																									</xsl:when>
+																									<xsl:otherwise>
+																										<fo:leader leader-length.minimum="12pt" leader-length.optimum="155pt" leader-length.maximum="100%" leader-pattern="rule" rule-thickness="1pt"/>
+																									</xsl:otherwise>
+																								</xsl:choose>
+																							</fo:block>
+																							<fo:block text-align="left">
+																								<fo:inline>Address: </fo:inline>
+																								<xsl:choose>
+																									<xsl:when test="businessAddress">
+																										<fo:inline text-decoration="underline">
+																											<xsl:value-of select="businessAddress/street1"/>
+																											<xsl:if test="string(businessAddress/street2)">,
+																				</xsl:if>
+																											<xsl:value-of select="businessAddress/street2"/>
+																											<xsl:if test="string(businessAddress/city)">,
+																				</xsl:if>
+																											<xsl:value-of select="businessAddress/city"/>
+																											<xsl:if test="string(businessAddress/stateOrRegion)">,
+																				</xsl:if>
+																											<xsl:value-of select="businessAddress/stateOrRegion"/>
+																											<xsl:if test="string(businessAddress/postalCode)">,
+																				</xsl:if>
+																											<xsl:value-of select="businessAddress/postalCode"/>
+																											<xsl:if test="string(businessAddress/country)">,
+																				</xsl:if>
+																											<xsl:value-of select="businessAddress/country"/>
+																										</fo:inline>
+																									</xsl:when>
+																									<xsl:otherwise>
+																										<fo:leader leader-length.minimum="12pt" leader-length.optimum="214pt" leader-length.maximum="100%" leader-pattern="rule" rule-thickness="1pt"/>
+																									</xsl:otherwise>
+																								</xsl:choose>
+																							</fo:block>
+																							<fo:block text-align="left">
+																								<fo:inline>Date Purchased and Ref: </fo:inline>
+																								<xsl:choose>
+																									<xsl:when test="identifierType">
+																										<fo:inline text-decoration="underline">
+																											<xsl:value-of select="identifier"/>
+																											<xsl:if test="string(identifierType)">,
+																					</xsl:if>
+																											<xsl:value-of select="identifierType"/>
+																											<xsl:if test="string(transactionDate)">,
+																					</xsl:if>
+																											<xsl:value-of select="transactionDate"/>
+																										</fo:inline>
+																									</xsl:when>
+																									<xsl:otherwise>
+																										<fo:leader leader-length.minimum="12pt" leader-length.optimum="155pt" leader-length.maximum="100%" leader-pattern="rule" rule-thickness="1pt"/>
+																									</xsl:otherwise>
+																								</xsl:choose>
+																							</fo:block>
+																							<fo:block text-align="left">
+																								<fo:inline>Print Name of Recipient: </fo:inline>
+																								<xsl:choose>
+																									<xsl:when test="signerInfo/name">
+																										<fo:inline text-decoration="underline">
+																											<xsl:value-of select="signerInfo/name"/>
+																										</fo:inline>
+																									</xsl:when>
+																									<xsl:otherwise>
+																										<fo:leader leader-length.optimum="146pt" leader-length.maximum="100%" leader-pattern="rule" rule-thickness="1pt"/>
+																									</xsl:otherwise>
+																								</xsl:choose>
+																							</fo:block>
+																							<fo:block text-align="left">
+																								<fo:inline>Signature of Recipient: </fo:inline>
+																								<xsl:choose>
+																									<xsl:when test="signerInfo/name">
+																										<fo:inline text-decoration="underline">
+																											<xsl:value-of select="signerInfo/name"/>
+																										</fo:inline>
+																									</xsl:when>
+																									<xsl:otherwise>
+																										<fo:leader leader-length.optimum="155pt" leader-length.maximum="100%" leader-pattern="rule" rule-thickness="1pt"/>
+																									</xsl:otherwise>
+																								</xsl:choose>
+																							</fo:block>
+																							<!--<fo:block text-align="left">
+																							<fo:inline>Name of the Authenticator: </fo:inline>
+																							    <xsl:choose>
+																								<xsl:when test='signerInfo/name'>																							
+																								<fo:inline text-decoration="underline">
+																									<xsl:value-of select="signerInfo/name"/>
+																								</fo:inline>
+																								</xsl:when>
+																								<xsl:otherwise>
+																								
+																									<fo:leader leader-length.minimum="12pt" leader-length.optimum="85pt"
+																								leader-length.maximum="100%" leader-pattern="rule" rule-thickness="1pt"/>
+																								
+																								 </xsl:otherwise>
+																								</xsl:choose>
+																								
+																							</fo:block>
+																							<fo:block text-align="left">
+																							<fo:inline>Signature of the Authenticator: </fo:inline>
+																							     <xsl:choose>
+																								<xsl:when test='signerInfo/name'>
+																								<fo:inline text-decoration="underline">
+																									<xsl:value-of select="signerInfo/name"/>
+																								</fo:inline>
+																								</xsl:when>
+																								<xsl:otherwise>
+																								
+																									<fo:leader leader-length.minimum="12pt" leader-length.optimum="95pt"
+																								leader-length.maximum="100%" leader-pattern="rule" rule-thickness="1pt"/>
+																								
+																								 </xsl:otherwise>
+																								</xsl:choose>
+																								
+																							</fo:block>-->
+																							<fo:block text-align="left" margin="4px 0 1px 15px">To authenticate a subsequent transaction, contact: </fo:block>
+																							<fo:block text-align="left">
+																								<fo:inline>Name: </fo:inline>
+																								<xsl:choose>
+																									<xsl:when test="signerInfo/name">
+																										<fo:inline text-decoration="underline">
+																											<xsl:value-of select="signerInfo/name"/>
+																										</fo:inline>
+																									</xsl:when>
+																									<xsl:otherwise>
+																										<fo:leader leader-length.minimum="12pt" leader-length.optimum="226pt" leader-length.maximum="100%" leader-pattern="rule" rule-thickness="1pt"/>
+																									</xsl:otherwise>
+																								</xsl:choose>
+																							</fo:block>
+																							<fo:block text-align="left">
+																								<fo:inline>Telephone Number: </fo:inline>
+																								<xsl:choose>
+																									<xsl:when test="signerInfo/telephone">
+																										<fo:inline text-decoration="underline">
+																											<xsl:value-of select="signerInfo/telephone"/>
+																										</fo:inline>
+																									</xsl:when>
+																									<xsl:otherwise>
+																										<fo:leader leader-length.optimum="164pt" leader-length.maximum="100%" leader-pattern="rule" rule-thickness="1pt"/>
+																									</xsl:otherwise>
+																								</xsl:choose>
+																							</fo:block>
+																							<fo:block text-align="left">
+																								<fo:inline>E-Mail Address: </fo:inline>
+																								<xsl:choose>
+																									<xsl:when test="signerInfo/email">,
+																										<fo:inline text-decoration="underline">
+																											<xsl:value-of select="signerInfo/email"/>
+																										</fo:inline>
+																									</xsl:when>
+																									<xsl:otherwise>
+																										<fo:leader leader-length.optimum="184pt" leader-length.maximum="100%" leader-pattern="rule" rule-thickness="1pt"/>
+																									</xsl:otherwise>
+																								</xsl:choose>
+																							</fo:block>
+																						</fo:table-cell>
+																					</fo:table-row>
+																				</fo:table-body>
+																			</fo:table>
+																		</fo:block>
+																	</fo:table-cell>
+																	<fo:table-cell margin-left="5px">
+																		<fo:block line-height="10px" font-size="9px" keep-together="always" text-align="center" width="50%" padding="5px" padding-top="1px">
+																			<fo:table width="100%">
+																				<fo:table-body>
+																					<fo:table-row>
+																						<fo:table-cell border-style="solid" border-color="black" border-width="1px" padding="4px">
+																							<!--<fo:block text-align="left" margin-left="10px" margin-bottom="10px" font-weight="bold">
+																								<fo:inline>SHIPPED TO : </fo:inline>
+																							</fo:block>-->
+																							<fo:block text-align="left">
+																								<fo:inline>Name: </fo:inline>
+																								<xsl:choose>
+																									<xsl:when test="shippingAddress/businessName">
+																										<fo:inline text-decoration="underline">
+																											<xsl:value-of select="shippingAddress/businessName"/>
+																										</fo:inline>
+																									</xsl:when>
+																									<xsl:otherwise>
+																										<fo:leader leader-length.optimum="226pt" leader-length.maximum="100%" leader-pattern="rule" rule-thickness="1pt"/>
+																									</xsl:otherwise>
+																								</xsl:choose>
+																							</fo:block>
+																							<fo:block text-align="left">
+																								<fo:inline>Address: </fo:inline>
+																								<xsl:choose>
+																									<xsl:when test="shippingAddress">
+																										<fo:inline text-decoration="underline">
+																											<xsl:value-of select="shippingAddress/street1"/>
+																											<xsl:if test="string(shippingAddress/street2)">,
+																				</xsl:if>
+																											<xsl:value-of select="shippingAddress/street2"/>
+																											<xsl:if test="string(shippingAddress/city)">,
+																				</xsl:if>
+																											<xsl:value-of select="shippingAddress/city"/>
+																											<xsl:if test="string(shippingAddress/stateOrRegion)">,
+																				</xsl:if>
+																											<xsl:value-of select="shippingAddress/stateOrRegion"/>
+																											<xsl:if test="string(shippingAddress/postalCode)">,
+																				</xsl:if>
+																											<xsl:value-of select="shippingAddress/postalCode"/>
+																											<xsl:if test="string(shippingAddress/country)">,
+																				</xsl:if>
+																											<xsl:value-of select="shippingAddress/country"/>
+																										</fo:inline>
+																									</xsl:when>
+																									<xsl:otherwise>
+																										<fo:leader leader-length.optimum="214pt" leader-length.maximum="100%" leader-pattern="rule" rule-thickness="1pt"/>
+																										<fo:block text-align-last="justify" end-indent="20mm" last-line-end-indent="-19mm">
+																											<fo:leader leader-pattern="rule" rule-thickness="1pt"/>
+																										</fo:block>
+																									</xsl:otherwise>
+																								</xsl:choose>
+																							</fo:block>
+																							<fo:block text-align="left">
+																								<fo:inline>Date Purchased and Ref: </fo:inline>
+																								<xsl:choose>
+																									<xsl:when test="shippingAddress">
+																										<fo:inline text-decoration="underline">
+																											<xsl:if test="shippingAddress">
+																												<xsl:value-of select="identifier"/>
+																												<xsl:if test="string(identifierType)">,
+																					</xsl:if>
+																												<xsl:value-of select="identifierType"/>
+																												<xsl:if test="string(transactionDate)">,
+																					</xsl:if>
+																												<xsl:value-of select="transactionDate"/>
+																											</xsl:if>
+																										</fo:inline>
+																									</xsl:when>
+																									<xsl:otherwise>
+																										<fo:leader leader-length.minimum="12pt" leader-length.optimum="145pt" leader-length.maximum="100%" leader-pattern="rule" rule-thickness="1pt"/>
+																										<!--<fo:block text-align-last="justify" end-indent="20mm" last-line-end-indent="-19mm">
+																								  <fo:leader leader-pattern="rule" rule-thickness="1pt"/>
+																								 </fo:block>-->
+																									</xsl:otherwise>
+																								</xsl:choose>
+																							</fo:block>
+																							<fo:block text-align="left">
+																								<fo:inline>Print Name of Recipient: </fo:inline>
+																								<xsl:choose>
+																									<xsl:when test="signerInfo/name">
+																										<fo:inline text-decoration="underline">
+																											<xsl:if test="shippingAddress">
+																												<xsl:value-of select="signerInfo/name"/>
+																											</xsl:if>
+																										</fo:inline>
+																									</xsl:when>
+																									<xsl:otherwise>
+																										<fo:leader leader-length.minimum="12pt" leader-length.optimum="146pt" leader-length.maximum="100%" leader-pattern="rule" rule-thickness="1pt"/>
+																									</xsl:otherwise>
+																								</xsl:choose>
+																							</fo:block>
+																							<fo:block text-align="left">
+																								<fo:inline>Signature of Recipient: </fo:inline>
+																								<xsl:choose>
+																									<xsl:when test="signerInfo/name">
+																										<fo:inline text-decoration="underline">
+																											<xsl:if test="shippingAddress">
+																												<xsl:value-of select="signerInfo/name"/>
+																											</xsl:if>
+																										</fo:inline>
+																									</xsl:when>
+																									<xsl:otherwise>
+																										<fo:leader leader-length.minimum="12pt" leader-length.optimum="155pt" leader-length.maximum="100%" leader-pattern="rule" rule-thickness="1pt"/>
+																									</xsl:otherwise>
+																								</xsl:choose>
+																							</fo:block>
+																							<!--<fo:block text-align="left">
+																								<fo:inline>Name of the Authenticator: </fo:inline>
+																								<xsl:choose>
+																								<xsl:when test="shippingAddress">
+																								<fo:inline text-decoration="underline">
+																									<xsl:if test="shippingAddress">
+																										<xsl:value-of select="signerInfo/name"/>
+																									</xsl:if>
+																								</fo:inline>
+																								</xsl:when>
+																								<xsl:otherwise>
+																								
+																									<fo:leader leader-length.minimum="12pt" leader-length.optimum="104pt"
+																								leader-length.maximum="100%" leader-pattern="rule" rule-thickness="1pt"/>
+																								
+																								</xsl:otherwise>
+																								</xsl:choose>
+																							</fo:block>
+																							<fo:block text-align="left">
+																								<fo:inline>Signature of the Authenticator: </fo:inline>
+																								<xsl:choose>
+																								<xsl:when test="shippingAddress">
+																								<fo:inline text-decoration="underline">
+																									<xsl:if test="shippingAddress">
+																										<xsl:value-of select="signerInfo/name"/>
+																									</xsl:if>
+																								</fo:inline>
+																								</xsl:when>
+																								<xsl:otherwise>
+																								
+																									<fo:leader leader-length.minimum="12pt" leader-length.optimum="90pt"
+																								leader-length.maximum="100%" leader-pattern="rule" rule-thickness="1pt"/>
+																								
+																								</xsl:otherwise>
+																								</xsl:choose>
+																							</fo:block>-->
+																							<fo:block text-align="left" margin="4px 0 1px 15px">To authenticate a subsequent transaction, contact: </fo:block>
+																							<fo:block text-align="left">
+																								<fo:inline>Name: </fo:inline>
+																								<xsl:choose>
+																									<xsl:when test="signerInfo/name">
+																										<fo:inline text-decoration="underline">
+																											<xsl:if test="shippingAddress">
+																												<xsl:value-of select="signerInfo/name"/>
+																											</xsl:if>
+																										</fo:inline>
+																									</xsl:when>
+																									<xsl:otherwise>
+																										<fo:leader leader-length.optimum="226pt" leader-length.maximum="100%" leader-pattern="rule" rule-thickness="1pt"/>
+																									</xsl:otherwise>
+																								</xsl:choose>
+																							</fo:block>
+																							<fo:block text-align="left">
+																								<fo:inline>Telephone Number: </fo:inline>
+																								<xsl:choose>
+																									<xsl:when test="signerInfo/telephone">
+																										<fo:inline text-decoration="underline">
+																											<xsl:if test="shippingAddress">
+																												<xsl:value-of select="signerInfo/telephone"/>
+																											</xsl:if>
+																										</fo:inline>
+																									</xsl:when>
+																									<xsl:otherwise>
+																										<fo:leader leader-length.minimum="12pt" leader-length.optimum="164pt" leader-length.maximum="100%" leader-pattern="rule" rule-thickness="1pt"/>
+																									</xsl:otherwise>
+																								</xsl:choose>
+																							</fo:block>
+																							<fo:block text-align="left">
+																								<fo:inline>E-Mail Address: </fo:inline>
+																								<xsl:choose>
+																									<xsl:when test="signerInfo/email">
+																										<fo:inline text-decoration="underline">
+																											<xsl:if test="shippingAddress">
+																												<xsl:value-of select="signerInfo/email"/>
+																											</xsl:if>
+																										</fo:inline>
+																									</xsl:when>
+																									<xsl:otherwise>
+																										<fo:leader leader-length.optimum="184pt" leader-length.maximum="100%" leader-pattern="rule" rule-thickness="1pt"/>
+																									</xsl:otherwise>
+																								</xsl:choose>
+																							</fo:block>
+																						</fo:table-cell>
+																					</fo:table-row>
+																				</fo:table-body>
+																			</fo:table>
+																		</fo:block>
+																	</fo:table-cell>
+																</fo:table-row>
+																<xsl:if test="position()=1">
+																	<fo:table-row>
+																		<fo:table-cell number-columns-spanned="2">
+																			<fo:block line-height="1px" font-size="9px" font-weight="bold" font-style="italic" text-align="center">SUBSEQUENT WHOLESALE DISTRIBUTION(repeat as necessary)</fo:block>
+																		</fo:table-cell>
+																	</fo:table-row>
+																</xsl:if>
+																<!-- EDITED -->
+															</xsl:for-each>
+															<xsl:if test="(count(custodyChain/transactionInfo))&lt;2">
+																<!-- adding blank custody-->
+																<fo:table-row>
+																	<fo:table-cell margin-left="5px">
+																		<fo:block line-height="10px" font-size="9px" keep-together="always" text-align="left" width="50%" padding="4px">
+																			<fo:table>
+																				<fo:table-body>
+																					<fo:table-row>
+																						<fo:table-cell border-style="solid" border-color="black" border-width="1px" padding="4px">
+																							<fo:block text-align="center" margin-left="10px">
+																								<fo:inline font-size="9px">#1 Above SOLD TO: </fo:inline>
+																							</fo:block>
+																							<fo:block text-align="left">
+																								<fo:inline>Name:  </fo:inline>
+																								<fo:leader leader-length.optimum="220pt" leader-length.maximum="100%" leader-pattern="rule" rule-thickness="1pt"/>
+																							</fo:block>
+																							<fo:block text-align="left">
+																								<fo:inline>Address:  </fo:inline>
+																								<fo:leader leader-length.minimum="12pt" leader-length.optimum="214pt" leader-length.maximum="100%" leader-pattern="rule" rule-thickness="1pt"/>
+																								<fo:block text-align-last="justify" end-indent="20mm" last-line-end-indent="-19mm">
+																									<fo:leader leader-pattern="rule" rule-thickness="1pt"/>
+																								</fo:block>
+																							</fo:block>
+																							<fo:block text-align="left">
+																								<fo:inline>Date Purchased and Ref:   </fo:inline>
+																								<fo:leader leader-length.minimum="12pt" leader-length.optimum="145pt" leader-length.maximum="100%" leader-pattern="rule" rule-thickness="1pt"/>
+																							</fo:block>
+																							<fo:block text-align="left">
+																								<fo:inline>Print Name of Recipient:  </fo:inline>
+																								<fo:leader leader-length.minimum="12pt" leader-length.optimum="146pt" leader-length.maximum="100%" leader-pattern="rule" rule-thickness="1pt"/>
+																							</fo:block>
+																							<fo:block text-align="left">
+																								<fo:inline>Signature of Recipient:  </fo:inline>
+																								<fo:leader leader-length.minimum="12pt" leader-length.optimum="155pt" leader-length.maximum="100%" leader-pattern="rule" rule-thickness="1pt"/>
+																							</fo:block>
+																							<fo:block text-align="left">
+																								<fo:inline>Name of the Authenticator:  </fo:inline>
+																								<fo:leader leader-length.minimum="12pt" leader-length.optimum="134pt" leader-length.maximum="100%" leader-pattern="rule" rule-thickness="1pt"/>
+																							</fo:block>
+																							<fo:block text-align="left">
+																								<fo:inline>Signature of the Authenticator:  </fo:inline>
+																								<fo:leader leader-length.minimum="12pt" leader-length.optimum="120pt" leader-length.maximum="100%" leader-pattern="rule" rule-thickness="1pt"/>
+																							</fo:block>
+																							<fo:block text-align="left" margin-left="10px" font-style="italic">To authenticate a subsequent transaction, contact: </fo:block>
+																							<fo:block text-align="left">
+																								<fo:inline>Name:  </fo:inline>
+																								<fo:leader leader-length.optimum="220pt" leader-length.maximum="100%" leader-pattern="rule" rule-thickness="1pt"/>
+																							</fo:block>
+																							<fo:block text-align="left">
+																								<fo:inline>Telephone Number:  </fo:inline>
+																								<fo:leader leader-length.minimum="12pt" leader-length.optimum="164pt" leader-length.maximum="100%" leader-pattern="rule" rule-thickness="1pt"/>
+																							</fo:block>
+																							<fo:block text-align="left">
+																								<fo:inline>E-Mail Address: </fo:inline>
+																								<fo:leader leader-length.optimum="184pt" leader-length.maximum="100%" leader-pattern="rule" rule-thickness="1pt"/>
+																							</fo:block>
+																						</fo:table-cell>
+																					</fo:table-row>
+																				</fo:table-body>
+																			</fo:table>
+																		</fo:block>
+																	</fo:table-cell>
+																	<fo:table-cell margin-left="5px">
+																		<fo:block line-height="10px" font-size="9px" keep-together="always" text-align="left" width="50%" padding="4px">
+																			<fo:table>
+																				<fo:table-body>
+																					<fo:table-row>
+																						<fo:table-cell border-style="solid" border-color="black" border-width="1px" padding="4px">
+																							<fo:block text-align="center">
+																								<fo:inline font-size="9px"> SHIPPED TO: </fo:inline>
+																							</fo:block>
+																							<fo:block text-align="left">
+																								<fo:inline>Name:  </fo:inline>
+																								<fo:leader leader-length.optimum="220pt" leader-length.maximum="100%" leader-pattern="rule" rule-thickness="1pt"/>
+																							</fo:block>
+																							<fo:block text-align="left">
+																								<fo:inline>Address:  </fo:inline>
+																								<fo:leader leader-length.optimum="214pt" leader-length.maximum="100%" leader-pattern="rule" rule-thickness="1pt"/>
+																								<fo:block text-align-last="justify" end-indent="20mm" last-line-end-indent="-19mm">
+																									<fo:leader leader-pattern="rule" rule-thickness="1pt"/>
+																								</fo:block>
+																							</fo:block>
+																							<fo:block text-align="left">
+																								<fo:inline>Date Purchased and Ref:   </fo:inline>
+																								<fo:leader leader-length.minimum="12pt" leader-length.optimum="145pt" leader-length.maximum="100%" leader-pattern="rule" rule-thickness="1pt"/>
+																							</fo:block>
+																							<fo:block text-align="left">
+																								<fo:inline>Print Name of Recipient:  </fo:inline>
+																								<fo:leader leader-length.minimum="12pt" leader-length.optimum="146pt" leader-length.maximum="100%" leader-pattern="rule" rule-thickness="1pt"/>
+																							</fo:block>
+																							<fo:block text-align="left">
+																								<fo:inline>Signature of Recipient:  </fo:inline>
+																								<fo:leader leader-length.minimum="12pt" leader-length.optimum="155pt" leader-length.maximum="100%" leader-pattern="rule" rule-thickness="1pt"/>
+																							</fo:block>
+																							<fo:block text-align="left">
+																								<fo:inline>Name of the Authenticator:  </fo:inline>
+																								<fo:leader leader-length.minimum="12pt" leader-length.optimum="134pt" leader-length.maximum="100%" leader-pattern="rule" rule-thickness="1pt"/>
+																							</fo:block>
+																							<fo:block text-align="left">
+																								<fo:inline>Signature of the Authenticator:  </fo:inline>
+																								<fo:leader leader-length.minimum="12pt" leader-length.optimum="120pt" leader-length.maximum="100%" leader-pattern="rule" rule-thickness="1pt"/>
+																							</fo:block>
+																							<fo:block text-align="left" margin-left="10px" font-style="italic">To authenticate a subsequent transaction, contact: </fo:block>
+																							<fo:block text-align="left">
+																								<fo:inline>Name:  </fo:inline>
+																								<fo:leader leader-length.optimum="220pt" leader-length.maximum="100%" leader-pattern="rule" rule-thickness="1pt"/>
+																							</fo:block>
+																							<fo:block text-align="left">
+																								<fo:inline>Telephone Number:  </fo:inline>
+																								<fo:leader leader-length.minimum="12pt" leader-length.optimum="164pt" leader-length.maximum="100%" leader-pattern="rule" rule-thickness="1pt"/>
+																							</fo:block>
+																							<fo:block text-align="left">
+																								<fo:inline>E-Mail Address: </fo:inline>
+																								<fo:leader leader-length.minimum="12pt" leader-length.optimum="184pt" leader-length.maximum="100%" leader-pattern="rule" rule-thickness="1pt"/>
+																							</fo:block>
+																						</fo:table-cell>
+																					</fo:table-row>
+																				</fo:table-body>
+																			</fo:table>
+																		</fo:block>
+																	</fo:table-cell>
+																</fo:table-row>
+															</xsl:if>
+															<!-- EDITED -->
+															<!-- EDITED -->
+														</fo:table-body>
+													</fo:table>
+												</fo:table-cell>
+											</fo:table-row>
+										</fo:table-body>
+									</fo:table>
+								</fo:table-cell>
+							</fo:table-row>
+							<fo:table-row padding="5px">
+								<fo:table-cell number-columns-spanned="2">
+									<fo:block line-height="8px" font-size="9px" space-before.opximum="1.5px" space-after.opximum="1.5px" keep-together="always" margin-top="5px">I swear or affirm that the information contained on this pedigree is 
+      accurate and complete and that prior sales and distribution is 
+      authenticated, if required </fo:block>
+								</fo:table-cell>
+							</fo:table-row>
+                                             
+                                             
+                                             <!-- signature -->
+                                             <fo:table-row>
+									<fo:table-cell margin-right="5px" margin-left="5px" margin-bottom="5px">
+								       	<fo:block keep-together="always">
+								       	  <fo:table>
+								       	  <fo:table-column column-width="30%"/>
+											<fo:table-column column-width="40%"/>
+											<fo:table-column column-width="15%"/>
+											<fo:table-column column-width="25%"/>
+
+								       	  		<fo:table-body>
+													<fo:table-row>
+															<fo:table-cell>
+																<fo:block border-bottom="0.5px solid #000000" font-size="10px">
+															<xsl:apply-templates select="signPath"/>
+														</fo:block>
+														<fo:block font-size="8px" padding-top="3px">
+																			Signature (Authorised to bind the Company)
+														</fo:block>
+										             				</fo:table-cell>
+										             				
+										             				<fo:table-cell>
+										             						<fo:block line-height="30px" border-bottom="0.5px solid #000000" font-size="8px">
+															<xsl:value-of select="signerInfo/name"/>
+															<xsl:if test="string(signerInfo/title)">,
+																		</xsl:if>
+															<xsl:value-of select="signerInfo/title"/>
+														</fo:block>
+														<fo:block font-size="8px" padding-top="3px">
+																			Print Name and Title
+																		</fo:block>
+															</fo:table-cell>
+															
+															<fo:table-cell>
+										             						<fo:block line-height="30px" border-bottom="0.5px solid #000000" font-size="8px">
+															<xsl:value-of select="date"/>
+														</fo:block>
+														<fo:block font-size="8px" padding-top="3px">
+																			Date
+														</fo:block>
+															</fo:table-cell>
+
+														<fo:table-cell>
+										             						<fo:block line-height="30px" font-size="10px" padding-top="3px">Page_____of____
+										             						</fo:block>
+															</fo:table-cell>
+
+															
+															
+													</fo:table-row>
+												</fo:table-body>
+										</fo:table>
+								       	
+								       	</fo:block>
+							               </fo:table-cell>
+						    </fo:table-row>
+                                             
+                                             
+
+                                                
+							
+							<fo:table-row>
+								<fo:table-cell number-columns-spanned="2" margin-left="9px" margin-right="5px">
+									<fo:block line-height="5px" font-size="8px" keep-together="always" padding-bottom="3px">*Reference Number should be identified as an invoice, purchase order, shipping document number or similar unique identifier. </fo:block>
+								</fo:table-cell>
+							</fo:table-row>
+							<fo:table-row>
+								<fo:table-cell margin-left="10px" margin-right="5px">
+									<fo:block line-height="5px" font-size="8px" keep-together="always">Prescription (legend) Drug Pedigree -Repackager DH2135, 7/06 (obseletes previous versions) </fo:block>
+								</fo:table-cell>
+							</fo:table-row>
+							<fo:table-row margin-left="5px" >
+													<fo:table-cell>
+														<fo:block  font-size="8px" space-before.opximum="1.5px" space-after.opximum="1.5px" keep-together="always">*
+													<xsl:value-of select="Comment"/>
+
+													</fo:block>
+												</fo:table-cell>
+							</fo:table-row>
+
+							
+						</fo:table-body>
+					</fo:table>
+				</fo:flow>
+			</fo:page-sequence>
+		</fo:root>
+	</xsl:template>
+	<xsl:template match="path">
+		<fo:external-graphic content-height="3.63em" content-width="9.13em">
+			<xsl:attribute name="src"><xsl:value-of select="concat(.,'\xsl\logo.gif')"/></xsl:attribute>
+		</fo:external-graphic>
+	</xsl:template>
+	<xsl:template match="signPath">
+		<fo:external-graphic content-height="3em">
+				<xsl:attribute name="src"><xsl:value-of select="concat(.,'\xsl\Signature.jpeg')"/></xsl:attribute>
+		</fo:external-graphic>
+	</xsl:template>
+
+	
+
+</xsl:stylesheet>

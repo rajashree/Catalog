@@ -1,0 +1,48 @@
+<Pedigree xmlns="http://www.rainingdata.com/Pedigree" xmlns:="http://www.w3.org/2000/09/xmldsig#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.rainingdata.com/Pedigree" order="0">
+	<!--This document is created by Cardinal Health in the absence of Pedigree information from Pfizer. -->
+	<DocumentId>P12345</DocumentId>
+	<IssueDate>2006-07-10T09:30:47.0Z</IssueDate>
+	<Products>
+		<Product>
+			<NDC>NDC 67158-157-23</NDC>
+			<LegendDrugName>Lipitor</LegendDrugName>
+			<DosageForm>Tablet</DosageForm>
+			<DosageStrength>40mg</DosageStrength>
+			<ContainerSize>BOT</ContainerSize>
+			<LotNumber>5C017</LotNumber>
+			<LotExpireDate>2009-06-01T09:30:47.0Z</LotExpireDate>
+			<PackageUPC>367158157233</PackageUPC>
+			<Quantity quantityUnitCode="CASES">50</Quantity>
+			<ManufacturerLicense>ML222333421</ManufacturerLicense>
+			<CustodyLicenseNumber>CL00886543</CustodyLicenseNumber>
+		</Product>
+	</Products>
+	<Manufacturer>
+		<Name>PFizer</Name>
+		<Address>123 First st, New York, NY 11770</Address>
+		<Contact>George Doe</Contact>
+		<ContactPhone>(212) 341-1567</ContactPhone>
+		<ContactEmail>george.doe@pfizer.com</ContactEmail>
+		<LicenseNumber>ML222333421</LicenseNumber>
+	</Manufacturer>
+	<Custody type="" order="0">
+		<Name>Cardinal Health</Name>
+		<Address>Lakeshore Dr, 32W, LakeLand, FL 60022</Address>
+		<Contact>Melanie Farber</Contact>
+		<TransactionDate>2006-07-10T09:30:47.0Z</TransactionDate>
+		<TransactionType>purchaseorder</TransactionType>
+		<TransactionNumber>PO45677</TransactionNumber>
+		<AuthenticatorName></AuthenticatorName>
+		<AuthenticatorEmail></AuthenticatorEmail>
+		<AuthenticatorPhone></AuthenticatorPhone>
+		<LicenseNumber>CL00886543</LicenseNumber>
+		<InCustodyFromDate>2006-07-10T09:30:47.0Z</InCustodyFromDate>
+		<InCustodyToDate>2006-07-21T09:30:47.0Z</InCustodyToDate>
+	</Custody>
+	<PedigreeStatus>
+		<Status>
+			<StatusChangedOn>2006-07-21T09:30:47.0Z</StatusChangedOn>
+			<Status>Created</Status>
+		</Status>
+	</PedigreeStatus>
+</Pedigree>

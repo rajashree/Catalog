@@ -1,0 +1,7 @@
+EPC,ParentEPC,BarCode,NDC,LegendDrugName,DosageForm,DosageStrength,ContainerSize,LotNumber,LotExpireDate,PackageUPC,MarketingStatus,Description,Quantity,quantityUnitCode,ManufacturerName,ManufacturerLicense,CustodyLicenseNumber,TagKillCode,EnvironmentalConstraints
+1234AAAABBBBCCCCDDDDEEE1,FFF1AAAABBBBCCCCDDDDEEE1,3.56E+11,55513-823-01,Epogen,Injection,40000Units/1ML,Vial,5C017,7-Mar,3.56E+11,Active,Epogen Injection,1,Vial,Amgen,2.046527778,1.815277778,a,Temp 2F - 10F
+1234AAAABBBBCCCCDDDDEEE2,FFF2AAAABBBBCCCCDDDDEEE1,1.66E+11,65837-421-66,Viagra,Tablets,50mg,Bottle,5C020,7-May,1.66E+11,Active,Viagra Tablets,100,Bottle,Pfizer,2.046527778,"""23:1567""",b,Temp 2F - 30F
+1234AAAABBBBCCCCDDDDEEE3,FFF3AAAABBBBCCCCDDDDEEE1,1.66E+11,65837-420-30,Viagra,Tablets,25mg,Bottle,3C017,7-Jun,1.66E+11,Active,Viagra Tablets,30,Bottle,Pfizer,2.046527778,"""23:1567""",c,Temp 2F - 30F
+1234AAAABBBBCCCCDDDDEEE4,FFF4AAAABBBBCCCCDDDDEEE1,4.67E+11,67158-157-23,Lipitor,Tablets,40mg,Bottle,2C017,7-Sep,4.67E+11,Active,Lipitor Tablets,90,Bottle,Pfizer,asdfasdf,"""23:1567""",d,Temp 2F - 40F
+1234AAAABBBBCCCCDDDDEEE5,FFF5AAAABBBBCCCCDDDDEEE1,5.01E+11,0074-1949-12,Vicodin,Tablets,5mg,Bottle,7C017,7-Oct,5.01E+11,Active,Vicodin Tablets,500,Bottle,Abott Pharmaceuticals,asdffsdasdfasdf,"""23:1345""",a,Temp 2F - 50F
+1234AAAABBBBCCCCDDDDEEE6,FFF6AAAABBBBCCCCDDDDEEE1,1.52E+11,52203-2000-1,Serostim,Injection,19mg/2L,Vial,8C017,7-Dec,1.52E+11,Active,Serostim Injection,1,Vial,Serono USA,sfdsdfasdf,"""23:1377""",e,Temp 2F - 10F

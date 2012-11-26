@@ -1,0 +1,73 @@
+<APN><DocumentId>12348</DocumentId><DateTime>2005-08-21T01:07:56.554Z</DateTime><From><Name>Pfizer</Name><Address>123 First St,
+3211,
+New York,
+11022,
+NY</Address><LicenseNumber></LicenseNumber><PartyType>Pharmacy</PartyType><ContactName>Nick Danger</ContactName><Phone>(312) 865-2194</Phone><Fax></Fax><Email></Email></From><To><Name>Cardinal Health</Name><Address>Lakeshore Dr,
+32 W.,
+LakeLand,
+60022,
+FL</Address><LicenseNumber></LicenseNumber><PartyType>Distributor</PartyType><ContactName></ContactName><Phone></Phone><Fax></Fax><Email></Email><TransactionType>despatchAdvice</TransactionType><TransactionNumber>C28785100006</TransactionNumber></To><Pedigrees><Pedigree order="0"><DocumentId></DocumentId><IssueDate>2005-08-21T01:07:56.554Z</IssueDate><Products><Product><EPC>C28785100004</EPC><ParentEPC>C28785100004</ParentEPC><NDC>65837-421-66</NDC><LegendDrugName>Viagra</LegendDrugName><DosageForm>Tablets</DosageForm><DosageStrength>50 mg</DosageStrength><ContainerSize>Bottle</ContainerSize><LotNumber>5C017</LotNumber><LotExpireDate>March 2007</LotExpireDate><PackageUPC>365837421663</PackageUPC><Quantity quantityUnitCode="">100</Quantity><ManufacturerLicense>32:1117</ManufacturerLicense><CustodyLicenseNumber></CustodyLicenseNumber></Product></Products><Manufacturer><Name></Name><Address></Address><Contact></Contact><ContactPhone></ContactPhone><ContactEmail></ContactEmail><LicenseNumber></LicenseNumber></Manufacturer><PedigreeStatus><Status><StatusChangedOn>2005-08-21T01:07:56.554Z</StatusChangedOn><Status>Created</Status></Status></PedigreeStatus></Pedigree></Pedigrees><Signature xmlns="http://www.w3.org/2000/09/xmldsig#">
+<SignedInfo>
+<CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"></CanonicalizationMethod>
+<SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#dsa-sha1"></SignatureMethod>
+<Reference URI="">
+<Transforms>
+<Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"></Transform>
+<Transform Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315#WithComments"></Transform>
+</Transforms>
+<DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"></DigestMethod>
+<DigestValue>MIJ7zZIfq1zxxr2V0A2Zd1ETGVI=</DigestValue>
+</Reference>
+<Reference URI="http://www.w3.org/TR/xml-stylesheet">
+<DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"></DigestMethod>
+<DigestValue>60NvZvtdTB+7UnlLp/H24p7h4bs=</DigestValue>
+</Reference>
+<Reference URI="http://www.nue.et-inf.uni-siegen.de/index.html">
+<DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"></DigestMethod>
+<DigestValue>Hpg+6h1k1jYY5yr3TRzDZzw23CQ=</DigestValue>
+</Reference>
+</SignedInfo>
+<SignatureValue>VMsK/gyox613UnyRQgoM6nlyb2I3u6QhOIho86Yq4suuE2TzjZZdEw==</SignatureValue>
+<KeyInfo>
+<X509Data>
+<X509Certificate>
+MIIDLDCCAuoCBELwQzkwCwYHKoZIzjgEAwUAMHwxCzAJBgNVBAYTAlVTMQswCQYDVQQIEwJDQTER
+MA8GA1UEBxMIU2FuIEpvc2UxFTATBgNVBAoTDFJhaW5pbmcgRGF0YTEUMBIGA1UECxMLRW5naW5l
+ZXJpbmcxIDAeBgNVBAMTF0FTYW5naGEgTWlkZGxld2FyZSBUZWFtMB4XDTA1MDgwMzA0MDgyNVoX
+DTE1MDgwMTA0MDgyNVowfDELMAkGA1UEBhMCVVMxCzAJBgNVBAgTAkNBMREwDwYDVQQHEwhTYW4g
+Sm9zZTEVMBMGA1UEChMMUmFpbmluZyBEYXRhMRQwEgYDVQQLEwtFbmdpbmVlcmluZzEgMB4GA1UE
+AxMXQVNhbmdoYSBNaWRkbGV3YXJlIFRlYW0wggG3MIIBLAYHKoZIzjgEATCCAR8CgYEA/X9TgR11
+EilS30qcLuzk5/YRt1I870QAwx4/gLZRJmlFXUAiUftZPY1Y+r/F9bow9subVWzXgTuAHTRv8mZg
+t2uZUKWkn5/oBHsQIsJPu6nX/rfGG/g7V+fGqKYVDwT7g/bTxR7DAjVUE1oWkTL2dfOuK2HXKu/y
+IgMZndFIAccCFQCXYFCPFSMLzLKSuYKi64QL8Fgc9QKBgQD34aCF1ps93su8q1w2uFe5eZSvu/o6
+6oL5V0wLPQeCZ1FZV4661FlP5nEHEIGAtEkWcSPoTCgWE7fPCTKMyKbhPBZ6i1R8jSjgo64eK7Om
+dZFuo38L+iE1YvH7YnoBJDvMpPG+qFGQiaiD3+Fa5Z8GkotmXoB7VSVkAUw7/s9JKgOBhAACgYB4
+bCKptwOSfyYQpfEe9hfvWeYXhg6gg2HU3TL1OWqWQuTTZKgNRTZ0AjEtth2D9BNVD4UT6qj1c1Te
+YmZl+sUHOhxB0ss5xrX+7mDzJGfrG2mfjY/EMQJdMwCkSGMbrlSUOJmiNME0HP+YN37hmtwZYIOW
+M/cd/44XCw0CIDAMZDALBgcqhkjOOAQDBQADLwAwLAIUEj9NGCgobCiNeRb1+QzfdO/SKjkCFBGi
+S2WzCn4Hix1OhsRoD3jeCqSS
+</X509Certificate>
+</X509Data>
+<KeyValue>
+<DSAKeyValue>
+<P>
+/X9TgR11EilS30qcLuzk5/YRt1I870QAwx4/gLZRJmlFXUAiUftZPY1Y+r/F9bow9subVWzXgTuA
+HTRv8mZgt2uZUKWkn5/oBHsQIsJPu6nX/rfGG/g7V+fGqKYVDwT7g/bTxR7DAjVUE1oWkTL2dfOu
+K2HXKu/yIgMZndFIAcc=
+</P>
+<Q>l2BQjxUjC8yykrmCouuEC/BYHPU=</Q>
+<G>
+9+GghdabPd7LvKtcNrhXuXmUr7v6OuqC+VdMCz0HgmdRWVeOutRZT+ZxBxCBgLRJFnEj6EwoFhO3
+zwkyjMim4TwWeotUfI0o4KOuHiuzpnWRbqN/C/ohNWLx+2J6ASQ7zKTxvqhRkImog9/hWuWfBpKL
+Zl6Ae1UlZAFMO/7PSSo=
+</G>
+<Y>
+eGwiqbcDkn8mEKXxHvYX71nmF4YOoINh1N0y9TlqlkLk02SoDUU2dAIxLbYdg/QTVQ+FE+qo9XNU
+3mJmZfrFBzocQdLLOca1/u5g8yRn6xtpn42PxDECXTMApEhjG65UlDiZojTBNBz/mDd+4ZrcGWCD
+ljP3Hf+OFwsNAiAwDGQ=
+</Y>
+</DSAKeyValue>
+</KeyValue>
+</KeyInfo>
+</Signature></APN>
+<!-- Comment after -->

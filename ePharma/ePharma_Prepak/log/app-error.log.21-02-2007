@@ -1,0 +1,78 @@
+2007-02-21 10:47:22,914 INFO  (ActionExceptionHandler.java:98) - Deatils of Error with TL messages..
+2007-02-21 10:47:23,086 INFO  (ActionExceptionHandler.java:112) - Error Code :xq-internal-00015
+2007-02-21 10:47:23,086 INFO  (ActionExceptionHandler.java:113) - Error Message :[xq-internal-00015] - No stored procedure with name [getSearchQueries] was found.
+2007-02-21 10:47:23,086 INFO  (ActionExceptionHandler.java:114) - Full Message :com.rdta.xquery.common.QueryException: [xq-internal-00015] - No stored procedure with name [getSearchQueries] was found.
+2007-02-21 10:47:23,445 INFO  (ActionExceptionHandler.java:126) - Definition :xq-internal-00015[]
+2007-02-21 15:18:03,820 INFO  (ActionExceptionHandler.java:98) - Deatils of Error with TL messages..
+2007-02-21 15:18:03,835 INFO  (ActionExceptionHandler.java:117) - Error Message :null
+2007-02-21 15:18:03,851 INFO  (ActionExceptionHandler.java:118) - Stack Trace :class java.lang.NullPointerException
+2007-02-21 15:18:03,960 INFO  (ActionExceptionHandler.java:126) - Definition :null
+2007-02-21 15:19:03,554 INFO  (ActionExceptionHandler.java:98) - Deatils of Error with TL messages..
+2007-02-21 15:19:03,570 INFO  (ActionExceptionHandler.java:117) - Error Message :null
+2007-02-21 15:19:03,585 INFO  (ActionExceptionHandler.java:118) - Stack Trace :class java.lang.NullPointerException
+2007-02-21 15:19:03,679 INFO  (ActionExceptionHandler.java:126) - Definition :null
+2007-02-21 15:30:36,851 INFO  (ActionExceptionHandler.java:98) - Deatils of Error with TL messages..
+2007-02-21 15:30:36,851 INFO  (ActionExceptionHandler.java:117) - Error Message :null
+2007-02-21 15:30:36,851 INFO  (ActionExceptionHandler.java:118) - Stack Trace :class java.lang.NullPointerException
+2007-02-21 15:30:36,851 INFO  (ActionExceptionHandler.java:126) - Definition :null
+2007-02-21 15:31:03,866 INFO  (ActionExceptionHandler.java:98) - Deatils of Error with TL messages..
+2007-02-21 15:31:03,866 INFO  (ActionExceptionHandler.java:117) - Error Message :null
+2007-02-21 15:31:03,866 INFO  (ActionExceptionHandler.java:118) - Stack Trace :class java.lang.NullPointerException
+2007-02-21 15:31:03,866 INFO  (ActionExceptionHandler.java:126) - Definition :null
+2007-02-21 15:40:24,288 INFO  (ActionExceptionHandler.java:98) - Deatils of Error with TL messages..
+2007-02-21 15:40:24,288 INFO  (ActionExceptionHandler.java:117) - Error Message :null
+2007-02-21 15:40:24,288 INFO  (ActionExceptionHandler.java:118) - Stack Trace :class java.lang.NullPointerException
+2007-02-21 15:40:24,288 INFO  (ActionExceptionHandler.java:126) - Definition :null
+2007-02-21 15:45:12,320 INFO  (ActionExceptionHandler.java:98) - Deatils of Error with TL messages..
+2007-02-21 15:45:12,320 INFO  (ActionExceptionHandler.java:117) - Error Message :null
+2007-02-21 15:45:12,320 INFO  (ActionExceptionHandler.java:118) - Stack Trace :class java.lang.NullPointerException
+2007-02-21 15:45:12,320 INFO  (ActionExceptionHandler.java:126) - Definition :null
+2007-02-21 15:58:13,429 INFO  (ActionExceptionHandler.java:98) - Deatils of Error with TL messages..
+2007-02-21 15:58:13,445 INFO  (ActionExceptionHandler.java:117) - Error Message :java.lang.NullPointerException
+2007-02-21 15:58:13,445 INFO  (ActionExceptionHandler.java:118) - Stack Trace :class java.lang.Exception
+2007-02-21 15:58:13,507 INFO  (ActionExceptionHandler.java:126) - Definition :null
+2007-02-21 16:39:35,804 INFO  (ActionExceptionHandler.java:98) - Deatils of Error with TL messages..
+2007-02-21 16:39:35,820 INFO  (ActionExceptionHandler.java:112) - Error Code :xq-internal-00015
+2007-02-21 16:39:35,820 INFO  (ActionExceptionHandler.java:113) - Error Message :[xq-internal-00015] - No stored procedure with name [deletePedigree] was found.
+2007-02-21 16:39:35,820 INFO  (ActionExceptionHandler.java:114) - Full Message :com.rdta.xquery.common.QueryException: [xq-internal-00015] - No stored procedure with name [deletePedigree] was found.
+2007-02-21 16:39:35,851 INFO  (ActionExceptionHandler.java:126) - Definition :xq-internal-00015[]
+2007-02-21 16:45:50,116 INFO  (ActionExceptionHandler.java:98) - Deatils of Error with TL messages..
+2007-02-21 16:45:50,116 INFO  (ActionExceptionHandler.java:112) - Error Code :xq-internal-00015
+2007-02-21 16:45:50,132 INFO  (ActionExceptionHandler.java:113) - Error Message :[xq-internal-00015] - No stored procedure with name [deletePedigree] was found.
+2007-02-21 16:45:50,132 INFO  (ActionExceptionHandler.java:114) - Full Message :com.rdta.xquery.common.QueryException: [xq-internal-00015] - No stored procedure with name [deletePedigree] was found.
+2007-02-21 16:45:50,132 INFO  (ActionExceptionHandler.java:126) - Definition :xq-internal-00015[]
+2007-02-21 16:48:08,085 INFO  (ActionExceptionHandler.java:98) - Deatils of Error with TL messages..
+2007-02-21 16:48:08,101 INFO  (ActionExceptionHandler.java:112) - Error Code :xq-internal-00015
+2007-02-21 16:48:08,101 INFO  (ActionExceptionHandler.java:113) - Error Message :[xq-internal-00015] - No stored procedure with name [deletePedigree] was found.
+2007-02-21 16:48:08,101 INFO  (ActionExceptionHandler.java:114) - Full Message :com.rdta.xquery.common.QueryException: [xq-internal-00015] - No stored procedure with name [deletePedigree] was found.
+2007-02-21 16:48:08,101 INFO  (ActionExceptionHandler.java:126) - Definition :xq-internal-00015[]
+2007-02-21 16:48:48,663 INFO  (ActionExceptionHandler.java:98) - Deatils of Error with TL messages..
+2007-02-21 16:48:48,663 INFO  (ActionExceptionHandler.java:112) - Error Code :xq-internal-00015
+2007-02-21 16:48:48,663 INFO  (ActionExceptionHandler.java:113) - Error Message :[xq-internal-00015] - No stored procedure with name [deletePedigree] was found.
+2007-02-21 16:48:48,663 INFO  (ActionExceptionHandler.java:114) - Full Message :com.rdta.xquery.common.QueryException: [xq-internal-00015] - No stored procedure with name [deletePedigree] was found.
+2007-02-21 16:48:48,663 INFO  (ActionExceptionHandler.java:126) - Definition :xq-internal-00015[]
+2007-02-21 17:29:21,585 INFO  (ActionExceptionHandler.java:98) - Deatils of Error with TL messages..
+2007-02-21 17:29:21,601 INFO  (ActionExceptionHandler.java:112) - Error Code :xq-internal-00015
+2007-02-21 17:29:21,601 INFO  (ActionExceptionHandler.java:113) - Error Message :[xq-internal-00015] - No stored procedure with name [deletePedigree] was found.
+2007-02-21 17:29:21,601 INFO  (ActionExceptionHandler.java:114) - Full Message :com.rdta.xquery.common.QueryException: [xq-internal-00015] - No stored procedure with name [deletePedigree] was found.
+2007-02-21 17:29:21,632 INFO  (ActionExceptionHandler.java:126) - Definition :xq-internal-00015[]
+2007-02-21 17:30:25,507 INFO  (ActionExceptionHandler.java:98) - Deatils of Error with TL messages..
+2007-02-21 17:30:25,507 INFO  (ActionExceptionHandler.java:112) - Error Code :xq-internal-00015
+2007-02-21 17:30:25,523 INFO  (ActionExceptionHandler.java:113) - Error Message :[xq-internal-00015] - No stored procedure with name [deletePedigree] was found.
+2007-02-21 17:30:25,523 INFO  (ActionExceptionHandler.java:114) - Full Message :com.rdta.xquery.common.QueryException: [xq-internal-00015] - No stored procedure with name [deletePedigree] was found.
+2007-02-21 17:30:25,523 INFO  (ActionExceptionHandler.java:126) - Definition :xq-internal-00015[]
+2007-02-21 17:33:09,366 INFO  (ActionExceptionHandler.java:98) - Deatils of Error with TL messages..
+2007-02-21 17:33:09,366 INFO  (ActionExceptionHandler.java:112) - Error Code :xq-internal-00015
+2007-02-21 17:33:09,366 INFO  (ActionExceptionHandler.java:113) - Error Message :[xq-internal-00015] - No stored procedure with name [deletePedigree] was found.
+2007-02-21 17:33:09,366 INFO  (ActionExceptionHandler.java:114) - Full Message :com.rdta.xquery.common.QueryException: [xq-internal-00015] - No stored procedure with name [deletePedigree] was found.
+2007-02-21 17:33:09,366 INFO  (ActionExceptionHandler.java:126) - Definition :xq-internal-00015[]
+2007-02-21 17:43:15,070 INFO  (ActionExceptionHandler.java:98) - Deatils of Error with TL messages..
+2007-02-21 17:43:15,070 INFO  (ActionExceptionHandler.java:112) - Error Code :xq-internal-00015
+2007-02-21 17:43:15,070 INFO  (ActionExceptionHandler.java:113) - Error Message :[xq-internal-00015] - No stored procedure with name [deletePedigree] was found.
+2007-02-21 17:43:15,070 INFO  (ActionExceptionHandler.java:114) - Full Message :com.rdta.xquery.common.QueryException: [xq-internal-00015] - No stored procedure with name [deletePedigree] was found.
+2007-02-21 17:43:15,070 INFO  (ActionExceptionHandler.java:126) - Definition :xq-internal-00015[]
+2007-02-21 17:45:52,101 INFO  (ActionExceptionHandler.java:98) - Deatils of Error with TL messages..
+2007-02-21 17:45:52,101 INFO  (ActionExceptionHandler.java:112) - Error Code :xq-type-00000
+2007-02-21 17:45:52,116 INFO  (ActionExceptionHandler.java:113) - Error Message :[xq-type-00000] - [http://www.rainingdata.com/TigerLogic/namespaces/stored-procedures,deletePedigree] [( )] cannot be applied to [( xs:string )].
+2007-02-21 17:45:52,116 INFO  (ActionExceptionHandler.java:114) - Full Message :com.rdta.xquery.error.TypeException: [xq-type-00000] - [http://www.rainingdata.com/TigerLogic/namespaces/stored-procedures,deletePedigree] [( )] cannot be applied to [( xs:string )].
+2007-02-21 17:45:52,116 INFO  (ActionExceptionHandler.java:126) - Definition :xq-type-00000[]

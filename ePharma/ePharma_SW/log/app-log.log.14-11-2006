@@ -1,0 +1,2 @@
+2006-11-14 03:56:24,482 INFO  (?:?) - In contextDestroyed method
+2006-11-14 03:56:24,482 INFO  (?:?) - Query:tlsp:deleteSessions()

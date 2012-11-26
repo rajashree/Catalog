@@ -1,0 +1,593 @@
+.post-ratings{width:100%;filter:alpha(opacity=100);-moz-opacity:1;opacity:1}.post-ratings-loading{display:none;height:16px;text-align:left}.post-ratings-image{border:0px}.post-ratings IMG, .post-ratings-loading IMG, .post-ratings-image
+IMG{border:0px;padding:0px;margin:0px}.post-ratings-text{}.post-ratings-comment-author{font-weight:normal;font-style:italic}body{max-width:108em;margin:0
+auto;padding:0
+0 0 15px;background:#fff url(http://media.smashingmagazine.com/cdn_smash/wp-content/themes/SM-theme-new/images/bg-body2.gif) repeat-x top center;font:.75em/1.7em Verdana,Arial,Geneva,Helvetica,sans-serif;color:#1e1e1e}code,tt{font-size:1.25em;color:#454545;padding:1px
+3px;-moz-border-radius:2px;background-color:#f2f2f2}blockquote{border-left:1px solid #ccc;font-size:1em;font-style:italic;color:#454545;padding:3px
+20px 3px 20px;background-color:#f7f7f7;margin:22px
+60px}img{margin:0;padding:0;border:0}pre{border-left:1px solid #ccc;color:#454545;padding:3px
+20px 3px 20px;background-color:#f7f7f7;margin:22px
+0px;font:1.2em/1.5em Consolas, "Lucida Console",Monaco,monospace}h1{margin:37px
+0 41px;width:275px;height:69px;background:transparent url(http://media.smashingmagazine.com/cdn_smash/wp-content/themes/SM-theme-new/images/sprt-head/sprt.png?v=2010-02-09) no-repeat 0 -255px}* + html
+h1{background-position:0px -245px}h1
+a{width:275px;height:69px;display:block;text-indent:-9999em}h2{margin:0;padding:22px
+0 8px 0;display:block;font:bold 2.45em Arial, Helvetica, sans-serif;color:#262626}h2 a:link,
+h2 a:active,
+h2 a:visited, h2 a:focus{color:#262626;text-decoration:none;background:transparent}.post.single
+h2{font:bold 1.45em Arial, Helvetica, sans-serif;padding:0;margin:0
+0 0 100px;display:block}#rightcolumn
+h2{margin:0;padding:0;font:1.67em Arial, Helvetica, sans-serif;color:#262626}#rightcolumn
+h2.icon{background:url(http://media.smashingmagazine.com/cdn_smash/wp-content/themes/SM-theme-new/images/sprite-sidebar-icons.gif) no-repeat top left;padding:0
+0 0 48px;height:32px;line-height:32px}#rightcolumn
+h2.icon.forum{margin:0
+0 20px}#rightcolumn
+h2.icon.twitter{margin:0
+0 10px}#rightcolumn
+h2.icon.interact{background:url(http://media.smashingmagazine.com/cdn_smash/wp-content/themes/SM-theme-new/images/sprite-sidebar-icons.gif) no-repeat 0 -54px}#rightcolumn
+h2.icon.popular{background:url(http://media.smashingmagazine.com/cdn_smash/wp-content/themes/SM-theme-new/images/sprite-sidebar-icons.gif) no-repeat 0 -106px}#rightcolumn
+h2.icon.twitter{background:url(http://media.smashingmagazine.com/cdn_smash/wp-content/themes/SM-theme-new/images/sprite-sidebar-icons.gif) no-repeat 0 -160px}#author h2,
+#category
+h2{padding-bottom:0;color:#262626;font-size:2.00em}#author-saying
+h2{font:bold 2.00em Helvetica, Arial, Helvetica, sans-serif;color:#3c3c3c;padding:30px
+0 10px}.author-archive h2,
+.category-archive h2,
+.post .entry
+h2#not_found{padding-bottom:0}.category-archive
+h2{font-size:1.80em}.author-archive h2 a:link,
+.author-archive h2 a:active,
+.author-archive h2 a:visited,
+.category-archive h2 a:link,
+.category-archive h2 a:active,
+.category-archive h2 a:visited{color:#252626}h2.staff-title{padding:32px
+0 10px}h3{padding:10px
+0 3px 0;margin-bottom:18px;font:normal 2.5em Helvetica, Arial, Helvetica, sans-serif;color:#2f2f2f;border-bottom:3px solid #2f2f2f}.inner
+p{margin-bottom:1.15em}.showcase{margin:1.5em 0 1.5em 2.5em}#respond
+h3{margin:0
+0 20px;padding:0}h4{margin:0
+0 12px;font:bold 1.14em Arial, Helvetica, sans-serif;color:#424242}.post .entry.inner
+h4{margin:35px
+0 20px;font:italic 1.9em Georgia, "Times New Roman", Times, serif;color:#d93315}#interest li
+h4{font:italic 2.00em Georgia, "Times New Roman",Times,serif;color:#2a2a2a}h5{}a:link{color:#3151a2}a:hover{color:#c00}a:visited{color:#5999DE}a:focus,a:active{outline:none}.external-link{position:relative;top:7px}.post a:active,
+.post a:focus{background-color:#FFF0F0;color:#c00}.post
+ul{list-style-type:square}.post h1 a:focus,
+.post h2 a:focus,
+.post h3 a:focus,
+.post h4 a:focus,
+.post h1 a:active,
+.post h2 a:active,
+.post h3 a:active,
+.post h4 a:active{color:#262626;background-color:#F1F8FE;border-bottom:1px solid #E3F1FD}#category h2 a:focus,
+.archive h2 a:active{border-bottom:1px solid #D9EAFD;background-color:#ECF5FD}#category h2 a:visited{color:#4B4E4E}.navigation{margin:2px
+0 0 -7px;padding:0
+0 0 0;list-style:none;float:left;z-index:100}.navigation
+li{float:left;position:relative;left: -7px;z-index:100;padding:4px
+11px 0px 14px;border-top:1px solid #5c5c5c}.navigation li:hover{background:url(http://media.smashingmagazine.com/cdn_smash/wp-content/themes/SM-theme-new/images/grad-navigation-hover.gif) repeat-x top center;border-top:1px solid #c6c6c6}.navigation li a:link,
+.navigation li a:active,
+.navigation li a:visited{padding:15px
+7px 3px 5px;font:bold 1.33em Helvetica, Arial, sans-serif;color:#d8d8d8;text-decoration:none;display:block}.navigation li
+span{padding:0
+0 0 5px;display:inline;color:#b0b0b0;font:.9em Helvetica, Arial, sans-serif}.navigation li a.home-link{padding-bottom:19px}.navigation span.sub
+a{padding:0;font:1.1em Tahoma,Helvetica, Arial, sans-serif;color:#b0b0b0;display:inline;margin:2px
+0 0 0}.navigation span.sub a:hover{text-decoration:underline;background:transparent}.navigation li a:hover{background:url(http://media.smashingmagazine.com/cdn_smash/wp-content/themes/SM-theme-new/images/grad-navigation-hover.gif) repeat-x top center}.navigation li:hover
+a{color:#fff}.navigation li:hover  .sub
+a{color:#d9d9d9}.navigation li a:hover
+span{color:#d9d9d9}a.browse-tags:link,a.browse-tags:active,a.browse-tags:visited{padding:0
+18px 2px 0;position:absolute;top:12px;right:15px;display:block;font:0.92em Tahoma, Arial, Helvetica, sans-serif;color:#8d8c8c;background:transparent url(http://media.smashingmagazine.com/cdn_smash/wp-content/themes/SM-theme-new/images/sprite-arrows.gif) no-repeat scroll 68px -156px;text-decoration:none}a.browse-tags.hide{background:transparent url(http://media.smashingmagazine.com/cdn_smash/wp-content/themes/SM-theme-new/images/sprite-arrows.gif) no-repeat scroll 58px -175px}a.browse-tags:hover{text-decoration:none}#tags .postcentercontent ul li a:link,
+#tags .postcentercontent ul li a:active,
+#tags .postcentercontent ul li a:visited{font:bold 1.08em Helvetica, Arial, Helvetica, sans-serif;color:#575757;display:block;text-decoration:none}#tags .postcentercontent ul li a:hover{color:#3151a2;text-decoration:underline}.post{font-size:1.00em}.postmetadata{font:.83em Tahoma, Verdana, Helvetica, Arial, sans-serif;color:#a8a7a7}.postmetadata .author a:link{color:#7a7a7a}.postmetadata a:active{background-color:transparent}.postmetadata a,
+.postmetadata a.comment-count{color:#3151a2}.postmetadata a:hover{color:#c00}.intro.network{margin: -2em 0 40px 0}.intro.network
+h2{padding-bottom:2px}.intro.network p.network-logo{float:right;display:inline;padding:0
+40px 0 37px;margin-top: -10px}.horizontal-blocks a.continue-reading{font-size:1.08em}a.browse-archives:link,a.browse-archives:visited,a.continue-reading:link,a.continue-reading:visited{margin:18px
+0 13px;color:#3151a2}a.continue-reading:link,a.continue-reading:visited{font:bold 1.08em Helvetica,Arial,sans-serif}a.browse-archives:link,a.browse-archives:visited{font:bold 1.2em Helvetica,Arial,sans-serif}a.continue-reading:visited,a.continue-reading:visited:hover{color:#4C8FE1}a.browse-archives:hover,a.continue-reading:hover{color:#c00}a.browse-archives:visited:active,a.browse-archives:active,a.continue-reading:visited:active,a.continue-reading:active{outline:none;background-color:#FFF0F0;color:#c00}a.browse-archives:visited{color:#3151a2}a.browse-archives:visited:hover{color:#c00}.continue-reading
+span{font-weight:normal;font-size:.92em;display:inline}.post.single
+.entry{font:1.00em Helvetica, Arial, Helvetica, sans-serif;color:#484747;line-height:18px}.post
+li{padding-bottom:0.45em}.wp-pagenavi .previous a,
+.wp-pagenavi .next
+a{font-size:1.2em;font-family:Arial;margin:7px
+5px 0 15px;float:left;font-weight:bold;text-shadow:#FFF 0 1px 0;color:#3151A2}a.next.page-numbers,a.prev.page-numbers{display:none !important}.wp-pagenavi .pagelist a:link,
+.wp-pagenavi .pagelist a:active,
+.wp-pagenavi .pagelist a:visited{background-color:#EBF2FF;border:1px
+solid #CCDEFF;padding:2px
+6px;margin:0
+12px;font:bold 0.9em Helvetica, Arial, Helvetica, sans-serif;color:#3151A2;text-decoration:none;text-shadow:#FFF 0 1px 0;display:inline-block;margin:0px
+3px 0}.wp-pagenavi .pagelist
+.current{font-weight:bold;margin-left:5px;margin-right:5px;font-size:0.9em}.wp-pagenavi .pagelist a:link{color:#06C}.wp-pagenavi .pagelist a:visited{border:1px
+solid #eee;color:#aaa;background-color:transparent}.wp-pagenavi .pagelist a:visited:hover{border:1px
+solid #a9a9a9;color:#666;background-color:transparent}.wp-pagenavi .pagelist a:hover{border:1px
+solid #7AABFF}.wp-pagenavi
+a.page{font-size:1.9em}.current-pages{margin:10px
+0 20px;text-align:center;display:block;font:italic 1.00em Helvetica,Arial,sans-serif;color:#a5a7a9}.tags{margin:0
+0 15px;line-height:1.9em}.tags
+a{font-weight:bold}#social li a:link,
+#social li a:active,
+#social li a:visited{text-decoration:none;display:block}#social li a:hover{background:url(http://media.smashingmagazine.com/cdn_smash/wp-content/themes/SM-theme-new/images/sprite-social-box.png) no-repeat 50% -157px}#social a
+.site{font:bold 1.00em Helvetica, Arial, Helvetica, sans-serif;color:#FFF;line-height:51px}#social li a:hover .site,
+#social li a:hover
+.count{text-decoration:underline}#social a
+.count{font:1.67em Helvetica, Arial, Helvetica, sans-serif;line-height:45px}#social #stumble
+.count{color:#0eb54d}#social #digg
+.count{color:#1b5790}#social #author-twitter
+.count{color:#72d3d9}.bio-block .about, .bio
+.about{font-size:1.08em;line-height:19px;color:#3c3c3c}.bio-block a.post-author:link,
+.bio-block a.post-author:visited,
+.bio-block a.post-author:active,
+.bio a.post-author:link,
+.bio a.post-author:visited,
+.bio a.post-author:active{margin:3px
+0 0;display:block;font:bold 1.23em Helvetica, Arial, Helvetica, sans-serif;color:#3151a2}.the-author li
+a{font:bold 0.92em Helvetica, Arial, Helvetica, sans-serif;color:#8999c3;background:url(http://media.smashingmagazine.com/cdn_smash/wp-content/themes/SM-theme-new/images/the-author.gif) no-repeat;padding:0
+15px 0 0;display:block}.the-author li a.author-posts{background-position:100% 2px}.the-author li a.author-twitter{background-position:100% -12px}.the-author li a.author-homepage{background-position:100% -28px}.postcenter .cats li
+a{font:bold 1.00em Helvetica, Arial, Helvetica, sans-serif;color:#a1a1a1;text-decoration:none;display:block;width:154px;height:32px;line-height:36px;padding:0
+0 0 16px}.postcenter .cats li
+a.active{background:url(http://media.smashingmagazine.com/cdn_smash/wp-content/themes/SM-theme-new/images/sprt-gen/sprt.png?v=2010-02-09) no-repeat -1550px -138px;font-size:1.08em;color:#000}.postcenter .postlist li a,  #popular-cat ul li
+a{font:bold 1.33em Helvetica, Arial, Helvetica, sans-serif;color:#3151a2;text-decoration:none}.postcenter .postlist li a:hover,
+#popular-cat ul li
+a{color:#8999c3}.postcenter .postlist li
+span{margin:8px
+0 0;display:block;font:0.92em Helvetica,Arial,Helvetica,sans-serif;color:#484747}.postcentercontent{}.postcentercontent
+.title{font-size:0.92em;color:#484747}#comment-tabs
+li{font:bold 1.08em Helvetica, Arial, Helvetica, sans-serif;color:#c6c6c6}#comment-tabs li
+a{color:#c6c6c6;text-decoration:none;display:block;padding:22px
+15px 21px}#comment-tabs li a:hover{color:#3c3c3c}#comment-tabs li
+a.active{color:#3c3c3c;background:url(http://media.smashingmagazine.com/cdn_smash/wp-content/themes/SM-theme-new/images/sprite-comment-tabs.gif) no-repeat 50% -58px;position:relative;top:1px;z-index:999}.commentlist{font:1.00em Helvetica, Arial, Helvetica, sans-serif;color:#343434;line-height:18px}.commentlist li
+.children{color:#343434}.commentlist li
+.commentnumber{font:2.50em Arial, Helvetica, sans-serif;color:#f0f0f0}.commentlist li .children li
+.commentnumber{color:#e1ecef}.commentlist li
+p{margin-right:50px}.comment-author{font:bold 1.50em Helvetica, Arial, Helvetica, sans-serif;color:#3151a2;text-decoration:none;margin:3px
+3px 0 0;display:inline}.comment-author
+a{color:#3151a2}.comment-author span
+a{color:#99a7cb}.comment.smash{background-color:#FFFAE0;border-top:1px solid #FFEF8A}.comment.smash .depth-2, .comment.smash .depth-3, .comment.smash .depth-4, .comment.smash .depth-5{border-top:1px solid #eee;background-color:#fff}a.vote.up:link,a.vote.up:active,a.vote.up:visited{display:inline-block;width:14px;height:9px;text-indent:-9999em;background:url(http://media.smashingmagazine.com/cdn_smash/wp-content/themes/SM-theme-new/images/sprite-arrows.gif) no-repeat 0 -131px;outline:none}a.vote.down:link,a.vote.down:active,a.vote.down:visited{display:inline-block;width:14px;height:9px;text-indent:-9999em;background:url(http://media.smashingmagazine.com/cdn_smash/wp-content/themes/SM-theme-new/images/sprite-arrows.gif) no-repeat 0 -140px;outline:none}a.vote.up.inactive{background-position:-14px 0}a.vote.down.inactive{background-position:-14px -9px}.commentmeta
+span{font:bold 0.83em Helvetica, Arial, Helvetica, sans-serif;color:#b6b6b6;display:inline-block;margin:0
+0 0 3px;vertical-align:top}.reply
+a{float:right;font:bold 0.92em Helvetica, Arial, Helvetica, sans-serif;color:#8999c3;background:transparent url(http://media.smashingmagazine.com/cdn_smash/wp-content/themes/SM-theme-new/images/sprite-arrows.gif) no-repeat scroll 100% -198px;padding:0
+16px 0 0;text-decoration:none}#respond
+p.desc{font:1.00em Helvetica, Arial, Helvetica, sans-serif;color:#484747;line-height:18px;margin:0
+0 25px}#respond
+label{font:bold 1.00em Helvetica, Arial, Helvetica, sans-serif;color:#838383;display:block;margin:0
+0 3px}.staff
+small{font-weight:bold;font-size:1.00em;display:block;margin:5px
+0 2px}.staff
+strong{font:bold italic 2.50em Georgia, "Times New Roman", Times, serif;color:#191919;display:block;margin:3px
+0}.staff
+p{font:italic 1.08em Georgia, "Times New Roman", Times, serif;color:#4a4a4a;line-height:20px}.staff
+em{font:italic 1.33em Georgia, "Times New Roman",Times,serif;color:#262626}a.arrow:link,a.arrow:active,a.arrow:visited{width:28px;height:30px;display:block;text-indent:-9999em;background:url(http://media.smashingmagazine.com/cdn_smash/wp-content/themes/SM-theme-new/images/sprite-arrows.gif) no-repeat 0 -131px;position:absolute;top:43%;z-index:100;outline:none}a.previous:link,a.previous:active,a.previous:visited{left:-41px;background-position:0 -141px}#moments ul li a:link,
+#moments ul li a:active,
+#moments ul li a:visited{font:bold 4.00em Helvetica, Arial, Helvetica, sans-serif;color:#FFF;text-decoration:none;position:absolute;top:100px;left:270px;margin:0
+100px 0 0}#moments ul li a
+span{font:0.29em Georgia, "Times New Roman", Times, serif;color:#faecb4;display:block;margin:5px
+0 0}#interest li
+a{font:bold 1.17em Helvetica, Arial, Helvetica, sans-serif;color:#3151a2;text-decoration:none}#interest li
+span{font:1.00em Helvetica, Arial, Helvetica, sans-serif;color:#303030;display:block;margin:4px
+0 0}#author-saying
+a{font-weight:bold}#author
+p{font-size:1.08em}.sectionmetadata{font:0.92em Tahoma, Verdana, Arial, Helvetica, sans-serif;color:#a8a7a7}.sectionmetadata
+strong{color:#555}.sectionmetadata
+a{color:#a8a7a7;text-decoration:none}.sectionmetadata a:hover{text-decoration:underline;color:#7c7c7c}.sectionmetadata
+a.sprite{padding:0
+0 0 26px;height:16px;display:inline-block;background:url(http://media.smashingmagazine.com/cdn_smash/wp-content/themes/SM-theme-new/images/sprite-sidebar-icons.gif) no-repeat}a.network-feed:link,a.network-feed:active,a.network-feed:visited{background-position:0 -210px}a.standard-feed:link,a.standard-feed:active,a.standard-feed:visited{background-position:0 -226px}a.ed-us:link,a.ed-us:active,a.ed-us:visited{background-position:0 -242px;color:#333}a.ed-benefits:link,a.ed-benefits:active,a.ed-benefits:visited{background-position:0 -258px}a.full-details:link,a.full-details:active,a.full-details:visited{background-position:0 -274px}a.join-network:link,a.join-network:active,a.join-network:visited{background-position:0 -290px}a.create-account:link,a.create-account:active,a.create-account:visited{background-position:0 -306px}a.forum-main:link,a.forum-main:active,a.forum-main:visited{background-position:0 -322px}#acom{display:block;margin-bottom:15px}#commentspnsrtarget{padding:0px
+0 15px 0}#trbox ul
+li.icon{background-image:url(http://media.smashingmagazine.com/cdn_smash/wp-content/themes/SM-theme-new/images/sprt-gen/sprt.png?v=2010-02-09);list-style:none;list-style-position:outside;padding-left:0px}#trbox
+ul{font:1.00em/1.65em Helvetica, Arial, Helvetica, sans-serif;color:#222;margin:0px
+0 10px}#trbox ul li a:link,
+#trbox ul li a:active,
+#trbox ul li a:visited{font-weight:bold;text-decoration:underline}#trbox ul
+a{color:#DC7500;text-decoration:underline}#trbox
+ul{padding-left:0;margin-left:0;font-size:1em}#trbox ul
+li{margin-left:0}#trbox ul
+li.twitter.smash{margin-top:12px}#trbox ul
+li.rss.smash{}#trbox ul li.twitter.smash
+a{color:#218FBF}#trbox
+a.twitter{display:block;position:absolute;top:0;right:115px;width:92px;height:140px}#trbox
+a.rss{display:block;position:absolute;top:0;right:0;width:113px;height:118px}.rss a, .twitter
+a{font-size:1.2em}.rss_stats_count,.twitter_stats_count{color:#300;font-size:1.3em;font-weight:bold;line-height:1.8em}#spnsrlist{font-size:0.92em;text-align:center}.sidebartabs{margin-top:1em;width:100%}.sidebartabs
+p{font:0.9em Helvetica,Arial,sans-serif}a.add-this-widget:link,a.add-this-widget:active,a.add-this-widget:visited,a.get-involved:link,a.get-involved:active,a.get-involved:visited,a.follow-us:link,a.follow-us:active,a.follow-us:visited{font-weight:bold;text-decoration:underline;color:#6a7fb4;background:url(http://media.smashingmagazine.com/cdn_smash/wp-content/themes/SM-theme-new/images/sprite-arrows.gif) no-repeat 100% -18px;padding:0
+10px 0 0}a.get-involved.joblinkright,a.add-this-widget.smwlinkright{float:right}a.add-this-widget.smwlinkright{margin-top:-1.25em}a.get-involved:hover,a.follow-us:hover{color:#3151a2}.sidebartabs ul.topiclist
+li{background:white url(http://media.smashingmagazine.com/cdn_smash/wp-content/themes/SM-theme-new/images/sprt-gen/sprt.png?v=2010-02-09) no-repeat scroll -5px -1544px;min-height:39px}.sidebartabs ul.topiclist li
+a{font:bold 1.08em Helvetica, Arial, Helvetica, sans-serif;color:#3151a2;text-decoration:none}.sidebartabs ul.topiclist li
+a.postlink{font-size:1.00em}.sidebartabs ul.topiclist li a:hover{color:#6a7fb4}.sidebartabs ul.topiclist li
+p{margin:3px
+0;color:#484747;font-size:0.92em;line-height:1.5em}#noupesoc
+li{margin:12px
+0}#noupesoc li
+a{margin-top:3px;font-size:1em;line-height:1.5em}#rightcolumn .two
+p{color:#262729}.sidelist li a:link,
+.sidelist li a:active,
+.sidelist li a:visited{padding:7px
+15px 7px 22px;display:inline-block;font:.92em Verdana, Arial, Helvetica, sans-serif;color:#717476;text-decoration:none}.sidelist li a:hover{background:url(http://media.smashingmagazine.com/cdn_smash/wp-content/themes/SM-theme-new/images/sprt-gen/sprt.png?v=2010-02-09) no-repeat right -348px;text-decoration:underline;color:#3a559b}.sidelist li
+a.twitter{color:#3151a2;background:url(http://media.smashingmagazine.com/cdn_smash/wp-content/themes/SM-theme-new/images/sprite-sidebar-icons.gif) no-repeat 95% -352px;display:block}.sidelist li
+a.rss{color:#e57c30;background:url(http://media.smashingmagazine.com/cdn_smash/wp-content/themes/SM-theme-new/images/sprite-sidebar-icons.gif) no-repeat 95% -376px;display:block}.inner
+a.twitter{color:#1CA1D3 !important}.ed
+span.declare{font:0.92em Tahoma, Verdana, Arial, Helvetica, sans-serif;color:#cacaca;display:block;text-align:left;margin:0
+0 4px 0}.ed
+span.awithus{-x-system-font:none;color:#CACACA;display:inline;float:right;font-family:Tahoma,Verdana,Arial,Helvetica,sans-serif;font-size:0.94em;font-size-adjust:none;font-stretch:normal;font-style:normal;font-variant:normal;font-weight:normal;line-height:normal;margin:-18px 0 0 0;padding:0;position:absolute;right:2px;text-align:right;width:200px}#rightcolumn
+.ed.sidebared{padding:15px
+0 15px 15px;border-bottom:1px solid #eee}#rightcolumn
+.ed.spnsrlistwrapper{border-top:1px solid #E9E8E8;padding-top:9px;background:#FFF url(http://media.smashingmagazine.com/cdn_smash/wp-content/themes/SM-theme-new/images/divider-title.gif) repeat-x top center}#rightcolumn .ed.spnsrlistwrapper
+span.declare{padding-left:9px}#tweetlist li,
+.tweetlist
+li{font:bold 1.33em Helvetica, Arial, Helvetica, sans-serif;color:#3151a2;line-height:22px}#tweetlist li a,
+.tweetlist li a:link,
+.tweetlist li a:active,
+.tweetlist li a:visited{color:#6a7fb4}#tweetlist li a.tweet-status,
+.tweetlist li a.tweet-status{font:.69em Helvetica, Arial, Helvetica, sans-serif;color:#484747;text-decoration:none;margin:5px
+0 0;display:block}#twitter{margin:20px
+0 20px 0px}#twitter
+h4{margin-left:20px;margin-bottom:24px}#twitter h4
+a{color:#333}#twitter
+.tweetlist{width:500px;margin-left:30px}#footer .col ul li
+a{font:.92em Tahoma, Verdana, Arial, Helvetica, sans-serif;color:#8b8b8b;text-decoration:none}#footer .col ul li a:hover{color:#8999c3}#footer-logo
+a{color:#8b8b8b;text-decoration:none;font:0.92em Tahoma, Verdana, Arial, Helvetica, sans-serif}#footer-logo a:hover{color:#8999c3}#created,#function{font:0.83em Tahoma, Verdana, Arial, Helvetica, sans-serif;color:#acacac}#created
+a{color:#8999c3}#function
+a{color:#cbcbcb;text-align:right;text-decoration:none;display:inline-block;padding:0
+0 0 15px;background:url(http://media.smashingmagazine.com/cdn_smash/wp-content/themes/SM-theme-new/images/sprt-gen/sprt.png?v=2010-02-09) no-repeat -1550px -1025px;float:right}#function
+span{color:#a6a6a6}.required{color:#62a923;font-weight:bold}.input{margin:5px
+0 0;padding:7px
+8px;border:2px
+solid #e7e7e7;background:#FFF;width:85%;font:0.92em Arial,Helvetica,sans-serif;color:#7d7d7d}.input.textarea{width:98%}.clearfix:after{content:" ";display:block;clear:both;visibility:hidden;line-height:0;height:0}.clearfix{display:inline-block}html[xmlns] .clearfix{display:block}* html
+.clearfix{height:1%}.left,.alignleft{float:left}.right,.alignright{float:right}#header{margin:0
+auto;width:90%;height:81px;overflow:visible;min-width:995px}.navigation li
+.dropdown{margin:-11px 0 0 0;padding:0
+0 35px 0;width:350px;height:auto;background:transparent url(http://media.smashingmagazine.com/cdn_smash/wp-content/themes/SM-theme-new/images/sprt-head/sprt.png?v=2010-02-09) no-repeat bottom center;position:absolute;z-index:100;display:none}.navigation li .dropdown
+.arrow{width:328px;height:9px;background:transparent url(http://media.smashingmagazine.com/cdn_smash/wp-content/themes/SM-theme-new/images/sprt-head/sprt.png?v=2010-02-09) no-repeat top center;position:absolute;top:-9px}.navigation li .dropdown strong,
+.postcentercontent .title
+span{margin:25px
+35px 15px;display:block;font:bold 2.00em Helvetica, Arial, sans-serif;color:#262626}.postcentercontent .title
+span{margin:10px
+0}.navigation li .dropdown
+ul{width:300px;margin:0
+0 0 15px;padding:0;list-style:none;background:url(http://media.smashingmagazine.com/cdn_smash/wp-content/themes/SM-theme-new/images/divider-tags.gif) repeat-y top center}.navigation li .dropdown ul
+li{margin:0;padding:0;width:50%;height:auto;float:left;background:none}.navigation li .dropdown ul li a:link,
+.navigation li .dropdown ul li a:active,
+.navigation li .dropdown ul li a:visited{font:bold 1.08em Helvetica, Arial, Helvetica, sans-serif;color:#848586;display:block;text-decoration:none;padding:12px
+0 9px 20px;background:none;border-width:0 0 1px}.navigation li .dropdown ul li a:hover{margin:0;background:none;border-width:0 0 1px;color:#3151a2;text-decoration:underline}#searchform{margin:17px
+0 0 0;width:195px;background:#363636;border:1px
+solid #626262;float:right}#searchform #search-submit{margin:10px
+15px 0 0;width:32px;height:22px;background:#363636 url(http://media.smashingmagazine.com/cdn_smash/wp-content/themes/SM-theme-new/images/sprt-gen/sprt.png?v=2010-02-09) no-repeat -1535px -294px;border:0;float:right;cursor:pointer}#pagewidth{margin:0
+auto;width:90%;min-width:990px;background:url(http://media.smashingmagazine.com/cdn_smash/wp-content/themes/SM-theme-new/images/divider-page.gif) repeat-y top right}.container{margin:0
+auto;width:90%;min-width:990px}#content{padding-right:419px;width:auto}#content
+.column{position:relative;float:left}#leftcolumn,#post-list{width:100%}.post,.wp-pagenavi{padding:0
+30px 30px 0;clear:both}.post.blank{background:none;border:0;padding:0
+42px 30px 0}.no-border{border:0}ul.postmetadata{list-style:none;margin:4px
+0 12px;padding:0
+0 9px 0}ul.postmetadata
+li{padding:0px
+8px;float:left;border-right:1px solid #e6e6e6}ul.postmetadata
+li.author{padding-left:0}.postmetadata{margin:0
+0 15px;clear:both}.post-thumb{margin:0
+0 15px;position:relative;float:left}.network-favicon{margin:0;padding:1px
+2px 3px;width:28px;height:28px;background:transparent url(http://media.smashingmagazine.com/cdn_smash/wp-content/themes/SM-theme-new/images/sprite-dropshadows.png) no-repeat 0 -85px;position:absolute;top:-3px;left:-4px}.category-archive .post-thumb{padding:32px
+0 20px 0}.category-archive
+.entry{margin-left:102px}.category-archive .entry.no-thumb{margin:0}.post-image,a.post-image:link,a.post-image:active,a.post-image:visited{margin:0
+16px 0 0;padding:1px
+4px 4px;width:78px;height:79px;float:left;background:url(http://media.smashingmagazine.com/cdn_smash/wp-content/themes/SM-theme-new/images/sprite-dropshadows.png) no-repeat 0 0}.post-thumb
+img{z-index:9;margin-top:1px}.post.single{margin:0
+0 0 4px;padding:3% 3% 3% 0;width:45%;float:left;clear:none;display:inline}.post.single .entry
+p{margin:15px
+0}.post.single.last{margin:0;padding:3% 3% 3% 3%;border-left:1px solid #eee}.ed-space{padding:25px
+0;border-top:1px solid #e9e8e8;background:url(http://media.smashingmagazine.com/cdn_smash/wp-content/themes/SM-theme-new/images/divider-title.gif) no-repeat top right}.ed-space
+img{margin:0
+auto;display:block}.wp-pagenavi{margin:0
+auto;text-align:center;display:block;padding:34px
+34px}.wp-pagenavi
+.pagelist{float:left;height:32px;margin:0
+auto;text-align:center;padding-top:6px}.pagelist{width:auto}.pagelist .current,
+.pagelist
+a{position:relative}.wp-pagenavi .last,
+.wp-pagenavi
+.first{display:none}.pagenavi{margin:0
+auto;display:block;width:550px}#social{margin:5px
+0 0;padding:0
+0 3px;list-style:none;background:url(http://media.smashingmagazine.com/cdn_smash/wp-content/themes/SM-theme-new/images/divider-title.gif) no-repeat bottom right}#social
+li{float:left;width:33.3%;background:url(http://media.smashingmagazine.com/cdn_smash/wp-content/themes/SM-theme-new/images/sprite-social-box.png) repeat-x 0 0}#social li a
+.site{width:auto;height:51px;display:block;text-align:center}#social
+#stumble{background-position:0 0}#social
+#digg{background-position:0 -51px}#social #author-twitter{background-position:0 -102px}#social li a
+.count{width:auto;height:45px;display:block;text-align:center}#social #stumble a
+.count{background:#f1fcf5;border-bottom:1px solid #c9e3d1}#social #digg a
+.count{background:#f2f5f8;border-bottom:1px solid #c9d1db}#social #author-twitter a
+.count{background:#f6fcfc;border-bottom:1px solid #d4e3e5}.bio{margin:0;padding:30px
+25px;margin-bottom:10px}.bio-block{margin:0;padding:18px
+25px;margin-bottom:5px}.bio{border:1px
+solid #f0f0f0;background-color:#fafafa}.bio-block .gravatar, .bio
+.gravatar{padding:3px;width:78px;height:78px;background:#FFF;border-bottom:1px solid #d7d7d7;border-left:1px solid #f2f2f2;border-right:1px solid #f2f2f2;float:left}.bio-block .gravatar img, .bio .gravatar
+img{margin-top:1px}.bio-block .about, .bio
+.about{margin-left:105px}.the-author{margin:0;padding:0;list-style:none}.the-author
+li{margin:0
+20px 0 0;float:left}.postcenter{margin:0;background:url(http://media.smashingmagazine.com/cdn_smash/wp-content/themes/SM-theme-new/images/divider-postcenter.gif) repeat-y 180px 0;border-bottom:1px solid #e9e8e8}.postcentercontent>ul,#tags{display:none}.postcenter
+.cats{width:179px;height:auto;float:left;margin:0;padding:30px
+0 0;list-style:none;background-color:#fff}.postcenter .cats
+li{margin:0
+0 10px}.postcenter.tag-explorer
+.cats{margin:100px
+0 0}.postcenter .postlist,
+#popular-cat
+ul{margin:0
+1px 0 181px;padding:0;list-style:none;background-color:#FBFBFB}#popular-cat
+ul{margin:0}#popular-list a:active,
+#popular-list a:focus{background-color:transparent}.postcenter .postlist li,
+#popular-cat ul
+li{padding:20px;border-bottom:1px solid #eee;width:auto}.postcenter .postlist
+li.last{border:0}.postcentercontent
+.title{padding:20px
+20px 5px 200px}.postcenter.tag-explorer .postcentercontent>ul.postlist{padding:10px
+0;background:#fbfbfb url(http://media.smashingmagazine.com/cdn_smash/wp-content/themes/SM-theme-new/images/divider-tags.gif) repeat-y top center;border-top:1px solid #eee}.postcenter.tag-explorer .postcentercontent > ul.postlist
+li{padding:10px
+3% !important;border:none;width:44%;float:left}#comment-tabs{margin:0
+1px -1px 0;padding:0
+15px;list-style:none;background:#f7f7f7 url(http://media.smashingmagazine.com/cdn_smash/wp-content/themes/SM-theme-new/images/sprite-comment-tabs.gif) repeat-x 0 13px;border-top:1px solid #FFF}#comment-tabs
+li{float:left;background:url(http://media.smashingmagazine.com/cdn_smash/wp-content/themes/SM-theme-new/images/sprite-comment-tabs.gif) no-repeat 100% -147px;height:56px}#discussion{clear:both;margin-top:1px}#discussion>div{display:block}#commented,#recent{position:relative;top:1px}.commentlist{margin:0;padding:0;list-style:none;overflow:visible}.commentlist
+li{position:relative;padding:0;border-top:1px solid #eee;overflow:visible}.commentlist li
+.comment{padding:20px;overflow:visible;position:relative}.commentlist li
+.commentnumber{position:absolute;top:20px;right:18px}.commentlist li .gravatar
+img{width:38px;height:auto;float:left;padding:3px;background:#FFF;border-bottom:1px solid #d7d7d7;border-left:1px solid #f2f2f2;border-right:1px solid #f2f2f2}.commentlist li .comment-text{margin:0
+0 0 61px}.commentlist li .comment-text ul,
+.commentlist li .comment-text
+ol{margin:auto}.commentlist li .comment-text ul li,
+.commentlist li .comment-text ol
+li{border:0}.commentlist li .comment-text
+.commentmeta{margin:20px
+0 0}.comment-text
+p{font-size:1.05em}.commentlist li
+.children{margin:0;padding:0;overflow:visible}.commentlist li .children li.depth-2{padding:0
+0 0 40px;border-right:1px solid #e5e8ea}.commentlist li .children li.depth-3{padding:0
+0 0 40px;margin:0
+0 0 0}.commentlist li .children li.depth-4{padding:0
+0 0 40px;margin:0
+0 0 0}.commentlist li .children li.depth-5{padding:0
+0 0 40px;margin:0
+0 0 0}#respond{background:url(http://media.smashingmagazine.com/cdn_smash/wp-content/themes/SM-theme-new/images/divider-title.gif) no-repeat top right;padding:45px
+35px 0}#commentform input,
+#commentform
+textarea{font-size:1.35em;color:#333}#commentform
+textarea{line-height:1.4em}.input-half{margin:20px
+0 0;width:50%;float:left}#message-box{margin:20px
+0 0;clear:both}#submit-form{margin:10px
+0 0;width:159px;height:32px;background:transparent url(http://media.smashingmagazine.com/cdn_smash/wp-content/themes/SM-theme-new/images/sprt-gen/sprt.png?v=2010-02-09) no-repeat scroll -1550px -57px;overflow:hidden}.post-ratings{padding:10px
+0}.post-ratings .post-ratings-image{padding:0
+3px 0 0}.author-bio-thumb{height:81px;margin:5px
+0 0 20px;padding:0
+2px 2px 2px;background:#f8f8f8;border-bottom:1px solid #ddd;border-left:1px solid #f4f4f4;border-right:1px solid #f4f4f4;float:right}.photo{margin-top:3px}#author-saying{border-bottom:1px solid #e9e8e8}.tweetlist{margin:0;padding:0;list-style:none}.tweetlist
+li{padding:22px;border-top:1px solid #eee}ul.spaced
+li{margin:8px
+0}#rightcolumn{width:419px;margin-right:-747px}.sectionmetadata{margin:0;padding:0;list-style:none;border-bottom:3px solid #eee;background:#FFF}.sectionmetadata
+li{padding:8px
+15px}.sectionmetadata
+li.left{float:left}.sectionmetadata
+li.right{float:right}.sectionmetadata
+li.divider.left{border-right:1px solid #eee}.sectionmetadata
+li.divider.right{border-left:1px solid #eee}.homepagepremedtargetwrapper{background:transparent url(http://media.smashingmagazine.com/cdn_smash/wp-content/themes/SM-theme-new/images/divider-title.gif) no-repeat scroll right top;border-top:1px solid #E9E8E8;padding:18px
+0 18px 6px}.homepagepremedtargetwrapper
+span.awithus{margin-right:8px}#logoedtarget{position:absolute;right:30px;top:13px}#spnsrlisttarget,
+.sidebartabs
+#forum{background:#FFF;position:relative}#spnsrlisttarget{min-height:787px;min-width:455px}#trbox .inner,
+.sidebartabs #forum
+.inner{padding:38px
+10px 15px 35px}.sidebartabs{background-color:white;border-top:10px solid white;margin-top:-2em}#trbox{height:147px;background:white url(http://media.smashingmagazine.com/cdn_smash/wp-content/themes/SM-theme-new/images/sprt-gen/sprt.png?v=2010-02-09) no-repeat scroll -32px -322px;-moz-background-clip:border;-moz-background-inline-policy:continuous;-moz-background-origin:padding;position:relative}#trbox
+.inner{padding:18px
+10px 15px 30px;margin-right:130px}#spnsrlist{background-color:#fff;margin:0;padding:0
+0 15px;list-style:none}#spnsrlist
+li{margin:0
+0 7px 9px;float:left;display:inline}#spnsrlist li
+img{margin:0
+0 -2px;display:block}#spnsrlist li
+br{display:none}.sidebartabs
+ul.topiclist{margin:30px
+0 0;padding:0;list-style:none}.sidebartabs ul.topiclist
+li{margin:0
+0 27px}.sidebartabs ul.topiclist li
+img{margin-right:10px;float:left}.sidebartabs ul.topiclist li a,
+.sidebartabs ul.topiclist li
+p{float:right;width:325px}#rightcolumn .two
+.left{width:210px;float:left}#rightcolumn .two
+.right{width:208px;float:right}#rightcolumn .two
+.inner{padding:26px
+22px 10px}#rightcolumn .two .inner
+p{margin:15px
+0}.sidelist,#tweetlist{margin:0;padding:0;list-style:none;border-top:1px solid #eee}.sidelist
+li{border-bottom:1px solid #eee}#tweetlist{border:0}#tweetlist
+li{padding:22px
+0 22px 22px;border-top:1px solid #eee}#footer{width:100%;position:absolute;left:0;clear:both;background:#f4f4f4 url(http://media.smashingmagazine.com/cdn_smash/wp-content/themes/SM-theme-new/images/footer-border.png) repeat-x top center}#footer-inner{padding:45px
+0 35px;max-width:108em;margin:0
+auto}#copyright-inner{max-width:108em;margin:0
+auto}.col{width:185px;float:left}.col2{margin-top: -90px;float:left}.col
+ul{margin:0;padding:0;list-style:none}.col ul
+li{margin:0
+0 3px}#footer-logo{float:right}#footer-logo
+img{padding:0;margin:0}#copyright{padding:15px
+0 12px;background:#f8f8f8;border-top:1px solid #ededed}#created{float:left;width:500px}#function{float:right;width:150px}#edpool,#adpool{display:none}.horizontal-blocks
+.hentry{height:22em}* + html .post.big a.continue-reading{margin-top:15px;display:block}img{margin:6px
+0}.pagelist{font-size:1.4em}.post .read-more{font-weight:bold}.smalldesc{font-size:0.9em}.soc-icons-bar{list-style-type:none;margin:38px
+0 22px;padding:0}.soc-icons-bar
+a{font:1.5em Helvetica, Arial;background:white url(http://media.smashingmagazine.com/cdn_smash/wp-content/themes/SM-theme-new/images/sprt-gen/sprt.png?v=2010-02-09) no-repeat scroll 0 0;padding:0.2em 0 1em 43px}.soc-icons-bar
+li{float:left;display:inline;padding:5px
+30px 5px 0}.soc-icons-bar li.tw
+a{color:#218FBF;background-position: -1550px -943px}.soc-icons-bar li.su
+a{color:#0EB54D;background-position: -1550px -731px}.soc-icons-bar li.deli
+a{color:#3151A2;background-position:0 -1026px}.soc-icons-bar li.fb
+a{color:#3151A2;background-position: -57px -1813px}.big, .single .post, .page
+.post{}.home .post.smash-teaser .network-favicon{margin:0
+0 0 20px}.home .post.smash-teaser.last .network-favicon{margin:0
+0 0 0}.home .post.smash-teaser{background-color:#333}.home .post.smash-teaser.single .post-thumb,
+.home .post.smash-teaser.single .entry,
+.home .post.smash-teaser.single .author,
+.home .post.smash-teaser.single .continue-reading{padding-left:20px}.home .post.smash-teaser
+a{color:#ccc}.home .post.smash-teaser.last .post-thumb,
+.home .post.smash-teaser.last .entry,
+.home .post.smash-teaser.last .author,
+.home .post.smash-teaser.last .continue-reading{padding-left:0px}.post.single.home-smash-teaser .entry
+p{color:#cfcfcf}.home .post.smash-teaser a.continue-reading,
+.home .post.smash-teaser a.continue-reading:active{background:transparent;color:#fff}.home .post.smash-teaser h2 a:link,
+.home .post.smash-teaser h2 a:active,
+.home .post.smash-teaser h2 a:visited,
+.home .post.smash-teaser h2 a:focus{background:transparent;color:white}.category-smash-network .postmetadata,
+.home .smash-teaserpost
+.postmetadata{color:#949393;clear:none;font-size:0.9em;margin-top:10px;margin-bottom:6px}.category-smash-network .postmetadata
+a{color:#595959}.home .smash-teaserpost{position:relative;left:-20px;padding-left:20px;margin-right: -19px;overflow:auto;background:#f5f5f5 url(http://media.smashingmagazine.com/cdn_smash/wp-content/themes/SM-theme-new/images/sprt-gen/sprt.png?v=2010-02-09) no-repeat scroll 100% 100%;border-bottom:1px solid #E9E8E8}.home .smash-teaserpost+.post{border-top:none}.home .smash-teaserpost .postmetadata
+a{color:#595959}#smashtabs .post:first-child{border-top:none;background-image:none}#smashtabs.smashui .ui-tabs-nav{float:none;height:62px;padding:0;bottom:0;padding-left:0;background:url("http://media.smashingmagazine.com/cdn_smash/wp-content/themes/SM-theme-new/images/sprt-gen/sprt.png?v=2010-02-09") no-repeat scroll -2000px -210px transparent;margin-right:1px}#smashtabs.smashui .ui-tabs-nav li,
+#smashtabs.smashui .ui-tabs-nav li a,
+#smashtabs.smashui .ui-tabs-nav li strong,
+#smashtabs.smashui .ui-tabs-nav li
+span{background-image:none;width:auto;height:auto}#smashtabs.smashui .ui-tabs-nav
+li{margin-top:7px;height:33px;background:url("http://media.smashingmagazine.com/cdn_smash/wp-content/themes/SM-theme-new/images/sprt-gen/sprt.png?v=2010-02-09") no-repeat scroll -2500px 0px transparent;padding-left:12px;margin-right:3px}#smashtabs.smashui .ui-tabs-nav li.ui-tabs-selected{margin-top:0px;height:61px;background:url("http://media.smashingmagazine.com/cdn_smash/wp-content/themes/SM-theme-new/images/sprt-gen/sprt.png?v=2010-02-09") no-repeat scroll -2500px -50px transparent}#smashtabs.smashui .ui-tabs-nav li.ui-tabs-selected.first{background:url("http://media.smashingmagazine.com/cdn_smash/wp-content/themes/SM-theme-new/images/sprt-gen/sprt.png?v=2010-02-09") no-repeat scroll -2500px -150px transparent}#smashtabs.smashui .ui-tabs-nav li
+a{background:url("http://media.smashingmagazine.com/cdn_smash/wp-content/themes/SM-theme-new/images/sprt-gen/sprt.png?v=2010-02-09") no-repeat scroll 100% -80px transparent;color:#727272;margin:0;padding:0
+8px 0 0}#smashtabs.smashui .ui-tabs-nav li.ui-tabs-selected
+a{background:url("http://media.smashingmagazine.com/cdn_smash/wp-content/themes/SM-theme-new/images/sprt-gen/sprt.png?v=2010-02-09") no-repeat scroll 100% 0px transparent;color:#4a4a4a}#smashtabs.smashui .ui-tabs-nav li
+strong{margin:0;padding:0.35em 1.7em 0.35em 2.5em;background-repeat:no-repeat;background-position:0.1em center;min-height:30px}#smashtabs.smashui .ui-tabs-nav li#smashtab-magazine
+strong{background:url("http://media.smashingmagazine.com/cdn_smash/wp-content/themes/SM-theme-new/images/sprt-gen/sprt.png?v=2010-02-09") no-repeat scroll -1854px -42px transparent}#smashtabs.smashui .ui-tabs-nav li#smashtab-network
+strong{background:url("http://media.smashingmagazine.com/cdn_smash/wp-content/themes/SM-theme-new/images/sprt-gen/sprt.png?v=2010-02-09") no-repeat scroll -1854px 9px transparent}#smashtabs.smashui .ui-tabs-nav li.ui-tabs-selected
+strong{padding:0.55em 1.7em 0.5em 2.5em}#smashtabs.smashui .ui-tabs-nav li
+span{display:none}#smashtabs.smashui .ui-tabs-panel{padding:0;font-size:1em;line-height:1.7em;border-width:0}.scope.hilite{background-color:#ffc}.search
+.postmetadata{clear:none;margin-top:0.75em}div.smashingwidget.smwidgetdemo,
+div.smashingwidget.smwidgetdemo div,
+div.smashingwidget.smwidgetdemo span,
+div.smashingwidget.smwidgetdemo h3,
+div.smashingwidget.smwidgetdemo a,
+div.smashingwidget.smwidgetdemo img,
+div.smashingwidget.smwidgetdemo ul,
+div.smashingwidget.smwidgetdemo ol,
+div.smashingwidget.smwidgetdemo
+li{background-color:#fff;border:0
+none;font-family:inherit;font-size:13px;font-style:inherit;font-weight:inherit;margin:0;outline-style:none;outline-width:0;padding:0}div.smashingwidget.smwidgetdemo{color:#f00;font-family:Arial,Helvetica,sans-serif;line-height:1.55em;padding:0px;padding-bottom:15px}*
+div.smashingwidget.smwidgetdemo{font-size:small}div.smashingwidget.smwidgetdemo
+a{cursor:pointer;text-decoration:underline;font:bold 1.08em Helvetica, Arial, Helvetica, sans-serif;color:#3151a2}div.smashingwidget.smwidgetdemo a:hover{text-decoration:underline}div.smashingwidget.smwidgetdemo a:focus{outline-style:none}div.smashingwidget.smwidgetdemo a:active{outline-style:none;outline-width:medium}div.smashingwidget.smwidgetdemo a
+img{border:medium none}div.smashingwidget.smwidgetdemo
+h3{color:#000;margin:0;padding:6px
+0 0 5px;font-size:20px;font-weight:normal;cursor:pointer;height:40px;background:url("http://media.smashingmagazine.com/cdn_smash/files/smashing-widget/v006/img/header_v1.gif") no-repeat scroll 0 0 transparent;text-decoration:none}div.smashingwidget.smwidgetdemo h3
+a{background-color:transparent;border:none;top:0;right:0;width:110px;height:50px;color:inherit;padding-right:10px;text-decoration:none;font-weight:normal}div.smashingwidget.smwidgetdemo h3 a
+span{float:left;font-size:20px;background-color:transparent}div.smashingwidget.smwidgetdemo h3 a
+img{float:right;background-color:transparent;margin: -5px 5px 0 0px}div.smashingwidget.smwidgetdemo h3 a:hover{text-decoration:none}div.smashingwidget.smwidgetdemo
+ol{margin-left:5px;margin-top:15px}div.smashingwidget.smwidgetdemo
+li{list-style-image:none;list-style-position:outside;list-style-type:none;border-color:#EBEBEB;border-style:solid;border-width:0 0 1px;padding:5px
+0 10px 3px;margin:10px
+0}div.smashingwidget.smwidgetdemo li
+a{display:block}div.smashingwidget.smwidgetdemo .sw-source{display:block;color:#555;font-size:12px;font-weight:normal}div.smashingwidget.smwidgetdemo li.sw-last{border:none}div.smashingwidget.smwidgetdemo li a.sw-title{font-size:12px;font-weight:normal}a.get-involved.networklinkright{position:relative;top: -15px;float:right;display:inline}#search_box,#sbi,#newsletter_box{width:122px;padding:3px
+4px 1px 4px;box-shadow:3px 3px 3px #919191;-webkit-box-shadow:2px 2px 2px #919191;-moz-box-shadow:2px 2px 2px #919191;-moz-border-radius:2px;-webkit-border-radius:2px;border-radius:2px}#search_submit,#newsletter_submit{box-shadow:1px 1px 1px #919191;-webkit-box-shadow:1px 1px 1px #919191;-moz-box-shadow:1px 1px 1px #919191;-moz-border-radius:2px;-webkit-border-radius:2px;border-radius:2px;margin-left:3px;padding:1px
+0}#search_submit:hover,#newsletter_submit:hover{cursor:pointer}li:hover #search_box, li:hover #sbi, li:hover
+#newsletter_box{color:#4c4c4c}#newsletter_box,#search_box,#sbi{color:#808080;font-weight:normal;background-color:#fff}#search_box:active,#sbi:active,#newsletter_box:active,#search_submit:active,#newsletter_submit:active{box-shadow:1px 3px 3px #919191;-webkit-box-shadow:1px 1px 3px #919191;-moz-box-shadow:1px 1px 3px #919191}ul.float_right{float:right;display:inline}#cartoon
+img{position:relative;left: -6px}.sidebartabs.smashui{display:none}.smashui .ui-tabs-nav{margin:0
+0 -1px 0;border:0;outline:0;line-height:1.3;text-decoration:none;font-size:100%;list-style:none;font-family:Verdana,Arial,sans-serif;font-size:1.1em;float:left;position:relative;z-index:1;bottom: -1px;padding:0
+0 0 4px}.smashui .ui-tabs-nav
+ul{margin:0;padding:0;border:0;outline:0;line-height:1.3;text-decoration:none;font-size:100%;list-style:none}.smashui .ui-tabs-nav
+li{margin:0;padding:0;border:0;outline:0;line-height:1.3;text-decoration:none;font-size:100%;list-style:none;float:left;border-right:none;height:29px}.smashui .ui-tabs-nav li a
+strong{outline:none;display:table-cell;vertical-align:middle;float:left;height:29px;line-height:29px;overflow:hidden;padding:1px
+0 0 12px;margin:-8px 0 0 -16px;font-weight:bold;background:transparent url(http://media.smashingmagazine.com/cdn_smash/wp-content/themes/SM-theme-new/images/sprt-gen/sprt.png) no-repeat scroll -1550px -494px}.smashui .ui-tabs-nav li
+a{margin:0;padding:0;border:0;outline:0;line-height:1.3;text-decoration:none;font-size:100%;list-style:none;float:left;font-size:1em;font-weight:normal;text-decoration:none;padding: .5em 1.7em;color:#555;margin-right: -1em;cursor:hand;outline:none}.smashui .ui-tabs-nav li
+span{float:left;height:29px;margin:-8px -17px 0 0px;overflow:hidden;width:17px;position:relative;background:transparent url(http://media.smashingmagazine.com/cdn_smash/wp-content/themes/SM-theme-new/images/sprt-gen/sprt.png) no-repeat scroll -1550px -652px}.smashui .ui-tabs-nav li a:hover{outline:none;color:#212121}.smashui .ui-tabs-nav li.ui-tabs-selected a
+strong{outline:none;background-position: -1550px -415px}.smashui .ui-tabs-nav li.ui-tabs-selected
+span{background-position: -1550px -573px}.smashui .ui-tabs-nav li.ui-tabs-selected a,.smashui .ui-tabs-nav li.ui-tabs-selected a:hover{color:#212121}.smashui .ui-tabs-panel{margin:0;padding:0;border:0;outline:0;line-height:1.3;text-decoration:none;font-size:100%;list-style:none;font-family:Verdana,Arial,sans-serif;clear:left;border:1px
+solid #EEE;border-left:none;background-color:#fff;color:#222;padding:1.5em 1.7em;font-size:1.1em}.smashui .ui-tabs-hide{display:none;}.syntaxhighlighter,
+.syntaxhighlighter div,
+.syntaxhighlighter code,
+.syntaxhighlighter table,
+.syntaxhighlighter table td,
+.syntaxhighlighter table tr,
+.syntaxhighlighter table
+tbody{margin:0
+!important;padding:0
+!important;border:0
+!important;outline:0
+!important;background:none !important;text-align:left !important;float:none !important;vertical-align:baseline !important;position:static !important;left:auto !important;top:auto !important;right:auto !important;bottom:auto !important;height:auto !important;width:auto !important;line-height:1.1em !important;font-family:"Consolas","Bitstream Vera Sans Mono","Courier New",Courier,monospace!important;font-weight:normal !important;font-style:normal !important;font-size:1em !important;min-height:inherit !important;min-height:auto !important}.syntaxhighlighter{width:99% !important;margin:1em
+0 1em 0 !important;padding:1px
+!important;position:relative !important}.syntaxhighlighter
+.bold{font-weight:bold !important}.syntaxhighlighter
+.italic{font-style:italic !important}.syntaxhighlighter
+.line{}.syntaxhighlighter .no-wrap .line
+.content{white-space:pre !important}.syntaxhighlighter .line
+table{border-collapse:collapse !important}.syntaxhighlighter .line
+td{vertical-align:top !important}.syntaxhighlighter .line
+.number{width:3em !important}.syntaxhighlighter .line .number
+code{width:2.7em !important;padding-right: .3em !important;text-align:right !important;display:block !important}.syntaxhighlighter .line
+.content{padding-left: .5em !important}.syntaxhighlighter .line
+.spaces{}.syntaxhighlighter.nogutter .line
+.content{border-left:none !important}.syntaxhighlighter
+.bar{display:none !important}.syntaxhighlighter
+.bar.show{display:block !important}.syntaxhighlighter.collapsed
+.bar{display:block !important}.syntaxhighlighter.collapsed
+.lines{display:none !important}.syntaxhighlighter .lines.no-wrap{overflow:auto !important;overflow-y:hidden !important}.syntaxhighlighter
+.toolbar{position:absolute !important;right:0px !important;top:0px !important;font-size:1px !important;padding:8px
+8px 8px 0 !important}.syntaxhighlighter.collapsed
+.toolbar{font-size:80% !important;padding: .2em 0 .5em .5em !important;position:static !important}.syntaxhighlighter .toolbar a.item,
+.syntaxhighlighter .toolbar
+.item{display:block !important;float:left !important;margin-left:8px !important;background-repeat:no-repeat !important;overflow:hidden !important;text-indent: -5000px !important}.syntaxhighlighter.collapsed .toolbar
+.item{display:none !important}.syntaxhighlighter.collapsed .toolbar
+.item.expandSource{background-image:url(http://media.smashingmagazine.com/cdn_smash/wp-content/themes/SM-theme-new/css/sh/magnifier.png) !important;display:inline !important;text-indent:0 !important;width:auto !important;float:none !important;height:16px !important;padding-left:20px !important}.syntaxhighlighter .toolbar
+.item.viewSource{background-image:url(http://media.smashingmagazine.com/cdn_smash/wp-content/themes/SM-theme-new/css/sh/page_white_code.png) !important}.syntaxhighlighter .toolbar
+.item.printSource{background-image:url(http://media.smashingmagazine.com/cdn_smash/wp-content/themes/SM-theme-new/css/sh/printer.png) !important}.syntaxhighlighter .toolbar
+.item.copyToClipboard{text-indent:0 !important;background:none !important;overflow:visible !important}.syntaxhighlighter .toolbar
+.item.about{background-image:url(http://media.smashingmagazine.com/cdn_smash/wp-content/themes/SM-theme-new/css/sh/help.png) !important}.syntaxhighlighter.printing,
+.syntaxhighlighter.printing .line.alt1 .content,
+.syntaxhighlighter.printing .line.alt2 .content,
+.syntaxhighlighter.printing .line.highlighted .number,
+.syntaxhighlighter.printing .line.highlighted.alt1 .content,
+.syntaxhighlighter.printing .line.highlighted.alt2 .content,{background:none !important}.syntaxhighlighter.printing .line
+.number{color:#bbb !important}.syntaxhighlighter.printing .line
+.content{color:#000 !important}.syntaxhighlighter.printing
+.toolbar{display:none !important}.syntaxhighlighter.printing
+a{text-decoration:none !important}.syntaxhighlighter.printing .plain,
+.syntaxhighlighter.printing .plain
+a{color:#000 !important}.syntaxhighlighter.printing .comments,
+.syntaxhighlighter.printing .comments
+a{color:#008200 !important}.syntaxhighlighter.printing .string,
+.syntaxhighlighter.printing .string
+a{color:blue !important}.syntaxhighlighter.printing
+.keyword{color:#069 !important;font-weight:bold !important}.syntaxhighlighter.printing
+.preprocessor{color:gray !important}.syntaxhighlighter.printing
+.variable{color:#a70 !important}.syntaxhighlighter.printing
+.value{color:#090 !important}.syntaxhighlighter.printing
+.functions{color:#ff1493 !important}.syntaxhighlighter.printing
+.constants{color:#06C !important}.syntaxhighlighter.printing
+.script{font-weight:bold !important}.syntaxhighlighter.printing .color1,
+.syntaxhighlighter.printing .color1
+a{color:#808080 !important}.syntaxhighlighter.printing .color2,
+.syntaxhighlighter.printing .color2
+a{color:#ff1493 !important}.syntaxhighlighter.printing .color3,
+.syntaxhighlighter.printing .color3
+a{color:red !important}.syntaxhighlighter{background-color:#fff !important}.syntaxhighlighter .line.highlighted
+.number{color:black !important}.syntaxhighlighter .line.highlighted.alt1,
+.syntaxhighlighter
+.line.highlighted.alt2{background-color:#e0e0e0 !important}.syntaxhighlighter .line
+.number{color:#afafaf !important}.syntaxhighlighter .line
+.content{border-left:3px solid #6CE26C !important;color:#000 !important}.syntaxhighlighter.printing .line
+.content{border:0
+!important}.syntaxhighlighter
+.line.alt1{background-color:#fff !important}.syntaxhighlighter
+.line.alt2{background-color:#F8F8F8 !important}.syntaxhighlighter
+.toolbar{background-color:#F8F8F8 !important;border:#E7E5DC solid 1px !important}.syntaxhighlighter .toolbar
+a{color:#a0a0a0 !important}.syntaxhighlighter .toolbar a:hover{color:red !important}.syntaxhighlighter .plain,
+.syntaxhighlighter .plain
+a{color:#000 !important}.syntaxhighlighter .comments,
+.syntaxhighlighter .comments
+a{color:#008200 !important}.syntaxhighlighter .string,
+.syntaxhighlighter .string
+a{color:blue !important}.syntaxhighlighter
+.keyword{color:#069 !important;font-weight:bold !important}.syntaxhighlighter
+.preprocessor{color:gray !important}.syntaxhighlighter
+.variable{color:#a70 !important}.syntaxhighlighter
+.value{color:#090 !important}.syntaxhighlighter
+.functions{color:#ff1493 !important}.syntaxhighlighter
+.constants{color:#06C !important}.syntaxhighlighter
+.script{background-color:yellow !important}.syntaxhighlighter .color1,
+.syntaxhighlighter .color1
+a{color:#808080 !important}.syntaxhighlighter .color2,
+.syntaxhighlighter .color2
+a{color:#ff1493 !important}.syntaxhighlighter .color3,
+.syntaxhighlighter .color3
+a{color:red !important}.edit-comment-admin-links,.edit-comment-user-link{display:none}.edit-comment-admin-links a,.ajax-edit-time-left{display:block;font-size:12px;padding:2px
+0px;padding-left:20px;float:left;margin-right:10px}.edit-comment-admin-links-no-icon a,.ajax-edit-time-left-no-icon{display:inline;float:none;font-size:12px;padding:2px
+0px}.ajax-edit-time-left{padding-left:0}.clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden}.edit-comment-admin-links a.edit-comment{background:url(http://media.smashingmagazine.com/wp-content/plugins/smash-edit-comments/images/edit.png?v1) left center no-repeat}.edit-comment-admin-links a.move-comment{background:url(http://media.smashingmagazine.com/wp-content/plugins/smash-edit-comments/images/copy.png?v1) left center no-repeat}.edit-comment-admin-links a.moderate-comment{background:url(http://media.smashingmagazine.com/wp-content/plugins/smash-edit-comments/images/tag_red.png?v1) left center no-repeat}.edit-comment-admin-links a.approve-comment{background:url(http://media.smashingmagazine.com/wp-content/plugins/smash-edit-comments/images/yes.png?v1) left center no-repeat}.edit-comment-admin-links a.delete-comment{background:url(http://media.smashingmagazine.com/wp-content/plugins/smash-edit-comments/images/delete.png?v1) left center no-repeat}.edit-comment-admin-links a.spam-comment{background:url(http://media.smashingmagazine.com/wp-content/plugins/smash-edit-comments/images/minus.png?v1) left center no-repeat}.edit-comment-admin-links a.delink-comment{background:url(http://media.smashingmagazine.com/wp-content/plugins/smash-edit-comments/images/cancel.png?v1) left center no-repeat}.edit-comment-admin-links a.request-deletion-comment{background:url(http://media.smashingmagazine.com/wp-content/plugins/smash-edit-comments/images/delete.png?v1) left center no-repeat}.edit-comment-admin-links a, .edit-comment-user-link a, .edit-comment-admin-links-no-icon
+a{text-decoration:none}li.ajax-delete,div.ajax-delete{background:#F33}li.ajax-approve,div.ajax-approve{background:#04cd33}li.ajax-unapprove,div.ajax-unapprove{background:#F96}#TB_window{font:12px "Lucida Grande",Verdana,Arial,sans-serif;color:#333}#TB_secondLine{font:10px "Lucida Grande", Verdana, Arial, sans-serif;color:#666}#TB_window a:link{color:#666}#TB_window a:visited{color:#666}#TB_window a:hover{color:#000}#TB_window a:active{color:#666}#TB_window a:focus{color:#666}#TB_overlay{position:fixed;z-index:100;top:0px;left:0px;height:100%;width:100%}.TB_overlayMacFFBGHack{background:url(macFFBgHack.png) repeat}.TB_overlayBG{background-color:#000;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=75)";filter:alpha(opacity=75);-moz-opacity:0.75;opacity:0.75}* html
+#TB_overlay{position:absolute;height:expression(document.body.scrollHeight > document.body.offsetHeight ? document.body.scrollHeight : document.body.offsetHeight+'px')}#TB_window{position:fixed;background:#fff;z-index:102;color:#000;display:none;text-align:left;top:50%;left:50%;border:1px
+solid #555;-moz-box-shadow:rgba(0,0,0,1) 0 4px 30px;-webkit-box-shadow:rgba(0,0,0,1) 0 4px 30px;-khtml-box-shadow:rgba(0,0,0,1) 0 4px 30px;box-shadow:rgba(0,0,0,1) 0 4px 30px}* html
+#TB_window{position:absolute;margin-top:expression(0 - parseInt(this.offsetHeight / 2) + (TBWindowMargin = document.documentElement && document.documentElement.scrollTop || document.body.scrollTop) + 'px')}#TB_window
+img#TB_Image{display:block;margin:15px
+0 0 15px;border-right:1px solid #ccc;border-bottom:1px solid #ccc;border-top:1px solid #666;border-left:1px solid #666}#TB_caption{height:25px;padding:7px
+30px 10px 25px;float:left}#TB_closeWindow{height:25px;padding:11px
+25px 10px 0;float:right}#TB_closeAjaxWindow{padding:6px
+10px 0;text-align:right;float:right}#TB_ajaxWindowTitle{float:left;padding:6px
+10px 0}#TB_title{background-color:#e8e8e8;height:27px}#TB_ajaxContent{clear:both;padding:2px
+15px 15px 15px;overflow:auto;text-align:left;line-height:1.4em}#TB_ajaxContent.TB_modal{padding:15px}#TB_ajaxContent
+p{padding:5px
+0px 5px 0px}#TB_load{position:fixed;display:none;z-index:103;top:50%;left:50%;background-color:#E8E8E8;border:1px
+solid #555;margin: -45px 0pt 0pt -125px;padding:40px
+15px 15px}* html
+#TB_load{position:absolute;margin-top:expression(0 - parseInt(this.offsetHeight / 2) + (TBWindowMargin = document.documentElement && document.documentElement.scrollTop || document.body.scrollTop)+'px')}#TB_HideSelect{z-index:99;position:fixed;top:0;left:0;background-color:#fff;border:none;filter:alpha(opacity=0);-moz-opacity:0;opacity:0;height:100%;width:100%}* html
+#TB_HideSelect{position:absolute;height:expression(document.body.scrollHeight > document.body.offsetHeight ? document.body.scrollHeight : document.body.offsetHeight+'px')}#TB_iframeContent{clear:both;border:none;margin-bottom:-1px;_margin-bottom:1px}

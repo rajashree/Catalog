@@ -1,0 +1,59 @@
+tig:create-stored-procedure("createInitialPedigreeStructure" ,"	
+<InitialPedigree>
+    <DocumentId></DocumentId>
+    <productInfo>
+        <drugName></drugName>
+        <manufacturer></manufacturer>
+        <productCode></productCode> 
+        <dosageForm></dosageForm>
+        <strength></strength>
+        <containerSize></containerSize>
+    </productInfo>
+    <itemInfo> 
+        <lot></lot> 
+        <expirationDate></expirationDate>
+        <quantity></quantity>
+        <itemSerialNumber/>
+    </itemInfo>
+    <altPedigree> 
+        <mimeType>application/pdf</mimeType>
+        <encoding/> 
+        <data/> </altPedigree>
+    <transactionInfo> 
+        <recipientInfo>
+            <businessAddress>
+                <businessName></businessName>
+                <street1></street1>
+                <street2></street2>
+                <city></city>
+                <stateOrRegion></stateOrRegion>
+                <postalCode></postalCode>
+                <country></country>
+            </businessAddress>
+        </recipientInfo>
+     <senderInfo>
+            <businessAddress>
+                <businessName></businessName>
+                <street1></street1>
+                <street2></street2>
+                <city></city>
+                <stateOrRegion></stateOrRegion>
+                <postalCode></postalCode>
+                <country></country>
+            </businessAddress>
+        </senderInfo>
+        <contactInfo>
+            <name></name>
+            <title> </title>
+            <telephone> </telephone>
+            <email></email>
+            <url/>
+        </contactInfo>
+        <transactionIdentifier>
+            <identifier></identifier>
+            <identifierType/>
+        </transactionIdentifier> 
+        <transactionType></transactionType> 
+        <transactionDate></transactionDate>
+    </transactionInfo>
+</InitialPedigree>")

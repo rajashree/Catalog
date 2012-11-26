@@ -1,0 +1,993 @@
+2007-02-07 10:10:22,625 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 10:10:22,843 INFO  (LoginAction.java:57) - In execute method
+2007-02-07 10:10:22,859 INFO  (SecurityServiceImpl.java:142) - In authenticate method
+2007-02-07 10:10:22,859 INFO  (SecurityServiceImpl.java:54) - In getUser method
+2007-02-07 10:10:22,859 INFO  (SecurityServiceImpl.java:56) - Query:tlsp:loginUserInfo_MD('test')
+2007-02-07 10:10:24,375 INFO  (User.java:146) - In passwordMatch method
+2007-02-07 10:10:24,390 INFO  (User.java:176) - In valueBound method
+2007-02-07 10:10:24,390 INFO  (SecurityServiceImpl.java:103) - In insertSessionDoc method
+2007-02-07 10:10:24,390 INFO  (SecurityServiceImpl.java:87) - In replaceString method
+2007-02-07 10:10:24,390 INFO  (SecurityServiceImpl.java:130) - Query:tig:insert-document( 'tig:///EAGRFID/SysSessions/', <session><sessionid>12700120070207101024</sessionid><userid>23802960038774853494040455282174</userid><username>raje raje</username><accesslevel>epedigree</accesslevel><sessionstart>2007-02-07T10:10:24</sessionstart><userip>127.0.0.1</userip><lastuse>2007-02-07T10:10:24</lastuse><tp_company_nm>Southwood</tp_company_nm><tp_company_id>null</tp_company_id></session>)
+2007-02-07 10:10:24,468 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 10:10:24,671 INFO  (EpedigreeAction.java:67) - ********Inside Action EpedigreeAction....... 
+2007-02-07 10:10:24,671 INFO  (EpedigreeAction.java:68) - Inside Action execute of EpedigreeAction....
+2007-02-07 10:10:24,687 INFO  (EpedigreeAction.java:78) - Validating The Session
+2007-02-07 10:10:24,687 INFO  (EpedigreeAction.java:82) - sessionID in EpedigreeAction :12700120070207101024
+2007-02-07 10:10:24,937 INFO  (EpedigreeAction.java:92) - The readStatus is : true
+2007-02-07 10:10:24,937 INFO  (EpedigreeAction.java:99) - My Query in EpedigreeAction class.....tlsp:DisplayMessage_MD('12700120070207101024') 
+2007-02-07 10:10:25,562 INFO  (EpedigreeAction.java:128) - Before returning to success
+2007-02-07 10:10:28,125 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 10:10:28,203 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-07 10:11:19,937 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 10:11:19,968 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-07 10:11:58,140 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 10:11:58,203 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-07 10:12:31,906 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 10:12:31,937 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-07 10:13:11,187 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 10:13:11,250 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-07 10:13:40,359 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 10:13:40,390 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-07 10:14:58,640 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 10:14:58,703 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-07 10:15:16,281 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 10:15:16,328 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-07 10:16:37,234 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 10:16:37,281 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-07 10:17:58,265 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 10:17:58,328 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-07 10:20:30,390 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 10:20:30,437 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-07 10:20:47,187 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 10:20:53,109 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 10:20:53,109 INFO  (LoginAction.java:57) - In execute method
+2007-02-07 10:20:53,109 INFO  (SecurityServiceImpl.java:142) - In authenticate method
+2007-02-07 10:20:53,125 INFO  (SecurityServiceImpl.java:54) - In getUser method
+2007-02-07 10:20:53,125 INFO  (SecurityServiceImpl.java:56) - Query:tlsp:loginUserInfo_MD('test')
+2007-02-07 10:20:53,171 INFO  (User.java:146) - In passwordMatch method
+2007-02-07 10:20:53,171 INFO  (LoginAction.java:83) - Query:tlsp:deleteInvlidUserByID_MD('23802960038774853494040455282174')
+2007-02-07 10:20:53,203 INFO  (User.java:176) - In valueBound method
+2007-02-07 10:20:53,203 INFO  (SecurityServiceImpl.java:103) - In insertSessionDoc method
+2007-02-07 10:20:53,203 INFO  (SecurityServiceImpl.java:87) - In replaceString method
+2007-02-07 10:20:53,203 INFO  (SecurityServiceImpl.java:130) - Query:tig:insert-document( 'tig:///EAGRFID/SysSessions/', <session><sessionid>12700120070207102053</sessionid><userid>23802960038774853494040455282174</userid><username>raje raje</username><accesslevel>epedigree</accesslevel><sessionstart>2007-02-07T10:20:53</sessionstart><userip>127.0.0.1</userip><lastuse>2007-02-07T10:20:53</lastuse><tp_company_nm>Southwood</tp_company_nm><tp_company_id>null</tp_company_id></session>)
+2007-02-07 10:20:53,218 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 10:20:53,250 INFO  (EpedigreeAction.java:67) - ********Inside Action EpedigreeAction....... 
+2007-02-07 10:20:53,250 INFO  (EpedigreeAction.java:68) - Inside Action execute of EpedigreeAction....
+2007-02-07 10:20:53,265 INFO  (EpedigreeAction.java:78) - Validating The Session
+2007-02-07 10:20:53,265 INFO  (EpedigreeAction.java:82) - sessionID in EpedigreeAction :12700120070207102053
+2007-02-07 10:20:53,281 INFO  (EpedigreeAction.java:92) - The readStatus is : true
+2007-02-07 10:20:53,281 INFO  (EpedigreeAction.java:99) - My Query in EpedigreeAction class.....tlsp:DisplayMessage_MD('12700120070207102053') 
+2007-02-07 10:20:53,296 INFO  (EpedigreeAction.java:128) - Before returning to success
+2007-02-07 10:20:55,750 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 10:20:55,796 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-07 10:21:05,656 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 10:21:05,703 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-07 10:21:21,109 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 10:21:21,156 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-07 10:22:18,140 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 10:22:18,156 INFO  (SessionListener.java:55) - In sessionDestroyed method
+2007-02-07 10:22:18,156 INFO  (SessionListener.java:60) - Query:tlsp:deleteInvlidSessionID_MD('12700120070207101024')
+2007-02-07 10:22:18,171 INFO  (User.java:189) - In valueUnbound method
+2007-02-07 10:22:23,687 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 10:22:23,687 INFO  (LoginAction.java:57) - In execute method
+2007-02-07 10:22:23,703 INFO  (SecurityServiceImpl.java:142) - In authenticate method
+2007-02-07 10:22:23,703 INFO  (SecurityServiceImpl.java:54) - In getUser method
+2007-02-07 10:22:23,703 INFO  (SecurityServiceImpl.java:56) - Query:tlsp:loginUserInfo_MD('test')
+2007-02-07 10:22:23,734 INFO  (User.java:146) - In passwordMatch method
+2007-02-07 10:22:23,734 INFO  (LoginAction.java:83) - Query:tlsp:deleteInvlidUserByID_MD('23802960038774853494040455282174')
+2007-02-07 10:22:23,750 INFO  (User.java:176) - In valueBound method
+2007-02-07 10:22:23,750 INFO  (SecurityServiceImpl.java:103) - In insertSessionDoc method
+2007-02-07 10:22:23,750 INFO  (SecurityServiceImpl.java:87) - In replaceString method
+2007-02-07 10:22:23,750 INFO  (SecurityServiceImpl.java:130) - Query:tig:insert-document( 'tig:///EAGRFID/SysSessions/', <session><sessionid>12700120070207102223</sessionid><userid>23802960038774853494040455282174</userid><username>raje raje</username><accesslevel>epedigree</accesslevel><sessionstart>2007-02-07T10:22:23</sessionstart><userip>127.0.0.1</userip><lastuse>2007-02-07T10:22:23</lastuse><tp_company_nm>Southwood</tp_company_nm><tp_company_id>null</tp_company_id></session>)
+2007-02-07 10:22:23,765 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 10:22:23,796 INFO  (EpedigreeAction.java:67) - ********Inside Action EpedigreeAction....... 
+2007-02-07 10:22:23,796 INFO  (EpedigreeAction.java:68) - Inside Action execute of EpedigreeAction....
+2007-02-07 10:22:23,796 INFO  (EpedigreeAction.java:78) - Validating The Session
+2007-02-07 10:22:23,796 INFO  (EpedigreeAction.java:82) - sessionID in EpedigreeAction :12700120070207102223
+2007-02-07 10:22:23,812 INFO  (EpedigreeAction.java:92) - The readStatus is : true
+2007-02-07 10:22:23,828 INFO  (EpedigreeAction.java:99) - My Query in EpedigreeAction class.....tlsp:DisplayMessage_MD('12700120070207102223') 
+2007-02-07 10:22:23,843 INFO  (EpedigreeAction.java:128) - Before returning to success
+2007-02-07 10:22:25,390 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 10:22:25,421 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-07 10:22:56,875 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 10:22:56,890 INFO  (SessionListener.java:55) - In sessionDestroyed method
+2007-02-07 10:22:56,890 INFO  (SessionListener.java:60) - Query:tlsp:deleteInvlidSessionID_MD('12700120070207102053')
+2007-02-07 10:22:56,906 INFO  (User.java:189) - In valueUnbound method
+2007-02-07 10:23:00,015 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 10:23:00,046 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-07 10:23:01,125 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 10:23:01,218 INFO  (EpedigreeAction.java:67) - ********Inside Action EpedigreeAction....... 
+2007-02-07 10:23:01,218 INFO  (EpedigreeAction.java:68) - Inside Action execute of EpedigreeAction....
+2007-02-07 10:23:01,234 INFO  (EpedigreeAction.java:78) - Validating The Session
+2007-02-07 10:23:01,234 INFO  (EpedigreeAction.java:82) - sessionID in EpedigreeAction :12700120070207102223
+2007-02-07 10:23:01,265 INFO  (EpedigreeAction.java:92) - The readStatus is : true
+2007-02-07 10:23:01,265 INFO  (EpedigreeAction.java:99) - My Query in EpedigreeAction class.....tlsp:DisplayMessage_MD('12700120070207102223') 
+2007-02-07 10:23:01,328 INFO  (EpedigreeAction.java:128) - Before returning to success
+2007-02-07 10:23:02,687 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 10:23:02,718 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-07 10:23:17,093 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 10:23:17,093 INFO  (LoginAction.java:57) - In execute method
+2007-02-07 10:23:17,109 INFO  (SecurityServiceImpl.java:142) - In authenticate method
+2007-02-07 10:23:17,109 INFO  (SecurityServiceImpl.java:54) - In getUser method
+2007-02-07 10:23:17,109 INFO  (SecurityServiceImpl.java:56) - Query:tlsp:loginUserInfo_MD('test')
+2007-02-07 10:23:17,140 INFO  (User.java:146) - In passwordMatch method
+2007-02-07 10:23:17,140 INFO  (LoginAction.java:83) - Query:tlsp:deleteInvlidUserByID_MD('23802960038774853494040455282174')
+2007-02-07 10:23:17,156 INFO  (User.java:176) - In valueBound method
+2007-02-07 10:23:17,156 INFO  (SecurityServiceImpl.java:103) - In insertSessionDoc method
+2007-02-07 10:23:17,156 INFO  (SecurityServiceImpl.java:87) - In replaceString method
+2007-02-07 10:23:17,156 INFO  (SecurityServiceImpl.java:130) - Query:tig:insert-document( 'tig:///EAGRFID/SysSessions/', <session><sessionid>12700120070207102317</sessionid><userid>23802960038774853494040455282174</userid><username>raje raje</username><accesslevel>epedigree</accesslevel><sessionstart>2007-02-07T10:23:17</sessionstart><userip>127.0.0.1</userip><lastuse>2007-02-07T10:23:17</lastuse><tp_company_nm>Southwood</tp_company_nm><tp_company_id>null</tp_company_id></session>)
+2007-02-07 10:23:17,171 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 10:23:17,203 INFO  (EpedigreeAction.java:67) - ********Inside Action EpedigreeAction....... 
+2007-02-07 10:23:17,203 INFO  (EpedigreeAction.java:68) - Inside Action execute of EpedigreeAction....
+2007-02-07 10:23:17,203 INFO  (EpedigreeAction.java:78) - Validating The Session
+2007-02-07 10:23:17,203 INFO  (EpedigreeAction.java:82) - sessionID in EpedigreeAction :12700120070207102317
+2007-02-07 10:23:17,218 INFO  (EpedigreeAction.java:92) - The readStatus is : true
+2007-02-07 10:23:17,218 INFO  (EpedigreeAction.java:99) - My Query in EpedigreeAction class.....tlsp:DisplayMessage_MD('12700120070207102317') 
+2007-02-07 10:23:17,250 INFO  (EpedigreeAction.java:128) - Before returning to success
+2007-02-07 10:23:18,671 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 10:23:18,703 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-07 10:24:09,046 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 10:24:09,062 INFO  (SessionListener.java:55) - In sessionDestroyed method
+2007-02-07 10:24:09,062 INFO  (SessionListener.java:60) - Query:tlsp:deleteInvlidSessionID_MD('12700120070207102223')
+2007-02-07 10:24:09,078 INFO  (User.java:189) - In valueUnbound method
+2007-02-07 10:24:13,718 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 10:24:13,718 INFO  (LoginAction.java:57) - In execute method
+2007-02-07 10:24:13,718 INFO  (SecurityServiceImpl.java:142) - In authenticate method
+2007-02-07 10:24:13,718 INFO  (SecurityServiceImpl.java:54) - In getUser method
+2007-02-07 10:24:13,718 INFO  (SecurityServiceImpl.java:56) - Query:tlsp:loginUserInfo_MD('test')
+2007-02-07 10:24:13,750 INFO  (User.java:146) - In passwordMatch method
+2007-02-07 10:24:13,750 INFO  (LoginAction.java:83) - Query:tlsp:deleteInvlidUserByID_MD('23802960038774853494040455282174')
+2007-02-07 10:24:13,765 INFO  (User.java:176) - In valueBound method
+2007-02-07 10:24:13,765 INFO  (SecurityServiceImpl.java:103) - In insertSessionDoc method
+2007-02-07 10:24:13,765 INFO  (SecurityServiceImpl.java:87) - In replaceString method
+2007-02-07 10:24:13,765 INFO  (SecurityServiceImpl.java:130) - Query:tig:insert-document( 'tig:///EAGRFID/SysSessions/', <session><sessionid>12700120070207102413</sessionid><userid>23802960038774853494040455282174</userid><username>raje raje</username><accesslevel>epedigree</accesslevel><sessionstart>2007-02-07T10:24:13</sessionstart><userip>127.0.0.1</userip><lastuse>2007-02-07T10:24:13</lastuse><tp_company_nm>Southwood</tp_company_nm><tp_company_id>null</tp_company_id></session>)
+2007-02-07 10:24:13,781 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 10:24:13,812 INFO  (EpedigreeAction.java:67) - ********Inside Action EpedigreeAction....... 
+2007-02-07 10:24:13,812 INFO  (EpedigreeAction.java:68) - Inside Action execute of EpedigreeAction....
+2007-02-07 10:24:13,812 INFO  (EpedigreeAction.java:78) - Validating The Session
+2007-02-07 10:24:13,828 INFO  (EpedigreeAction.java:82) - sessionID in EpedigreeAction :12700120070207102413
+2007-02-07 10:24:13,843 INFO  (EpedigreeAction.java:92) - The readStatus is : true
+2007-02-07 10:24:13,843 INFO  (EpedigreeAction.java:99) - My Query in EpedigreeAction class.....tlsp:DisplayMessage_MD('12700120070207102413') 
+2007-02-07 10:24:13,859 INFO  (EpedigreeAction.java:128) - Before returning to success
+2007-02-07 10:24:15,500 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 10:24:15,531 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-07 10:27:13,640 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 10:27:13,671 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-07 10:27:18,625 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 10:27:18,687 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-07 10:27:24,546 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 10:27:24,578 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-07 10:27:24,906 ERROR (PedigreeTradingPartnerAction.java:89) - Error in PedigreeTradingPartnerAction execute method.........com.rdta.commons.persistence.PersistanceException: [xq-dynamic-00013] - XP0006:Argument [collection('tig:///ePharma_MD/PedigreeTradingPartner')[PedigreeTradingPartner/deaNumber =$deaNumber]] to [document-uri(for $i in collection('tig:///ePharma_MD/PedigreeTradingPartner')[PedigreeTradingPartner/deaNumber =$deaNumber]
+						  return $i)] contained too many items.
+2007-02-07 10:27:25,203 INFO  (SendDHFormEmail.java:190) - Email From :johnson.joseph@sourcen.com
+2007-02-07 10:27:25,203 INFO  (SendDHFormEmail.java:191) - Email To :santosh@sourcen.com
+2007-02-07 10:27:25,203 INFO  (SendDHFormEmail.java:192) - Email Subject :Exception in ePharma Southwood Application
+2007-02-07 10:27:25,203 INFO  (SendDHFormEmail.java:193) - Email Content :[xq-dynamic-00013] - XP0006:Argument [collection('tig:///ePharma_MD/PedigreeTradingPartner')[PedigreeTradingPartner/deaNumber =$deaNumber]] to [document-uri(for $i in collection('tig:///ePharma_MD/PedigreeTradingPartner')[PedigreeTradingPartner/deaNumber =$deaNumber]
+						  return $i)] contained too many items.
+2007-02-07 10:27:27,671 ERROR (SendDHFormEmail.java:222) - ERROR SENDING EMAIL :javax.mail.AuthenticationFailedException
+2007-02-07 10:28:06,000 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 10:28:06,000 INFO  (LoginAction.java:57) - In execute method
+2007-02-07 10:28:06,000 INFO  (SecurityServiceImpl.java:142) - In authenticate method
+2007-02-07 10:28:06,000 INFO  (SecurityServiceImpl.java:54) - In getUser method
+2007-02-07 10:28:06,015 INFO  (SecurityServiceImpl.java:56) - Query:tlsp:loginUserInfo_MD('test')
+2007-02-07 10:28:06,031 INFO  (User.java:146) - In passwordMatch method
+2007-02-07 10:28:06,031 INFO  (LoginAction.java:83) - Query:tlsp:deleteInvlidUserByID_MD('23802960038774853494040455282174')
+2007-02-07 10:28:06,046 INFO  (LoginAction.java:83) - Query:tlsp:deleteInvlidUserByID_MD('23802960038774853494040455282174')
+2007-02-07 10:28:06,062 INFO  (User.java:176) - In valueBound method
+2007-02-07 10:28:06,062 INFO  (User.java:189) - In valueUnbound method
+2007-02-07 10:28:06,062 INFO  (SecurityServiceImpl.java:103) - In insertSessionDoc method
+2007-02-07 10:28:06,062 INFO  (SecurityServiceImpl.java:87) - In replaceString method
+2007-02-07 10:28:06,062 INFO  (SecurityServiceImpl.java:130) - Query:tig:insert-document( 'tig:///EAGRFID/SysSessions/', <session><sessionid>12700120070207102806</sessionid><userid>23802960038774853494040455282174</userid><username>raje raje</username><accesslevel>epedigree</accesslevel><sessionstart>2007-02-07T10:28:06</sessionstart><userip>127.0.0.1</userip><lastuse>2007-02-07T10:28:06</lastuse><tp_company_nm>Southwood</tp_company_nm><tp_company_id>null</tp_company_id></session>)
+2007-02-07 10:28:06,078 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 10:28:06,109 INFO  (EpedigreeAction.java:67) - ********Inside Action EpedigreeAction....... 
+2007-02-07 10:28:06,125 INFO  (EpedigreeAction.java:68) - Inside Action execute of EpedigreeAction....
+2007-02-07 10:28:06,125 INFO  (EpedigreeAction.java:78) - Validating The Session
+2007-02-07 10:28:06,125 INFO  (EpedigreeAction.java:82) - sessionID in EpedigreeAction :12700120070207102806
+2007-02-07 10:28:06,140 INFO  (EpedigreeAction.java:92) - The readStatus is : true
+2007-02-07 10:28:06,156 INFO  (EpedigreeAction.java:99) - My Query in EpedigreeAction class.....tlsp:DisplayMessage_MD('12700120070207102806') 
+2007-02-07 10:28:06,171 INFO  (EpedigreeAction.java:128) - Before returning to success
+2007-02-07 10:28:07,531 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 10:28:07,562 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-07 10:29:22,281 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 10:29:22,312 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-07 10:30:21,734 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 10:30:21,875 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-07 10:30:25,546 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 10:30:25,625 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-07 10:31:15,312 INFO  (SessionListener.java:55) - In sessionDestroyed method
+2007-02-07 10:31:15,312 INFO  (SessionListener.java:60) - Query:tlsp:deleteInvlidSessionID_MD('null')
+2007-02-07 10:31:46,921 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 10:31:46,953 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-07 10:31:52,031 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 10:31:52,078 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-07 10:34:30,781 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 10:34:35,468 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 10:34:35,500 INFO  (LoginAction.java:57) - In execute method
+2007-02-07 10:34:35,515 INFO  (SecurityServiceImpl.java:142) - In authenticate method
+2007-02-07 10:34:35,515 INFO  (SecurityServiceImpl.java:54) - In getUser method
+2007-02-07 10:34:35,515 INFO  (SecurityServiceImpl.java:56) - Query:tlsp:loginUserInfo_MD('test')
+2007-02-07 10:34:35,984 INFO  (User.java:146) - In passwordMatch method
+2007-02-07 10:34:35,984 INFO  (User.java:176) - In valueBound method
+2007-02-07 10:34:35,984 INFO  (SecurityServiceImpl.java:103) - In insertSessionDoc method
+2007-02-07 10:34:35,984 INFO  (SecurityServiceImpl.java:87) - In replaceString method
+2007-02-07 10:34:36,000 INFO  (SecurityServiceImpl.java:130) - Query:tig:insert-document( 'tig:///EAGRFID/SysSessions/', <session><sessionid>12700120070207103435</sessionid><userid>23802960038774853494040455282174</userid><username>raje raje</username><accesslevel>epedigree</accesslevel><sessionstart>2007-02-07T10:34:36</sessionstart><userip>127.0.0.1</userip><lastuse>2007-02-07T10:34:36</lastuse><tp_company_nm>Southwood</tp_company_nm><tp_company_id>null</tp_company_id></session>)
+2007-02-07 10:34:36,015 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 10:34:36,078 INFO  (EpedigreeAction.java:67) - ********Inside Action EpedigreeAction....... 
+2007-02-07 10:34:36,078 INFO  (EpedigreeAction.java:68) - Inside Action execute of EpedigreeAction....
+2007-02-07 10:34:36,093 INFO  (EpedigreeAction.java:78) - Validating The Session
+2007-02-07 10:34:36,093 INFO  (EpedigreeAction.java:82) - sessionID in EpedigreeAction :12700120070207103435
+2007-02-07 10:34:36,109 INFO  (EpedigreeAction.java:92) - The readStatus is : true
+2007-02-07 10:34:36,125 INFO  (EpedigreeAction.java:99) - My Query in EpedigreeAction class.....tlsp:DisplayMessage_MD('12700120070207103435') 
+2007-02-07 10:34:36,140 INFO  (EpedigreeAction.java:128) - Before returning to success
+2007-02-07 10:34:37,515 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 10:34:37,562 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-07 10:34:41,609 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 10:34:41,687 DEBUG (AdminUser.java:56) - sessionID :12700120070207103435
+2007-02-07 10:34:43,421 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 10:34:43,484 DEBUG (AdminUser.java:56) - sessionID :12700120070207103435
+2007-02-07 10:34:49,390 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 10:34:49,500 DEBUG (AddUser.java:263) - Inside EditUserList ......
+2007-02-07 10:34:49,531 INFO  (UserUtility.java:259) - Inside method getUsersList
+2007-02-07 10:34:49,531 INFO  (UserUtility.java:270) - Query<root> { for $l in collection('tig:///EAGRFID/SysUsers')/User order by $l/UserID return <output> { <UserID>{data($l/UserID)}</UserID>, <UserName>{data($l/UserName)}</UserName>, <Email>{data($l/Email)}</Email>, <Disable>{data($l/Disable)}</Disable> } </output> } </root>
+2007-02-07 10:34:49,625 INFO  (UserUtility.java:272) - QueryResult<root> <output> <UserID>16075183416912828642574990835565</UserID><UserName>abc</UserName><Email>212</Email><Disable>false</Disable> </output><output> <UserID>224793791150493102680841912214</UserID><UserName>paul</UserName><Email>PedigreeAdmin@MorrisDickson.com</Email><Disable>false</Disable> </output><output> <UserID>23802960038774853494040455282174</UserID><UserName>test</UserName><Email>raje</Email><Disable>false</Disable> </output><output> <UserID>26913000290237854405777778278253</UserID><UserName>23</UserName><Email>123</Email><Disable>false</Disable> </output><output> <UserID>26913000290237854405786368212845</UserID><UserName>rrrrrrrrrrrrrrr</UserName><Email>bb</Email><Disable>false</Disable> </output><output> <UserID>29383916519049139238555285454701</UserID><UserName>rhgoodrich</UserName><Email>rhg@southwoodhealthcare.com</Email><Disable>false</Disable> </output> </root>
+2007-02-07 10:34:57,343 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 10:34:57,390 INFO  (AddUser.java:313) - Inside fetchDetails ......
+2007-02-07 10:34:57,390 INFO  (UserUtility.java:61) - Inside method getGroupList
+2007-02-07 10:34:57,390 INFO  (UserUtility.java:67) - Query<GroupData>{for $i in collection('tig:///EAGRFID/SysGroups') return <data>{$i/Group/GroupID}{$i/Group/GroupName}</data>}</GroupData>
+2007-02-07 10:34:57,453 INFO  (UserUtility.java:69) - QueryResult<GroupData><data><GroupID>8418737044586836262501551177581</GroupID><GroupName>viv</GroupName></data><data><GroupID>22446472733630946761456657891181</GroupID><GroupName>test</GroupName></data><data><GroupID>26913000290237854405790663180141</GroupID><GroupName>rest</GroupName></data><data><GroupID>29567575320621459578625558314861</GroupID><GroupName>testing</GroupName></data><data><GroupID>ac22243afaddbf1a:282d90d:109797c2a3b:-80001140223742617</GroupID><GroupName>admin</GroupName></data><data><GroupID>3fe29258d1efb468:bfd66a:10730185438:-80001130422954515</GroupID><GroupName>Group9</GroupName></data><data><GroupID>3fe29258d1efb468:bfd66a:10730185438:-80001130422954516</GroupID><GroupName>Group10</GroupName></data><data><GroupID>16075183416912828642579285802861</GroupID><GroupName>abc</GroupName></data><data><GroupID>26619065693159003344865905344365</GroupID><GroupName>testing</GroupName></data></GroupData>
+2007-02-07 10:34:57,468 INFO  (AddUser.java:397) - Queryfor $l in collection('tig:///EAGRFID/SysUsers')/User where $l/UserID ='23802960038774853494040455282174' return <root>{$l}</root>
+2007-02-07 10:34:57,500 INFO  (AddUser.java:399) - QueryResult<root><User><UserID>23802960038774853494040455282174</UserID><FirstName>raje</FirstName><LastName>raje</LastName><UserName>test</UserName><Email>raje</Email><Password>test</Password><Disable>false</Disable><Signer>false</Signer><AccessLevel><Access>ac22243afaddbf1a:282d90d:109797c2a3b:-80001140223742617</Access></AccessLevel><UserRole>InternalUser</UserRole><Phone>123</Phone><Fax>123</Fax><Keys><Private>string</Private><Public>string</Public></Keys><BelongsToCompany>Southwood</BelongsToCompany><EAG-TimeStamp><origin-serverID/><updated-timestamp>2005-10-05T06:02:25</updated-timestamp><updated-serverID/><reported>false</reported></EAG-TimeStamp></User></root>
+2007-02-07 10:34:57,500 INFO  (AddUser.java:324) - <root><User><UserID>23802960038774853494040455282174</UserID><FirstName>raje</FirstName><LastName>raje</LastName><UserName>test</UserName><Email>raje</Email><Password>test</Password><Disable>false</Disable><Signer>false</Signer><AccessLevel><Access>ac22243afaddbf1a:282d90d:109797c2a3b:-80001140223742617</Access></AccessLevel><UserRole>InternalUser</UserRole><Phone>123</Phone><Fax>123</Fax><Keys><Private>string</Private><Public>string</Public></Keys><BelongsToCompany>Southwood</BelongsToCompany><EAG-TimeStamp><origin-serverID/><updated-timestamp>2005-10-05T06:02:25</updated-timestamp><updated-serverID/><reported>false</reported></EAG-TimeStamp></User></root>
+2007-02-07 10:34:57,500 INFO  (AddUser.java:343) - Inside method showSelctedInfo()
+2007-02-07 10:34:57,500 INFO  (AddUser.java:457) - Inside method DispalyImage()
+2007-02-07 10:34:57,515 INFO  (AddUser.java:467) - Query :declare binary-encoding none; for $D in collection('tig:///EAGRFID/UserSign') where $D/User/UserID ='23802960038774853494040455282174' return $D/User/UserSign/binary()
+2007-02-07 10:34:57,734 INFO  (AddUser.java:469) - QueryResults :null
+2007-02-07 10:35:48,359 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 10:35:48,390 INFO  (AddUser.java:82) - Inside method AddNewUser
+2007-02-07 10:35:48,390 INFO  (UserUtility.java:61) - Inside method getGroupList
+2007-02-07 10:35:48,390 INFO  (UserUtility.java:67) - Query<GroupData>{for $i in collection('tig:///EAGRFID/SysGroups') return <data>{$i/Group/GroupID}{$i/Group/GroupName}</data>}</GroupData>
+2007-02-07 10:35:48,421 INFO  (UserUtility.java:69) - QueryResult<GroupData><data><GroupID>8418737044586836262501551177581</GroupID><GroupName>viv</GroupName></data><data><GroupID>22446472733630946761456657891181</GroupID><GroupName>test</GroupName></data><data><GroupID>26913000290237854405790663180141</GroupID><GroupName>rest</GroupName></data><data><GroupID>29567575320621459578625558314861</GroupID><GroupName>testing</GroupName></data><data><GroupID>ac22243afaddbf1a:282d90d:109797c2a3b:-80001140223742617</GroupID><GroupName>admin</GroupName></data><data><GroupID>3fe29258d1efb468:bfd66a:10730185438:-80001130422954515</GroupID><GroupName>Group9</GroupName></data><data><GroupID>3fe29258d1efb468:bfd66a:10730185438:-80001130422954516</GroupID><GroupName>Group10</GroupName></data><data><GroupID>16075183416912828642579285802861</GroupID><GroupName>abc</GroupName></data><data><GroupID>26619065693159003344865905344365</GroupID><GroupName>testing</GroupName></data></GroupData>
+2007-02-07 10:36:12,890 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 10:36:12,937 DEBUG (AdminUser.java:56) - sessionID :12700120070207103435
+2007-02-07 10:36:15,171 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 10:36:15,203 DEBUG (AddUser.java:263) - Inside EditUserList ......
+2007-02-07 10:36:15,203 INFO  (UserUtility.java:259) - Inside method getUsersList
+2007-02-07 10:36:15,203 INFO  (UserUtility.java:270) - Query<root> { for $l in collection('tig:///EAGRFID/SysUsers')/User order by $l/UserID return <output> { <UserID>{data($l/UserID)}</UserID>, <UserName>{data($l/UserName)}</UserName>, <Email>{data($l/Email)}</Email>, <Disable>{data($l/Disable)}</Disable> } </output> } </root>
+2007-02-07 10:36:15,234 INFO  (UserUtility.java:272) - QueryResult<root> <output> <UserID>16075183416912828642574990835565</UserID><UserName>abc</UserName><Email>212</Email><Disable>false</Disable> </output><output> <UserID>224793791150493102680841912214</UserID><UserName>paul</UserName><Email>PedigreeAdmin@MorrisDickson.com</Email><Disable>false</Disable> </output><output> <UserID>23802960038774853494040455282174</UserID><UserName>test</UserName><Email>raje</Email><Disable>false</Disable> </output><output> <UserID>26913000290237854405777778278253</UserID><UserName>23</UserName><Email>123</Email><Disable>false</Disable> </output><output> <UserID>26913000290237854405786368212845</UserID><UserName>rrrrrrrrrrrrrrr</UserName><Email>bb</Email><Disable>false</Disable> </output><output> <UserID>29383916519049139238555285454701</UserID><UserName>rhgoodrich</UserName><Email>rhg@southwoodhealthcare.com</Email><Disable>false</Disable> </output> </root>
+2007-02-07 10:36:17,281 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 10:36:17,312 INFO  (AddUser.java:313) - Inside fetchDetails ......
+2007-02-07 10:36:17,312 INFO  (UserUtility.java:61) - Inside method getGroupList
+2007-02-07 10:36:17,312 INFO  (UserUtility.java:67) - Query<GroupData>{for $i in collection('tig:///EAGRFID/SysGroups') return <data>{$i/Group/GroupID}{$i/Group/GroupName}</data>}</GroupData>
+2007-02-07 10:36:17,343 INFO  (UserUtility.java:69) - QueryResult<GroupData><data><GroupID>8418737044586836262501551177581</GroupID><GroupName>viv</GroupName></data><data><GroupID>22446472733630946761456657891181</GroupID><GroupName>test</GroupName></data><data><GroupID>26913000290237854405790663180141</GroupID><GroupName>rest</GroupName></data><data><GroupID>29567575320621459578625558314861</GroupID><GroupName>testing</GroupName></data><data><GroupID>ac22243afaddbf1a:282d90d:109797c2a3b:-80001140223742617</GroupID><GroupName>admin</GroupName></data><data><GroupID>3fe29258d1efb468:bfd66a:10730185438:-80001130422954515</GroupID><GroupName>Group9</GroupName></data><data><GroupID>3fe29258d1efb468:bfd66a:10730185438:-80001130422954516</GroupID><GroupName>Group10</GroupName></data><data><GroupID>16075183416912828642579285802861</GroupID><GroupName>abc</GroupName></data><data><GroupID>26619065693159003344865905344365</GroupID><GroupName>testing</GroupName></data></GroupData>
+2007-02-07 10:36:17,343 INFO  (AddUser.java:397) - Queryfor $l in collection('tig:///EAGRFID/SysUsers')/User where $l/UserID ='23802960038774853494040455282174' return <root>{$l}</root>
+2007-02-07 10:36:17,359 INFO  (AddUser.java:399) - QueryResult<root><User><UserID>23802960038774853494040455282174</UserID><FirstName>raje</FirstName><LastName>raje</LastName><UserName>test</UserName><Email>raje</Email><Password>test</Password><Disable>false</Disable><Signer>false</Signer><AccessLevel><Access>ac22243afaddbf1a:282d90d:109797c2a3b:-80001140223742617</Access></AccessLevel><UserRole>InternalUser</UserRole><Phone>123</Phone><Fax>123</Fax><Keys><Private>string</Private><Public>string</Public></Keys><BelongsToCompany>Southwood</BelongsToCompany><EAG-TimeStamp><origin-serverID/><updated-timestamp>2005-10-05T06:02:25</updated-timestamp><updated-serverID/><reported>false</reported></EAG-TimeStamp></User></root>
+2007-02-07 10:36:17,359 INFO  (AddUser.java:324) - <root><User><UserID>23802960038774853494040455282174</UserID><FirstName>raje</FirstName><LastName>raje</LastName><UserName>test</UserName><Email>raje</Email><Password>test</Password><Disable>false</Disable><Signer>false</Signer><AccessLevel><Access>ac22243afaddbf1a:282d90d:109797c2a3b:-80001140223742617</Access></AccessLevel><UserRole>InternalUser</UserRole><Phone>123</Phone><Fax>123</Fax><Keys><Private>string</Private><Public>string</Public></Keys><BelongsToCompany>Southwood</BelongsToCompany><EAG-TimeStamp><origin-serverID/><updated-timestamp>2005-10-05T06:02:25</updated-timestamp><updated-serverID/><reported>false</reported></EAG-TimeStamp></User></root>
+2007-02-07 10:36:17,359 INFO  (AddUser.java:343) - Inside method showSelctedInfo()
+2007-02-07 10:36:17,375 INFO  (AddUser.java:457) - Inside method DispalyImage()
+2007-02-07 10:36:17,375 INFO  (AddUser.java:467) - Query :declare binary-encoding none; for $D in collection('tig:///EAGRFID/UserSign') where $D/User/UserID ='23802960038774853494040455282174' return $D/User/UserSign/binary()
+2007-02-07 10:36:17,406 INFO  (AddUser.java:469) - QueryResults :null
+2007-02-07 10:36:27,390 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 10:36:27,500 INFO  (AddUser.java:102) - Inside method SaveUser ......
+2007-02-07 10:36:27,500 INFO  (UserUtility.java:61) - Inside method getGroupList
+2007-02-07 10:36:27,500 INFO  (UserUtility.java:67) - Query<GroupData>{for $i in collection('tig:///EAGRFID/SysGroups') return <data>{$i/Group/GroupID}{$i/Group/GroupName}</data>}</GroupData>
+2007-02-07 10:36:27,531 INFO  (UserUtility.java:69) - QueryResult<GroupData><data><GroupID>8418737044586836262501551177581</GroupID><GroupName>viv</GroupName></data><data><GroupID>22446472733630946761456657891181</GroupID><GroupName>test</GroupName></data><data><GroupID>26913000290237854405790663180141</GroupID><GroupName>rest</GroupName></data><data><GroupID>29567575320621459578625558314861</GroupID><GroupName>testing</GroupName></data><data><GroupID>ac22243afaddbf1a:282d90d:109797c2a3b:-80001140223742617</GroupID><GroupName>admin</GroupName></data><data><GroupID>3fe29258d1efb468:bfd66a:10730185438:-80001130422954515</GroupID><GroupName>Group9</GroupName></data><data><GroupID>3fe29258d1efb468:bfd66a:10730185438:-80001130422954516</GroupID><GroupName>Group10</GroupName></data><data><GroupID>16075183416912828642579285802861</GroupID><GroupName>abc</GroupName></data><data><GroupID>26619065693159003344865905344365</GroupID><GroupName>testing</GroupName></data></GroupData>
+2007-02-07 10:36:27,531 INFO  (AddUser.java:143) - Query let $j := 'test'  let $i := collection('tig:///EAGRFID/SysUsers')/User[UserID = '23802960038774853494040455282174'] return  if(compare($j,data($i/UserName))) then  let $s :=(for $k in collection('tig:///EAGRFID/SysUsers')/User where $k/UserID != '23802960038774853494040455282174' and not(compare($j,data($k/UserName))) return 	'true')return 	if(exists($s)) then	'true' else	'noevents' 	else 'noevents' 
+2007-02-07 10:36:27,625 INFO  (AddUser.java:145) - QueryResultnoevents
+2007-02-07 10:36:27,953 INFO  (AddUser.java:408) - Inside method SaveImage
+2007-02-07 10:36:31,343 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 10:36:31,390 INFO  (EpedigreeAction.java:67) - ********Inside Action EpedigreeAction....... 
+2007-02-07 10:36:31,390 INFO  (EpedigreeAction.java:68) - Inside Action execute of EpedigreeAction....
+2007-02-07 10:36:31,390 INFO  (EpedigreeAction.java:78) - Validating The Session
+2007-02-07 10:36:31,390 INFO  (EpedigreeAction.java:82) - sessionID in EpedigreeAction :12700120070207103435
+2007-02-07 10:36:31,406 INFO  (EpedigreeAction.java:92) - The readStatus is : true
+2007-02-07 10:36:31,421 INFO  (EpedigreeAction.java:99) - My Query in EpedigreeAction class.....tlsp:DisplayMessage_MD('12700120070207103435') 
+2007-02-07 10:36:31,437 INFO  (EpedigreeAction.java:128) - Before returning to success
+2007-02-07 10:36:33,890 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 10:36:33,953 INFO  (PedigreeTradingPartnerListAction.java:57) - Inside the Action Class PedigreeTradingPartnerListAction......
+2007-02-07 10:36:34,000 INFO  (PedigreeTradingPartnerListAction.java:80) - The list size of the query is :22
+2007-02-07 10:36:34,015 INFO  (PedigreeTradingPartnerListAction.java:88) - The Trading Partner name is :null
+2007-02-07 10:36:34,015 INFO  (PedigreeTradingPartnerListAction.java:91) - The DEANumber is :null
+2007-02-07 10:36:34,015 INFO  (PedigreeTradingPartnerListAction.java:88) - The Trading Partner name is :null
+2007-02-07 10:36:34,015 INFO  (PedigreeTradingPartnerListAction.java:91) - The DEANumber is :null
+2007-02-07 10:36:34,015 INFO  (PedigreeTradingPartnerListAction.java:88) - The Trading Partner name is :null
+2007-02-07 10:36:34,015 INFO  (PedigreeTradingPartnerListAction.java:91) - The DEANumber is :null
+2007-02-07 10:36:34,015 INFO  (PedigreeTradingPartnerListAction.java:88) - The Trading Partner name is :null
+2007-02-07 10:36:34,015 INFO  (PedigreeTradingPartnerListAction.java:91) - The DEANumber is :null
+2007-02-07 10:36:34,031 INFO  (PedigreeTradingPartnerListAction.java:88) - The Trading Partner name is :US Oncology
+2007-02-07 10:36:34,031 INFO  (PedigreeTradingPartnerListAction.java:91) - The DEANumber is :RU0326240
+2007-02-07 10:36:34,031 INFO  (PedigreeTradingPartnerListAction.java:88) - The Trading Partner name is :null
+2007-02-07 10:36:34,031 INFO  (PedigreeTradingPartnerListAction.java:91) - The DEANumber is :null
+2007-02-07 10:36:34,031 INFO  (PedigreeTradingPartnerListAction.java:88) - The Trading Partner name is :PDRx
+2007-02-07 10:36:34,031 INFO  (PedigreeTradingPartnerListAction.java:91) - The DEANumber is :RP0117475
+2007-02-07 10:36:34,031 INFO  (PedigreeTradingPartnerListAction.java:88) - The Trading Partner name is :LEES CITY DRUG
+2007-02-07 10:36:34,046 INFO  (PedigreeTradingPartnerListAction.java:91) - The DEANumber is :AM3396430
+2007-02-07 10:36:34,046 INFO  (PedigreeTradingPartnerListAction.java:88) - The Trading Partner name is :null
+2007-02-07 10:36:34,046 INFO  (PedigreeTradingPartnerListAction.java:91) - The DEANumber is :null
+2007-02-07 10:36:34,046 INFO  (PedigreeTradingPartnerListAction.java:88) - The Trading Partner name is :null
+2007-02-07 10:36:34,046 INFO  (PedigreeTradingPartnerListAction.java:91) - The DEANumber is :null
+2007-02-07 10:36:34,046 INFO  (PedigreeTradingPartnerListAction.java:88) - The Trading Partner name is :null
+2007-02-07 10:36:34,046 INFO  (PedigreeTradingPartnerListAction.java:91) - The DEANumber is :null
+2007-02-07 10:36:34,046 INFO  (PedigreeTradingPartnerListAction.java:88) - The Trading Partner name is :null
+2007-02-07 10:36:34,046 INFO  (PedigreeTradingPartnerListAction.java:91) - The DEANumber is :null
+2007-02-07 10:36:34,046 INFO  (PedigreeTradingPartnerListAction.java:88) - The Trading Partner name is :null
+2007-02-07 10:36:34,062 INFO  (PedigreeTradingPartnerListAction.java:91) - The DEANumber is :null
+2007-02-07 10:36:34,062 INFO  (PedigreeTradingPartnerListAction.java:88) - The Trading Partner name is :WHITES COMPOUNDING PHCY.
+2007-02-07 10:36:34,062 INFO  (PedigreeTradingPartnerListAction.java:91) - The DEANumber is :BW6337681
+2007-02-07 10:36:34,062 INFO  (PedigreeTradingPartnerListAction.java:88) - The Trading Partner name is :null
+2007-02-07 10:36:34,062 INFO  (PedigreeTradingPartnerListAction.java:91) - The DEANumber is :null
+2007-02-07 10:36:34,062 INFO  (PedigreeTradingPartnerListAction.java:88) - The Trading Partner name is :CHILDREN MEDICAL CENTER
+2007-02-07 10:36:34,062 INFO  (PedigreeTradingPartnerListAction.java:91) - The DEANumber is :AC2260242
+2007-02-07 10:36:34,062 INFO  (PedigreeTradingPartnerListAction.java:88) - The Trading Partner name is :MORRIS and DICKSON CO
+2007-02-07 10:36:34,078 INFO  (PedigreeTradingPartnerListAction.java:91) - The DEANumber is :RM0314790
+2007-02-07 10:36:34,078 INFO  (PedigreeTradingPartnerListAction.java:88) - The Trading Partner name is :null
+2007-02-07 10:36:34,078 INFO  (PedigreeTradingPartnerListAction.java:91) - The DEANumber is :null
+2007-02-07 10:36:34,078 INFO  (PedigreeTradingPartnerListAction.java:88) - The Trading Partner name is :a
+2007-02-07 10:36:34,078 INFO  (PedigreeTradingPartnerListAction.java:91) - The DEANumber is :null
+2007-02-07 10:36:34,078 INFO  (PedigreeTradingPartnerListAction.java:88) - The Trading Partner name is :null
+2007-02-07 10:36:34,078 INFO  (PedigreeTradingPartnerListAction.java:91) - The DEANumber is :null
+2007-02-07 10:36:34,078 INFO  (PedigreeTradingPartnerListAction.java:88) - The Trading Partner name is :null
+2007-02-07 10:36:34,078 INFO  (PedigreeTradingPartnerListAction.java:91) - The DEANumber is :null
+2007-02-07 10:36:34,093 INFO  (PedigreeTradingPartnerListAction.java:88) - The Trading Partner name is :null
+2007-02-07 10:36:34,093 INFO  (PedigreeTradingPartnerListAction.java:91) - The DEANumber is :null
+2007-02-07 10:36:45,015 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 10:36:45,046 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-07 10:36:46,328 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 10:36:46,359 INFO  (PedigreeTradingPartnerListAction.java:57) - Inside the Action Class PedigreeTradingPartnerListAction......
+2007-02-07 10:36:46,375 INFO  (PedigreeTradingPartnerListAction.java:80) - The list size of the query is :22
+2007-02-07 10:36:46,390 INFO  (PedigreeTradingPartnerListAction.java:88) - The Trading Partner name is :null
+2007-02-07 10:36:46,390 INFO  (PedigreeTradingPartnerListAction.java:91) - The DEANumber is :null
+2007-02-07 10:36:46,390 INFO  (PedigreeTradingPartnerListAction.java:88) - The Trading Partner name is :null
+2007-02-07 10:36:46,390 INFO  (PedigreeTradingPartnerListAction.java:91) - The DEANumber is :null
+2007-02-07 10:36:46,390 INFO  (PedigreeTradingPartnerListAction.java:88) - The Trading Partner name is :null
+2007-02-07 10:36:46,390 INFO  (PedigreeTradingPartnerListAction.java:91) - The DEANumber is :null
+2007-02-07 10:36:46,390 INFO  (PedigreeTradingPartnerListAction.java:88) - The Trading Partner name is :null
+2007-02-07 10:36:46,390 INFO  (PedigreeTradingPartnerListAction.java:91) - The DEANumber is :null
+2007-02-07 10:36:46,406 INFO  (PedigreeTradingPartnerListAction.java:88) - The Trading Partner name is :US Oncology
+2007-02-07 10:36:46,406 INFO  (PedigreeTradingPartnerListAction.java:91) - The DEANumber is :RU0326240
+2007-02-07 10:36:46,406 INFO  (PedigreeTradingPartnerListAction.java:88) - The Trading Partner name is :null
+2007-02-07 10:36:46,406 INFO  (PedigreeTradingPartnerListAction.java:91) - The DEANumber is :null
+2007-02-07 10:36:46,406 INFO  (PedigreeTradingPartnerListAction.java:88) - The Trading Partner name is :PDRx
+2007-02-07 10:36:46,406 INFO  (PedigreeTradingPartnerListAction.java:91) - The DEANumber is :RP0117475
+2007-02-07 10:36:46,406 INFO  (PedigreeTradingPartnerListAction.java:88) - The Trading Partner name is :LEES CITY DRUG
+2007-02-07 10:36:46,406 INFO  (PedigreeTradingPartnerListAction.java:91) - The DEANumber is :AM3396430
+2007-02-07 10:36:46,421 INFO  (PedigreeTradingPartnerListAction.java:88) - The Trading Partner name is :null
+2007-02-07 10:36:46,421 INFO  (PedigreeTradingPartnerListAction.java:91) - The DEANumber is :null
+2007-02-07 10:36:46,421 INFO  (PedigreeTradingPartnerListAction.java:88) - The Trading Partner name is :null
+2007-02-07 10:36:46,421 INFO  (PedigreeTradingPartnerListAction.java:91) - The DEANumber is :null
+2007-02-07 10:36:46,421 INFO  (PedigreeTradingPartnerListAction.java:88) - The Trading Partner name is :null
+2007-02-07 10:36:46,421 INFO  (PedigreeTradingPartnerListAction.java:91) - The DEANumber is :null
+2007-02-07 10:36:46,421 INFO  (PedigreeTradingPartnerListAction.java:88) - The Trading Partner name is :null
+2007-02-07 10:36:46,421 INFO  (PedigreeTradingPartnerListAction.java:91) - The DEANumber is :null
+2007-02-07 10:36:46,421 INFO  (PedigreeTradingPartnerListAction.java:88) - The Trading Partner name is :null
+2007-02-07 10:36:46,421 INFO  (PedigreeTradingPartnerListAction.java:91) - The DEANumber is :null
+2007-02-07 10:36:46,421 INFO  (PedigreeTradingPartnerListAction.java:88) - The Trading Partner name is :WHITES COMPOUNDING PHCY.
+2007-02-07 10:36:46,437 INFO  (PedigreeTradingPartnerListAction.java:91) - The DEANumber is :BW6337681
+2007-02-07 10:36:46,437 INFO  (PedigreeTradingPartnerListAction.java:88) - The Trading Partner name is :null
+2007-02-07 10:36:46,437 INFO  (PedigreeTradingPartnerListAction.java:91) - The DEANumber is :null
+2007-02-07 10:36:46,437 INFO  (PedigreeTradingPartnerListAction.java:88) - The Trading Partner name is :CHILDREN MEDICAL CENTER
+2007-02-07 10:36:46,437 INFO  (PedigreeTradingPartnerListAction.java:91) - The DEANumber is :AC2260242
+2007-02-07 10:36:46,437 INFO  (PedigreeTradingPartnerListAction.java:88) - The Trading Partner name is :MORRIS and DICKSON CO
+2007-02-07 10:36:46,437 INFO  (PedigreeTradingPartnerListAction.java:91) - The DEANumber is :RM0314790
+2007-02-07 10:36:46,437 INFO  (PedigreeTradingPartnerListAction.java:88) - The Trading Partner name is :null
+2007-02-07 10:36:46,453 INFO  (PedigreeTradingPartnerListAction.java:91) - The DEANumber is :null
+2007-02-07 10:36:46,453 INFO  (PedigreeTradingPartnerListAction.java:88) - The Trading Partner name is :a
+2007-02-07 10:36:46,453 INFO  (PedigreeTradingPartnerListAction.java:91) - The DEANumber is :null
+2007-02-07 10:36:46,453 INFO  (PedigreeTradingPartnerListAction.java:88) - The Trading Partner name is :null
+2007-02-07 10:36:46,453 INFO  (PedigreeTradingPartnerListAction.java:91) - The DEANumber is :null
+2007-02-07 10:36:46,453 INFO  (PedigreeTradingPartnerListAction.java:88) - The Trading Partner name is :null
+2007-02-07 10:36:46,453 INFO  (PedigreeTradingPartnerListAction.java:91) - The DEANumber is :null
+2007-02-07 10:36:46,453 INFO  (PedigreeTradingPartnerListAction.java:88) - The Trading Partner name is :null
+2007-02-07 10:36:46,453 INFO  (PedigreeTradingPartnerListAction.java:91) - The DEANumber is :null
+2007-02-07 10:36:48,890 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 10:36:48,921 WARN  (RequestUtils.java:177) - No FormBeanConfig found under 'ProcessedFaxesForm'
+2007-02-07 10:36:48,953 INFO  (ProcessedFaxesAction.java:63) - Inside Action ProcessedFaxesAction....... 
+2007-02-07 10:36:48,953 INFO  (ProcessedFaxesAction.java:78) - query for FaxDetails is:tlsp:FaxDetails_MD('1')
+2007-02-07 10:36:50,296 ERROR (ProcessedFaxesAction.java:101) - Error in ProcessedFaxesAction execute method.........com.rdta.commons.persistence.PersistanceException: [server-names-00007] - No collection found with name: [ReceivedFax].
+2007-02-07 10:36:50,453 INFO  (SendDHFormEmail.java:190) - Email From :johnson.joseph@sourcen.com
+2007-02-07 10:36:50,453 INFO  (SendDHFormEmail.java:191) - Email To :santosh@sourcen.com
+2007-02-07 10:36:50,453 INFO  (SendDHFormEmail.java:192) - Email Subject :Exception in ePharma Southwood Application
+2007-02-07 10:36:50,468 INFO  (SendDHFormEmail.java:193) - Email Content :[server-names-00007] - No collection found with name: [ReceivedFax].
+2007-02-07 10:36:52,734 ERROR (SendDHFormEmail.java:222) - ERROR SENDING EMAIL :javax.mail.AuthenticationFailedException
+2007-02-07 10:36:54,734 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 10:36:54,765 INFO  (PedigreeTradingPartnerListAction.java:57) - Inside the Action Class PedigreeTradingPartnerListAction......
+2007-02-07 10:36:54,781 INFO  (PedigreeTradingPartnerListAction.java:80) - The list size of the query is :22
+2007-02-07 10:36:54,796 INFO  (PedigreeTradingPartnerListAction.java:88) - The Trading Partner name is :null
+2007-02-07 10:36:54,796 INFO  (PedigreeTradingPartnerListAction.java:91) - The DEANumber is :null
+2007-02-07 10:36:54,796 INFO  (PedigreeTradingPartnerListAction.java:88) - The Trading Partner name is :null
+2007-02-07 10:36:54,796 INFO  (PedigreeTradingPartnerListAction.java:91) - The DEANumber is :null
+2007-02-07 10:36:54,796 INFO  (PedigreeTradingPartnerListAction.java:88) - The Trading Partner name is :null
+2007-02-07 10:36:54,796 INFO  (PedigreeTradingPartnerListAction.java:91) - The DEANumber is :null
+2007-02-07 10:36:54,812 INFO  (PedigreeTradingPartnerListAction.java:88) - The Trading Partner name is :null
+2007-02-07 10:36:54,812 INFO  (PedigreeTradingPartnerListAction.java:91) - The DEANumber is :null
+2007-02-07 10:36:54,812 INFO  (PedigreeTradingPartnerListAction.java:88) - The Trading Partner name is :US Oncology
+2007-02-07 10:36:54,812 INFO  (PedigreeTradingPartnerListAction.java:91) - The DEANumber is :RU0326240
+2007-02-07 10:36:54,812 INFO  (PedigreeTradingPartnerListAction.java:88) - The Trading Partner name is :null
+2007-02-07 10:36:54,812 INFO  (PedigreeTradingPartnerListAction.java:91) - The DEANumber is :null
+2007-02-07 10:36:54,812 INFO  (PedigreeTradingPartnerListAction.java:88) - The Trading Partner name is :PDRx
+2007-02-07 10:36:54,812 INFO  (PedigreeTradingPartnerListAction.java:91) - The DEANumber is :RP0117475
+2007-02-07 10:36:54,812 INFO  (PedigreeTradingPartnerListAction.java:88) - The Trading Partner name is :LEES CITY DRUG
+2007-02-07 10:36:54,812 INFO  (PedigreeTradingPartnerListAction.java:91) - The DEANumber is :AM3396430
+2007-02-07 10:36:54,828 INFO  (PedigreeTradingPartnerListAction.java:88) - The Trading Partner name is :null
+2007-02-07 10:36:54,828 INFO  (PedigreeTradingPartnerListAction.java:91) - The DEANumber is :null
+2007-02-07 10:36:54,828 INFO  (PedigreeTradingPartnerListAction.java:88) - The Trading Partner name is :null
+2007-02-07 10:36:54,828 INFO  (PedigreeTradingPartnerListAction.java:91) - The DEANumber is :null
+2007-02-07 10:36:54,828 INFO  (PedigreeTradingPartnerListAction.java:88) - The Trading Partner name is :null
+2007-02-07 10:36:54,828 INFO  (PedigreeTradingPartnerListAction.java:91) - The DEANumber is :null
+2007-02-07 10:36:54,828 INFO  (PedigreeTradingPartnerListAction.java:88) - The Trading Partner name is :null
+2007-02-07 10:36:54,843 INFO  (PedigreeTradingPartnerListAction.java:91) - The DEANumber is :null
+2007-02-07 10:36:54,843 INFO  (PedigreeTradingPartnerListAction.java:88) - The Trading Partner name is :null
+2007-02-07 10:36:54,843 INFO  (PedigreeTradingPartnerListAction.java:91) - The DEANumber is :null
+2007-02-07 10:36:54,843 INFO  (PedigreeTradingPartnerListAction.java:88) - The Trading Partner name is :WHITES COMPOUNDING PHCY.
+2007-02-07 10:36:54,843 INFO  (PedigreeTradingPartnerListAction.java:91) - The DEANumber is :BW6337681
+2007-02-07 10:36:54,843 INFO  (PedigreeTradingPartnerListAction.java:88) - The Trading Partner name is :null
+2007-02-07 10:36:54,843 INFO  (PedigreeTradingPartnerListAction.java:91) - The DEANumber is :null
+2007-02-07 10:36:54,843 INFO  (PedigreeTradingPartnerListAction.java:88) - The Trading Partner name is :CHILDREN MEDICAL CENTER
+2007-02-07 10:36:54,843 INFO  (PedigreeTradingPartnerListAction.java:91) - The DEANumber is :AC2260242
+2007-02-07 10:36:54,859 INFO  (PedigreeTradingPartnerListAction.java:88) - The Trading Partner name is :MORRIS and DICKSON CO
+2007-02-07 10:36:54,859 INFO  (PedigreeTradingPartnerListAction.java:91) - The DEANumber is :RM0314790
+2007-02-07 10:36:54,859 INFO  (PedigreeTradingPartnerListAction.java:88) - The Trading Partner name is :null
+2007-02-07 10:36:54,859 INFO  (PedigreeTradingPartnerListAction.java:91) - The DEANumber is :null
+2007-02-07 10:36:54,859 INFO  (PedigreeTradingPartnerListAction.java:88) - The Trading Partner name is :a
+2007-02-07 10:36:54,859 INFO  (PedigreeTradingPartnerListAction.java:91) - The DEANumber is :null
+2007-02-07 10:36:54,859 INFO  (PedigreeTradingPartnerListAction.java:88) - The Trading Partner name is :null
+2007-02-07 10:36:54,859 INFO  (PedigreeTradingPartnerListAction.java:91) - The DEANumber is :null
+2007-02-07 10:36:54,859 INFO  (PedigreeTradingPartnerListAction.java:88) - The Trading Partner name is :null
+2007-02-07 10:36:54,859 INFO  (PedigreeTradingPartnerListAction.java:91) - The DEANumber is :null
+2007-02-07 10:36:54,875 INFO  (PedigreeTradingPartnerListAction.java:88) - The Trading Partner name is :null
+2007-02-07 10:36:54,875 INFO  (PedigreeTradingPartnerListAction.java:91) - The DEANumber is :null
+2007-02-07 10:36:56,281 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 10:36:56,328 WARN  (RequestUtils.java:177) - No FormBeanConfig found under 'ProcessedFaxesForm'
+2007-02-07 10:36:56,328 INFO  (ProcessedFaxesAction.java:63) - Inside Action ProcessedFaxesAction....... 
+2007-02-07 10:36:56,328 INFO  (ProcessedFaxesAction.java:78) - query for FaxDetails is:tlsp:FaxDetails_MD('1')
+2007-02-07 10:36:56,468 ERROR (ProcessedFaxesAction.java:101) - Error in ProcessedFaxesAction execute method.........com.rdta.commons.persistence.PersistanceException: [server-names-00007] - No collection found with name: [ReceivedFax].
+2007-02-07 10:36:56,468 INFO  (SendDHFormEmail.java:190) - Email From :johnson.joseph@sourcen.com
+2007-02-07 10:36:56,468 INFO  (SendDHFormEmail.java:191) - Email To :santosh@sourcen.com
+2007-02-07 10:36:56,468 INFO  (SendDHFormEmail.java:192) - Email Subject :Exception in ePharma Southwood Application
+2007-02-07 10:36:56,468 INFO  (SendDHFormEmail.java:193) - Email Content :[server-names-00007] - No collection found with name: [ReceivedFax].
+2007-02-07 10:36:58,250 ERROR (SendDHFormEmail.java:222) - ERROR SENDING EMAIL :javax.mail.AuthenticationFailedException
+2007-02-07 10:46:00,265 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 10:46:02,593 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 10:46:09,000 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 10:46:09,046 INFO  (LoginAction.java:57) - In execute method
+2007-02-07 10:46:09,062 INFO  (SecurityServiceImpl.java:142) - In authenticate method
+2007-02-07 10:46:09,062 INFO  (SecurityServiceImpl.java:54) - In getUser method
+2007-02-07 10:46:09,062 INFO  (SecurityServiceImpl.java:56) - Query:tlsp:loginUserInfo_MD('test')
+2007-02-07 10:46:09,750 INFO  (User.java:146) - In passwordMatch method
+2007-02-07 10:46:09,750 INFO  (User.java:176) - In valueBound method
+2007-02-07 10:46:09,750 INFO  (SecurityServiceImpl.java:103) - In insertSessionDoc method
+2007-02-07 10:46:09,750 INFO  (SecurityServiceImpl.java:87) - In replaceString method
+2007-02-07 10:46:09,750 INFO  (SecurityServiceImpl.java:130) - Query:tig:insert-document( 'tig:///EAGRFID/SysSessions/', <session><sessionid>12700120070207104609</sessionid><userid>23802960038774853494040455282174</userid><username>raje raje</username><accesslevel>epedigree</accesslevel><sessionstart>2007-02-07T10:46:09</sessionstart><userip>127.0.0.1</userip><lastuse>2007-02-07T10:46:09</lastuse><tp_company_nm>Southwood</tp_company_nm><tp_company_id>null</tp_company_id></session>)
+2007-02-07 10:46:09,781 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 10:46:09,843 INFO  (EpedigreeAction.java:67) - ********Inside Action EpedigreeAction....... 
+2007-02-07 10:46:09,843 INFO  (EpedigreeAction.java:68) - Inside Action execute of EpedigreeAction....
+2007-02-07 10:46:09,875 INFO  (EpedigreeAction.java:78) - Validating The Session
+2007-02-07 10:46:09,875 INFO  (EpedigreeAction.java:82) - sessionID in EpedigreeAction :12700120070207104609
+2007-02-07 10:46:09,890 INFO  (EpedigreeAction.java:92) - The readStatus is : true
+2007-02-07 10:46:09,890 INFO  (EpedigreeAction.java:99) - My Query in EpedigreeAction class.....tlsp:DisplayMessage_MD('12700120070207104609') 
+2007-02-07 10:46:09,906 INFO  (EpedigreeAction.java:128) - Before returning to success
+2007-02-07 10:46:13,234 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 10:46:13,296 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-07 10:46:40,046 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 10:46:40,078 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-07 10:46:46,546 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 10:46:46,609 INFO  (EpedigreeAction.java:67) - ********Inside Action EpedigreeAction....... 
+2007-02-07 10:46:46,609 INFO  (EpedigreeAction.java:68) - Inside Action execute of EpedigreeAction....
+2007-02-07 10:46:46,609 INFO  (EpedigreeAction.java:78) - Validating The Session
+2007-02-07 10:46:46,609 INFO  (EpedigreeAction.java:82) - sessionID in EpedigreeAction :12700120070207104609
+2007-02-07 10:46:46,625 INFO  (EpedigreeAction.java:92) - The readStatus is : true
+2007-02-07 10:46:46,625 INFO  (EpedigreeAction.java:99) - My Query in EpedigreeAction class.....tlsp:DisplayMessage_MD('12700120070207104609') 
+2007-02-07 10:46:46,656 INFO  (EpedigreeAction.java:128) - Before returning to success
+2007-02-07 10:46:48,265 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 10:46:48,296 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-07 10:46:56,921 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 10:46:56,953 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-07 10:47:01,843 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 10:47:01,890 INFO  (EpedigreeAction.java:67) - ********Inside Action EpedigreeAction....... 
+2007-02-07 10:47:01,890 INFO  (EpedigreeAction.java:68) - Inside Action execute of EpedigreeAction....
+2007-02-07 10:47:01,890 INFO  (EpedigreeAction.java:78) - Validating The Session
+2007-02-07 10:47:01,890 INFO  (EpedigreeAction.java:82) - sessionID in EpedigreeAction :12700120070207104609
+2007-02-07 10:47:01,906 INFO  (EpedigreeAction.java:92) - The readStatus is : true
+2007-02-07 10:47:01,906 INFO  (EpedigreeAction.java:99) - My Query in EpedigreeAction class.....tlsp:DisplayMessage_MD('12700120070207104609') 
+2007-02-07 10:47:01,921 INFO  (EpedigreeAction.java:128) - Before returning to success
+2007-02-07 10:47:03,703 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 10:47:03,734 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-07 10:47:14,921 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 10:47:14,968 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-07 10:47:19,750 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 10:47:19,781 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-07 10:47:20,453 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 10:47:20,484 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-07 10:47:21,015 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 10:47:21,046 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-07 10:56:53,781 INFO  (SessionListener.java:55) - In sessionDestroyed method
+2007-02-07 10:56:53,781 INFO  (SessionListener.java:60) - Query:tlsp:deleteInvlidSessionID_MD('null')
+2007-02-07 10:57:53,890 INFO  (SessionListener.java:55) - In sessionDestroyed method
+2007-02-07 10:57:53,890 INFO  (SessionListener.java:60) - Query:tlsp:deleteInvlidSessionID_MD('12700120070207104609')
+2007-02-07 10:57:53,906 INFO  (User.java:189) - In valueUnbound method
+2007-02-07 11:23:51,359 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 11:33:59,625 INFO  (SessionListener.java:55) - In sessionDestroyed method
+2007-02-07 11:33:59,625 INFO  (SessionListener.java:60) - Query:tlsp:deleteInvlidSessionID_MD('null')
+2007-02-07 11:33:59,781 INFO  (SessionListener.java:55) - In sessionDestroyed method
+2007-02-07 11:33:59,781 INFO  (SessionListener.java:60) - Query:tlsp:deleteInvlidSessionID_MD('null')
+2007-02-07 14:26:57,968 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 14:26:58,000 INFO  (LoginAction.java:57) - In execute method
+2007-02-07 14:26:58,015 INFO  (SecurityServiceImpl.java:142) - In authenticate method
+2007-02-07 14:26:58,015 INFO  (SecurityServiceImpl.java:54) - In getUser method
+2007-02-07 14:26:58,015 INFO  (SecurityServiceImpl.java:56) - Query:tlsp:loginUserInfo_MD('test')
+2007-02-07 14:26:59,062 INFO  (User.java:146) - In passwordMatch method
+2007-02-07 14:26:59,062 INFO  (User.java:176) - In valueBound method
+2007-02-07 14:26:59,062 INFO  (SecurityServiceImpl.java:103) - In insertSessionDoc method
+2007-02-07 14:26:59,062 INFO  (SecurityServiceImpl.java:87) - In replaceString method
+2007-02-07 14:26:59,062 INFO  (SecurityServiceImpl.java:130) - Query:tig:insert-document( 'tig:///EAGRFID/SysSessions/', <session><sessionid>12700120070207022659</sessionid><userid>23802960038774853494040455282174</userid><username>raje raje</username><accesslevel>epedigree</accesslevel><sessionstart>2007-02-07T14:26:59</sessionstart><userip>127.0.0.1</userip><lastuse>2007-02-07T14:26:59</lastuse><tp_company_nm>Southwood</tp_company_nm><tp_company_id>null</tp_company_id></session>)
+2007-02-07 14:26:59,125 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 14:26:59,281 INFO  (EpedigreeAction.java:67) - ********Inside Action EpedigreeAction....... 
+2007-02-07 14:26:59,281 INFO  (EpedigreeAction.java:68) - Inside Action execute of EpedigreeAction....
+2007-02-07 14:26:59,281 INFO  (EpedigreeAction.java:78) - Validating The Session
+2007-02-07 14:26:59,296 INFO  (EpedigreeAction.java:82) - sessionID in EpedigreeAction :12700120070207022659
+2007-02-07 14:26:59,531 INFO  (EpedigreeAction.java:92) - The readStatus is : true
+2007-02-07 14:26:59,531 INFO  (EpedigreeAction.java:99) - My Query in EpedigreeAction class.....tlsp:DisplayMessage_MD('12700120070207022659') 
+2007-02-07 14:27:00,125 INFO  (EpedigreeAction.java:128) - Before returning to success
+2007-02-07 14:27:02,312 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 14:27:02,468 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-07 14:27:30,015 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 14:27:30,062 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-07 14:27:33,828 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 14:27:33,921 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-07 14:27:34,015 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 14:27:34,093 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-07 14:29:09,687 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 14:29:09,734 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-07 14:29:13,468 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 14:29:13,500 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-07 14:29:34,703 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 14:29:34,734 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-07 14:29:50,421 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 14:29:50,453 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-07 14:29:53,593 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 14:29:53,656 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-07 14:31:14,484 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 14:31:14,531 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-07 14:31:15,890 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 14:31:15,921 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-07 14:33:02,062 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 14:33:02,093 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-07 14:33:10,640 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 14:33:10,671 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-07 14:33:11,859 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 14:33:11,906 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-07 14:38:14,671 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 14:38:14,734 INFO  (LoginAction.java:57) - In execute method
+2007-02-07 14:38:14,781 INFO  (SecurityServiceImpl.java:142) - In authenticate method
+2007-02-07 14:38:14,781 INFO  (SecurityServiceImpl.java:54) - In getUser method
+2007-02-07 14:38:14,781 INFO  (SecurityServiceImpl.java:56) - Query:tlsp:loginUserInfo_MD('test')
+2007-02-07 14:38:15,656 INFO  (User.java:146) - In passwordMatch method
+2007-02-07 14:38:15,671 INFO  (User.java:176) - In valueBound method
+2007-02-07 14:38:15,671 INFO  (SecurityServiceImpl.java:103) - In insertSessionDoc method
+2007-02-07 14:38:15,671 INFO  (SecurityServiceImpl.java:87) - In replaceString method
+2007-02-07 14:38:15,671 INFO  (SecurityServiceImpl.java:130) - Query:tig:insert-document( 'tig:///EAGRFID/SysSessions/', <session><sessionid>12700120070207023815</sessionid><userid>23802960038774853494040455282174</userid><username>raje raje</username><accesslevel>epedigree</accesslevel><sessionstart>2007-02-07T14:38:15</sessionstart><userip>127.0.0.1</userip><lastuse>2007-02-07T14:38:15</lastuse><tp_company_nm>Southwood</tp_company_nm><tp_company_id>null</tp_company_id></session>)
+2007-02-07 14:38:15,765 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 14:38:15,875 INFO  (EpedigreeAction.java:67) - ********Inside Action EpedigreeAction....... 
+2007-02-07 14:38:15,875 INFO  (EpedigreeAction.java:68) - Inside Action execute of EpedigreeAction....
+2007-02-07 14:38:15,890 INFO  (EpedigreeAction.java:78) - Validating The Session
+2007-02-07 14:38:15,890 INFO  (EpedigreeAction.java:82) - sessionID in EpedigreeAction :12700120070207023815
+2007-02-07 14:38:15,968 INFO  (EpedigreeAction.java:92) - The readStatus is : true
+2007-02-07 14:38:15,968 INFO  (EpedigreeAction.java:99) - My Query in EpedigreeAction class.....tlsp:DisplayMessage_MD('12700120070207023815') 
+2007-02-07 14:38:16,171 INFO  (EpedigreeAction.java:128) - Before returning to success
+2007-02-07 14:38:23,796 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 14:38:23,859 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-07 14:38:28,828 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 14:38:28,875 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-07 14:40:48,203 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 14:40:48,234 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-07 14:40:52,906 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 14:40:52,953 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-07 14:40:55,078 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 14:40:55,125 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-07 14:41:51,031 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 14:41:51,062 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-07 14:42:05,031 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 14:42:05,078 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-07 14:42:09,046 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 14:42:09,093 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-07 14:42:11,078 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 14:42:11,109 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 14:42:11,171 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-07 14:42:11,171 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-07 14:43:15,984 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 14:43:16,031 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-07 14:43:19,671 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 14:43:19,703 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-07 14:43:20,875 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 14:43:20,906 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-07 14:43:39,093 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 14:43:43,734 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 14:43:43,734 INFO  (LoginAction.java:57) - In execute method
+2007-02-07 14:43:43,734 INFO  (SecurityServiceImpl.java:142) - In authenticate method
+2007-02-07 14:43:43,734 INFO  (SecurityServiceImpl.java:54) - In getUser method
+2007-02-07 14:43:43,734 INFO  (SecurityServiceImpl.java:56) - Query:tlsp:loginUserInfo_MD('test')
+2007-02-07 14:43:43,890 INFO  (User.java:146) - In passwordMatch method
+2007-02-07 14:43:43,890 INFO  (LoginAction.java:83) - Query:tlsp:deleteInvlidUserByID_MD('23802960038774853494040455282174')
+2007-02-07 14:43:43,906 INFO  (User.java:176) - In valueBound method
+2007-02-07 14:43:43,906 INFO  (SecurityServiceImpl.java:103) - In insertSessionDoc method
+2007-02-07 14:43:43,921 INFO  (SecurityServiceImpl.java:87) - In replaceString method
+2007-02-07 14:43:43,921 INFO  (SecurityServiceImpl.java:130) - Query:tig:insert-document( 'tig:///EAGRFID/SysSessions/', <session><sessionid>12700120070207024343</sessionid><userid>23802960038774853494040455282174</userid><username>raje raje</username><accesslevel>epedigree</accesslevel><sessionstart>2007-02-07T14:43:43</sessionstart><userip>127.0.0.1</userip><lastuse>2007-02-07T14:43:43</lastuse><tp_company_nm>Southwood</tp_company_nm><tp_company_id>null</tp_company_id></session>)
+2007-02-07 14:43:43,953 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 14:43:43,984 INFO  (EpedigreeAction.java:67) - ********Inside Action EpedigreeAction....... 
+2007-02-07 14:43:43,984 INFO  (EpedigreeAction.java:68) - Inside Action execute of EpedigreeAction....
+2007-02-07 14:43:43,984 INFO  (EpedigreeAction.java:78) - Validating The Session
+2007-02-07 14:43:43,984 INFO  (EpedigreeAction.java:82) - sessionID in EpedigreeAction :12700120070207024343
+2007-02-07 14:43:44,046 INFO  (EpedigreeAction.java:92) - The readStatus is : true
+2007-02-07 14:43:44,046 INFO  (EpedigreeAction.java:99) - My Query in EpedigreeAction class.....tlsp:DisplayMessage_MD('12700120070207024343') 
+2007-02-07 14:43:44,125 INFO  (EpedigreeAction.java:128) - Before returning to success
+2007-02-07 14:43:57,093 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 14:43:57,140 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-07 14:44:46,250 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 14:44:46,562 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-07 14:45:37,062 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 14:45:37,109 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-07 14:45:40,937 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 14:45:41,000 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-07 14:45:43,671 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 14:45:43,703 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-07 14:45:59,281 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 14:45:59,328 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-07 14:46:23,937 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 14:46:23,984 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-07 14:46:30,781 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 14:46:30,859 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-07 14:49:44,296 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 14:49:44,343 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-07 14:50:10,593 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 14:50:10,640 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-07 14:50:15,328 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 14:50:15,359 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-07 14:50:16,781 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 14:50:16,812 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-07 14:50:42,859 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 14:50:42,906 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-07 14:50:49,609 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 14:50:49,687 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-07 14:50:54,406 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 14:50:54,468 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-07 14:50:54,781 ERROR (PedigreeTradingPartnerAction.java:89) - Error in PedigreeTradingPartnerAction execute method.........com.rdta.commons.persistence.PersistanceException: [xq-dynamic-00013] - XP0006:Argument [collection('tig:///ePharma_MD/PedigreeTradingPartner')[PedigreeTradingPartner/deaNumber =$deaNumber]] to [document-uri(for $i in collection('tig:///ePharma_MD/PedigreeTradingPartner')[PedigreeTradingPartner/deaNumber =$deaNumber]
+						  return $i)] contained too many items.
+2007-02-07 14:50:55,078 INFO  (SendDHFormEmail.java:190) - Email From :johnson.joseph@sourcen.com
+2007-02-07 14:50:55,078 INFO  (SendDHFormEmail.java:191) - Email To :santosh@sourcen.com
+2007-02-07 14:50:55,078 INFO  (SendDHFormEmail.java:192) - Email Subject :Exception in ePharma Southwood Application
+2007-02-07 14:50:55,078 INFO  (SendDHFormEmail.java:193) - Email Content :[xq-dynamic-00013] - XP0006:Argument [collection('tig:///ePharma_MD/PedigreeTradingPartner')[PedigreeTradingPartner/deaNumber =$deaNumber]] to [document-uri(for $i in collection('tig:///ePharma_MD/PedigreeTradingPartner')[PedigreeTradingPartner/deaNumber =$deaNumber]
+						  return $i)] contained too many items.
+2007-02-07 14:50:57,828 ERROR (SendDHFormEmail.java:222) - ERROR SENDING EMAIL :javax.mail.AuthenticationFailedException
+2007-02-07 14:51:05,093 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 14:51:05,156 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-07 14:51:08,234 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 14:51:08,281 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-07 14:53:31,718 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 14:53:31,765 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-07 14:53:44,406 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 14:53:44,453 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-07 14:53:47,968 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 14:53:48,031 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-07 14:53:48,046 ERROR (PedigreeTradingPartnerAction.java:89) - Error in PedigreeTradingPartnerAction execute method.........com.rdta.commons.persistence.PersistanceException: [xq-dynamic-00013] - XP0006:Argument [collection('tig:///ePharma_MD/PedigreeTradingPartner')[PedigreeTradingPartner/deaNumber =$deaNumber]] to [document-uri(for $i in collection('tig:///ePharma_MD/PedigreeTradingPartner')[PedigreeTradingPartner/deaNumber =$deaNumber]
+						  return $i)] contained too many items.
+2007-02-07 14:53:48,078 INFO  (SendDHFormEmail.java:190) - Email From :johnson.joseph@sourcen.com
+2007-02-07 14:53:48,078 INFO  (SendDHFormEmail.java:191) - Email To :santosh@sourcen.com
+2007-02-07 14:53:48,078 INFO  (SendDHFormEmail.java:192) - Email Subject :Exception in ePharma Southwood Application
+2007-02-07 14:53:48,078 INFO  (SendDHFormEmail.java:193) - Email Content :[xq-dynamic-00013] - XP0006:Argument [collection('tig:///ePharma_MD/PedigreeTradingPartner')[PedigreeTradingPartner/deaNumber =$deaNumber]] to [document-uri(for $i in collection('tig:///ePharma_MD/PedigreeTradingPartner')[PedigreeTradingPartner/deaNumber =$deaNumber]
+						  return $i)] contained too many items.
+2007-02-07 14:53:52,359 ERROR (SendDHFormEmail.java:222) - ERROR SENDING EMAIL :javax.mail.AuthenticationFailedException
+2007-02-07 14:53:59,703 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 14:53:59,796 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-07 14:54:02,031 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 14:54:02,078 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-07 14:54:15,906 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 14:54:15,953 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-07 14:54:20,796 INFO  (SessionListener.java:55) - In sessionDestroyed method
+2007-02-07 14:54:20,796 INFO  (SessionListener.java:60) - Query:tlsp:deleteInvlidSessionID_MD('12700120070207023815')
+2007-02-07 14:54:20,828 INFO  (User.java:189) - In valueUnbound method
+2007-02-07 14:54:20,828 INFO  (SessionListener.java:55) - In sessionDestroyed method
+2007-02-07 14:54:20,828 INFO  (SessionListener.java:60) - Query:tlsp:deleteInvlidSessionID_MD('null')
+2007-02-07 14:55:07,796 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 14:55:08,000 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-07 14:56:30,156 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 14:56:30,218 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-07 14:56:42,968 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 14:56:43,015 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-07 14:57:48,328 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 14:57:48,375 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-07 15:04:34,171 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 15:04:34,218 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-07 15:04:39,187 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 15:04:39,250 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-07 15:04:43,093 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 15:04:43,140 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-07 15:05:24,687 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 15:05:24,734 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-07 15:05:26,812 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 15:05:26,921 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-07 15:05:27,812 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 15:05:27,859 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-07 15:05:32,171 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 15:05:32,218 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-07 15:05:57,750 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 15:05:57,796 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-07 15:05:59,015 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 15:05:59,062 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-07 15:06:00,578 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 15:06:00,625 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-07 15:07:41,265 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 15:07:41,312 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-07 15:09:21,703 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 15:09:21,781 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-07 15:09:43,656 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 15:09:43,703 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-07 15:09:56,015 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 15:09:56,078 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-07 15:11:15,796 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 15:11:15,859 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-07 15:14:59,250 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 15:14:59,281 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-07 15:15:59,156 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 15:15:59,234 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-07 15:16:23,140 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 15:16:23,171 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-07 15:19:04,750 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 15:19:04,812 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-07 15:19:07,203 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 15:19:07,250 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-07 15:19:36,000 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 15:19:36,078 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-07 15:20:11,812 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 15:20:11,843 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-07 15:21:14,531 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 15:21:14,578 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-07 15:22:07,312 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 15:22:07,343 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-07 15:22:11,703 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 15:22:11,734 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-07 15:22:45,781 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 15:22:45,859 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-07 15:23:11,781 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 15:23:11,812 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-07 15:23:31,078 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 15:23:31,125 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-07 15:23:35,015 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 15:23:35,062 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-07 15:25:03,968 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 15:25:04,015 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-07 15:26:52,375 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 15:26:52,453 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-07 15:26:56,640 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 15:26:56,703 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-07 15:27:18,781 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 15:27:18,828 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-07 15:27:36,437 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 15:27:36,484 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-07 15:27:44,218 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 15:27:44,265 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-07 15:29:27,968 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 15:29:28,000 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-07 15:33:39,625 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 15:33:39,656 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-07 15:33:52,875 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 15:33:52,921 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-07 15:33:58,625 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 15:33:58,671 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-07 15:34:14,031 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 15:34:14,078 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-07 15:34:55,390 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-07 15:35:11,968 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 15:35:12,015 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-07 15:35:53,796 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 15:35:53,843 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-07 15:36:38,765 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-07 15:36:55,500 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 15:36:55,562 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-07 15:37:21,703 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 15:37:21,750 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-07 15:37:30,765 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-07 15:39:50,546 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 15:39:50,578 INFO  (LoginAction.java:57) - In execute method
+2007-02-07 15:39:50,593 INFO  (SecurityServiceImpl.java:142) - In authenticate method
+2007-02-07 15:39:50,593 INFO  (SecurityServiceImpl.java:54) - In getUser method
+2007-02-07 15:39:50,593 INFO  (SecurityServiceImpl.java:56) - Query:tlsp:loginUserInfo_MD('test')
+2007-02-07 15:39:51,421 INFO  (User.java:146) - In passwordMatch method
+2007-02-07 15:39:51,421 INFO  (User.java:176) - In valueBound method
+2007-02-07 15:39:51,421 INFO  (SecurityServiceImpl.java:103) - In insertSessionDoc method
+2007-02-07 15:39:51,421 INFO  (SecurityServiceImpl.java:87) - In replaceString method
+2007-02-07 15:39:51,437 INFO  (SecurityServiceImpl.java:130) - Query:tig:insert-document( 'tig:///EAGRFID/SysSessions/', <session><sessionid>12700120070207033951</sessionid><userid>23802960038774853494040455282174</userid><username>raje raje</username><accesslevel>epedigree</accesslevel><sessionstart>2007-02-07T15:39:51</sessionstart><userip>127.0.0.1</userip><lastuse>2007-02-07T15:39:51</lastuse><tp_company_nm></tp_company_nm><tp_company_id></tp_company_id></session>)
+2007-02-07 15:39:51,453 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 15:39:51,531 INFO  (EpedigreeAction.java:67) - ********Inside Action EpedigreeAction....... 
+2007-02-07 15:39:51,531 INFO  (EpedigreeAction.java:68) - Inside Action execute of EpedigreeAction....
+2007-02-07 15:39:51,546 INFO  (EpedigreeAction.java:78) - Validating The Session
+2007-02-07 15:39:51,546 INFO  (EpedigreeAction.java:82) - sessionID in EpedigreeAction :12700120070207033951
+2007-02-07 15:39:51,640 INFO  (EpedigreeAction.java:92) - The readStatus is : true
+2007-02-07 15:39:51,640 INFO  (EpedigreeAction.java:99) - My Query in EpedigreeAction class.....tlsp:DisplayMessage_MD('12700120070207033951') 
+2007-02-07 15:39:51,734 INFO  (EpedigreeAction.java:128) - Before returning to success
+2007-02-07 15:39:56,187 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 15:39:56,250 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-07 15:40:12,937 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 15:40:12,984 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-07 15:40:28,625 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 15:40:28,671 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-07 15:40:47,718 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 15:40:47,765 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-07 15:42:37,140 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-07 15:42:42,625 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 15:42:42,671 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-07 15:43:50,500 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 15:43:50,546 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-07 15:43:56,234 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 15:43:56,265 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-07 15:44:14,328 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 15:44:14,390 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-07 15:44:24,296 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 15:44:24,343 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-07 15:44:34,125 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 15:44:34,171 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-07 15:45:31,609 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 15:45:31,671 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-07 15:45:45,437 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 15:45:45,484 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-07 15:45:49,531 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 15:45:49,593 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-07 15:46:42,625 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 15:46:42,671 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-07 15:46:51,187 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 15:46:51,265 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-07 15:47:21,296 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 15:47:21,343 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-07 15:47:41,265 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 15:47:41,312 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-07 15:47:48,562 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 15:47:48,609 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-07 15:47:57,453 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 15:47:57,515 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-07 15:50:57,625 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 15:50:57,671 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-07 15:51:01,500 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 15:51:01,546 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-07 15:51:10,984 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 15:51:11,031 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-07 15:51:18,953 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 15:51:19,015 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-07 15:51:32,484 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 15:51:32,531 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-07 15:51:41,968 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 15:51:42,015 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-07 15:51:49,421 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 15:51:49,468 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-07 15:51:59,890 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 15:51:59,937 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-07 15:52:09,031 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 15:52:09,078 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-07 15:53:17,828 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 15:53:17,890 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-07 15:53:19,156 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 15:53:19,218 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-07 15:54:09,390 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 15:54:09,437 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-07 15:54:17,890 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 15:54:17,937 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-07 15:54:29,296 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 15:54:29,343 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-07 15:54:38,375 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 15:54:38,421 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-07 15:56:09,187 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 15:56:09,234 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-07 15:56:13,296 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 15:56:13,484 INFO  (PedigreeTradingPartnerListAction.java:57) - Inside the Action Class PedigreeTradingPartnerListAction......
+2007-02-07 15:56:13,515 INFO  (PedigreeTradingPartnerListAction.java:80) - The list size of the query is :7
+2007-02-07 15:56:13,531 INFO  (PedigreeTradingPartnerListAction.java:88) - The Trading Partner name is :US Oncology
+2007-02-07 15:56:13,531 INFO  (PedigreeTradingPartnerListAction.java:91) - The DEANumber is :RU0326240
+2007-02-07 15:56:13,531 INFO  (PedigreeTradingPartnerListAction.java:88) - The Trading Partner name is :PDRx
+2007-02-07 15:56:13,531 INFO  (PedigreeTradingPartnerListAction.java:91) - The DEANumber is :RP0117475
+2007-02-07 15:56:13,546 INFO  (PedigreeTradingPartnerListAction.java:88) - The Trading Partner name is :LEES CITY DRUG
+2007-02-07 15:56:13,546 INFO  (PedigreeTradingPartnerListAction.java:91) - The DEANumber is :AM3396430
+2007-02-07 15:56:13,546 INFO  (PedigreeTradingPartnerListAction.java:88) - The Trading Partner name is :asdf
+2007-02-07 15:56:13,546 INFO  (PedigreeTradingPartnerListAction.java:91) - The DEANumber is :sdf
+2007-02-07 15:56:13,546 INFO  (PedigreeTradingPartnerListAction.java:88) - The Trading Partner name is :WHITES COMPOUNDING PHCY.
+2007-02-07 15:56:13,546 INFO  (PedigreeTradingPartnerListAction.java:91) - The DEANumber is :BW6337681
+2007-02-07 15:56:13,546 INFO  (PedigreeTradingPartnerListAction.java:88) - The Trading Partner name is :CHILDREN MEDICAL CENTER
+2007-02-07 15:56:13,546 INFO  (PedigreeTradingPartnerListAction.java:91) - The DEANumber is :AC2260242
+2007-02-07 15:56:13,562 INFO  (PedigreeTradingPartnerListAction.java:88) - The Trading Partner name is :MORRIS and DICKSON CO
+2007-02-07 15:56:13,562 INFO  (PedigreeTradingPartnerListAction.java:91) - The DEANumber is :RM0314790
+2007-02-07 15:56:16,093 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 15:56:16,156 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-07 15:56:26,453 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 15:56:26,500 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-07 15:56:30,546 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 15:56:30,593 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-07 16:06:39,859 INFO  (SessionListener.java:55) - In sessionDestroyed method
+2007-02-07 16:06:39,859 INFO  (SessionListener.java:60) - Query:tlsp:deleteInvlidSessionID_MD('12700120070207033951')
+2007-02-07 16:06:39,875 INFO  (User.java:189) - In valueUnbound method
+2007-02-07 17:32:49,656 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 17:32:49,656 INFO  (LoginAction.java:57) - In execute method
+2007-02-07 17:32:49,671 INFO  (SecurityServiceImpl.java:142) - In authenticate method
+2007-02-07 17:32:49,671 INFO  (SecurityServiceImpl.java:54) - In getUser method
+2007-02-07 17:32:49,671 INFO  (SecurityServiceImpl.java:56) - Query:tlsp:loginUserInfo_MD('test')
+2007-02-07 17:32:49,859 INFO  (User.java:146) - In passwordMatch method
+2007-02-07 17:32:49,859 INFO  (User.java:176) - In valueBound method
+2007-02-07 17:32:49,859 INFO  (SecurityServiceImpl.java:103) - In insertSessionDoc method
+2007-02-07 17:32:49,859 INFO  (SecurityServiceImpl.java:87) - In replaceString method
+2007-02-07 17:32:49,875 INFO  (SecurityServiceImpl.java:130) - Query:tig:insert-document( 'tig:///EAGRFID/SysSessions/', <session><sessionid>12700120070207053249</sessionid><userid>23802960038774853494040455282174</userid><username>raje raje</username><accesslevel>epedigree</accesslevel><sessionstart>2007-02-07T17:32:49</sessionstart><userip>127.0.0.1</userip><lastuse>2007-02-07T17:32:49</lastuse><tp_company_nm></tp_company_nm><tp_company_id></tp_company_id></session>)
+2007-02-07 17:32:50,031 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 17:32:50,109 INFO  (EpedigreeAction.java:67) - ********Inside Action EpedigreeAction....... 
+2007-02-07 17:32:50,109 INFO  (EpedigreeAction.java:68) - Inside Action execute of EpedigreeAction....
+2007-02-07 17:32:50,125 INFO  (EpedigreeAction.java:78) - Validating The Session
+2007-02-07 17:32:50,125 INFO  (EpedigreeAction.java:82) - sessionID in EpedigreeAction :12700120070207053249
+2007-02-07 17:32:50,234 INFO  (EpedigreeAction.java:92) - The readStatus is : true
+2007-02-07 17:32:50,234 INFO  (EpedigreeAction.java:99) - My Query in EpedigreeAction class.....tlsp:DisplayMessage_MD('12700120070207053249') 
+2007-02-07 17:32:50,515 INFO  (EpedigreeAction.java:128) - Before returning to success
+2007-02-07 17:32:53,421 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 17:32:53,453 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-07 17:32:59,468 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 17:32:59,500 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-07 17:33:02,359 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 17:33:02,406 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-07 17:33:05,046 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 17:33:05,093 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-07 17:33:08,015 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 17:33:08,062 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-07 17:33:11,218 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 17:33:11,265 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-07 17:33:13,437 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 17:33:13,484 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-07 17:33:15,968 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 17:33:16,000 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-07 17:33:18,000 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 17:33:18,046 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-07 17:33:20,750 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 17:33:20,781 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-07 17:33:34,453 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 17:33:34,484 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-07 17:33:41,609 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 17:33:41,656 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-07 17:33:49,500 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 17:33:49,546 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-07 17:35:33,875 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 17:35:33,921 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-07 17:35:38,859 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 17:35:38,937 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-07 17:35:41,625 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 17:35:41,656 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-07 17:35:44,328 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 17:35:44,390 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-07 17:35:47,578 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 17:35:47,625 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-07 17:35:49,765 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 17:35:49,812 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-07 17:35:51,968 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 17:35:52,015 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-07 17:35:54,656 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 17:35:54,703 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-07 17:35:57,375 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 17:35:57,421 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-07 17:35:59,156 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 17:35:59,187 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-07 17:36:00,828 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 17:36:00,859 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-07 17:36:14,000 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 17:36:14,046 INFO  (PedigreeTradingPartnerListAction.java:57) - Inside the Action Class PedigreeTradingPartnerListAction......
+2007-02-07 17:36:14,062 INFO  (PedigreeTradingPartnerListAction.java:80) - The list size of the query is :8
+2007-02-07 17:36:14,062 INFO  (PedigreeTradingPartnerListAction.java:88) - The Trading Partner name is :US Oncology
+2007-02-07 17:36:14,062 INFO  (PedigreeTradingPartnerListAction.java:91) - The DEANumber is :RU0326240
+2007-02-07 17:36:14,062 INFO  (PedigreeTradingPartnerListAction.java:88) - The Trading Partner name is :dsf
+2007-02-07 17:36:14,062 INFO  (PedigreeTradingPartnerListAction.java:91) - The DEANumber is :dsf
+2007-02-07 17:36:14,062 INFO  (PedigreeTradingPartnerListAction.java:88) - The Trading Partner name is :dsaf
+2007-02-07 17:36:14,078 INFO  (PedigreeTradingPartnerListAction.java:91) - The DEANumber is :as
+2007-02-07 17:36:14,078 INFO  (PedigreeTradingPartnerListAction.java:88) - The Trading Partner name is :PDRx
+2007-02-07 17:36:14,078 INFO  (PedigreeTradingPartnerListAction.java:91) - The DEANumber is :RP0117475
+2007-02-07 17:36:14,078 INFO  (PedigreeTradingPartnerListAction.java:88) - The Trading Partner name is :LEES CITY DRUG
+2007-02-07 17:36:14,078 INFO  (PedigreeTradingPartnerListAction.java:91) - The DEANumber is :AM3396430
+2007-02-07 17:36:14,078 INFO  (PedigreeTradingPartnerListAction.java:88) - The Trading Partner name is :WHITES COMPOUNDING PHCY.
+2007-02-07 17:36:14,078 INFO  (PedigreeTradingPartnerListAction.java:91) - The DEANumber is :BW6337681
+2007-02-07 17:36:14,078 INFO  (PedigreeTradingPartnerListAction.java:88) - The Trading Partner name is :CHILDREN MEDICAL CENTER
+2007-02-07 17:36:14,093 INFO  (PedigreeTradingPartnerListAction.java:91) - The DEANumber is :AC2260242
+2007-02-07 17:36:14,093 INFO  (PedigreeTradingPartnerListAction.java:88) - The Trading Partner name is :MORRIS and DICKSON CO
+2007-02-07 17:36:14,093 INFO  (PedigreeTradingPartnerListAction.java:91) - The DEANumber is :RM0314790
+2007-02-07 17:36:15,921 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-07 17:36:16,000 INFO  (PedigreeTradingPartnerDetailsAction.java:55) - Inside the Action Class PedigreeTradingPartnerDetailsAction......
+2007-02-07 18:16:05,078 INFO  (SessionListener.java:55) - In sessionDestroyed method
+2007-02-07 18:16:05,109 INFO  (SessionListener.java:60) - Query:tlsp:deleteInvlidSessionID_MD('null')
+2007-02-07 18:45:11,765 INFO  (CtxListener.java:61) - In contextDestroyed method
+2007-02-07 18:45:11,765 INFO  (CtxListener.java:63) - Query:tlsp:deleteSessions_MD()

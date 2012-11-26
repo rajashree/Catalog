@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="C:/Documents and Settings/Rajashree/MyWorkSpace/SCEM/WEB-INF/lib/servlet-api.jar"/>
+	<classpathentry kind="lib" path="C:/Documents and Settings/Rajashree/MyWorkSpace/SCEM/WEB-INF/lib/connector.jar"/>
+	<classpathentry kind="lib" path="C:/Documents and Settings/Rajashree/MyWorkSpace/SCEM/WEB-INF/lib/deployer.jar"/>
+	<classpathentry kind="lib" path="C:/Documents and Settings/Rajashree/MyWorkSpace/SCEM/WEB-INF/lib/jca-connector.jar"/>
+	<classpathentry kind="lib" path="C:/Documents and Settings/Rajashree/MyWorkSpace/SCEM/WEB-INF/lib/tlapi.jar"/>
+	<classpathentry kind="lib" path="C:/Documents and Settings/Rajashree/MyWorkSpace/SCEM/WEB-INF/lib/tlerror.jar"/>
+	<classpathentry kind="lib" path="C:/Documents and Settings/Rajashree/MyWorkSpace/SCEM/WEB-INF/lib/utility.jar"/>
+	<classpathentry kind="lib" path="C:/Documents and Settings/Rajashree/MyWorkSpace/SCEM/WEB-INF/lib/xmlparser.jar"/>
+	<classpathentry kind="lib" path="C:/Documents and Settings/Rajashree/MyWorkSpace/SCEM/WEB-INF/lib/xmltypes.jar"/>
+	<classpathentry kind="output" path="WEB-INF/classes"/>
+</classpath>

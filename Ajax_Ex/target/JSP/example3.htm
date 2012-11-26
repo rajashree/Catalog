@@ -1,0 +1,48 @@
+
+<html >
+<head>
+
+<link rel="stylesheet" type="text/css" href="ajaxtabs/ajaxtabs.css" />
+<link rel="stylesheet" type="text/css" href="ajaxtabs/styles.css" />
+<link rel="stylesheet" type="text/css" href="ajaxtabs/buttonbar.css" />
+<script type="text/javascript" src="ajaxtabs/ajaxtabs.js">
+
+
+
+</script>
+</head>
+
+<body >
+
+
+<br />
+
+<ul id="maintab" class="shadetabs">
+<li class="selected" ><a href="#default" rel="ajaxcontentarea" class="smallbutton">Task View</a></li>
+<li class="selected"><a href="external.htm" rel="ajaxcontentarea" class="smallbutton">Cal View</a></li>
+<li class="selected"><a href="external2.htm" rel="ajaxcontentarea" class="smallbutton">View</a></li>
+<li class="selected"><a href="external3.htm" rel="ajaxcontentarea" class="smallbutton">Alerts</a></li>
+<li class="selected"><a href="external4.htm" rel="ajaxcontentarea" class="smallbutton">Task View</a></li>
+</ul>
+
+
+<div id="leftNav" >
+This is some default tab content
+</div>
+<div id="ajaxcontentarea" class="contentstyle">
+<p>This is some default tab content, embedded directly inside this space and not via Ajax. It can be shown when no tabs are automatically selected, or associated with a certain tab, in this case, the first tab.</p>
+
+</div>
+
+<script type="text/javascript">
+
+startajaxtabs("maintab")
+</script>
+<script type="text/javascript">
+
+santhi("maintab")
+</script>
+
+</body>
+
+</html>

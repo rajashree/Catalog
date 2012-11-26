@@ -1,0 +1,81 @@
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+         version="3.0">
+    <display-name>Freemarker</display-name>
+
+
+    <!-- FreeMarker settings: -->
+    <!--
+            <init-param>
+            <param-name>template_update_delay</param-name>
+            <param-value>0</param-value>
+            </init-param>
+            <init-param>
+            <param-name>default_encoding</param-name>
+            <param-value>ISO-8859-1</param-value>
+            </init-param>
+            <init-param>
+            <param-name>number_format</param-name>
+            <param-value>0.##########</param-value>
+            </init-param>
+    -->
+
+    <servlet>
+        <servlet-name>basics-freemarker-servlet</servlet-name>
+        <servlet-class>BasicsFreeMarkerServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>hello-world-freemarker-servlet</servlet-name>
+        <servlet-class>HelloWorldFreeMarkerServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>localized-freemarker-servlet</servlet-name>
+        <servlet-class>LocalizedFreeMarkerServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>caching-freemarker-servlet</servlet-name>
+        <servlet-class>CachingFreeMarkerServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>model-freemarker-servlet</servlet-name>
+        <servlet-class>ModelFreeMarkerServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>custom-model-freemarker-servlet</servlet-name>
+        <servlet-class>CustomModelFreeMarkerServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>object-wrapper-freemarker-servlet</servlet-name>
+        <servlet-class>ObjectWrapperFreeMarkerServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>basics-freemarker-servlet</servlet-name>
+        <url-pattern>/</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>hello-world-freemarker-servlet</servlet-name>
+        <url-pattern>/hw/*</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>localized-freemarker-servlet</servlet-name>
+        <url-pattern>/l10n/*</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>caching-freemarker-servlet</servlet-name>
+        <url-pattern>/cache/*</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>model-freemarker-servlet</servlet-name>
+        <url-pattern>/model/*</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>custom-model-freemarker-servlet</servlet-name>
+        <url-pattern>/custom-model/*</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>object-wrapper-freemarker-servlet</servlet-name>
+        <url-pattern>/ow/*</url-pattern>
+    </servlet-mapping>
+</web-app>

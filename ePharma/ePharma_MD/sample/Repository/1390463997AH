@@ -1,0 +1,6 @@
+<Repository><RepositoryID>4b079561b4c220a0:1649b44:108faacf593:-80001138104997375</RepositoryID><RepositoryName>test</RepositoryName><IPAddress>192.168.0.55</IPAddress><MaxConnections>12</MaxConnections><DirectCommPort>2</DirectCommPort><ConnectionTimeOut>34</ConnectionTimeOut><DBVersion>4</DBVersion><EPCISVersion>12</EPCISVersion><RepositoryType>Master</RepositoryType><PublicAPI><BusinessWSDLUri>businesswsdl</BusinessWSDLUri><QueryWSDLUri>querywsdl</QueryWSDLUri><AdminWSDLUri>adminwsdl</AdminWSDLUri><ONSWSDLUri>onswsdl</ONSWSDLUri><SubscriptionWSDLUri>subscriptionwsdl</SubscriptionWSDLUri><ReplicationWSDLUri>replicationwsdl</ReplicationWSDLUri><ONSHTTPApi>onshttpapi</ONSHTTPApi></PublicAPI><Comments>comments</Comments><EAG-TimeStamp>
+<origin-serverID/>
+<updated-timestamp>2006-01-24T12:16:37</updated-timestamp>
+<updated-serverID/>
+<reported>false</reported>
+</EAG-TimeStamp></Repository>

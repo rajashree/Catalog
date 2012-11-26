@@ -1,0 +1,10 @@
+2007-03-27 14:17:44,171 INFO  (CtxListener.java:61) - In contextDestroyed method
+2007-03-27 14:17:44,796 INFO  (CtxListener.java:63) - Query:tlsp:deleteSessions_MD()
+2007-03-27 14:19:22,140 INFO  (CtxListener.java:61) - In contextDestroyed method
+2007-03-27 14:19:22,171 INFO  (CtxListener.java:63) - Query:tlsp:deleteSessions_MD()
+2007-03-27 14:32:59,140 INFO  (CtxListener.java:61) - In contextDestroyed method
+2007-03-27 14:32:59,718 INFO  (CtxListener.java:63) - Query:tlsp:deleteSessions_MD()
+2007-03-27 14:35:09,703 INFO  (CtxListener.java:61) - In contextDestroyed method
+2007-03-27 14:35:09,734 INFO  (CtxListener.java:63) - Query:tlsp:deleteSessions_MD()
+2007-03-27 17:05:36,859 INFO  (CtxListener.java:61) - In contextDestroyed method
+2007-03-27 17:05:36,890 INFO  (CtxListener.java:63) - Query:tlsp:deleteSessions_MD()

@@ -1,0 +1,457 @@
+
+tig:create-stored-procedure("addCategoryProc",
+
+"
+declare variable $code as string external;
+declare variable $parentCode as string external;
+declare variable $desc as string external;
+
+declare variable $createdBy as string external;
+declare variable $createdOn as string external;
+declare variable $updatedBy as string external;
+declare variable $updateOn as string external;
+
+
+tig:insert-document 
+( 
+	'tig:///CardinalHealth/Category', 
+	<CategoryDefn>
+	        <Code>{$code}</Code>
+	        <ParentCode>{$parentCode}</ParentCode>
+	        <Description>{$desc}</Description>
+	    <Audit>
+	        <CreatedBy>{$createdBy}</CreatedBy>
+	        <CreatedOn>{$createdOn}</CreatedOn>
+	        <UpdatedBy>{$updatedBy}</UpdatedBy>
+	        <UpdatedOn>{$updateOn}</UpdatedOn>
+	    </Audit>
+	</CategoryDefn>
+)
+
+"),
+
+
+tig:create-stored-procedure("listCategoriesProc",
+
+"
+if (count (collection('tig:///CardinalHealth/Category')) > 0 ) then
+(
+	 for $c in collection('tig:///CardinalHealth/Category')/CategoryDefn
+	   return 
+		if (fn:string-length($c/ParentCode)>0) then
+		(
+		<OPTION value='{concat($c/ParentCode,'-',$c/Code)}'>{concat($c/ParentCode,'-',$c/Code)}</OPTION>
+		)
+		else
+		(
+		<OPTION value='{data($c/Code)}'>{data($c/Code)}</OPTION>		 
+		)
+
+) else
+(
+	<OPTION value=''>No Category </OPTION>
+)
+
+"),
+
+
+tig:create-stored-procedure("getRuleIDProc",
+"
+	if (count(for $i in collection('tig:///CardinalHealth/Rule') return $i) > 0 ) then
+	(
+		let $d := fn:max(	for $i in collection('tig:///CardinalHealth/Rule/')/Rule 
+		                  return xs:int($i/RuleID +1 ))
+		return $d
+	)
+	else
+	(
+		xs:positiveInteger(1.0)
+	)
+"),
+
+
+tig:create-stored-procedure("getRuleProc",
+
+"
+declare variable $ruleID as string external ;
+
+for $i in collection('tig:///CardinalHealth/Rule')/Rule
+where $i/RuleID = $ruleID
+return $i
+
+"),
+
+
+tig:create-stored-procedure("updateRuleProc",
+"
+declare variable $ruleID as string external;
+declare variable $ruleName as string external;
+declare variable $contextSchema as string external;
+declare variable $context as string external;
+
+declare variable $categoryCode as string external;
+declare variable $condition as string external;
+
+declare variable $result_t as string external;
+
+declare variable $result_f as string external;
+declare variable $tlink_t as string external;
+declare variable $flink_t as string external;
+declare variable $link_f as string external;
+declare variable $ruleStatus as string external;
+
+declare variable $createdBy as string external;
+declare variable $createdOn as string external;
+declare variable $updatedBy as string external;
+declare variable $updateOn as string external;
+
+
+update
+   for $b in collection('tig:///CardinalHealth/Rule')/Rule
+   where $b/RuleID=$ruleID
+
+   replace value of $b/RuleName with $ruleName
+   replace value of $b/ContextSchema with $contextSchema
+   replace value of $b/Context with $context
+   replace value of $b/CategoryCode with $categoryCode
+   replace value of $b/Condition with $condition 
+   replace value of $b/Result/TrueAction with $result_t
+   replace value of $b/Result/FalseAction with $result_f
+   replace value of $b/Links/TrueToLink with $tlink_t
+   replace value of $b/Links/FalseToLink with $flink_t
+   replace value of $b/Links/FromLink with $link_f
+   replace value of $b/RuleStatus with $ruleStatus
+
+"),
+
+
+tig:create-stored-procedure("addRuleProc",
+
+"
+declare variable $ruleID as string external;
+declare variable $ruleName as string external;
+declare variable $contextSchema as string external;
+declare variable $context as string external;
+
+declare variable $categoryCode as string external;
+declare variable $condition as string external;
+declare variable $result_t as string external;
+declare variable $result_f as string external;
+declare variable $tlink_t as string external;
+declare variable $flink_t as string external;
+declare variable $link_f as string external;
+declare variable $ruleStatus as string external;
+declare variable $createdBy as string external;
+declare variable $createdOn as string external;
+declare variable $updatedBy as string external;
+declare variable $updateOn as string external;
+
+
+tig:insert-document 
+( 
+	'tig:///CardinalHealth/Rule', 
+	<Rule>
+	    <RuleID>{$ruleID}</RuleID>
+	    <RuleName>{$ruleName}</RuleName>
+	    <ContextSchema>{$contextSchema}</ContextSchema>
+	    <Context>{$context}</Context>
+	    <Parameters>	        
+	        <Parameter>parameter</Parameter>
+	        <Parameter>parameter</Parameter>
+	        <Parameter>parameter</Parameter>
+	    </Parameters>
+	    <CategoryCode>{$categoryCode}</CategoryCode>
+	    <Condition>{$condition}</Condition>
+	    <Result>
+	        <TrueAction>{$result_t}</TrueAction>
+	        <FalseAction>{$result_f}</FalseAction>
+	    </Result>
+	    <Links>
+	        <TrueToLink>{$tlink_t}</TrueToLink>
+	        <FalseToLink>{$flink_t}</FalseToLink>
+	        <FromLink>{$link_f}</FromLink>
+	    </Links>
+	    <RuleStatus>{$ruleStatus}</RuleStatus>
+	    <Audit>
+	        <CreatedBy>{$createdBy}</CreatedBy>
+	        <CreatedOn>{$createdOn}</CreatedOn>
+	        <UpdatedBy>{$updatedBy}</UpdatedBy>
+	        <UpdatedOn>{$updateOn}</UpdatedOn>
+	    </Audit>
+	</Rule>
+)
+
+"),
+
+
+tig:create-stored-procedure("listContextProc",
+"
+	if (count (for $i in collection('tig:///CardinalHealth/SysSchema') return $i) > 0 ) then	
+
+	(
+	for $i in collection('tig:///CardinalHealth/SysSchema')
+	return
+
+	 <OPTION value='{fn:substring(document-uri($i),33,string-length(document-uri($i)))}'>
+	{fn:substring(document-uri($i),33,string-length(document-uri($i)))}</OPTION>
+	)
+	else
+	(
+	 <OPTION>NoContext</OPTION>	
+	)
+
+"),
+
+
+tig:create-stored-procedure("listRulesSelProc",
+
+"
+if (count (collection('tig:///CardinalHealth/Rule')) > 0 ) then
+(
+	 for $c in collection('tig:///CardinalHealth/Rule')/Rule
+	   return 
+		<OPTION value='{$c/RuleID}'>{concat($c/RuleName,'')}</OPTION>
+
+) else
+(
+	<OPTION value='NO Rules'>NO Rules</OPTION>
+)
+
+"),
+
+
+
+tig:create-stored-procedure("listProceduresProc",
+"
+for $i in tig:list-stored-procedures()/function
+return 
+let $v := $i/@name
+return <OPTION value='{fn:substring-after($v,':')}'>{fn:substring-after($v,':')}</OPTION>
+"),
+
+tig:create-stored-procedure("getRuleSetIDProc",
+"
+	if (count(for $i in collection('tig:///CardinalHealth/RuleSet') return $i) > 0 ) then
+	(
+		let $d := fn:max(	for $i in collection('tig:///CardinalHealth/RuleSet/')/RuleSet
+		                  return xs:int($i/RuleSetID +1 ))
+		return $d
+	)
+	else
+	(
+		xs:positiveInteger(1)
+	)
+"),
+
+
+tig:create-stored-procedure("addRuleSetProc",
+
+"
+declare variable $ruleSetID as string external;
+declare variable $contextSchema as string external;
+declare variable $context as string external;
+declare variable $ruleSetName as string external;
+declare variable $categoryCode as string external;
+
+declare variable $ruleID as string external;
+declare variable $trueToLink as string external;
+declare variable $falseToLink as string external;
+declare variable $fromLink as string external;
+
+declare variable $createdBy as string external;
+declare variable $createdOn as string external;
+declare variable $updatedBy as string external;
+declare variable $updateOn as string external;
+
+
+tig:insert-document 
+( 
+	'tig:///CardinalHealth/RuleSet', 
+	<RuleSet>
+	    <RuleSetID>{$ruleSetID}</RuleSetID>
+	    <InstanceID>0</InstanceID>
+    	    <ContextSchema>{$contextSchema}</ContextSchema>
+	    <Context>{$context}</Context>
+	    <RuleSetName>{$ruleSetName}</RuleSetName>
+	    <CategoryCode>{$categoryCode}</CategoryCode>
+	    <RuleSetStatus>'created'</RuleSetStatus>
+	
+	    <Rules>
+		{
+		for $i in collection('tig:///CardinalHealth/Rule')/Rule
+		where $i/RuleID=$ruleID
+		return
+	
+			<Rule>
+	   		<RuleID>{tlsp:getRuleIDinRuleSetProc($ruleSetID)}</RuleID>
+	   		<RuleName>{data($i/RuleName)}</RuleName>
+			<ContextSchema>{data($i/ContextSchema)}</ContextSchema>
+	                  <Context>{data($i/Context)}</Context>
+	                  <Parameters>	        
+	                  	<Parameter>parameter</Parameter>
+	        			<Parameter>parameter</Parameter>
+	        			<Parameter>parameter</Parameter>
+	    		</Parameters>
+	    		<CategoryCode>{data($i/CategoryCode)}</CategoryCode>
+	    		<Condition>{data($i/Condition)}</Condition>
+	    		<Result>
+	        			<TrueAction>{data($i/Result/TrueAction)}</TrueAction>
+	        			<FalseAction>{data($i/Result/FalseAction)}</FalseAction>
+	    		</Result>
+	    		<Links>
+	        			<TrueToLink>{$trueToLink}</TrueToLink>
+	        			<FalseToLink>{$falseToLink}</FalseToLink>
+	        			<FromLink>{$fromLink}</FromLink>
+	    		</Links>
+	    		<RuleStatus>{data($i/RuleStatus)}</RuleStatus>
+	    		<Audit>
+	        			<CreatedBy>{data($i/CreatedBy)}</CreatedBy>
+	       			<CreatedOn>{data($i/CreatedOn)}</CreatedOn>
+	       			<UpdatedBy>{data($i/UpdatedBy)}</UpdatedBy>
+	       			<UpdatedOn>{data($i/UpdatedOn)}</UpdatedOn>
+			</Audit>
+		</Rule>
+		}
+	    </Rules>
+
+	    <Audit>
+	        <CreatedBy>{$createdBy}</CreatedBy>
+	        <CreatedOn>{$createdOn}</CreatedOn>
+	        <UpdatedBy>{$updatedBy}</UpdatedBy>
+	        <UpdatedOn>{$updateOn}</UpdatedOn>
+	    </Audit>
+	</RuleSet>
+)
+"),
+
+
+tig:create-stored-procedure("updateRulesInRuleSetProc",
+
+"
+declare variable $ruleSetID as string external;
+
+declare variable $ruleID as string external;
+declare variable $trueToLink as string external;
+declare variable $falseToLink as string external;
+declare variable $fromLink as string external;
+
+declare variable $createdBy as string external;
+declare variable $createdOn as string external;
+declare variable $updatedBy as string external;
+declare variable $updateOn as string external;
+
+insert  	  
+		for $i in collection('tig:///CardinalHealth/Rule')/Rule
+		where $i/RuleID=$ruleID
+		return	
+			<Rule>
+	   		<RuleID>{tlsp:getRuleIDinRuleSetProc($ruleSetID)}</RuleID>
+	   		<RuleName>{data($i/RuleName)}</RuleName>
+			<ContextSchema>{data($i/ContextSchema)}</ContextSchema>
+	                  <Context>{data($i/Context)}</Context>
+	                  <Parameters>	        
+	                  	<Parameter>parameter</Parameter>
+	        			<Parameter>parameter</Parameter>
+	        			<Parameter>parameter</Parameter>
+	    		</Parameters>
+	    		<CategoryCode>{data($i/CategoryCode)}</CategoryCode>
+	    		<Condition>{data($i/Condition)}</Condition>
+	    		<Result>
+	        			<TrueAction>{data($i/Result/TrueAction)}</TrueAction>
+	        			<FalseAction>{data($i/Result/FalseAction)}</FalseAction>
+	    		</Result>
+	    		<Links>
+	        			<TrueToLink>{$trueToLink}</TrueToLink>
+	        			<FalseToLink>{$falseToLink}</FalseToLink>
+	        			<FromLink>{$fromLink}</FromLink>
+	    		</Links>
+	    		<RuleStatus>{data($i/RuleStatus)}</RuleStatus>
+	    		<Audit>
+	        			<CreatedBy>{data($i/CreatedBy)}</CreatedBy>
+	       			<CreatedOn>{data($i/CreatedOn)}</CreatedOn>
+	       			<UpdatedBy>{data($i/UpdatedBy)}</UpdatedBy>
+	       			<UpdatedOn>{data($i/UpdatedOn)}</UpdatedOn>
+			</Audit>
+			</Rule>
+		
+	into collection('tig:///CardinalHealth/RuleSet')/RuleSet[RuleSetID=$ruleSetID]/Rules
+
+"),
+
+
+
+tig:create-stored-procedure("updateRuleSetDetails",
+
+"
+declare variable $ruleSetID as string external;
+declare variable $contextSchema as string external;
+declare variable $context as string external;
+declare variable $ruleSetName as string external;
+declare variable $categoryCode as string external;
+
+   update
+       for $b in collection('tig:///CardinalHealth/RuleSet')/RuleSet
+       where $b/RuleSetID=$ruleSetID
+       replace $b/ContextSchema/text() with $contextSchema
+       replace $b/Context/text() with $context
+       replace $b/RuleSetName/text() with $ruleSetName
+       replace $b/CategoryCode/text() with $categoryCode
+
+"),
+
+
+tig:create-stored-procedure("getRuleSetProc",
+
+"
+declare variable $ruleSetID as string external ;
+
+for $i in collection('tig:///CardinalHealth/RuleSet')/RuleSet
+where $i/RuleSetID = $ruleSetID
+return $i
+
+"),
+
+
+tig:create-stored-procedure("deleteRuleFromRuleSetProc",
+
+"
+declare variable $ruleID as string external;
+declare variable $ruleSetID as string external;
+
+delete 
+( for $i in collection('tig:///CardinalHealth/RuleSet')/RuleSet[RuleSetID=$ruleSetID]/Rules/Rule[RuleID=$ruleID] 
+  return $i )
+
+"),
+
+
+tig:create-stored-procedure("updateRuleNodeInRuleSetProc","
+
+declare variable $ruleSetID as string external;
+declare variable $ruleNode as node()* external;
+
+insert $ruleNode into collection('tig:///CardinalHealth/RuleSet')/RuleSet[RuleSetID=$ruleSetID]/Rules
+
+"),
+
+
+tig:create-stored-procedure("listRuleForDisplayProc",
+"
+declare variable $categoryCode as string external;
+for $i in collection('tig:///CardinalHealth/Rule')/Rule
+where $i/CategoryCode=$categoryCode
+order by $i/RuleID
+return
+$i
+"),
+
+
+tig:create-stored-procedure("listRuleSetForDisplayProc",
+"
+declare variable $categoryCode as string external;
+for $i in collection('tig:///CardinalHealth/RuleSet')/RuleSet
+where $i/CategoryCode=$categoryCode
+order by $i/RuleSetID
+return
+$i
+")

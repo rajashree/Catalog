@@ -1,0 +1,144 @@
+2007-03-30 15:02:25,296 INFO  (ActionExceptionHandler.java:98) - Deatils of Error with TL messages..
+2007-03-30 15:02:25,328 INFO  (ActionExceptionHandler.java:112) - Error Code :xq-type-00000
+2007-03-30 15:02:25,328 INFO  (ActionExceptionHandler.java:113) - Error Message :[xq-type-00000] - [http://www.rainingdata.com/TigerLogic/namespaces/stored-procedures,getSearchResultsNew] [( xs:string*, xs:string*, xs:string )] cannot be applied to [( xs:string, xs:string, xs:integer )].
+2007-03-30 15:02:25,328 INFO  (ActionExceptionHandler.java:114) - Full Message :com.rdta.xquery.error.TypeException: [xq-type-00000] - [http://www.rainingdata.com/TigerLogic/namespaces/stored-procedures,getSearchResultsNew] [( xs:string*, xs:string*, xs:string )] cannot be applied to [( xs:string, xs:string, xs:integer )].
+2007-03-30 15:02:25,343 INFO  (ActionExceptionHandler.java:126) - Definition :xq-type-00000[]
+2007-03-30 15:04:33,656 INFO  (ActionExceptionHandler.java:98) - Deatils of Error with TL messages..
+2007-03-30 15:04:33,656 INFO  (ActionExceptionHandler.java:112) - Error Code :xq-type-00000
+2007-03-30 15:04:33,656 INFO  (ActionExceptionHandler.java:113) - Error Message :[xq-type-00000] - [http://www.rainingdata.com/TigerLogic/namespaces/stored-procedures,getSearchResultsNew] [( xs:string*, xs:string*, xs:string )] cannot be applied to [( xs:string, xs:string, xs:integer )].
+2007-03-30 15:04:33,656 INFO  (ActionExceptionHandler.java:114) - Full Message :com.rdta.xquery.error.TypeException: [xq-type-00000] - [http://www.rainingdata.com/TigerLogic/namespaces/stored-procedures,getSearchResultsNew] [( xs:string*, xs:string*, xs:string )] cannot be applied to [( xs:string, xs:string, xs:integer )].
+2007-03-30 15:04:33,656 INFO  (ActionExceptionHandler.java:126) - Definition :xq-type-00000[]
+2007-03-30 15:04:47,468 INFO  (ActionExceptionHandler.java:98) - Deatils of Error with TL messages..
+2007-03-30 15:04:47,468 INFO  (ActionExceptionHandler.java:112) - Error Code :xq-type-00000
+2007-03-30 15:04:47,468 INFO  (ActionExceptionHandler.java:113) - Error Message :[xq-type-00000] - [http://www.rainingdata.com/TigerLogic/namespaces/stored-procedures,getSearchResultsNew] [( xs:string*, xs:string*, xs:string )] cannot be applied to [( xs:string+, xs:string+, xs:integer )].
+2007-03-30 15:04:47,484 INFO  (ActionExceptionHandler.java:114) - Full Message :com.rdta.xquery.error.TypeException: [xq-type-00000] - [http://www.rainingdata.com/TigerLogic/namespaces/stored-procedures,getSearchResultsNew] [( xs:string*, xs:string*, xs:string )] cannot be applied to [( xs:string+, xs:string+, xs:integer )].
+2007-03-30 15:04:47,484 INFO  (ActionExceptionHandler.java:126) - Definition :xq-type-00000[]
+2007-03-30 15:06:37,171 INFO  (ActionExceptionHandler.java:98) - Deatils of Error with TL messages..
+2007-03-30 15:06:37,171 INFO  (ActionExceptionHandler.java:112) - Error Code :xq-type-00000
+2007-03-30 15:06:37,171 INFO  (ActionExceptionHandler.java:113) - Error Message :[xq-type-00000] - [http://www.rainingdata.com/TigerLogic/namespaces/stored-procedures,getSearchResultsNew] [( xs:string*, xs:string*, xs:string )] cannot be applied to [( xs:string, xs:string, xs:integer )].
+2007-03-30 15:06:37,171 INFO  (ActionExceptionHandler.java:114) - Full Message :com.rdta.xquery.error.TypeException: [xq-type-00000] - [http://www.rainingdata.com/TigerLogic/namespaces/stored-procedures,getSearchResultsNew] [( xs:string*, xs:string*, xs:string )] cannot be applied to [( xs:string, xs:string, xs:integer )].
+2007-03-30 15:06:37,171 INFO  (ActionExceptionHandler.java:126) - Definition :xq-type-00000[]
+2007-03-30 15:07:47,500 INFO  (ActionExceptionHandler.java:98) - Deatils of Error with TL messages..
+2007-03-30 15:07:47,500 INFO  (ActionExceptionHandler.java:112) - Error Code :xq-type-00000
+2007-03-30 15:07:47,500 INFO  (ActionExceptionHandler.java:113) - Error Message :[xq-type-00000] - [http://www.rainingdata.com/TigerLogic/namespaces/stored-procedures,getSearchResultsNew] [( xs:string*, xs:string* )] cannot be applied to [( xs:string, xs:string, xs:integer )].
+2007-03-30 15:07:47,500 INFO  (ActionExceptionHandler.java:114) - Full Message :com.rdta.xquery.error.TypeException: [xq-type-00000] - [http://www.rainingdata.com/TigerLogic/namespaces/stored-procedures,getSearchResultsNew] [( xs:string*, xs:string* )] cannot be applied to [( xs:string, xs:string, xs:integer )].
+2007-03-30 15:07:47,500 INFO  (ActionExceptionHandler.java:126) - Definition :xq-type-00000[]
+2007-03-30 15:07:59,968 INFO  (ActionExceptionHandler.java:98) - Deatils of Error with TL messages..
+2007-03-30 15:07:59,984 INFO  (ActionExceptionHandler.java:112) - Error Code :xq-type-00000
+2007-03-30 15:07:59,984 INFO  (ActionExceptionHandler.java:113) - Error Message :[xq-type-00000] - [http://www.rainingdata.com/TigerLogic/namespaces/stored-procedures,getSearchResultsNew] [( xs:string*, xs:string* )] cannot be applied to [( xs:string+, xs:string+, xs:integer )].
+2007-03-30 15:07:59,984 INFO  (ActionExceptionHandler.java:114) - Full Message :com.rdta.xquery.error.TypeException: [xq-type-00000] - [http://www.rainingdata.com/TigerLogic/namespaces/stored-procedures,getSearchResultsNew] [( xs:string*, xs:string* )] cannot be applied to [( xs:string+, xs:string+, xs:integer )].
+2007-03-30 15:07:59,984 INFO  (ActionExceptionHandler.java:126) - Definition :xq-type-00000[]
+2007-03-30 15:22:34,140 INFO  (ActionExceptionHandler.java:98) - Deatils of Error with TL messages..
+2007-03-30 15:22:34,140 INFO  (ActionExceptionHandler.java:112) - Error Code :xq-type-00000
+2007-03-30 15:22:34,140 INFO  (ActionExceptionHandler.java:113) - Error Message :[xq-type-00000] - [http://www.rainingdata.com/TigerLogic/namespaces/stored-procedures,getSearchResultsNew] [( xs:string*, xs:string* )] cannot be applied to [( xs:string, xs:string, xs:integer )].
+2007-03-30 15:22:34,140 INFO  (ActionExceptionHandler.java:114) - Full Message :com.rdta.xquery.error.TypeException: [xq-type-00000] - [http://www.rainingdata.com/TigerLogic/namespaces/stored-procedures,getSearchResultsNew] [( xs:string*, xs:string* )] cannot be applied to [( xs:string, xs:string, xs:integer )].
+2007-03-30 15:22:34,140 INFO  (ActionExceptionHandler.java:126) - Definition :xq-type-00000[]
+2007-03-30 15:25:21,750 INFO  (ActionExceptionHandler.java:98) - Deatils of Error with TL messages..
+2007-03-30 15:25:21,750 INFO  (ActionExceptionHandler.java:112) - Error Code :xq-type-00000
+2007-03-30 15:25:21,750 INFO  (ActionExceptionHandler.java:113) - Error Message :[xq-type-00000] - [http://www.rainingdata.com/TigerLogic/namespaces/stored-procedures,getSearchResultsNew] [( xs:string*, xs:string* )] cannot be applied to [( xs:string, xs:string, xs:integer )].
+2007-03-30 15:25:21,750 INFO  (ActionExceptionHandler.java:114) - Full Message :com.rdta.xquery.error.TypeException: [xq-type-00000] - [http://www.rainingdata.com/TigerLogic/namespaces/stored-procedures,getSearchResultsNew] [( xs:string*, xs:string* )] cannot be applied to [( xs:string, xs:string, xs:integer )].
+2007-03-30 15:25:21,750 INFO  (ActionExceptionHandler.java:126) - Definition :xq-type-00000[]
+2007-03-30 15:25:30,328 INFO  (ActionExceptionHandler.java:98) - Deatils of Error with TL messages..
+2007-03-30 15:25:30,328 INFO  (ActionExceptionHandler.java:112) - Error Code :xq-type-00000
+2007-03-30 15:25:30,328 INFO  (ActionExceptionHandler.java:113) - Error Message :[xq-type-00000] - [http://www.rainingdata.com/TigerLogic/namespaces/stored-procedures,getSearchResultsNew] [( xs:string*, xs:string* )] cannot be applied to [( xs:string, xs:string, xs:integer )].
+2007-03-30 15:25:30,328 INFO  (ActionExceptionHandler.java:114) - Full Message :com.rdta.xquery.error.TypeException: [xq-type-00000] - [http://www.rainingdata.com/TigerLogic/namespaces/stored-procedures,getSearchResultsNew] [( xs:string*, xs:string* )] cannot be applied to [( xs:string, xs:string, xs:integer )].
+2007-03-30 15:25:30,328 INFO  (ActionExceptionHandler.java:126) - Definition :xq-type-00000[]
+2007-03-30 15:26:14,421 INFO  (ActionExceptionHandler.java:98) - Deatils of Error with TL messages..
+2007-03-30 15:26:14,421 INFO  (ActionExceptionHandler.java:112) - Error Code :xq-type-00000
+2007-03-30 15:26:14,421 INFO  (ActionExceptionHandler.java:113) - Error Message :[xq-type-00000] - [http://www.rainingdata.com/TigerLogic/namespaces/stored-procedures,getSearchResultsNew] [( xs:string*, xs:string* )] cannot be applied to [( xs:string, xs:string, xs:integer )].
+2007-03-30 15:26:14,421 INFO  (ActionExceptionHandler.java:114) - Full Message :com.rdta.xquery.error.TypeException: [xq-type-00000] - [http://www.rainingdata.com/TigerLogic/namespaces/stored-procedures,getSearchResultsNew] [( xs:string*, xs:string* )] cannot be applied to [( xs:string, xs:string, xs:integer )].
+2007-03-30 15:26:14,421 INFO  (ActionExceptionHandler.java:126) - Definition :xq-type-00000[]
+2007-03-30 15:30:05,562 INFO  (ActionExceptionHandler.java:98) - Deatils of Error with TL messages..
+2007-03-30 15:30:05,562 INFO  (ActionExceptionHandler.java:112) - Error Code :xq-type-00000
+2007-03-30 15:30:05,578 INFO  (ActionExceptionHandler.java:113) - Error Message :[xq-type-00000] - [http://www.rainingdata.com/TigerLogic/namespaces/stored-procedures,getSearchResultsNew] [( xs:string*, xs:string* )] cannot be applied to [( xs:string+, xs:string+, xs:integer )].
+2007-03-30 15:30:05,578 INFO  (ActionExceptionHandler.java:114) - Full Message :com.rdta.xquery.error.TypeException: [xq-type-00000] - [http://www.rainingdata.com/TigerLogic/namespaces/stored-procedures,getSearchResultsNew] [( xs:string*, xs:string* )] cannot be applied to [( xs:string+, xs:string+, xs:integer )].
+2007-03-30 15:30:05,578 INFO  (ActionExceptionHandler.java:126) - Definition :xq-type-00000[]
+2007-03-30 15:34:45,046 INFO  (ActionExceptionHandler.java:98) - Deatils of Error with TL messages..
+2007-03-30 15:34:45,046 INFO  (ActionExceptionHandler.java:112) - Error Code :xq-type-00000
+2007-03-30 15:34:45,046 INFO  (ActionExceptionHandler.java:113) - Error Message :[xq-type-00000] - [http://www.rainingdata.com/TigerLogic/namespaces/stored-procedures,getSearchResultsNew] [( xs:string*, xs:string* )] cannot be applied to [( xs:string+, xs:string+, xs:integer )].
+2007-03-30 15:34:45,046 INFO  (ActionExceptionHandler.java:114) - Full Message :com.rdta.xquery.error.TypeException: [xq-type-00000] - [http://www.rainingdata.com/TigerLogic/namespaces/stored-procedures,getSearchResultsNew] [( xs:string*, xs:string* )] cannot be applied to [( xs:string+, xs:string+, xs:integer )].
+2007-03-30 15:34:45,046 INFO  (ActionExceptionHandler.java:126) - Definition :xq-type-00000[]
+2007-03-30 15:36:50,500 INFO  (ActionExceptionHandler.java:98) - Deatils of Error with TL messages..
+2007-03-30 15:36:50,500 INFO  (ActionExceptionHandler.java:112) - Error Code :xq-type-00000
+2007-03-30 15:36:50,500 INFO  (ActionExceptionHandler.java:113) - Error Message :[xq-type-00000] - [http://www.rainingdata.com/TigerLogic/namespaces/stored-procedures,getSearchResultsNew] [( xs:string, xs:string )] cannot be applied to [( xs:string+, xs:string+, xs:integer )].
+2007-03-30 15:36:50,500 INFO  (ActionExceptionHandler.java:114) - Full Message :com.rdta.xquery.error.TypeException: [xq-type-00000] - [http://www.rainingdata.com/TigerLogic/namespaces/stored-procedures,getSearchResultsNew] [( xs:string, xs:string )] cannot be applied to [( xs:string+, xs:string+, xs:integer )].
+2007-03-30 15:36:50,500 INFO  (ActionExceptionHandler.java:126) - Definition :xq-type-00000[]
+2007-03-30 15:37:40,046 INFO  (ActionExceptionHandler.java:98) - Deatils of Error with TL messages..
+2007-03-30 15:37:40,046 INFO  (ActionExceptionHandler.java:112) - Error Code :xq-type-00000
+2007-03-30 15:37:40,046 INFO  (ActionExceptionHandler.java:113) - Error Message :[xq-type-00000] - [http://www.rainingdata.com/TigerLogic/namespaces/stored-procedures,getSearchResultsNew] [( xs:string*, xs:string* )] cannot be applied to [( xs:string+, xs:string+, xs:integer )].
+2007-03-30 15:37:40,046 INFO  (ActionExceptionHandler.java:114) - Full Message :com.rdta.xquery.error.TypeException: [xq-type-00000] - [http://www.rainingdata.com/TigerLogic/namespaces/stored-procedures,getSearchResultsNew] [( xs:string*, xs:string* )] cannot be applied to [( xs:string+, xs:string+, xs:integer )].
+2007-03-30 15:37:40,046 INFO  (ActionExceptionHandler.java:126) - Definition :xq-type-00000[]
+2007-03-30 15:39:39,656 INFO  (ActionExceptionHandler.java:98) - Deatils of Error with TL messages..
+2007-03-30 15:39:39,656 INFO  (ActionExceptionHandler.java:112) - Error Code :xq-type-00000
+2007-03-30 15:39:39,656 INFO  (ActionExceptionHandler.java:113) - Error Message :[xq-type-00000] - [http://www.rainingdata.com/TigerLogic/namespaces/stored-procedures,getSearchResultsNew] [( xs:string*, xs:string* )] cannot be applied to [( xs:string+, xs:string+, xs:integer )].
+2007-03-30 15:39:39,656 INFO  (ActionExceptionHandler.java:114) - Full Message :com.rdta.xquery.error.TypeException: [xq-type-00000] - [http://www.rainingdata.com/TigerLogic/namespaces/stored-procedures,getSearchResultsNew] [( xs:string*, xs:string* )] cannot be applied to [( xs:string+, xs:string+, xs:integer )].
+2007-03-30 15:39:39,656 INFO  (ActionExceptionHandler.java:126) - Definition :xq-type-00000[]
+2007-03-30 15:39:50,500 INFO  (ActionExceptionHandler.java:98) - Deatils of Error with TL messages..
+2007-03-30 15:39:50,500 INFO  (ActionExceptionHandler.java:112) - Error Code :xq-type-00000
+2007-03-30 15:39:50,500 INFO  (ActionExceptionHandler.java:113) - Error Message :[xq-type-00000] - [http://www.rainingdata.com/TigerLogic/namespaces/stored-procedures,getSearchResultsNew] [( xs:string*, xs:string* )] cannot be applied to [( xs:string+, xs:string+, xs:integer )].
+2007-03-30 15:39:50,500 INFO  (ActionExceptionHandler.java:114) - Full Message :com.rdta.xquery.error.TypeException: [xq-type-00000] - [http://www.rainingdata.com/TigerLogic/namespaces/stored-procedures,getSearchResultsNew] [( xs:string*, xs:string* )] cannot be applied to [( xs:string+, xs:string+, xs:integer )].
+2007-03-30 15:39:50,500 INFO  (ActionExceptionHandler.java:126) - Definition :xq-type-00000[]
+2007-03-30 16:33:22,281 INFO  (ActionExceptionHandler.java:98) - Deatils of Error with TL messages..
+2007-03-30 16:33:22,281 INFO  (ActionExceptionHandler.java:117) - Error Message :String index out of range: 4
+2007-03-30 16:33:22,281 INFO  (ActionExceptionHandler.java:118) - Stack Trace :class java.lang.StringIndexOutOfBoundsException
+2007-03-30 16:33:22,328 INFO  (ActionExceptionHandler.java:126) - Definition :null
+2007-03-30 16:35:18,265 INFO  (ActionExceptionHandler.java:98) - Deatils of Error with TL messages..
+2007-03-30 16:35:18,281 INFO  (ActionExceptionHandler.java:117) - Error Message :String index out of range: 4
+2007-03-30 16:35:18,296 INFO  (ActionExceptionHandler.java:118) - Stack Trace :class java.lang.StringIndexOutOfBoundsException
+2007-03-30 16:35:18,296 INFO  (ActionExceptionHandler.java:126) - Definition :null
+2007-03-30 16:35:41,015 INFO  (ActionExceptionHandler.java:98) - Deatils of Error with TL messages..
+2007-03-30 16:35:41,015 INFO  (ActionExceptionHandler.java:117) - Error Message :String index out of range: 4
+2007-03-30 16:35:41,015 INFO  (ActionExceptionHandler.java:118) - Stack Trace :class java.lang.StringIndexOutOfBoundsException
+2007-03-30 16:35:41,015 INFO  (ActionExceptionHandler.java:126) - Definition :null
+2007-03-30 16:36:19,437 INFO  (ActionExceptionHandler.java:98) - Deatils of Error with TL messages..
+2007-03-30 16:36:19,453 INFO  (ActionExceptionHandler.java:117) - Error Message :String index out of range: 4
+2007-03-30 16:36:19,468 INFO  (ActionExceptionHandler.java:118) - Stack Trace :class java.lang.StringIndexOutOfBoundsException
+2007-03-30 16:36:19,468 INFO  (ActionExceptionHandler.java:126) - Definition :null
+2007-03-30 16:36:59,812 INFO  (ActionExceptionHandler.java:98) - Deatils of Error with TL messages..
+2007-03-30 16:36:59,828 INFO  (ActionExceptionHandler.java:117) - Error Message :String index out of range: 4
+2007-03-30 16:36:59,843 INFO  (ActionExceptionHandler.java:118) - Stack Trace :class java.lang.StringIndexOutOfBoundsException
+2007-03-30 16:36:59,843 INFO  (ActionExceptionHandler.java:126) - Definition :null
+2007-03-30 16:38:33,156 INFO  (ActionExceptionHandler.java:98) - Deatils of Error with TL messages..
+2007-03-30 16:38:33,156 INFO  (ActionExceptionHandler.java:117) - Error Message :String index out of range: 4
+2007-03-30 16:38:33,171 INFO  (ActionExceptionHandler.java:118) - Stack Trace :class java.lang.StringIndexOutOfBoundsException
+2007-03-30 16:38:33,187 INFO  (ActionExceptionHandler.java:126) - Definition :null
+2007-03-30 16:39:12,062 INFO  (ActionExceptionHandler.java:98) - Deatils of Error with TL messages..
+2007-03-30 16:39:12,093 INFO  (ActionExceptionHandler.java:117) - Error Message :String index out of range: 4
+2007-03-30 16:39:12,093 INFO  (ActionExceptionHandler.java:118) - Stack Trace :class java.lang.StringIndexOutOfBoundsException
+2007-03-30 16:39:12,093 INFO  (ActionExceptionHandler.java:126) - Definition :null
+2007-03-30 16:39:57,296 INFO  (ActionExceptionHandler.java:98) - Deatils of Error with TL messages..
+2007-03-30 16:39:57,296 INFO  (ActionExceptionHandler.java:117) - Error Message :String index out of range: 4
+2007-03-30 16:39:57,312 INFO  (ActionExceptionHandler.java:118) - Stack Trace :class java.lang.StringIndexOutOfBoundsException
+2007-03-30 16:39:57,312 INFO  (ActionExceptionHandler.java:126) - Definition :null
+2007-03-30 16:40:57,828 INFO  (ActionExceptionHandler.java:98) - Deatils of Error with TL messages..
+2007-03-30 16:40:57,828 INFO  (ActionExceptionHandler.java:117) - Error Message :String index out of range: 4
+2007-03-30 16:40:57,843 INFO  (ActionExceptionHandler.java:118) - Stack Trace :class java.lang.StringIndexOutOfBoundsException
+2007-03-30 16:40:57,843 INFO  (ActionExceptionHandler.java:126) - Definition :null
+2007-03-30 16:41:47,156 INFO  (ActionExceptionHandler.java:98) - Deatils of Error with TL messages..
+2007-03-30 16:41:47,171 INFO  (ActionExceptionHandler.java:117) - Error Message :String index out of range: 4
+2007-03-30 16:41:47,171 INFO  (ActionExceptionHandler.java:118) - Stack Trace :class java.lang.StringIndexOutOfBoundsException
+2007-03-30 16:41:47,187 INFO  (ActionExceptionHandler.java:126) - Definition :null
+2007-03-30 16:46:10,234 INFO  (ActionExceptionHandler.java:98) - Deatils of Error with TL messages..
+2007-03-30 16:46:10,234 INFO  (ActionExceptionHandler.java:117) - Error Message :String index out of range: 4
+2007-03-30 16:46:10,250 INFO  (ActionExceptionHandler.java:118) - Stack Trace :class java.lang.StringIndexOutOfBoundsException
+2007-03-30 16:46:10,296 INFO  (ActionExceptionHandler.java:126) - Definition :null
+2007-03-30 16:47:46,875 INFO  (ActionExceptionHandler.java:98) - Deatils of Error with TL messages..
+2007-03-30 16:47:46,875 INFO  (ActionExceptionHandler.java:117) - Error Message :String index out of range: 4
+2007-03-30 16:47:46,890 INFO  (ActionExceptionHandler.java:118) - Stack Trace :class java.lang.StringIndexOutOfBoundsException
+2007-03-30 16:47:46,890 INFO  (ActionExceptionHandler.java:126) - Definition :null
+2007-03-30 16:48:09,562 INFO  (ActionExceptionHandler.java:98) - Deatils of Error with TL messages..
+2007-03-30 16:48:09,562 INFO  (ActionExceptionHandler.java:117) - Error Message :String index out of range: 4
+2007-03-30 16:48:09,562 INFO  (ActionExceptionHandler.java:118) - Stack Trace :class java.lang.StringIndexOutOfBoundsException
+2007-03-30 16:48:09,562 INFO  (ActionExceptionHandler.java:126) - Definition :null
+2007-03-30 16:48:46,578 INFO  (ActionExceptionHandler.java:98) - Deatils of Error with TL messages..
+2007-03-30 16:48:46,593 INFO  (ActionExceptionHandler.java:117) - Error Message :String index out of range: 4
+2007-03-30 16:48:46,609 INFO  (ActionExceptionHandler.java:118) - Stack Trace :class java.lang.StringIndexOutOfBoundsException
+2007-03-30 16:48:46,609 INFO  (ActionExceptionHandler.java:126) - Definition :null
+2007-03-30 16:49:17,296 INFO  (ActionExceptionHandler.java:98) - Deatils of Error with TL messages..
+2007-03-30 16:49:17,296 INFO  (ActionExceptionHandler.java:117) - Error Message :String index out of range: 4
+2007-03-30 16:49:17,312 INFO  (ActionExceptionHandler.java:118) - Stack Trace :class java.lang.StringIndexOutOfBoundsException
+2007-03-30 16:49:17,328 INFO  (ActionExceptionHandler.java:126) - Definition :null
+2007-03-30 16:51:25,171 INFO  (ActionExceptionHandler.java:98) - Deatils of Error with TL messages..
+2007-03-30 16:51:25,171 INFO  (ActionExceptionHandler.java:117) - Error Message :String index out of range: 4
+2007-03-30 16:51:25,171 INFO  (ActionExceptionHandler.java:118) - Stack Trace :class java.lang.StringIndexOutOfBoundsException
+2007-03-30 16:51:25,171 INFO  (ActionExceptionHandler.java:126) - Definition :null

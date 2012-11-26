@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<provider>
+	<country name="7">
+		 <providername value="@onemail.at">One Connect Austria</providername>
+		 <providername value="@sms.t-mobile.at">T-Mobile Austria</providername>
+	</country>
+	<country name="10">
+		 <providername value="@mobistar.be">Mobistar Belgium</providername>
+	</country>
+	<country name="in">
+		 <providername value="@airtelap.com">AndhraPradesh-Airtel</providername>
+		 <providername value="@ideacellular.net">AndhraPradesh-IdeaCellular</providername>
+		 <providername value="@airtelmail.com">Delhi-Airtel</providername>
+		 <providername value="@delhi.hutch.co.in">Delhi-Hutch</providername>
+		 <providername value="@bplmobile.com">Goa-BPLMobil</providername>
+		 <providername value="@ideacellular.net">Gujarat-Idea</providername>
+		 <providername value="@airtelmail.com">Gujarat-Airtel</providername>
+		 <providername value="@celforce.com ">Gujarat-Celforce / Fascel</providername>
+		 <providername value="@airtelmail.com">Goa-Airtel</providername>
+		 <providername value="@bplmobile.com">Goa-BPLMobil</providername>
+		 <providername value="@ideacellular.net">Goa-Idea Cellular</providername>
+		 <providername value="@airtelmail.com">Haryana-Airtel</providername>
+		 <providername value="@escotelmobile.com ">Haryana-Escotel</providername>
+		 <providername value="@airtelmail.com">HimachalPradesh-Airtel</providername>
+		 <providername value="@airtelkk.com">Karnataka-Airtel</providername>
+		 <providername value="@airtelmail.com">Kerala-Airtel</providername>
+		 <providername value="@escotelmobile.com">Kerala-Escotel</providername>
+		 <providername value="@bplmobile.com ">Kerala-BPLMobile</providername>
+		 <providername value="@airtelkol.com">WestBengal-Airtel</providername>
+		 <providername value="@airtelmail.com">MadhyaPradesh-Airtel</providername>
+		 <providername value="@ideacellular.net">Maharashtra-Idea Cellular</providername>
+		 <providername value="@airtelmail.com">Maharashtra-Airtel</providername>
+		 <providername value="@bplmobile.com">Maharashtra-BPLMobile</providername>
+		 <providername value="@orangemail.co.in">Mumbai-Orange</providername>
+		 <providername value="@bplmobile.com">Mumbai-BPLMobile</providername>
+		 <providername value="@bplmobile.com">Pondicherry-BPLMobile</providername>
+		 <providername value="@airtelmail.com">Punjab-Airtel</providername>
+		 <providername value="@airtelchennai.com">TamilNadu-Skycell/Airtel</providername>
+		 <providername value="@rpgmail.net">TamilNadu-RPGCellular</providername>
+		 <providername value="@airsms.com">TamilNadu-Aircel</providername>
+		 <providername value="@bplmobile.com">TamilNadu-BPLMobile</providername>
+		 <providername value="@escotelmobile.com">UttarPradesh(West)-Escotel</providername>
+	</country>
+	<country name="uk">
+		 <providername value="@t-mobile.uk.net">T-Mobile UK</providername>
+		 <providername value="@vodafone.net">Vodafone UK</providername>
+	</country>
+	<country name="us">
+		<providername value="@page.metrocall.com">Metrocall</providername>
+		<providername value="@cingularme.com">Cingular ME</providername>
+		<providername value="@mmode.com">Cingular(ATT Wireless/MMode)</providername>
+		<providername value="@mobile.att.net">ATT Wireless</providername>
+		<providername value="@messaging.nextel.com">Nextel</providername>
+		<providername value="@messaging.sprintpcs.com">Sprint PCS</providername>
+		<providername value="@tmomail.net">T-Mobile</providername>
+		<providername value="@vtext.com">Verizon</providername>
+		<providername value="@message.alltel.com">ALLTEL</providername>
+		<providername value="@vmobl.com">Virgin Mobile</providername>
+		 <providername value="@email.uscc.net">US Cellular</providername>
+	</country>
+ </provider>

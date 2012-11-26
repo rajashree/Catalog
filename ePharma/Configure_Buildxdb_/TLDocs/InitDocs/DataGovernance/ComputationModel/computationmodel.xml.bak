@@ -1,0 +1,171 @@
+<!-- Impact of change values are low, medium, high -->
+<ComputationModels>
+<ComputationModel id='1'>
+	<Name>Profit Analysis Forecast</Name>
+	<LineOfBusiness>Marketing</LineOfBusiness>
+	<Owner>
+		<Name>Joseph Hardy</Name>
+		<Email>joseph.hardy@yahoo.com</Email>
+		<Phone>919900477400</Phone>
+	</Owner>
+	<ReferencedEnterpriseData>
+	<DataElement type='ProductDiscount'>
+		<ImpactOfChange>High</ImpactOfChange>
+	</DataElement>
+	</ReferencedEnterpriseData>
+</ComputationModel>
+<ComputationModel id='2'>
+	<Name>Sales Forecast</Name>
+	<LineOfBusiness>Marketing</LineOfBusiness>
+	<Owner>
+		<Name>Joseph Hardy</Name>
+		<Email>joseph.hardy@yahoo.com</Email>
+		<Phone>919986763268</Phone>
+	</Owner>
+	<ReferencedEnterpriseData>
+	<DataElement type='ProductDiscount'>
+		<ImpactOfChange>Medium</ImpactOfChange>
+	</DataElement>
+	</ReferencedEnterpriseData>
+</ComputationModel>
+<ComputationModel id='3'>
+	<Name>Marketing Budget</Name>
+	<LineOfBusiness>Marketing</LineOfBusiness>
+	<Owner>
+		<Name>Joseph Hardy</Name>
+		<Email>joseph.hardy@yahoo.com</Email>
+		<Phone>919845578200</Phone>
+	</Owner>
+	<ReferencedEnterpriseData>
+	<DataElement type='ProductDiscount'>
+		<ImpactOfChange>Low</ImpactOfChange>
+	</DataElement>
+	</ReferencedEnterpriseData>
+</ComputationModel>
+<ComputationModel id='4'>
+	<Name>Finance Budget</Name>
+	<LineOfBusiness>Finance</LineOfBusiness>
+	<Owner>
+		<Name>Varun Gupta</Name>
+		<Email>gvarun@gmail.com</Email>
+		<Phone>919986423956</Phone>
+	</Owner>
+	<ReferencedEnterpriseData>
+	<DataElement type='ProductDiscount'>
+		<ImpactOfChange>High</ImpactOfChange>
+	</DataElement>
+	</ReferencedEnterpriseData>
+</ComputationModel>
+<ComputationModel id='5'>
+	<Name>SEC Compliance</Name>
+	<LineOfBusiness>Finance</LineOfBusiness>
+	<Owner>
+		<Name>Varun Gupta</Name>
+		<Email>gvarun@gmail.com</Email>
+		<Phone>919886642005</Phone>
+	</Owner>
+	<ReferencedEnterpriseData>
+	<DataElement type='ProductDiscount'>
+		<ImpactOfChange>Medium</ImpactOfChange>
+	</DataElement>
+	</ReferencedEnterpriseData>
+</ComputationModel>
+<ComputationModel id='6'>
+	<Name>Payroll Adjustment</Name>
+	<LineOfBusiness>Finance</LineOfBusiness>
+	<Owner>
+		<Name>Varun Gupta</Name>
+		<Email>gvarun@gmail.com</Email>
+		<Phone>919886237502</Phone>
+	</Owner>
+	<ReferencedEnterpriseData>
+	<DataElement type='ProductDiscount'>
+		<ImpactOfChange>Low</ImpactOfChange>
+	</DataElement>
+	</ReferencedEnterpriseData>
+</ComputationModel>
+<ComputationModel id='7'>
+	<Name>Sales Commission</Name>
+	<LineOfBusiness>Sales</LineOfBusiness>
+	<Owner>
+		<Name>John Smith</Name>
+		<Email>john.smith@abc.com</Email>
+		<Phone>919886525313</Phone>
+	</Owner>
+	<ReferencedEnterpriseData>
+	<DataElement type='ProductDiscount'>
+		<ImpactOfChange>High</ImpactOfChange>
+	</DataElement>
+	</ReferencedEnterpriseData>
+</ComputationModel>
+<ComputationModel id='8'>
+	<Name>Sales Discount Policy</Name>
+	<LineOfBusiness>Sales</LineOfBusiness>
+	<Owner>
+		<Name>John Smith</Name>
+		<Email>john.smith@abc.com</Email>
+		<Phone>919986559259</Phone>
+	</Owner>
+	<ReferencedEnterpriseData>
+	<DataElement type='ProductDiscount'>
+		<ImpactOfChange>Medium</ImpactOfChange>
+	</DataElement>
+	</ReferencedEnterpriseData>
+</ComputationModel>
+<ComputationModel id='9'>
+	<Name>Market Share Forecast</Name>
+	<LineOfBusiness>Sales</LineOfBusiness>
+	<Owner>
+		<Name>John Smith</Name>
+		<Email>john.smith@abc.com</Email>
+		<Phone>919880092178</Phone>
+	</Owner>
+	<ReferencedEnterpriseData>
+	<DataElement type='ProductDiscount'>
+		<ImpactOfChange>Low</ImpactOfChange>
+	</DataElement>
+	</ReferencedEnterpriseData>
+</ComputationModel>
+<ComputationModel id='10'>
+	<Name>Master Data Update</Name>
+	<LineOfBusiness>IT</LineOfBusiness>
+	<Owner>
+		<Name>Charles Smith</Name>
+		<Email>charles.smith@abc.com</Email>
+		<Phone>919886061243</Phone>
+	</Owner>
+	<ReferencedEnterpriseData>
+	<DataElement type='ProductDiscount'>
+		<ImpactOfChange>High</ImpactOfChange>
+	</DataElement>
+	</ReferencedEnterpriseData>
+</ComputationModel>
+<ComputationModel id='11'>
+	<Name>Update Decision Support System</Name>
+	<LineOfBusiness>IT</LineOfBusiness>
+	<Owner>
+		<Name>Charles Smith</Name>
+		<Email>charles.smith@abc.com</Email>
+		<Phone>919886239360</Phone>
+	</Owner>
+	<ReferencedEnterpriseData>
+	<DataElement type='ProductDiscount'>
+		<ImpactOfChange>Medium</ImpactOfChange>
+	</DataElement>
+	</ReferencedEnterpriseData>
+</ComputationModel>
+<ComputationModel id='12'>
+	<Name>Update Reporting Tool</Name>
+	<LineOfBusiness>IT</LineOfBusiness>
+	<Owner>
+		<Name>Charles Smith</Name>
+		<Email>charles.smith@abc.com</Email>
+		<Phone>919980419266</Phone>
+	</Owner>
+	<ReferencedEnterpriseData>
+	<DataElement type='ProductDiscount'>
+		<ImpactOfChange>Low</ImpactOfChange>
+	</DataElement>
+	</ReferencedEnterpriseData>
+</ComputationModel>
+</ComputationModels>

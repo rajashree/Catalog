@@ -1,0 +1,64 @@
+<project name="ePharma"  default="all" basedir=".">
+
+	<!-- Directory information -->
+    <property name="source" location="."/>
+	<property file="./build.properties" />
+	<property name="src" location="./src"/>
+	<property name="classes" value="${source}/WEB-INF/classes"/>
+	<property name="lib" location="${source}/WEB-INF/lib"/>
+	<property name="warFile" value="ePharma.war"/> 
+  
+	  
+	  <!-- class path information -->
+	  <path id="compile.classpath">
+		<fileset dir="${lib}">
+		  <include name="*.jar"/>
+		</fileset>
+	  </path>
+
+	<target name="prepare">
+		<copy todir="${classes}">
+		<fileset dir="${src}">
+		<include name="MessageResources.properties"/>
+		</fileset>
+		</copy>
+	</target>
+ <!-- compile only commons java source files -->
+
+<target name="compile" depends="prepare" description="Compile components">
+    
+ 	<javac srcdir="${src}" destdir="${classes}"  deprecation="true" >
+      <classpath refid="compile.classpath"/>
+    </javac>
+</target>
+
+<target name="copy" depends="compile">	 
+	<mkdir dir="./ePharma"/> 
+	<copy todir="${source}/ePharma">	
+	 	 <fileset dir="." excludes="**/*.class"/>
+	 	 <fileset dir="." excludes="**/*.jar"/>
+	 </copy>
+</target>
+
+<target name="makewar">
+		<jar jarfile="${warFile}" baseDir="./ePharma" />
+</target>
+
+<target name="echo">
+	<echo>"${tomcathome}"</echo>	
+</target>
+
+<target name="deploy" depends="makewar">
+<copy todir="${tomcathome}/webapps">
+	<fileset dir="${source}" includes="*.war"/>
+</copy>
+
+</target>	
+
+<target name="clean-init">
+	<delete file="${source}/ePharma.war"/>
+	<delete dir="${source}/ePharma" />
+</target>
+
+<target name="all" depends="clean-init,compile,copy,deploy"></target>
+</project>

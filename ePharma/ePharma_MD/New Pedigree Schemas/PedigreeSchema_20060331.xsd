@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:ped="urn:epcGlobal:Pedigree:xsd:1" targetNamespace="urn:epcGlobal:Pedigree:xsd:1" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:import namespace="http://www.w3.org/2000/09/xmldsig#" schemaLocation="http://www.w3.org/TR/2002/REC-xmldsig-core-20020212/xmldsig-core-schema.xsd"/>
+	<xs:complexType name="BaseExtensibleType">
+		<xs:annotation>
+			<xs:documentation xml:lang="en">base Type that  can be used for extensibility. Extensibility is only allowed in NameSpace ##other ensures that any extensibility in targetNameSpace goes thru normal EPC Global Vetting Process </xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:any namespace="##other" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+		<xs:anyAttribute processContents="lax"/>
+	</xs:complexType>
+	<xs:element name="pedigree">
+		<xs:complexType>
+			<xs:complexContent>
+				<xs:extension base="ped:LayerType"/>
+			</xs:complexContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="initialPedigree" type="ped:InitialPedigreeType"/>
+	<xs:element name="repackagedPedigree" type="ped:RepackagedPedigreeType"/>
+	<xs:element name="unsignedReceivedPedigree" type="ped:UnsignedReceivedPedigreeType"/>
+	<xs:element name="licenseNumber">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="xs:string">
+					<xs:attribute name="state" type="xs:NMTOKEN" use="optional"/>
+					<xs:attribute name="agency" type="xs:string" use="optional"/>
+				</xs:extension>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="productCode" type="ped:ProductCodeType"/>
+	<xs:complexType name="LayerType">
+		<xs:sequence>
+			<xs:choice>
+				<xs:element name="shippedPedigree" type="ped:ShippedPedigreeType"/>
+				<xs:element name="receivedPedigree" type="ped:ReceivedPedigreeType"/>
+			</xs:choice>
+			<xs:element ref="ds:Signature"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="InitialPedigreeType">
+		<xs:sequence>
+			<xs:element name="productInfo" type="ped:ProductInfoType"/>
+			<xs:element name="itemInfo" type="ped:ItemInfoType" maxOccurs="unbounded"/>
+			<xs:element name="transactionInfo" type="ped:TransactionInfoType" minOccurs="0"/>
+			<xs:element name="receivingInfo" type="ped:ReceivingInfoType" minOccurs="0"/>
+			<xs:element name="altPedigree" minOccurs="0">
+				<xs:complexType>
+					<xs:complexContent>
+						<xs:extension base="ped:ForeignDataType">
+							<xs:attribute name="wasRepackaged" type="xs:boolean" default="false"/>
+						</xs:extension>
+					</xs:complexContent>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="attachment" type="ped:ForeignDataType" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="ShippedPedigreeType">
+		<xs:sequence>
+			<xs:element name="documentInfo" type="ped:DocumentInfoType"/>
+			<xs:choice>
+				<xs:element ref="ped:initialPedigree"/>
+				<xs:element ref="ped:repackagedPedigree"/>
+				<xs:element ref="ped:unsignedReceivedPedigree"/>
+				<xs:element ref="ped:pedigree"/>
+			</xs:choice>
+			<xs:element name="itemInfo" type="ped:ItemInfoType" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="transactionInfo" type="ped:TransactionInfoType"/>
+			<xs:element name="signatureInfo" type="ped:SignatureInfoType"/>
+		</xs:sequence>
+		<xs:attribute name="id" type="xs:ID" use="required"/>
+	</xs:complexType>
+	<xs:complexType name="ReceivedPedigreeType">
+		<xs:sequence>
+			<xs:element name="documentInfo" type="ped:DocumentInfoType"/>
+			<xs:choice>
+				<xs:element ref="ped:pedigree"/>
+				<xs:element ref="ped:initialPedigree"/>
+			</xs:choice>
+			<xs:element name="receivingInfo" type="ped:ReceivingInfoType"/>
+			<xs:element name="signatureInfo" type="ped:SignatureInfoType"/>
+		</xs:sequence>
+		<xs:attribute name="id" type="xs:ID" use="required"/>
+	</xs:complexType>
+	<xs:complexType name="UnsignedReceivedPedigreeType">
+		<xs:sequence>
+			<xs:element name="documentInfo" type="ped:DocumentInfoType"/>
+			<xs:choice>
+				<xs:element ref="ped:pedigree"/>
+				<xs:element ref="ped:initialPedigree"/>
+			</xs:choice>
+			<xs:element name="receivingInfo" type="ped:ReceivingInfoType"/>
+		</xs:sequence>
+		<xs:attribute name="id" type="xs:ID" use="required"/>
+	</xs:complexType>
+	<xs:complexType name="RepackagedPedigreeType">
+		<xs:sequence>
+			<xs:element name="previousProducts" type="ped:PreviousProductType" maxOccurs="unbounded"/>
+			<xs:element name="previousPedigrees" type="ped:PreviousPedigreeType" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="productInfo" type="ped:ProductInfoType"/>
+			<xs:element name="itemInfo" type="ped:ItemInfoType" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="DocumentInfoType">
+		<xs:complexContent>
+			<xs:extension base="ped:BaseExtensibleType">
+				<xs:sequence>
+					<xs:element name="serialNumber" type="xs:string"/>
+					<xs:element name="version" type="xs:string"/>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="ForeignDataType">
+		<xs:complexContent>
+			<xs:extension base="ped:BaseExtensibleType">
+				<xs:sequence minOccurs="0" maxOccurs="unbounded">
+					<xs:element name="mimeType" type="xs:string"/>
+					<xs:element name="encoding" type="ped:EncodingType"/>
+					<xs:element name="data" type="xs:string"/>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="ItemInfoType">
+		<xs:complexContent>
+			<xs:extension base="ped:BaseExtensibleType">
+				<xs:sequence>
+					<xs:element name="lot" type="xs:string"/>
+					<xs:element name="expirationDate" type="xs:date" minOccurs="0"/>
+					<xs:element name="quantity" type="xs:integer"/>
+					<xs:element name="itemSerialNumber" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="ProductInfoType">
+		<xs:complexContent>
+			<xs:extension base="ped:BaseExtensibleType">
+				<xs:sequence>
+					<xs:element name="drugName" type="xs:string"/>
+					<xs:element name="manufacturer" type="xs:string"/>
+					<xs:element ref="ped:productCode" maxOccurs="unbounded"/>
+					<xs:element name="dosageForm" type="xs:string"/>
+					<xs:element name="strength" type="xs:string"/>
+					<xs:element name="containerSize" type="xs:string"/>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="TransactionInfoType">
+		<xs:sequence>
+			<xs:element name="senderInfo" type="ped:PartnerInfoType"/>
+			<xs:element name="recipientInfo" type="ped:PartnerInfoType"/>
+			<xs:element name="transactionIdentifier" type="ped:TransactionIdentifierType"/>
+			<xs:element name="transactionType" type="ped:TransactionTypeType"/>
+			<xs:element name="transactionDate" type="xs:date"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="PartnerInfoType">
+		<xs:complexContent>
+			<xs:extension base="ped:BaseExtensibleType">
+				<xs:sequence>
+					<xs:element name="businessAddress" type="ped:AddressType"/>
+					<xs:element name="shippingAddress" type="ped:AddressType" minOccurs="0"/>
+					<xs:element ref="ped:licenseNumber" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element name="contactInfo" type="ped:ContactType" minOccurs="0"/>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="AddressType">
+		<xs:sequence>
+			<xs:element name="businessName" type="xs:string"/>
+			<xs:element name="street1" type="xs:string"/>
+			<xs:element name="street2" type="xs:string" minOccurs="0"/>
+			<xs:element name="city" type="xs:string"/>
+			<xs:element name="stateOrRegion" type="xs:string"/>
+			<xs:element name="postalCode" type="xs:string"/>
+			<xs:element name="country" type="xs:string"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="TransactionIdentifierType">
+		<xs:sequence>
+			<xs:element name="identifier" type="xs:string"/>
+			<xs:element name="identifierType" type="ped:TransactionIdentifierTypeType"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="ContactType">
+		<xs:complexContent>
+			<xs:extension base="ped:BaseExtensibleType">
+				<xs:sequence>
+					<xs:element name="name" type="xs:string"/>
+					<xs:element name="title" type="xs:string" minOccurs="0"/>
+					<xs:element name="telephone" type="xs:string" minOccurs="0"/>
+					<xs:element name="email" type="xs:string" minOccurs="0"/>
+					<xs:element name="url" type="xs:anyURI" minOccurs="0"/>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="ReceivingInfoType">
+		<xs:sequence>
+			<xs:element name="dateReceived" type="xs:date"/>
+			<xs:element name="itemInfo" type="ped:ItemInfoType" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="PreviousProductType">
+		<xs:sequence>
+			<xs:element name="previousProductInfo" type="ped:PreviousProductInfoType"/>
+			<xs:element name="itemInfo" type="ped:ItemInfoType" maxOccurs="unbounded"/>
+			<xs:element name="contactInfo" type="ped:ContactType"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="PreviousPedigreeType">
+		<xs:choice>
+			<xs:element ref="ped:pedigree"/>
+			<xs:element ref="ped:initialPedigree"/>
+		</xs:choice>
+	</xs:complexType>
+	<xs:complexType name="SignatureInfoType">
+		<xs:sequence>
+			<xs:element name="signerInfo" type="ped:ContactType"/>
+			<xs:element name="signatureDate" type="xs:dateTime"/>
+			<xs:element name="signatureMeaning" type="ped:SignatureMeaningType"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="PreviousProductInfoType">
+		<xs:sequence>
+			<xs:element name="manufacturer" type="xs:string"/>
+			<xs:element name="productCode" type="ped:ProductCodeType"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="ProductCodeType">
+		<xs:simpleContent>
+			<xs:extension base="xs:string">
+				<xs:attribute name="type" type="ped:ProductCodeValueType"/>
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+	<xs:simpleType name="ProductCodeValueType">
+		<xs:union memberTypes="xs:NMTOKEN ped:ProductCodeValueTypeType"/>
+	</xs:simpleType>
+	<xs:simpleType name="TransactionIdentifierTypeType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="InvoiceNumber"/>
+			<xs:enumeration value="PurchaseOrderNumber"/>
+			<xs:enumeration value="ShippingNumber"/>
+			<xs:enumeration value="ReturnAuthorizationNumber"/>
+			<xs:enumeration value="Other"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="SignatureMeaningType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="Certified"/>
+			<xs:enumeration value="Received"/>
+			<xs:enumeration value="Authenticated"/>
+			<xs:enumeration value="ReceivedAndAuthenticated"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="TransactionTypeType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="Sale"/>
+			<xs:enumeration value="Return"/>
+			<xs:enumeration value="Transfer"/>
+			<xs:enumeration value="Other"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="ProductCodeValueTypeType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="NDC442"/>
+			<xs:enumeration value="NDC532"/>
+			<xs:enumeration value="NDC541"/>
+			<xs:enumeration value="NDC542"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="EncodingType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="base64binary"/>
+		</xs:restriction>
+	</xs:simpleType>
+</xs:schema>

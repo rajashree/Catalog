@@ -1,0 +1,137 @@
+ul.bb {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+ul.bb li {
+	float: left;
+	margin: 0;
+	padding: 0;
+	height: 25px;
+	font-weight: bold;
+	vertical-align: middle;
+}
+
+ul.bb li a{
+	width: 160px;
+	height: 25px;
+	padding: 0;
+	display: block;
+	text-align: center;
+	text-decoration: none;
+}
+
+ul.bb li.buttonadmin_on {
+	background: url(images/eXb_tab_off.gif) no-repeat top center;
+	position:relative;
+	top:0px;
+}
+
+/* anchors */
+ul.bb li.buttonadmin a,
+ul.bb li.buttonepedigree a,
+ul.bb li.buttoncounterfeit a,
+ul.bb li.buttonadmin_on a,
+ul.bb li.buttonadmin a:hover {
+	background: url(images/eXb_tab_off.gif) no-repeat top center;
+	position:relative;
+	top:0px;
+	padding-top: 8px;
+}
+
+/* buttons */
+ul.bb li.buttoncounterfeit {
+	background: url(images/eXb_tab_off.gif) no-repeat top center;
+	position:relative;
+	top:0px;
+}
+
+ul.bb li.buttoncounterfeit_on a,
+ul.bb li.buttoncounterfeit_on a:hover{ 
+	background: url(images/eXb_tab_off.gif) no-repeat top center;
+	position:relative;
+	top:0px;
+}
+
+ul.bb li.buttonepedigree a:hover,
+ul.bb li.buttonadmin_on a:hover,
+ul.bb li.buttoncounterfeit a:hover { 
+	background: url(images/eXb_tab_on.gif) no-repeat top center;
+	position:relative;
+	top: 0px;
+}
+
+ul.bb li.buttonrecall a{
+	background: url(../assets/buttons/nav_productRecall.gif)
+	no-repeat top center;
+}
+
+ul.bb li.buttonrecall_on a,
+ul.bb li.buttonrecall a:hover{
+	background: url(../assets/buttons/nav_productRecall_on.gif)
+no-repeat top center;
+}
+
+ul.bb li.buttonpartner a{
+	background: url(../assets/buttons/nav_tradingPartnerManager.gif) no-repeat top center;
+	width: 80px;
+
+}
+
+ul.bb li.buttonpartner_on a,
+ul.bb li.buttonpartner a:hover{
+	background: url(images/eXb_tab_off.gif) no-repeat top center;
+	position:relative;
+	top:-2px;
+	background: url(../assets/buttons/nav_tradingPartnerManager_on.gif) no-repeat top center;
+	width: 80px;
+
+}
+
+ul.bb li.buttonbi a{
+	background: url(../assets/buttons/nav_businessIntelligence.gif) no-repeat top center;
+	width: 80px;
+}
+
+ul.bb li.buttonbi_on a,
+ul.bb li.buttonbi a:hover{
+	background: url(../assets/buttons/nav_businessIntelligence_on.gif) no-repeat top center;
+	width: 80px;
+}
+
+ul.bb li.buttondiversion a{
+	background: url(../assets/buttons/nav_diversion.gif) no-repeat top center;
+}
+
+ul.bb li.buttondiversion_on a,
+ul.bb li.buttondiversion a:hover{
+	background: url(../assets/buttons/nav_diversion_on.gif) no-repeat top center;
+}
+
+ul.bb li.buttoncatalog a{
+	background: url(../assets/buttons/nav_catalog.gif) no-repeat top center;
+}
+
+ul.bb li.buttoncatalog_on a,
+ul.bb li.buttoncatalog a:hover{
+	background: url(../assets/buttons/nav_catalog_on.gif) no-repeat top center;
+}
+
+ul.bb li.buttonreport a{
+	background: url(../assets/buttons/nav_reports.gif) no-repeat top center;
+}
+
+ul.bb li.buttonreport_on a,
+ul.bb li.buttonreport a:hover{
+	background: url(../assets/buttons/nav_reports_on.gif) no-repeat top center;
+}
+
+ul.bb li.buttonkpi a{
+	background: url(../assets/buttons/nav_kpiDashboard.gif) no-repeat top center;
+}
+
+ul.bb li.buttonkpi_on a,
+ul.bb li.buttonkpi a:hover{
+	background: url(../assets/buttons/nav_kpiDashboard_on.gif) no-repeat top center;
+}

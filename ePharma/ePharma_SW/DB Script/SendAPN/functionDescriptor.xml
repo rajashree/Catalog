@@ -1,0 +1,43 @@
+
+<function-descriptor id='jf_sendAPN' author='Robert Smik'>
+
+  <classpath url="file:///c:/SendAPN/smtpClient.jar"/>
+  <classpath url="file:///c:/SendAPN/mail.jar"/>
+  <classpath url="file:///c:/SendAPN/activation.jar"/>
+
+  <function package='com.rdta.eag.epharma.util' class='SmtpClientUtil' name='sendEmail' bound-name='smtpClient'>
+
+   <java return='string' mode='primitive'>
+
+    <arg type='string' mode='primitive'/>
+    <arg type='string' mode='primitive'/>
+    <arg type='string' mode='primitive'/>
+    <arg type='string' mode='primitive'/>
+    <arg type='string' mode='primitive'/>
+    <arg type='string' mode='primitive'/>
+    
+
+   </java>
+
+  </function>
+  
+  <function package='com.rdta.eag.epharma.util' class='SmtpClientUtil' name='sendEmailAttachement' bound-name='smtpClientAttachement'>
+  
+     <java return='string' mode='primitive'>
+  
+      <arg type='string' mode='primitive'/>
+      <arg type='string' mode='primitive'/>
+      <arg type='string' mode='primitive'/>
+      <arg type='string' mode='primitive'/>
+      <arg type='string' mode='primitive'/>
+      <arg type='string' mode='primitive'/>
+      <arg type='string' mode='primitive'/>
+      <arg type='string' mode='primitive'/>
+
+
+     </java>
+  
+  </function>
+
+</function-descriptor>
+

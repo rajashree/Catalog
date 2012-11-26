@@ -1,0 +1,2 @@
+2007-02-10 11:47:05,765 INFO  (CtxListener.java:61) - In contextDestroyed method
+2007-02-10 11:47:05,906 INFO  (CtxListener.java:63) - Query:tlsp:deleteSessions_MD()

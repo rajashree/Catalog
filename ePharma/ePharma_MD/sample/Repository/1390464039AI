@@ -1,0 +1,6 @@
+<Repository><RepositoryID>4b079561b4c220a0:1649b44:108faacf593:-80001138105039218</RepositoryID><RepositoryName>Repos</RepositoryName><IPAddress>192.168.3.3</IPAddress><MaxConnections>12</MaxConnections><DirectCommPort>2</DirectCommPort><ConnectionTimeOut>32</ConnectionTimeOut><DBVersion>32</DBVersion><EPCISVersion>32</EPCISVersion><RepositoryType>Edge</RepositoryType><PublicAPI><BusinessWSDLUri>busines</BusinessWSDLUri><QueryWSDLUri>query</QueryWSDLUri><AdminWSDLUri>admin</AdminWSDLUri><ONSWSDLUri>ons</ONSWSDLUri><SubscriptionWSDLUri>subscription</SubscriptionWSDLUri><ReplicationWSDLUri>replication</ReplicationWSDLUri><ONSHTTPApi>onshttp</ONSHTTPApi></PublicAPI><Comments>none</Comments><EAG-TimeStamp>
+<origin-serverID>4b079561b4c220a0:1649b44:108faacf593:-80001138104997375</origin-serverID>
+<updated-timestamp>2006-01-24T12:17:59</updated-timestamp>
+<updated-serverID>4b079561b4c220a0:1649b44:108faacf593:-80001138104997375</updated-serverID>
+<reported>false</reported>
+</EAG-TimeStamp></Repository>

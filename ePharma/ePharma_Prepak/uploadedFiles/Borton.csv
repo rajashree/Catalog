@@ -1,0 +1,745 @@
+ProductCode,Commodity,Variety,SubVariety,Country,StateProvince,GrowingRegion,ProductSize,SizeUOM,TotalCount,InnerPackQuantity,InnerPackSize,InnerPackSizeUOM,InnerPackStyle,OuterPack,NetWeight,NetWeightUOM,GrossWeight,GrossWeightUOM,Grade,Label,PostHarvest,Treatment,GrowingMethod,PLU,UPC,GTIN_SKU,Description
+CA4XWX84D12,Apples,Golden/Cameo Mix,,,,,2.5,IN,0,0,,LB,Box,Pallet,840,LB,,,WX,,,Controlled Atmosphere,,,,,"WA XF 840LB UNIT CA GOLDEN/CAMEO 2 1/2"""
+CAAJU1B3D18,Pears,D'anjou Pears,,,,,2.125,IN,0,12,3,LB,Poly Bag,Box,36,LB,,,U1,,,Controlled Atmosphere,,,,,"US#1 12/3LB BAG CA D'ANJOU 2 1/8"""
+CAAJU1C2040,Pears,D'anjou Pears,,,,,40,CT,40,2,20,CT,Tray,Box,20,LB,,,U1,,,Controlled Atmosphere,,,,,US#1 WRAP 1/2 CRTN CA D'ANJOU 40
+CAAJU1TP060,Pears,D'anjou Pears,,,,,60,CT,60,4,15,CT,Tray,Box,40,LB,,,U1,,,Controlled Atmosphere,,,,,US#1 TRAY CA D'ANJOU 60
+CAAJU1TP070,Pears,D'anjou Pears,,,,,70,CT,70,4,17,CT,Tray,Box,40,LB,,,U1,,,Controlled Atmosphere,,,,,US#1 TRAY CA D'ANJOU 70
+CAAJU1TP080,Pears,D'anjou Pears,,,,,80,CT,80,4,20,CT,Tray,Box,40,LB,,,U1,,,Controlled Atmosphere,,,,,US#1 TRAY CA D'ANJOU 80
+CAAJU1TP090,Pears,D'anjou Pears,,,,,90,CT,90,4,22,CT,Tray,Box,40,LB,,,U1,,,Controlled Atmosphere,,,,,US#1 TRAY CA D'ANJOU 90
+CAAJU1WP060,Pears,D'anjou Pears,,,,,60,CT,60,4,15,CT,Tray,Box,40,LB,,,U1,,,Controlled Atmosphere,,,,,US#1 WRAP CA D'ANJOU 60
+CAAJU1WP070,Pears,D'anjou Pears,,,,,70,CT,70,4,17,CT,Tray,Box,40,LB,,,U1,,,Controlled Atmosphere,,,,,US#1 WRAP CA D'ANJOU 70
+CAAJU1WP080,Pears,D'anjou Pears,,,,,80,CT,80,4,20,CT,Tray,Box,40,LB,,,U1,,,Controlled Atmosphere,,,,,US#1 WRAP CA D'ANJOU 80
+CAAJU1WP090,Pears,D'anjou Pears,,,,,90,CT,90,4,22,CT,Tray,Box,40,LB,,,U1,,,Controlled Atmosphere,,,,,US#1 WRAP CA D'ANJOU 90
+CAAOUXM5088,Apples/Oranges,Apple/Orange Mix,,,,,88,CT,88,8,5,LB,Soft-Net,Box,40,LB,,,UX,,,Controlled Atmosphere,,,,,"US XF 8/5LB SOFT NET CA APPLE/ORANGE MIX 2 1/2"""
+CAAOWXM5088,Apples/Oranges,Apple/Orange Mix,,,,,88,CT,88,8,5,LB,Soft-Net,Box,40,LB,,,WX,,,Controlled Atmosphere,,,,,"WA XF 8/5# SOFT NET CA APPLE/ORANGE 2 1/2"""
+CAARUXM5088,Apples,Red/Granny Mix,,,,,88,CT,88,8,5,LB,Soft-Net,Box,40,LB,,,UX,,,Controlled Atmosphere,,,,,"US XF 8/5LB SOFT NET CA RED/GRANNY 2 1/2"""
+CAARWXB8D12,Apples,Red/Granny Mix,,,,,2.5,IN,0,8,5,LB,Poly Bag,Box,40,LB,,,WX,,,Controlled Atmosphere,,,,,"WA XF 8/5LB BAGS CA RED/GRANNY 2 1/2"""
+CAARWXM5072,Apples,Red/Granny Mix,,,,,72,CT,72,8,5,LB,Soft-Net,Box,40,LB,,,WX,,,Controlled Atmosphere,,,,,WA XF 8/5LB SOFT NET CA RED/GRANNY 2 1/2
+CAARWXM5088,Apples,Red/Granny Mix,,,,,88,CT,88,8,5,LB,Soft-Net,Box,40,LB,,,WX,,,Controlled Atmosphere,,,,,"WA XF 8/5LB SOFT NET CA RED/GRANNY 2 1/2"""
+CAARWXM5100,Apples,Red/Granny Mix,,,,,100,CT,100,8,5,LB,Soft-Net,Box,40,LB,,,WX,,,Controlled Atmosphere,,,,,"WA XF 8/5LB SOFT NET CA RED/GRANNY 2 1/2"""
+CAARWXM5113,Apples,Red/Granny Mix,,,,,113,CT,113,8,5,LB,Soft-Net,Box,40,LB,,,WX,,,Controlled Atmosphere,,,,,"WA XF 8/5LB SOFT NET CA RED/GRANNY 2 1/2"""
+CABAU1TP060,Pears,Bartlett Pears,,,,,60,CT,60,4,15,CT,Tray,Box,40,LB,,,U1,,,Controlled Atmosphere,,,,,US #1 TRAY CA BARTLETT 60
+CABAU1TP070,Pears,Bartlett Pears,,,,,70,CT,70,4,17,CT,Tray,Box,40,LB,,,U1,,,Controlled Atmosphere,,,,,US #1 TRAY CA BARTLETT 70
+CABAU1TP080,Pears,Bartlett Pears,,,,,80,CT,80,4,20,CT,Tray,Box,40,LB,,,U1,,,Controlled Atmosphere,,,,,US #1 TRAY CA BARTLETT 80
+CABAU1TP090,Pears,Bartlett Pears,,,,,90,CT,90,4,22,CT,Tray,Box,40,LB,,,U1,,,Controlled Atmosphere,,,,,US #1 TRAY CA BARTLETT 90
+CABAU1WP060,Pears,Bartlett Pears,,,,,60,CT,60,4,15,CT,Tray,Box,40,LB,,,U1,,,Controlled Atmosphere,,,,,US#1 WRAP CA BARTLETT 60
+CABAU1WP070,Pears,Bartlett Pears,,,,,70,CT,70,4,17,CT,Tray,Box,40,LB,,,U1,,,Controlled Atmosphere,,,,,US#1 WRAP CA BARTLETT 70
+CABAU1WP080,Pears,Bartlett Pears,,,,,80,CT,80,4,20,CT,Tray,Box,40,LB,,,U1,,,Controlled Atmosphere,,,,,US#1 WRAP CA BARTLETT 80
+CABAU1WP090,Pears,Bartlett Pears,,,,,90,CT,90,4,22,CT,Tray,Box,40,LB,,,U1,,,Controlled Atmosphere,,,,,US#1 WRAP CA BARTLETT 90
+CABAU1WP120,Pears,Bartlett Pears,,,,,120,CT,120,5,24,CT,Tray,Box,40,LB,,,U1,,,Controlled Atmosphere,,,,,US#1 WRAP CA BARTLETT 120
+CABOU1TP060,Pears,Bosc Pears,,,,,60,CT,60,4,15,CT,Tray,Box,40,LB,,,U1,,,Controlled Atmosphere,,,,,US #1 TRAY PACK CA BOSC 60
+CABOU1TP070,Pears,Bosc Pears,,,,,70,CT,70,4,17,CT,Tray,Box,40,LB,,,U1,,,Controlled Atmosphere,,,,,US #1 TRAY PACK CA BOSC 70
+CABOU1TP080,Pears,Bosc Pears,,,,,80,CT,80,4,20,CT,Tray,Box,40,LB,,,U1,,,Controlled Atmosphere,,,,,US #1 TRAY PACK CA BOSC 80
+CABOU1TP090,Pears,Bosc Pears,,,,,90,CT,90,4,22,CT,Tray,Box,40,LB,,,U1,,,Controlled Atmosphere,,,,,US #1 TRAY PACK CA BOSC 90
+CABOU1WP060,Pears,Bosc Pears,,,,,60,CT,60,4,15,CT,Tray,Box,40,LB,,,U1,,,Controlled Atmosphere,,,,,US#1 WRAP CA BOSC 60
+CABOU1WP070,Pears,Bosc Pears,,,,,70,CT,70,4,17,CT,Tray,Box,40,LB,,,U1,,,Controlled Atmosphere,,,,,US#1 WRAP CA BOSC 70
+CABOU1WP080,Pears,Bosc Pears,,,,,80,CT,80,4,20,CT,Tray,Box,40,LB,,,U1,,,Controlled Atmosphere,,,,,US#1 WRAP CA BOSC 80
+CABOU1WP090,Pears,Bosc Pears,,,,,90,CT,90,4,22,CT,Tray,Box,40,LB,,,U1,,,Controlled Atmosphere,,,,,US#1 WRAP CA BOSC 90
+CABRCXTP072,Apples,Braeburn,,,,,72,CT,72,4,18,CT,Tray,Box,40,LB,,,CX,,,Controlled Atmosphere,,,,,WA XF PREMIUM TRAY PACK CA BRAEBURN 72
+CABRCXTP080,Apples,Braeburn,,,,,80,CT,80,4,20,CT,Tray,Box,40,LB,,,CX,,,Controlled Atmosphere,,,,,WA XF PREMIUM TRAY PACK CA BRAEBURN 80
+CABRCXTP088,Apples,Braeburn,,,,,88,CT,88,4,22,CT,Tray,Box,40,LB,,,CX,,,Controlled Atmosphere,,,,,WA XF PREMIUM TRAY PACK CA BRAEBURN 88
+CABRCXTP100,Apples,Braeburn,,,,,100,CT,100,5,20,CT,Tray,Box,40,LB,,,CX,,,Controlled Atmosphere,,,,,WA XF PREMIUM TRAY PACK CA BRAEBURN 100
+CABRW2TP088,Apples,Braeburn,,,,,88,CT,88,4,22,CT,Tray,Box,40,LB,,,W2,,,Controlled Atmosphere,,,,,WA XF TRAY PACK CA BRAEBURN 88
+CABRWX84072,Apples,Braeburn,,,,,72,CT,0,0,,LB,Box,Pallet,840,LB,,,WX,,,Controlled Atmosphere,,,,,WA XF 840LB UNIT CA BRAEBURN 72
+CABRWX84080,Apples,Braeburn,,,,,80,CT,0,0,,LB,Box,Pallet,840,LB,,,WX,,,Controlled Atmosphere,,,,,WA XF 840LB UNIT CA BRAEBURN 80
+CABRWX84088,Apples,Braeburn,,,,,88,CT,0,0,,LB,Box,Pallet,840,LB,,,WX,,,Controlled Atmosphere,,,,,WA XF 840LB UNIT CA BRAEBURN 88
+CABRWXB3D12,Apples,Braeburn,,,,,2.5,IN,0,12,3,LB,Poly Bag,Box,36,LB,,,WX,,,Controlled Atmosphere,,,,,"WA XF 12/3LB BAG CA BRAEBURN 2 1/2"""
+CABRWXB3D14,Apples,Braeburn,,,,,2.25,IN,0,12,3,LB,Poly Bag,Box,36,LB,,,WX,,,Controlled Atmosphere,,,,,"WA XF 12/3LB BAG CA BRAEBURN 2 1/4"""
+CABRWXB8D12,Apples,Braeburn,,,,,2.5,IN,0,8,5,LB,Poly Bag,Box,40,LB,,,WX,,,Controlled Atmosphere,,,,,"WA XF 8/5LB BAG CA BRAEBURN 2 1/2"""
+CABRWXEU050,Apples,Braeburn,,,,,50,CT,50,2,25,CT,Tray,Box,28,LB,,,WX,,,Controlled Atmosphere,,,,,WA XF CA BRAEBURN EURO 50
+CABRWXEU060,Apples,Braeburn,,,,,60,CT,60,2,30,CT,Tray,Box,28,LB,,,WX,,,Controlled Atmosphere,,,,,WA XF CA BRAEBURN EURO 60
+CABRWXEU070,Apples,Braeburn,,,,,70,CT,70,2,35,CT,Tray,Box,28,LB,,,WX,,,Controlled Atmosphere,,,,,WA XF EURO CA BRAEBURN 70
+CABRWXM3125,Apples,Braeburn,,,,,125,CT,125,12,3,LB,Soft-Net,Box,36,LB,,,WX,,,Controlled Atmosphere,,,,,"WA XF 12/3LB SOFT NET CA BRAEBURN 2 1/2"""
+CABRWXM3138,Apples,Braeburn,,,,,138,CT,138,12,3,LB,Soft-Net,Box,36,LB,,,WX,,,Controlled Atmosphere,,,,,"WA XF 12/3LB SOFT NET CA BRAEBURN 2 1/2"""
+CABRWXM5100,Apples,Braeburn,,,,,100,CT,100,8,5,LB,Soft-Net,Box,40,LB,,,WX,,,Controlled Atmosphere,,,,,"WA XF 8/5LB SOFT NET CA BRAEBURN 2 1/2"""
+CABRWXM5113,Apples,Braeburn,,,,,113,CT,113,8,5,LB,Soft-Net,Box,40,LB,,,WX,,,Controlled Atmosphere,,,,,"WA XF 8/5LB SOFT NET CA BRAEBURN 2 1/2"""
+CABRWXN5D12,Apples,Braeburn,,,,,2.5,IN,0,120,5,LB,Soft-Net,Tote Bin,600,LB,,,WX,,,Controlled Atmosphere,,,,,"WA XF 5LB SOFT NET TOTE CA BRAEBURN 2 1/2"""
+CABRWXTP064,Apples,Braeburn,,,,,64,CT,64,4,16,CT,Tray,Box,40,LB,,,WX,,,Controlled Atmosphere,,,,,WA XF TRAY CA BRAEBURN 64
+CABRWXTP072,Apples,Braeburn,,,,,72,CT,72,4,18,CT,Tray,Box,40,LB,,,WX,,,Controlled Atmosphere,,,,,WA XF TRAY CA BRAEBURN 72
+CABRWXTP080,Apples,Braeburn,,,,,80,CT,80,4,20,CT,Tray,Box,40,LB,,,WX,,,Controlled Atmosphere,,,,,WA XF TRAY CA BRAEBURN 80
+CABRWXTP088,Apples,Braeburn,,,,,88,CT,88,4,22,CT,Tray,Box,40,LB,,,WX,,,Controlled Atmosphere,,,,,WA XF TRAY CA BRAEBURN 88
+CABRWXTP100,Apples,Braeburn,,,,,100,CT,100,5,20,CT,Tray,Box,40,LB,,,WX,,,Controlled Atmosphere,,,,,WA XF TRAY CA BRAEBURN 100
+CABRWXTP113,Apples,Braeburn,,,,,113,CT,113,5,22,CT,Tray,Box,40,LB,,,WX,,,Controlled Atmosphere,,,,,WA XF TRAY CA BRAEBURN 113
+CABRWXTP125,Apples,Braeburn,,,,,125,CT,125,5,25,CT,Tray,Box,40,LB,,,WX,,,Controlled Atmosphere,,,,,WA XF TRAY CA BRAEBURN 125
+CACMCXTP080,Apples,Cameo,,,,,80,CT,80,4,20,CT,Tray,Box,40,LB,,,CX,,,Controlled Atmosphere,,,,,WA XF PREMIUM TRAY CA CAMEO 80.
+CACMCXTP088,Apples,Cameo,,,,,88,CT,88,4,22,CT,Tray,Box,40,LB,,,CX,,,Controlled Atmosphere,,,,,WA XF PREMIUM TRAY CA CAMEO 88
+CACMUXTP072,Apples,Cameo,,,,,72,CT,72,4,18,CT,Tray,Box,40,LB,,,UX,,,Controlled Atmosphere,,,,,US XF TRAY PACK CA CAMEO 72
+CACMUXTP080,Apples,Cameo,,,,,80,CT,80,4,20,CT,Tray,Box,40,LB,,,UX,,,Controlled Atmosphere,,,,,US XF TRAY PACK CA CAMEO 80
+CACMUXTP088,Apples,Cameo,,,,,88,CT,88,4,22,CT,Tray,Box,40,LB,,,UX,,,Controlled Atmosphere,,,,,US XF TRAY PACK CA CAMEO 88
+CACMWXEU050,Apples,Cameo,,,,,50,CT,50,2,25,CT,Tray,Box,28,LB,,,WX,,,Controlled Atmosphere,,,,,WA XF EURO CA CAMEO 50
+CACMWXEU060,Apples,Cameo,,,,,60,CT,60,2,30,CT,Tray,Box,28,LB,,,WX,,,Controlled Atmosphere,,,,,WA XF EURO CA CAMEO 60
+CACMWXTP072,Apples,Cameo,,,,,72,CT,72,4,18,CT,Tray,Box,40,LB,,,WX,,,Controlled Atmosphere,,,,,WA XF TRAY PACK CA CAMEO 72
+CACMWXTP080,Apples,Cameo,,,,,80,CT,80,4,20,CT,Tray,Box,40,LB,,,WX,,,Controlled Atmosphere,,,,,WA XF TRAY PACK CA CAMEO 80
+CACMWXTP088,Apples,Cameo,,,,,88,CT,88,4,22,CT,Tray,Box,40,LB,,,WX,,,Controlled Atmosphere,,,,,WA XF TRAY PACK CA CAMEO 88
+CACOU1C2035,Pears,Comice Pear,,,,,35,CT,35,2,17,CT,Tray,Box,20,LB,,,U1,,,Controlled Atmosphere,,,,,US#1 1/2 CARTON COMICE 35
+CACOU1C2040,Pears,Comice Pear,,,,,40,CT,40,2,20,CT,Tray,Box,20,LB,,,U1,,,Controlled Atmosphere,,,,,US#1 1/2 CARTON COMICE 40
+CAFUCXTP064,Apples,Fuji,,,,,64,CT,64,4,16,CT,Tray,Box,40,LB,,,CX,,,Controlled Atmosphere,,,,,WA XF PREMIUM TRAY CA FUJI 64
+CAFUCXTP072,Apples,Fuji,,,,,72,CT,72,4,18,CT,Tray,Box,40,LB,,,CX,,,Controlled Atmosphere,,,,,WA XF PREMIUM TRAY CA FUJI 72
+CAFUCXTP080,Apples,Fuji,,,,,80,CT,80,4,20,CT,Tray,Box,40,LB,,,CX,,,Controlled Atmosphere,,,,,WA XF PREMIUM TRAY CA FUJI 80
+CAFUCXTP088,Apples,Fuji,,,,,88,CT,88,4,22,CT,Tray,Box,40,LB,,,CX,,,Controlled Atmosphere,,,,,WA XF PREMIUM TRAY CA FUJI 88
+CAFUCXTP100,Apples,Fuji,,,,,100,CT,100,5,20,CT,Tray,Box,40,LB,,,CX,,,Controlled Atmosphere,,,,,WA XF PREMIUM TRAY CA FUJI 100
+CAFUCXTP113,Apples,Fuji,,,,,113,CT,113,5,22,CT,Tray,Box,40,LB,,,CX,,,Controlled Atmosphere,,,,,WA XF PREMIUM TRAY CA FUJI 113
+CAFUUXB8D12,Apples,Fuji,,,,,2.5,IN,0,8,5,LB,Poly Bag,Box,40,LB,,,UX,,,Controlled Atmosphere,,,,,US XF 8/5LB BAGS CA FUIJ 2 1/2
+CAFUUXT7D12,Apples,Fuji,,,,,2.5,IN,0,0,,LB,Bulk,Tote Bin,640,LB,,,UX,,,Controlled Atmosphere,,,,,US XF 650LB TOTE LOOSE CA FUJI  2 1/2
+CAFUUXTP072,Apples,Fuji,,,,,72,CT,72,4,18,CT,Tray,Box,40,LB,,,UX,,,Controlled Atmosphere,,,,,US XF TRAY PACK CA FUJI 72
+CAFUUXTP080,Apples,Fuji,,,,,80,CT,80,4,20,CT,Tray,Box,40,LB,,,UX,,,Controlled Atmosphere,,,,,US XF TRAY PACK CA FUJI 80
+CAFUUXTP088,Apples,Fuji,,,,,88,CT,88,4,22,CT,Tray,Box,40,LB,,,UX,,,Controlled Atmosphere,,,,,US XF TRAY PACK CA FUJI 88
+CAFUWX1L020,Apples,Fuji,,,,,20,CT,20,1,20,CT,Tray,Box,10,LB,,,WX,,,Controlled Atmosphere,,,,,WA XF ONE LAYER TRAY CA FUJI 20
+CAFUWX84072,Apples,Fuji,,,,,72,CT,0,0,,LB,Box,Pallet,840,LB,,,WX,,,Controlled Atmosphere,,,,,WA XF 840LB UNIT CA FUJI 72
+CAFUWX84080,Apples,Fuji,,,,,80,CT,0,0,,LB,Box,Pallet,840,LB,,,WX,,,Controlled Atmosphere,,,,,WA XF 840LB UNIT CA FUJI 80
+CAFUWXB3D12,Apples,Fuji,,,,,2.5,IN,0,12,3,LB,Poly Bag,Box,36,LB,,,WX,,,Controlled Atmosphere,,,,,"WA XF 12/3LB BAG CA FUJI 2 1/2"""
+CAFUWXB8D12,Apples,Fuji,,,,,2.5,IN,0,8,5,LB,Poly Bag,Box,40,LB,,,WX,,,Controlled Atmosphere,,,,,WA XF 8/5LB BAGS CA FUJI 2 1/2
+CAFUWXEU050,Apples,Fuji,,,,,50,CT,50,2,25,CT,Tray,Box,28,LB,,,WX,,,Controlled Atmosphere,,,,,WA EX EURO CA FUJI 50
+CAFUWXM3113,Apples,Fuji,,,,,113,CT,113,12,3,LB,Soft-Net,Box,36,LB,,,WX,,,Controlled Atmosphere,,,,,"WA XF 12/3LB SOFT NET CA FUJI 2 1/2"""
+CAFUWXM3125,Apples,Fuji,,,,,125,CT,125,12,3,LB,Soft-Net,Box,36,LB,,,WX,,,Controlled Atmosphere,,,,,"WA XF 12/3LB SOFT-NET CA FUJI 2 1/2"""
+CAFUWXM3138,Apples,Fuji,,,,,138,CT,138,12,3,LB,Soft-Net,Box,36,LB,,,WX,,,Controlled Atmosphere,,,,,"WA XF 12/3LB SOFT NET CA FUJI 2 1/2"""
+CAFUWXM5088,Apples,Fuji,,,,,88,CT,88,8,5,LB,Soft-Net,Box,40,LB,,,WX,,,Controlled Atmosphere,,,,,"WA XF 8/5LB SOFT NET CA FUJI 2 1/2"""
+CAFUWXM5100,Apples,Fuji,,,,,100,CT,100,8,5,LB,Soft-Net,Box,40,LB,,,WX,,,Controlled Atmosphere,,,,,"WA XF 8/5LB SOFT NET CA FUJI 2 1/2"""
+CAFUWXM5113,Apples,Fuji,,,,,113,CT,113,8,5,LB,Soft-Net,Box,40,LB,,,WX,,,Controlled Atmosphere,,,,,"WA XF 8/5LB SOFT NET CA FUJI 2 1/2"""
+CAFUWXM5125,Apples,Fuji,,,,,125,CT,125,8,5,LB,Soft-Net,Box,40,LB,,,WX,,,Controlled Atmosphere,,,,,"WA XF 8/5LB SOFT NET CA FUJI 2 1/2"""
+CAFUWXM5D12,Apples,Fuji,,,,,2.5,IN,0,8,5,LB,Soft-Net,Box,40,LB,,,WX,,,Controlled Atmosphere,,,,,"WA XF 5 LB SOFT NET BAG CA FUJI 2 1/2"""
+CAFUWXT5D12,Apples,Fuji,,,,,2.5,IN,0,120,5,LB,Poly Bag,Tote Bin,600,LB,,,WX,,,Controlled Atmosphere,,,,,WA XF 5LB BAG TOTE CA FUJI 2 1/2
+CAFUWXT7D12,Apples,Fuji,,,,,2.5,IN,0,0,,LB,Bulk,Tote Bin,640,LB,,,WX,,,Controlled Atmosphere,,,,,"WA XF 650LB LOOSE TOTE CA FUJI 2 1/2"""
+CAFUWXTP048,Apples,Fuji,,,,,48,CT,48,4,12,CT,Tray,Box,40,LB,,,WX,,,Controlled Atmosphere,,,,,WA XF TRAY PACK CA FUJI 48
+CAFUWXTP056,Apples,Fuji,,,,,56,CT,56,4,14,CT,Tray,Box,40,LB,,,WX,,,Controlled Atmosphere,,,,,WA XF TRAY PACK CA FUJI 56
+CAFUWXTP072,Apples,Fuji,,,,,72,CT,72,4,18,CT,Tray,Box,40,LB,,,WX,,,Controlled Atmosphere,,,,,WA XF TRAY PACK CA FUJI 72
+CAFUWXTP080,Apples,Fuji,,,,,80,CT,80,4,20,CT,Tray,Box,40,LB,,,WX,,,Controlled Atmosphere,,,,,WA XF TRAY PACK CA FUJI 80
+CAFUWXTP088,Apples,Fuji,,,,,88,CT,88,4,22,CT,Tray,Box,40,LB,,,WX,,,Controlled Atmosphere,,,,,WA XF TRAY PACK CA FUJI 88
+CAFUWXTP113,Apples,Fuji,,,,,113,CT,113,5,22,CT,Tray,Box,40,LB,,,WX,,,Controlled Atmosphere,,,,,WA XF TRAY PACK CA FUJI 113
+CAFUWXTP125,Apples,Fuji,,,,,125,CT,125,5,25,CT,Tray,Box,40,LB,,,WX,,,Controlled Atmosphere,,,,,WA XF TRAY PACK CA FUJI 125
+CAGACXB3D12,Apples,Gala,,,,,2.5,IN,0,12,3,LB,Poly Bag,Box,36,LB,,,CX,,,Controlled Atmosphere,,,,,"WA XF 12/3LB CA ROYAL GALA 2 1/2"""
+CAGACXTP072,Apples,Gala,,,,,72,CT,72,4,18,CT,Tray,Box,40,LB,,,CX,,,Controlled Atmosphere,,,,,WA XF TRAY CA ROYAL GALA 72
+CAGACXTP080,Apples,Gala,,,,,80,CT,80,4,20,CT,Tray,Box,40,LB,,,CX,,,Controlled Atmosphere,,,,,WA XF TRAY CA ROYAL GALA 80
+CAGACXTP088,Apples,Gala,,,,,88,CT,88,4,22,CT,Tray,Box,40,LB,,,CX,,,Controlled Atmosphere,,,,,WA XF TRAY CA ROYAL GALA 88
+CAGACXTP100,Apples,Gala,,,,,100,CT,100,5,20,CT,Tray,Box,40,LB,,,CX,,,Controlled Atmosphere,,,,,WA XF TRAY CA ROYAL GALA 100
+CAGACXTP113,Apples,Gala,,,,,113,CT,113,5,22,CT,Tray,Box,40,LB,,,CX,,,Controlled Atmosphere,,,,,WA XF TRAY CA ROYAL GALA 113
+CAGACXTP125,Apples,Gala,,,,,125,CT,125,5,25,CT,Tray,Box,40,LB,,,CX,,,Controlled Atmosphere,,,,,WA XF TRAY CA ROYAL GALA 125
+CAGAW2TP072,Apples,Gala,,,,,72,CT,72,4,18,CT,Tray,Box,40,LB,,,W2,,,Controlled Atmosphere,,,,,WA XF TRAY PACK CA GALA 72
+CAGAWX13D12,Apples,Gala,,,,,2.5,IN,0,0,,LB,Bulk,Box,13,LB,,,WX,,,Controlled Atmosphere,,,,,"WA XF 13LB LOOSE CA GALA 2 1/2"""
+CAGAWX2L040,Apples,Gala,,,,,40,CT,40,2,20,CT,Tray,Box,20,LB,,,WX,,,Controlled Atmosphere,,,,,WA XF TWO LAYER CA GALA 40
+CAGAWX2L044,Apples,Gala,,,,,44,CT,44,2,22,CT,Tray,Box,20,LB,,,WX,,,Controlled Atmosphere,,,,,WA XF TWO LAYER CA GALA 44
+CAGAWX84080,Apples,Gala,,,,,80,CT,0,0,,LB,Box,Pallet,840,LB,,,WX,,,Controlled Atmosphere,,,,,WA XF 840LB UNIT CA GALA 80
+CAGAWX84088,Apples,Gala,,,,,88,CT,0,0,,LB,Box,Pallet,840,LB,,,WX,,,Controlled Atmosphere,,,,,WA XF 840LB UNIT CA GALA 88
+CAGAWXB3125,Apples,Gala,,,,,125,CT,125,12,3,LB,Poly Bag,Box,36,LB,,,WX,,,Controlled Atmosphere,,,,,"WA XF 12/3LB CA GALA 2 1/2"""
+CAGAWXB3D12,Apples,Gala,,,,,2.5,IN,0,12,3,LB,Poly Bag,Box,36,LB,,,WX,,,Controlled Atmosphere,,,,,"WA XF 12/3 BAG CA ROYAL GALA 2 1/2"""
+CAGAWXB3D14,Apples,Gala,,,,,2.25,IN,0,12,3,LB,Poly Bag,Box,36,LB,,,WX,,,Controlled Atmosphere,,,,,"WA XF 12/3 BAG CA ROYAL GALA 2 1/4"""
+CAGAWXB8D12,Apples,Gala,,,,,2.5,IN,0,8,5,LB,Poly Bag,Box,40,LB,,,WX,,,Controlled Atmosphere,,,,,"WA XF 8/5LB BAGS CA GALA 2 1/2"""
+CAGAWXEU050,Apples,Gala,,,,,50,CT,50,2,25,CT,Tray,Box,28,LB,,,WX,,,Controlled Atmosphere,,,,,WA XF EURO CA ROYAL GALA 50
+CAGAWXEU060,Apples,Gala,,,,,60,CT,60,2,30,CT,Tray,Box,28,LB,,,WX,,,Controlled Atmosphere,,,,,WA XF EURO CA GALA 60
+CAGAWXM3100,Apples,Gala,,,,,100,CT,100,12,3,LB,Soft-Net,Box,36,LB,,,WX,,,Controlled Atmosphere,,,,,"WA XF 12/3LB SOFT NET CA GALA 2 1/2"""
+CAGAWXM3113,Apples,Gala,,,,,113,CT,113,12,3,LB,Soft-Net,Box,36,LB,,,WX,,,Controlled Atmosphere,,,,,"WA XF 12/3LB SOFT NET CA GALA 2 1/2"""
+CAGAWXM3125,Apples,Gala,,,,,125,CT,125,12,3,LB,Soft-Net,Box,36,LB,,,WX,,,Controlled Atmosphere,,,,,"WA XF 12/3LB SOFT NET CA GALA 2 1/2"""
+CAGAWXM3138,Apples,Gala,,,,,138,CT,138,12,3,LB,Soft-Net,Box,36,LB,,,WX,,,Controlled Atmosphere,,,,,"WA XF 12/3LB SOFT NET CA GALA 2 1/2"""
+CAGAWXM5088,Apples,Gala,,,,,88,CT,88,8,5,LB,Soft-Net,Box,40,LB,,,WX,,,Controlled Atmosphere,,,,,"WA XF 8/5LB SOFT NET CA GALA 2 1/2"""
+CAGAWXM5100,Apples,Gala,,,,,100,CT,100,8,5,LB,Soft-Net,Box,40,LB,,,WX,,,Controlled Atmosphere,,,,,"WA XF 8/5LB SOFT NET CA GALA 2 1/2"""
+CAGAWXM5113,Apples,Gala,,,,,113,CT,113,8,5,LB,Soft-Net,Box,40,LB,,,WX,,,Controlled Atmosphere,,,,,"WA XF 8/5LB SOFT NET CA GALA 2 1/2"""
+CAGAWXM5D12,Apples,Gala,,,,,2.5,IN,0,8,5,LB,Soft-Net,Box,40,LB,,,WX,,,Controlled Atmosphere,,,,,"WAXF 8/5LBS SOFT NET CA GALA 2 1/2"""
+CAGAWXT5D12,Apples,Gala,,,,,2.5,IN,0,120,5,LB,Poly Bag,Tote Bin,600,LB,,,WX,,,Controlled Atmosphere,,,,,WA XF TOTE 5LB BAG CA GALA 2 1/2
+CAGAWXT7D12,Apples,Gala,,,,,2.5,IN,0,0,,LB,Bulk,Tote Bin,640,LB,,,WX,,,Controlled Atmosphere,,,,,"WA XF 650LB LOOSE TOTE CA GALA 2 1/2"""
+CAGAWXTP064,Apples,Gala,,,,,64,CT,64,4,16,CT,Tray,Box,40,LB,,,WX,,,Controlled Atmosphere,,,,,WA XF TRAY CA ROYAL GALA 64
+CAGAWXTP072,Apples,Gala,,,,,72,CT,72,4,18,CT,Tray,Box,40,LB,,,WX,,,Controlled Atmosphere,,,,,WA XF TRAY CA ROYAL GALA 72
+CAGAWXTP080,Apples,Gala,,,,,80,CT,80,4,20,CT,Tray,Box,40,LB,,,WX,,,Controlled Atmosphere,,,,,WA XF TRAY CA ROYAL GALA 80
+CAGAWXTP088,Apples,Gala,,,,,88,CT,88,4,22,CT,Tray,Box,40,LB,,,WX,,,Controlled Atmosphere,,,,,WA XF TRAY CA ROYAL GALA 88
+CAGAWXTP100,Apples,Gala,,,,,100,CT,100,5,20,CT,Tray,Box,40,LB,,,WX,,,Controlled Atmosphere,,,,,WA XF TRAY CA ROYAL GALA 100
+CAGAWXTP113,Apples,Gala,,,,,113,CT,113,5,22,CT,Tray,Box,40,LB,,,WX,,,Controlled Atmosphere,,,,,WA XF TRAY CA ROYAL GALA 113
+CAGAWXTP125,Apples,Gala,,,,,125,CT,125,5,25,CT,Tray,Box,40,LB,,,WX,,,Controlled Atmosphere,,,,,WA XF TRAY CA ROYAL GALA 125
+CAGOUXTP113,Apples,Golden Delicious,,,,,113,CT,113,5,22,CT,Tray,Box,40,LB,,,UX,,,Controlled Atmosphere,,,,,US XF TRAY CA GOLDEN DELICIOUS 113
+CAGOWX84100,Apples,Golden Delicious,,,,,100,CT,0,0,,LB,Box,Pallet,840,LB,,,WX,,,Controlled Atmosphere,,,,,WA XF 840LB UNIT CA GOLDEN 100
+CAGOWXB3D12,Apples,Golden Delicious,,,,,2.5,IN,0,12,3,LB,Poly Bag,Box,36,LB,,,WX,,,Controlled Atmosphere,,,,,"WA XF 12/3LB BAG CA GOLDEN DEL 2 1/2"""
+CAGOWXB8D12,Apples,Golden Delicious,,,,,2.5,IN,0,8,5,LB,Poly Bag,Box,40,LB,,,WX,,,Controlled Atmosphere,,,,,"WA XF 8/5LB BAG CA GOLDEN DEL 2 1/2"""
+CAGOWXEU050,Apples,Golden Delicious,,,,,50,CT,50,2,25,CT,Tray,Box,28,LB,,,WX,,,Controlled Atmosphere,,,,,WA XF EURO CA GOLDEN 50
+CAGOWXEU055,Apples,Golden Delicious,,,,,55,CT,55,2,27,CT,Tray,Box,28,LB,,,WX,,,Controlled Atmosphere,,,,,WA XF EURO CA GOLDEN 55
+CAGOWXEU060,Apples,Golden Delicious,,,,,60,CT,60,2,30,CT,Tray,Box,28,LB,,,WX,,,Controlled Atmosphere,,,,,WA XF EURO CA GOLDEN DELICIOUS 60
+CAGOWXM3100,Apples,Golden Delicious,,,,,100,CT,100,12,3,LB,Soft-Net,Box,36,LB,,,WX,,,Controlled Atmosphere,,,,,"WA XF 12/3LBS SOFT NET CA GOLDEN DEL 2 1/2"""
+CAGOWXM3113,Apples,Golden Delicious,,,,,113,CT,113,12,3,LB,Soft-Net,Box,36,LB,,,WX,,,Controlled Atmosphere,,,,,"WA XF 12/3LB SOFT NET CA GOLDEN DEL 2 1/2"""
+CAGOWXM3125,Apples,Golden Delicious,,,,,125,CT,125,12,3,LB,Soft-Net,Box,36,LB,,,WX,,,Controlled Atmosphere,,,,,"WA XF 12/3LB SOFT NET CA GOLDEN 2 1/2"""
+CAGOWXM5100,Apples,Golden Delicious,,,,,100,CT,100,8,5,LB,Soft-Net,Box,40,LB,,,WX,,,Controlled Atmosphere,,,,,"WA XF 8/5LB SOFT NET CA GOLDEN DEL 2 1/2"""
+CAGOWXM5113,Apples,Golden Delicious,,,,,113,CT,113,8,5,LB,Soft-Net,Box,40,LB,,,WX,,,Controlled Atmosphere,,,,,"WA XF 8/5LB SOFT NET CA GOLDEN DEL 2 1/2"""
+CAGOWXM5125,Apples,Golden Delicious,,,,,125,CT,125,8,5,LB,Soft-Net,Box,40,LB,,,WX,,,Controlled Atmosphere,,,,,"WA XF 8/5LB SOFT NET CA GOLDEN DEL 2 1/2"""
+CAGOWXSC080,Apples,Golden Delicious,,,,,80,CT,80,4,20,CT,Tray,Box,40,LB,,,WX,,,Controlled Atmosphere,,,,,WA XF SOFT CELL CA GOLDEN DEL 80
+CAGOWXSC096,Apples,Golden Delicious,,,,,96,CT,96,4,24,CT,Tray,Box,40,LB,,,WX,,,Controlled Atmosphere,,,,,WA XF SOFT CELL CA GOLDEN DEL 96
+CAGOWXSC120,Apples,Golden Delicious,,,,,120,CT,120,5,24,CT,Tray,Box,40,LB,,,WX,,,Controlled Atmosphere,,,,,WA XF SOFT CELL CA GOLDEN DEL 120
+CAGOWXTP056,Apples,Golden Delicious,,,,,56,CT,56,4,14,CT,Tray,Box,40,LB,,,WX,,,Controlled Atmosphere,,,,,WA XF TRAY CA GOLDEN DELICIOUS 56
+CAGOWXTP064,Apples,Golden Delicious,,,,,64,CT,64,4,16,CT,Tray,Box,40,LB,,,WX,,,Controlled Atmosphere,,,,,WA XF TRAY CA GOLDEN DELICIOUS 64
+CAGOWXTP072,Apples,Golden Delicious,,,,,72,CT,72,4,18,CT,Tray,Box,40,LB,,,WX,,,Controlled Atmosphere,,,,,WA XF TRAY CA GOLDEN DELICIOUS 72
+CAGOWXTP080,Apples,Golden Delicious,,,,,80,CT,80,4,20,CT,Tray,Box,40,LB,,,WX,,,Controlled Atmosphere,,,,,WA XF TRAY CA GOLDEN DELICIOUS 80
+CAGOWXTP088,Apples,Golden Delicious,,,,,88,CT,88,4,22,CT,Tray,Box,40,LB,,,WX,,,Controlled Atmosphere,,,,,WA XF TRAY CA GOLDEN DELICIOUS 88
+CAGOWXTP100,Apples,Golden Delicious,,,,,100,CT,100,5,20,CT,Tray,Box,40,LB,,,WX,,,Controlled Atmosphere,,,,,WA XF TRAY CA GOLDEN DELICIOUS 100
+CAGOWXTP113,Apples,Golden Delicious,,,,,113,CT,113,5,22,CT,Tray,Box,40,LB,,,WX,,,Controlled Atmosphere,,,,,WA XF TRAY CA GOLDEN DELICIOUS 113
+CAGOWXTP125,Apples,Golden Delicious,,,,,125,CT,125,5,25,CT,Tray,Box,40,LB,,,WX,,,Controlled Atmosphere,,,,,WA XF TRAY CA GOLDEN DELICIOUS 125
+CAGRUXB8D12,Apples,Granny Smith,,,,,2.5,IN,0,8,5,LB,Poly Bag,Box,40,LB,,,UX,,,Controlled Atmosphere,,,,,"US XF 8/5LB CA GRANNY SMITH 2 1/2"""
+CAGRW2T7D12,Apples,Granny Smith,,,,,2.5,IN,0,0,,LB,Bulk,Tote Bin,640,LB,,,W2,,,Controlled Atmosphere,,,,,WA XF #2 650LB TOTE CA GRANNY 2 1/2
+CAGRW2TP056,Apples,Granny Smith,,,,,56,CT,56,4,14,CT,Tray,Box,40,LB,,,W2,,,Controlled Atmosphere,,,,,WA XF TRAY CA GRANNY SMITH 56
+CAGRW2TP064,Apples,Granny Smith,,,,,64,CT,64,4,16,CT,Tray,Box,40,LB,,,W2,,,Controlled Atmosphere,,,,,WA XF TRAY CA GRANNY SMITH 64
+CAGRW2TP072,Apples,Granny Smith,,,,,72,CT,72,4,18,CT,Tray,Box,40,LB,,,W2,,,Controlled Atmosphere,,,,,WA XF TRAY CA GRANNY SMITH 72
+CAGRW2TP080,Apples,Granny Smith,,,,,80,CT,80,4,20,CT,Tray,Box,40,LB,,,W2,,,Controlled Atmosphere,,,,,WA XF TRAY CA GRANNY SMITH 80
+CAGRW2TP088,Apples,Granny Smith,,,,,88,CT,88,4,22,CT,Tray,Box,40,LB,,,W2,,,Controlled Atmosphere,,,,,WA XF TRAY CA GRANNY SMITH 88
+CAGRWX84072,Apples,Granny Smith,,,,,72,CT,0,0,,LB,Box,Pallet,840,LB,,,WX,,,Controlled Atmosphere,,,,,WA XF 840LB UNIT CA GRANNY SMITH 72
+CAGRWXB3D12,Apples,Granny Smith,,,,,2.5,IN,0,12,3,LB,Poly Bag,Box,36,LB,,,WX,,,Controlled Atmosphere,,,,,"WA XF 12/3LB CA GRANNY SMITH 2 1/2"""
+CAGRWXB5D12,Apples,Granny Smith,,,,,2.5,IN,0,8,5,LB,Poly Bag,Box,40,LB,,,WX,,,Controlled Atmosphere,,,,,"WA XF 5LB BAGS CA GRANNY 2 1/2"""
+CAGRWXB8D12,Apples,Granny Smith,,,,,2.5,IN,0,8,5,LB,Poly Bag,Box,40,LB,,,WX,,,Controlled Atmosphere,,,,,"WA XF 8/5LB BAGS CA GRANNY 2 1/2"""
+CAGRWXEU050,Apples,Granny Smith,,,,,50,CT,50,2,25,CT,Tray,Box,28,LB,,,WX,,,Controlled Atmosphere,,,,,WA XF EURO CA GRANNY 50
+CAGRWXEU070,Apples,Granny Smith,,,,,70,CT,70,2,35,CT,Tray,Box,28,LB,,,WX,,,Controlled Atmosphere,,,,,WA XF EURO CA GRANNY 70
+CAGRWXM3088,Apples,Granny Smith,,,,,88,CT,88,12,3,LB,Soft-Net,Box,36,LB,,,WX,,,Controlled Atmosphere,,,,,"WA XF 12/3LB SOFT NET CA GRANNY 2 1/2"""
+CAGRWXM3100,Apples,Granny Smith,,,,,100,CT,100,12,3,LB,Soft-Net,Box,36,LB,,,WX,,,Controlled Atmosphere,,,,,"WA XF 12/3LB SOFT NET CA GRANNY 2 1/2"""
+CAGRWXM3113,Apples,Granny Smith,,,,,113,CT,113,12,3,LB,Soft-Net,Box,36,LB,,,WX,,,Controlled Atmosphere,,,,,"WA XF 12/3LB SOFT NET CA GRANNY 2 1/2"""
+CAGRWXM3125,Apples,Granny Smith,,,,,125,CT,125,12,3,LB,Soft-Net,Box,36,LB,,,WX,,,Controlled Atmosphere,,,,,"WA XF 12/3LB SOFT NET CA GRANNY 2 1/2"""
+CAGRWXM3138,Apples,Granny Smith,,,,,138,CT,138,12,3,LB,Soft-Net,Box,36,LB,,,WX,,,Controlled Atmosphere,,,,,"WA XF 12/3LB SOFT NET CA GRANNY 2 1/2"""
+CAGRWXM5088,Apples,Granny Smith,,,,,88,CT,88,8,5,LB,Soft-Net,Box,40,LB,,,WX,,,Controlled Atmosphere,,,,,"WA XF 8/5LB SOFT NET CA GRANNY 2 1/2"""
+CAGRWXM5100,Apples,Granny Smith,,,,,100,CT,100,8,5,LB,Soft-Net,Box,40,LB,,,WX,,,Controlled Atmosphere,,,,,"WA XF 8/5LB SOFT NET CA GRANNY 2 1/2"""
+CAGRWXM5113,Apples,Granny Smith,,,,,113,CT,113,8,5,LB,Soft-Net,Box,40,LB,,,WX,,,Controlled Atmosphere,,,,,"WA XF 8/5LB SOFT NET CA GRANNY 2 1/2"""
+CAGRWXM5D12,Apples,Granny Smith,,,,,2.5,IN,0,8,5,LB,Soft-Net,Box,40,LB,,,WX,,,Controlled Atmosphere,,,,,"WA XF 8/5# BAG SOFT NET CA GRANNY 2 1/2"""
+CAGRWXN5100,Apples,Granny Smith,,,,,100,CT,0,120,5,LB,Soft-Net,Tote Bin,600,LB,,,WX,,,Controlled Atmosphere,,,,,"WA XF 120/5# TOTE S-NET CA GRANNY 2 1/2"""
+CAGRWXN5D12,Apples,Granny Smith,,,,,2.5,IN,0,120,5,LB,Soft-Net,Tote Bin,600,LB,,,WX,,,Controlled Atmosphere,,,,,"WA XF SOFT NET 5LB BAGS TOTE CA GRANNY SMITH  2 1/2"""
+CAGRWXT5D12,Apples,Granny Smith,,,,,2.5,IN,0,120,5,LB,Poly Bag,Tote Bin,600,LB,,,WX,,,Controlled Atmosphere,,,,,"WA XF 5LB BAG TOTE CA GRANNY 2 1/2"""
+CAGRWXTP056,Apples,Granny Smith,,,,,56,CT,56,4,14,CT,Tray,Box,40,LB,,,WX,,,Controlled Atmosphere,,,,,WA XF TRAY CA GRANNY SMITH 56
+CAGRWXTP064,Apples,Granny Smith,,,,,64,CT,64,4,16,CT,Tray,Box,40,LB,,,WX,,,Controlled Atmosphere,,,,,WA XF TRAY CA GRANNY SMITH 64
+CAGRWXTP072,Apples,Granny Smith,,,,,72,CT,72,4,18,CT,Tray,Box,40,LB,,,WX,,,Controlled Atmosphere,,,,,WA XF TRAY CA GRANNY SMITH 72
+CAGRWXTP080,Apples,Granny Smith,,,,,80,CT,80,4,20,CT,Tray,Box,40,LB,,,WX,,,Controlled Atmosphere,,,,,WA XF TRAY CA GRANNY SMITH 80
+CAGRWXTP088,Apples,Granny Smith,,,,,88,CT,88,4,22,CT,Tray,Box,40,LB,,,WX,,,Controlled Atmosphere,,,,,WA XF TRAY CA GRANNY SMITH 88
+CAGRWXTP100,Apples,Granny Smith,,,,,100,CT,100,5,20,CT,Tray,Box,40,LB,,,WX,,,Controlled Atmosphere,,,,,WA XF TRAY CA GRANNY SMITH 100
+CAGRWXTP113,Apples,Granny Smith,,,,,113,CT,113,5,22,CT,Tray,Box,40,LB,,,WX,,,Controlled Atmosphere,,,,,WA XF TRAY CA GRANNY SMITH 113
+CAGRWXTP125,Apples,Granny Smith,,,,,125,CT,125,5,25,CT,Tray,Box,40,LB,,,WX,,,Controlled Atmosphere,,,,,WA XF TRAY CA GRANNY SMITH 125
+CAJGCXTP072,Apples,Jonagold,,,,,72,CT,72,4,18,CT,Tray,Box,40,LB,,,CX,,,Controlled Atmosphere,,,,,WA XF PREMIUM TRAY CA JONAGOLD 72
+CAJGCXTP088,Apples,Jonagold,,,,,88,CT,88,4,22,CT,Tray,Box,40,LB,,,CX,,,Controlled Atmosphere,,,,,WA XF TRAY CA RED JONAGOLD 88
+CAJGWX84100,Apples,Jonagold,,,,,100,CT,0,0,,LB,Box,Pallet,840,LB,,,WX,,,Controlled Atmosphere,,,,,WA XF 840LB UNIT CA JONAGOLD 100
+CAJGWXB8D12,Apples,Jonagold,,,,,2.5,IN,0,8,5,LB,Poly Bag,Box,40,LB,,,WX,,,Controlled Atmosphere,,,,,"WA XF 8/5LB BAGS CA JONAGOLD 2 1/2"""
+CAJGWXEU050,Apples,Jonagold,,,,,50,CT,50,2,25,CT,Tray,Box,28,LB,,,WX,,,Controlled Atmosphere,,,,,WA XF EURO CA JONAGOLD 50
+CAJGWXEU060,Apples,Jonagold,,,,,60,CT,60,2,30,CT,Tray,Box,28,LB,,,WX,,,Controlled Atmosphere,,,,,WA XF EURO CA JONAGOLD 60
+CAJGWXM3125,Apples,Jonagold,,,,,125,CT,125,12,3,LB,Soft-Net,Box,36,LB,,,WX,,,Controlled Atmosphere,,,,,"WA XF12/3LB SOFT NET CA JONAGOLD 2 1/2"""
+CAJGWXM5100,Apples,Jonagold,,,,,100,CT,100,8,5,LB,Soft-Net,Box,40,LB,,,WX,,,Controlled Atmosphere,,,,,"WA XF 8/5LB SOFT NET CA JONAGOLD 2 1/2"""
+CAJGWXM5113,Apples,Jonagold,,,,,113,CT,113,8,5,LB,Soft-Net,Box,40,LB,,,WX,,,Controlled Atmosphere,,,,,"WA XF 8/5LB SOFT NET CA JONAGOLD 2 1/2"""
+CAJGWXTP072,Apples,Jonagold,,,,,72,CT,72,4,18,CT,Tray,Box,40,LB,,,WX,,,Controlled Atmosphere,,,,,WA XF TRAY CA JONAGOLD 72
+CAJGWXTP080,Apples,Jonagold,,,,,80,CT,80,4,20,CT,Tray,Box,40,LB,,,WX,,,Controlled Atmosphere,,,,,WA XF TRAY CA JONAGOLD 80
+CAJGWXTP088,Apples,Jonagold,,,,,88,CT,88,4,22,CT,Tray,Box,40,LB,,,WX,,,Controlled Atmosphere,,,,,WA XF TRAY CA JONAGOLD 88
+CAMCFYTP088,Apples,Macintosh,,,,,88,CT,88,4,22,CT,Tray,Box,40,LB,,,FY,,,Controlled Atmosphere,,,,,CA MACINTOSH FANCY TRAY PACK 88 COUNT
+CAMCFYTP100,Apples,Macintosh,,,,,100,CT,100,5,20,CT,Tray,Box,40,LB,,,FY,,,Controlled Atmosphere,,,,,CA MACINTOSH FANCY TRAY PACK 100 COUNT
+CAMCWXTP080,Apples,Macintosh,,,,,80,CT,80,4,20,CT,Tray,Box,40,LB,,,WX,,,Controlled Atmosphere,,,,,WA XF CA MACINTOSH TRAY PACK 80
+CAMCWXTP088,Apples,Macintosh,,,,,88,CT,88,4,22,CT,Tray,Box,40,LB,,,WX,,,Controlled Atmosphere,,,,,WA XF TRAY PACK CA MACINTOSH 88
+CAMCWXTP100,Apples,Macintosh,,,,,100,CT,100,5,20,CT,Tray,Box,40,LB,,,WX,,,Controlled Atmosphere,,,,,WA XF TRAY CA MACINTOSH 100
+CAMTWXI5D12,Apples,Multi-Variety,,,,,2.5,IN,0,128,5,LB,Soft-Net,Tote Bin,640,LB,,,WX,,,Controlled Atmosphere,,,,,"WA XF CA MULTI-VRTY  5LB SOFT NET TOTE 2 1/2"""
+CAPLCXTP072,Apples,Pink Lady,,,,,72,CT,72,4,18,CT,Tray,Box,40,LB,,,CX,,,Controlled Atmosphere,,,,,WA XF PREMIUM TRAY CA PINK LADY 72
+CAPLCXTP080,Apples,Pink Lady,,,,,80,CT,80,4,20,CT,Tray,Box,40,LB,,,CX,,,Controlled Atmosphere,,,,,WA XF PREMIUM TRAY CA  PINK LADY  80
+CAPLCXTP088,Apples,Pink Lady,,,,,88,CT,88,4,22,CT,Tray,Box,40,LB,,,CX,,,Controlled Atmosphere,,,,,WA XF PREMIUM TRAY CA  PINK LADY 88
+CAPLUXTP072,Apples,Pink Lady,,,,,72,CT,72,4,18,CT,Tray,Box,40,LB,,,UX,,,Controlled Atmosphere,,,,,US XF TRAY PACK CA PINK LADY 72
+CAPLUXTP080,Apples,Pink Lady,,,,,80,CT,80,4,20,CT,Tray,Box,40,LB,,,UX,,,Controlled Atmosphere,,,,,US XF TRAY PACK CA PINK LADY 80
+CAPLUXTP088,Apples,Pink Lady,,,,,88,CT,88,4,22,CT,Tray,Box,40,LB,,,UX,,,Controlled Atmosphere,,,,,US XF TRAY PACK CA PINK LADY 88
+CAPLWXB3D12,Apples,Pink Lady,,,,,2.5,IN,0,12,3,LB,Poly Bag,Box,36,LB,,,WX,,,Controlled Atmosphere,,,,,"WA XF 12/3LB BAGS CA PINK LADY 2 1/2"""
+CAPLWXEU050,Apples,Pink Lady,,,,,50,CT,50,2,25,CT,Tray,Box,28,LB,,,WX,,,Controlled Atmosphere,,,,,WA XF EURO CA PINK LADY 50
+CAPLWXEU060,Apples,Pink Lady,,,,,60,CT,60,2,30,CT,Tray,Box,28,LB,,,WX,,,Controlled Atmosphere,,,,,WA XF EURO CA PINK LADY 60
+CAPLWXM3125,Apples,Pink Lady,,,,,125,CT,125,12,3,LB,Soft-Net,Box,36,LB,,,WX,,,Controlled Atmosphere,,,,,"WA XF 12/3LB SOFT NET CA PINK LADY 2 1/2"""
+CAPLWXM3138,Apples,Pink Lady,,,,,138,CT,138,12,3,LB,Soft-Net,Box,36,LB,,,WX,,,Controlled Atmosphere,,,,,"WA XF 12/3LB SOFT NET CA PINK LADY 2 1/2"""
+CAPLWXM5113,Apples,Pink Lady,,,,,113,CT,113,8,5,LB,Soft-Net,Box,40,LB,,,WX,,,Controlled Atmosphere,,,,,"WA XF 8/5LB SOFT NET CA PINK LADY 2 1/2"""
+CAPLWXTP072,Apples,Pink Lady,,,,,72,CT,72,4,18,CT,Tray,Box,40,LB,,,WX,,,Controlled Atmosphere,,,,,WA XF TRAY PACK CA PINK LADY 72
+CAPLWXTP080,Apples,Pink Lady,,,,,80,CT,80,4,20,CT,Tray,Box,40,LB,,,WX,,,Controlled Atmosphere,,,,,WA XF TRAY PACK CA PINK LADY 80
+CAPLWXTP088,Apples,Pink Lady,,,,,88,CT,88,4,22,CT,Tray,Box,40,LB,,,WX,,,Controlled Atmosphere,,,,,WA XF TRAY PACK CA PINK LADY 88
+CAPLWXTP100,Apples,Pink Lady,,,,,100,CT,100,5,20,CT,Tray,Box,40,LB,,,WX,,,Controlled Atmosphere,,,,,WA XF TRAY PACK CA PINK LADY 100
+CARAU1C2035,Pears,Red D'anjou Pears,,,,,35,CT,35,2,17,CT,Tray,Box,20,LB,,,U1,,,Controlled Atmosphere,,,,,US#1 WRAP CA 1/2 CARTON RED ANJOU 35
+CARAU1C2040,Pears,Red D'anjou Pears,,,,,40,CT,40,2,20,CT,Tray,Box,20,LB,,,U1,,,Controlled Atmosphere,,,,,US#1 WRAP CA 1/2 CARTON RED ANJOU 40
+CARAU1C2045,Pears,Red D'anjou Pears,,,,,45,CT,45,2,22,CT,Tray,Box,20,LB,,,U1,,,Controlled Atmosphere,,,,,US#1 WRAP CA 1/2 CARTON RED ANJOU 45
+CARAU1C2050,Pears,Red D'anjou Pears,,,,,50,CT,50,2,25,CT,Tray,Box,20,LB,,,U1,,,Controlled Atmosphere,,,,,US#1 WRAP CA 1/2 CARTON RED ANJOU 50
+CARAU1HT040,Pears,Red D'anjou Pears,,,,,40,CT,40,5,8,CT,Tray,Box,20,LB,,,U1,,,Controlled Atmosphere,,,,,US #1 HALF TRAY CA RED D'ANJOU 40
+CARAU1HT045,Pears,Red D'anjou Pears,,,,,45,CT,45,5,9,CT,Tray,Box,20,LB,,,U1,,,Controlled Atmosphere,,,,,US #1 HALF TRAY CA RED D'ANJOU 45
+CARAU1TP045,Pears,Red D'anjou Pears,,,,,45,CT,45,4,11,CT,Tray,Box,40,LB,,,U1,,,Controlled Atmosphere,,,,,US#1 TRAY CA 1/2 CARTON RED ANJOU 45
+CARAU1TP060,Pears,Red D'anjou Pears,,,,,60,CT,60,4,15,CT,Tray,Box,40,LB,,,U1,,,Controlled Atmosphere,,,,,US#1 TRAY CA RED ANJOU 60
+CARAU1TP070,Pears,Red D'anjou Pears,,,,,70,CT,70,4,17,CT,Tray,Box,40,LB,,,U1,,,Controlled Atmosphere,,,,,US#1 TRAY CA RED ANJOU 70
+CARAU1TP080,Pears,Red D'anjou Pears,,,,,80,CT,80,4,20,CT,Tray,Box,40,LB,,,U1,,,Controlled Atmosphere,,,,,US#1 TRAY CA RED ANJOU 80
+CARAU1WP060,Pears,Red D'anjou Pears,,,,,60,CT,60,4,15,CT,Tray,Box,40,LB,,,U1,,,Controlled Atmosphere,,,,,US #1 WRAP PACK CA RED D'ANJOU 60
+CARAU1WP070,Pears,Red D'anjou Pears,,,,,70,CT,70,4,17,CT,Tray,Box,40,LB,,,U1,,,Controlled Atmosphere,,,,,US #1 WRAP PACK CA RED D'ANJOU 70
+CARAU1WP080,Pears,Red D'anjou Pears,,,,,80,CT,80,4,20,CT,Tray,Box,40,LB,,,U1,,,Controlled Atmosphere,,,,,US #1 WRAP PACK CA RED D'ANJOU 80
+CARDCX84072,Apples,Red Delicious,,,,,72,CT,0,0,,LB,Box,Pallet,840,LB,,,CX,,,Controlled Atmosphere,,,,,WA XF PREMIUM 840LB UNIT CA RED 72
+CARDCX84080,Apples,Red Delicious,,,,,80,CT,0,0,,LB,Box,Pallet,840,LB,,,CX,,,Controlled Atmosphere,,,,,WA XF PREMIUM BIKINI 840LB UNIT CA RED DEL 80
+CARDCX84088,Apples,Red Delicious,,,,,88,CT,0,0,,LB,Box,Pallet,840,LB,,,CX,,,Controlled Atmosphere,,,,,WA XF PREMIUM BIKINI 840LB UNIT CA RED DEL 88
+CARDCXB8D12,Apples,Red Delicious,,,,,2.5,IN,0,8,5,LB,Poly Bag,Box,40,LB,,,CX,,,Controlled Atmosphere,,,,,WA XF PREMIUM 8/5LB BAG CA RED DEL 2 1/2
+CARDCXTP048,Apples,Red Delicious,,,,,48,CT,48,4,12,CT,Tray,Box,40,LB,,,CX,,,Controlled Atmosphere,,,,,WA XF PREMIUM TRAY CA RED DEL 48
+CARDCXTP056,Apples,Red Delicious,,,,,56,CT,56,4,14,CT,Tray,Box,40,LB,,,CX,,,Controlled Atmosphere,,,,,WA XF PREMIUM TRAY CA RED DEL 56
+CARDCXTP064,Apples,Red Delicious,,,,,64,CT,64,4,16,CT,Tray,Box,40,LB,,,CX,,,Controlled Atmosphere,,,,,WA XF PREMIUM TRAY CA RED DEL 64
+CARDCXTP072,Apples,Red Delicious,,,,,72,CT,72,4,18,CT,Tray,Box,40,LB,,,CX,,,Controlled Atmosphere,,,,,WA XF PREMIUM TRAY CA RED DEL 72
+CARDCXTP080,Apples,Red Delicious,,,,,80,CT,80,4,20,CT,Tray,Box,40,LB,,,CX,,,Controlled Atmosphere,,,,,WA XF PREMIUM TRAY CA RED DEL 80
+CARDCXTP088,Apples,Red Delicious,,,,,88,CT,88,4,22,CT,Tray,Box,40,LB,,,CX,,,Controlled Atmosphere,,,,,WA XF PREMIUM TRAY CA RED DEL 88
+CARDCXTP100,Apples,Red Delicious,,,,,100,CT,100,5,20,CT,Tray,Box,40,LB,,,CX,,,Controlled Atmosphere,,,,,WA XF PREMIUM TRAY CA RED DEL 100
+CARDCXTP113,Apples,Red Delicious,,,,,113,CT,113,5,22,CT,Tray,Box,40,LB,,,CX,,,Controlled Atmosphere,,,,,WA XF PREMIUM TRAY CA RED DEL 113
+CARDCXTP125,Apples,Red Delicious,,,,,125,CT,125,5,25,CT,Tray,Box,40,LB,,,CX,,,Controlled Atmosphere,,,,,WA XF PREMIUM TRAY CA RED DEL 125
+CARDUXB5D12,Apples,Red Delicious,,,,,2.5,IN,0,8,5,LB,Poly Bag,Box,40,LB,,,UX,,,Controlled Atmosphere,,,,,"US XF 5LB BAG RED DELICIOUS 2 1/2"""
+CARDUXT7D12,Apples,Red Delicious,,,,,2.5,IN,0,0,,LB,Bulk,Tote Bin,640,LB,,,UX,,,Controlled Atmosphere,,,,,"US XF 700LB LOOSE TOTE CA RED DEL 2 1/2"""
+CARDUXTP088,Apples,Red Delicious,,,,,88,CT,88,4,22,CT,Tray,Box,40,LB,,,UX,,,Controlled Atmosphere,,,,,US XF TRAY CA RED DELICIOUS 88
+CARDUXTP113,Apples,Red Delicious,,,,,113,CT,113,5,22,CT,Tray,Box,40,LB,,,UX,,,Controlled Atmosphere,,,,,US XF TRAY CA RED DELICIOUS 113
+CARDW2B8D12,Apples,Red Delicious,,,,,2.5,IN,0,8,5,LB,Poly Bag,Box,40,LB,,,W2,,,Controlled Atmosphere,,,,,"WA XF 8/5 CA RED DEL 2 1/2"""
+CARDW2T5D12,Apples,Red Delicious,,,,,2.5,IN,0,120,5,LB,Poly Bag,Tote Bin,600,LB,,,W2,,,Controlled Atmosphere,,,,,WAXF 5LB BAG TOTE CA RED DEL. 2 1/2 Y/C
+CARDW2TP064,Apples,Red Delicious,,,,,64,CT,64,4,16,CT,Tray,Box,40,LB,,,W2,,,Controlled Atmosphere,,,,,WA XF TRAY CA RED DELICIOUS 64
+CARDW2TP072,Apples,Red Delicious,,,,,72,CT,72,4,18,CT,Tray,Box,40,LB,,,W2,,,Controlled Atmosphere,,,,,WA XF TRAY CA RED DELICIOUS 72
+CARDW2TP080,Apples,Red Delicious,,,,,80,CT,80,4,20,CT,Tray,Box,40,LB,,,W2,,,Controlled Atmosphere,,,,,WA XF TRAY CA RED DELICIOUS 80
+CARDW2TP088,Apples,Red Delicious,,,,,88,CT,88,4,22,CT,Tray,Box,40,LB,,,W2,,,Controlled Atmosphere,,,,,WA XF TRAY CA RED DELICIOUS 88
+CARDW2TP113,Apples,Red Delicious,,,,,113,CT,113,5,22,CT,Tray,Box,40,LB,,,W2,,,Controlled Atmosphere,,,,,WA XF TRAY CA RED DELICIOUS 113
+CARDW2TP125,Apples,Red Delicious,,,,,125,CT,125,5,25,CT,Tray,Box,40,LB,,,W2,,,Controlled Atmosphere,,,,,WA XF TRAY CA RED DELICIOUS 125
+CARDWX2L040,Apples,Red Delicious,,,,,40,CT,40,2,20,CT,Tray,Box,20,LB,,,WX,,,Controlled Atmosphere,,,,,WA XF 2-LAYER CA RED DELICIOUS 40
+CARDWX58D12,Apples,Red Delicious,,,,,2.5,IN,0,5,8,LB,Poly Bag,Box,40,LB,,,WX,,,Controlled Atmosphere,,,,,"WA XF 5/8LB BAG CA RED DEL 2 1/2"""
+CARDWX84072,Apples,Red Delicious,,,,,72,CT,0,0,,LB,Box,Pallet,840,LB,,,WX,,,Controlled Atmosphere,,,,,WA XF 840LB UNIT CA RED DELICIOUS 72
+CARDWX84080,Apples,Red Delicious,,,,,80,CT,0,0,,LB,Box,Pallet,840,LB,,,WX,,,Controlled Atmosphere,,,,,WA XF 840LB UNIT CA RED DELICIOUS 80
+CARDWX84088,Apples,Red Delicious,,,,,88,CT,0,0,,LB,Box,Pallet,840,LB,,,WX,,,Controlled Atmosphere,,,,,WA XF 840LB UNIT CA RED DELICIOUS 88
+CARDWXB3D12,Apples,Red Delicious,,,,,2.5,IN,0,12,3,LB,Poly Bag,Box,36,LB,,,WX,,,Controlled Atmosphere,,,,,"WA XF 12/3LB BAG CA RED DEL 2 1/2"""
+CARDWXB3D14,Apples,Red Delicious,,,,,2.25,IN,0,12,3,LB,Poly Bag,Box,36,LB,,,WX,,,Controlled Atmosphere,,,,,"WA XF 12/3LB BAG CA RED DEL 2 1/4"""
+CARDWXB4D12,Apples,Red Delicious,,,,,2.5,IN,0,4,10,LB,Poly Bag,Box,40,LB,,,WX,,,Controlled Atmosphere,,,,,"WA XF 4/10LB BAG CA RED DEL 2 1/2"""
+CARDWXB5D12,Apples,Red Delicious,,,,,2.5,IN,0,8,5,LB,Poly Bag,Box,40,LB,,,WX,,,Controlled Atmosphere,,,,,"WA XF 5LB BAG CA RED DEL 2 1/2"""
+CARDWXB8D12,Apples,Red Delicious,,,,,2.5,IN,0,8,5,LB,Poly Bag,Box,40,LB,,,WX,,,Controlled Atmosphere,,,,,"WA XF 8/5LB BAG CA RED DEL 2 1/2"""
+CARDWXC2044,Apples,Red Delicious,,,,,44,CT,44,2,22,CT,Tray,Box,20,LB,,,WX,,,Controlled Atmosphere,,,,,WA XF 1/2 CRTN CA RED DELICIOUS 44
+CARDWXEU050,Apples,Red Delicious,,,,,50,CT,50,2,25,CT,Tray,Box,28,LB,,,WX,,,Controlled Atmosphere,,,,,WA XF EURO CA RED DELICIOUS 50
+CARDWXEU060,Apples,Red Delicious,,,,,60,CT,60,2,30,CT,Tray,Box,28,LB,,,WX,,,Controlled Atmosphere,,,,,WA XF EURO CA RED DELICIOUS  60
+CARDWXG1022,Apples,Red Delicious,,,,,22,CT,22,1,22,CT,Tray,Box,10,LB,,,WX,,,Controlled Atmosphere,,,,,WA XF 1-LAYER GIFT CA RED DELICIOUS 22
+CARDWXM3100,Apples,Red Delicious,,,,,100,CT,100,12,3,LB,Soft-Net,Box,36,LB,,,WX,,,Controlled Atmosphere,,,,,"WA XF 12/3LB SOFT NET CA RED 2 1/2"""
+CARDWXM3113,Apples,Red Delicious,,,,,113,CT,113,12,3,LB,Soft-Net,Box,36,LB,,,WX,,,Controlled Atmosphere,,,,,"WA XF 12/3LB SOFT NET CA RED DEL 2 1/2"""
+CARDWXM3125,Apples,Red Delicious,,,,,125,CT,125,12,3,LB,Soft-Net,Box,36,LB,,,WX,,,Controlled Atmosphere,,,,,"WAXF 12/3LB SOFT NET CA RED DEL 2 1/2"""
+CARDWXM3138,Apples,Red Delicious,,,,,138,CT,138,12,3,LB,Soft-Net,Box,36,LB,,,WX,,,Controlled Atmosphere,,,,,"WA XF 12/3LB SOFT NET CA RED DEL. 2 1/2"""
+CARDWXM3D12,Apples,Red Delicious,,,,,2.5,IN,0,12,3,LB,Soft-Net,Box,36,LB,,,WX,,,Controlled Atmosphere,,,,,WA XF 12-3# SOFT NET BAGS CA RED DELICIOUS 2 1/2
+CARDWXM5072,Apples,Red Delicious,,,,,72,CT,72,8,5,LB,Soft-Net,Box,40,LB,,,WX,,,Controlled Atmosphere,,,,,"WA XF 8/5LB SOFT NET CA RED DEL 2 1/2"""
+CARDWXM5080,Apples,Red Delicious,,,,,80,CT,80,8,5,LB,Soft-Net,Box,40,LB,,,WX,,,Controlled Atmosphere,,,,,"WA XF 8/5LB SOFT NET CA RED DEL 2 5/8"""
+CARDWXM5088,Apples,Red Delicious,,,,,88,CT,88,8,5,LB,Soft-Net,Box,40,LB,,,WX,,,Controlled Atmosphere,,,,,WA XF 8/5 LB. SOFT NET BAG CA RED DEL. 2 1/2
+CARDWXM5100,Apples,Red Delicious,,,,,100,CT,100,8,5,LB,Soft-Net,Box,40,LB,,,WX,,,Controlled Atmosphere,,,,,"WA XF 8/5LB SOFT NET CA RED DEL 2 1/2"""
+CARDWXM5113,Apples,Red Delicious,,,,,113,CT,113,8,5,LB,Soft-Net,Box,40,LB,,,WX,,,Controlled Atmosphere,,,,,"WA XF 8/5LB SOFT NET CA RED DEL 2 1/2"""
+CARDWXM5125,Apples,Red Delicious,,,,,125,CT,125,8,5,LB,Soft-Net,Box,40,LB,,,WX,,,Controlled Atmosphere,,,,,"WA XF 8/5LB SOFT NET CA RED DEL 2 1/2"""
+CARDWXM5D12,Apples,Red Delicious,,,,,2.5,IN,0,8,5,LB,Soft-Net,Box,40,LB,,,WX,,,Controlled Atmosphere,,,,,"WA XF 8/5LB SOFT NET BAGS CA RED DEL 2 1/2"""
+CARDWXM5D58,Apples,Red Delicious,,,,,2.625,IN,0,8,5,LB,Soft-Net,Box,40,LB,,,WX,,,Controlled Atmosphere,,,,,WAXF 8/5LB SOFT NET BAG CA RED DEL 2 5/8
+CARDWXM8088,Apples,Red Delicious,,,,,88,CT,88,5,8,LB,Soft-Net,Box,40,LB,,,WX,,,Controlled Atmosphere,,,,,"WA XF 5/8LB SOFT NET CA RED DEL 2 1/2"""
+CARDWXM8100,Apples,Red Delicious,,,,,100,CT,100,5,8,LB,Soft-Net,Box,40,LB,,,WX,,,Controlled Atmosphere,,,,,"WA XF 5/8LB SOFT NET CA RED DEL 2 1/2"""
+CARDWXM8D12,Apples,Red Delicious,,,,,2.5,IN,0,5,8,LB,Soft-Net,Box,40,LB,,,WX,,,Controlled Atmosphere,,,,,"WA XF 8/5LB SOFT NET BAGS CA RED DEL 2 1/2"""
+CARDWXN5100,Apples,Red Delicious,,,,,100,CT,0,120,5,LB,Soft-Net,Tote Bin,600,LB,,,WX,,,Controlled Atmosphere,,,,,"WA XF 120/5# TOTE NET CA RED DELICIOUS 2 1/2"""
+CARDWXN5D12,Apples,Red Delicious,,,,,2.5,IN,0,120,5,LB,Soft-Net,Tote Bin,600,LB,,,WX,,,Controlled Atmosphere,,,,,"WAXF 5LB SOFT NET BAG TOTE CA RED DEL 2 1/2"""
+CARDWXT5D12,Apples,Red Delicious,,,,,2.5,IN,0,120,5,LB,Poly Bag,Tote Bin,600,LB,,,WX,,,Controlled Atmosphere,,,,,"WAXF 5LB BAG TOTE CA RED DEL 2 1/2"""
+CARDWXTP048,Apples,Red Delicious,,,,,48,CT,48,4,12,CT,Tray,Box,40,LB,,,WX,,,Controlled Atmosphere,,,,,WA XF TRAY CA RED DELICIOUS 48
+CARDWXTP056,Apples,Red Delicious,,,,,56,CT,56,4,14,CT,Tray,Box,40,LB,,,WX,,,Controlled Atmosphere,,,,,WA XF TRAY CA RED DELICIOUS 56
+CARDWXTP064,Apples,Red Delicious,,,,,64,CT,64,4,16,CT,Tray,Box,40,LB,,,WX,,,Controlled Atmosphere,,,,,WA XF TRAY CA RED DELICIOUS 64
+CARDWXTP072,Apples,Red Delicious,,,,,72,CT,72,4,18,CT,Tray,Box,40,LB,,,WX,,,Controlled Atmosphere,,,,,WA XF TRAY CA RED DELICIOUS 72
+CARDWXTP080,Apples,Red Delicious,,,,,80,CT,80,4,20,CT,Tray,Box,40,LB,,,WX,,,Controlled Atmosphere,,,,,WA XF TRAY CA RED DELICIOUS 80
+CARDWXTP088,Apples,Red Delicious,,,,,88,CT,88,4,22,CT,Tray,Box,40,LB,,,WX,,,Controlled Atmosphere,,,,,WA XF TRAY CA RED DELICIOUS 88
+CARDWXTP100,Apples,Red Delicious,,,,,100,CT,100,5,20,CT,Tray,Box,40,LB,,,WX,,,Controlled Atmosphere,,,,,WA XF TRAY CA RED DELICIOUS 100
+CARDWXTP113,Apples,Red Delicious,,,,,113,CT,113,5,22,CT,Tray,Box,40,LB,,,WX,,,Controlled Atmosphere,,,,,WA XF TRAY CA RED DELICIOUS 113
+CARDWXTP125,Apples,Red Delicious,,,,,125,CT,125,5,25,CT,Tray,Box,40,LB,,,WX,,,Controlled Atmosphere,,,,,WA XF TRAY CA RED DELICIOUS 125
+CARDWXTP138,Apples,Red Delicious,,,,,138,CT,138,5,27,CT,Tray,Box,40,LB,,,WX,,,Controlled Atmosphere,,,,,WA XF TRAY CA RED DELICIOUS 138
+CARRCXB3D12,Apples,Red Rome Beauty,,,,,2.5,IN,0,12,3,LB,Poly Bag,Box,36,LB,,,CX,,,Controlled Atmosphere,,,,,"WA XF 12/3LB BAG CA RED ROME 2 1/2"""
+CARRCXTP064,Apples,Red Rome Beauty,,,,,64,CT,64,4,16,CT,Tray,Box,40,LB,,,CX,,,Controlled Atmosphere,,,,,WA XF TRAY CA RED ROME 64
+CARRCXTP072,Apples,Red Rome Beauty,,,,,72,CT,72,4,18,CT,Tray,Box,40,LB,,,CX,,,Controlled Atmosphere,,,,,WA XF TRAY CA RED ROME 72
+CARRWXB3D12,Apples,Red Rome Beauty,,,,,2.5,IN,0,12,3,LB,Poly Bag,Box,36,LB,,,WX,,,Controlled Atmosphere,,,,,"WA XF 12/3LB BAG CA ROMES 2 1/2"""
+CARRWXTP064,Apples,Red Rome Beauty,,,,,64,CT,64,4,16,CT,Tray,Box,40,LB,,,WX,,,Controlled Atmosphere,,,,,WA XF TRAY CA RED ROMES 64
+CARRWXTP072,Apples,Red Rome Beauty,,,,,72,CT,72,4,18,CT,Tray,Box,40,LB,,,WX,,,Controlled Atmosphere,,,,,WA XF TRAY CA RED ROMES 72
+CARRWXTP080,Apples,Red Rome Beauty,,,,,80,CT,80,4,20,CT,Tray,Box,40,LB,,,WX,,,Controlled Atmosphere,,,,,WA XF TRAY CA RED ROMES 80
+RG3XWX84088,Apples,Fuji/Granny mix,,,,,88,CT,0,0,,LB,Box,Pallet,840,LB,,,WX,,,,,,,,WA XF 840LB UNIT RG FUJI/GRANNY 88
+RG4XWX84D12,Apples,Golden/Cameo Mix,,,,,2.5,IN,0,0,,LB,Box,Pallet,840,LB,,,WX,,,,,,,,"WA XF 840LB UNIT RG GOLDEN/CAMEO 2 1/2"""
+RGAJFYT7D18,Pears,D'anjou Pears,,,,,2.125,IN,0,0,,LB,Bulk,Tote Bin,640,LB,,,FY,,,,,,,,"FANCY 650LB LOOSE TOTE D'ANJOU 2 1/8"""
+RGAJU12L045,Pears,D'anjou Pears,,,,,45,CT,45,2,22,CT,Tray,Box,20,LB,,,U1,,,,,,,,US #1 TWO LAYER D'ANJOU 45
+RGAJU1B3D12,Pears,D'anjou Pears,,,,,2.5,IN,0,12,3,LB,Poly Bag,Box,36,LB,,,U1,,,,,,,,US #1 12/3 D'ANJOU 2 1/2
+RGAJU1B3D18,Pears,D'anjou Pears,,,,,2.125,IN,0,12,3,LB,Poly Bag,Box,36,LB,,,U1,,,,,,,,"US#1 12/3LB D'ANJOU 2 1/8"""
+RGAJU1C2040,Pears,D'anjou Pears,,,,,40,CT,40,2,20,CT,Tray,Box,20,LB,,,U1,,,,,,,,US#1 WRAP 1/2 CRTN D'ANJOU 40
+RGAJU1C2045,Pears,D'anjou Pears,,,,,45,CT,45,2,22,CT,Tray,Box,20,LB,,,U1,,,,,,,,US#1 WRAP 1/2 CRTN D'ANJOU 45
+RGAJU1M5090,Pears,D'anjou Pears,,,,,90,CT,90,8,5,LB,Soft-Net,Box,40,LB,,,U1,,,,,,,,"US #1 8/5LB SOFT NET  D'ANJOU 2 1/2"""
+RGAJU1M5D12,Pears,D'anjou Pears,,,,,2.5,IN,0,8,5,LB,Soft-Net,Box,40,LB,,,U1,,,,,,,,"US #1 5LB SOFT NET BAG D'ANJOU 2 1/2"""
+RGAJU1TP060,Pears,D'anjou Pears,,,,,60,CT,60,4,15,CT,Tray,Box,40,LB,,,U1,,,,,,,,US#1 TRAY D'ANJOU 60
+RGAJU1TP070,Pears,D'anjou Pears,,,,,70,CT,70,4,17,CT,Tray,Box,40,LB,,,U1,,,,,,,,US#1 TRAY D'ANJOU 70
+RGAJU1TP080,Pears,D'anjou Pears,,,,,80,CT,80,4,20,CT,Tray,Box,40,LB,,,U1,,,,,,,,US#1 TRAY D'ANJOU 80
+RGAJU1TP090,Pears,D'anjou Pears,,,,,90,CT,90,4,22,CT,Tray,Box,40,LB,,,U1,,,,,,,,US#1 TRAY D'ANJOU 90
+RGAJU1WP060,Pears,D'anjou Pears,,,,,60,CT,60,4,15,CT,Tray,Box,40,LB,,,U1,,,,,,,,US#1 WRAP D'ANJOU 60
+RGAJU1WP070,Pears,D'anjou Pears,,,,,70,CT,70,4,17,CT,Tray,Box,40,LB,,,U1,,,,,,,,US#1 WRAP D'ANJOU 70
+RGAJU1WP080,Pears,D'anjou Pears,,,,,80,CT,80,4,20,CT,Tray,Box,40,LB,,,U1,,,,,,,,US#1 WRAP D'ANJOU 80
+RGAJU1WP090,Pears,D'anjou Pears,,,,,90,CT,90,4,22,CT,Tray,Box,40,LB,,,U1,,,,,,,,US#1 WRAP D'ANJOU 90
+RGAKWXTP100,Pears,Akane,,,,,100,CT,100,5,20,CT,Tray,Box,40,LB,,,WX,,,,,,,,RG AKANE WA EXTRA FANCY TRAY PACK 100
+RGAOUXB5D12,Apples/Oranges,Apple/Orange Mix,,,,,2.5,IN,0,8,5,LB,Poly Bag,Box,40,LB,,,UX,,,,,,,,US XF 5/8LB BAG APPLE/ORANGE 2 1/2
+RGAOUXB8D12,Apples/Oranges,Apple/Orange Mix,,,,,2.5,IN,0,8,5,LB,Poly Bag,Box,40,LB,,,UX,,,,,,,,RG APPLE/ORANGE US EXTRA FANCY  8/5LB
+RGAOUXM5088,Apples/Oranges,Apple/Orange Mix,,,,,88,CT,88,8,5,LB,Soft-Net,Box,40,LB,,,UX,,,,,,,,"US XF 8/5LB SOFT NET APPLE/ORANGE MIX 2 1/2"""
+RGAOUXM5100,Apples/Oranges,Apple/Orange Mix,,,,,100,CT,100,8,5,LB,Soft-Net,Box,40,LB,,,UX,,,,,,,,"US XF 8/5LB SOFT NET APPLE/ORANGE MIX 2 1/2"""
+RGAOUXN5088,Apples/Oranges,Apple/Orange Mix,,,,,88,CT,0,120,5,LB,Soft-Net,Tote Bin,600,LB,,,UX,,,,,,,,"US XF 120/5LB TOTE NET APPLE/ORAN 2 1/2"""
+RGAOUXN5D12,Apples/Oranges,Apple/Orange Mix,,,,,2.5,IN,0,120,5,LB,Soft-Net,Tote Bin,600,LB,,,UX,,,,,,,,"US XF 120/5LB SOFT NET APPLO/ORANGE MIX 2 1/2"""
+RGARUXB8D12,Apples,Red/Granny Mix,,,,,2.5,IN,0,8,5,LB,Poly Bag,Box,40,LB,,,UX,,,,,,,,RG RED/GRANNY US EXTRA FANCY  8/5LB
+RGARUXM5088,Apples,Red/Granny Mix,,,,,88,CT,88,8,5,LB,Soft-Net,Box,40,LB,,,UX,,,,,,,,"US XF 8/5LB SOFT NET RED/GRANNY 2 1/2"""
+RGARUXM5100,Apples,Red/Granny Mix,,,,,100,CT,100,8,5,LB,Soft-Net,Box,40,LB,,,UX,,,,,,,,"US XF 8/5LB SOFT NET RED/GRANNY 2 1/2"""
+RGARWX84100,Apples,Red/Granny Mix,,,,,100,CT,0,0,,LB,Box,Pallet,840,LB,,,WX,,,,,,,,WA XF 840LB UNIT RG RED/GRANNY 100
+RGARWXM5088,Apples,Red/Granny Mix,,,,,88,CT,88,8,5,LB,Soft-Net,Box,40,LB,,,WX,,,,,,,,"WA XF 8/5LB SOFT NET RG RED/GRANNY MIX 2 1/2"""
+RGARWXM5100,Apples,Red/Granny Mix,,,,,100,CT,100,8,5,LB,Soft-Net,Box,40,LB,,,WX,,,,,,,,"WA XF 8/5LB SOFT NET RED/GRANNY 2 1/2"""
+RGARWXM5113,Apples,Red/Granny Mix,,,,,113,CT,113,8,5,LB,Soft-Net,Box,40,LB,,,WX,,,,,,,,"WA XF 8/5LB SOFT NET RED/GRANNY 2 1/2"""
+RGARWXM5D12,Apples,Red/Granny Mix,,,,,2.5,IN,0,8,5,LB,Soft-Net,Box,40,LB,,,WX,,,,,,,,WA XF 8/5 SOFT NET RED/GRANNY 2 1/2
+RGASU11L014,Pears,Asian Pear,,,,,14,CT,14,1,14,CT,Tray,Box,10,LB,,,U1,,,,,,,,ONE LAYER ASIAN PEAR 14
+RGBACB14D18,Pears,Bartlett Pears,,,,,2.125,IN,0,0,,LB,Bulk,Box,14,LB,,,CB,,,,,,,,"US COMB 14LB LOOSE RG BARTLETT 2 1/8"""
+RGBAFYWP090,Pears,Bartlett Pears,,,,,90,CT,90,4,22,CT,Tray,Box,40,LB,,,FY,,,,,,,,FANCY WRAP BARTLETTS 90
+RGBAU114D18,Pears,Bartlett Pears,,,,,2.125,IN,0,0,,LB,Bulk,Box,14,LB,,,U1,,,,,,,,"US#1 14LB LUG BARTLETT 2 1/8"""
+RGBAU1C2035,Pears,Bartlett Pears,,,,,35,CT,35,2,17,CT,Tray,Box,20,LB,,,U1,,,,,,,,US #1 1/2 CARTON BARTLETT 35
+RGBAU1TP070,Pears,Bartlett Pears,,,,,70,CT,70,4,17,CT,Tray,Box,40,LB,,,U1,,,,,,,,US#1 TRAY BARTLETT 70
+RGBAU1TP080,Pears,Bartlett Pears,,,,,80,CT,80,4,20,CT,Tray,Box,40,LB,,,U1,,,,,,,,US#1 TRAY BARTLETT 80
+RGBAU1TP090,Pears,Bartlett Pears,,,,,90,CT,90,4,22,CT,Tray,Box,40,LB,,,U1,,,,,,,,US#1 TRAY BARTLETT 90
+RGBAU1WP070,Pears,Bartlett Pears,,,,,70,CT,70,4,17,CT,Tray,Box,40,LB,,,U1,,,,,,,,US#1 WRAP BARTLETT 70
+RGBAU1WP080,Pears,Bartlett Pears,,,,,80,CT,80,4,20,CT,Tray,Box,40,LB,,,U1,,,,,,,,US#1 WRAP BARTLETT 80
+RGBAU1WP090,Pears,Bartlett Pears,,,,,90,CT,90,4,22,CT,Tray,Box,40,LB,,,U1,,,,,,,,US#1 WRAP BARTLETT 90
+RGBAU1WP100,Pears,Bartlett Pears,,,,,100,CT,100,5,20,CT,Tray,Box,40,LB,,,U1,,,,,,,,US#1 WRAP BARTLETT 100
+RGBAU1WP120,Pears,Bartlett Pears,,,,,120,CT,120,5,24,CT,Tray,Box,40,LB,,,U1,,,,,,,,US#1 WRAP BARTLETT 120
+RGBOCXWP070,Pears,Bosc Pears,,,,,70,CT,70,4,17,CT,Tray,Box,40,LB,,,CX,,,,,,,,US#1 WRAP RG GOLDEN RUSSETT BOSC 70
+RGBOCXWP080,Pears,Bosc Pears,,,,,80,CT,80,4,20,CT,Tray,Box,40,LB,,,CX,,,,,,,,US#1 WRAP RG GOLEN RUSSET BOSC 80
+RGBOU1B3D18,Pears,Bosc Pears,,,,,2.125,IN,0,12,3,LB,Poly Bag,Box,36,LB,,,U1,,,,,,,,"US#1 BOSC 12/3LB BAGS 2 1/8"""
+RGBOU1TP060,Pears,Bosc Pears,,,,,60,CT,60,4,15,CT,Tray,Box,40,LB,,,U1,,,,,,,,US#1 TRAY RG BOSC 60
+RGBOU1TP070,Pears,Bosc Pears,,,,,70,CT,70,4,17,CT,Tray,Box,40,LB,,,U1,,,,,,,,US#1 TRAY RG BOSC 70
+RGBOU1TP080,Pears,Bosc Pears,,,,,80,CT,80,4,20,CT,Tray,Box,40,LB,,,U1,,,,,,,,US#1 TRAY RG BOSC 80
+RGBOU1TP090,Pears,Bosc Pears,,,,,90,CT,90,4,22,CT,Tray,Box,40,LB,,,U1,,,,,,,,US # 1 TRAY RG  BOSC 90
+RGBOU1WP060,Pears,Bosc Pears,,,,,60,CT,60,4,15,CT,Tray,Box,40,LB,,,U1,,,,,,,,US#1 WRAP RG BOSC 60
+RGBOU1WP070,Pears,Bosc Pears,,,,,70,CT,70,4,17,CT,Tray,Box,40,LB,,,U1,,,,,,,,US#1 WRAP RG BOSC 70
+RGBOU1WP080,Pears,Bosc Pears,,,,,80,CT,80,4,20,CT,Tray,Box,40,LB,,,U1,,,,,,,,US#1 WRAP RG BOSC 80
+RGBOU1WP090,Pears,Bosc Pears,,,,,90,CT,90,4,22,CT,Tray,Box,40,LB,,,U1,,,,,,,,US#1 WRAP RG BOSC 90
+RGBOU1WP100,Pears,Bosc Pears,,,,,100,CT,100,5,20,CT,Tray,Box,40,LB,,,U1,,,,,,,,US#1 WRAP RG BOSC 100
+RGBRCX84080,Apples,Braeburn,,,,,80,CT,0,0,,LB,Box,Pallet,840,LB,,,CX,,,,,,,,WA XF PREMIUM 840LB UNIT BRAEBURN 80
+RGBRCXTP048,Apples,Braeburn,,,,,48,CT,48,4,12,CT,Tray,Box,40,LB,,,CX,,,,,,,,WA XF PREMIUM TRAY RG BRAEBURN 48
+RGBRCXTP064,Apples,Braeburn,,,,,64,CT,64,4,16,CT,Tray,Box,40,LB,,,CX,,,,,,,,WA XF PREMIUM TRAY PACK BRAEBURN 64
+RGBRCXTP072,Apples,Braeburn,,,,,72,CT,72,4,18,CT,Tray,Box,40,LB,,,CX,,,,,,,,WA XF PREMIUM TRAY PACK BRAEBURN 72
+RGBRCXTP080,Apples,Braeburn,,,,,80,CT,80,4,20,CT,Tray,Box,40,LB,,,CX,,,,,,,,WA XF PREMIUM TRAY PACK BRAEBURN 80
+RGBRCXTP088,Apples,Braeburn,,,,,88,CT,88,4,22,CT,Tray,Box,40,LB,,,CX,,,,,,,,WA XF PREMIUM TRAY PACK BRAEBURN 88
+RGBRUXT7D12,Apples,Braeburn,,,,,2.5,IN,0,0,,LB,Bulk,Tote Bin,640,LB,,,UX,,,,,,,,"US XF 650LB TOTE BRAEBURN 2 1/2"""
+RGBRWX84080,Apples,Braeburn,,,,,80,CT,0,0,,LB,Box,Pallet,840,LB,,,WX,,,,,,,,WA XF 840LB UNIT BRAEBURN 80
+RGBRWX84088,Apples,Braeburn,,,,,88,CT,0,0,,LB,Box,Pallet,840,LB,,,WX,,,,,,,,WA XF 840LB UNIT RG BRAEBURN 88
+RGBRWXEU050,Apples,Braeburn,,,,,50,CT,50,2,25,CT,Tray,Box,28,LB,,,WX,,,,,,,,WA XF EURO RG BRAEBURN 50
+RGBRWXEU060,Apples,Braeburn,,,,,60,CT,60,2,30,CT,Tray,Box,28,LB,,,WX,,,,,,,,WA XF RG BRAEBURN EURO 60
+RGBRWXM3113,Apples,Braeburn,,,,,113,CT,113,12,3,LB,Soft-Net,Box,36,LB,,,WX,,,,,,,,"WA XF 12/3LB SOFT NET RG BRAEBURN 2 1/2"""
+RGBRWXM3125,Apples,Braeburn,,,,,125,CT,125,12,3,LB,Soft-Net,Box,36,LB,,,WX,,,,,,,,"WA XF 12/3LB SOFT NET BRAEBURN 2 1/2"""
+RGBRWXM5100,Apples,Braeburn,,,,,100,CT,100,8,5,LB,Soft-Net,Box,40,LB,,,WX,,,,,,,,"WA XF 8/5LB SOFT NET BRAEBURN 2 1/2"""
+RGBRWXM5113,Apples,Braeburn,,,,,113,CT,113,8,5,LB,Soft-Net,Box,40,LB,,,WX,,,,,,,,"WA XF 8/5LB SOFT NET BRAEBURN 2 1/2"""
+RGBRWXM5D12,Apples,Braeburn,,,,,2.5,IN,0,8,5,LB,Soft-Net,Box,40,LB,,,WX,,,,,,,,"WA XF 8/5# SOFT NET BAGS BRAEBURN  2 1/2"""
+RGBRWXN5D12,Apples,Braeburn,,,,,2.5,IN,0,120,5,LB,Soft-Net,Tote Bin,600,LB,,,WX,,,,,,,,"WA XF 5LB SOFT NET TOTE BRAEBURN 2 1/2"""
+RGBRWXT5D12,Apples,Braeburn,,,,,2.5,IN,0,120,5,LB,Poly Bag,Tote Bin,600,LB,,,WX,,,,,,,,"WAXF TOTE BIN 5LB BRAEBURN 2 1/2"""
+RGBRWXTP072,Apples,Braeburn,,,,,72,CT,72,4,18,CT,Tray,Box,40,LB,,,WX,,,,,,,,WA XF TRAY BRAEBURN 72
+RGBRWXTP080,Apples,Braeburn,,,,,80,CT,80,4,20,CT,Tray,Box,40,LB,,,WX,,,,,,,,WA XF TRAY BRAEBURN 80
+RGBRWXTP088,Apples,Braeburn,,,,,88,CT,88,4,22,CT,Tray,Box,40,LB,,,WX,,,,,,,,WA XF TRAY BRAEBURN 88
+RGBRWXTP113,Apples,Braeburn,,,,,113,CT,113,5,22,CT,Tray,Box,40,LB,,,WX,,,,,,,,WA XF TRAY BRAEBURN 113
+RGCHU12012R,Cherries,Cherries,,,,,12 & Larger,CT,0,0,,LB,Bulk,Box,20,LB,,,U1,,,,,,,,RG CHERRIES US #1 20LB 12 ROW & LARGER
+RGCMCXTP072,Apples,Cameo,,,,,72,CT,72,4,18,CT,Tray,Box,40,LB,,,CX,,,,,,,,WA XF PREMIUM TRAY RG CAMEO 72
+RGCMCXTP080,Apples,Cameo,,,,,80,CT,80,4,20,CT,Tray,Box,40,LB,,,CX,,,,,,,,WA XF PREMIUM TRAY  RG CAMEO 80
+RGCMCXTP088,Apples,Cameo,,,,,88,CT,88,4,22,CT,Tray,Box,40,LB,,,CX,,,,,,,,WA XF PREMIUM TRAY RG CAMEO 88
+RGCMUXTP072,Apples,Cameo,,,,,72,CT,72,4,18,CT,Tray,Box,40,LB,,,UX,,,,,,,,US XF TRAY PACK CAMEO 72
+RGCMUXTP080,Apples,Cameo,,,,,80,CT,80,4,20,CT,Tray,Box,40,LB,,,UX,,,,,,,,US XF TRAY PACK CAMEO 80
+RGCMWX84100,Apples,Cameo,,,,,100,CT,0,0,,LB,Box,Pallet,840,LB,,,WX,,,,,,,,WA XF 840LB UNIT RG CAMEO 100
+RGCMWXEU050,Apples,Cameo,,,,,50,CT,50,2,25,CT,Tray,Box,28,LB,,,WX,,,,,,,,WA XF EURO RG CAMEO 50
+RGCMWXM5113,Apples,Cameo,,,,,113,CT,113,8,5,LB,Soft-Net,Box,40,LB,,,WX,,,,,,,,"WA XF 8/5LB SOFT NET RG CAMEO 2 1/2"""
+RGCMWXTP072,Apples,Cameo,,,,,72,CT,72,4,18,CT,Tray,Box,40,LB,,,WX,,,,,,,,WA XF TRAY CAMEO 72
+RGCMWXTP080,Apples,Cameo,,,,,80,CT,80,4,20,CT,Tray,Box,40,LB,,,WX,,,,,,,,WA XF TRAY CAMEO 80
+RGCMWXTP088,Apples,Cameo,,,,,88,CT,88,4,22,CT,Tray,Box,40,LB,,,WX,,,,,,,,WA XF TRAY CAMEO 88
+RGCOU1C2035,Pears,Comice Pear,,,,,35,CT,35,2,17,CT,Tray,Box,20,LB,,,U1,,,,,,,,US#1 1/2 CARTON COMICE 35
+RGCOU1C2040,Pears,Comice Pear,,,,,40,CT,40,2,20,CT,Tray,Box,20,LB,,,U1,,,,,,,,US#1 1/2 CARTON COMICE 40
+RGCOU1C2045,Pears,Comice Pear,,,,,45,CT,45,2,22,CT,Tray,Box,20,LB,,,U1,,,,,,,,US#1 1/2 CARTON COMICE 45
+RGCOU1C2070,Pears,Comice Pear,,,,,70,CT,70,2,35,CT,Tray,Box,20,LB,,,U1,,,,,,,,US#1 1/2 CARTON COMICE 70
+RGCRWXTP072,Apples,Criterion,,,,,72,CT,72,4,18,CT,Tray,Box,40,LB,,,WX,,,,,,,,WA XF TRAY CRITERION 72
+RGEGWXB3D12,Apples,Early Gold,,,,,2.5,IN,0,12,3,LB,Poly Bag,Box,36,LB,,,WX,,,,,,,,"WA XF 12/3LB BAG EARLY GOLD 2 1/2"""
+RGEGWXB3D14,Apples,Early Gold,,,,,2.25,IN,0,12,3,LB,Poly Bag,Box,36,LB,,,WX,,,,,,,,"WA XF 12/3LB BAG EARLY GOLD 2 1/4"""
+RGEGWXTP113,Apples,Early Gold,,,,,113,CT,113,5,22,CT,Tray,Box,40,LB,,,WX,,,,,,,,WA XF TRAY EARLY GOLD 113
+RGEGWXTP125,Apples,Early Gold,,,,,125,CT,125,5,25,CT,Tray,Box,40,LB,,,WX,,,,,,,,WA XF TRAY EARLY GOLD 125
+RGFUCXTP048,Apples,Fuji,,,,,48,CT,48,4,12,CT,Tray,Box,40,LB,,,CX,,,,,,,,WA XF PREMIUM TRAY FUJI 48
+RGFUCXTP056,Apples,Fuji,,,,,56,CT,56,4,14,CT,Tray,Box,40,LB,,,CX,,,,,,,,WA XF PREMIUM TRAY FUJI 56
+RGFUCXTP072,Apples,Fuji,,,,,72,CT,72,4,18,CT,Tray,Box,40,LB,,,CX,,,,,,,,WA XF PREMIUM TRAY PACK FUJI 72
+RGFUCXTP080,Apples,Fuji,,,,,80,CT,80,4,20,CT,Tray,Box,40,LB,,,CX,,,,,,,,WA XF PREMIUM TRAY PACK FUJI 80
+RGFUCXTP088,Apples,Fuji,,,,,88,CT,88,4,22,CT,Tray,Box,40,LB,,,CX,,,,,,,,WA XF PREMIUM TRAY PACK FUJI 88
+RGFUCXTP113,Apples,Fuji,,,,,113,CT,113,5,22,CT,Tray,Box,40,LB,,,CX,,,,,,,,WA XF PREMIUM TRAY PACK FUJI 113
+RGFUUXB8D12,Apples,Fuji,,,,,2.5,IN,0,8,5,LB,Poly Bag,Box,40,LB,,,UX,,,,,,,,"US XF 8/5LB FUJI 2 1/2"""
+RGFUUXT7D12,Apples,Fuji,,,,,2.5,IN,0,0,,LB,Bulk,Tote Bin,640,LB,,,UX,,,,,,,,US XF 650LB LOOSE TOTE FUJI 2 1/2
+RGFUUXTP072,Apples,Fuji,,,,,72,CT,72,4,18,CT,Tray,Box,40,LB,,,UX,,,,,,,,US XF TRAY PACK FUJI 72
+RGFUUXTP080,Apples,Fuji,,,,,80,CT,80,4,20,CT,Tray,Box,40,LB,,,UX,,,,,,,,US XF TRAY PACK FUJI 80
+RGFUWX2L044,Apples,Fuji,,,,,44,CT,44,2,22,CT,Tray,Box,20,LB,,,WX,,,,,,,,WA XF TWO LAYER FUJI 44
+RGFUWX84088,Apples,Fuji,,,,,88,CT,0,0,,LB,Box,Pallet,840,LB,,,WX,,,,,,,,WA XF 840LB UNIT FUJI 88
+RGFUWXB3D12,Apples,Fuji,,,,,2.5,IN,0,12,3,LB,Poly Bag,Box,36,LB,,,WX,,,,,,,,"WA XF 12/3LB BAGS FUJI 2 1/2"""
+RGFUWXB8D12,Apples,Fuji,,,,,2.5,IN,0,8,5,LB,Poly Bag,Box,40,LB,,,WX,,,,,,,,"WAXF 8/5LB BAGS FUJI 2 1/2"""
+RGFUWXEU050,Apples,Fuji,,,,,50,CT,50,2,25,CT,Tray,Box,28,LB,,,WX,,,,,,,,WA XF EURO FUJI 50
+RGFUWXEU060,Apples,Fuji,,,,,60,CT,60,2,30,CT,Tray,Box,28,LB,,,WX,,,,,,,,WA XF EURO FUJI 60
+RGFUWXG1020,Apples,Fuji,,,,,20,CT,20,1,20,CT,Tray,Box,10,LB,,,WX,,,,,,,,WA XF 1 LAYER GIFT FUJI 20
+RGFUWXM3113,Apples,Fuji,,,,,113,CT,113,12,3,LB,Soft-Net,Box,36,LB,,,WX,,,,,,,,"WA XF 12/3LB SOFT NET RG  FUJI 2 1/2"""
+RGFUWXM3125,Apples,Fuji,,,,,125,CT,125,12,3,LB,Soft-Net,Box,36,LB,,,WX,,,,,,,,"WA XF 12/3LB SOFT NET FUJI 2 1/2"""
+RGFUWXM5100,Apples,Fuji,,,,,100,CT,100,8,5,LB,Soft-Net,Box,40,LB,,,WX,,,,,,,,"WA XF 8/5LB SOFT NET FUJI 2 1/2"""
+RGFUWXM5113,Apples,Fuji,,,,,113,CT,113,8,5,LB,Soft-Net,Box,40,LB,,,WX,,,,,,,,"WA XF 8/5# SOFT NET FUJI 2 1/2"""
+RGFUWXM5D12,Apples,Fuji,,,,,2.5,IN,0,8,5,LB,Soft-Net,Box,40,LB,,,WX,,,,,,,,"WA XF 8/5LB SOFT NET BAGS FUJI 2 1/2"""
+RGFUWXN5D12,Apples,Fuji,,,,,2.5,IN,0,120,5,LB,Soft-Net,Tote Bin,600,LB,,,WX,,,,,,,,"WA XF 5LB SOFT NET TOTE RG FUJI 2 1/"""
+RGFUWXT7D12,Apples,Fuji,,,,,2.5,IN,0,0,,LB,Bulk,Tote Bin,640,LB,,,WX,,,,,,,,"WA XF 650LB LOOSE TOTE FUJI 2 1/2"""
+RGFUWXTP048,Apples,Fuji,,,,,48,CT,48,4,12,CT,Tray,Box,40,LB,,,WX,,,,,,,,WA XF TRAY PACK FUJI 48
+RGFUWXTP056,Apples,Fuji,,,,,56,CT,56,4,14,CT,Tray,Box,40,LB,,,WX,,,,,,,,WA XF TRAY PACK FUJI 56
+RGFUWXTP064,Apples,Fuji,,,,,64,CT,64,4,16,CT,Tray,Box,40,LB,,,WX,,,,,,,,WA XF TRAY PACK FUJI 64
+RGFUWXTP072,Apples,Fuji,,,,,72,CT,72,4,18,CT,Tray,Box,40,LB,,,WX,,,,,,,,WA XF TRAY PACK FUJI 72
+RGFUWXTP080,Apples,Fuji,,,,,80,CT,80,4,20,CT,Tray,Box,40,LB,,,WX,,,,,,,,WA XF TRAY PACK FUJI 80
+RGFUWXTP088,Apples,Fuji,,,,,88,CT,88,4,22,CT,Tray,Box,40,LB,,,WX,,,,,,,,WA XF TRAY PACK FUJI 88
+RGFUWXTP113,Apples,Fuji,,,,,113,CT,113,5,22,CT,Tray,Box,40,LB,,,WX,,,,,,,,WA XF TRAY PACK FUJI 113
+RGFUWXTP125,Apples,Fuji,,,,,125,CT,125,5,25,CT,Tray,Box,40,LB,,,WX,,,,,,,,WA XF TRAY PACK FUJI 125
+RGGACXTP072,Apples,Gala,,,,,72,CT,72,4,18,CT,Tray,Box,40,LB,,,CX,,,,,,,,WA XF TRAY RG ROYAL GALA 72
+RGGACXTP080,Apples,Gala,,,,,80,CT,80,4,20,CT,Tray,Box,40,LB,,,CX,,,,,,,,WA XF TRAY RG ROYAL GALA 80
+RGGACXTP088,Apples,Gala,,,,,88,CT,88,4,22,CT,Tray,Box,40,LB,,,CX,,,,,,,,WA XF TRAY RG ROYAL GALA 88
+RGGACXTP100,Apples,Gala,,,,,100,CT,100,5,20,CT,Tray,Box,40,LB,,,CX,,,,,,,,WA XF TRAY RG ROYAL GALA 100
+RGGACXTP113,Apples,Gala,,,,,113,CT,113,5,22,CT,Tray,Box,40,LB,,,CX,,,,,,,,WA XF TRAY RG ROYAL GALA 113
+RGGACXTP125,Apples,Gala,,,,,125,CT,125,5,25,CT,Tray,Box,40,LB,,,CX,,,,,,,,WA XF TRAY RG ROYAL GALA 125
+RGGAFYTP138,Apples,Gala,,,,,138,CT,138,5,27,CT,Tray,Box,40,LB,,,FY,,,,,,,,FANCY TRAY GALA 138
+RGGAUXT7D12,Apples,Gala,,,,,2.5,IN,0,0,,LB,Bulk,Tote Bin,640,LB,,,UX,,,,,,,,"US XF LOOOSE TOTE 650LB GALA 2 1/2"""
+RGGAW2TP072,Apples,Gala,,,,,72,CT,72,4,18,CT,Tray,Box,40,LB,,,W2,,,,,,,,WAXF TRAY PACK GALA 72
+RGGAWX84088,Apples,Gala,,,,,88,CT,0,0,,LB,Box,Pallet,840,LB,,,WX,,,,,,,,WA XF 840LB UNIT RG GALA 88
+RGGAWXB3D12,Apples,Gala,,,,,2.5,IN,0,12,3,LB,Poly Bag,Box,36,LB,,,WX,,,,,,,,"WA XF 12/3LB BAG GALA 2 1/2"""
+RGGAWXB8D12,Apples,Gala,,,,,2.5,IN,0,8,5,LB,Poly Bag,Box,40,LB,,,WX,,,,,,,,"WA XF 8/5# BAG GALA 2 1/2"""
+RGGAWXEU050,Apples,Gala,,,,,50,CT,50,2,25,CT,Tray,Box,28,LB,,,WX,,,,,,,,WA XF EURO RG GALA 50
+RGGAWXEU055,Apples,Gala,,,,,55,CT,55,2,27,CT,Tray,Box,28,LB,,,WX,,,,,,,,WA XF EURO GALA 55
+RGGAWXEU060,Apples,Gala,,,,,60,CT,60,2,30,CT,Tray,Box,28,LB,,,WX,,,,,,,,WA XF EURO RG GALA 60
+RGGAWXM3113,Apples,Gala,,,,,113,CT,113,12,3,LB,Soft-Net,Box,36,LB,,,WX,,,,,,,,"WA XF 12/3LB SOFT NET RG GALA 2 1/2"""
+RGGAWXM3125,Apples,Gala,,,,,125,CT,125,12,3,LB,Soft-Net,Box,36,LB,,,WX,,,,,,,,"WA XF 12/3LB SOFT NET RG GALA 2 1/2"""
+RGGAWXM3D12,Apples,Gala,,,,,2.5,IN,0,12,3,LB,Soft-Net,Box,36,LB,,,WX,,,,,,,,WA XF 12/3LB SOFT NET BAG GALA 2 1/2
+RGGAWXM5100,Apples,Gala,,,,,100,CT,100,8,5,LB,Soft-Net,Box,40,LB,,,WX,,,,,,,,"WA XF 8/5LB SOFT NET GALA 2 1/2"""
+RGGAWXM5113,Apples,Gala,,,,,113,CT,113,8,5,LB,Soft-Net,Box,40,LB,,,WX,,,,,,,,"WA XF 8/5LB SOFT NET GALA 2 1/2"""
+RGGAWXM5D12,Apples,Gala,,,,,2.5,IN,0,8,5,LB,Soft-Net,Box,40,LB,,,WX,,,,,,,,"WA XF  8/5# SOFT NET BAG GALA 2 1/2"""
+RGGAWXT5D12,Apples,Gala,,,,,2.5,IN,0,120,5,LB,Poly Bag,Tote Bin,600,LB,,,WX,,,,,,,,"WA XF TOTE 5LB BAGS GALA 2 1/2"""
+RGGAWXT7D12,Apples,Gala,,,,,2.5,IN,0,0,,LB,Bulk,Tote Bin,640,LB,,,WX,,,,,,,,"WA XF TOTE 650LB LSE GALA 2 1/2"""
+RGGAWXTP064,Apples,Gala,,,,,64,CT,64,4,16,CT,Tray,Box,40,LB,,,WX,,,,,,,,WA XF TRAY ROYAL GALA 64
+RGGAWXTP072,Apples,Gala,,,,,72,CT,72,4,18,CT,Tray,Box,40,LB,,,WX,,,,,,,,WA XF TRAY ROYAL GALA 72
+RGGAWXTP080,Apples,Gala,,,,,80,CT,80,4,20,CT,Tray,Box,40,LB,,,WX,,,,,,,,WA XF TRAY ROYAL GALA 80
+RGGAWXTP088,Apples,Gala,,,,,88,CT,88,4,22,CT,Tray,Box,40,LB,,,WX,,,,,,,,WA XF TRAY ROYAL GALA 88
+RGGAWXTP100,Apples,Gala,,,,,100,CT,100,5,20,CT,Tray,Box,40,LB,,,WX,,,,,,,,WA XF TRAY ROYAL GALA 100
+RGGAWXTP113,Apples,Gala,,,,,113,CT,113,5,22,CT,Tray,Box,40,LB,,,WX,,,,,,,,WA XF TRAY ROYAL GALA 113
+RGGAWXTP125,Apples,Gala,,,,,125,CT,125,5,25,CT,Tray,Box,40,LB,,,WX,,,,,,,,WA XF TRAY ROYAL GALA 125
+RGGBU1CNSTD,Green Bean,Green Bean,,,,,Standard,,0,0,,CT,Tray,Box,40,LB,,,U1,,,,,,,,RG GREEN BEAN US #1 CARTON STANDARD
+RGGCU1CNSTD,Cabbage,Green Cabbage,,,,,Standard,,0,0,,CT,Tray,Box,40,LB,,,U1,,,,,,,,RG GREEN CABBAGE US #1 CARTON STANDARD
+RGGGWXB3D12,Apples,Ginger Gold,,,,,2.5,IN,0,12,3,LB,Poly Bag,Box,36,LB,,,WX,,,,,,,,"WA XF 12/3 LB GINGER GOLD 2 1/2"""
+RGGGWXEU050,Apples,Ginger Gold,,,,,50,CT,50,2,25,CT,Tray,Box,28,LB,,,WX,,,,,,,,WA XF EURO GINGER GOLD 50
+RGGGWXM3125,Apples,Ginger Gold,,,,,125,CT,125,12,3,LB,Soft-Net,Box,36,LB,,,WX,,,,,,,,"WA XF SOFT-NET 12/3# BAGS RG GINGER GOLD 2 1/2"""
+RGGGWXM5100,Apples,Ginger Gold,,,,,100,CT,100,8,5,LB,Soft-Net,Box,40,LB,,,WX,,,,,,,,"WA XF 8/5#LB SOFT NET BAGS RG GINGERR GOLD 2 1/2"""
+RGGGWXTP064,Apples,Ginger Gold,,,,,64,CT,64,4,16,CT,Tray,Box,40,LB,,,WX,,,,,,,,WA XF TRAY GINGER GOLD 64
+RGGGWXTP072,Apples,Ginger Gold,,,,,72,CT,72,4,18,CT,Tray,Box,40,LB,,,WX,,,,,,,,WA XF TRAY GINGER GOLD 72
+RGGGWXTP080,Apples,Ginger Gold,,,,,80,CT,80,4,20,CT,Tray,Box,40,LB,,,WX,,,,,,,,WA XF TRAY GINGER GOLD 80
+RGGGWXTP088,Apples,Ginger Gold,,,,,88,CT,88,4,22,CT,Tray,Box,40,LB,,,WX,,,,,,,,WA XF TRAY GINGER GOLD 88
+RGGGWXTP100,Apples,Ginger Gold,,,,,100,CT,100,5,20,CT,Tray,Box,40,LB,,,WX,,,,,,,,WA XF TRAY GINGER GOLD 100
+RGGGWXTP113,Apples,Ginger Gold,,,,,113,CT,113,5,22,CT,Tray,Box,40,LB,,,WX,,,,,,,,WA XF TRAY GINGER GOLD 113
+RGGOCXTP072,Apples,Golden Delicious,,,,,72,CT,72,4,18,CT,Tray,Box,40,LB,,,CX,,,,,,,,WA XF TRAY ROSE GOLDEN DELICIOUS 72
+RGGOUXT7D12,Apples,Golden Delicious,,,,,2.5,IN,0,0,,LB,Bulk,Tote Bin,640,LB,,,UX,,,,,,,,US XF 650LB TOTE GOLDEN DEL 2 1/2
+RGGOUXTP088,Apples,Golden Delicious,,,,,88,CT,88,4,22,CT,Tray,Box,40,LB,,,UX,,,,,,,,US XF TRAY GOLDEN DELICIOUS 88
+RGGOUXTP113,Apples,Golden Delicious,,,,,113,CT,113,5,22,CT,Tray,Box,40,LB,,,UX,,,,,,,,US XF TRAY GOLDEN DELICIOUS 113
+RGGOWX13D12,Apples,Golden Delicious,,,,,2.5,IN,0,0,,LB,Bulk,Box,13,LB,,,WX,,,,,,,,"WA XF 13LB LOOSE GOLDEN DELICIOUS 2 1/2"""
+RGGOWX2L044,Apples,Golden Delicious,,,,,44,CT,44,2,22,CT,Tray,Box,20,LB,,,WX,,,,,,,,WA XF TWO LAYER GOLDEN DELIC 44
+RGGOWXB3D12,Apples,Golden Delicious,,,,,2.5,IN,0,12,3,LB,Poly Bag,Box,36,LB,,,WX,,,,,,,,"WA XF 12/3LB BAG GOLDEN DEL 2 1/2"""
+RGGOWXB8D12,Apples,Golden Delicious,,,,,2.5,IN,0,8,5,LB,Poly Bag,Box,40,LB,,,WX,,,,,,,,"WA XF 8/5LB BAG GOLDEN DEL 2 1/2"""
+RGGOWXC2D12,Apples,Golden Delicious,,,,,2.5,IN,0,0,,CT,Tray,Box,20,LB,,,WX,,,,,,,,"WA XF 1/2 CTN GOLDEN DELIC 2 1/2"""
+RGGOWXC3D12,Apples,Golden Delicious,,,,,2.5,IN,0,0,,CT,Tray,Box,13.2,LB,,,WX,,,,,,,,"WA XF 1/3 CTN GOLDEN DELIC 2 1/2"""
+RGGOWXEU050,Apples,Golden Delicious,,,,,50,CT,50,2,25,CT,Tray,Box,28,LB,,,WX,,,,,,,,WA XF EURO RG GOLDEN 50
+RGGOWXM3113,Apples,Golden Delicious,,,,,113,CT,113,12,3,LB,Soft-Net,Box,36,LB,,,WX,,,,,,,,"WA XF 12/3LB SOFT NET RG GOLDEN DEL 2 1/2"""
+RGGOWXM3125,Apples,Golden Delicious,,,,,125,CT,125,12,3,LB,Soft-Net,Box,36,LB,,,WX,,,,,,,,"WA XF 12/3LB SOFT NET RG GOLDEN 2 1/2"""
+RGGOWXM3D12,Apples,Golden Delicious,,,,,2.5,IN,0,12,3,LB,Soft-Net,Box,36,LB,,,WX,,,,,,,,"WA XF 12/3LB SOFT NET BAGS GOLDEN 2 1/2"""
+RGGOWXM5100,Apples,Golden Delicious,,,,,100,CT,100,8,5,LB,Soft-Net,Box,40,LB,,,WX,,,,,,,,"WA XF 8/5LB SOFT NET GOLDEN DEL 2 1/2"""
+RGGOWXM5113,Apples,Golden Delicious,,,,,113,CT,113,8,5,LB,Soft-Net,Box,40,LB,,,WX,,,,,,,,"WA XF 8/5LB SOFT NET GOLDEN 2 1/2"""
+RGGOWXM5D12,Apples,Golden Delicious,,,,,2.5,IN,0,8,5,LB,Soft-Net,Box,40,LB,,,WX,,,,,,,,"WA XF 8/5LB SOFT NET BAGS GOLDEN 2 1/2"""
+RGGOWXSC060,Apples,Golden Delicious,,,,,60,CT,60,4,15,CT,Tray,Box,40,LB,,,WX,,,,,,,,WA XF SOFT CELL GOLDEN DELICIOUS 60
+RGGOWXSC080,Apples,Golden Delicious,,,,,80,CT,80,4,20,CT,Tray,Box,40,LB,,,WX,,,,,,,,WA XF SOFT CELL GOLDEN DELICIOUS 80
+RGGOWXSC096,Apples,Golden Delicious,,,,,96,CT,96,4,24,CT,Tray,Box,40,LB,,,WX,,,,,,,,WA XF SOFT CELL GOLDEN DELICIOUS 96
+RGGOWXSC120,Apples,Golden Delicious,,,,,120,CT,120,5,24,CT,Tray,Box,40,LB,,,WX,,,,,,,,WA XF SOFT CELL GOLDEN DEL. 120
+RGGOWXT7D12,Apples,Golden Delicious,,,,,2.5,IN,0,0,,LB,Bulk,Tote Bin,640,LB,,,WX,,,,,,,,"WA XF TOTE GOLDEN DEL LOOSE 2 12"""
+RGGOWXTP048,Apples,Golden Delicious,,,,,48,CT,48,4,12,CT,Tray,Box,40,LB,,,WX,,,,,,,,WA XF TRAY GOLDEN DELICIOUS 48
+RGGOWXTP056,Apples,Golden Delicious,,,,,56,CT,56,4,14,CT,Tray,Box,40,LB,,,WX,,,,,,,,WA XF TRAY GOLDEN DELICIOUS 56
+RGGOWXTP064,Apples,Golden Delicious,,,,,64,CT,64,4,16,CT,Tray,Box,40,LB,,,WX,,,,,,,,WA XF TRAY GOLDEN DELICIOUS 64
+RGGOWXTP072,Apples,Golden Delicious,,,,,72,CT,72,4,18,CT,Tray,Box,40,LB,,,WX,,,,,,,,WA XF TRAY GOLDEN DELICIOUS 72
+RGGOWXTP080,Apples,Golden Delicious,,,,,80,CT,80,4,20,CT,Tray,Box,40,LB,,,WX,,,,,,,,WA XF TRAY GOLDEN DELICIOUS 80
+RGGOWXTP088,Apples,Golden Delicious,,,,,88,CT,88,4,22,CT,Tray,Box,40,LB,,,WX,,,,,,,,WA XF TRAY GOLDEN DELICIOUS 88
+RGGOWXTP100,Apples,Golden Delicious,,,,,100,CT,100,5,20,CT,Tray,Box,40,LB,,,WX,,,,,,,,WA XF TRAY GOLDEN DELICIOUS 100
+RGGOWXTP113,Apples,Golden Delicious,,,,,113,CT,113,5,22,CT,Tray,Box,40,LB,,,WX,,,,,,,,WA XF TRAY GOLDEN DELICIOUS 113
+RGGOWXTP125,Apples,Golden Delicious,,,,,125,CT,125,5,25,CT,Tray,Box,40,LB,,,WX,,,,,,,,WA XF TRAY GOLDEN DELICIOUS 125
+RGGRUXB8D12,Apples,Granny Smith,,,,,2.5,IN,0,8,5,LB,Poly Bag,Box,40,LB,,,UX,,,,,,,,"US XF 8/5LB BAG GRANNY SMITH 2 1/2"""
+RGGRUXT7D12,Apples,Granny Smith,,,,,2.5,IN,0,0,,LB,Bulk,Tote Bin,640,LB,,,UX,,,,,,,,US XF 650# LOOSE TOTE GRANNY SMITH 2 1/2
+RGGRUXTP088,Apples,Granny Smith,,,,,88,CT,88,4,22,CT,Tray,Box,40,LB,,,UX,,,,,,,,US XF TRAY GRANNY SMITH 88
+RGGRW2TP056,Apples,Granny Smith,,,,,56,CT,56,4,14,CT,Tray,Box,40,LB,,,W2,,,,,,,,WA XF TRAY GRANNY SMITH 56
+RGGRW2TP064,Apples,Granny Smith,,,,,64,CT,64,4,16,CT,Tray,Box,40,LB,,,W2,,,,,,,,WA XF GRANNY SMITH 64
+RGGRW2TP072,Apples,Granny Smith,,,,,72,CT,72,4,18,CT,Tray,Box,40,LB,,,W2,,,,,,,,WA XF GRANNY SMITH 72
+RGGRW2TP080,Apples,Granny Smith,,,,,80,CT,80,4,20,CT,Tray,Box,40,LB,,,W2,,,,,,,,WA XF GRANNY SMITH 80
+RGGRW2TP088,Apples,Granny Smith,,,,,88,CT,88,4,22,CT,Tray,Box,40,LB,,,W2,,,,,,,,WA XF GRANNY SMITH 88
+RGGRW2TP113,Apples,Granny Smith,,,,,113,CT,113,5,22,CT,Tray,Box,40,LB,,,W2,,,,,,,,WA XF GRANNY SMITH 113
+RGGRW2TP125,Apples,Granny Smith,,,,,125,CT,125,5,25,CT,Tray,Box,40,LB,,,W2,,,,,,,,WA XF GRANNY SMITH 125
+RGGRWX2L040,Apples,Granny Smith,,,,,40,CT,40,2,20,CT,Tray,Box,20,LB,,,WX,,,,,,,,WA XF TWO LAYER GRANNY 40
+RGGRWX84088,Apples,Granny Smith,,,,,88,CT,0,0,,LB,Box,Pallet,840,LB,,,WX,,,,,,,,WA XF 840LB UNIT RG GRANNY 88
+RGGRWXB3D12,Apples,Granny Smith,,,,,2.5,IN,0,12,3,LB,Poly Bag,Box,36,LB,,,WX,,,,,,,,"WA XF 12/3LB BAG GRANNY SMITH 2 1/2"""
+RGGRWXEU050,Apples,Granny Smith,,,,,50,CT,50,2,25,CT,Tray,Box,28,LB,,,WX,,,,,,,,WA XF EURO RG GRANNY 50
+RGGRWXM3113,Apples,Granny Smith,,,,,113,CT,113,12,3,LB,Soft-Net,Box,36,LB,,,WX,,,,,,,,"WA XF 12/3LB SOFT NET GRANNY 2 1/2"""
+RGGRWXM3125,Apples,Granny Smith,,,,,125,CT,125,12,3,LB,Soft-Net,Box,36,LB,,,WX,,,,,,,,"WA XF 12/3LB SOFT NET GRANNY 2 1/2"""
+RGGRWXM3D12,Apples,Granny Smith,,,,,2.5,IN,0,12,3,LB,Soft-Net,Box,36,LB,,,WX,,,,,,,,"WA XF 12/3LB SOFT NET BAGS GRANNY 2 1/2"""
+RGGRWXM5100,Apples,Granny Smith,,,,,100,CT,100,8,5,LB,Soft-Net,Box,40,LB,,,WX,,,,,,,,"WA XF 8/5LB SOFT NET GRANNY 2 1/2"""
+RGGRWXM5113,Apples,Granny Smith,,,,,113,CT,113,8,5,LB,Soft-Net,Box,40,LB,,,WX,,,,,,,,"WA XF 8/5LB SOFT NET GRANNY 2 1/2"""
+RGGRWXM5125,Apples,Granny Smith,,,,,125,CT,125,8,5,LB,Soft-Net,Box,40,LB,,,WX,,,,,,,,"WA XF 8/5LB SOFT NET RG GRANNY 2 1/2"""
+RGGRWXM5D12,Apples,Granny Smith,,,,,2.5,IN,0,8,5,LB,Soft-Net,Box,40,LB,,,WX,,,,,,,,"WA XF 8/5LB SOFT NET BAGS GRANNY 2 1/2"""
+RGGRWXT5D12,Apples,Granny Smith,,,,,2.5,IN,0,120,5,LB,Poly Bag,Tote Bin,600,LB,,,WX,,,,,,,,"WAXF 5LB BAGS TOTE GRANNY SMITH 2 1/2"""
+RGGRWXT7D12,Apples,Granny Smith,,,,,2.5,IN,0,0,,LB,Bulk,Tote Bin,640,LB,,,WX,,,,,,,,WA XF TOTE 650LB LOOSE GRANNY SMITH 2 1/2
+RGGRWXTP048,Apples,Granny Smith,,,,,48,CT,48,4,12,CT,Tray,Box,40,LB,,,WX,,,,,,,,WA XF TRAY GRANNY SMITH 48
+RGGRWXTP056,Apples,Granny Smith,,,,,56,CT,56,4,14,CT,Tray,Box,40,LB,,,WX,,,,,,,,WA XF TRAY GRANNY SMITH 56
+RGGRWXTP064,Apples,Granny Smith,,,,,64,CT,64,4,16,CT,Tray,Box,40,LB,,,WX,,,,,,,,WA XF TRAY GRANNY SMITH 64
+RGGRWXTP072,Apples,Granny Smith,,,,,72,CT,72,4,18,CT,Tray,Box,40,LB,,,WX,,,,,,,,WA XF TRAY GRANNY SMITH 72
+RGGRWXTP080,Apples,Granny Smith,,,,,80,CT,80,4,20,CT,Tray,Box,40,LB,,,WX,,,,,,,,WA XF TRAY GRANNY SMITH 80
+RGGRWXTP088,Apples,Granny Smith,,,,,88,CT,88,4,22,CT,Tray,Box,40,LB,,,WX,,,,,,,,WA XF TRAY GRANNY SMITH 88
+RGGRWXTP100,Apples,Granny Smith,,,,,100,CT,100,5,20,CT,Tray,Box,40,LB,,,WX,,,,,,,,WA XF TRAY GRANNY SMITH 100
+RGGRWXTP113,Apples,Granny Smith,,,,,113,CT,113,5,22,CT,Tray,Box,40,LB,,,WX,,,,,,,,WA XF TRAY GRANNY SMITH 113
+RGGRWXTP125,Apples,Granny Smith,,,,,125,CT,125,5,25,CT,Tray,Box,40,LB,,,WX,,,,,,,,WA XF TRAY GRANNY SMITH 125
+RGHCCXSC080,Apples,Honeycrisp,,,,,80,CT,80,4,20,CT,Tray,Box,40,LB,,,CX,,,,,0,,,WA XF PREMIUM SOFT CELL RG HONEYCRISP  80
+RGHCCXSCS80,Apples,Honeycrisp,,,,,,,0,4,20,CT,Tray,Box,40,LB,,,CX,,,,,0,,,WA XF PREMIUM SOFT CELL RG HONEYCRISP  SUPER 80
+RGHCCXTP064,Apples,Honeycrisp,,,,,64,CT,64,4,16,CT,Tray,Box,40,LB,,,CX,,,,,,,,WA XF PREMIUM TRAY RG HONEYCRISP 64
+RGHCCXTP072,Apples,Honeycrisp,,,,,72,CT,72,4,18,CT,Tray,Box,40,LB,,,CX,,,,,,,,WA XF PREMIUM TRAY RG HONEYCRISP 72
+RGHCUXTP048,Apples,Honeycrisp,,,,,48,CT,48,4,12,CT,Tray,Box,40,LB,,,UX,,,,,,,,US XF TRAY RG HONEYCRISP 48
+RGHCUXTP056,Apples,Honeycrisp,,,,,56,CT,56,4,14,CT,Tray,Box,40,LB,,,UX,,,,,,,,US XF TRAY RG HONEYCRISP 56
+RGHCUXTP064,Apples,Honeycrisp,,,,,64,CT,64,4,16,CT,Tray,Box,40,LB,,,UX,,,,,,,,US XF TRAY RG HONEYCRISP 64
+RGHCUXTP072,Apples,Honeycrisp,,,,,72,CT,72,4,18,CT,Tray,Box,40,LB,,,UX,,,,,,,,US XF TRAY RG HONEYCRISP 72
+RGHCWXEU045,Apples,Honeycrisp,,,,,45,CT,45,2,22,CT,Tray,Box,28,LB,,,WX,,,,,0,,,WA EXTRA FANCY EURO RG HONEYCRISP  45 COUNT
+RGHCWXEU050,Apples,Honeycrisp,,,,,50,CT,50,2,25,CT,Tray,Box,28,LB,,,WX,,,,,0,,,WA EXTRA FANCY EURO RG HONEYCRISP  50 COUNT
+RGHCWXEU055,Apples,Honeycrisp,,,,,55,CT,55,2,27,CT,Tray,Box,28,LB,,,WX,,,,,0,,,WA EXTRA FANCY EURO RG HONEYCRISP  55 COUNT
+RGHCWXEU060,Apples,Honeycrisp,,,,,60,CT,60,2,30,CT,Tray,Box,28,LB,,,WX,,,,,0,,,WA EXTRA FANCY EURO RG HONEYCRISP  60 COUNT
+RGHCWXSC080,Apples,Honeycrisp,,,,,80,CT,80,4,20,CT,Tray,Box,40,LB,,,WX,,,,,0,,,WA XF SOFT CELL RG HONEYCRISP  80
+RGHCWXTP036,Apples,Honeycrisp,,,,,36,CT,36,4,9,CT,Tray,Box,40,LB,,,WX,,,,,,,,WA XF TRAY PACK RG HONEYCRISP 36
+RGHCWXTP048,Apples,Honeycrisp,,,,,48,CT,48,4,12,CT,Tray,Box,40,LB,,,WX,,,,,,,,WA XF TRAY PACK RG HONEYCRISP 48
+RGHCWXTP056,Apples,Honeycrisp,,,,,56,CT,56,4,14,CT,Tray,Box,40,LB,,,WX,,,,,,,,WA XF TRAY PACK RG HONEYCRISP 56
+RGHCWXTP064,Apples,Honeycrisp,,,,,64,CT,64,4,16,CT,Tray,Box,40,LB,,,WX,,,,,,,,WA XF TRAY PACK RG HONEYCRISP 64
+RGHCWXTP072,Apples,Honeycrisp,,,,,72,CT,72,4,18,CT,Tray,Box,40,LB,,,WX,,,,,,,,WA XF TRAY PACK RG HONEYCRISP 72
+RGHCWXTP088,Apples,Honeycrisp,,,,,88,CT,88,4,22,CT,Tray,Box,40,LB,,,WX,,,,,,,,WA XF TRAY PACK RG HONEYCRISP 88
+RGJGCXTP056,Apples,Jonagold,,,,,56,CT,56,4,14,CT,Tray,Box,40,LB,,,CX,,,,,,,,WA XF PREMIUM TRAY JONAGOLD 56
+RGJGCXTP072,Apples,Jonagold,,,,,72,CT,72,4,18,CT,Tray,Box,40,LB,,,CX,,,,,,,,WA XF PREMIUM TRAY JONAGOLD 72
+RGJGCXTP080,Apples,Jonagold,,,,,80,CT,80,4,20,CT,Tray,Box,40,LB,,,CX,,,,,,,,WA XF PREMIUM TRAY JONAGOLD 80
+RGJGCXTP088,Apples,Jonagold,,,,,88,CT,88,4,22,CT,Tray,Box,40,LB,,,CX,,,,,,,,WA XF PREMIUM TRAY JONAGOLD 88
+RGJGUXT7D12,Apples,Jonagold,,,,,2.5,IN,0,0,,LB,Bulk,Tote Bin,640,LB,,,UX,,,,,,,,"US XF TOTE JONAGOLD 2 1/2"""
+RGJGWXEU050,Apples,Jonagold,,,,,50,CT,50,2,25,CT,Tray,Box,28,LB,,,WX,,,,,,,,WA XF EURO RG JONAGOLD 50
+RGJGWXM3125,Apples,Jonagold,,,,,125,CT,125,12,3,LB,Soft-Net,Box,36,LB,,,WX,,,,,,,,"WA XF 12/3LB SOFT NET RG JONAGOLD 2 1/2"""
+RGJGWXM5100,Apples,Jonagold,,,,,100,CT,100,8,5,LB,Soft-Net,Box,40,LB,,,WX,,,,,,,,"WA XF 8/5LB SOFT NET JONAGOLD 2 1/2"""
+RGJGWXM5113,Apples,Jonagold,,,,,113,CT,113,8,5,LB,Soft-Net,Box,40,LB,,,WX,,,,,,,,"WA XF 8/5LB SOFT NET RG JONAGOLD 2 1/2"""
+RGJGWXM5D12,Apples,Jonagold,,,,,2.5,IN,0,8,5,LB,Soft-Net,Box,40,LB,,,WX,,,,,,,,"WA XF 8/5LB SOFT NET BAG JONAGOLD 2 1/2"""
+RGJGWXT5D12,Apples,Jonagold,,,,,2.5,IN,0,120,5,LB,Poly Bag,Tote Bin,600,LB,,,WX,,,,,,,,"WA XF 5LB BAGS TOTE JONAGOLD 2 1/2"""
+RGJGWXTP056,Apples,Jonagold,,,,,56,CT,56,4,14,CT,Tray,Box,40,LB,,,WX,,,,,,,,WA XF TRAY JONAGOLD 56
+RGJGWXTP064,Apples,Jonagold,,,,,64,CT,64,4,16,CT,Tray,Box,40,LB,,,WX,,,,,,,,WA XF TRAY JONAGOLD 64
+RGJGWXTP072,Apples,Jonagold,,,,,72,CT,72,4,18,CT,Tray,Box,40,LB,,,WX,,,,,,,,WA XF TRAY JONAGOLD 72
+RGJGWXTP080,Apples,Jonagold,,,,,80,CT,80,4,20,CT,Tray,Box,40,LB,,,WX,,,,,,,,WA XF TRAY JONAGOLD 80
+RGJGWXTP088,Apples,Jonagold,,,,,88,CT,88,4,22,CT,Tray,Box,40,LB,,,WX,,,,,,,,WA XF TRAY JONAGOLD 88
+RGJGWXTP113,Apples,Jonagold,,,,,113,CT,113,5,22,CT,Tray,Box,40,LB,,,WX,,,,,,,,WA XF TRAY JONAGOLD 113
+RGJNCBTP080,Apples,Jonathans,,,,,80,CT,80,4,20,CT,Tray,Box,40,LB,,,CB,,,,,,,,WA XF COMBINATION JONATHAN TRAY PACK 80
+RGJNWXB3D12,Apples,Jonathans,,,,,2.5,IN,0,12,3,LB,Poly Bag,Box,36,LB,,,WX,,,,,,,,"WA XF 12/3LB BAG JONATHAN 2 1/2"""
+RGJNWXTP072,Apples,Jonathans,,,,,72,CT,72,4,18,CT,Tray,Box,40,LB,,,WX,,,,,,,,WA XF TRAY JONATHAN 72
+RGJNWXTP080,Apples,Jonathans,,,,,80,CT,80,4,20,CT,Tray,Box,40,LB,,,WX,,,,,,,,WA XF TRAY JONATHAN 80
+RGJNWXTP088,Apples,Jonathans,,,,,88,CT,88,4,22,CT,Tray,Box,40,LB,,,WX,,,,,,,,WA XF TRAY JONATHAN 88
+RGJNWXTP100,Apples,Jonathans,,,,,100,CT,100,5,20,CT,Tray,Box,40,LB,,,WX,,,,,,,,WA XF TRAY JONATHAN 100
+RGMCFYTP088,Apples,Macintosh,,,,,88,CT,88,4,22,CT,Tray,Box,40,LB,,,FY,,,,,,,,FANCY TRAY BC MACINTOSH 88
+RGMCFYTP100,Apples,Macintosh,,,,,100,CT,100,5,20,CT,Tray,Box,40,LB,,,FY,,,,,,,,FANCY TRAY MACINTOSH 100
+RGMTUXI3D12,Apples,Multi-Variety,,,,,2.5,IN,0,213,3,LB,Soft-Net,Tote Bin,640,LB,,,UX,,,,,,,,"MULTI-VARITEY TOTE US XF 3LB SOFT NET 2 1/2"""
+RGMTUXI5D12,Apples,Multi-Variety,,,,,2.5,IN,0,128,5,LB,Soft-Net,Tote Bin,640,LB,,,UX,,,,,,,,"MULTI-VARITEY TOTE US XF 5LB SOFT NET 2 1/2"""
+RGMTWXI3D12,Apples,Multi-Variety,,,,,2.5,IN,0,213,3,LB,Soft-Net,Tote Bin,640,LB,,,WX,,,,,,,,"MULTI-VARIETY TOTE WA XF 3 LB SOFT NET 2 1/2"""
+RGMTWXI5D12,Apples,Multi-Variety,,,,,2.5,IN,0,128,5,LB,Soft-Net,Tote Bin,640,LB,,,WX,,,,,,,,MULTI-VARIETY TOTE WA XF 5 LB SOFT NET 2 1/2
+RGPLCXTP072,Apples,Pink Lady,,,,,72,CT,72,4,18,CT,Tray,Box,40,LB,,,CX,,,,,,,,WA XF TRAY PACK A PINK LADY 72
+RGPLCXTP080,Apples,Pink Lady,,,,,80,CT,80,4,20,CT,Tray,Box,40,LB,,,CX,,,,,,,,WA XF TRAY PACK A PINK LADY 80
+RGPLCXTP088,Apples,Pink Lady,,,,,88,CT,88,4,22,CT,Tray,Box,40,LB,,,CX,,,,,,,,WA XF TRAY PACK A PINK LADY 88
+RGPLWXEU050,Apples,Pink Lady,,,,,50,CT,50,2,25,CT,Tray,Box,28,LB,,,WX,,,,,,,,WA XF EURO RG PINK LADY 50
+RGPLWXEU060,Apples,Pink Lady,,,,,60,CT,60,2,30,CT,Tray,Box,28,LB,,,WX,,,,,,,,WA XF EURO RG PINK LADY 60
+RGPLWXM3125,Apples,Pink Lady,,,,,125,CT,125,12,3,LB,Soft-Net,Box,36,LB,,,WX,,,,,,,,"WA XF 12/3LB SOFT NET RG PINK LADY 2 1/2"""
+RGPLWXM5088,Apples,Pink Lady,,,,,88,CT,88,8,5,LB,Soft-Net,Box,40,LB,,,WX,,,,,,,,"WA XF 8/5LB SOFT NET PINK LADY 2 1/2"""
+RGPLWXM5100,Apples,Pink Lady,,,,,100,CT,100,8,5,LB,Soft-Net,Box,40,LB,,,WX,,,,,,,,"WA XF 8/5LB SOFT NET PINK LADY 2 1/2"""
+RGPLWXM5113,Apples,Pink Lady,,,,,113,CT,113,8,5,LB,Soft-Net,Box,40,LB,,,WX,,,,,,,,"WA XF 8/5LB SOFT NET PINK LADY 2 1/2"""
+RGPLWXTP072,Apples,Pink Lady,,,,,72,CT,72,4,18,CT,Tray,Box,40,LB,,,WX,,,,,,,,WA XF TRAY PACK A PINK LADY 72
+RGPLWXTP080,Apples,Pink Lady,,,,,80,CT,80,4,20,CT,Tray,Box,40,LB,,,WX,,,,,,,,WA XF TRAY PACK A PINK LADY 80
+RGPLWXTP088,Apples,Pink Lady,,,,,88,CT,88,4,22,CT,Tray,Box,40,LB,,,WX,,,,,,,,WA XF TRAY PACK A PINK LADY 88
+RGPLWXTP100,Apples,Pink Lady,,,,,100,CT,100,5,20,CT,Tray,Box,40,LB,,,WX,,,,,,,,WA XF TRAY PACK A PINK LADY 100
+RGPRW1VFD11,Prunes,Prune,,,,,1.25,IN,0,0,,LB,Bulk,Box,840,LB,,,W1,,,,,,,,"RG EARLY ITALIAN PRUNES VF 1 1/4"" MIN"
+RGRAU1C2035,Pears,Red D'anjou Pears,,,,,35,CT,35,2,17,CT,Tray,Box,20,LB,,,U1,,,,,,,,US#1 1/2 CARTON RED D'ANJOU 35
+RGRAU1C2040,Pears,Red D'anjou Pears,,,,,40,CT,40,2,20,CT,Tray,Box,20,LB,,,U1,,,,,,,,US#1 1/2 CARTON RED D'ANJOU 40
+RGRAU1C2045,Pears,Red D'anjou Pears,,,,,45,CT,45,2,22,CT,Tray,Box,20,LB,,,U1,,,,,,,,US#1 1/2 CARTON RED D'ANJOU 45
+RGRAU1C2050,Pears,Red D'anjou Pears,,,,,50,CT,50,2,25,CT,Tray,Box,20,LB,,,U1,,,,,,,,US#1 1/2 CARTON RED D'ANJOU 50
+RGRAU1HT040,Pears,Red D'anjou Pears,,,,,40,CT,40,5,8,CT,Tray,Box,20,LB,,,U1,,,,,,,,US#1 1/2 TRAY RED D'ANJOU 40
+RGRAU1HT050,Pears,Red D'anjou Pears,,,,,50,CT,50,2,25,CT,Tray,Box,20,LB,,,U1,,,,,,,,US#1 1/2 TRAY RED D'ANJOU 50
+RGRAU1TP040,Pears,Red D'anjou Pears,,,,,40,CT,40,4,10,CT,Tray,Box,40,LB,,,U1,,,,,,,,US #1 TRAY RED D'ANJOU 40
+RGRAU1TP060,Pears,Red D'anjou Pears,,,,,60,CT,60,4,15,CT,Tray,Box,40,LB,,,U1,,,,,,,,US #1 TRAY RED D'ANJOU 60
+RGRAU1TP070,Pears,Red D'anjou Pears,,,,,70,CT,70,4,17,CT,Tray,Box,40,LB,,,U1,,,,,,,,US #1 TRAY RED D'ANJOU 70
+RGRAU1TP080,Pears,Red D'anjou Pears,,,,,80,CT,80,4,20,CT,Tray,Box,40,LB,,,U1,,,,,,,,US #1 TRAY RED D'ANJOU 80
+RGRAU1WP045,Pears,Red D'anjou Pears,,,,,45,CT,45,4,11,CT,Tray,Box,40,LB,,,U1,,,,,,,,US#1 1/2 CARTON RED D'ANJOU 45
+RGRAU1WP060,Pears,Red D'anjou Pears,,,,,60,CT,60,4,15,CT,Tray,Box,40,LB,,,U1,,,,,,,,US#1 WRAP RED D'ANJOU 60
+RGRAU1WP070,Pears,Red D'anjou Pears,,,,,70,CT,70,4,17,CT,Tray,Box,40,LB,,,U1,,,,,,,,US#1 WRAP RED D'ANJOU 70
+RGRAU1WP080,Pears,Red D'anjou Pears,,,,,80,CT,80,4,20,CT,Tray,Box,40,LB,,,U1,,,,,,,,US#1 WRAP RED D'ANJOU 80
+RGRBU1C2035,Pears,Red Bartlett Pears,,,,,35,CT,35,2,17,CT,Tray,Box,20,LB,,,U1,,,,,,,,US#1 1/2 CRTN RED BARTLETT 35
+RGRBU1C2040,Pears,Red Bartlett Pears,,,,,40,CT,40,2,20,CT,Tray,Box,20,LB,,,U1,,,,,,,,US#1 1/2 CRTN RED BARTLETT 40
+RGRBU1C2045,Pears,Red Bartlett Pears,,,,,45,CT,45,2,22,CT,Tray,Box,20,LB,,,U1,,,,,,,,US#1 1/2 CRTN RED BARTLETT 45
+RGRBU1C2050,Pears,Red Bartlett Pears,,,,,50,CT,50,2,25,CT,Tray,Box,20,LB,,,U1,,,,,,,,US#1 1/2 CRTN RED BARTLETT 50
+RGRBU1TP070,Pears,Red Bartlett Pears,,,,,70,CT,70,4,17,CT,Tray,Box,40,LB,,,U1,,,,,,,,US #1 TRAY RED BARTLETT 70
+RGRBU1WP045,Pears,Red Bartlett Pears,,,,,45,CT,45,4,11,CT,Tray,Box,40,LB,,,U1,,,,,,,,US #1 WRAP RED BARTLETT 45
+RGRBU1WP060,Pears,Red Bartlett Pears,,,,,60,CT,60,4,15,CT,Tray,Box,40,LB,,,U1,,,,,,,,US #1 WRAP RED BARTLETT 60
+RGRBU1WP070,Pears,Red Bartlett Pears,,,,,70,CT,70,4,17,CT,Tray,Box,40,LB,,,U1,,,,,,,,US #1 WRAP RED BARTLETT 70
+RGRBU1WP080,Pears,Red Bartlett Pears,,,,,80,CT,80,4,20,CT,Tray,Box,40,LB,,,U1,,,,,,,,US #1 WRAP RED BARTLETT 80
+RGRCU1CNSTD,Cabbage,Red Cabbage,,,,,Standard,,0,0,,CT,Tray,Box,40,LB,,,U1,,,,,,,,RG RED CABBAGE US #1 CARTON STANDARD
+RGRDCX84072,Apples,Red Delicious,,,,,72,CT,0,0,,LB,Box,Pallet,840,LB,,,CX,,,,,,,,WA XF PREMIUM 840LB UNIT RG RED DEL 72
+RGRDCXEU050,Apples,Red Delicious,,,,,50,CT,50,2,25,CT,Tray,Box,28,LB,,,CX,,,,,,,,WA XF PREMIUM EURO RG RED DELI  50
+RGRDCXTP048,Apples,Red Delicious,,,,,48,CT,48,4,12,CT,Tray,Box,40,LB,,,CX,,,,,,,,WA XF PREMIUM TRAY RED DEL 48
+RGRDCXTP056,Apples,Red Delicious,,,,,56,CT,56,4,14,CT,Tray,Box,40,LB,,,CX,,,,,,,,WA XF PREMIUM TRAY RED DEL 56
+RGRDCXTP064,Apples,Red Delicious,,,,,64,CT,64,4,16,CT,Tray,Box,40,LB,,,CX,,,,,,,,WA XF PREMIUM TRAY RED DEL 64
+RGRDCXTP072,Apples,Red Delicious,,,,,72,CT,72,4,18,CT,Tray,Box,40,LB,,,CX,,,,,,,,WA XF PREMIUM TRAY RED DEL 72
+RGRDCXTP080,Apples,Red Delicious,,,,,80,CT,80,4,20,CT,Tray,Box,40,LB,,,CX,,,,,,,,WA XF PREMIUM TRAY RED DEL 80
+RGRDCXTP088,Apples,Red Delicious,,,,,88,CT,88,4,22,CT,Tray,Box,40,LB,,,CX,,,,,,,,WA XF PREMIUM TRAY RED DEL 88
+RGRDCXTP100,Apples,Red Delicious,,,,,100,CT,100,5,20,CT,Tray,Box,40,LB,,,CX,,,,,,,,WA XF PREMIUM TRAY RED DELIC 100
+RGRDCXTP113,Apples,Red Delicious,,,,,113,CT,113,5,22,CT,Tray,Box,40,LB,,,CX,,,,,,,,WA XF PREMIUM TRAY RED DELIC 113
+RGRDCXTP125,Apples,Red Delicious,,,,,125,CT,125,5,25,CT,Tray,Box,40,LB,,,CX,,,,,,,,WA XF PREMIUM TRAY RED DELIC 125
+RGRDFYTP048,Apples,Red Delicious,,,,,48,CT,48,4,12,CT,Tray,Box,40,LB,,,FY,,,,,,,,FANCY TRAY RED DELICIOUS 48
+RGRDFYTP056,Apples,Red Delicious,,,,,56,CT,56,4,14,CT,Tray,Box,40,LB,,,FY,,,,,,,,FANCY TRAY RED DELICIOUS 56
+RGRDFYTP064,Apples,Red Delicious,,,,,64,CT,64,4,16,CT,Tray,Box,40,LB,,,FY,,,,,,,,FANCY TRAY RED DELICIOUS 64
+RGRDFYTP080,Apples,Red Delicious,,,,,80,CT,80,4,20,CT,Tray,Box,40,LB,,,FY,,,,,,,,FANCY TRAY RED DELICIOUS 80
+RGRDFYTP088,Apples,Red Delicious,,,,,88,CT,88,4,22,CT,Tray,Box,40,LB,,,FY,,,,,,,,FANCY TRAY RED DELICIOUS 88
+RGRDUXB8D12,Apples,Red Delicious,,,,,2.5,IN,0,8,5,LB,Poly Bag,Box,40,LB,,,UX,,,,,,,,"US XF 8/5LB BAG RED DELIC 2 1/2"""
+RGRDUXT5D12,Apples,Red Delicious,,,,,2.5,IN,0,120,5,LB,Poly Bag,Tote Bin,600,LB,,,UX,,,,,,,,"US XF RED DELICIOUS TOTE 5LB 2 1/2"""
+RGRDUXT7D12,Apples,Red Delicious,,,,,2.5,IN,0,0,,LB,Bulk,Tote Bin,640,LB,,,UX,,,,,,,,"US XF RED DEL 650LB LOOSE TOTE 2 1/2"""
+RGRDUXTP088,Apples,Red Delicious,,,,,88,CT,88,4,22,CT,Tray,Box,40,LB,,,UX,,,,,,,,US XF TRAY RED DELICIOUS 88
+RGRDUXTP113,Apples,Red Delicious,,,,,113,CT,113,5,22,CT,Tray,Box,40,LB,,,UX,,,,,,,,US XF TRAY RED DELICIOUS 113
+RGRDUXTP125,Apples,Red Delicious,,,,,125,CT,125,5,25,CT,Tray,Box,40,LB,,,UX,,,,,,,,US XF TRAY RED DELICIOUS 125
+RGRDUXTP138,Apples,Red Delicious,,,,,138,CT,138,5,27,CT,Tray,Box,40,LB,,,UX,,,,,,,,US XF TRAY RED DELICIOUS 138
+RGRDW2B8D12,Apples,Red Delicious,,,,,2.5,IN,0,8,5,LB,Poly Bag,Box,40,LB,,,W2,,,,,,,,"WA XF RED DELICIOUS 8/5LB BAGS 2 1/2"""
+RGRDW2T7D12,Apples,Red Delicious,,,,,2.5,IN,0,0,,LB,Bulk,Tote Bin,640,LB,,,W2,,,,,,,,"WA XF 650LB LOOSE TOTE RED DELICIOUS 2 1/2"""
+RGRDW2T8D12,Apples,Red Delicious,,,,,2.5,IN,0,75,8,LB,Poly Bag,Tote Bin,600,LB,,,W2,,,,,,,,"WA XF #2 TOTE 8LB BAGS RED DEL 2 1/2"""
+RGRDW2TP072,Apples,Red Delicious,,,,,72,CT,72,4,18,CT,Tray,Box,40,LB,,,W2,,,,,,,,WAXF TRAY RED DELICIOUS 72
+RGRDWX13D12,Apples,Red Delicious,,,,,2.5,IN,0,0,,LB,Bulk,Box,13,LB,,,WX,,,,,,,,"WA XF 13LB LOOSE RED DELICIOUS 2 1/2"""
+RGRDWX2L040,Apples,Red Delicious,,,,,40,CT,40,2,20,CT,Tray,Box,20,LB,,,WX,,,,,,,,WA XF TWO LAYER RED DEL 40
+RGRDWX2L044,Apples,Red Delicious,,,,,44,CT,44,2,22,CT,Tray,Box,20,LB,,,WX,,,,,,,,WA XF TWO LAYER RED DEL 44
+RGRDWX84072,Apples,Red Delicious,,,,,72,CT,0,0,,LB,Box,Pallet,840,LB,,,WX,,,,,,,,WA XF 840LB UNIT RG RED DELICIOUS 72
+RGRDWX84088,Apples,Red Delicious,,,,,88,CT,0,0,,LB,Box,Pallet,840,LB,,,WX,,,,,,,,WA XF 840LB UNIT RED DELICIOUS 88
+RGRDWX84100,Apples,Red Delicious,,,,,100,CT,0,0,,LB,Box,Pallet,840,LB,,,WX,,,,,,,,WA XF 840LB UNIT RED DELICIOUS 100
+RGRDWXB3D12,Apples,Red Delicious,,,,,2.5,IN,0,12,3,LB,Poly Bag,Box,36,LB,,,WX,,,,,,,,"WA XF 12/3LB BAG RED DEL 2 1/2"""
+RGRDWXB4D12,Apples,Red Delicious,,,,,2.5,IN,0,4,10,LB,Poly Bag,Box,40,LB,,,WX,,,,,,,,"WA XF 4/10LB BAGS RED DEL 2 1/2"""
+RGRDWXB8D12,Apples,Red Delicious,,,,,2.5,IN,0,8,5,LB,Poly Bag,Box,40,LB,,,WX,,,,,,,,"WA XF 8/5LB BAG RED DEL 2 1/2"""
+RGRDWXC2D12,Apples,Red Delicious,,,,,2.5,IN,0,0,,CT,Tray,Box,20,LB,,,WX,,,,,,,,"WA XF 1/2 CARTON RED DEL 2 1/2"""
+RGRDWXC3D12,Apples,Red Delicious,,,,,2.5,IN,0,0,,CT,Tray,Box,13.2,LB,,,WX,,,,,,,,"WA XF 1/3 CRTN RED DEL 2 1/2"""
+RGRDWXEU050,Apples,Red Delicious,,,,,50,CT,50,2,25,CT,Tray,Box,28,LB,,,WX,,,,,,,,WA XF EURO RG RED DELICIOUS 50
+RGRDWXG1022,Apples,Red Delicious,,,,,22,CT,22,1,22,CT,Tray,Box,10,LB,,,WX,,,,,,,,WA XF 1 LAYER GIFT RED DEL 22
+RGRDWXG2040,Apples,Red Delicious,,,,,40,CT,40,2,20,CT,Tray,Box,20,LB,,,WX,,,,,,,,WA XF 2 LAYER GIFT RED DEL 40
+RGRDWXG2044,Apples,Red Delicious,,,,,44,CT,44,2,22,CT,Tray,Box,20,LB,,,WX,,,,,,,,WA XF 2 LAYER GIFT RED DEL 44
+RGRDWXM3113,Apples,Red Delicious,,,,,113,CT,113,12,3,LB,Soft-Net,Box,36,LB,,,WX,,,,,,,,"WA XF 12/3LB SOFT NET RG RED DEL 2 1/2"""
+RGRDWXM3125,Apples,Red Delicious,,,,,125,CT,125,12,3,LB,Soft-Net,Box,36,LB,,,WX,,,,,,,,"WA XF 12/3LB SOFT NET RED DEL. 2 1/2"""
+RGRDWXM3D12,Apples,Red Delicious,,,,,2.5,IN,0,12,3,LB,Soft-Net,Box,36,LB,,,WX,,,,,,,,WA XF 12/3LB SOFT NET RED DEL. 2 1/2
+RGRDWXM5080,Apples,Red Delicious,,,,,80,CT,80,8,5,LB,Soft-Net,Box,40,LB,,,WX,,,,,,,,"WA XF 8/5LB SOFT NET RED DEL. 2 5/8"""
+RGRDWXM5088,Apples,Red Delicious,,,,,88,CT,88,8,5,LB,Soft-Net,Box,40,LB,,,WX,,,,,,,,"WA XF 8/5LB SOFT NET RED DEL. 2 1/2"""
+RGRDWXM5100,Apples,Red Delicious,,,,,100,CT,100,8,5,LB,Soft-Net,Box,40,LB,,,WX,,,,,,,,"WA XF 8/5LB SOFT NET RED DEL. 2 1/2"""
+RGRDWXM5113,Apples,Red Delicious,,,,,113,CT,113,8,5,LB,Soft-Net,Box,40,LB,,,WX,,,,,,,,"WA XF 8/5LB SOFT NET RED DEL. 2 1/2"""
+RGRDWXM5D12,Apples,Red Delicious,,,,,2.5,IN,0,8,5,LB,Soft-Net,Box,40,LB,,,WX,,,,,,,,WA XF 8/5LB SOFT NET RED DEL. 2 1/2
+RGRDWXM8080,Apples,Red Delicious,,,,,80,CT,80,5,8,LB,Soft-Net,Box,40,LB,,,WX,,,,,,,,"WA XF 5/8LB SOFT NET RG RED DELICIOUS 2 1/2"""
+RGRDWXM8088,Apples,Red Delicious,,,,,88,CT,88,5,8,LB,Soft-Net,Box,40,LB,,,WX,,,,,,,,"WA XF 5/8LB SOFT NET RG RED DEL 2 1/2"""
+RGRDWXM8100,Apples,Red Delicious,,,,,100,CT,100,5,8,LB,Soft-Net,Box,40,LB,,,WX,,,,,,,,"WA XF 5/8LB SOFT NET RG RED DEL 2 1/2"""
+RGRDWXM8D12,Apples,Red Delicious,,,,,2.5,IN,0,5,8,LB,Soft-Net,Box,40,LB,,,WX,,,,,,,,WA XF 8/5LB SOFT NET RED DEL. 2 1/2
+RGRDWXN5D12,Apples,Red Delicious,,,,,2.5,IN,0,120,5,LB,Soft-Net,Tote Bin,600,LB,,,WX,,,,,,,,"WA XF SOFT NET 5LB BAGS TOTE RED DEL. 2 1/2"""
+RGRDWXN8D12,Apples,Red Delicious,,,,,2.5,IN,0,75,8,LB,Soft-Net,Tote Bin,600,LB,,,WX,,,,,,,,"WA XF 8LB SOFT NET TOTE RG RED 2 1/2"""
+RGRDWXT1D12,Apples,Red Delicious,,,,,2.5,IN,0,60,10,LB,Poly Bag,Tote Bin,600,LB,,,WX,,,,,,,,"WA XF RED DEL TOTE 10LB BAGS 2 1/2"""
+RGRDWXT5D12,Apples,Red Delicious,,,,,2.5,IN,0,120,5,LB,Poly Bag,Tote Bin,600,LB,,,WX,,,,,,,,"WA XF 5LB TOTE RED DELIC 2 1/2"""
+RGRDWXT7D12,Apples,Red Delicious,,,,,2.5,IN,0,0,,LB,Bulk,Tote Bin,640,LB,,,WX,,,,,,,,"WA XF 650LB LOOSE TOTE RED DELICIOUS 2 1/2"""
+RGRDWXT8D03,Apples,Red Delicious,,,,,3,IN,0,75,8,LB,Poly Bag,Tote Bin,600,LB,,,WX,,,,,,,,"WA XF 8LB BAG TOTE RED DELICIOUS 3"""
+RGRDWXT8D12,Apples,Red Delicious,,,,,2.5,IN,0,75,8,LB,Poly Bag,Tote Bin,600,LB,,,WX,,,,,,,,"RED DELICIOUS WA EX FY 8LB. TOTE 2 1/2"""
+RGRDWXTP048,Apples,Red Delicious,,,,,48,CT,48,4,12,CT,Tray,Box,40,LB,,,WX,,,,,,,,WA XF TRAY RED DELICIOUS 48
+RGRDWXTP056,Apples,Red Delicious,,,,,56,CT,56,4,14,CT,Tray,Box,40,LB,,,WX,,,,,,,,WA XF TRAY RED DELICIOUS 56
+RGRDWXTP064,Apples,Red Delicious,,,,,64,CT,64,4,16,CT,Tray,Box,40,LB,,,WX,,,,,,,,WA XF TRAY RED DELICIOUS 64
+RGRDWXTP072,Apples,Red Delicious,,,,,72,CT,72,4,18,CT,Tray,Box,40,LB,,,WX,,,,,,,,WA XF TRAY RED DELICIOUS 72
+RGRDWXTP080,Apples,Red Delicious,,,,,80,CT,80,4,20,CT,Tray,Box,40,LB,,,WX,,,,,,,,WA XF TRAY RED DELICIOUS 80
+RGRDWXTP088,Apples,Red Delicious,,,,,88,CT,88,4,22,CT,Tray,Box,40,LB,,,WX,,,,,,,,WA XF TRAY RED DELICIOUS 88
+RGRDWXTP100,Apples,Red Delicious,,,,,100,CT,100,5,20,CT,Tray,Box,40,LB,,,WX,,,,,,,,WA XF TRAY RED DELICIOUS 100
+RGRDWXTP113,Apples,Red Delicious,,,,,113,CT,113,5,22,CT,Tray,Box,40,LB,,,WX,,,,,,,,WA XF TRAY RED DELICIOUS 113
+RGRDWXTP125,Apples,Red Delicious,,,,,125,CT,125,5,25,CT,Tray,Box,40,LB,,,WX,,,,,,,,WA XF TRAY RED DELICIOUS 125
+RGRGWXG1022,Apples,Red & Gold,,,,,22,CT,22,1,22,CT,Tray,Box,10,LB,,,WX,,,,,,,,WA XF 1 LAYER GIFT RED & GOLD 22
+RGRJU1M5090,Pears,Red/Green D'Anjou,,,,,90,CT,90,8,5,LB,Soft-Net,Box,40,LB,,,U1,,,,,,,,"US#1 5LB SOFT NET RED/GREEN D'ANJOU 2 1/2"""
+RGRRCXTP064,Apples,Red Rome Beauty,,,,,64,CT,64,4,16,CT,Tray,Box,40,LB,,,CX,,,,,,,,WA XF TRAY RED ROME 64
+RGRRCXTP072,Apples,Red Rome Beauty,,,,,72,CT,72,4,18,CT,Tray,Box,40,LB,,,CX,,,,,,,,WA XF TRAY RED ROME 72
+RGRRUXT7D12,Apples,Red Rome Beauty,,,,,2.5,IN,0,0,,LB,Bulk,Tote Bin,640,LB,,,UX,,,,,0,,,"US XF 650LB TOTE RG RED ROME BEAUTY  2 1/2"" DIAMETER"
+RGRRWXB3D12,Apples,Red Rome Beauty,,,,,2.5,IN,0,12,3,LB,Poly Bag,Box,36,LB,,,WX,,,,,,,,"WA XF 12/3LB BAG ROMES 2 1/2"""
+RGRRWXEU050,Apples,Red Rome Beauty,,,,,50,CT,50,2,25,CT,Tray,Box,28,LB,,,WX,,,,,,,,WA XF EURO RG RED ROME 50
+RGRRWXM3125,Apples,Red Rome Beauty,,,,,125,CT,125,12,3,LB,Soft-Net,Box,36,LB,,,WX,,,,,0,,,WA EXTRA FANCY SOFT-NET 12/3# BAGS RG RED ROME BEAUTY  125 COUNT
+RGRRWXTP064,Apples,Red Rome Beauty,,,,,64,CT,64,4,16,CT,Tray,Box,40,LB,,,WX,,,,,,,,WA XF TRAY RED ROMES 64
+RGRRWXTP072,Apples,Red Rome Beauty,,,,,72,CT,72,4,18,CT,Tray,Box,40,LB,,,WX,,,,,,,,WA XF TRAY RED ROMES 72
+RGRRWXTP080,Apples,Red Rome Beauty,,,,,80,CT,80,4,20,CT,Tray,Box,40,LB,,,WX,,,,,,,,WA XF TRAY RED ROMES 80
+RGRRWXTP088,Apples,Red Rome Beauty,,,,,88,CT,88,4,22,CT,Tray,Box,40,LB,,,WX,,,,,,,,WA XF TRAY RED ROMES 88
+RGRUU120014,Rhubarb,Rhubarb,,,,,14,CT,14,0,,LB,Bulk,Box,20,LB,,,U1,,,,,,,,"US #1 20LB RHUBARB 14"""
+RGSEU1C2050,Pears,Seckel Pear,,,,,50,CT,50,2,25,CT,Tray,Box,20,LB,,,U1,,,,,,,,US#1 1/2 CRTN SECKEL 50
+RGSEU1C2060,Pears,Seckel Pear,,,,,60,CT,60,2,30,CT,Tray,Box,20,LB,,,U1,,,,,,,,RG SECKEL PEAR US #1 1/2 CARTON 60 COUNT
+RGWSUXTP100,Apples,Winesap,,,,,100,CT,100,5,20,CT,Tray,Box,40,LB,,,UX,,,,,,,,US XF TRAY WINESAP 100
+RGWSUXTP113,Apples,Winesap,,,,,113,CT,113,5,22,CT,Tray,Box,40,LB,,,UX,,,,,,,,US XF TRAY WINESAP 113
+RGWSUXTP125,Apples,Winesap,,,,,125,CT,125,5,25,CT,Tray,Box,40,LB,,,UX,,,,,,,,US XF TRAY WINESAP 125
+RGWSUXTP138,Apples,Winesap,,,,,138,CT,138,5,27,CT,Tray,Box,40,LB,,,UX,,,,,,,,US XF TRAY WINESAP 138
+RGWSWXTP088,Apples,Winesap,,,,,88,CT,88,4,22,CT,Tray,Box,40,LB,,,WX,,,,,,,,WA XF TRAY WINESAPS 88
+RGWSWXTP100,Apples,Winesap,,,,,100,CT,100,5,20,CT,Tray,Box,40,LB,,,WX,,,,,,,,WA XF TRAY WINESAPS 100
+RGWSWXTP113,Apples,Winesap,,,,,113,CT,113,5,22,CT,Tray,Box,40,LB,,,WX,,,,,,,,WA XF TRAY WINESAPS 113
+RGWSWXTP125,Apples,Winesap,,,,,125,CT,125,5,25,CT,Tray,Box,40,LB,,,WX,,,,,,,,WA XF TRAY WINESAPS 125
+RGWSWXTP138,Apples,Winesap,,,,,138,CT,138,5,27,CT,Tray,Box,40,LB,,,WX,,,,,,,,WA XF TRAY WINESAPS 138
+RGWSWXTP150,Apples,Winesap,,,,,150,CT,150,5,30,CT,Tray,Box,40,LB,,,WX,,,,,,,,WA XF TRAY WINESAPS 150
+RGYSU1CNSTD,Squash,Yellow Squash,,,,,Standard,,0,0,,CT,Tray,Box,40,LB,,,U1,,,,,,,,RG YELLOW SQUASH US #1 CARTON STANDARD
+RGZUU1CNSTD,Zucchini,Zucchini,,,,,Standard,,0,0,,CT,Tray,Box,40,LB,,,U1,,,,,,,,RG ZUCCHINI US #1 CARTON STANDARD

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<deployment name="defaultClientConfig" xmlns="http://xml.apache.org/axis/wsdd/" xmlns:java="http://xml.apache.org/axis/wsdd/providers/java" xmlns:handler="http://xml.apache.org/axis/wsdd/providers/handler">
+	<globalConfiguration>
+		<parameter name="disablePrettyXML" value="true"/>
+		<parameter name="dotNetSoapEncFix" value="true"/>
+		<requestFlow>
+			<handler type="java:org.apache.axis.handlers.JWSHandler">
+				<parameter name="scope" value="session"/>
+			</handler>
+			<handler type="java:org.apache.axis.handlers.JWSHandler">
+				<parameter name="scope" value="request"/>
+				<parameter name="extension" value=".jwr"/>
+			</handler>
+<!-- uncomment this if you want the SOAP monitor -->
+		<!--
+			<handler type="java:org.apache.axis.handlers.SOAPMonitorHandler"/>
+		-->
+		</requestFlow>
+<!-- uncomment this if you want the SOAP monitor -->
+		<!--
+		 <responseFlow>
+			 <handler type="java:org.apache.axis.handlers.SOAPMonitorHandler"/>
+		 </responseFlow>
+		 -->
+	</globalConfiguration>
+	<handler type="java:org.apache.axis.handlers.http.URLMapper" name="URLMapper"/>
+	<handler type="java:org.apache.axis.transport.local.LocalResponder" name="LocalResponder"/>
+	<handler type="java:org.apache.axis.handlers.SimpleAuthenticationHandler" name="Authenticate"/>
+	
+	<!--<service name="PortalIntegration" provider="java:RPC">
+		<namespace>http://www.rainingdata.com/ws</namespace>
+		<parameter name="allowedMethods" value="getPedigreeDocument,getPedigreeEnvelopeDocument"/>
+		<parameter name="className" value="com.rdta.eag.api.PortalIntegration"/>
+		<operation name="getPedigreeDocument" qname="operNS:getPedigreeDocument" xmlns:operNS="http://faults.samples1" >
+			<parameter name="subscriberID" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>	
+			<parameter name="invoiceID" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>	
+			<parameter name="pedigreeEnvelopID" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+			<parameter name="pedigreeID" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+		</operation>
+
+		
+
+	</service>
+	
+	-->
+
+
+
+	<service name="PortalIntegration" provider="java:RPC">
+		<namespace>http://www.rainingdata.com/ws</namespace>
+		<parameter name="allowedMethods" value="getPedigreeGivenInvoiceNumber,getPedigreeGivenInvoiceNumberNDC"/>
+		<parameter name="className" value="com.rdta.eag.api.PortalIntegration"/>
+		<operation name="getPedigreeGivenInvoiceNumberNDC" qname="operNS:getPedigreeGivenInvoiceNumberNDC" xmlns:operNS="http://faults.samples1" >
+			<parameter name="subscriberID" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>	
+			<parameter name="deaNumber" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>	
+			<parameter name="ndcNumber" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+			<parameter name="invoiceNumber" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+		</operation>
+		<operation name="getPedigreeGivenInvoiceNumber" qname="operNS:getPedigreeGivenInvoiceNumber" xmlns:operNS="http://faults.samples1" >
+			<parameter name="subscriberID" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>	
+			<parameter name="deaNumber" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>	
+			<parameter name="invoiceNumber" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+		</operation>
+	</service>
+
+
+
+
+	 <service name="EpharmaAPIInterface" provider="java:RPC">
+		  <namespace>http://localhost:8080/axis/services/EpharmaAPIInterface</namespace>
+		  <parameter name="className" value="com.rdta.eag.api.EpharmaAPI"/>
+		  <parameter name="allowedMethods" value="subscribeTradingPartner,submitPublicKey,getSession,submitPedigreeEnvelope,logOut"/>
+		 
+		  <operation name="subscribeTradingPartner" qname="operNS:subscribeTradingPartner" xmlns:operNS="http://faults.samples1" >
+			<parameter name="subPartyId" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>	
+			<parameter name="licenseNum" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>	
+			<parameter name="publicKey" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+			<parameter name="partyRole" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+			<parameter name="contactName" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+			<parameter name="title" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+			<parameter name="address" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+			<parameter name="phone" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+			<parameter name="email" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+			<parameter name="comments" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+		    </operation>
+
+
+
+		    <operation name="submitPublicKey" qname="operNS:submitPublicKey" xmlns:operNS="http://faults.samples1" >
+			<parameter name="subscribeID" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>	
+			<parameter name="pin" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>	
+			<parameter name="key" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+			<parameter name="keyType" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+		    </operation>
+		
+		    <operation name="getSession" qname="operNS:getSession" xmlns:operNS="http://faults.samples1" >
+			<parameter name="subscriberId" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>	
+			<parameter name="subscriberPin" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>	
+			<parameter name="username" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+			<parameter name="password" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+		    </operation>
+
+		    <operation name="submitPedigreeEnvelope" qname="operNS:submitPedigreeEnvelope" xmlns:operNS="http://faults.samples1" >
+		       <parameter name="sessionId" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+		       <parameter name="inputXML" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>	
+		    </operation>
+
+		    <operation name="logOut" qname="operNS:logOut" xmlns:operNS="http://faults.samples1" >
+			<parameter name="sessionId" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+		    </operation>
+
+	</service>
+
+
+	<transport name="http">
+		<parameter name="qs:list" value="org.apache.axis.transport.http.QSListHandler"/>
+		<parameter name="qs:method" value="org.apache.axis.transport.http.QSMethodHandler"/>
+		<parameter name="qs:wsdl" value="org.apache.axis.transport.http.QSWSDLHandler"/>
+		<requestFlow>
+			<handler type="URLMapper"/>
+			<handler type="java:org.apache.axis.handlers.http.HTTPAuthHandler"/>
+		</requestFlow>
+	</transport>
+	<transport name="local">
+		<responseFlow>
+			<handler type="LocalResponder"/>
+		</responseFlow>
+	</transport>
+</deployment>

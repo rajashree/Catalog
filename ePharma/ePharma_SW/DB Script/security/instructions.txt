@@ -1,0 +1,17 @@
+1. put the signature.jar in C:\
+
+2. put the security folder in C:\, some libraries from security\lib are used in 
+   the signature.jar and the security\keys folder will have the key store file.
+
+3. Deploy the java function using the register-jfn create.xq and register-jfn verify.xq, 
+   modify the path for verifyxmlsig.xml and createxmlsig.xml in it to where ever the 
+   file is located. please double check the location of verifysignature.jar in 
+   verifyxmlsig.xml and createxmlsig.xml files. 
+
+4. Deploy the CreateSignature and VerifySignature stored procedures.
+
+5. use Usage* xquery files to excute the stored stored procedures.
+
+6. Sample files
+	apn.xml is the APN XML document before XML Signature.
+	apn-sign.xml is the APN document after the XML signature has been done.

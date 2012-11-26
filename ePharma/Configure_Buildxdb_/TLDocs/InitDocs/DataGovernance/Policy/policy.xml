@@ -1,0 +1,15 @@
+<DataChangePolicy>
+<EnterpriseData name="VendorContact">
+	<EscalateCondition>
+	<Address type="Primary"/>
+	</EscalateCondition>
+</EnterpriseData>
+<EnterpriseData name="ProductDiscount">
+	<EscalateCondition>
+	<Percentage>10</Percentage>
+	</EscalateCondition>
+	<EscalateCondition>
+	<TriggerAmount>250</TriggerAmount>
+	</EscalateCondition>
+</EnterpriseData>
+</DataChangePolicy>

@@ -1,0 +1,34 @@
+<CaseManagement>
+<Case>
+<CaseId>12345</CaseId>
+<Request>
+	<DataElement type='ProductDiscount' id='2'>
+		<Percentage>10</Percentage>
+		<TriggerAmount>250</TriggerAmount>
+	</DataElement>
+</Request>
+<Requestor>
+	<EmployeeID>7</EmployeeID>
+</Requestor>
+<EnterpriseData>
+<DataElement type='ProductDiscount' id='3'>
+		<Percentage>12</Percentage>
+		<TriggerAmount>450</TriggerAmount>
+</DataElement>
+<Reviewers>
+<Employee id="1" type="DataSteward">
+		<Name></Name>
+		<Department></Department>
+		<Email></Email>
+		<Phone></Phone>
+</Employee>
+<Employee id="5" type="DataCaptain">
+		<Name></Name>
+		<Department></Department>
+		<Email></Email>
+		<Phone></Phone>
+</Employee>
+</Reviewers>
+</EnterpriseData>	
+</Case>
+</CaseManagement>

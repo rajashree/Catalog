@@ -1,0 +1,27 @@
+/APNAction.java/1.2/Mon Jun 12 07:07:29 2006//
+D/Action////
+/AppendProductsAction.java/1.2/Mon Jun 12 07:07:29 2006//
+/CategoryCode.java/1.2/Mon Jun 12 07:07:29 2006//
+/CategoryCollection.java/1.2/Mon Jun 12 07:07:29 2006//
+/CreateAPN.txt/1.1/Sat Jun  3 00:22:25 2006//
+/CreateAPNAction.java/1.2/Mon Jun 12 07:07:29 2006//
+/DropStoredProcedure_R.txt/1.1/Sat Jun  3 00:22:25 2006//
+/Inbox.xml/1.1/Sat Jun  3 00:22:25 2006//
+/OperationType.java/1.2/Mon Jun 12 07:07:29 2006//
+/Product_Payload.xml/1.1/Sat Jun  3 00:22:25 2006//
+/RuleCollection.java/1.2/Mon Jun 12 07:07:29 2006//
+/RuleEngine.java/1.2/Mon Jun 12 07:07:29 2006//
+/RuleEngineAction.java/1.2/Mon Jun 12 07:07:29 2006//
+/RuleEngineServlet.java/1.2/Mon Jun 12 07:07:29 2006//
+/RuleEngineWS.java/1.2/Mon Jun 12 07:07:29 2006//
+/RuleSetCollection.java/1.2/Mon Jun 12 07:07:29 2006//
+/RulesXMLStructure.java/1.2/Mon Jun 12 07:07:29 2006//
+/SignAPNAction.java/1.2/Mon Jun 12 07:07:29 2006//
+/StoredProcedure_R.txt/1.1/Sat Jun  3 00:22:25 2006//
+/StoredProcedure_RuleEngine.txt/1.1/Sat Jun  3 00:22:25 2006//
+/StoredProcedure_Rules.txt/1.1/Sat Jun  3 00:22:25 2006//
+/StoredProcedure_Scenario 2.txt/1.1/Sat Jun  3 00:22:25 2006//
+/StoredProcedure_Scenario 7.txt/1.1/Sat Jun  3 00:22:25 2006//
+/TLHelper.java/1.2/Mon Jun 12 07:07:29 2006//
+D/Util////
+D/test////

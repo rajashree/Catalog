@@ -1,0 +1,38 @@
+BODY {
+color: #333;
+background-color: #eee;
+padding: 0 5px;
+margin:0;
+font-family: arial, geneva, lucida, sans-serif;
+font-size:9px;
+}
+
+PRE {
+	font-family:"andale mono", "monotype.com", monospace;
+	font-size:0.9em;
+}
+
+H1 {
+	font-size:2em;
+	font-weight:normal;
+	margin:1em 0;
+}
+
+H2 {
+	font-size:1.5em;
+	font-weight:normal;
+	margin:0;
+}
+
+DIV {
+	margin:0;
+}
+
+#the-html {
+	width:40%;
+	float:left;
+}
+
+#the-css {
+	margin-left:10%;
+}

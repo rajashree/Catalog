@@ -1,0 +1,64 @@
+<html>
+	<head>
+		<title>Simple AJAX Example</title>
+		<script>
+
+			var req;
+			function validate()
+			{
+			   var idField = document.getElementById("userid");
+			   var url = "./ValidateServlet?id=" + encodeURIComponent(idField.value);
+			   if (typeof XMLHttpRequest != "undefined")
+			   {
+			       req = new XMLHttpRequest();
+			   }else if (window.ActiveXObject)
+			   {
+			       req = new ActiveXObject("Microsoft.XMLHTTP");
+			   }
+			   req.open("GET", url, true);
+			   req.onreadystatechange = callback;
+			   req.send(null);
+			}
+			
+			function callback()
+			{
+			    if (req.readyState == 4)
+			    {
+			        if (req.status == 200)
+			        {
+			            parseMessage();
+			        }
+			    }
+			}
+			
+			function parseMessage()
+			{
+			 var message = req.responseXML.getElementsByTagName("message")[0];
+			 setMessage(message.childNodes[0].nodeValue);
+			}
+			
+			function setMessage(message)
+			{
+			    var mdiv = document.getElementById("userIdMessage");
+			    if (message == "invalid")
+			    {
+			       mdiv.innerHTML = "<div style=\"color:red\">Invalid User Id</ div>";
+			    } else
+			    {
+			       mdiv.innerHTML = "<div style=\"color:green\">Valid User Id</ div>";
+			    }
+			}			
+			
+		</script>
+	</head>
+	
+	<body>
+		Enter User Name:	
+		<input type="text" size="20" id="userid" name="id" onkeyup="validate();">
+	    <b><div id="userIdMessage"> </div></b>
+	</body>
+</html>
+
+
+
+

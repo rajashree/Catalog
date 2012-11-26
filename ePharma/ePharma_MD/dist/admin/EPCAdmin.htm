@@ -1,0 +1,27 @@
+<%
+
+String sessionID = (String)session.getAttribute("sessionID");
+String pagenm = request.getParameter("pagenm");
+String tp_company_nm = request.getParameter("tp_company_nm");
+
+%>
+
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Frameset//EN">
+<html>
+	<head>
+		<TITLE>ePharma - Admin Console</TITLE>
+	</head>
+	<frameset rows="100,*">
+		<frame name="search" scrolling="no" src="test1.html">
+		<frame name="resultsFRM" scrolling="auto" src="test2.html">
+	</frameset>
+	<noframes>
+		<p>This page requires frames, but your browser does not support them.</p>
+	</noframes>
+	</frameset>
+	<noframes>
+		<p>This page requires frames, but your browser does not support them.</p>
+	</noframes>
+</html>

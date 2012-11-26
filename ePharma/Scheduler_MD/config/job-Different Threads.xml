@@ -1,0 +1,11 @@
+<jobs>
+	<job type="epharmaSchedular" >
+	    <task name="ABCD" class="com.rdta.eag.ePharma.activity.MonitorActivityJob" delayDuration="1" sleepDuration="1"/>
+	</job>
+	<job type="epharmaSchedular1" >
+    	 <task name="ABCD1" class="com.rdta.eag.ePharma.activity.MonitorActivityJob1" delayDuration="1" sleepDuration="2"/>
+  	</job>
+	<job type="epharmaSchedular2" >
+	    <task name="ABCD2" class="com.rdta.eag.ePharma.activity.MonitorActivityJob2" delayDuration="1" sleepDuration="3"/>
+	</job>
+</jobs>

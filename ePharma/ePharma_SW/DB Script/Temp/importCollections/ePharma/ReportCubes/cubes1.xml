@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ReportCube xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="file:///c:/Xquery/Schema/ePedigree/ReportCube.xsd">
+	<Cubes>
+		<!--Element Cube, maxOccurs=unbounded-->
+		<Cube>
+			<Name>ShippedPedigree By TradingPartner Per DateSpan</Name>
+			<Description>ShippedPedigree By TradingPartner Per DateSpan</Description>
+			<Key>shippedPedigreeByTradingPartnerPerDateSpan</Key>
+		</Cube>
+		<Cube>
+			<Name>ReceivedPedigree By TradingPartner Per DateSpan</Name>
+			<Description>ReceivedPedigree By TradingPartner Per DateSpan</Description>
+			<Key>receivedPedigreeByTradingPartnerPerDateSpan</Key>
+		</Cube>
+		<Cube>
+			<Name>Failed Pedigree By TradingPartner per DateSpan</Name>
+			<Description>Failed Pedigree By TradingPartner per DateSpan</Description>
+			<Key>failedPedigreeByTradingPartnerPerDateSpan</Key>
+		</Cube>
+		<Cube>
+			<Name>Pedigree By Status Per Trading Partner</Name>
+			<Description>Pedigree By Status Per Trading Partner</Description>
+			<Key>pedigreeByStatusPerTradingPartner</Key>
+		</Cube>
+	</Cubes>
+</ReportCube>

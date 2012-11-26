@@ -1,0 +1,123 @@
+2007-04-04 12:21:04,906 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-04-04 12:21:05,062 INFO  (LoginAction.java:57) - In execute method
+2007-04-04 12:21:05,093 INFO  (SecurityServiceImpl.java:140) - In authenticate method
+2007-04-04 12:21:05,109 INFO  (SecurityServiceImpl.java:54) - In getUser method
+2007-04-04 12:21:05,109 INFO  (SecurityServiceImpl.java:56) - Query:tlsp:loginUserInfo('test')
+2007-04-04 12:21:06,671 INFO  (User.java:146) - In passwordMatch method
+2007-04-04 12:21:06,671 INFO  (User.java:176) - In valueBound method
+2007-04-04 12:21:06,671 INFO  (SecurityServiceImpl.java:101) - In insertSessionDoc method
+2007-04-04 12:21:06,671 INFO  (SecurityServiceImpl.java:85) - In replaceString method
+2007-04-04 12:21:06,687 INFO  (SecurityServiceImpl.java:128) - Query:tig:insert-document( 'tig:///EAGRFID/SysSessions/', <session><sessionid>12700120070404122106</sessionid><userid>321</userid><username>John Doe</username><accesslevel>epedigree</accesslevel><sessionstart>2007-04-04T12:21:06</sessionstart><userip>127.0.0.1</userip><lastuse>2007-04-04T12:21:06</lastuse><tp_company_nm>PrePak Systems</tp_company_nm><tp_company_id>null</tp_company_id></session>)
+2007-04-04 12:21:06,812 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-04-04 12:21:07,062 INFO  (EpedigreeAction.java:67) - ********Inside Action EpedigreeAction....... 
+2007-04-04 12:21:07,062 INFO  (EpedigreeAction.java:68) - Inside Action execute of EpedigreeAction....
+2007-04-04 12:21:07,078 INFO  (EpedigreeAction.java:78) - Validating The Session
+2007-04-04 12:21:07,078 INFO  (EpedigreeAction.java:82) - sessionID in EpedigreeAction :12700120070404122106
+2007-04-04 12:21:07,390 INFO  (EpedigreeAction.java:92) - The readStatus is : true
+2007-04-04 12:21:07,390 INFO  (EpedigreeAction.java:99) - My Query in EpedigreeAction class.....tlsp:DisplayMessage('12700120070404122106') 
+2007-04-04 12:21:08,281 INFO  (EpedigreeAction.java:111) - MessageTitle is:testing
+2007-04-04 12:21:08,281 INFO  (EpedigreeAction.java:113) - CreatedBy is:John Doe
+2007-04-04 12:21:08,281 INFO  (EpedigreeAction.java:115) - CreatedDate is:2006-06-23T02:49:37
+2007-04-04 12:21:08,296 INFO  (EpedigreeAction.java:117) - MessageID is:21816589740578552396027392425837
+2007-04-04 12:21:08,296 INFO  (EpedigreeAction.java:119) - RelatedProcess is:fgfgtodaysss
+2007-04-04 12:21:08,296 INFO  (EpedigreeAction.java:121) - SeverityLevel is:1
+2007-04-04 12:21:08,296 INFO  (EpedigreeAction.java:123) - status is:Accepted
+2007-04-04 12:21:08,296 INFO  (EpedigreeAction.java:128) - Before returning to success
+2007-04-04 12:21:11,921 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-04-04 12:21:12,015 INFO  (InitialPedigreeAction.java:94) - Query for Getting Trading partners in InitialPedigreeAction for $i in collection('tig:///CatalogManager/TradingPartner')/TradingPartner order by $i/name ascending return data($i/name) 
+2007-04-04 12:21:37,656 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-04-04 12:21:37,687 INFO  (InitialPedigreeAction.java:94) - Query for Getting Trading partners in InitialPedigreeAction for $i in collection('tig:///CatalogManager/TradingPartner')/TradingPartner order by $i/name ascending return data($i/name) 
+2007-04-04 12:21:39,453 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-04-04 12:21:39,484 INFO  (InitialPedigreeAction.java:94) - Query for Getting Trading partners in InitialPedigreeAction for $i in collection('tig:///CatalogManager/TradingPartner')/TradingPartner order by $i/name ascending return data($i/name) 
+2007-04-04 12:21:56,640 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-04-04 12:21:56,687 INFO  (InitialPedigreeAction.java:94) - Query for Getting Trading partners in InitialPedigreeAction for $i in collection('tig:///CatalogManager/TradingPartner')/TradingPartner order by $i/name ascending return data($i/name) 
+2007-04-04 12:22:02,281 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-04-04 12:22:02,312 INFO  (InitialPedigreeAction.java:94) - Query for Getting Trading partners in InitialPedigreeAction for $i in collection('tig:///CatalogManager/TradingPartner')/TradingPartner order by $i/name ascending return data($i/name) 
+2007-04-04 12:22:09,062 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-04-04 12:22:09,109 INFO  (InitialPedigreeAction.java:94) - Query for Getting Trading partners in InitialPedigreeAction for $i in collection('tig:///CatalogManager/TradingPartner')/TradingPartner order by $i/name ascending return data($i/name) 
+2007-04-04 12:22:25,984 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-04-04 12:22:26,015 INFO  (InitialPedigreeAction.java:94) - Query for Getting Trading partners in InitialPedigreeAction for $i in collection('tig:///CatalogManager/TradingPartner')/TradingPartner order by $i/name ascending return data($i/name) 
+2007-04-04 12:22:26,796 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-04-04 12:22:26,828 INFO  (InitialPedigreeAction.java:94) - Query for Getting Trading partners in InitialPedigreeAction for $i in collection('tig:///CatalogManager/TradingPartner')/TradingPartner order by $i/name ascending return data($i/name) 
+2007-04-04 12:22:26,984 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-04-04 12:22:27,031 INFO  (InitialPedigreeAction.java:94) - Query for Getting Trading partners in InitialPedigreeAction for $i in collection('tig:///CatalogManager/TradingPartner')/TradingPartner order by $i/name ascending return data($i/name) 
+2007-04-04 12:22:27,218 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-04-04 12:22:27,265 INFO  (InitialPedigreeAction.java:94) - Query for Getting Trading partners in InitialPedigreeAction for $i in collection('tig:///CatalogManager/TradingPartner')/TradingPartner order by $i/name ascending return data($i/name) 
+2007-04-04 12:22:27,359 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-04-04 12:22:27,406 INFO  (InitialPedigreeAction.java:94) - Query for Getting Trading partners in InitialPedigreeAction for $i in collection('tig:///CatalogManager/TradingPartner')/TradingPartner order by $i/name ascending return data($i/name) 
+2007-04-04 12:22:28,203 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-04-04 12:22:28,234 INFO  (InitialPedigreeAction.java:94) - Query for Getting Trading partners in InitialPedigreeAction for $i in collection('tig:///CatalogManager/TradingPartner')/TradingPartner order by $i/name ascending return data($i/name) 
+2007-04-04 12:23:01,609 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-04-04 12:23:01,656 INFO  (InitialPedigreeAction.java:94) - Query for Getting Trading partners in InitialPedigreeAction for $i in collection('tig:///CatalogManager/TradingPartner')/TradingPartner order by $i/name ascending return data($i/name) 
+2007-04-04 12:33:55,421 INFO  (SessionListener.java:55) - In sessionDestroyed method
+2007-04-04 12:33:55,421 INFO  (SessionListener.java:60) - Query:tlsp:deleteInvlidSessionID('12700120070404122106')
+2007-04-04 12:33:55,468 INFO  (User.java:189) - In valueUnbound method
+2007-04-04 17:14:51,796 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-04-04 17:14:51,875 INFO  (LoginAction.java:57) - In execute method
+2007-04-04 17:14:51,906 INFO  (SecurityServiceImpl.java:140) - In authenticate method
+2007-04-04 17:14:51,906 INFO  (SecurityServiceImpl.java:54) - In getUser method
+2007-04-04 17:14:51,906 INFO  (SecurityServiceImpl.java:56) - Query:tlsp:loginUserInfo('test')
+2007-04-04 17:14:53,171 INFO  (User.java:146) - In passwordMatch method
+2007-04-04 17:14:53,171 INFO  (User.java:176) - In valueBound method
+2007-04-04 17:14:53,171 INFO  (SecurityServiceImpl.java:101) - In insertSessionDoc method
+2007-04-04 17:14:53,171 INFO  (SecurityServiceImpl.java:85) - In replaceString method
+2007-04-04 17:14:53,187 INFO  (SecurityServiceImpl.java:128) - Query:tig:insert-document( 'tig:///EAGRFID/SysSessions/', <session><sessionid>12700120070404051453</sessionid><userid>321</userid><username>John Doe</username><accesslevel>epedigree</accesslevel><sessionstart>2007-04-04T17:14:53</sessionstart><userip>127.0.0.1</userip><lastuse>2007-04-04T17:14:53</lastuse><tp_company_nm>PrePak Systems</tp_company_nm><tp_company_id>null</tp_company_id></session>)
+2007-04-04 17:14:53,312 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-04-04 17:14:53,531 INFO  (EpedigreeAction.java:67) - ********Inside Action EpedigreeAction....... 
+2007-04-04 17:14:53,531 INFO  (EpedigreeAction.java:68) - Inside Action execute of EpedigreeAction....
+2007-04-04 17:14:53,546 INFO  (EpedigreeAction.java:78) - Validating The Session
+2007-04-04 17:14:53,562 INFO  (EpedigreeAction.java:82) - sessionID in EpedigreeAction :12700120070404051453
+2007-04-04 17:14:53,890 INFO  (EpedigreeAction.java:92) - The readStatus is : true
+2007-04-04 17:14:53,890 INFO  (EpedigreeAction.java:99) - My Query in EpedigreeAction class.....tlsp:DisplayMessage('12700120070404051453') 
+2007-04-04 17:14:54,562 INFO  (EpedigreeAction.java:111) - MessageTitle is:testing
+2007-04-04 17:14:54,562 INFO  (EpedigreeAction.java:113) - CreatedBy is:John Doe
+2007-04-04 17:14:54,562 INFO  (EpedigreeAction.java:115) - CreatedDate is:2006-06-23T02:49:37
+2007-04-04 17:14:54,562 INFO  (EpedigreeAction.java:117) - MessageID is:21816589740578552396027392425837
+2007-04-04 17:14:54,578 INFO  (EpedigreeAction.java:119) - RelatedProcess is:fgfgtodaysss
+2007-04-04 17:14:54,578 INFO  (EpedigreeAction.java:121) - SeverityLevel is:1
+2007-04-04 17:14:54,578 INFO  (EpedigreeAction.java:123) - status is:Accepted
+2007-04-04 17:14:54,578 INFO  (EpedigreeAction.java:128) - Before returning to success
+2007-04-04 17:14:57,125 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-04-04 17:14:57,203 DEBUG (AdminUser.java:56) - sessionID :12700120070404051453
+2007-04-04 17:15:06,750 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-04-04 17:15:06,796 INFO  (EpedigreeAction.java:67) - ********Inside Action EpedigreeAction....... 
+2007-04-04 17:15:06,796 INFO  (EpedigreeAction.java:68) - Inside Action execute of EpedigreeAction....
+2007-04-04 17:15:06,812 INFO  (EpedigreeAction.java:78) - Validating The Session
+2007-04-04 17:15:06,812 INFO  (EpedigreeAction.java:82) - sessionID in EpedigreeAction :12700120070404051453
+2007-04-04 17:15:06,828 INFO  (EpedigreeAction.java:92) - The readStatus is : true
+2007-04-04 17:15:06,828 INFO  (EpedigreeAction.java:99) - My Query in EpedigreeAction class.....tlsp:DisplayMessage('12700120070404051453') 
+2007-04-04 17:15:06,859 INFO  (EpedigreeAction.java:111) - MessageTitle is:testing
+2007-04-04 17:15:06,859 INFO  (EpedigreeAction.java:113) - CreatedBy is:John Doe
+2007-04-04 17:15:06,859 INFO  (EpedigreeAction.java:115) - CreatedDate is:2006-06-23T02:49:37
+2007-04-04 17:15:06,859 INFO  (EpedigreeAction.java:117) - MessageID is:21816589740578552396027392425837
+2007-04-04 17:15:06,859 INFO  (EpedigreeAction.java:119) - RelatedProcess is:fgfgtodaysss
+2007-04-04 17:15:06,875 INFO  (EpedigreeAction.java:121) - SeverityLevel is:1
+2007-04-04 17:15:06,875 INFO  (EpedigreeAction.java:123) - status is:Accepted
+2007-04-04 17:15:06,875 INFO  (EpedigreeAction.java:128) - Before returning to success
+2007-04-04 17:15:10,703 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-04-04 17:15:10,781 INFO  (InitialPedigreeAction.java:94) - Query for Getting Trading partners in InitialPedigreeAction for $i in collection('tig:///CatalogManager/TradingPartner')/TradingPartner order by $i/name ascending return data($i/name) 
+2007-04-04 17:15:40,109 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-04-04 17:15:40,140 WARN  (RequestUtils.java:177) - No FormBeanConfig found under 'ProcessedEnteredPedigreesForm'
+2007-04-04 17:15:40,156 INFO  (ProcessedEnteredPedigreesAction.java:77) - Inside Action ProcessedEnteredPedigreesAction....... 
+2007-04-04 17:15:40,156 INFO  (ProcessedEnteredPedigreesAction.java:93) - query for FaxDetails is:tlsp:GetProcessedEnteredPedigrees()
+2007-04-04 17:15:40,500 INFO  (ProcessedEnteredPedigreesAction.java:115) - vendorNamevendorNamevendorNamenull
+2007-04-04 17:15:42,984 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-04-04 17:15:43,015 INFO  (InitialPedigreeAction.java:94) - Query for Getting Trading partners in InitialPedigreeAction for $i in collection('tig:///CatalogManager/TradingPartner')/TradingPartner order by $i/name ascending return data($i/name) 
+2007-04-04 17:15:43,671 INFO  (GetImageServlet.java:82) - Inside getNodeConditions.... in GetImage servlet.........
+2007-04-04 17:15:43,671 INFO  (GetImageServlet.java:68) - Inside isMandatoryParam.... in GetImageServlet servlet.........
+2007-04-04 17:15:43,671 INFO  (GetImageServlet.java:68) - Inside isMandatoryParam.... in GetImageServlet servlet.........
+2007-04-04 17:15:43,671 INFO  (GetImageServlet.java:68) - Inside isMandatoryParam.... in GetImageServlet servlet.........
+2007-04-04 17:15:43,671 INFO  (GetImageServlet.java:68) - Inside isMandatoryParam.... in GetImageServlet servlet.........
+2007-04-04 17:15:43,671 INFO  (GetImageServlet.java:68) - Inside isMandatoryParam.... in GetImageServlet servlet.........
+2007-04-04 17:15:43,671 INFO  (GetImageServlet.java:68) - Inside isMandatoryParam.... in GetImageServlet servlet.........
+2007-04-04 17:15:43,671 INFO  (GetImageServlet.java:198) - The query in GetImageServlet servlet is declare namespace bin ='http://www.rainingdata.com/TigerLogic/binary-support'; declare binary-encoding none; for $i in collection('tig:///ePharma/PaperPedigree')//initialPedigree[DocumentInfo/serialNumber='fff371c2-e0f1-1700-c001-81678fb04fe7']/descendant::*:* where $i/name()='data'return  if( exists( $i/binary() ) ) then $i/binary() else tlsp:GetBinaryImageForServlet(binary{$i},'data')
+2007-04-04 17:15:48,078 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-04-04 17:15:48,156 INFO  (PedigreeSearchAction.java:116) - Inside Action PedigreeSearchAction....... 
+2007-04-04 17:15:48,156 INFO  (PedigreeSearchAction.java:153) - Validating The Session
+2007-04-04 17:15:48,156 INFO  (PedigreeSearchAction.java:158) - sessionID in Action :12700120070404051453
+2007-04-04 17:15:48,156 INFO  (PedigreeSearchAction.java:170) - Query for getting Accesstlsp:validateAccess('12700120070404051453','2.10','Insert')
+2007-04-04 17:15:48,171 INFO  (PedigreeSearchAction.java:173) - The readStatus is : true
+2007-04-04 17:15:48,171 INFO  (PedigreeSearchAction.java:210) - Querying for From Date to To Date.......
+2007-04-04 17:15:48,171 INFO  (PedigreeSearchAction.java:216) - Query for Getting Trading partners in PedigreeSearchActionfor $i in collection('tig:///CatalogManager/TradingPartner')/TradingPartner return data($i/name) 
+2007-04-04 17:16:53,562 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-04-04 17:16:53,593 INFO  (InitialPedigreeAction.java:94) - Query for Getting Trading partners in InitialPedigreeAction for $i in collection('tig:///CatalogManager/TradingPartner')/TradingPartner order by $i/name ascending return data($i/name) 

@@ -1,0 +1,85 @@
+2007-02-21 16:16:45,882 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-21 16:16:45,991 INFO  (LoginAction.java:57) - In execute method
+2007-02-21 16:16:46,023 INFO  (SecurityServiceImpl.java:140) - In authenticate method
+2007-02-21 16:16:46,023 INFO  (SecurityServiceImpl.java:54) - In getUser method
+2007-02-21 16:16:46,023 INFO  (SecurityServiceImpl.java:56) - Query:tlsp:loginUserInfo_MD('test')
+2007-02-21 16:16:47,226 INFO  (User.java:146) - In passwordMatch method
+2007-02-21 16:16:47,226 INFO  (User.java:176) - In valueBound method
+2007-02-21 16:16:47,226 INFO  (SecurityServiceImpl.java:101) - In insertSessionDoc method
+2007-02-21 16:16:47,226 INFO  (SecurityServiceImpl.java:85) - In replaceString method
+2007-02-21 16:16:47,241 INFO  (SecurityServiceImpl.java:128) - Query:tig:insert-document( 'tig:///EAGRFID/SysSessions/', <session><sessionid>12700120070221041647</sessionid><userid>23802960038774853494040455282174</userid><username>raje raje</username><accesslevel>epedigree</accesslevel><sessionstart>2007-02-21T16:16:47</sessionstart><userip>127.0.0.1</userip><lastuse>2007-02-21T16:16:47</lastuse><tp_company_nm>Southwood</tp_company_nm><tp_company_id>null</tp_company_id></session>)
+2007-02-21 16:16:47,273 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-21 16:16:47,523 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-21 16:16:50,757 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-21 16:16:50,851 INFO  (PedigreeTradingPartnerListAction.java:57) - Inside the Action Class PedigreeTradingPartnerListAction......
+2007-02-21 16:16:51,241 INFO  (PedigreeTradingPartnerListAction.java:94) - The list size of the query is :1
+2007-02-21 16:16:51,241 INFO  (PedigreeTradingPartnerListAction.java:102) - The Trading Partner name is :4
+2007-02-21 16:16:51,257 INFO  (PedigreeTradingPartnerListAction.java:105) - The DEANumber is :4
+2007-02-21 16:16:57,351 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-21 16:16:57,398 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-21 16:16:59,288 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-21 16:16:59,366 INFO  (PedigreeTradingPartnerListAction.java:57) - Inside the Action Class PedigreeTradingPartnerListAction......
+2007-02-21 16:16:59,382 INFO  (PedigreeTradingPartnerListAction.java:94) - The list size of the query is :1
+2007-02-21 16:16:59,398 INFO  (PedigreeTradingPartnerListAction.java:102) - The Trading Partner name is :4
+2007-02-21 16:16:59,398 INFO  (PedigreeTradingPartnerListAction.java:105) - The DEANumber is :4
+2007-02-21 16:17:04,835 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-21 16:17:04,898 INFO  (PedigreeTradingPartnerListAction.java:57) - Inside the Action Class PedigreeTradingPartnerListAction......
+2007-02-21 16:17:05,023 INFO  (PedigreeTradingPartnerListAction.java:94) - The list size of the query is :0
+2007-02-21 16:17:29,101 INFO  (SessionListener.java:55) - In sessionDestroyed method
+2007-02-21 16:17:29,116 INFO  (SessionListener.java:60) - Query:tlsp:deleteInvlidSessionID_MD('null')
+2007-02-21 16:17:42,210 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-21 16:17:42,273 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-21 16:17:59,038 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-21 16:17:59,085 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-21 16:18:02,695 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-21 16:18:02,773 INFO  (PedigreeTradingPartnerListAction.java:57) - Inside the Action Class PedigreeTradingPartnerListAction......
+2007-02-21 16:18:03,116 INFO  (SendDHFormEmail.java:190) - Email From :johnson.joseph@sourcen.com
+2007-02-21 16:18:03,116 INFO  (SendDHFormEmail.java:191) - Email To :santosh@sourcen.com
+2007-02-21 16:18:03,116 INFO  (SendDHFormEmail.java:192) - Email Subject :Exception in ePharma Southwood Application
+2007-02-21 16:18:03,116 INFO  (SendDHFormEmail.java:193) - Email Content :null
+2007-02-21 16:18:03,554 ERROR (SendDHFormEmail.java:222) - ERROR SENDING EMAIL :java.lang.NullPointerException
+2007-02-21 16:18:05,476 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-21 16:18:05,523 INFO  (PedigreeTradingPartnerListAction.java:57) - Inside the Action Class PedigreeTradingPartnerListAction......
+2007-02-21 16:18:05,523 INFO  (SendDHFormEmail.java:190) - Email From :johnson.joseph@sourcen.com
+2007-02-21 16:18:05,523 INFO  (SendDHFormEmail.java:191) - Email To :santosh@sourcen.com
+2007-02-21 16:18:05,538 INFO  (SendDHFormEmail.java:192) - Email Subject :Exception in ePharma Southwood Application
+2007-02-21 16:18:05,538 INFO  (SendDHFormEmail.java:193) - Email Content :null
+2007-02-21 16:18:05,538 ERROR (SendDHFormEmail.java:222) - ERROR SENDING EMAIL :java.lang.NullPointerException
+2007-02-21 16:18:31,695 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-21 16:18:31,741 INFO  (PedigreeTradingPartnerListAction.java:57) - Inside the Action Class PedigreeTradingPartnerListAction......
+2007-02-21 16:18:31,757 INFO  (PedigreeTradingPartnerListAction.java:94) - The list size of the query is :1
+2007-02-21 16:18:31,757 INFO  (PedigreeTradingPartnerListAction.java:102) - The Trading Partner name is :t
+2007-02-21 16:18:31,757 INFO  (PedigreeTradingPartnerListAction.java:105) - The DEANumber is :t
+2007-02-21 16:18:36,132 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-21 16:18:36,179 INFO  (PedigreeTradingPartnerListAction.java:57) - Inside the Action Class PedigreeTradingPartnerListAction......
+2007-02-21 16:18:36,226 INFO  (PedigreeTradingPartnerListAction.java:94) - The list size of the query is :0
+2007-02-21 16:19:35,507 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-21 16:19:35,554 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-21 16:19:47,320 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-21 16:19:47,366 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-21 16:19:51,429 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-21 16:19:51,491 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-21 16:19:53,898 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-21 16:19:53,960 INFO  (PedigreeTradingPartnerListAction.java:57) - Inside the Action Class PedigreeTradingPartnerListAction......
+2007-02-21 16:19:53,960 INFO  (SendDHFormEmail.java:190) - Email From :johnson.joseph@sourcen.com
+2007-02-21 16:19:53,960 INFO  (SendDHFormEmail.java:191) - Email To :santosh@sourcen.com
+2007-02-21 16:19:53,960 INFO  (SendDHFormEmail.java:192) - Email Subject :Exception in ePharma Southwood Application
+2007-02-21 16:19:53,960 INFO  (SendDHFormEmail.java:193) - Email Content :null
+2007-02-21 16:19:53,960 ERROR (SendDHFormEmail.java:222) - ERROR SENDING EMAIL :java.lang.NullPointerException
+2007-02-21 16:20:16,226 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-21 16:20:16,288 INFO  (PedigreeTradingPartnerListAction.java:57) - Inside the Action Class PedigreeTradingPartnerListAction......
+2007-02-21 16:20:16,304 INFO  (PedigreeTradingPartnerListAction.java:94) - The list size of the query is :1
+2007-02-21 16:20:16,304 INFO  (PedigreeTradingPartnerListAction.java:102) - The Trading Partner name is :t
+2007-02-21 16:20:16,320 INFO  (PedigreeTradingPartnerListAction.java:105) - The DEANumber is :t
+2007-02-21 16:20:22,054 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-21 16:20:22,085 INFO  (PedigreeTradingPartnerListAction.java:57) - Inside the Action Class PedigreeTradingPartnerListAction......
+2007-02-21 16:20:22,116 INFO  (PedigreeTradingPartnerListAction.java:94) - The list size of the query is :0
+2007-02-21 16:21:37,882 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-21 16:21:37,913 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-21 16:21:48,179 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-21 16:21:48,226 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-21 16:21:50,163 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-21 16:21:50,226 INFO  (PedigreeTradingPartnerListAction.java:57) - Inside the Action Class PedigreeTradingPartnerListAction......
+2007-02-21 16:21:50,241 INFO  (PedigreeTradingPartnerListAction.java:94) - The list size of the query is :1
+2007-02-21 16:21:50,241 INFO  (PedigreeTradingPartnerListAction.java:102) - The Trading Partner name is :t
+2007-02-21 16:21:50,241 INFO  (PedigreeTradingPartnerListAction.java:105) - The DEANumber is :tt

@@ -1,0 +1,18 @@
+
+tig:create-stored-procedure("Rule1TrueCondition","
+   let $a := 'true' return $a 
+   "),
+ 
+ tig:create-stored-procedure("Rule1FalseCondition","
+ let $a := 'false' return $a 
+"),
+
+tig:create-stored-procedure("StatusCheck","
+ declare variable $payload as node()* external; let $c := $payload 
+ return if ($c/*/*/Status = 'Checked') then $c/* else 'false' 
+ "),
+ 
+ tig:create-stored-procedure("StatusUpdate","
+  declare variable $payload as node()* external; let $c := $payload 
+  return if ($c/*/*/id = 3) then $c/* else 'false' 
+  ")

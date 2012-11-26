@@ -1,0 +1,47 @@
+<project name="Database" default="loadDB" basedir=".">
+	<property file="datagovenv.properties"/>
+
+	<property name="properties" value="datagovenv.properties"/>
+
+	<property name="source" location="."/>
+	<property name="applib" value="${source}/lib"/>
+	<property name="build" location="${source}/WEB-INF"/>
+	  
+    <!-- class path information -->
+ 	 <path id="compile.classpath">
+ 		<fileset dir="${applib}">
+ 		  	<include name="*.jar"/>
+ 		</fileset>
+ 	 	<dirset dir="${build}">
+ 	 	 	 	        <include name="classes"/>
+ 	 	 	 	</dirset>
+ 	  </path>
+
+	<target name="loadDB">
+		<echo message="************  Setting up 'databases' and 'collections' related to Data Governance Application *************"/>
+		<java classname="com.BuildDatabaseClient" fork="yes" failonerror="yes" classpathref="compile.classpath">
+			<arg line="datagovdbconfig.xml"/>
+			<arg line="load"/>
+			<arg line="${properties}"/>
+		</java>
+	</target>
+	
+	<target name="deleteDB">
+			<java classname="com.BuildDatabaseClient" fork="yes" failonerror="yes" classpathref="compile.classpath">
+				<arg line="datagovdbconfig.xml"/>
+				<arg line="deleteDB"/>
+				<arg line="${properties}"/>
+				<arg line="DataGovernance"/>
+			</java>
+		</target>
+		<target name="deleteColl">
+			<java classname="com.BuildDatabaseClient" fork="yes" failonerror="yes" classpathref="compile.classpath">
+				<arg line="datagovdbconfig.xml"/>
+				<arg line="deleteColl"/>
+				<arg line="${properties}"/>
+				<arg line="Data Governance"/>
+				<arg line="Policy"/>
+			</java>
+		</target>
+	
+</project>

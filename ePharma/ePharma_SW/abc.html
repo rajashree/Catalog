@@ -1,0 +1,19 @@
+<html xmlns=http://www.w3.org/1999/xhtml
+xmlns:xform=http://www.w3.org/2001/08/xforms>
+<head>
+<xform:xform id="nameinfo">
+<xform:submitInfo action="process.jsp" method="post"/>
+</xform:xform>
+</head>
+<body>
+<xform:input xform="nameinfo" ref="firstname">
+<xform:caption>First Name:</xform:caption>
+</xform:input>
+<xform:input xform="nameinfo" ref="lastname">
+<xform:caption>Last Name:</xform:caption>
+</xform:input>
+<xform:submit xform="nameinfo">
+<xform:caption>Submit</xform:caption>
+</xform:submit>
+</body>
+</html>

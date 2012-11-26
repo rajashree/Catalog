@@ -1,0 +1,13 @@
+<ChangeRequest id='4567777777' status='Pending'>
+	<DataElement type='ProductDiscount' id='2'>
+		<Percentage>10</Percentage>
+		<TriggerAmount>250</TriggerAmount>
+	</DataElement>
+	<Decisions>
+		<Decision value='Approve' type='DataSteward'>
+			<EmployeeID>1</EmployeeID>
+			<Timestamp></Timestamp>
+			<Comments></Comments>
+		</Decision>		
+	</Decisions>
+</ChangeRequest>

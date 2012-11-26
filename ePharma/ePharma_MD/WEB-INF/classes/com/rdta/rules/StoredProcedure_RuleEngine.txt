@@ -1,0 +1,55 @@
+
+/********* Drop All Proc ****************/
+
+
+
+tig:drop-stored-procedure("attachPayload")   
+
+tig:drop-stored-procedure("GetAllRules") ,
+tig:drop-stored-procedure("createInstance") ,
+tig:drop-stored-procedure("GetNextRule") ,
+
+tig:drop-stored-procedure("getMax")  ,
+
+ 
+tig:drop-stored-procedure("GetFirstRule") 
+
+
+************Create All Proc******************
+
+
+tig:create-stored-procedure("createInstance","
+  declare variable $id as string external; 
+  for $b in collection('tig:///CardinalHealth/RuleSet')/RuleSet 
+  where $b/RuleSetID = $id 
+  return 
+  let $instance-uri := tig:insert-document('tig:///CardinalHealth/Instances', $b)
+  return $instance-uri 
+"),
+
+
+tig:create-stored-procedure("getMax","
+fn:max(for $i in collection('tig:///CardinalHealth/Instances')/RuleSet 
+return xs:int($i/InstanceID + 1))
+"),
+
+tig:create-stored-procedure("attachPayload","
+declare variable $payload as string external; declare variable $instanceID as string external; 
+insert $payload into collection('tig:///CardinalHealth/Instances')/RuleSet[InstanceID=$instanceID]/Context
+"),
+
+tig:create-stored-procedure("GetAllRules","
+declare variable $id as string external; 
+for $b in collection('tig:///CardinalHealth/Instances')/RuleSet where $b/InstanceID =$id return $b/Rules/Rule
+"),
+
+
+tig:create-stored-procedure("GetFirstRule","
+declare variable $instanceID as string external; 
+declare variable $rules as node()* {tlsp:GetAllRules($instanceID)}; 
+for $c in $rules where (fn:string-length($c/Links/FromLink) <= 0) return $c
+"),
+
+tig:create-stored-procedure("GetNextRule","
+declare variable $instanceID as string external; declare variable $link as string external; declare variable $rules as node()* {tlsp:GetAllRules($instanceID)}; for $c in $rules where $c/Links/FromLink = $link return $c
+"),

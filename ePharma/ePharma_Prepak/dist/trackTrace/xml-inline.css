@@ -1,0 +1,55 @@
+result {
+    display: table;
+    width: 100%;
+    border: thin solid black;
+    border-spacing: 2px;
+    background-color: white;
+}
+title {
+    display: table-caption;
+    font-size: 90%;
+    text-align: left;
+    font-weight: bold;
+    padding: 5px;
+}
+cols {
+    display: table-column-group;
+}
+cols *{
+    display: table-column;
+}
+headings {
+    display: table-header-group;
+    background-color: #8494CA;	
+	font-size: 10px;
+	color: #000000;
+}
+records {
+    display: table-row-group;
+    color: #C8C8C8;
+}
+record {
+    display: table-row;
+    font-family: "Verdana", "Arial", "Helvetica", "sans-serif";
+	font-size: 10px;
+	color: #C8C8C8;   
+}
+record > * {
+    display: table-cell;
+    font-family: "Verdana", "Arial", "Helvetica", "sans-serif";
+	font-size: 10px;
+	color: black;
+	padding-left: 5px;
+	text-align: center;
+}
+footers {
+    display: table-footer-group;
+}
+footers > record > *, headings > record > * {
+    border: thin solid black;
+    text-align: center;
+    font-weight: bold;
+}
+records > record > * {
+    font-size: 120%;
+}

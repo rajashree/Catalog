@@ -1,0 +1,146 @@
+<project name="ICE_BUILD" default="deploy" basedir=".">
+ 
+    <property name="webdir" value="/${basedir}/build"/>
+	<property name="assets" value="${webdir}/assets"/>
+	<property name="config" value="${webdir}/config"/>
+	<property name="META-INF" value="${webdir}/META-INF"/>
+	<property name="pages" value="${webdir}/pages"/>
+	<property name="WEB-INF" value="${webdir}/WEB-INF"/>
+	<property name="javaSourcedir" value="${basedir}/WEB-INF/src"/>
+	<property name="compileLibDir" value="${basedir}/WEB-INF/lib"/>
+	
+    <path id="libraries">
+        <fileset dir="${compileLibDir}">
+            <include name="*.jar"/>
+        </fileset>
+    </path>
+    
+	 
+    <target name="clean">
+        <delete dir="${webdir}"/>
+    	<mkdir dir="${assets}/css"/>
+    	<mkdir dir="${assets}/images/card"/>
+    	<mkdir dir="${assets}/js"/>
+    	<mkdir dir="${assets}/pdfcards"/>
+    	<mkdir dir="${config}"/>
+    	<mkdir dir="${META-INF}"/>
+   		<mkdir dir="${pages}/admin"/>
+    	<mkdir dir="${pages}/alert"/>
+    	<mkdir dir="${pages}/blog"/>
+    	<mkdir dir="${pages}/card"/>
+    	<mkdir dir="${pages}/community"/>
+    	<mkdir dir="${pages}/icemem"/>
+    	<mkdir dir="${pages}/registration"/>
+   		<mkdir dir="${pages}/settings"/>
+   		<mkdir dir="${WEB-INF}/classes"/>
+   		<mkdir dir="${WEB-INF}/lib"/>
+    </target>
+
+    <target name="copy" depends="clean">
+        <copy todir="${assets}/css">
+            <fileset dir="${basedir}/assets/css">
+                <include name="*.css"/>
+            </fileset>
+        </copy>
+    	<copy todir="${assets}/images/card">
+            <fileset dir="${basedir}/assets/images/card">
+                <include name="*.png"/>
+            	<include name="*.gif"/>
+            	<include name="*.jpg"/>
+            </fileset>
+        </copy>
+    	<copy todir="${assets}/images">
+            <fileset dir="${basedir}/assets/images">
+            	<include name="*.gif"/>
+            </fileset>
+        </copy>
+    	<copy todir="${assets}/js">
+            <fileset dir="${basedir}/assets/js">
+            	<include name="*.js"/>
+            </fileset>
+        </copy>
+    	<copy todir="${config}">
+			<fileset dir="${basedir}/config">
+            	<include name="ice.properties"/>
+	            <include name="provider.xml"/>
+               	<include name="SQL.txt"/>
+        	</fileset>
+        </copy>
+    	<copy todir="${META-INF}">
+			<fileset dir="${basedir}/META-INF">
+            	<include name="*.tld"/>
+        	</fileset>
+        </copy>
+    	<copy todir="${pages}/admin">
+			<fileset dir="${basedir}/pages/admin">
+            	<include name="*.jsp"/>
+        	</fileset>
+        </copy>
+    	<copy todir="${pages}/alert">
+			<fileset dir="${basedir}/pages/alert">
+            	<include name="*.jsp"/>
+        	</fileset>
+        </copy>
+    	<copy todir="${pages}/blog">
+			<fileset dir="${basedir}/pages/blog">
+            	<include name="*.jsp"/>
+        	</fileset>
+        </copy>
+    	<copy todir="${pages}/card">
+			<fileset dir="${basedir}/pages/card">
+            	<include name="*.jsp"/>
+        	</fileset>
+        </copy>
+    	<copy todir="${pages}/community">
+			<fileset dir="${basedir}/pages/community">
+            	<include name="*.jsp"/>
+        	</fileset>
+        </copy>
+    	<copy todir="${pages}/icemem">
+			<fileset dir="${basedir}/pages/icemem">
+            	<include name="*.jsp"/>
+        	</fileset>
+        </copy>
+    	<copy todir="${pages}/registration">
+			<fileset dir="${basedir}/pages/registration">
+	        	<include name="*.jsp"/>
+	    	</fileset>
+	    </copy>
+    	<copy todir="${pages}/settings">
+			<fileset dir="${basedir}/pages/settings">
+	        	<include name="*.jsp"/>
+	    	</fileset>
+	    </copy>
+    	<copy todir="${pages}">
+			<fileset dir="${basedir}/pages">
+	        	<include name="*.jsp"/>
+				<include name="*.html"/>
+	    	</fileset>
+	    </copy>
+    	<copy todir="${WEB-INF}/lib">
+			<fileset dir="${basedir}/WEB-INF/lib">
+	        	<include name="*.jar"/>
+	    	</fileset>
+	    </copy>
+    	<copy todir="${WEB-INF}">
+			<fileset dir="${basedir}/WEB-INF">
+	        	<include name="*.xml"/>
+	        	<include name="*.tld"/>
+	    	</fileset>
+	    </copy>
+    </target>
+    
+    <target name="compile" depends="copy">
+    	<javac srcdir="${javaSourcedir}" destdir="${WEB-INF}/classes" classpathref="libraries"/>
+    	
+    	<war warfile="${basedir}/icealert.war" basedir="${webdir}" webxml="${webdir}/WEB-INF/web.xml">
+    		<exclude name="WEB-INF/web.xml"/>
+		</war>
+    </target> 
+	<target name="deploy" depends="compile">
+	    <copy file="${basedir}/icealert.war" todir="C:\jakarta-tomcat-5.5.9\webapps" ></copy>
+		<delete dir="${webdir}"/>
+		<delete file="${basedir}/icealert.war"/>
+	 </target>
+	
+</project>

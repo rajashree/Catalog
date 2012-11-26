@@ -1,0 +1,441 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0127)http://localhost:8080/ePharma/dist/epedigree/PedigreeDetails.do?PedigreeId=S004&pagenm=pedigree&tp_company_nm=&linkname=ShipSum -->
+<HTML><HEAD><TITLE>Raining Data ePharma - ePedigree</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+<SCRIPT>
+
+function receiptform()
+{
+
+  //window.open('CertifyReceiptDetail.do?pedigreeId=S004&pagenm=pedigree&tp_company_nm=' ,'apnwin','width=300,height=150')
+	
+	 	window.open('CertifyReceiptDetail.do?pedigreeId=S004&pagenm=pedigree&tp_company_nm=' ,'apnwin','left=380,top=250,height=180,width=300,toolbar=no,directories=no,status=no,menubar=no,scrollbars=no,resizable=no,modal=yes');
+	
+}
+
+function newWindow(  htmFile  ) {
+   msgWindow = window.open( htmFile, "WindowName", "left=20,top=20,width= 600,height=400,toolbar=0,scrollbar=1,resizable=1,location=0,status=0");
+}
+function MM_openBrWindow(theURL,winName,features) { //v2.0
+alert
+  window.open(theURL,winName,features);
+}
+
+</SCRIPT>
+<LINK href="Raining Data ePharma - ePedigree_files/epedigree1.css" type=text/css 
+rel=stylesheet>
+<META content="MSHTML 6.00.3790.2577" name=GENERATOR></HEAD>
+<BODY onload="return accessdenied1();"><!-- Top Header -->
+<DIV id=bg style="Z-INDEX: 100">
+<DIV class=roleIcon-manufacturer></DIV>
+<DIV class=navIcons><A href="http://localhost:8080/ePharma/landing.html" 
+target=_top><IMG height=27 hspace=10 
+src="Raining Data ePharma - ePedigree_files/home.gif" width=22 border=0></A> 
+<IMG height=27 hspace=10 
+src="Raining Data ePharma - ePedigree_files/account.gif" width=41> <IMG 
+height=27 hspace=10 src="Raining Data ePharma - ePedigree_files/help.gif" 
+width=21> <IMG height=27 hspace=10 
+src="Raining Data ePharma - ePedigree_files/print.gif" width=27> <A 
+href="http://localhost:8080/ePharma/" target=_top><IMG height=27 hspace=10 
+src="Raining Data ePharma - ePedigree_files/logout.gif" width=34 border=0></A> 
+<A 
+href="http://localhost:8080/ePharma/dist/epedigree/epedigree.do?pagenm=pedigree&amp;tp_company_nm=&amp;linkName=eped" 
+target=_top><IMG height=27 hspace=10 
+src="Raining Data ePharma - ePedigree_files/inbox.gif" border=0></A> <IMG 
+src="Raining Data ePharma - ePedigree_files/space.gif" width=20> </DIV>
+<DIV class=logo><IMG 
+src="Raining Data ePharma - ePedigree_files/logos_combined.gif"></DIV></DIV><!-- Top level nav layer 1 -->
+<DIV id=menu style="Z-INDEX: 101">
+<TABLE id=Table1 height=25 cellSpacing=0 cellPadding=0 width="100%" border=0>
+  <TBODY>
+  <TR>
+    <TD vAlign=middle 
+    background="Raining Data ePharma - ePedigree_files/bg_menu.jpg">
+      <TABLE id=Table2 cellSpacing=0 cellPadding=0 width=800 border=0>
+        <TBODY>
+        <TR>
+          <TD class=primaryNav_Off 
+          onmouseover="this.style.backgroundColor='#FFCC33';this.style.color='#FFFFFF'" 
+          onmouseout="this.style.backgroundColor='';this.style.color=''" 
+          align=center><A 
+            href="http://localhost:8080/ePharma/AdminUser.do?pagenm=epcadmin&amp;tp_company_nm=" 
+            target=_parent ?>Admin Console</A></TD>
+          <TD><IMG height=23 
+            src="Raining Data ePharma - ePedigree_files/menu_bg1.jpg" 
+width=3></TD>
+          <TD class=primaryNav_On 
+          onmouseover="this.style.backgroundColor='#FFCC33';this.style.color='#FFFFFF'" 
+          onmouseout="this.style.backgroundColor='';this.style.color=''" 
+          align=center><A class="menu-link menuBlack" 
+            href="http://localhost:8080/ePharma/dist/epedigree/epedigree.do?pagenm=pedigree&amp;tp_company_nm=&amp;linkName=eped" 
+            target=_parent>ePedigree</A></TD>
+          <TD><IMG height=23 
+            src="Raining Data ePharma - ePedigree_files/menu_bg1.jpg" 
+width=3></TD>
+          <TD class=primaryNav_Off 
+          onmouseover="this.style.backgroundColor='#FFCC33';this.style.color='#FFFFFF'" 
+          onmouseout="this.style.backgroundColor='';this.style.color=''" 
+          align=center><A class=menu-link 
+            href="http://localhost:8080/ePharma/dist/pedigreeBankResults.do?tp_company_nm=&amp;pagenm=pedBank" 
+            target=_parent>Pedigree Bank </A></TD>
+          <TD><IMG height=23 
+            src="Raining Data ePharma - ePedigree_files/menu_bg1.jpg" 
+width=3></TD>
+          <TD class=primaryNav_Off 
+          onmouseover="this.style.backgroundColor='#FFCC33';this.style.color='#FFFFFF'" 
+          onmouseout="this.style.backgroundColor='';this.style.color=''" 
+          align=center><A class=menu-link 
+            href="http://localhost:8080/ePharma/dist/trackTrace/index.jsp?tp_company_nm=&amp;pagenm=track" 
+            target=_top>Track and Trace</A></TD>
+          <TD><IMG height=23 
+            src="Raining Data ePharma - ePedigree_files/menu_bg1.jpg" 
+width=3></TD>
+          <TD class=primaryNav_Off 
+          onmouseover="this.style.backgroundColor='#FFCC33';this.style.color='#FFFFFF'" 
+          onmouseout="this.style.backgroundColor='';this.style.color=''" 
+          align=center><A class=menu-link 
+            href="http://localhost:8080/ePharma/dist/reports/AdvancedReports.do?sessionID=12700120060404054344&amp;tp_company_nm=&amp;pagenm=reports" 
+            target=_parent>Reports</A></TD>
+          <TD><IMG height=23 
+            src="Raining Data ePharma - ePedigree_files/menu_bg1.jpg" 
+width=3></TD>
+          <TD class=primaryNav_Off 
+          onmouseover="this.style.backgroundColor='#FFCC33';this.style.color='#FFFFFF'" 
+          onmouseout="this.style.backgroundColor='';this.style.color=''" 
+          align=center><A class=menu-link 
+            href="http://localhost:8080/ePharma/TradingPartnerList.do?tp_company_nm=&amp;pagenm=TPManager" 
+            target=_parent>Trading Partner Manager</A></TD>
+          <TD><IMG height=23 
+            src="Raining Data ePharma - ePedigree_files/menu_bg1.jpg" 
+width=3></TD>
+          <TD class=primaryNav_Off 
+          onmouseover="this.style.backgroundColor='#FFCC33';this.style.color='#FFFFFF'" 
+          onmouseout="this.style.backgroundColor='';this.style.color=''" 
+          align=center><A class=menu-link 
+            href="http://localhost:8080/ePharma/ProductMasterSearchEmpty.do?tp_company_nm=&amp;pagenm=Catalog&amp;linkName=pSearch" 
+            target=_parent>GCPIM</A></TD>
+          <TD><IMG height=23 
+            src="Raining Data ePharma - ePedigree_files/menu_bg1.jpg" 
+width=3></TD>
+          <TD class=primaryNav_Off 
+          onmouseover="this.style.backgroundColor='#FFCC33';this.style.color='#FFFFFF'" 
+          onmouseout="this.style.backgroundColor='';this.style.color=''" 
+          align=center><A class=menu-link 
+            href="http://localhost:8080/ePharma/dist/returns/returns.jsp?tp_company_nm=&amp;pagenm=returns" 
+            target=_parent>Returns </A></TD>
+          <TD><IMG height=23 
+            src="Raining Data ePharma - ePedigree_files/menu_bg1.jpg" 
+        width=3></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></DIV><!-- Left channel -->
+<DIV id=leftgray2 style="Z-INDEX: 104">
+<TABLE id=Table5 height="100%" cellSpacing=0 cellPadding=0 width=170 border=0>
+  <TBODY>
+  <TR>
+    <TD class=td-leftred width=170 colSpan=2>ePedigree Manager</TD></TR>
+  <TR>
+    <TD vAlign=top width=10 bgColor=#dcdcdc></TD>
+    <TD class=td-left vAlign=top><BR><A class=typered4-link 
+      href="http://localhost:8080/ePharma/dist/epedigree/ePedigree_ReceivingManager.do?pagenm=pedigree&amp;tp_company_nm=&amp;accesslevel=recvng&amp;linkName=recvngmang">Receiving 
+      Manager<BR></A><BR><A class=typeblue3-link 
+      href="http://localhost:8080/ePharma/dist/epedigree/ShippingManagerSearchEmpty.do?pagenm=pedigree&amp;tp_company_nm=&amp;linkName=shippingmang">Shipping 
+      Manager<BR></A><BR><A class=typeblue3-link 
+      href="http://localhost:8080/ePharma/dist/epedigree/PedigreeDetails.do?PedigreeId=S004&amp;pagenm=pedigree&amp;tp_company_nm=&amp;linkname=ShipSum#">Find</A><BR><A 
+      class=typeblue3-link 
+      href="http://localhost:8080/ePharma/dist/epedigree/PedigreeSearch.do?pagenm=pedigree&amp;tp_company_nm=&amp;accesslevel=apnsearch&amp;linkName=apnsear">&nbsp;&nbsp;&nbsp;Search 
+      Pedigrees</A><BR><A class=typeblue3-link 
+      href="http://localhost:8080/ePharma/dist/epedigree/OrderSearch.do?pagenm=pedigree&amp;tp_company_nm=&amp;accesslevel=ordersearch&amp;linkName=ordersear">&nbsp;&nbsp;&nbsp;Search 
+      Orders</A><BR><A class=typeblue3-link 
+      href="http://localhost:8080/ePharma/dist/epedigree/SearchInvoices.do?pagenm=pedigree&amp;tp_company_nm=&amp;accesslevel=invoicesearch&amp;linkName=invoicesear">&nbsp;&nbsp;&nbsp;Search 
+      Invoices</A><BR><A class=typeblue3-link 
+      href="http://localhost:8080/ePharma/dist/epedigree/ASNSearch.do?pagenm=pedigree&amp;tp_company_nm=&amp;accesslevel=asnsearch&amp;linkName=asnsear">&nbsp;&nbsp;&nbsp;Search 
+      ASNs</A><BR><BR></TD>
+  <TR vAlign=bottom>
+    <TD class=td-left colSpan=2 height=80><IMG height=37 
+      src="Raining Data ePharma - ePedigree_files/logo_poweredby.gif" 
+    width=150></TD></TR></TBODY></TABLE></DIV>
+<DIV id=rightwhite2>
+<TABLE id=Table1 cellSpacing=0 cellPadding=0 width="100%" border=0>
+  <TBODY>
+  <TR>
+    <TD></TD>
+    <TD rowSpan=2>&nbsp;</TD></TR>
+  <TR>
+    <TD><!-- info goes here -->
+      <TABLE id=Table2 cellSpacing=1 cellPadding=1 width="100%" align=left 
+      bgColor=white border=0>
+        <TBODY>
+        <TR bgColor=white>
+          <TD class=td-typeblack>Pedigree Details</TD></TR>
+        <TR class=tableRow_Header>
+          <TD colSpan=2>
+            <TABLE id=Table3 cellSpacing=1 cellPadding=1 width="100%" align=left 
+            bgColor=white border=0>
+              <TBODY>
+              <TR>
+                <TD colSpan=5>
+                  <TABLE cellSpacing=1 cellPadding=1 width="100%" border=1>
+                    <FORM><INPUT type=hidden value=1 name=ped> 
+                    <TBODY>
+                    <TR bgColor=#ccffff>
+                      <TD class=type-whrite align=center 
+                        bgColor=gold><STRONG><A 
+                        href="http://localhost:8080/ePharma/dist/epedigree/PedigreeDetails.do?PedigreeId=S004&amp;pagenm=pedigree&amp;tp_company_nm=&amp;linkname=ShipSum"><FONT 
+                        color=#000099>Shipment Summary</FONT></A></STRONG></TD>
+                      <TD class=type-whrite align=center><STRONG><A 
+                        href="http://localhost:8080/ePharma/dist/epedigree/ReceivedPedigreeDetails.do?PedigreeId=S004&amp;tp_company_nm=&amp;pagenm=pedigree&amp;linkname=Received"><FONT 
+                        color=#000099>ReceivedPedigree</FONT></A></STRONG></TD>
+                      <TD class=type-whrite align=center><STRONG><A 
+                        href="http://localhost:8080/ePharma/dist/epedigree/RecProductsDetails.do?PedigreeId=S004&amp;tp_company_nm=&amp;pagenm=pedigree&amp;linkname=Products"><FONT 
+                        color=#000099>Products</FONT></A></STRONG></TD>
+                      <TD class=type-whrite align=center><STRONG><A 
+                        href="http://localhost:8080/ePharma/dist/epedigree/ViewReceivingManufacturerDetail.do?PedigreeId=S004&amp;tp_company_nm=&amp;pagenm=pedigree&amp;linkname=manufacturer"><FONT 
+                        color=#000099>Manufacturer </FONT></A></STRONG></TD>
+                      <TD class=type-whrite align=center><STRONG><A 
+                        href="http://localhost:8080/ePharma/dist/epedigree/AuditTrail.do?PedigreeId=S004&amp;tp_company_nm=&amp;pagenm=pedigree&amp;linkname=Audit"><FONT 
+                        color=#000099>Audit Trail</FONT></A></STRONG></TD>
+                      <TD class=type-whrite align=center><STRONG><A 
+                        href="http://localhost:8080/ePharma/dist/epedigree/pedigreeStatus.do?PedigreeId=S004&amp;tp_company_nm=&amp;pagenm=pedigree&amp;linkname=StatusHis"><FONT 
+                        color=#000099>Status History</FONT></A></STRONG></TD>
+                      <TD class=type-whrite align=center><STRONG><A 
+                        href="http://localhost:8080/ePharma/dist/epedigree/AttachementDetails.do?PedigreeId=S004&amp;tp_company_nm=&amp;pagenm=pedigree&amp;linkname=Attachment"><FONT 
+                        color=#000099>Attachment</FONT></A></STRONG></TD></TR></TD></TR></TD></TR></TBODY></TABLE>
+                  <TABLE cellSpacing=1 cellPadding=1 width="100%" border=1>
+                    <TBODY>
+                    <TR class=tableRow_Header>
+                    <TR class=tableRow_Header>
+                      <TD class=type-whrite>Pedigree ID : <BR><STRONG><FONT 
+                        color=#ffff00>S004</FONT></STRONG></TD>
+                      <TD class=type-whrite>Transaction Date : <BR><FONT 
+                        color=#ffff00><STRONG>2006-03-22 </STRONG></FONT></TD>
+                      <TD class=type-whrite>Transaction Time: <BR><FONT 
+                        color=#ffff00><STRONG>09:40:47 </STRONG></FONT></TD>
+                      <TD class=type-whrite>Transaction Type: <BR><FONT 
+                        color=#ffff00><STRONG> Invoice</STRONG></FONT></TD>
+                      <TD class=type-whrite>Transaction # : <BR><STRONG><FONT 
+                        color=#ffff00><A class=typeblue3-link 
+                        href="javascript:newWindow('ASN_Details.jsp?trType=DespatchAdvice&amp;trNum=CO00071&amp;tp_company_nm=&amp;pagenm=pedigree')">CO00071</A></FONT></STRONG></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE>
+        <TR class=tableRow_On>
+          <TD class="td-menu bold" width="50%">From</TD>
+          <TD class="td-menu bold">To</TD></TR></TR>
+        <TR class=tableRow_Off>
+          <TD>
+            <TABLE cellSpacing=0 cellPadding=0 border=0>
+              <TBODY>
+              <TR>
+                <TD class=td-menu>Company: 
+                  &nbsp;&nbsp;&nbsp;&nbsp;<STRONG>Amgen Inc</STRONG></TD></TR>
+              <TR>
+                <TD class=td-menu>Ship Address: 1 Amgen Dr,,Thousand 
+                  Oaks,CA,91320,USA</TD></TR>
+              <TR>
+                <TD class=td-menu>Bill Address: &nbsp;&nbsp;1 Amgen 
+                  Dr,,Thousand Oaks,CA,91320,USA</TD></TR>
+              <TR>
+                <TD class=td-menu>Contact: 
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Kimi 
+                Raikkonen</TD></TR>
+              <TR>
+                <TD class=td-menu>Title: 
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Receiving 
+                  Manager</TD></TR>
+              <TR>
+                <TD class=td-menu>Phone: 
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(212) 
+                  234-2345</TD></TR>
+              <TR>
+                <TD class=td-menu>Email: 
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;kimi@amgen.com</TD></TR>
+              <TR>
+                <TD class=td-menu>License: 
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CL00886543</TD></TR></TBODY></TABLE></TD>
+          <TD>
+            <TABLE cellSpacing=0 cellPadding=0 border=0>
+              <TBODY>
+              <TR>
+                <TD class=td-menu>Company: 
+                  &nbsp;&nbsp;&nbsp;&nbsp;<STRONG>Cardinal Health</STRONG></TD></TR>
+              <TR>
+                <TD class=td-menu>Ship Address: Lakeshore 
+                  Dr,,Dublin,OH,60022,USA</TD></TR>
+              <TR>
+                <TD class=td-menu>Bill Address: &nbsp;&nbsp;Lakeshore 
+                  Drive,,Dublin,OH,60022,USA</TD></TR>
+              <TR>
+                <TD class=td-menu>Contact: 
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Fernando 
+                Alonso</TD></TR>
+              <TR>
+                <TD class=td-menu>Title: 
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Receiving 
+                  Manager</TD></TR>
+              <TR>
+                <TD class=td-menu>Phone: 
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(212) 
+                  234-1002</TD></TR>
+              <TR>
+                <TD class=td-menu>Email: 
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alonso@cardinal.com</TD></TR>
+              <TR>
+                <TD class=td-menu>License: 
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CL00886543</TD></TR></TBODY></TABLE></TD></TR>
+        <TR>
+          <TD colSpan=2><BR>
+            <TABLE id=Table7 cellSpacing=1 cellPadding=0 width="100%" 
+              border=0><TBODY></TBODY></TABLE>
+            <TABLE id=Table9 cellSpacing=1 cellPadding=0 width="100%" 
+              border=0><TBODY>
+              <TR>
+                <TD class=td-typeblack colSpan=7>Products <FONT 
+                  color=#336600></FONT></TD></TR>
+              <TR class=tableRow_Header>
+                <TD class=type-whrite height=13>Name</TD>
+                <TD class=type-whrite height=13>Product Code</TD>
+                <TD class=type-whrite height=13>Code Type</TD>
+                <TD class=type-whrite height=13>Manufacturer</TD>
+                <TD class=type-whrite height=13>Quantity</TD>
+                <TD class=type-whrite height=13>Dosage Form</TD>
+                <TD class=type-whrite height=13>Strength</TD>
+                <TD class=type-whrite height=13>Container Size</TD></TR>
+              <TR class=tableRow_Off>
+                <TD><A 
+                  href="http://localhost:8080/ePharma/dist/epedigree/RecProductsDetails.do?PedigreeId=S004&amp;tp_company_nm=&amp;pagenm=pedigree&amp;linkname=Products">Epogen</A> 
+                </TD>
+                <TD>55513-267-01 </TD>
+                <TD>NDC </TD>
+                <TD>Amgen </TD>
+                <TD>10 </TD>
+                <TD>SUBCUTANEOUS </TD>
+                <TD>3000 Units/ML </TD>
+                <TD>Vial </TD></TR></TBODY></TABLE></TD></TR>
+        <TR>
+          <TD colSpan=2><BR>
+            <TABLE id=Table7 cellSpacing=1 cellPadding=0 width="100%" 
+              border=0><TBODY></TBODY></TABLE>
+            <TABLE id=Table9 cellSpacing=1 cellPadding=0 width="100%" 
+              border=0><TBODY>
+              <TR>
+                <TD class=td-typeblack colSpan=7>Drug Sales &amp; Distribution 
+                  <FONT color=#336600></FONT></TD></TR>
+              <TR class=tableRow_Header>
+                <TD class=type-whrite height=13>Name</TD>
+                <TD class=type-whrite height=13>Address</TD>
+                <TD class=type-whrite height=13>Contact</TD>
+                <TD class=type-whrite height=13>Phone</TD>
+                <TD class=type-whrite height=13>Email</TD></TR>
+              <TR class=tableRow_Off>
+                <TD>Amgen Inc </TD>
+                <TD>Amgen Inc </TD>
+                <TD>Kimi Raikkonen </TD>
+                <TD>(212) 234-2345 </TD>
+                <TD>kimi@amgen.com </TD></TR></TBODY></TABLE></TD></TR>
+        <TR>
+          <TD colSpan=2><BR>
+            <TABLE id=Table7 cellSpacing=1 cellPadding=0 width="100%" 
+              border=0><TBODY></TBODY></TABLE>
+            <TABLE id=Table9 cellSpacing=1 cellPadding=0 width="100%" 
+              border=0><TBODY>
+              <TR>
+                <TD class=td-typeblack colSpan=7>Signature - 
+                  ContactInformation <FONT color=#336600></FONT></TD></TR>
+              <TR class=tableRow_Header>
+                <TD class=type-whrite height=13>Name</TD>
+                <TD class=type-whrite height=13>Title</TD>
+                <TD class=type-whrite height=13>Telephone</TD>
+                <TD class=type-whrite height=13>Email</TD>
+                <TD class=type-whrite height=13>URL</TD>
+                <TD class=type-whrite height=13>SignatureDate</TD>
+                <TD class=type-whrite height=13>SignatureTime</TD></TR>
+              <TR class=tableRow_Off>
+                <TD>Kimi Raikkonen </TD>
+                <TD>Receiving Manager </TD>
+                <TD>(212) 234-2345 </TD>
+                <TD>kimi@amgen.com </TD>
+                <TD>http://www.amgen.com </TD>
+                <TD>2005-12-02 </TD>
+                <TD>09:40:47 </TD></TR></TBODY></TABLE></TD></TR>
+        <TR>
+          <TD colSpan=2><BR>
+            <TABLE id=Table7 cellSpacing=1 cellPadding=0 width="100%" 
+              border=0><TBODY></TBODY></TABLE>
+            <TABLE id=Table10 cellSpacing=1 cellPadding=0 width="100%" 
+              border=0><TBODY>
+              <TR>
+                <TD class=td-typeblack colSpan=8>** Document Validity Status 
+                **</TD></TR>
+              <TR class=tableRow_Header>
+                <TD class=tableRow_On width=18><STRONG><FONT color=#0000cc>&nbsp; 
+                  LEVEL</FONT></STRONG></TD>
+                <TD class=type-whrite width=83>PedigreeSignature</TD>
+                <TD class=type-whrite vAlign=middle align=center>
+              <TR class=tableRow_Off>
+                <TD class=td-menu width=18><STRONG><FONT 
+                  color=#3300cc>STATUS</FONT></STRONG></TD>
+                <TD class=td-menu width=91>
+                  <P align=center><STRONG><FONT 
+                  color=#009900></FONT></STRONG>&nbsp;</P></TD>
+                <TD class=type-whrite vAlign=middle align=center></TD></TR>
+              <TR class=tableRow_Off>
+                <TD class=td-menu width=18 height=10><STRONG><FONT 
+                  color=#3300cc>DATE</FONT></STRONG></TD>
+                <TD class=td-menu width=91 height=10>
+                  <P align=center><STRONG><FONT 
+                  color=#009900></FONT></STRONG>&nbsp;</P></TD>
+                <TD class=type-whrite align=center height=10></TD></TR>
+              <TR class=tableRow_Off>
+                <TD class=td-menu width=18><STRONG><FONT 
+                  color=#3300cc>TIME</FONT></STRONG></TD>
+                <TD class=td-menu width=91>
+                  <P align=center><STRONG><FONT 
+                  color=#009900></FONT></STRONG>&nbsp;</P></TD>
+                <TD class=type-whrite align=center></TD></TR>
+              <TR class=tableRow_Off>
+                <TD class=td-menu width=18><STRONG><FONT 
+                color=#3300cc></FONT></STRONG></TD>
+                <TD class=td-menu><STRONG>
+                  <P align=center><FONT color=#3300cc><A 
+                  href="http://localhost:8080/ePharma/dist/epedigree/AuthenticatePedigreesDetail.do?PedigreeId=S004&amp;pagenm=pedigree&amp;tp_company_nm=&amp;linkname=ShipSum">AUTHENTICATE</A></FONT></STRONG></P></TD>
+                <TD class=td-menu><STRONG>
+                  <P align=center><FONT 
+                  color=#3300cc></FONT></STRONG>&nbsp;</P></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE><TR><TD 
+colSpan="2"><BR><A 
+onclick="MM_openBrWindow('PrintPedigree.jsp?apnId=','APN','scrollbars=yes,resizable=yes,width=800,height=600')" 
+href="http://localhost:8080/ePharma/dist/epedigree/PedigreeDetails.do?PedigreeId=S004&amp;pagenm=pedigree&amp;tp_company_nm=&amp;linkname=ShipSum#"><IMG 
+height=27 hspace=10 src="Raining Data ePharma - ePedigree_files/print.gif" 
+width=27 border=0></A>&nbsp; <INPUT onclick="MM_openBrWindow('ap_DH2135Pedigree.pdf','APN','scrollbars=yes,resizable=yes,width=800,height=600')" type=button value=PDF name=button> 
+</TD></TR></TABLE></FORM></TD></TR></TABLE>
+<SCRIPT language=JavaScript type=text/JavaScript>
+
+function accessdenied1() {
+  var status = "null";
+  var refno = "null";
+  
+if(status == "true"){
+  var res = confirm("Pedigree Already Exists !!! Do you want to Recreate Pedigree?")
+  if(res) {
+  		document.createAPN.y.value="CreatePedigree";
+  		document.createAPN.res.value="true";
+  		document.createAPN.action = "/ePharma/dist/epedigree/ShippingManagerSearchEmpty.do?Submit3=Search"
+  		document.createAPN.submit();
+  }
+  else return false;
+  //setTimeout("MsgBox 'Pedigree Already Exists !!! Do you want to Recreate Pedigree?',4 ",0,"vbscript")
+}
+
+var i = "null"
+if(i == "SignExists") { alert("Signature Already Exists !!"); }
+if(i == "SignCreated"){alert("Signature Created !!");}
+if(i == "SignNotCreated"){alert("Signature Not Created !!");}
+
+var j = "null"
+if(j == "AlreadyAuthenticated") { alert("Pedigree Already Authenticated !!"); }
+if(j == "AuthenticatedSuccessfully"){alert("Pedigree Authenticated Successfully !!");}
+
+}
+</SCRIPT>
+
+<DIV class=td-menu id=footer>
+<TABLE height=24 cellSpacing=0 cellPadding=0 width="100%" border=0>
+  <TBODY>
+  <TR>
+    <TD class=td-menu align=left width="100%" bgColor=#d0d0ff 
+      height=24>&nbsp;&nbsp;Copyright 2005. Raining 
+Data.</TD></TR></TBODY></TABLE></DIV></DIV></BODY></HTML>

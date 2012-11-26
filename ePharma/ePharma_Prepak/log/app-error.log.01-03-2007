@@ -1,0 +1,150 @@
+2007-03-08 10:36:06,250 INFO  (ActionExceptionHandler.java:98) - Deatils of Error with TL messages..
+2007-03-08 10:36:06,281 INFO  (ActionExceptionHandler.java:112) - Error Code :system-security-00001
+2007-03-08 10:36:06,281 INFO  (ActionExceptionHandler.java:113) - Error Message :[system-security-00001] - Authentication failed: server failure. [admin], [[C@2870b7].
+2007-03-08 10:36:06,281 INFO  (ActionExceptionHandler.java:114) - Full Message :com.rdta.error.system.AuthenticationException: [system-security-00001] - Authentication failed: server failure. [admin], [[C@2870b7].
+2007-03-08 10:36:06,328 INFO  (ActionExceptionHandler.java:126) - Definition :system-security-00001[]
+2007-03-01 10:36:52,218 INFO  (ActionExceptionHandler.java:98) - Deatils of Error with TL messages..
+2007-03-01 10:36:52,218 INFO  (ActionExceptionHandler.java:112) - Error Code :system-security-00001
+2007-03-01 10:36:52,218 INFO  (ActionExceptionHandler.java:113) - Error Message :[system-security-00001] - Authentication failed: server failure. [admin], [[C@1a33662].
+2007-03-01 10:36:52,218 INFO  (ActionExceptionHandler.java:114) - Full Message :com.rdta.error.system.AuthenticationException: [system-security-00001] - Authentication failed: server failure. [admin], [[C@1a33662].
+2007-03-01 10:36:52,234 INFO  (ActionExceptionHandler.java:126) - Definition :system-security-00001[]
+2007-03-01 10:36:59,500 INFO  (ActionExceptionHandler.java:98) - Deatils of Error with TL messages..
+2007-03-01 10:36:59,500 INFO  (ActionExceptionHandler.java:112) - Error Code :system-security-00001
+2007-03-01 10:36:59,500 INFO  (ActionExceptionHandler.java:113) - Error Message :[system-security-00001] - Authentication failed: server failure. [admin], [[C@1bb03ee].
+2007-03-01 10:36:59,500 INFO  (ActionExceptionHandler.java:114) - Full Message :com.rdta.error.system.AuthenticationException: [system-security-00001] - Authentication failed: server failure. [admin], [[C@1bb03ee].
+2007-03-01 10:36:59,500 INFO  (ActionExceptionHandler.java:126) - Definition :system-security-00001[]
+2007-03-01 11:40:43,296 INFO  (ActionExceptionHandler.java:98) - Deatils of Error with TL messages..
+2007-03-01 11:40:43,296 INFO  (ActionExceptionHandler.java:117) - Error Message :null
+2007-03-01 11:40:43,296 INFO  (ActionExceptionHandler.java:118) - Stack Trace :class java.lang.NullPointerException
+2007-03-01 11:40:43,343 INFO  (ActionExceptionHandler.java:126) - Definition :null
+2007-03-01 11:41:33,109 INFO  (ActionExceptionHandler.java:98) - Deatils of Error with TL messages..
+2007-03-01 11:41:33,156 INFO  (ActionExceptionHandler.java:117) - Error Message :null
+2007-03-01 11:41:33,187 INFO  (ActionExceptionHandler.java:118) - Stack Trace :class java.lang.NullPointerException
+2007-03-01 11:41:33,203 INFO  (ActionExceptionHandler.java:126) - Definition :null
+2007-03-01 11:43:28,531 INFO  (ActionExceptionHandler.java:98) - Deatils of Error with TL messages..
+2007-03-01 11:43:28,578 INFO  (ActionExceptionHandler.java:117) - Error Message :null
+2007-03-01 11:43:28,609 INFO  (ActionExceptionHandler.java:118) - Stack Trace :class java.lang.NullPointerException
+2007-03-01 11:43:28,640 INFO  (ActionExceptionHandler.java:126) - Definition :null
+2007-03-01 12:47:11,703 INFO  (ActionExceptionHandler.java:98) - Deatils of Error with TL messages..
+2007-03-01 12:47:11,718 INFO  (ActionExceptionHandler.java:112) - Error Code :xq-type-00009
+2007-03-01 12:47:11,718 INFO  (ActionExceptionHandler.java:113) - Error Message :[xq-type-00009] - Operand [$root/1234] of type [xs:integer*] cannot be compared to operand [1234] of type [xs:string] in [$root/1234  =  '1234'].
+2007-03-01 12:47:11,718 INFO  (ActionExceptionHandler.java:114) - Full Message :com.rdta.xquery.error.TypeException: [xq-type-00009] - Operand [$root/1234] of type [xs:integer*] cannot be compared to operand [1234] of type [xs:string] in [$root/1234  =  '1234'].
+2007-03-01 12:47:11,750 INFO  (ActionExceptionHandler.java:126) - Definition :xq-type-00009[]
+2007-03-01 12:49:15,421 INFO  (ActionExceptionHandler.java:98) - Deatils of Error with TL messages..
+2007-03-01 12:49:15,421 INFO  (ActionExceptionHandler.java:112) - Error Code :xq-type-00009
+2007-03-01 12:49:15,421 INFO  (ActionExceptionHandler.java:113) - Error Message :[xq-type-00009] - Operand [$root/1234] of type [xs:integer*] cannot be compared to operand [1234] of type [xs:string] in [$root/1234  =  '1234'].
+2007-03-01 12:49:15,421 INFO  (ActionExceptionHandler.java:114) - Full Message :com.rdta.xquery.error.TypeException: [xq-type-00009] - Operand [$root/1234] of type [xs:integer*] cannot be compared to operand [1234] of type [xs:string] in [$root/1234  =  '1234'].
+2007-03-01 12:49:15,437 INFO  (ActionExceptionHandler.java:126) - Definition :xq-type-00009[]
+2007-03-01 12:53:46,843 INFO  (ActionExceptionHandler.java:98) - Deatils of Error with TL messages..
+2007-03-01 12:53:46,843 INFO  (ActionExceptionHandler.java:117) - Error Message :String index out of range: 4
+2007-03-01 12:53:46,859 INFO  (ActionExceptionHandler.java:118) - Stack Trace :class java.lang.StringIndexOutOfBoundsException
+2007-03-01 12:53:46,859 INFO  (ActionExceptionHandler.java:126) - Definition :null
+2007-03-01 12:55:52,109 INFO  (ActionExceptionHandler.java:98) - Deatils of Error with TL messages..
+2007-03-01 12:55:52,109 INFO  (ActionExceptionHandler.java:117) - Error Message :String index out of range: 4
+2007-03-01 12:55:52,109 INFO  (ActionExceptionHandler.java:118) - Stack Trace :class java.lang.StringIndexOutOfBoundsException
+2007-03-01 12:55:52,109 INFO  (ActionExceptionHandler.java:126) - Definition :null
+2007-03-01 12:56:33,140 INFO  (ActionExceptionHandler.java:98) - Deatils of Error with TL messages..
+2007-03-01 12:56:33,140 INFO  (ActionExceptionHandler.java:117) - Error Message :null
+2007-03-01 12:56:33,140 INFO  (ActionExceptionHandler.java:118) - Stack Trace :class java.lang.NullPointerException
+2007-03-01 12:56:33,140 INFO  (ActionExceptionHandler.java:126) - Definition :null
+2007-03-01 12:56:34,906 INFO  (ActionExceptionHandler.java:98) - Deatils of Error with TL messages..
+2007-03-01 12:56:34,906 INFO  (ActionExceptionHandler.java:117) - Error Message :null
+2007-03-01 12:56:34,906 INFO  (ActionExceptionHandler.java:118) - Stack Trace :class java.lang.NullPointerException
+2007-03-01 12:56:34,906 INFO  (ActionExceptionHandler.java:126) - Definition :null
+2007-03-01 12:56:39,250 INFO  (ActionExceptionHandler.java:98) - Deatils of Error with TL messages..
+2007-03-01 12:56:39,250 INFO  (ActionExceptionHandler.java:117) - Error Message :null
+2007-03-01 12:56:39,250 INFO  (ActionExceptionHandler.java:118) - Stack Trace :class java.lang.NullPointerException
+2007-03-01 12:56:39,250 INFO  (ActionExceptionHandler.java:126) - Definition :null
+2007-03-01 12:56:45,812 INFO  (ActionExceptionHandler.java:98) - Deatils of Error with TL messages..
+2007-03-01 12:56:45,812 INFO  (ActionExceptionHandler.java:117) - Error Message :null
+2007-03-01 12:56:45,812 INFO  (ActionExceptionHandler.java:118) - Stack Trace :class java.lang.NullPointerException
+2007-03-01 12:56:45,812 INFO  (ActionExceptionHandler.java:126) - Definition :null
+2007-03-01 12:57:18,968 INFO  (ActionExceptionHandler.java:98) - Deatils of Error with TL messages..
+2007-03-01 12:57:18,968 INFO  (ActionExceptionHandler.java:117) - Error Message :null
+2007-03-01 12:57:18,968 INFO  (ActionExceptionHandler.java:118) - Stack Trace :class java.lang.NullPointerException
+2007-03-01 12:57:18,984 INFO  (ActionExceptionHandler.java:126) - Definition :null
+2007-03-01 12:58:30,218 INFO  (ActionExceptionHandler.java:98) - Deatils of Error with TL messages..
+2007-03-01 12:58:30,218 INFO  (ActionExceptionHandler.java:117) - Error Message :String index out of range: 4
+2007-03-01 12:58:30,234 INFO  (ActionExceptionHandler.java:118) - Stack Trace :class java.lang.StringIndexOutOfBoundsException
+2007-03-01 12:58:30,234 INFO  (ActionExceptionHandler.java:126) - Definition :null
+2007-03-01 13:00:05,734 INFO  (ActionExceptionHandler.java:98) - Deatils of Error with TL messages..
+2007-03-01 13:00:05,734 INFO  (ActionExceptionHandler.java:117) - Error Message :String index out of range: 4
+2007-03-01 13:00:05,750 INFO  (ActionExceptionHandler.java:118) - Stack Trace :class java.lang.StringIndexOutOfBoundsException
+2007-03-01 13:00:05,765 INFO  (ActionExceptionHandler.java:126) - Definition :null
+2007-03-01 13:00:06,046 INFO  (ActionExceptionHandler.java:98) - Deatils of Error with TL messages..
+2007-03-01 13:00:06,062 INFO  (ActionExceptionHandler.java:117) - Error Message :String index out of range: 4
+2007-03-01 13:00:06,062 INFO  (ActionExceptionHandler.java:118) - Stack Trace :class java.lang.StringIndexOutOfBoundsException
+2007-03-01 13:00:06,078 INFO  (ActionExceptionHandler.java:126) - Definition :null
+2007-03-01 13:00:20,984 INFO  (ActionExceptionHandler.java:98) - Deatils of Error with TL messages..
+2007-03-01 13:00:21,000 INFO  (ActionExceptionHandler.java:117) - Error Message :String index out of range: 4
+2007-03-01 13:00:21,015 INFO  (ActionExceptionHandler.java:118) - Stack Trace :class java.lang.StringIndexOutOfBoundsException
+2007-03-01 13:00:21,015 INFO  (ActionExceptionHandler.java:126) - Definition :null
+2007-03-01 14:17:24,812 INFO  (ActionExceptionHandler.java:98) - Deatils of Error with TL messages..
+2007-03-01 14:17:24,812 INFO  (ActionExceptionHandler.java:117) - Error Message :String index out of range: 4
+2007-03-01 14:17:24,828 INFO  (ActionExceptionHandler.java:118) - Stack Trace :class java.lang.StringIndexOutOfBoundsException
+2007-03-01 14:17:24,890 INFO  (ActionExceptionHandler.java:126) - Definition :null
+2007-03-01 14:18:08,421 INFO  (ActionExceptionHandler.java:98) - Deatils of Error with TL messages..
+2007-03-01 14:18:08,421 INFO  (ActionExceptionHandler.java:117) - Error Message :String index out of range: 4
+2007-03-01 14:18:08,437 INFO  (ActionExceptionHandler.java:118) - Stack Trace :class java.lang.StringIndexOutOfBoundsException
+2007-03-01 14:18:08,453 INFO  (ActionExceptionHandler.java:126) - Definition :null
+2007-03-01 14:19:59,078 INFO  (ActionExceptionHandler.java:98) - Deatils of Error with TL messages..
+2007-03-01 14:19:59,078 INFO  (ActionExceptionHandler.java:117) - Error Message :String index out of range: 4
+2007-03-01 14:19:59,078 INFO  (ActionExceptionHandler.java:118) - Stack Trace :class java.lang.StringIndexOutOfBoundsException
+2007-03-01 14:19:59,078 INFO  (ActionExceptionHandler.java:126) - Definition :null
+2007-03-01 14:20:24,421 INFO  (ActionExceptionHandler.java:98) - Deatils of Error with TL messages..
+2007-03-01 14:20:24,437 INFO  (ActionExceptionHandler.java:117) - Error Message :String index out of range: 4
+2007-03-01 14:20:24,453 INFO  (ActionExceptionHandler.java:118) - Stack Trace :class java.lang.StringIndexOutOfBoundsException
+2007-03-01 14:20:24,453 INFO  (ActionExceptionHandler.java:126) - Definition :null
+2007-03-01 14:20:24,734 INFO  (ActionExceptionHandler.java:98) - Deatils of Error with TL messages..
+2007-03-01 14:20:24,750 INFO  (ActionExceptionHandler.java:117) - Error Message :String index out of range: 4
+2007-03-01 14:20:24,750 INFO  (ActionExceptionHandler.java:118) - Stack Trace :class java.lang.StringIndexOutOfBoundsException
+2007-03-01 14:20:24,765 INFO  (ActionExceptionHandler.java:126) - Definition :null
+2007-03-01 14:20:25,296 INFO  (ActionExceptionHandler.java:98) - Deatils of Error with TL messages..
+2007-03-01 14:20:25,312 INFO  (ActionExceptionHandler.java:117) - Error Message :String index out of range: 4
+2007-03-01 14:20:25,328 INFO  (ActionExceptionHandler.java:118) - Stack Trace :class java.lang.StringIndexOutOfBoundsException
+2007-03-01 14:20:25,343 INFO  (ActionExceptionHandler.java:126) - Definition :null
+2007-03-01 14:21:42,890 INFO  (ActionExceptionHandler.java:98) - Deatils of Error with TL messages..
+2007-03-01 14:21:42,906 INFO  (ActionExceptionHandler.java:117) - Error Message :String index out of range: 4
+2007-03-01 14:21:42,906 INFO  (ActionExceptionHandler.java:118) - Stack Trace :class java.lang.StringIndexOutOfBoundsException
+2007-03-01 14:21:42,921 INFO  (ActionExceptionHandler.java:126) - Definition :null
+2007-03-01 14:23:22,390 INFO  (ActionExceptionHandler.java:98) - Deatils of Error with TL messages..
+2007-03-01 14:23:22,406 INFO  (ActionExceptionHandler.java:117) - Error Message :String index out of range: 4
+2007-03-01 14:23:22,406 INFO  (ActionExceptionHandler.java:118) - Stack Trace :class java.lang.StringIndexOutOfBoundsException
+2007-03-01 14:23:22,421 INFO  (ActionExceptionHandler.java:126) - Definition :null
+2007-03-01 14:23:28,109 INFO  (ActionExceptionHandler.java:98) - Deatils of Error with TL messages..
+2007-03-01 14:23:28,109 INFO  (ActionExceptionHandler.java:117) - Error Message :null
+2007-03-01 14:23:28,109 INFO  (ActionExceptionHandler.java:118) - Stack Trace :class java.lang.NullPointerException
+2007-03-01 14:23:28,109 INFO  (ActionExceptionHandler.java:126) - Definition :null
+2007-03-01 14:23:30,734 INFO  (ActionExceptionHandler.java:98) - Deatils of Error with TL messages..
+2007-03-01 14:23:30,734 INFO  (ActionExceptionHandler.java:117) - Error Message :null
+2007-03-01 14:23:30,734 INFO  (ActionExceptionHandler.java:118) - Stack Trace :class java.lang.NullPointerException
+2007-03-01 14:23:30,750 INFO  (ActionExceptionHandler.java:126) - Definition :null
+2007-03-01 14:23:31,796 INFO  (ActionExceptionHandler.java:98) - Deatils of Error with TL messages..
+2007-03-01 14:23:31,796 INFO  (ActionExceptionHandler.java:117) - Error Message :null
+2007-03-01 14:23:31,796 INFO  (ActionExceptionHandler.java:118) - Stack Trace :class java.lang.NullPointerException
+2007-03-01 14:23:31,796 INFO  (ActionExceptionHandler.java:126) - Definition :null
+2007-03-01 14:23:32,562 INFO  (ActionExceptionHandler.java:98) - Deatils of Error with TL messages..
+2007-03-01 14:23:32,562 INFO  (ActionExceptionHandler.java:117) - Error Message :null
+2007-03-01 14:23:32,562 INFO  (ActionExceptionHandler.java:118) - Stack Trace :class java.lang.NullPointerException
+2007-03-01 14:23:32,578 INFO  (ActionExceptionHandler.java:126) - Definition :null
+2007-03-01 14:23:39,921 INFO  (ActionExceptionHandler.java:98) - Deatils of Error with TL messages..
+2007-03-01 14:23:39,921 INFO  (ActionExceptionHandler.java:117) - Error Message :null
+2007-03-01 14:23:39,921 INFO  (ActionExceptionHandler.java:118) - Stack Trace :class java.lang.NullPointerException
+2007-03-01 14:23:39,921 INFO  (ActionExceptionHandler.java:126) - Definition :null
+2007-03-01 14:23:40,953 INFO  (ActionExceptionHandler.java:98) - Deatils of Error with TL messages..
+2007-03-01 14:23:40,953 INFO  (ActionExceptionHandler.java:117) - Error Message :null
+2007-03-01 14:23:40,953 INFO  (ActionExceptionHandler.java:118) - Stack Trace :class java.lang.NullPointerException
+2007-03-01 14:23:40,953 INFO  (ActionExceptionHandler.java:126) - Definition :null
+2007-03-01 14:23:49,187 INFO  (ActionExceptionHandler.java:98) - Deatils of Error with TL messages..
+2007-03-01 14:23:49,187 INFO  (ActionExceptionHandler.java:117) - Error Message :null
+2007-03-01 14:23:49,187 INFO  (ActionExceptionHandler.java:118) - Stack Trace :class java.lang.NullPointerException
+2007-03-01 14:23:49,187 INFO  (ActionExceptionHandler.java:126) - Definition :null
+2007-03-01 14:24:00,093 INFO  (ActionExceptionHandler.java:98) - Deatils of Error with TL messages..
+2007-03-01 14:24:00,093 INFO  (ActionExceptionHandler.java:117) - Error Message :null
+2007-03-01 14:24:00,093 INFO  (ActionExceptionHandler.java:118) - Stack Trace :class java.lang.NullPointerException
+2007-03-01 14:24:00,093 INFO  (ActionExceptionHandler.java:126) - Definition :null
+2007-03-01 14:38:39,359 INFO  (ActionExceptionHandler.java:98) - Deatils of Error with TL messages..
+2007-03-01 14:38:39,359 INFO  (ActionExceptionHandler.java:112) - Error Code :xq-static-20012
+2007-03-01 14:38:39,359 INFO  (ActionExceptionHandler.java:113) - Error Message :[xq-static-20012] - The sequence [TERMINAL] at position [69] on line [16] caused analysis of the XQuery statement to fail.
+2007-03-01 14:38:39,359 INFO  (ActionExceptionHandler.java:114) - Full Message :com.rdta.xquery.compile.StaticException: [xq-static-20012] - The sequence [TERMINAL] at position [69] on line [16] caused analysis of the XQuery statement to fail.
+2007-03-01 14:38:39,359 INFO  (ActionExceptionHandler.java:126) - Definition :xq-static-20012[]

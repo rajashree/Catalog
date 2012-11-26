@@ -1,0 +1,18 @@
+<PedigreeTradingPartner>
+     <name>WHITES COMPOUNDING PHCY.</name>
+     <deaNumber>BW6337681</deaNumber>
+	<notificationDescription>ftp</notificationDescription>
+     <notificationURI>ftp.rainingdata.com</notificationURI>
+	<configurationElements>
+		<config>
+			<element>containerCode</element>
+			<value>PONumber</value>
+		</config>
+		<config>
+			<element>shipmentHandle</element>
+			<value>PONumber</value>
+		</config>
+	</configurationElements>
+</PedigreeTradingPartner>
+
+

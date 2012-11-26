@@ -1,0 +1,30 @@
+
+tig:drop-stored-procedure("Action_DecrementInventory"),
+tig:create-stored-procedure("Action_DecrementInventory","
+declare variable $products as node()* external; 
+update
+for $i in collection('tig:///BrokerageWMS/ProductInventory')/Product
+where $i/NDC = $products/Product/NDC
+replace value of $i/UnitsInStock with xs:int($i/UnitsInStock - $products/Product/UnitsInStock)
+")
+
+
+tig:drop-stored-procedure("Action_IncrementInventory"),
+tig:create-stored-procedure("Action_IncrementInventory","
+declare variable $products as node() external; 
+update
+for $i in collection('tig:///LakelandWMS/ProductInventory')/Product
+where $i/NDC = $products/Product/NDC
+replace value of $i/UnitsInStock with xs:int($i/UnitsInStock + $products/Product/UnitsInStock)
+")
+
+
+tig:create-stored-procedure("Condition_PedigreeStatusChangeYes","
+let $a := 'true'
+return $a
+")
+
+tig:create-stored-procedure("Condition_PedigreeStatusChangeNo","
+let $a := 'false'
+return $a
+")

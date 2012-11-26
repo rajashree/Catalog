@@ -1,0 +1,49 @@
+<AccessDetails><AccessList><Access><TopAccessItem ID="1.0" name="AdminConsole"/>
+<AccessItems ID="1.07" name="Admin-Users"/>
+<AccessItems ID="1.08" name="Admin-Groups"/>
+</Access>
+<Access>
+<TopAccessItem ID="2.0" name="ePed-ePedigree"/>
+<AccessItems ID="2.01" name="ePed-Receiving"/>
+<AccessItems ID="2.02" name="ePed-Receiving-Find"/>
+<AccessItems ID="2.03" name="ePed-Receiving-CertifyAPN"/>
+
+<AccessItems ID="2.05" name="ePed-Receiving-GenAlertAPN"/>
+
+<AccessItems ID="2.07" name="ePed-Receiving-ViewOrderAPN"/>
+
+<AccessItems ID="2.09" name="ePed-Receiving-ValidateAPN"/>
+<AccessItems ID="2.10" name="ePed-Receiving-ViewAPNDetails"/>
+<AccessItems ID="2.11" name="ePed-Receiving-ViewInvoiceDetails"/>
+<AccessItems ID="2.12" name="ePed-Receiving-ViewASNDetails"/>
+<AccessItems ID="2.13" name="ePed-Shipping"/>
+<AccessItems ID="2.14" name="ePed-Shipping-Search"/>
+<AccessItems ID="2.15" name="ePed-Shipping-CreateAPN"/>
+<AccessItems ID="2.16" name="ePed-Shipping-SendAPN"/>
+<AccessItems ID="2.17" name="ePed-Shipping-SignAPN"/>
+
+<AccessItems ID="2.19" name="ePed-Receiving-ResolveAlert"/>
+<AccessItems ID="2.20" name="ePed-Receiving-UpdateAlert"/>
+</Access>
+<Access><TopAccessItem ID="3.0" name="TrackAndTrace"/>
+</Access>
+<Access>
+<TopAccessItem ID="4.0" name="TradingPartnerManager"/>
+<AccessItems ID="4.01" name="Trading-Partner-CreateTP"/>
+<AccessItems ID="4.02" name="Trading-Partner-Locations"/>
+<AccessItems ID="4.03" name="Trading-Partner-Catalog"/>
+<AccessItems ID="4.04" name="Trading-Partner-Users"/>
+</Access>
+<Access>
+<TopAccessItem ID="6.0" name="Reports"/>
+</Access>
+<Access><TopAccessItem ID="7.0" name="CertifyReceipt"/>
+</Access>
+<Access><TopAccessItem ID="8.0" name="CertifyPedigree"/>
+</Access>
+<Access><TopAccessItem ID="9.0" name="PedigreeBank"/>
+</Access>
+<Access><TopAccessItem ID="10.0" name="Returns"/>
+</Access>
+</AccessList>
+</AccessDetails>

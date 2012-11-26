@@ -1,0 +1,16 @@
+<PedigreeTradingPartner>
+     <name>LEES CITY DRUG</name>
+     <deaNumber>AM3396430</deaNumber>
+	<notificationDescription>ftp</notificationDescription>
+     <notificationURI>ftp.rainingdata.com</notificationURI>
+	<configurationElements>
+		<config>
+			<element>containerCode</element>
+			<value>PONumber</value>
+		</config>
+		<config>
+			<element>shipmentHandle</element>
+			<value>PONumber</value>
+		</config>
+	</configurationElements>
+</PedigreeTradingPartner>

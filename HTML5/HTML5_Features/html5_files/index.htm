@@ -1,0 +1,145 @@
+<!DOCTYPE HTML>
+<html style="overflow: hidden;"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"> 
+ 
+ 
+	<meta charset="utf-8"> 
+	<title>Canvas Photo Demo</title> 
+		<!--[if IE]><script type="text/javascript" src="excanvas.js"></script><![endif]-->
+ 
+		<style> 
+		body 	{ font: 75% "Lucida Grande", "Trebuchet MS", Verdana, sans-serif; }
+		canvas 	{ background-color: transparent; border: 1px solid gray; top: 0; left: 0; position: absolute;}
+		canvas.resize-ne { cursor: ne-resize; }
+		canvas.resize-se { cursor: se-resize; }
+		canvas.resize-sw { cursor: sw-resize; }
+		canvas.resize-nw { cursor: nw-resize; }
+		canvas.move { cursor: move; }
+		canvas.default { cursor: default; }
+		img 	{ display: block; visibility: hidden; position: absolute; top: -1000; left: -1000; }
+		input 	{ margin-left: 20px; }
+		fieldset { width: 280px; float: left; }
+		.fieldset { width: 200px; float: left; }
+		#ft 	{ background-color: #eee; height: 70px; width: 99%; border-top: 1px solid #ccc; padding: 5px; position: absolute; top: 0; left: 0; }
+		#ft span { width: 100%; }
+	</style> 
+	<script src="index_data/utilities.js" type="text/javascript" charset="utf-8"></script>
+ 
+	<script src="index_data/canvasElement.js" type="text/javascript" charset="utf-8"></script>
+ 
+	<script src="index_data/canvasImg.js" type="text/javascript" charset="utf-8"></script>
+ 
+	<script> 
+		var CanvasDemo = function() {
+			var YD = YAHOO.util.Dom;
+			var YE = YAHOO.util.Event;
+			var canvas1;
+			var img = [];
+			return {
+				init: function() {
+					canvas1 = new Canvas.Element();
+					canvas1.init('canvid1',  { width: YD.getViewportWidth() - 5, height: YD.getViewportHeight() - 5 });			
+					img[img.length] = new Canvas.Img('img1', {});
+					img[img.length] = new Canvas.Img('img2', {});
+					img[img.length] = new Canvas.Img('img3', {});
+					img[img.length] = new Canvas.Img('bg', {});
+					
+					// @param array of images ToDo: individual images
+					canvas1.setCanvasBackground(img[3]);
+					canvas1.addImage(img[0]);
+					canvas1.addImage(img[1]);
+					canvas1.addImage(img[2]);
+					
+					this.initEvents();
+				},
+				initEvents: function() {
+					YE.on('togglebg','click', this.toggleBg, this, true);
+					YE.on('showcorners','click', this.showCorners, this, true);
+					YE.on('togglenone','click', this.toggleNone, this, true);
+					YE.on('toggleborders','click', this.toggleBorders, this, true);
+					YE.on('togglepolaroid','click', this.togglePolaroid, this, true);
+          YE.on('pngbutton','click', function() { this.convertTo('png') }, this, true);
+          YE.on('jpegbutton','click', function() { this.convertTo('jpeg') }, this, true);
+				},
+				switchBg: function() {
+					canvas1.fillBackground = (canvas1.fillBackground) ? false : true;							
+					canvas1.renderAll();
+				},
+				
+				//! insert these functions to the library. No access to _aImages should be done from here
+				showCorners: function() {
+					this.cornersvisible = (this.cornersvisible) ? false : true;
+					for (var i = 0, l = canvas1._aImages.length; i < l; i += 1) {
+						canvas1._aImages[i].setCornersVisibility(this.cornersvisible);
+					}
+					canvas1.renderAll();
+				},
+				toggleNone: function() {
+					for (var i = 0, l = canvas1._aImages.length; i < l; i += 1) {
+						canvas1._aImages[i].setBorderVisibility(false);
+					}
+					canvas1.renderAll();
+				},
+				toggleBorders: function() {
+					for (var i = 0, l = canvas1._aImages.length; i < l; i += 1) {
+						canvas1._aImages[i].setBorderVisibility(true);
+					}
+					canvas1.renderAll();
+				},
+				togglePolaroid: function() {
+					for (var i = 0, l = canvas1._aImages.length; i < l; i += 1) {
+						canvas1._aImages[i].setPolaroidVisibility(true);
+					}
+					canvas1.renderAll();
+				},
+				convertTo: function(format) {
+					var imgData = canvas1.canvasTo(format);
+					window.open(imgData, "_blank");
+				},
+				whatever: function(e, o) {
+					// console.log(e);
+					// console.log(o);
+				}
+			}
+		}();
+		
+		
+		
+		
+		YAHOO.util.Event.on(window, 'load', CanvasDemo.init, CanvasDemo, true);
+	</script> 
+</head><body id="canvasdemo"> 
+	<canvas style="width: 515px; height: 495px;" height="495" width="515" 
+id="canvid1-canvas-background"></canvas><canvas style="width: 515px; 
+height: 495px;" height="495" width="515" id="canvid1-canvas-container"></canvas><canvas
+ style="width: 515px; height: 495px;" height="495" width="515" 
+id="canvid1"></canvas> 
+	
+	<img class="canvas-img" id="img1" src="index_data/7.jpg" width="240" 
+height="171"> 
+	<img class="canvas-img" id="img2" src="index_data/8.jpg" width="240" 
+height="159"> 
+	<img class="canvas-img" id="img3" src="index_data/9.jpg" width="240" 
+height="180"> 
+	<img class="canvas-img" id="bg" src="index_data/bg.jpg" width="1600" 
+height="1200"> 
+	
+	<div id="ft"> 
+		<div class="fieldset">
+			<input id="jpegbutton" value="Export to JPEG" type="button">
+			<input id="pngbutton" value="Export to PNG (heavy)" type="button">
+		</div>	  
+		<fieldset> 
+			<legend>Photo</legend> 
+			<span><input name="some_name" value="" id="togglenone" type="radio"> <label
+ for="togglenone">None</label></span> 
+			<span><input name="some_name" value="" id="toggleborders" 
+type="radio"> <label for="toggleborders">Simple</label></span> 
+			<span><input name="some_name" value="" id="togglepolaroid" 
+type="radio"> <label for="togglepolaroid">Polaroid™</label></span> 
+		</fieldset> 
+		<span><input name="some_name" value="" id="showcorners" 
+type="checkbox"> <label for="showcorners">Show corners</label></span> 
+	</div> 
+ 
+</body></html>

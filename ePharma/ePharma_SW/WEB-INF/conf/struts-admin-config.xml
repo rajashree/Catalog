@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+
+<!DOCTYPE struts-config PUBLIC
+ "-//Apache Software Foundation//DTD Struts Configuration 1.0//EN"
+ "http://jakarta.apache.org/struts/dtds/struts-config_1_1.dtd">
+<struts-config>
+
+  <!-- ========== Form Bean Definitions ================= -->
+  
+  <form-beans>
+                     <!--  User DETAILS  -->  			
+ 		<form-bean      name="UserForm"
+                    type="com.rdta.Admin.User.UserForm"/>       
+                    
+       <!--  Group DETAILS  -->  
+      <form-bean     name="GroupForm"
+                    type="com.rdta.Admin.Group.GroupForm"/>                                            
+  		</form-beans>
+
+  <global-forwards>
+		<forward		name="ServerBusy"	contextRelative="true"	path="/ServerError.html"/>	
+	</global-forwards>
+
+  <!-- ========== Action Mapping Definitions ============ -->
+  <action-mappings>
+		    
+     <!--Users-->
+    <action   path="/AddUser"
+ 		 	  type="com.rdta.Admin.User.AddUser" 
+ 		 	  scope="request"
+ 		 	  parameter="exec"
+ 		 	  name="UserForm">
+ 	<forward name="AddNew" path="/dist/admin/User/AddUserInfo.jsp"/>
+ 	<forward name="Edit" path="/dist/admin/User/EditUser.jsp"/> 	
+ 	<forward name="loginPage" path="/LoginFailed.html"/>
+    </action>  
+    
+    
+     <action   path="/AddGroup"
+  		type="com.rdta.Admin.Group.AddGroup" 
+  		scope="request"
+  		parameter="exec"
+  		name="GroupForm">
+		<forward name="AddNew" path="/dist/admin/Group/AddGroupInfo.jsp"/>
+		<forward name="Edit" path="/dist/admin/Group/EditGroup.jsp"/> 
+		<forward name="loginPage" path="/LoginFailed.html"/>
+    </action>	
+    </action-mappings>    
+    
+</struts-config>

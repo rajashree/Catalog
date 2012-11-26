@@ -1,0 +1,441 @@
+2007-02-05 10:52:26,843 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-05 10:52:26,890 INFO  (LoginAction.java:57) - In execute method
+2007-02-05 10:52:26,890 INFO  (SecurityServiceImpl.java:140) - In authenticate method
+2007-02-05 10:52:26,906 INFO  (SecurityServiceImpl.java:54) - In getUser method
+2007-02-05 10:52:26,906 INFO  (SecurityServiceImpl.java:56) - Query:tlsp:loginUserInfo_MD('test')
+2007-02-05 10:52:27,843 ERROR (SecurityServiceImpl.java:77) - Error in getUser ..com.rdta.commons.persistence.PersistanceException: [xql-general-00000] - An unexpected error occurred.
+2007-02-05 10:52:28,062 INFO  (SendDHFormEmail.java:190) - Email From :johnson.joseph@sourcen.com
+2007-02-05 10:52:28,062 INFO  (SendDHFormEmail.java:191) - Email To :santosh@sourcen.com
+2007-02-05 10:52:28,062 INFO  (SendDHFormEmail.java:192) - Email Subject :Exception in ePharma Southwood Application
+2007-02-05 10:52:28,062 INFO  (SendDHFormEmail.java:193) - Email Content :[xql-general-00000] - An unexpected error occurred.
+2007-02-05 10:52:30,062 ERROR (SendDHFormEmail.java:222) - ERROR SENDING EMAIL :javax.mail.AuthenticationFailedException
+2007-02-05 10:53:53,015 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-05 10:53:53,015 INFO  (LoginAction.java:57) - In execute method
+2007-02-05 10:53:53,015 INFO  (SecurityServiceImpl.java:140) - In authenticate method
+2007-02-05 10:53:53,015 INFO  (SecurityServiceImpl.java:54) - In getUser method
+2007-02-05 10:53:53,015 INFO  (SecurityServiceImpl.java:56) - Query:tlsp:loginUserInfo_MD('test')
+2007-02-05 10:53:53,125 ERROR (SecurityServiceImpl.java:77) - Error in getUser ..com.rdta.commons.persistence.PersistanceException: [xql-general-00000] - An unexpected error occurred.
+2007-02-05 10:53:53,140 INFO  (SendDHFormEmail.java:190) - Email From :johnson.joseph@sourcen.com
+2007-02-05 10:53:53,140 INFO  (SendDHFormEmail.java:191) - Email To :santosh@sourcen.com
+2007-02-05 10:53:53,140 INFO  (SendDHFormEmail.java:192) - Email Subject :Exception in ePharma Southwood Application
+2007-02-05 10:53:53,140 INFO  (SendDHFormEmail.java:193) - Email Content :[xql-general-00000] - An unexpected error occurred.
+2007-02-05 10:53:55,796 ERROR (SendDHFormEmail.java:222) - ERROR SENDING EMAIL :javax.mail.AuthenticationFailedException
+2007-02-05 10:55:12,156 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-05 10:55:12,156 INFO  (LoginAction.java:57) - In execute method
+2007-02-05 10:55:12,156 INFO  (SecurityServiceImpl.java:140) - In authenticate method
+2007-02-05 10:55:12,156 INFO  (SecurityServiceImpl.java:54) - In getUser method
+2007-02-05 10:55:12,156 INFO  (SecurityServiceImpl.java:56) - Query:tlsp:loginUserInfo_MD('test')
+2007-02-05 10:55:12,515 ERROR (SecurityServiceImpl.java:77) - Error in getUser ..com.rdta.commons.persistence.PersistanceException: [xql-general-00000] - An unexpected error occurred.
+2007-02-05 10:55:12,515 INFO  (SendDHFormEmail.java:190) - Email From :johnson.joseph@sourcen.com
+2007-02-05 10:55:12,515 INFO  (SendDHFormEmail.java:191) - Email To :santosh@sourcen.com
+2007-02-05 10:55:12,531 INFO  (SendDHFormEmail.java:192) - Email Subject :Exception in ePharma Southwood Application
+2007-02-05 10:55:12,531 INFO  (SendDHFormEmail.java:193) - Email Content :[xql-general-00000] - An unexpected error occurred.
+2007-02-05 10:55:13,984 ERROR (SendDHFormEmail.java:222) - ERROR SENDING EMAIL :javax.mail.AuthenticationFailedException
+2007-02-05 10:55:54,609 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-05 10:55:54,609 INFO  (LoginAction.java:57) - In execute method
+2007-02-05 10:55:54,609 INFO  (SecurityServiceImpl.java:140) - In authenticate method
+2007-02-05 10:55:54,609 INFO  (SecurityServiceImpl.java:54) - In getUser method
+2007-02-05 10:55:54,609 INFO  (SecurityServiceImpl.java:56) - Query:tlsp:loginUserInfo_MD('test')
+2007-02-05 10:55:54,640 ERROR (SecurityServiceImpl.java:77) - Error in getUser ..com.rdta.commons.persistence.PersistanceException: [xql-general-00000] - An unexpected error occurred.
+2007-02-05 10:55:54,656 INFO  (SendDHFormEmail.java:190) - Email From :johnson.joseph@sourcen.com
+2007-02-05 10:55:54,656 INFO  (SendDHFormEmail.java:191) - Email To :santosh@sourcen.com
+2007-02-05 10:55:54,656 INFO  (SendDHFormEmail.java:192) - Email Subject :Exception in ePharma Southwood Application
+2007-02-05 10:55:54,656 INFO  (SendDHFormEmail.java:193) - Email Content :[xql-general-00000] - An unexpected error occurred.
+2007-02-05 10:55:56,062 ERROR (SendDHFormEmail.java:222) - ERROR SENDING EMAIL :javax.mail.AuthenticationFailedException
+2007-02-05 10:57:11,375 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-05 10:57:11,375 INFO  (LoginAction.java:57) - In execute method
+2007-02-05 10:57:11,375 INFO  (SecurityServiceImpl.java:140) - In authenticate method
+2007-02-05 10:57:11,375 INFO  (SecurityServiceImpl.java:54) - In getUser method
+2007-02-05 10:57:11,375 INFO  (SecurityServiceImpl.java:56) - Query:tlsp:loginUserInfo_MD('test')
+2007-02-05 10:57:11,453 ERROR (SecurityServiceImpl.java:77) - Error in getUser ..com.rdta.commons.persistence.PersistanceException: [xql-general-00000] - An unexpected error occurred.
+2007-02-05 10:57:11,453 INFO  (SendDHFormEmail.java:190) - Email From :johnson.joseph@sourcen.com
+2007-02-05 10:57:11,453 INFO  (SendDHFormEmail.java:191) - Email To :santosh@sourcen.com
+2007-02-05 10:57:11,453 INFO  (SendDHFormEmail.java:192) - Email Subject :Exception in ePharma Southwood Application
+2007-02-05 10:57:11,468 INFO  (SendDHFormEmail.java:193) - Email Content :[xql-general-00000] - An unexpected error occurred.
+2007-02-05 10:57:12,953 ERROR (SendDHFormEmail.java:222) - ERROR SENDING EMAIL :javax.mail.AuthenticationFailedException
+2007-02-05 10:58:31,625 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-05 10:58:35,328 INFO  (LoginAction.java:57) - In execute method
+2007-02-05 10:58:49,265 INFO  (SecurityServiceImpl.java:140) - In authenticate method
+2007-02-05 10:58:49,265 INFO  (SecurityServiceImpl.java:54) - In getUser method
+2007-02-05 10:58:49,281 INFO  (SecurityServiceImpl.java:56) - Query:tlsp:loginUserInfo_MD('test')
+2007-02-05 10:58:49,359 ERROR (SecurityServiceImpl.java:77) - Error in getUser ..com.rdta.commons.persistence.PersistanceException: [xql-general-00000] - An unexpected error occurred.
+2007-02-05 10:58:49,562 INFO  (SendDHFormEmail.java:190) - Email From :johnson.joseph@sourcen.com
+2007-02-05 10:58:49,562 INFO  (SendDHFormEmail.java:191) - Email To :santosh@sourcen.com
+2007-02-05 10:58:49,562 INFO  (SendDHFormEmail.java:192) - Email Subject :Exception in ePharma Southwood Application
+2007-02-05 10:58:49,578 INFO  (SendDHFormEmail.java:193) - Email Content :[xql-general-00000] - An unexpected error occurred.
+2007-02-05 10:58:52,218 ERROR (SendDHFormEmail.java:222) - ERROR SENDING EMAIL :javax.mail.AuthenticationFailedException
+2007-02-05 10:59:00,921 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-05 10:59:32,859 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-05 10:59:32,859 INFO  (LoginAction.java:57) - In execute method
+2007-02-05 11:01:17,359 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-05 11:01:17,359 INFO  (LoginAction.java:57) - In execute method
+2007-02-05 11:02:44,703 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-05 11:02:44,734 INFO  (LoginAction.java:57) - In execute method
+2007-02-05 11:02:44,734 INFO  (SecurityServiceImpl.java:140) - In authenticate method
+2007-02-05 11:02:44,750 INFO  (SecurityServiceImpl.java:54) - In getUser method
+2007-02-05 11:02:44,750 INFO  (SecurityServiceImpl.java:56) - Query:tlsp:loginUserInfo_MD('test')
+2007-02-05 11:02:45,046 ERROR (SecurityServiceImpl.java:77) - Error in getUser ..com.rdta.commons.persistence.PersistanceException: [xql-general-00000] - An unexpected error occurred.
+2007-02-05 11:02:45,265 INFO  (SendDHFormEmail.java:190) - Email From :johnson.joseph@sourcen.com
+2007-02-05 11:02:45,265 INFO  (SendDHFormEmail.java:191) - Email To :santosh@sourcen.com
+2007-02-05 11:02:45,265 INFO  (SendDHFormEmail.java:192) - Email Subject :Exception in ePharma Southwood Application
+2007-02-05 11:02:45,265 INFO  (SendDHFormEmail.java:193) - Email Content :[xql-general-00000] - An unexpected error occurred.
+2007-02-05 11:02:47,500 ERROR (SendDHFormEmail.java:222) - ERROR SENDING EMAIL :javax.mail.AuthenticationFailedException
+2007-02-05 11:03:01,390 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-05 11:03:01,390 INFO  (LoginAction.java:57) - In execute method
+2007-02-05 11:03:01,390 INFO  (SecurityServiceImpl.java:140) - In authenticate method
+2007-02-05 11:03:01,390 INFO  (SecurityServiceImpl.java:54) - In getUser method
+2007-02-05 11:03:01,390 INFO  (SecurityServiceImpl.java:56) - Query:tlsp:loginUserInfo_MD('rhgoodrich')
+2007-02-05 11:03:01,421 ERROR (SecurityServiceImpl.java:77) - Error in getUser ..com.rdta.commons.persistence.PersistanceException: [xql-general-00000] - An unexpected error occurred.
+2007-02-05 11:03:01,437 INFO  (SendDHFormEmail.java:190) - Email From :johnson.joseph@sourcen.com
+2007-02-05 11:03:01,437 INFO  (SendDHFormEmail.java:191) - Email To :santosh@sourcen.com
+2007-02-05 11:03:01,437 INFO  (SendDHFormEmail.java:192) - Email Subject :Exception in ePharma Southwood Application
+2007-02-05 11:03:01,437 INFO  (SendDHFormEmail.java:193) - Email Content :[xql-general-00000] - An unexpected error occurred.
+2007-02-05 11:03:02,859 ERROR (SendDHFormEmail.java:222) - ERROR SENDING EMAIL :javax.mail.AuthenticationFailedException
+2007-02-05 11:13:14,062 INFO  (SessionListener.java:55) - In sessionDestroyed method
+2007-02-05 11:13:14,062 INFO  (SessionListener.java:60) - Query:tlsp:deleteInvlidSessionID_MD('null')
+2007-02-05 11:19:07,031 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-05 11:19:07,031 INFO  (LoginAction.java:57) - In execute method
+2007-02-05 11:19:07,031 INFO  (SecurityServiceImpl.java:140) - In authenticate method
+2007-02-05 11:19:07,031 INFO  (SecurityServiceImpl.java:54) - In getUser method
+2007-02-05 11:19:07,031 INFO  (SecurityServiceImpl.java:56) - Query:tlsp:loginUserInfo_MD('test')
+2007-02-05 11:19:07,140 ERROR (SecurityServiceImpl.java:77) - Error in getUser ..com.rdta.commons.persistence.PersistanceException: [xql-general-00000] - An unexpected error occurred.
+2007-02-05 11:19:07,156 INFO  (SendDHFormEmail.java:190) - Email From :johnson.joseph@sourcen.com
+2007-02-05 11:19:07,156 INFO  (SendDHFormEmail.java:191) - Email To :santosh@sourcen.com
+2007-02-05 11:19:07,156 INFO  (SendDHFormEmail.java:192) - Email Subject :Exception in ePharma Southwood Application
+2007-02-05 11:19:07,156 INFO  (SendDHFormEmail.java:193) - Email Content :[xql-general-00000] - An unexpected error occurred.
+2007-02-05 11:19:08,796 ERROR (SendDHFormEmail.java:222) - ERROR SENDING EMAIL :javax.mail.AuthenticationFailedException
+2007-02-05 11:19:48,734 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-05 11:19:48,734 INFO  (LoginAction.java:57) - In execute method
+2007-02-05 11:19:48,734 INFO  (SecurityServiceImpl.java:140) - In authenticate method
+2007-02-05 11:19:48,734 INFO  (SecurityServiceImpl.java:54) - In getUser method
+2007-02-05 11:19:48,734 INFO  (SecurityServiceImpl.java:56) - Query:tlsp:loginUserInfo_MD('test')
+2007-02-05 11:19:48,765 ERROR (SecurityServiceImpl.java:77) - Error in getUser ..com.rdta.commons.persistence.PersistanceException: [xql-general-00000] - An unexpected error occurred.
+2007-02-05 11:19:48,765 INFO  (SendDHFormEmail.java:190) - Email From :johnson.joseph@sourcen.com
+2007-02-05 11:19:48,765 INFO  (SendDHFormEmail.java:191) - Email To :santosh@sourcen.com
+2007-02-05 11:19:48,765 INFO  (SendDHFormEmail.java:192) - Email Subject :Exception in ePharma Southwood Application
+2007-02-05 11:19:48,765 INFO  (SendDHFormEmail.java:193) - Email Content :[xql-general-00000] - An unexpected error occurred.
+2007-02-05 11:19:50,218 ERROR (SendDHFormEmail.java:222) - ERROR SENDING EMAIL :javax.mail.AuthenticationFailedException
+2007-02-05 11:27:45,359 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-05 11:27:45,406 INFO  (LoginAction.java:57) - In execute method
+2007-02-05 11:27:45,421 INFO  (SecurityServiceImpl.java:140) - In authenticate method
+2007-02-05 11:27:45,421 INFO  (SecurityServiceImpl.java:54) - In getUser method
+2007-02-05 11:27:45,421 INFO  (SecurityServiceImpl.java:56) - Query:tlsp:loginUserInfo_MD('test')
+2007-02-05 11:27:45,671 ERROR (SecurityServiceImpl.java:77) - Error in getUser ..com.rdta.commons.persistence.PersistanceException: [xql-general-00000] - An unexpected error occurred.
+2007-02-05 11:27:45,890 INFO  (SendDHFormEmail.java:190) - Email From :johnson.joseph@sourcen.com
+2007-02-05 11:27:45,890 INFO  (SendDHFormEmail.java:191) - Email To :santosh@sourcen.com
+2007-02-05 11:27:45,890 INFO  (SendDHFormEmail.java:192) - Email Subject :Exception in ePharma Southwood Application
+2007-02-05 11:27:45,906 INFO  (SendDHFormEmail.java:193) - Email Content :[xql-general-00000] - An unexpected error occurred.
+2007-02-05 11:27:49,812 ERROR (SendDHFormEmail.java:222) - ERROR SENDING EMAIL :javax.mail.AuthenticationFailedException
+2007-02-05 11:30:44,953 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-05 11:30:44,984 INFO  (LoginAction.java:57) - In execute method
+2007-02-05 11:30:45,000 INFO  (SecurityServiceImpl.java:140) - In authenticate method
+2007-02-05 11:30:45,000 INFO  (SecurityServiceImpl.java:54) - In getUser method
+2007-02-05 11:30:45,000 INFO  (SecurityServiceImpl.java:56) - Query:tlsp:loginUserInfo_MD('test')
+2007-02-05 11:30:45,125 ERROR (SecurityServiceImpl.java:77) - Error in getUser ..com.rdta.commons.persistence.PersistanceException: [xql-general-00000] - An unexpected error occurred.
+2007-02-05 11:30:45,312 INFO  (SendDHFormEmail.java:190) - Email From :johnson.joseph@sourcen.com
+2007-02-05 11:30:45,312 INFO  (SendDHFormEmail.java:191) - Email To :santosh@sourcen.com
+2007-02-05 11:30:45,312 INFO  (SendDHFormEmail.java:192) - Email Subject :Exception in ePharma Southwood Application
+2007-02-05 11:30:45,312 INFO  (SendDHFormEmail.java:193) - Email Content :[xql-general-00000] - An unexpected error occurred.
+2007-02-05 11:30:47,531 ERROR (SendDHFormEmail.java:222) - ERROR SENDING EMAIL :javax.mail.AuthenticationFailedException
+2007-02-05 11:32:43,046 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-05 11:32:43,046 INFO  (LoginAction.java:57) - In execute method
+2007-02-05 11:32:43,046 INFO  (SecurityServiceImpl.java:140) - In authenticate method
+2007-02-05 11:32:43,046 INFO  (SecurityServiceImpl.java:54) - In getUser method
+2007-02-05 11:33:13,609 INFO  (SecurityServiceImpl.java:56) - Query:tlsp:loginUserInfo_MD('test')
+2007-02-05 11:34:58,890 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-05 11:34:58,890 INFO  (LoginAction.java:57) - In execute method
+2007-02-05 11:34:58,890 INFO  (SecurityServiceImpl.java:141) - In authenticate method
+2007-02-05 11:34:58,890 INFO  (SecurityServiceImpl.java:54) - In getUser method
+2007-02-05 11:35:01,984 INFO  (SecurityServiceImpl.java:141) - In authenticate method
+2007-02-05 11:35:02,000 INFO  (SecurityServiceImpl.java:54) - In getUser method
+2007-02-05 11:35:03,218 INFO  (SecurityServiceImpl.java:56) - Query:tlsp:loginUserInfo_MD('test')
+2007-02-05 11:35:03,281 ERROR (SecurityServiceImpl.java:78) - Error in getUser ..com.rdta.commons.persistence.PersistanceException: [xql-general-00000] - An unexpected error occurred.
+2007-02-05 11:35:03,281 INFO  (SendDHFormEmail.java:190) - Email From :johnson.joseph@sourcen.com
+2007-02-05 11:35:03,281 INFO  (SendDHFormEmail.java:191) - Email To :santosh@sourcen.com
+2007-02-05 11:35:03,281 INFO  (SendDHFormEmail.java:192) - Email Subject :Exception in ePharma Southwood Application
+2007-02-05 11:35:03,296 INFO  (SendDHFormEmail.java:193) - Email Content :[xql-general-00000] - An unexpected error occurred.
+2007-02-05 11:35:04,734 ERROR (SendDHFormEmail.java:222) - ERROR SENDING EMAIL :javax.mail.AuthenticationFailedException
+2007-02-05 11:35:46,671 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-05 11:35:46,671 INFO  (LoginAction.java:57) - In execute method
+2007-02-05 11:35:46,671 INFO  (SecurityServiceImpl.java:142) - In authenticate method
+2007-02-05 11:35:46,671 INFO  (SecurityServiceImpl.java:54) - In getUser method
+2007-02-05 11:35:49,218 INFO  (SecurityServiceImpl.java:142) - In authenticate method
+2007-02-05 11:35:49,875 INFO  (SecurityServiceImpl.java:54) - In getUser method
+2007-02-05 11:35:50,625 INFO  (SecurityServiceImpl.java:56) - Query:tlsp:loginUserInfo_MD('test')
+2007-02-05 11:37:09,359 INFO  (SecurityServiceImpl.java:142) - In authenticate method
+2007-02-05 11:37:09,359 INFO  (SecurityServiceImpl.java:54) - In getUser method
+2007-02-05 11:37:10,078 INFO  (SecurityServiceImpl.java:142) - In authenticate method
+2007-02-05 11:37:10,093 INFO  (SecurityServiceImpl.java:54) - In getUser method
+2007-02-05 11:37:10,593 INFO  (SecurityServiceImpl.java:56) - Query:tlsp:loginUserInfo_MD('test')
+2007-02-05 11:37:10,687 ERROR (SecurityServiceImpl.java:79) - Error in getUser ..com.rdta.commons.persistence.PersistanceException: [xql-general-00000] - An unexpected error occurred.
+2007-02-05 11:37:10,718 INFO  (SendDHFormEmail.java:190) - Email From :johnson.joseph@sourcen.com
+2007-02-05 11:37:10,718 INFO  (SendDHFormEmail.java:191) - Email To :santosh@sourcen.com
+2007-02-05 11:37:10,718 INFO  (SendDHFormEmail.java:192) - Email Subject :Exception in ePharma Southwood Application
+2007-02-05 11:37:10,718 INFO  (SendDHFormEmail.java:193) - Email Content :[xql-general-00000] - An unexpected error occurred.
+2007-02-05 11:37:10,796 INFO  (SecurityServiceImpl.java:56) - Query:tlsp:loginUserInfo_MD('test')
+2007-02-05 11:37:10,890 ERROR (SecurityServiceImpl.java:79) - Error in getUser ..com.rdta.commons.persistence.PersistanceException: [xql-general-00000] - An unexpected error occurred.
+2007-02-05 11:37:10,921 INFO  (SendDHFormEmail.java:190) - Email From :johnson.joseph@sourcen.com
+2007-02-05 11:37:10,921 INFO  (SendDHFormEmail.java:191) - Email To :santosh@sourcen.com
+2007-02-05 11:37:10,921 INFO  (SendDHFormEmail.java:192) - Email Subject :Exception in ePharma Southwood Application
+2007-02-05 11:37:10,921 INFO  (SendDHFormEmail.java:193) - Email Content :[xql-general-00000] - An unexpected error occurred.
+2007-02-05 11:37:13,328 ERROR (SendDHFormEmail.java:222) - ERROR SENDING EMAIL :javax.mail.AuthenticationFailedException
+2007-02-05 11:37:13,578 ERROR (SendDHFormEmail.java:222) - ERROR SENDING EMAIL :javax.mail.AuthenticationFailedException
+2007-02-05 11:40:53,906 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-05 11:40:53,953 INFO  (LoginAction.java:57) - In execute method
+2007-02-05 11:40:53,968 INFO  (SecurityServiceImpl.java:142) - In authenticate method
+2007-02-05 11:40:53,984 INFO  (SecurityServiceImpl.java:54) - In getUser method
+2007-02-05 11:40:58,250 INFO  (SecurityServiceImpl.java:56) - Query:tlsp:loginUserInfo_MD('test')
+2007-02-05 11:40:58,421 ERROR (SecurityServiceImpl.java:79) - Error in getUser ..com.rdta.commons.persistence.PersistanceException: [xql-general-00000] - An unexpected error occurred.
+2007-02-05 11:40:58,656 INFO  (SendDHFormEmail.java:190) - Email From :johnson.joseph@sourcen.com
+2007-02-05 11:40:58,656 INFO  (SendDHFormEmail.java:191) - Email To :santosh@sourcen.com
+2007-02-05 11:40:58,656 INFO  (SendDHFormEmail.java:192) - Email Subject :Exception in ePharma Southwood Application
+2007-02-05 11:40:58,656 INFO  (SendDHFormEmail.java:193) - Email Content :[xql-general-00000] - An unexpected error occurred.
+2007-02-05 11:41:00,718 ERROR (SendDHFormEmail.java:222) - ERROR SENDING EMAIL :javax.mail.AuthenticationFailedException
+2007-02-05 11:57:22,875 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-05 11:57:33,812 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-05 11:57:33,843 INFO  (LoginAction.java:57) - In execute method
+2007-02-05 11:57:33,843 INFO  (SecurityServiceImpl.java:142) - In authenticate method
+2007-02-05 11:57:33,843 INFO  (SecurityServiceImpl.java:54) - In getUser method
+2007-02-05 11:57:33,843 INFO  (SecurityServiceImpl.java:56) - Query:tlsp:loginUserInfo_MD('test')
+2007-02-05 11:57:34,015 ERROR (SecurityServiceImpl.java:79) - Error in getUser ..com.rdta.commons.persistence.PersistanceException: [xql-general-00000] - An unexpected error occurred.
+2007-02-05 11:57:34,234 INFO  (SendDHFormEmail.java:190) - Email From :johnson.joseph@sourcen.com
+2007-02-05 11:57:34,234 INFO  (SendDHFormEmail.java:191) - Email To :santosh@sourcen.com
+2007-02-05 11:57:34,234 INFO  (SendDHFormEmail.java:192) - Email Subject :Exception in ePharma Southwood Application
+2007-02-05 11:57:34,234 INFO  (SendDHFormEmail.java:193) - Email Content :[xql-general-00000] - An unexpected error occurred.
+2007-02-05 11:57:49,406 ERROR (SendDHFormEmail.java:222) - ERROR SENDING EMAIL :javax.mail.AuthenticationFailedException
+2007-02-05 12:01:40,281 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-05 12:01:50,000 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-05 12:01:50,031 INFO  (LoginAction.java:57) - In execute method
+2007-02-05 12:01:50,046 INFO  (SecurityServiceImpl.java:142) - In authenticate method
+2007-02-05 12:01:50,046 INFO  (SecurityServiceImpl.java:54) - In getUser method
+2007-02-05 12:01:50,046 INFO  (SecurityServiceImpl.java:56) - Query:tlsp:loginUserInfo_MD('test')
+2007-02-05 12:01:50,156 ERROR (SecurityServiceImpl.java:79) - Error in getUser ..com.rdta.commons.persistence.PersistanceException: [xql-general-00000] - An unexpected error occurred.
+2007-02-05 12:01:50,343 INFO  (SendDHFormEmail.java:190) - Email From :johnson.joseph@sourcen.com
+2007-02-05 12:01:50,343 INFO  (SendDHFormEmail.java:191) - Email To :santosh@sourcen.com
+2007-02-05 12:01:50,343 INFO  (SendDHFormEmail.java:192) - Email Subject :Exception in ePharma Southwood Application
+2007-02-05 12:01:50,343 INFO  (SendDHFormEmail.java:193) - Email Content :[xql-general-00000] - An unexpected error occurred.
+2007-02-05 12:01:52,703 ERROR (SendDHFormEmail.java:222) - ERROR SENDING EMAIL :javax.mail.AuthenticationFailedException
+2007-02-05 12:03:35,031 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-05 12:03:35,046 INFO  (LoginAction.java:57) - In execute method
+2007-02-05 12:03:35,062 INFO  (SecurityServiceImpl.java:142) - In authenticate method
+2007-02-05 12:03:35,062 INFO  (SecurityServiceImpl.java:54) - In getUser method
+2007-02-05 12:03:35,062 INFO  (SecurityServiceImpl.java:56) - Query:tlsp:loginUserInfo_MD('test')
+2007-02-05 12:03:35,187 ERROR (SecurityServiceImpl.java:79) - Error in getUser ..com.rdta.commons.persistence.PersistanceException: [xql-general-00000] - An unexpected error occurred.
+2007-02-05 12:03:35,359 INFO  (SendDHFormEmail.java:190) - Email From :johnson.joseph@sourcen.com
+2007-02-05 12:03:35,359 INFO  (SendDHFormEmail.java:191) - Email To :santosh@sourcen.com
+2007-02-05 12:03:35,359 INFO  (SendDHFormEmail.java:192) - Email Subject :Exception in ePharma Southwood Application
+2007-02-05 12:03:35,359 INFO  (SendDHFormEmail.java:193) - Email Content :[xql-general-00000] - An unexpected error occurred.
+2007-02-05 12:03:37,203 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-05 12:03:41,734 ERROR (SendDHFormEmail.java:222) - ERROR SENDING EMAIL :javax.mail.AuthenticationFailedException
+2007-02-05 12:04:15,062 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-05 12:04:15,062 INFO  (LoginAction.java:57) - In execute method
+2007-02-05 12:04:15,062 INFO  (SecurityServiceImpl.java:142) - In authenticate method
+2007-02-05 12:04:15,062 INFO  (SecurityServiceImpl.java:54) - In getUser method
+2007-02-05 12:04:15,078 INFO  (SecurityServiceImpl.java:56) - Query:tlsp:loginUserInfo_MD('test')
+2007-02-05 12:04:15,093 ERROR (SecurityServiceImpl.java:79) - Error in getUser ..com.rdta.commons.persistence.PersistanceException: [xql-general-00000] - An unexpected error occurred.
+2007-02-05 12:04:15,093 INFO  (SendDHFormEmail.java:190) - Email From :johnson.joseph@sourcen.com
+2007-02-05 12:04:15,109 INFO  (SendDHFormEmail.java:191) - Email To :santosh@sourcen.com
+2007-02-05 12:04:15,109 INFO  (SendDHFormEmail.java:192) - Email Subject :Exception in ePharma Southwood Application
+2007-02-05 12:04:15,109 INFO  (SendDHFormEmail.java:193) - Email Content :[xql-general-00000] - An unexpected error occurred.
+2007-02-05 12:04:16,515 ERROR (SendDHFormEmail.java:222) - ERROR SENDING EMAIL :javax.mail.AuthenticationFailedException
+2007-02-05 12:05:28,578 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-05 12:05:28,578 INFO  (LoginAction.java:57) - In execute method
+2007-02-05 12:05:28,578 INFO  (SecurityServiceImpl.java:142) - In authenticate method
+2007-02-05 12:05:28,578 INFO  (SecurityServiceImpl.java:54) - In getUser method
+2007-02-05 12:05:28,578 INFO  (SecurityServiceImpl.java:56) - Query:tlsp:loginUserInfo_MD('test')
+2007-02-05 12:05:29,093 ERROR (SecurityServiceImpl.java:79) - Error in getUser ..com.rdta.commons.persistence.PersistanceException: [xql-general-00000] - An unexpected error occurred.
+2007-02-05 12:05:29,093 INFO  (SendDHFormEmail.java:190) - Email From :johnson.joseph@sourcen.com
+2007-02-05 12:05:29,093 INFO  (SendDHFormEmail.java:191) - Email To :santosh@sourcen.com
+2007-02-05 12:05:29,093 INFO  (SendDHFormEmail.java:192) - Email Subject :Exception in ePharma Southwood Application
+2007-02-05 12:05:29,093 INFO  (SendDHFormEmail.java:193) - Email Content :[xql-general-00000] - An unexpected error occurred.
+2007-02-05 12:05:31,671 ERROR (SendDHFormEmail.java:222) - ERROR SENDING EMAIL :javax.mail.AuthenticationFailedException
+2007-02-05 12:06:03,281 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-05 12:06:03,281 INFO  (LoginAction.java:57) - In execute method
+2007-02-05 12:06:03,281 INFO  (SecurityServiceImpl.java:142) - In authenticate method
+2007-02-05 12:06:03,281 INFO  (SecurityServiceImpl.java:54) - In getUser method
+2007-02-05 12:06:03,281 INFO  (SecurityServiceImpl.java:56) - Query:tlsp:loginUserInfo_MD('test')
+2007-02-05 12:06:03,312 ERROR (SecurityServiceImpl.java:79) - Error in getUser ..com.rdta.commons.persistence.PersistanceException: [xql-general-00000] - An unexpected error occurred.
+2007-02-05 12:06:03,328 INFO  (SendDHFormEmail.java:190) - Email From :johnson.joseph@sourcen.com
+2007-02-05 12:06:03,328 INFO  (SendDHFormEmail.java:191) - Email To :santosh@sourcen.com
+2007-02-05 12:06:03,328 INFO  (SendDHFormEmail.java:192) - Email Subject :Exception in ePharma Southwood Application
+2007-02-05 12:06:03,328 INFO  (SendDHFormEmail.java:193) - Email Content :[xql-general-00000] - An unexpected error occurred.
+2007-02-05 12:06:04,703 ERROR (SendDHFormEmail.java:222) - ERROR SENDING EMAIL :javax.mail.AuthenticationFailedException
+2007-02-05 12:11:59,171 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-05 12:11:59,250 INFO  (LoginAction.java:57) - In execute method
+2007-02-05 12:11:59,281 INFO  (SecurityServiceImpl.java:142) - In authenticate method
+2007-02-05 12:11:59,281 INFO  (SecurityServiceImpl.java:54) - In getUser method
+2007-02-05 12:11:59,281 INFO  (SecurityServiceImpl.java:56) - Query:tlsp:loginUserInfo_MD('test')
+2007-02-05 12:12:18,906 INFO  (User.java:146) - In passwordMatch method
+2007-02-05 12:12:18,906 INFO  (User.java:176) - In valueBound method
+2007-02-05 12:12:18,906 INFO  (SecurityServiceImpl.java:103) - In insertSessionDoc method
+2007-02-05 12:12:18,906 INFO  (SecurityServiceImpl.java:87) - In replaceString method
+2007-02-05 12:12:18,906 INFO  (SecurityServiceImpl.java:130) - Query:tig:insert-document( 'tig:///EAGRFID/SysSessions/', <session><sessionid>12700120070205121218</sessionid><userid>23802960038774853494040455282174</userid><username>raje raje</username><accesslevel>epedigree</accesslevel><sessionstart>2007-02-05T12:12:18</sessionstart><userip>127.0.0.1</userip><lastuse>2007-02-05T12:12:18</lastuse><tp_company_nm>Southwood</tp_company_nm><tp_company_id>null</tp_company_id></session>)
+2007-02-05 12:12:18,984 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-05 12:12:25,640 INFO  (EpedigreeAction.java:67) - ********Inside Action EpedigreeAction....... 
+2007-02-05 12:12:25,640 INFO  (EpedigreeAction.java:68) - Inside Action execute of EpedigreeAction....
+2007-02-05 12:12:25,640 INFO  (EpedigreeAction.java:78) - Validating The Session
+2007-02-05 12:12:25,656 INFO  (EpedigreeAction.java:82) - sessionID in EpedigreeAction :12700120070205121218
+2007-02-05 12:12:25,781 INFO  (EpedigreeAction.java:92) - The readStatus is : true
+2007-02-05 12:12:25,796 INFO  (EpedigreeAction.java:99) - My Query in EpedigreeAction class.....tlsp:DisplayMessage_MD('12700120070205121218') 
+2007-02-05 12:12:26,265 INFO  (EpedigreeAction.java:128) - Before returning to success
+2007-02-05 12:12:44,765 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-05 12:13:00,640 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-05 12:13:00,703 INFO  (PedigreeTradingPartnerListAction.java:57) - Inside the Action Class PedigreeTradingPartnerListAction......
+2007-02-05 12:13:01,234 INFO  (PedigreeTradingPartnerListAction.java:80) - The list size of the query is :6
+2007-02-05 12:13:01,250 INFO  (PedigreeTradingPartnerListAction.java:88) - The Trading Partner name is :US Oncology
+2007-02-05 12:13:01,250 INFO  (PedigreeTradingPartnerListAction.java:91) - The DEANumber is :RU0326240
+2007-02-05 12:13:01,250 INFO  (PedigreeTradingPartnerListAction.java:88) - The Trading Partner name is :PDRx
+2007-02-05 12:13:01,250 INFO  (PedigreeTradingPartnerListAction.java:91) - The DEANumber is :RP0117475
+2007-02-05 12:13:01,250 INFO  (PedigreeTradingPartnerListAction.java:88) - The Trading Partner name is :LEES CITY DRUG
+2007-02-05 12:13:01,250 INFO  (PedigreeTradingPartnerListAction.java:91) - The DEANumber is :AM3396430
+2007-02-05 12:13:01,250 INFO  (PedigreeTradingPartnerListAction.java:88) - The Trading Partner name is :WHITES COMPOUNDING PHCY.
+2007-02-05 12:13:01,250 INFO  (PedigreeTradingPartnerListAction.java:91) - The DEANumber is :BW6337681
+2007-02-05 12:13:01,250 INFO  (PedigreeTradingPartnerListAction.java:88) - The Trading Partner name is :CHILDREN MEDICAL CENTER
+2007-02-05 12:13:01,265 INFO  (PedigreeTradingPartnerListAction.java:91) - The DEANumber is :AC2260242
+2007-02-05 12:13:01,265 INFO  (PedigreeTradingPartnerListAction.java:88) - The Trading Partner name is :MORRIS and DICKSON CO
+2007-02-05 12:13:01,265 INFO  (PedigreeTradingPartnerListAction.java:91) - The DEANumber is :RM0314790
+2007-02-05 12:13:05,859 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-05 12:13:05,921 INFO  (PedigreeTradingPartnerDetailsAction.java:55) - Inside the Action Class PedigreeTradingPartnerDetailsAction......
+2007-02-05 12:16:16,093 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-05 12:16:16,265 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-05 12:16:19,203 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-05 12:16:19,250 INFO  (PedigreeTradingPartnerListAction.java:57) - Inside the Action Class PedigreeTradingPartnerListAction......
+2007-02-05 12:16:19,343 INFO  (PedigreeTradingPartnerListAction.java:80) - The list size of the query is :6
+2007-02-05 12:16:19,359 INFO  (PedigreeTradingPartnerListAction.java:88) - The Trading Partner name is :US Oncology
+2007-02-05 12:16:19,359 INFO  (PedigreeTradingPartnerListAction.java:91) - The DEANumber is :RU0326240
+2007-02-05 12:16:19,359 INFO  (PedigreeTradingPartnerListAction.java:88) - The Trading Partner name is :PDRx
+2007-02-05 12:16:19,359 INFO  (PedigreeTradingPartnerListAction.java:91) - The DEANumber is :RP0117475
+2007-02-05 12:16:19,359 INFO  (PedigreeTradingPartnerListAction.java:88) - The Trading Partner name is :LEES CITY DRUG
+2007-02-05 12:16:19,359 INFO  (PedigreeTradingPartnerListAction.java:91) - The DEANumber is :AM3396430
+2007-02-05 12:16:19,375 INFO  (PedigreeTradingPartnerListAction.java:88) - The Trading Partner name is :WHITES COMPOUNDING PHCY.
+2007-02-05 12:16:19,375 INFO  (PedigreeTradingPartnerListAction.java:91) - The DEANumber is :BW6337681
+2007-02-05 12:16:19,375 INFO  (PedigreeTradingPartnerListAction.java:88) - The Trading Partner name is :CHILDREN MEDICAL CENTER
+2007-02-05 12:16:19,375 INFO  (PedigreeTradingPartnerListAction.java:91) - The DEANumber is :AC2260242
+2007-02-05 12:16:19,375 INFO  (PedigreeTradingPartnerListAction.java:88) - The Trading Partner name is :MORRIS and DICKSON CO
+2007-02-05 12:16:19,375 INFO  (PedigreeTradingPartnerListAction.java:91) - The DEANumber is :RM0314790
+2007-02-05 12:16:20,890 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-05 12:16:20,953 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-05 12:17:10,593 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-05 12:17:15,765 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-05 12:17:15,812 INFO  (LoginAction.java:57) - In execute method
+2007-02-05 12:17:15,828 INFO  (SecurityServiceImpl.java:142) - In authenticate method
+2007-02-05 12:17:15,828 INFO  (SecurityServiceImpl.java:54) - In getUser method
+2007-02-05 12:17:15,828 INFO  (SecurityServiceImpl.java:56) - Query:tlsp:loginUserInfo_MD('test')
+2007-02-05 12:17:16,421 INFO  (User.java:146) - In passwordMatch method
+2007-02-05 12:17:16,421 INFO  (User.java:176) - In valueBound method
+2007-02-05 12:17:16,437 INFO  (SecurityServiceImpl.java:103) - In insertSessionDoc method
+2007-02-05 12:17:16,437 INFO  (SecurityServiceImpl.java:87) - In replaceString method
+2007-02-05 12:17:16,437 INFO  (SecurityServiceImpl.java:130) - Query:tig:insert-document( 'tig:///EAGRFID/SysSessions/', <session><sessionid>12700120070205121716</sessionid><userid>23802960038774853494040455282174</userid><username>raje raje</username><accesslevel>epedigree</accesslevel><sessionstart>2007-02-05T12:17:16</sessionstart><userip>127.0.0.1</userip><lastuse>2007-02-05T12:17:16</lastuse><tp_company_nm>Southwood</tp_company_nm><tp_company_id>null</tp_company_id></session>)
+2007-02-05 12:17:16,468 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-05 12:17:18,265 INFO  (EpedigreeAction.java:67) - ********Inside Action EpedigreeAction....... 
+2007-02-05 12:17:18,265 INFO  (EpedigreeAction.java:68) - Inside Action execute of EpedigreeAction....
+2007-02-05 12:17:18,281 INFO  (EpedigreeAction.java:78) - Validating The Session
+2007-02-05 12:17:18,281 INFO  (EpedigreeAction.java:82) - sessionID in EpedigreeAction :12700120070205121716
+2007-02-05 12:17:18,359 INFO  (EpedigreeAction.java:92) - The readStatus is : true
+2007-02-05 12:17:18,359 INFO  (EpedigreeAction.java:99) - My Query in EpedigreeAction class.....tlsp:DisplayMessage_MD('12700120070205121716') 
+2007-02-05 12:17:18,453 INFO  (EpedigreeAction.java:128) - Before returning to success
+2007-02-05 12:17:33,062 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-05 12:17:33,125 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-05 12:18:03,906 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-05 12:18:03,937 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-05 12:18:36,218 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-05 12:18:36,250 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-05 12:19:21,578 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-05 12:19:21,625 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-05 12:26:57,812 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-05 12:26:57,843 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-05 12:27:14,953 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-05 12:27:15,062 INFO  (PedigreeTradingPartnerListAction.java:57) - Inside the Action Class PedigreeTradingPartnerListAction......
+2007-02-05 12:27:15,093 INFO  (PedigreeTradingPartnerListAction.java:80) - The list size of the query is :7
+2007-02-05 12:27:15,109 INFO  (PedigreeTradingPartnerListAction.java:88) - The Trading Partner name is :US Oncology
+2007-02-05 12:27:15,109 INFO  (PedigreeTradingPartnerListAction.java:91) - The DEANumber is :RU0326240
+2007-02-05 12:27:15,109 INFO  (PedigreeTradingPartnerListAction.java:88) - The Trading Partner name is :PDRx
+2007-02-05 12:27:15,109 INFO  (PedigreeTradingPartnerListAction.java:91) - The DEANumber is :RP0117475
+2007-02-05 12:27:15,125 INFO  (PedigreeTradingPartnerListAction.java:88) - The Trading Partner name is :LEES CITY DRUG
+2007-02-05 12:27:15,125 INFO  (PedigreeTradingPartnerListAction.java:91) - The DEANumber is :AM3396430
+2007-02-05 12:27:15,125 INFO  (PedigreeTradingPartnerListAction.java:88) - The Trading Partner name is :WHITES COMPOUNDING PHCY.
+2007-02-05 12:27:15,125 INFO  (PedigreeTradingPartnerListAction.java:91) - The DEANumber is :BW6337681
+2007-02-05 12:27:15,125 INFO  (PedigreeTradingPartnerListAction.java:88) - The Trading Partner name is :CHILDREN MEDICAL CENTER
+2007-02-05 12:27:15,125 INFO  (PedigreeTradingPartnerListAction.java:91) - The DEANumber is :AC2260242
+2007-02-05 12:27:15,125 INFO  (PedigreeTradingPartnerListAction.java:88) - The Trading Partner name is :MORRIS and DICKSON CO
+2007-02-05 12:27:15,140 INFO  (PedigreeTradingPartnerListAction.java:91) - The DEANumber is :RM0314790
+2007-02-05 12:27:15,140 INFO  (PedigreeTradingPartnerListAction.java:88) - The Trading Partner name is :Raje
+2007-02-05 12:27:15,140 INFO  (PedigreeTradingPartnerListAction.java:91) - The DEANumber is :abc
+2007-02-05 12:27:17,921 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-05 12:27:18,015 INFO  (PedigreeTradingPartnerDetailsAction.java:55) - Inside the Action Class PedigreeTradingPartnerDetailsAction......
+2007-02-05 12:27:21,937 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-05 12:27:21,984 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-05 12:27:24,500 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-05 12:27:24,546 INFO  (PedigreeTradingPartnerListAction.java:57) - Inside the Action Class PedigreeTradingPartnerListAction......
+2007-02-05 12:27:24,546 INFO  (PedigreeTradingPartnerListAction.java:80) - The list size of the query is :7
+2007-02-05 12:27:24,562 INFO  (PedigreeTradingPartnerListAction.java:88) - The Trading Partner name is :US Oncology
+2007-02-05 12:27:24,562 INFO  (PedigreeTradingPartnerListAction.java:91) - The DEANumber is :RU0326240
+2007-02-05 12:27:24,562 INFO  (PedigreeTradingPartnerListAction.java:88) - The Trading Partner name is :PDRx
+2007-02-05 12:27:24,562 INFO  (PedigreeTradingPartnerListAction.java:91) - The DEANumber is :RP0117475
+2007-02-05 12:27:24,562 INFO  (PedigreeTradingPartnerListAction.java:88) - The Trading Partner name is :LEES CITY DRUG
+2007-02-05 12:27:24,578 INFO  (PedigreeTradingPartnerListAction.java:91) - The DEANumber is :AM3396430
+2007-02-05 12:27:24,578 INFO  (PedigreeTradingPartnerListAction.java:88) - The Trading Partner name is :WHITES COMPOUNDING PHCY.
+2007-02-05 12:27:24,578 INFO  (PedigreeTradingPartnerListAction.java:91) - The DEANumber is :BW6337681
+2007-02-05 12:27:24,578 INFO  (PedigreeTradingPartnerListAction.java:88) - The Trading Partner name is :CHILDREN MEDICAL CENTER
+2007-02-05 12:27:24,578 INFO  (PedigreeTradingPartnerListAction.java:91) - The DEANumber is :AC2260242
+2007-02-05 12:27:24,578 INFO  (PedigreeTradingPartnerListAction.java:88) - The Trading Partner name is :MORRIS and DICKSON CO
+2007-02-05 12:27:24,578 INFO  (PedigreeTradingPartnerListAction.java:91) - The DEANumber is :RM0314790
+2007-02-05 12:27:24,593 INFO  (PedigreeTradingPartnerListAction.java:88) - The Trading Partner name is :Raje
+2007-02-05 12:27:24,593 INFO  (PedigreeTradingPartnerListAction.java:91) - The DEANumber is :abc
+2007-02-05 12:27:28,078 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-05 12:27:28,125 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-05 12:28:03,578 INFO  (SessionListener.java:55) - In sessionDestroyed method
+2007-02-05 12:28:03,578 INFO  (SessionListener.java:60) - Query:tlsp:deleteInvlidSessionID_MD('null')
+2007-02-05 12:38:04,656 INFO  (SessionListener.java:55) - In sessionDestroyed method
+2007-02-05 12:38:04,656 INFO  (SessionListener.java:60) - Query:tlsp:deleteInvlidSessionID_MD('12700120070205121716')
+2007-02-05 12:38:04,703 INFO  (User.java:189) - In valueUnbound method
+2007-02-05 12:40:16,359 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-05 12:40:16,359 INFO  (LoginAction.java:57) - In execute method
+2007-02-05 12:40:16,359 INFO  (SecurityServiceImpl.java:142) - In authenticate method
+2007-02-05 12:40:16,359 INFO  (SecurityServiceImpl.java:54) - In getUser method
+2007-02-05 12:40:16,359 INFO  (SecurityServiceImpl.java:56) - Query:tlsp:loginUserInfo_MD('test')
+2007-02-05 12:40:16,437 INFO  (User.java:146) - In passwordMatch method
+2007-02-05 12:40:16,437 INFO  (User.java:176) - In valueBound method
+2007-02-05 12:40:16,437 INFO  (SecurityServiceImpl.java:103) - In insertSessionDoc method
+2007-02-05 12:40:16,437 INFO  (SecurityServiceImpl.java:87) - In replaceString method
+2007-02-05 12:40:16,437 INFO  (SecurityServiceImpl.java:130) - Query:tig:insert-document( 'tig:///EAGRFID/SysSessions/', <session><sessionid>12700120070205124016</sessionid><userid>23802960038774853494040455282174</userid><username>raje raje</username><accesslevel>epedigree</accesslevel><sessionstart>2007-02-05T12:40:16</sessionstart><userip>127.0.0.1</userip><lastuse>2007-02-05T12:40:16</lastuse><tp_company_nm>Southwood</tp_company_nm><tp_company_id>null</tp_company_id></session>)
+2007-02-05 12:40:16,453 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-05 12:40:16,515 INFO  (EpedigreeAction.java:67) - ********Inside Action EpedigreeAction....... 
+2007-02-05 12:40:16,515 INFO  (EpedigreeAction.java:68) - Inside Action execute of EpedigreeAction....
+2007-02-05 12:40:16,515 INFO  (EpedigreeAction.java:78) - Validating The Session
+2007-02-05 12:40:16,515 INFO  (EpedigreeAction.java:82) - sessionID in EpedigreeAction :12700120070205124016
+2007-02-05 12:40:16,546 INFO  (EpedigreeAction.java:92) - The readStatus is : true
+2007-02-05 12:40:16,546 INFO  (EpedigreeAction.java:99) - My Query in EpedigreeAction class.....tlsp:DisplayMessage_MD('12700120070205124016') 
+2007-02-05 12:40:16,562 INFO  (EpedigreeAction.java:128) - Before returning to success
+2007-02-05 12:40:18,171 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-05 12:40:18,218 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-05 12:43:43,187 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-05 12:43:43,234 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-05 12:43:50,218 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-05 12:43:50,250 INFO  (PedigreeTradingPartnerListAction.java:57) - Inside the Action Class PedigreeTradingPartnerListAction......
+2007-02-05 12:43:50,265 INFO  (PedigreeTradingPartnerListAction.java:80) - The list size of the query is :6
+2007-02-05 12:43:50,265 INFO  (PedigreeTradingPartnerListAction.java:88) - The Trading Partner name is :US Oncology
+2007-02-05 12:43:50,265 INFO  (PedigreeTradingPartnerListAction.java:91) - The DEANumber is :RU0326240
+2007-02-05 12:43:50,265 INFO  (PedigreeTradingPartnerListAction.java:88) - The Trading Partner name is :PDRx
+2007-02-05 12:43:50,265 INFO  (PedigreeTradingPartnerListAction.java:91) - The DEANumber is :RP0117475
+2007-02-05 12:43:50,265 INFO  (PedigreeTradingPartnerListAction.java:88) - The Trading Partner name is :LEES CITY DRUG
+2007-02-05 12:43:50,265 INFO  (PedigreeTradingPartnerListAction.java:91) - The DEANumber is :AM3396430
+2007-02-05 12:43:50,265 INFO  (PedigreeTradingPartnerListAction.java:88) - The Trading Partner name is :WHITES COMPOUNDING PHCY.
+2007-02-05 12:43:50,281 INFO  (PedigreeTradingPartnerListAction.java:91) - The DEANumber is :BW6337681
+2007-02-05 12:43:50,281 INFO  (PedigreeTradingPartnerListAction.java:88) - The Trading Partner name is :CHILDREN MEDICAL CENTER
+2007-02-05 12:43:50,281 INFO  (PedigreeTradingPartnerListAction.java:91) - The DEANumber is :AC2260242
+2007-02-05 12:43:50,281 INFO  (PedigreeTradingPartnerListAction.java:88) - The Trading Partner name is :MORRIS and DICKSON CO
+2007-02-05 12:43:50,281 INFO  (PedigreeTradingPartnerListAction.java:91) - The DEANumber is :RM0314790
+2007-02-05 12:44:38,515 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-05 12:44:38,546 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-05 12:44:47,890 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-05 12:44:47,921 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-05 12:54:04,609 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-05 12:54:04,656 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-05 12:54:39,203 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-05 12:54:39,265 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-05 12:54:55,343 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-02-05 12:54:55,390 INFO  (PedigreeTradingPartnerAction.java:48) - Inside the Action Class PedigreeTradingPartnerAction......
+2007-02-05 13:05:07,687 INFO  (SessionListener.java:55) - In sessionDestroyed method
+2007-02-05 13:05:07,687 INFO  (SessionListener.java:60) - Query:tlsp:deleteInvlidSessionID_MD('12700120070205124016')
+2007-02-05 13:05:07,750 INFO  (User.java:189) - In valueUnbound method

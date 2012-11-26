@@ -1,0 +1,16 @@
+/Create Procedure(java func).xq/1.2/Mon Jun  5 10:28:36 2006/-kb/
+/CreateProcedure(Signature)/1.5/Fri Jul 14 13:32:13 2006/-kb/
+/CreateProcedure.xq/1.6/Fri Feb  9 13:13:46 2007/-kb/
+/CreateProcedure_MD(PEDSHIP).xq/1.39/Tue Aug  1 14:57:13 2006/-kb/
+/Drop Procedure(java func).xq/1.2/Tue Jun  6 07:21:35 2006/-kb/
+/Drop Procedure.xq/1.6/Fri Feb  9 13:13:58 2007/-kb/
+/DropProcedure_MD(PEDSHIP).xq/1.9/Mon Jul 24 09:13:06 2006/-kb/
+/ManualSHippedPedigree.xq/1.14/Tue Aug  1 11:50:20 2006/-kb/
+/ReportDropStoredProcedures.xq/1.2/Mon Jun  5 11:25:18 2006/-kb/
+/ReportsStoredProcedures.xq/1.5/Tue Jun  6 06:26:42 2006/-kb/
+/UserLoginSP.xq/1.1/Tue Jun  6 06:43:29 2006/-kb/
+/createprocforpedigreeBank.xq/1.7/Thu Jul 13 11:32:34 2006/-kb/
+/dropProcforPedigreeBank.xq/1.2/Thu Jul 13 11:32:43 2006/-kb/
+/dropUserLoginSP.xq/1.1/Tue Jun  6 06:43:51 2006/-kb/
+/register.xq/1.1/Sat Jun  3 00:22:33 2006/-kb/
+/unregister.xq/1.1/Sat Jun  3 00:22:33 2006/-kb/

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="xml-inline.css"?>
+<result>
+	<title>
+        Items by Pedigree ID.
+    </title>
+    <cols>
+        <pedigreeDocID/>
+        <manufacturer/>
+        <product/>
+        <datetime/>
+        <authenticator/>
+        <valid/>
+    </cols>
+    <headings>
+        <record>
+            <pedigreeDocID>    Pedigree Doc ID          </pedigreeDocID>
+            <manufacturer>   Manufacturer         </manufacturer>
+            <product> released       </product>
+            <datetime> Date/Time </datetime>
+            <authenticator> Authenticator </authenticator>
+            <valid>Valid</valid>
+        </record>
+    </headings>	
+    <records>
+	<record>
+		<pedigreeDocID class="td-menu">
+			<A
+				href="/ePharma/dist/epedigree/ViewPedigree.jsp?doc=P12345"
+				target="_blank" class="type-red">
+				P12345
+			</A>
+		</pedigreeDocID>
+		<manufacturer class="td-menu">Pfizer</manufacturer>
+		<product class="td-menu">11</product>
+		<datetime class="td-menu">2005-07-01T13:10:10</datetime>
+		<authenticator class="td-menu">Mike Pfizer</authenticator>
+		<valid class="td-menu">Valid</valid>
+	</record>
+	<record>
+		<pedigreeDocID class="td-menu">
+			<A
+				href="/ePharma/dist/epedigree/ViewPedigree.jsp?doc=P45678"
+				target="_blank" class="type-red">
+				P45678
+			</A>
+		</pedigreeDocID>
+		<manufacturer class="td-menu">Glaxo Smith Kline</manufacturer>
+		<product class="td-menu">15</product>
+		<datetime class="td-menu">2005-07-11T10:10:10</datetime>
+		<authenticator class="td-menu">Mike Jognes</authenticator>
+		<valid class="td-menu">Valid</valid>
+	</record>
+	<record>
+		<pedigreeDocID class="td-menu">
+			<A
+				href="/ePharma/dist/epedigree/ViewPedigree.jsp?doc=P90123"
+				target="_blank" class="type-red">
+				P90123
+			</A>
+		</pedigreeDocID>
+		<manufacturer class="td-menu">Astrazeneca</manufacturer>
+		<product class="td-menu">10</product>
+		<datetime class="td-menu">2005-07-13T15:22:10</datetime>
+		<authenticator class="td-menu">Mike Astrazeneca</authenticator>
+		<valid class="td-menu">Valid</valid>
+	</record>
+	<record>
+		<pedigreeDocID class="td-menu">
+			<A
+				href="/ePharma/dist/epedigree/ViewPedigree.jsp?doc=P90124"
+				target="_blank" class="type-red">
+				P90124
+			</A>
+		</pedigreeDocID>
+		<manufacturer class="td-menu">Abbott</manufacturer>
+		<product class="td-menu">12</product>
+		<datetime class="td-menu">2005-07-20T09:18:10</datetime>
+		<authenticator class="td-menu">Mike Abbott</authenticator>
+		<valid class="td-menu">Valid</valid>
+	</record>
+	</records>
+</result>

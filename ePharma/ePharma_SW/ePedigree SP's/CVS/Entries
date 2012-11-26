@@ -1,0 +1,13 @@
+/Create Procedure(java func).xq/1.1/Tue Apr 18 22:06:31 2006/-kb/
+/Create-Drop.xq/1.7/Thu May 18 09:21:11 2006/-kb/
+/CreateProcedure.xq/1.26/Mon May 29 14:39:39 2006/-kb/
+/Drop Procedure(java func).xq/1.1/Tue Apr 18 22:06:31 2006/-kb/
+/Drop Procedure.xq/1.15/Sat May 20 12:26:25 2006/-kb/
+/ReportDropStoredProcedures.xq/1.1/Wed May 17 13:20:38 2006/-kb/
+/ReportsStoredProcedures.xq/1.5/Wed May 24 14:32:56 2006/-kb/
+/UserLoginSP.xq/1.2/Mon May 22 14:19:35 2006/-kb/
+/createInitialPedigreeStructure.xq/1.1/Mon Apr 24 14:07:08 2006/-kb/
+/dropUserLoginSP.xq/1.1/Thu Apr 20 13:14:43 2006/-kb/
+/getRepackagedInfo.xq/1.2/Tue May 23 05:56:17 2006/-kb/
+/register.xq/1.1/Tue Apr 18 22:06:31 2006/-kb/
+/unregister.xq/1.1/Tue Apr 18 22:06:31 2006/-kb/

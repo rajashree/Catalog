@@ -1,0 +1,20 @@
+2007-03-06 18:12:05,875 INFO  (ActionExceptionHandler.java:98) - Deatils of Error with TL messages..
+2007-03-06 18:12:05,890 INFO  (ActionExceptionHandler.java:112) - Error Code :system-security-00001
+2007-03-06 18:12:05,890 INFO  (ActionExceptionHandler.java:113) - Error Message :[system-security-00001] - Authentication failed: server failure. [admin], [[C@1c0a077].
+2007-03-06 18:12:05,890 INFO  (ActionExceptionHandler.java:114) - Full Message :com.rdta.error.system.AuthenticationException: [system-security-00001] - Authentication failed: server failure. [admin], [[C@1c0a077].
+2007-03-06 18:12:05,921 INFO  (ActionExceptionHandler.java:126) - Definition :system-security-00001[]
+2007-03-02 18:13:11,000 INFO  (ActionExceptionHandler.java:98) - Deatils of Error with TL messages..
+2007-03-02 18:13:11,000 INFO  (ActionExceptionHandler.java:112) - Error Code :system-security-00001
+2007-03-02 18:13:11,000 INFO  (ActionExceptionHandler.java:113) - Error Message :[system-security-00001] - Authentication failed: server failure. [admin], [[C@149a2c8].
+2007-03-02 18:13:11,000 INFO  (ActionExceptionHandler.java:114) - Full Message :com.rdta.error.system.AuthenticationException: [system-security-00001] - Authentication failed: server failure. [admin], [[C@149a2c8].
+2007-03-02 18:13:11,000 INFO  (ActionExceptionHandler.java:126) - Definition :system-security-00001[]
+2007-03-02 18:13:19,921 INFO  (ActionExceptionHandler.java:98) - Deatils of Error with TL messages..
+2007-03-02 18:13:19,921 INFO  (ActionExceptionHandler.java:112) - Error Code :system-security-00001
+2007-03-02 18:13:19,921 INFO  (ActionExceptionHandler.java:113) - Error Message :[system-security-00001] - Authentication failed: server failure. [admin], [[C@4fe94c].
+2007-03-02 18:13:19,921 INFO  (ActionExceptionHandler.java:114) - Full Message :com.rdta.error.system.AuthenticationException: [system-security-00001] - Authentication failed: server failure. [admin], [[C@4fe94c].
+2007-03-02 18:13:19,921 INFO  (ActionExceptionHandler.java:126) - Definition :system-security-00001[]
+2007-03-02 18:13:41,343 INFO  (ActionExceptionHandler.java:98) - Deatils of Error with TL messages..
+2007-03-02 18:13:41,343 INFO  (ActionExceptionHandler.java:112) - Error Code :system-security-00001
+2007-03-02 18:13:41,343 INFO  (ActionExceptionHandler.java:113) - Error Message :[system-security-00001] - Authentication failed: server failure. [admin], [[C@f5e814].
+2007-03-02 18:13:41,343 INFO  (ActionExceptionHandler.java:114) - Full Message :com.rdta.error.system.AuthenticationException: [system-security-00001] - Authentication failed: server failure. [admin], [[C@f5e814].
+2007-03-02 18:13:41,343 INFO  (ActionExceptionHandler.java:126) - Definition :system-security-00001[]

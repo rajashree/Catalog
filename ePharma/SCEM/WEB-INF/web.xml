@@ -1,0 +1,65 @@
+<web-app>
+
+    <servlet>
+        <servlet-name>ControlServlet</servlet-name>
+        <servlet-class>com.ControlServlet</servlet-class>
+    </servlet>   
+    
+    <servlet>
+        <servlet-name>LoginVerify</servlet-name>
+        <servlet-class>com.LoginVerify</servlet-class>
+    </servlet>   
+    
+    <servlet>
+        <servlet-name>POGeneration</servlet-name>
+        <servlet-class>com.POGeneration</servlet-class>
+    </servlet>  
+    
+    <servlet>
+        <servlet-name>POSubmit</servlet-name>
+        <servlet-class>com.POSubmit</servlet-class>
+    </servlet> 
+    
+     <servlet>
+        <servlet-name>ASNGenerate</servlet-name>
+        <servlet-class>com.ASNGenerate</servlet-class>
+    </servlet>  
+    
+    <servlet>
+        <servlet-name>GetRecord</servlet-name>
+        <servlet-class>com.GetRecord</servlet-class>
+    </servlet>    
+      
+
+    <servlet-mapping>
+        <servlet-name>ControlServlet</servlet-name>
+        <url-pattern>/ControlServlet</url-pattern>
+    </servlet-mapping>   
+    
+    
+    <servlet-mapping>
+        <servlet-name>LoginVerify</servlet-name>
+        <url-pattern>/LoginVerify</url-pattern>
+    </servlet-mapping> 
+    
+    <servlet-mapping>
+        <servlet-name>POGeneration</servlet-name>
+        <url-pattern>/POGeneration</url-pattern>
+    </servlet-mapping> 
+    
+    <servlet-mapping>
+        <servlet-name>POSubmit</servlet-name>
+        <url-pattern>/POSubmit</url-pattern>
+    </servlet-mapping> 
+    
+     <servlet-mapping>
+        <servlet-name>ASNGenerate</servlet-name>
+        <url-pattern>/ASNGenerate</url-pattern>
+    </servlet-mapping> 
+    
+    <servlet-mapping>
+        <servlet-name>GetRecord</servlet-name>
+        <url-pattern>/GetRecord</url-pattern>
+    </servlet-mapping> 
+    
+</web-app>

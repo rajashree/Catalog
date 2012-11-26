@@ -1,0 +1,17 @@
+tig:drop-stored-procedure("addCategoryProc"), 
+tig:drop-stored-procedure("listCategoriesProc"),
+tig:drop-stored-procedure("getRuleIDProc"),
+tig:drop-stored-procedure("getRuleProc"),
+tig:drop-stored-procedure("updateRuleProc"),
+tig:drop-stored-procedure("addRuleProc"),
+tig:drop-stored-procedure("listContextProc"),
+tig:drop-stored-procedure("listRulesSelProc"),
+tig:drop-stored-procedure("listProceduresProc"), 
+tig:drop-stored-procedure("getRuleSetIDProc"),
+tig:drop-stored-procedure("addRuleSetProc"),
+tig:drop-stored-procedure("updateRulesInRuleSetProc"), 
+tig:drop-stored-procedure("getRuleSetProc"), 
+tig:drop-stored-procedure("deleteRuleFromRuleSetProc"),
+tig:drop-stored-procedure("updateRuleNodeInRuleSetProc")
+tig:drop-stored-procedure("updateRuleSetDetails")
+tig:drop-stored-procedure("getRuleIDinRuleSetProc")

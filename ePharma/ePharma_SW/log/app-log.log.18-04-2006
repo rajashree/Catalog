@@ -1,0 +1,1139 @@
+2006-03-16 17:54:00,187 INFO  (TLDBConfig.java:53) -  TLDBConfig all values:  localhost 
+ 3408 
+ admin 
+ admin 
+ 
+2006-03-16 17:54:00,937 WARN  (RequestProcessor.java:509) - Unhandled Exception thrown: class com.rdta.commons.persistence.PersistanceException
+2006-03-16 17:55:02,046 INFO  (EpedigreeAction.java:42) - ********Inside Action EpedigreeAction....... 
+2006-03-16 17:55:02,046 INFO  (EpedigreeAction.java:43) - Inside Action execute of EpedigreeAction....
+2006-03-16 17:55:02,062 INFO  (EpedigreeAction.java:53) - Validating The Session
+2006-03-16 17:55:02,062 INFO  (EpedigreeAction.java:57) - sessionID in EpedigreeAction :12700120060316055458
+2006-03-16 17:55:02,531 INFO  (EpedigreeAction.java:67) - The readStatus is : true
+2006-03-16 17:55:02,531 INFO  (EpedigreeAction.java:74) - My Query in EpedigreeAction class.....tlsp:DisplayMessage('12700120060316055458') 
+2006-03-16 17:55:03,250 INFO  (EpedigreeAction.java:86) - MessageTitle is:sample
+2006-03-16 17:55:03,250 INFO  (EpedigreeAction.java:88) - CreatedBy is:Brian Cheek
+2006-03-16 17:55:03,250 INFO  (EpedigreeAction.java:90) - CreatedDate is:2006-02-06T08:00:50
+2006-03-16 17:55:03,250 INFO  (EpedigreeAction.java:92) - MessageID is:12458487189334891204507701084109
+2006-03-16 17:55:03,250 INFO  (EpedigreeAction.java:94) - RelatedProcess is:fgfgtodaysss
+2006-03-16 17:55:03,250 INFO  (EpedigreeAction.java:96) - SeverityLevel is:1
+2006-03-16 17:55:03,265 INFO  (EpedigreeAction.java:98) - status is:Accepted
+2006-03-16 17:55:03,265 INFO  (EpedigreeAction.java:103) - Before returning to success
+2006-03-16 17:55:19,968 INFO  (ShippingManagerAction.java:77) - Validating The Session
+2006-03-16 17:55:19,968 INFO  (ShippingManagerAction.java:80) - sessionID in Action :12700120060316055458
+2006-03-16 17:55:20,015 INFO  (ShippingManagerAction.java:88) - Cheking the Access Previliges on Shping Manager[true]
+2006-03-16 17:55:20,062 INFO  (ShippingManagerAction.java:97) - this is the CreateAPN :[true]
+2006-03-16 17:55:20,109 INFO  (ShippingManagerAction.java:125) - The Transaction No is:null
+2006-03-16 17:55:20,203 INFO  (ShippingManagerAction.java:132) - Cheking the AcessPreviliges on Search Button:[true]
+2006-03-16 17:55:26,828 INFO  (ShippingManagerAction.java:77) - Validating The Session
+2006-03-16 17:55:26,828 INFO  (ShippingManagerAction.java:80) - sessionID in Action :12700120060316055458
+2006-03-16 17:55:26,921 INFO  (ShippingManagerAction.java:88) - Cheking the Access Previliges on Shping Manager[true]
+2006-03-16 17:55:26,984 INFO  (ShippingManagerAction.java:97) - this is the CreateAPN :[true]
+2006-03-16 17:55:27,015 INFO  (ShippingManagerAction.java:125) - The Transaction No is:null
+2006-03-16 17:55:27,046 INFO  (ShippingManagerAction.java:132) - Cheking the AcessPreviliges on Search Button:[true]
+2006-03-16 17:55:27,046 INFO  (ShippingManagerAction.java:163) -  DespatchAdvice search option 
+2006-03-16 17:55:39,187 INFO  (ShippingManagerAction.java:77) - Validating The Session
+2006-03-16 17:55:39,187 INFO  (ShippingManagerAction.java:80) - sessionID in Action :12700120060316055458
+2006-03-16 17:55:39,218 INFO  (ShippingManagerAction.java:88) - Cheking the Access Previliges on Shping Manager[true]
+2006-03-16 17:55:39,250 INFO  (ShippingManagerAction.java:97) - this is the CreateAPN :[true]
+2006-03-16 17:55:39,281 INFO  (ShippingManagerAction.java:125) - The Transaction No is:C28785100007
+2006-03-16 17:55:39,312 INFO  (ShippingManagerAction.java:132) - Cheking the AcessPreviliges on Search Button:[true]
+2006-03-16 17:55:39,312 INFO  (ShippingManagerAction.java:163) -  DespatchAdvice search option 
+2006-03-16 17:55:47,531 INFO  (ShippingManagerAction.java:77) - Validating The Session
+2006-03-16 17:55:47,531 INFO  (ShippingManagerAction.java:80) - sessionID in Action :12700120060316055458
+2006-03-16 17:55:47,578 INFO  (ShippingManagerAction.java:88) - Cheking the Access Previliges on Shping Manager[true]
+2006-03-16 17:55:47,625 INFO  (ShippingManagerAction.java:97) - this is the CreateAPN :[true]
+2006-03-16 17:55:47,671 INFO  (ShippingManagerAction.java:125) - The Transaction No is:C28785100007
+2006-03-16 17:55:47,718 INFO  (ShippingManagerAction.java:132) - Cheking the AcessPreviliges on Search Button:[true]
+2006-03-16 17:55:47,718 INFO  (ShippingManagerAction.java:163) -  DespatchAdvice search option 
+2006-03-16 17:55:52,625 INFO  (ShippingManagerAction.java:77) - Validating The Session
+2006-03-16 17:55:52,625 INFO  (ShippingManagerAction.java:80) - sessionID in Action :12700120060316055458
+2006-03-16 17:55:52,671 INFO  (ShippingManagerAction.java:88) - Cheking the Access Previliges on Shping Manager[true]
+2006-03-16 17:55:52,718 INFO  (ShippingManagerAction.java:97) - this is the CreateAPN :[true]
+2006-03-16 17:55:52,781 INFO  (ShippingManagerAction.java:125) - The Transaction No is:C28785100007
+2006-03-16 17:55:52,812 INFO  (ShippingManagerAction.java:132) - Cheking the AcessPreviliges on Search Button:[true]
+2006-03-16 17:55:52,812 INFO  (ShippingManagerAction.java:163) -  DespatchAdvice search option 
+2006-03-16 17:59:31,875 INFO  (ReceivingManagerAction.java:66) - Inside Action ReceivingManagerAction....... 
+2006-03-16 17:59:31,875 INFO  (ReceivingManagerAction.java:98) - Validating The Session
+2006-03-16 17:59:31,890 INFO  (ReceivingManagerAction.java:101) - sessionID in Action :12700120060316055458
+2006-03-16 17:59:31,984 INFO  (ReceivingManagerAction.java:145) - the string valuetrue
+2006-03-16 17:59:33,000 INFO  (ReceivingManagerAction.java:237) - Before returning to success
+2006-03-16 17:59:39,468 INFO  (PedigreeBankSearchAction.java:52) - Inside Action PedigreeBankSearchAction....... 
+2006-03-16 17:59:39,468 INFO  (PedigreeBankSearchAction.java:53) - Inside Action execute of PedigreeBankSearchAction....
+2006-03-16 17:59:39,781 INFO  (PedigreeBankSearchAction.java:84) - before retuning Success! 
+2006-03-16 17:59:48,984 INFO  (EpedigreeAction.java:42) - ********Inside Action EpedigreeAction....... 
+2006-03-16 17:59:48,984 INFO  (EpedigreeAction.java:43) - Inside Action execute of EpedigreeAction....
+2006-03-16 17:59:48,984 INFO  (EpedigreeAction.java:53) - Validating The Session
+2006-03-16 17:59:48,984 INFO  (EpedigreeAction.java:57) - sessionID in EpedigreeAction :12700120060316055458
+2006-03-16 17:59:49,031 INFO  (EpedigreeAction.java:67) - The readStatus is : true
+2006-03-16 17:59:49,031 INFO  (EpedigreeAction.java:74) - My Query in EpedigreeAction class.....tlsp:DisplayMessage('12700120060316055458') 
+2006-03-16 17:59:49,062 INFO  (EpedigreeAction.java:86) - MessageTitle is:sample
+2006-03-16 17:59:49,078 INFO  (EpedigreeAction.java:88) - CreatedBy is:Brian Cheek
+2006-03-16 17:59:49,078 INFO  (EpedigreeAction.java:90) - CreatedDate is:2006-02-06T08:00:50
+2006-03-16 17:59:49,078 INFO  (EpedigreeAction.java:92) - MessageID is:12458487189334891204507701084109
+2006-03-16 17:59:49,078 INFO  (EpedigreeAction.java:94) - RelatedProcess is:fgfgtodaysss
+2006-03-16 17:59:49,078 INFO  (EpedigreeAction.java:96) - SeverityLevel is:1
+2006-03-16 17:59:49,078 INFO  (EpedigreeAction.java:98) - status is:Accepted
+2006-03-16 17:59:49,093 INFO  (EpedigreeAction.java:103) - Before returning to success
+2006-03-16 17:59:54,218 INFO  (ReceivingManagerAction.java:66) - Inside Action ReceivingManagerAction....... 
+2006-03-16 17:59:54,218 INFO  (ReceivingManagerAction.java:98) - Validating The Session
+2006-03-16 17:59:54,218 INFO  (ReceivingManagerAction.java:101) - sessionID in Action :12700120060316055458
+2006-03-16 17:59:54,296 INFO  (ReceivingManagerAction.java:145) - the string valuetrue
+2006-03-16 17:59:54,375 INFO  (ReceivingManagerAction.java:237) - Before returning to success
+2006-03-16 17:59:59,890 INFO  (ReceivingManagerAction.java:66) - Inside Action ReceivingManagerAction....... 
+2006-03-16 17:59:59,890 INFO  (ReceivingManagerAction.java:98) - Validating The Session
+2006-03-16 17:59:59,890 INFO  (ReceivingManagerAction.java:101) - sessionID in Action :12700120060316055458
+2006-03-16 17:59:59,921 INFO  (ReceivingManagerAction.java:145) - the string valuetrue
+2006-03-16 18:00:01,468 INFO  (ReceivingManagerAction.java:219) - The EnvolopeNo is:PE005
+2006-03-16 18:00:01,484 INFO  (ReceivingManagerAction.java:223) - Trading Partner Source is:Cardinal Health
+2006-03-16 18:00:01,484 INFO  (ReceivingManagerAction.java:225) - Trading Partner Destination is:CVS Pharmacy
+2006-03-16 18:00:01,500 INFO  (ReceivingManagerAction.java:219) - The EnvolopeNo is:PE006
+2006-03-16 18:00:01,500 INFO  (ReceivingManagerAction.java:223) - Trading Partner Source is:Cardinal Health
+2006-03-16 18:00:01,500 INFO  (ReceivingManagerAction.java:225) - Trading Partner Destination is:CVS Pharmacy
+2006-03-16 18:00:01,500 INFO  (ReceivingManagerAction.java:237) - Before returning to success
+2006-03-16 18:00:06,046 INFO  (EnvelopeDetailsAction.java:52) - Validating The Session
+2006-03-16 18:00:06,046 INFO  (EnvelopeDetailsAction.java:56) - sessionID in Action :12700120060316055458
+2006-03-16 18:00:13,078 INFO  (ReceivingManagerAction.java:66) - Inside Action ReceivingManagerAction....... 
+2006-03-16 18:00:13,078 INFO  (ReceivingManagerAction.java:98) - Validating The Session
+2006-03-16 18:00:13,078 INFO  (ReceivingManagerAction.java:101) - sessionID in Action :12700120060316055458
+2006-03-16 18:00:13,109 INFO  (ReceivingManagerAction.java:145) - the string valuetrue
+2006-03-16 18:00:13,531 INFO  (ReceivingManagerAction.java:219) - The EnvolopeNo is:PE005
+2006-03-16 18:00:13,531 INFO  (ReceivingManagerAction.java:223) - Trading Partner Source is:Cardinal Health
+2006-03-16 18:00:13,531 INFO  (ReceivingManagerAction.java:225) - Trading Partner Destination is:CVS Pharmacy
+2006-03-16 18:00:13,562 INFO  (ReceivingManagerAction.java:219) - The EnvolopeNo is:PE006
+2006-03-16 18:00:13,562 INFO  (ReceivingManagerAction.java:223) - Trading Partner Source is:Cardinal Health
+2006-03-16 18:00:13,562 INFO  (ReceivingManagerAction.java:225) - Trading Partner Destination is:CVS Pharmacy
+2006-03-16 18:00:13,562 INFO  (ReceivingManagerAction.java:237) - Before returning to success
+2006-03-16 18:00:24,734 INFO  (ReceivingManagerAction.java:66) - Inside Action ReceivingManagerAction....... 
+2006-03-16 18:00:24,734 INFO  (ReceivingManagerAction.java:98) - Validating The Session
+2006-03-16 18:00:24,750 INFO  (ReceivingManagerAction.java:101) - sessionID in Action :12700120060316055458
+2006-03-16 18:00:24,796 INFO  (ReceivingManagerAction.java:145) - the string valuetrue
+2006-03-16 18:00:24,875 INFO  (ReceivingManagerAction.java:237) - Before returning to success
+2006-03-16 18:00:34,859 INFO  (ReceivingManagerAction.java:66) - Inside Action ReceivingManagerAction....... 
+2006-03-16 18:00:34,859 INFO  (ReceivingManagerAction.java:98) - Validating The Session
+2006-03-16 18:00:34,859 INFO  (ReceivingManagerAction.java:101) - sessionID in Action :12700120060316055458
+2006-03-16 18:00:34,890 INFO  (ReceivingManagerAction.java:145) - the string valuetrue
+2006-03-16 18:00:35,312 INFO  (ReceivingManagerAction.java:219) - The EnvolopeNo is:PE005
+2006-03-16 18:00:35,328 INFO  (ReceivingManagerAction.java:223) - Trading Partner Source is:Cardinal Health
+2006-03-16 18:00:35,328 INFO  (ReceivingManagerAction.java:225) - Trading Partner Destination is:CVS Pharmacy
+2006-03-16 18:00:35,328 INFO  (ReceivingManagerAction.java:219) - The EnvolopeNo is:PE006
+2006-03-16 18:00:35,328 INFO  (ReceivingManagerAction.java:223) - Trading Partner Source is:Cardinal Health
+2006-03-16 18:00:35,328 INFO  (ReceivingManagerAction.java:225) - Trading Partner Destination is:CVS Pharmacy
+2006-03-16 18:00:35,343 INFO  (ReceivingManagerAction.java:237) - Before returning to success
+2006-03-16 18:00:59,453 INFO  (EnvelopeDetailsAction.java:52) - Validating The Session
+2006-03-16 18:00:59,453 INFO  (EnvelopeDetailsAction.java:56) - sessionID in Action :12700120060316055458
+2006-03-16 18:01:04,250 INFO  (PedigreeDetailsAction.java:52) - Validating The Session
+2006-03-16 18:01:04,265 INFO  (PedigreeDetailsAction.java:56) - sessionID in Action :12700120060316055458
+2006-03-16 18:01:04,328 ERROR (PedigreeDetailsAction.java:134) - Error in OrderSearchAction execute method.........com.rdta.commons.persistence.PersistanceException: com.rdta.tlapi.xql.XQLException: [xq-internal-00015] - No stored procedure with name [Shippedpedigreedetails] was found.
+2006-03-16 18:01:06,703 INFO  (EnvelopeDetailsAction.java:52) - Validating The Session
+2006-03-16 18:01:06,703 INFO  (EnvelopeDetailsAction.java:56) - sessionID in Action :12700120060316055458
+2006-03-16 18:01:46,734 INFO  (EpedigreeAction.java:42) - ********Inside Action EpedigreeAction....... 
+2006-03-16 18:01:46,750 INFO  (EpedigreeAction.java:43) - Inside Action execute of EpedigreeAction....
+2006-03-16 18:01:46,750 INFO  (EpedigreeAction.java:53) - Validating The Session
+2006-03-16 18:01:46,750 INFO  (EpedigreeAction.java:57) - sessionID in EpedigreeAction :12700120060316055458
+2006-03-16 18:01:46,781 INFO  (EpedigreeAction.java:67) - The readStatus is : true
+2006-03-16 18:01:46,781 INFO  (EpedigreeAction.java:74) - My Query in EpedigreeAction class.....tlsp:DisplayMessage('12700120060316055458') 
+2006-03-16 18:01:46,812 INFO  (EpedigreeAction.java:86) - MessageTitle is:sample
+2006-03-16 18:01:46,812 INFO  (EpedigreeAction.java:88) - CreatedBy is:Brian Cheek
+2006-03-16 18:01:46,812 INFO  (EpedigreeAction.java:90) - CreatedDate is:2006-02-06T08:00:50
+2006-03-16 18:01:46,812 INFO  (EpedigreeAction.java:92) - MessageID is:12458487189334891204507701084109
+2006-03-16 18:01:46,828 INFO  (EpedigreeAction.java:94) - RelatedProcess is:fgfgtodaysss
+2006-03-16 18:01:46,828 INFO  (EpedigreeAction.java:96) - SeverityLevel is:1
+2006-03-16 18:01:46,828 INFO  (EpedigreeAction.java:98) - status is:Accepted
+2006-03-16 18:01:46,828 INFO  (EpedigreeAction.java:103) - Before returning to success
+2006-03-16 18:02:38,828 INFO  (ReceivingManagerAction.java:66) - Inside Action ReceivingManagerAction....... 
+2006-03-16 18:02:38,828 INFO  (ReceivingManagerAction.java:98) - Validating The Session
+2006-03-16 18:02:38,828 INFO  (ReceivingManagerAction.java:101) - sessionID in Action :12700120060316055458
+2006-03-16 18:02:38,890 INFO  (ReceivingManagerAction.java:145) - the string valuetrue
+2006-03-16 18:02:38,953 INFO  (ReceivingManagerAction.java:237) - Before returning to success
+2006-03-16 18:02:52,171 INFO  (ReceivingManagerAction.java:66) - Inside Action ReceivingManagerAction....... 
+2006-03-16 18:02:52,187 INFO  (ReceivingManagerAction.java:98) - Validating The Session
+2006-03-16 18:02:52,187 INFO  (ReceivingManagerAction.java:101) - sessionID in Action :12700120060316055458
+2006-03-16 18:02:52,218 INFO  (ReceivingManagerAction.java:145) - the string valuetrue
+2006-03-16 18:02:52,625 INFO  (ReceivingManagerAction.java:219) - The EnvolopeNo is:PE005
+2006-03-16 18:02:52,625 INFO  (ReceivingManagerAction.java:223) - Trading Partner Source is:Cardinal Health
+2006-03-16 18:02:52,625 INFO  (ReceivingManagerAction.java:225) - Trading Partner Destination is:CVS Pharmacy
+2006-03-16 18:02:52,640 INFO  (ReceivingManagerAction.java:219) - The EnvolopeNo is:PE006
+2006-03-16 18:02:52,640 INFO  (ReceivingManagerAction.java:223) - Trading Partner Source is:Cardinal Health
+2006-03-16 18:02:52,640 INFO  (ReceivingManagerAction.java:225) - Trading Partner Destination is:CVS Pharmacy
+2006-03-16 18:02:52,640 INFO  (ReceivingManagerAction.java:237) - Before returning to success
+2006-03-16 18:03:00,140 INFO  (EnvelopeDetailsAction.java:52) - Validating The Session
+2006-03-16 18:03:00,140 INFO  (EnvelopeDetailsAction.java:56) - sessionID in Action :12700120060316055458
+2006-03-16 18:05:26,109 DEBUG [CommonUtil] [main::]  Debug is on. webContext + C:\jakarta-tomcat-5.0.29\webapps\ePharma new\.
+2006-03-16 18:05:26,140 DEBUG [CommonUtil] [main::]  Debug is on. webContext + C:\jakarta-tomcat-5.0.29\webapps\ePharma new\.
+2006-03-16 18:06:05,687 INFO  (TLDBConfig.java:53) -  TLDBConfig all values:  localhost 
+ 3408 
+ admin 
+ admin 
+ 
+2006-03-16 18:06:07,515 INFO  (EpedigreeAction.java:42) - ********Inside Action EpedigreeAction....... 
+2006-03-16 18:06:07,515 INFO  (EpedigreeAction.java:43) - Inside Action execute of EpedigreeAction....
+2006-03-16 18:06:07,531 INFO  (EpedigreeAction.java:53) - Validating The Session
+2006-03-16 18:06:07,531 INFO  (EpedigreeAction.java:57) - sessionID in EpedigreeAction :12700120060316055458
+2006-03-16 18:06:07,562 INFO  (EpedigreeAction.java:67) - The readStatus is : true
+2006-03-16 18:06:07,562 INFO  (EpedigreeAction.java:74) - My Query in EpedigreeAction class.....tlsp:DisplayMessage('12700120060316055458') 
+2006-03-16 18:06:07,593 INFO  (EpedigreeAction.java:86) - MessageTitle is:sample
+2006-03-16 18:06:07,593 INFO  (EpedigreeAction.java:88) - CreatedBy is:Brian Cheek
+2006-03-16 18:06:07,593 INFO  (EpedigreeAction.java:90) - CreatedDate is:2006-02-06T08:00:50
+2006-03-16 18:06:07,609 INFO  (EpedigreeAction.java:92) - MessageID is:12458487189334891204507701084109
+2006-03-16 18:06:07,609 INFO  (EpedigreeAction.java:94) - RelatedProcess is:fgfgtodaysss
+2006-03-16 18:06:07,609 INFO  (EpedigreeAction.java:96) - SeverityLevel is:1
+2006-03-16 18:06:07,609 INFO  (EpedigreeAction.java:98) - status is:Accepted
+2006-03-16 18:06:07,609 INFO  (EpedigreeAction.java:103) - Before returning to success
+2006-03-16 18:06:14,718 INFO  (ReceivingManagerAction.java:66) - Inside Action ReceivingManagerAction....... 
+2006-03-16 18:06:14,734 INFO  (ReceivingManagerAction.java:98) - Validating The Session
+2006-03-16 18:06:14,734 INFO  (ReceivingManagerAction.java:101) - sessionID in Action :12700120060316055458
+2006-03-16 18:06:14,828 INFO  (ReceivingManagerAction.java:145) - the string valuetrue
+2006-03-16 18:06:14,937 INFO  (ReceivingManagerAction.java:237) - Before returning to success
+2006-03-16 18:06:21,359 INFO  (ReceivingManagerAction.java:66) - Inside Action ReceivingManagerAction....... 
+2006-03-16 18:06:21,375 INFO  (ReceivingManagerAction.java:98) - Validating The Session
+2006-03-16 18:06:21,375 INFO  (ReceivingManagerAction.java:101) - sessionID in Action :12700120060316055458
+2006-03-16 18:06:21,406 INFO  (ReceivingManagerAction.java:145) - the string valuetrue
+2006-03-16 18:06:21,921 INFO  (ReceivingManagerAction.java:219) - The EnvolopeNo is:PE005
+2006-03-16 18:06:21,921 INFO  (ReceivingManagerAction.java:223) - Trading Partner Source is:Cardinal Health
+2006-03-16 18:06:21,921 INFO  (ReceivingManagerAction.java:225) - Trading Partner Destination is:CVS Pharmacy
+2006-03-16 18:06:21,937 INFO  (ReceivingManagerAction.java:219) - The EnvolopeNo is:PE006
+2006-03-16 18:06:21,937 INFO  (ReceivingManagerAction.java:223) - Trading Partner Source is:Cardinal Health
+2006-03-16 18:06:21,937 INFO  (ReceivingManagerAction.java:225) - Trading Partner Destination is:CVS Pharmacy
+2006-03-16 18:06:21,937 INFO  (ReceivingManagerAction.java:237) - Before returning to success
+2006-03-16 18:06:27,140 INFO  (EnvelopeDetailsAction.java:52) - Validating The Session
+2006-03-16 18:06:27,140 INFO  (EnvelopeDetailsAction.java:56) - sessionID in Action :12700120060316055458
+2006-03-16 18:06:31,390 INFO  (PedigreeDetailsAction.java:52) - Validating The Session
+2006-03-16 18:06:31,390 INFO  (PedigreeDetailsAction.java:56) - sessionID in Action :12700120060316055458
+2006-03-16 18:06:31,453 ERROR (PedigreeDetailsAction.java:134) - Error in OrderSearchAction execute method.........com.rdta.commons.persistence.PersistanceException: com.rdta.tlapi.xql.XQLException: [xq-internal-00015] - No stored procedure with name [Shippedpedigreedetails] was found.
+2006-03-16 18:06:32,890 INFO  (EnvelopeDetailsAction.java:52) - Validating The Session
+2006-03-16 18:06:32,890 INFO  (EnvelopeDetailsAction.java:56) - sessionID in Action :12700120060316055458
+2006-03-16 18:06:37,875 INFO  (ReceivingManagerAction.java:66) - Inside Action ReceivingManagerAction....... 
+2006-03-16 18:06:37,875 INFO  (ReceivingManagerAction.java:98) - Validating The Session
+2006-03-16 18:06:37,875 INFO  (ReceivingManagerAction.java:101) - sessionID in Action :12700120060316055458
+2006-03-16 18:06:37,906 INFO  (ReceivingManagerAction.java:145) - the string valuetrue
+2006-03-16 18:06:38,296 INFO  (ReceivingManagerAction.java:219) - The EnvolopeNo is:PE005
+2006-03-16 18:06:38,296 INFO  (ReceivingManagerAction.java:223) - Trading Partner Source is:Cardinal Health
+2006-03-16 18:06:38,296 INFO  (ReceivingManagerAction.java:225) - Trading Partner Destination is:CVS Pharmacy
+2006-03-16 18:06:38,312 INFO  (ReceivingManagerAction.java:219) - The EnvolopeNo is:PE006
+2006-03-16 18:06:38,312 INFO  (ReceivingManagerAction.java:223) - Trading Partner Source is:Cardinal Health
+2006-03-16 18:06:38,312 INFO  (ReceivingManagerAction.java:225) - Trading Partner Destination is:CVS Pharmacy
+2006-03-16 18:06:38,312 INFO  (ReceivingManagerAction.java:237) - Before returning to success
+2006-03-16 18:06:42,718 INFO  (ReceivingManagerAction.java:66) - Inside Action ReceivingManagerAction....... 
+2006-03-16 18:06:42,734 INFO  (ReceivingManagerAction.java:98) - Validating The Session
+2006-03-16 18:06:42,734 INFO  (ReceivingManagerAction.java:101) - sessionID in Action :12700120060316055458
+2006-03-16 18:06:42,781 INFO  (ReceivingManagerAction.java:145) - the string valuetrue
+2006-03-16 18:06:42,875 INFO  (ReceivingManagerAction.java:237) - Before returning to success
+2006-03-16 18:06:57,765 INFO  (ShippingManagerAction.java:77) - Validating The Session
+2006-03-16 18:06:57,765 INFO  (ShippingManagerAction.java:80) - sessionID in Action :12700120060316055458
+2006-03-16 18:06:57,796 INFO  (ShippingManagerAction.java:88) - Cheking the Access Previliges on Shping Manager[true]
+2006-03-16 18:06:57,828 INFO  (ShippingManagerAction.java:97) - this is the CreateAPN :[true]
+2006-03-16 18:06:57,859 INFO  (ShippingManagerAction.java:125) - The Transaction No is:null
+2006-03-16 18:06:57,890 INFO  (ShippingManagerAction.java:132) - Cheking the AcessPreviliges on Search Button:[true]
+2006-03-16 18:07:02,109 INFO  (ReceivedPedigreeSearchAction.java:63) - Inside Action ReceivedPedigreeSearchAction....... 
+2006-03-16 18:07:02,109 INFO  (ReceivedPedigreeSearchAction.java:64) - Inside Action execute of ReceivedPedigreeSearchAction....
+2006-03-16 18:07:02,125 INFO  (ReceivedPedigreeSearchAction.java:92) - Validating The Session
+2006-03-16 18:07:02,125 INFO  (ReceivedPedigreeSearchAction.java:95) - sessionID in Action :12700120060316055458
+2006-03-16 18:07:02,156 INFO  (ReceivedPedigreeSearchAction.java:180) - Before returning to success
+2006-03-16 18:08:19,421 INFO  (ReceivedPedigreeSearchAction.java:63) - Inside Action ReceivedPedigreeSearchAction....... 
+2006-03-16 18:08:19,421 INFO  (ReceivedPedigreeSearchAction.java:64) - Inside Action execute of ReceivedPedigreeSearchAction....
+2006-03-16 18:08:19,421 INFO  (ReceivedPedigreeSearchAction.java:92) - Validating The Session
+2006-03-16 18:08:19,421 INFO  (ReceivedPedigreeSearchAction.java:95) - sessionID in Action :12700120060316055458
+2006-03-16 18:08:19,437 INFO  (ReceivedPedigreeSearchAction.java:180) - Before returning to success
+2006-03-16 18:12:41,593 DEBUG [CommonUtil] [main::]  Debug is on. webContext + C:\jakarta-tomcat-5.0.29\webapps\ePharma new\.
+2006-03-16 18:12:41,609 DEBUG [CommonUtil] [main::]  Debug is on. webContext + C:\jakarta-tomcat-5.0.29\webapps\ePharma new\.
+2006-03-16 18:13:38,625 INFO  (TLDBConfig.java:53) -  TLDBConfig all values:  localhost 
+ 3408 
+ admin 
+ admin 
+ 
+2006-03-16 18:13:40,421 INFO  (EpedigreeAction.java:42) - ********Inside Action EpedigreeAction....... 
+2006-03-16 18:13:40,421 INFO  (EpedigreeAction.java:43) - Inside Action execute of EpedigreeAction....
+2006-03-16 18:13:40,437 INFO  (EpedigreeAction.java:53) - Validating The Session
+2006-03-16 18:13:40,437 INFO  (EpedigreeAction.java:57) - sessionID in EpedigreeAction :12700120060316055458
+2006-03-16 18:13:40,484 INFO  (EpedigreeAction.java:67) - The readStatus is : true
+2006-03-16 18:13:40,484 INFO  (EpedigreeAction.java:74) - My Query in EpedigreeAction class.....tlsp:DisplayMessage('12700120060316055458') 
+2006-03-16 18:13:40,546 INFO  (EpedigreeAction.java:86) - MessageTitle is:sample
+2006-03-16 18:13:40,546 INFO  (EpedigreeAction.java:88) - CreatedBy is:Brian Cheek
+2006-03-16 18:13:40,546 INFO  (EpedigreeAction.java:90) - CreatedDate is:2006-02-06T08:00:50
+2006-03-16 18:13:40,546 INFO  (EpedigreeAction.java:92) - MessageID is:12458487189334891204507701084109
+2006-03-16 18:13:40,546 INFO  (EpedigreeAction.java:94) - RelatedProcess is:fgfgtodaysss
+2006-03-16 18:13:40,546 INFO  (EpedigreeAction.java:96) - SeverityLevel is:1
+2006-03-16 18:13:40,546 INFO  (EpedigreeAction.java:98) - status is:Accepted
+2006-03-16 18:13:40,546 INFO  (EpedigreeAction.java:103) - Before returning to success
+2006-03-16 18:13:48,140 INFO  (ShippingManagerAction.java:77) - Validating The Session
+2006-03-16 18:13:48,140 INFO  (ShippingManagerAction.java:80) - sessionID in Action :12700120060316055458
+2006-03-16 18:13:48,171 INFO  (ShippingManagerAction.java:88) - Cheking the Access Previliges on Shping Manager[true]
+2006-03-16 18:13:48,218 INFO  (ShippingManagerAction.java:97) - this is the CreateAPN :[true]
+2006-03-16 18:13:48,250 INFO  (ShippingManagerAction.java:125) - The Transaction No is:null
+2006-03-16 18:13:48,296 INFO  (ShippingManagerAction.java:132) - Cheking the AcessPreviliges on Search Button:[true]
+2006-03-16 18:14:21,375 INFO  (ShippingManagerAction.java:77) - Validating The Session
+2006-03-16 18:14:21,375 INFO  (ShippingManagerAction.java:80) - sessionID in Action :12700120060316055458
+2006-03-16 18:14:21,421 INFO  (ShippingManagerAction.java:88) - Cheking the Access Previliges on Shping Manager[true]
+2006-03-16 18:14:21,468 INFO  (ShippingManagerAction.java:97) - this is the CreateAPN :[true]
+2006-03-16 18:14:21,500 INFO  (ShippingManagerAction.java:125) - The Transaction No is:null
+2006-03-16 18:14:21,546 INFO  (ShippingManagerAction.java:132) - Cheking the AcessPreviliges on Search Button:[true]
+2006-03-16 18:14:37,078 INFO  (EpedigreeAction.java:42) - ********Inside Action EpedigreeAction....... 
+2006-03-16 18:14:37,078 INFO  (EpedigreeAction.java:43) - Inside Action execute of EpedigreeAction....
+2006-03-16 18:14:37,078 INFO  (EpedigreeAction.java:53) - Validating The Session
+2006-03-16 18:14:37,078 INFO  (EpedigreeAction.java:57) - sessionID in EpedigreeAction :12700120060316055458
+2006-03-16 18:14:37,109 INFO  (EpedigreeAction.java:67) - The readStatus is : true
+2006-03-16 18:14:37,109 INFO  (EpedigreeAction.java:74) - My Query in EpedigreeAction class.....tlsp:DisplayMessage('12700120060316055458') 
+2006-03-16 18:14:37,140 INFO  (EpedigreeAction.java:86) - MessageTitle is:sample
+2006-03-16 18:14:37,156 INFO  (EpedigreeAction.java:88) - CreatedBy is:Brian Cheek
+2006-03-16 18:14:37,156 INFO  (EpedigreeAction.java:90) - CreatedDate is:2006-02-06T08:00:50
+2006-03-16 18:14:37,156 INFO  (EpedigreeAction.java:92) - MessageID is:12458487189334891204507701084109
+2006-03-16 18:14:37,156 INFO  (EpedigreeAction.java:94) - RelatedProcess is:fgfgtodaysss
+2006-03-16 18:14:37,156 INFO  (EpedigreeAction.java:96) - SeverityLevel is:1
+2006-03-16 18:14:37,156 INFO  (EpedigreeAction.java:98) - status is:Accepted
+2006-03-16 18:14:37,171 INFO  (EpedigreeAction.java:103) - Before returning to success
+2006-03-16 18:14:51,484 INFO  (ReceivingManagerAction.java:66) - Inside Action ReceivingManagerAction....... 
+2006-03-16 18:14:51,500 INFO  (ReceivingManagerAction.java:98) - Validating The Session
+2006-03-16 18:14:51,500 INFO  (ReceivingManagerAction.java:101) - sessionID in Action :12700120060316055458
+2006-03-16 18:14:51,562 INFO  (ReceivingManagerAction.java:145) - the string valuetrue
+2006-03-16 18:14:51,640 INFO  (ReceivingManagerAction.java:237) - Before returning to success
+2006-03-16 18:14:55,671 INFO  (ShippingManagerAction.java:77) - Validating The Session
+2006-03-16 18:14:55,671 INFO  (ShippingManagerAction.java:80) - sessionID in Action :12700120060316055458
+2006-03-16 18:14:55,718 INFO  (ShippingManagerAction.java:88) - Cheking the Access Previliges on Shping Manager[true]
+2006-03-16 18:14:55,750 INFO  (ShippingManagerAction.java:97) - this is the CreateAPN :[true]
+2006-03-16 18:14:55,765 INFO  (ShippingManagerAction.java:125) - The Transaction No is:null
+2006-03-16 18:14:55,796 INFO  (ShippingManagerAction.java:132) - Cheking the AcessPreviliges on Search Button:[true]
+2006-03-16 18:15:01,109 INFO  (PedigreeSearchAction.java:63) - Inside Action PedigreeSearchAction....... 
+2006-03-16 18:15:01,125 INFO  (PedigreeSearchAction.java:93) - Validating The Session
+2006-03-16 18:15:01,125 INFO  (PedigreeSearchAction.java:98) - sessionID in Action :12700120060316055458
+2006-03-16 18:15:01,156 INFO  (PedigreeSearchAction.java:110) - The readStatus is : true
+2006-03-16 18:15:01,156 INFO  (PedigreeSearchAction.java:146) - Querying for From Date to To Date.......
+2006-03-16 18:15:04,140 INFO  (SearchInvoiceAction.java:49) - *****Inside SearchInvoiceAction class........
+2006-03-16 18:15:04,140 INFO  (SearchInvoiceAction.java:59) - Validating The Session
+2006-03-16 18:15:04,140 INFO  (SearchInvoiceAction.java:63) - sessionID in Action :12700120060316055458
+2006-03-16 18:15:04,187 INFO  (SearchInvoiceAction.java:83) - The readStatus is : true
+2006-03-16 18:15:04,203 INFO  (SearchInvoiceAction.java:100) -   -------- fromDT:   null  ---toDT :  null  ---- lotNum: null
+2006-03-16 18:15:04,203 INFO  (SearchInvoiceAction.java:101) -   -------- prodNDC:   null  ---invoiceId :  null  ---- apndocId: null---- tpName: 
+2006-03-16 18:15:04,203 INFO  (SearchInvoiceAction.java:176) -  criteriaStr :
+2006-03-16 18:15:04,203 INFO  (SearchInvoiceAction.java:227) -  Query :  for $a in collection('tig:///ePharma/Invoices')/Invoice  where $a/ID = ''  return <Output>  <ID> {data($a/ID)}  </ID>  <IssueDate> {data($a/IssueDate)}  </IssueDate>  <TradingPartner>{ data($a/BuyerParty/Party/PartyName/Name) } </TradingPartner>  <TotalNumOfNDCs> {count(distinct-values($a/InvoiceLine/Item/SellersItemIdentification/ID)) }</TotalNumOfNDCs> <TotalLineItems>{count($a/InvoiceLine/Item)} </TotalLineItems> <Amount> { data( $a/InvoiceLine/Item/BasePrice/PriceAmount)}  </Amount> {$a/BuyerParty/Party/Address } </Output>
+2006-03-16 18:15:04,625 INFO  (SearchInvoiceAction.java:261) - Before returning to success
+2006-03-16 18:15:07,609 INFO  (PedigreeBankSearchAction.java:52) - Inside Action PedigreeBankSearchAction....... 
+2006-03-16 18:15:07,625 INFO  (PedigreeBankSearchAction.java:53) - Inside Action execute of PedigreeBankSearchAction....
+2006-03-16 18:15:07,765 INFO  (PedigreeBankSearchAction.java:84) - before retuning Success! 
+2006-03-16 18:15:18,406 INFO  (TradingPartnerListAction.java:46) - Inside Action TradingPartnerListAction....... 
+2006-03-16 18:15:18,406 INFO  (TradingPartnerListAction.java:47) - Inside Action execute of TradingPartnerListAction....
+2006-03-16 18:15:18,437 INFO  (TradingPartnerListAction.java:58) - The insertStatus is true
+2006-03-16 18:15:28,687 INFO  (EpedigreeAction.java:42) - ********Inside Action EpedigreeAction....... 
+2006-03-16 18:15:28,687 INFO  (EpedigreeAction.java:43) - Inside Action execute of EpedigreeAction....
+2006-03-16 18:15:28,687 INFO  (EpedigreeAction.java:53) - Validating The Session
+2006-03-16 18:15:28,687 INFO  (EpedigreeAction.java:57) - sessionID in EpedigreeAction :12700120060316055458
+2006-03-16 18:15:28,765 INFO  (EpedigreeAction.java:67) - The readStatus is : true
+2006-03-16 18:15:28,765 INFO  (EpedigreeAction.java:74) - My Query in EpedigreeAction class.....tlsp:DisplayMessage('12700120060316055458') 
+2006-03-16 18:15:28,812 INFO  (EpedigreeAction.java:86) - MessageTitle is:sample
+2006-03-16 18:15:28,812 INFO  (EpedigreeAction.java:88) - CreatedBy is:Brian Cheek
+2006-03-16 18:15:28,812 INFO  (EpedigreeAction.java:90) - CreatedDate is:2006-02-06T08:00:50
+2006-03-16 18:15:28,812 INFO  (EpedigreeAction.java:92) - MessageID is:12458487189334891204507701084109
+2006-03-16 18:15:28,828 INFO  (EpedigreeAction.java:94) - RelatedProcess is:fgfgtodaysss
+2006-03-16 18:15:28,843 INFO  (EpedigreeAction.java:96) - SeverityLevel is:1
+2006-03-16 18:15:28,843 INFO  (EpedigreeAction.java:98) - status is:Accepted
+2006-03-16 18:15:28,843 INFO  (EpedigreeAction.java:103) - Before returning to success
+2006-03-16 18:15:32,000 INFO  (ShippingManagerAction.java:77) - Validating The Session
+2006-03-16 18:15:32,000 INFO  (ShippingManagerAction.java:80) - sessionID in Action :12700120060316055458
+2006-03-16 18:15:32,078 INFO  (ShippingManagerAction.java:88) - Cheking the Access Previliges on Shping Manager[true]
+2006-03-16 18:15:32,125 INFO  (ShippingManagerAction.java:97) - this is the CreateAPN :[true]
+2006-03-16 18:15:32,156 INFO  (ShippingManagerAction.java:125) - The Transaction No is:null
+2006-03-16 18:15:32,203 INFO  (ShippingManagerAction.java:132) - Cheking the AcessPreviliges on Search Button:[true]
+2006-03-16 18:15:36,875 INFO  (ShippingManagerAction.java:77) - Validating The Session
+2006-03-16 18:15:36,875 INFO  (ShippingManagerAction.java:80) - sessionID in Action :12700120060316055458
+2006-03-16 18:15:36,890 INFO  (ShippingManagerAction.java:88) - Cheking the Access Previliges on Shping Manager[true]
+2006-03-16 18:15:36,937 INFO  (ShippingManagerAction.java:97) - this is the CreateAPN :[true]
+2006-03-16 18:15:36,984 INFO  (ShippingManagerAction.java:125) - The Transaction No is:null
+2006-03-16 18:15:37,031 INFO  (ShippingManagerAction.java:132) - Cheking the AcessPreviliges on Search Button:[true]
+2006-03-16 18:15:37,031 INFO  (ShippingManagerAction.java:163) -  DespatchAdvice search option 
+2006-03-16 18:15:45,562 INFO  (ShippingManagerAction.java:77) - Validating The Session
+2006-03-16 18:15:45,562 INFO  (ShippingManagerAction.java:80) - sessionID in Action :12700120060316055458
+2006-03-16 18:15:45,593 INFO  (ShippingManagerAction.java:88) - Cheking the Access Previliges on Shping Manager[true]
+2006-03-16 18:15:45,640 INFO  (ShippingManagerAction.java:97) - this is the CreateAPN :[true]
+2006-03-16 18:15:45,671 INFO  (ShippingManagerAction.java:125) - The Transaction No is:C28785100007
+2006-03-16 18:15:45,718 INFO  (ShippingManagerAction.java:132) - Cheking the AcessPreviliges on Search Button:[true]
+2006-03-16 18:15:45,718 INFO  (ShippingManagerAction.java:163) -  DespatchAdvice search option 
+2006-03-16 18:15:45,843 INFO  (ShippingManagerAction.java:333) - The Create pedigree Sp:tlsp:CreateShippedPedigree('C28785100007','DespatchAdvice','4','R1138026580109','12700120060316055458') 
+2006-03-16 18:16:01,031 INFO  (ShippingManagerAction.java:77) - Validating The Session
+2006-03-16 18:16:01,046 INFO  (ShippingManagerAction.java:80) - sessionID in Action :12700120060316055458
+2006-03-16 18:16:01,078 INFO  (ShippingManagerAction.java:88) - Cheking the Access Previliges on Shping Manager[true]
+2006-03-16 18:16:01,109 INFO  (ShippingManagerAction.java:97) - this is the CreateAPN :[true]
+2006-03-16 18:16:01,125 INFO  (ShippingManagerAction.java:125) - The Transaction No is:C28785100007
+2006-03-16 18:16:01,156 INFO  (ShippingManagerAction.java:132) - Cheking the AcessPreviliges on Search Button:[true]
+2006-03-16 18:16:01,156 INFO  (ShippingManagerAction.java:163) -  DespatchAdvice search option 
+2006-03-16 18:16:01,250 INFO  (ShippingManagerAction.java:333) - The Create pedigree Sp:tlsp:CreateShippedPedigree('C28785100007','DespatchAdvice','4','R1138026580109','12700120060316055458') 
+2006-03-16 18:16:09,078 INFO  (ShippingManagerAction.java:77) - Validating The Session
+2006-03-16 18:16:09,093 INFO  (ShippingManagerAction.java:80) - sessionID in Action :12700120060316055458
+2006-03-16 18:16:09,125 INFO  (ShippingManagerAction.java:88) - Cheking the Access Previliges on Shping Manager[true]
+2006-03-16 18:16:09,156 INFO  (ShippingManagerAction.java:97) - this is the CreateAPN :[true]
+2006-03-16 18:16:09,187 INFO  (ShippingManagerAction.java:125) - The Transaction No is:C28785100006
+2006-03-16 18:16:09,218 INFO  (ShippingManagerAction.java:132) - Cheking the AcessPreviliges on Search Button:[true]
+2006-03-16 18:16:09,218 INFO  (ShippingManagerAction.java:163) -  DespatchAdvice search option 
+2006-03-16 18:16:09,281 INFO  (ShippingManagerAction.java:333) - The Create pedigree Sp:tlsp:CreateShippedPedigree('C28785100006','DespatchAdvice','4','R1138026580109','12700120060316055458') 
+2006-03-16 18:16:15,796 INFO  (ShippingManagerAction.java:77) - Validating The Session
+2006-03-16 18:16:15,796 INFO  (ShippingManagerAction.java:80) - sessionID in Action :12700120060316055458
+2006-03-16 18:16:15,828 INFO  (ShippingManagerAction.java:88) - Cheking the Access Previliges on Shping Manager[true]
+2006-03-16 18:16:15,859 INFO  (ShippingManagerAction.java:97) - this is the CreateAPN :[true]
+2006-03-16 18:16:15,875 INFO  (ShippingManagerAction.java:125) - The Transaction No is:C28785100006
+2006-03-16 18:16:15,906 INFO  (ShippingManagerAction.java:132) - Cheking the AcessPreviliges on Search Button:[true]
+2006-03-16 18:16:15,921 INFO  (ShippingManagerAction.java:163) -  DespatchAdvice search option 
+2006-03-16 18:19:28,125 DEBUG [CommonUtil] [main::]  Debug is on. webContext + C:\jakarta-tomcat-5.0.29\webapps\ePharma new\.
+2006-03-16 18:19:28,156 DEBUG [CommonUtil] [main::]  Debug is on. webContext + C:\jakarta-tomcat-5.0.29\webapps\ePharma new\.
+2006-03-16 18:20:32,593 INFO  (TLDBConfig.java:53) -  TLDBConfig all values:  localhost 
+ 3408 
+ admin 
+ admin 
+ 
+2006-03-16 18:20:34,546 INFO  (EpedigreeAction.java:42) - ********Inside Action EpedigreeAction....... 
+2006-03-16 18:20:34,546 INFO  (EpedigreeAction.java:43) - Inside Action execute of EpedigreeAction....
+2006-03-16 18:20:34,562 INFO  (EpedigreeAction.java:53) - Validating The Session
+2006-03-16 18:20:34,578 INFO  (EpedigreeAction.java:57) - sessionID in EpedigreeAction :12700120060316055458
+2006-03-16 18:20:34,625 INFO  (EpedigreeAction.java:67) - The readStatus is : true
+2006-03-16 18:20:34,625 INFO  (EpedigreeAction.java:74) - My Query in EpedigreeAction class.....tlsp:DisplayMessage('12700120060316055458') 
+2006-03-16 18:20:34,734 INFO  (EpedigreeAction.java:86) - MessageTitle is:sample
+2006-03-16 18:20:34,734 INFO  (EpedigreeAction.java:88) - CreatedBy is:Brian Cheek
+2006-03-16 18:20:34,734 INFO  (EpedigreeAction.java:90) - CreatedDate is:2006-02-06T08:00:50
+2006-03-16 18:20:34,734 INFO  (EpedigreeAction.java:92) - MessageID is:12458487189334891204507701084109
+2006-03-16 18:20:34,734 INFO  (EpedigreeAction.java:94) - RelatedProcess is:fgfgtodaysss
+2006-03-16 18:20:34,734 INFO  (EpedigreeAction.java:96) - SeverityLevel is:1
+2006-03-16 18:20:34,734 INFO  (EpedigreeAction.java:98) - status is:Accepted
+2006-03-16 18:20:34,734 INFO  (EpedigreeAction.java:103) - Before returning to success
+2006-03-16 18:25:56,718 INFO  (ReceivingManagerAction.java:66) - Inside Action ReceivingManagerAction....... 
+2006-03-16 18:25:56,734 INFO  (ReceivingManagerAction.java:98) - Validating The Session
+2006-03-16 18:25:56,734 INFO  (ReceivingManagerAction.java:101) - sessionID in Action :12700120060316055458
+2006-03-16 18:25:56,796 INFO  (ReceivingManagerAction.java:145) - the string valuetrue
+2006-03-16 18:25:56,859 INFO  (ReceivingManagerAction.java:237) - Before returning to success
+2006-03-16 18:26:17,343 INFO  (ReceivingManagerAction.java:66) - Inside Action ReceivingManagerAction....... 
+2006-03-16 18:26:17,359 INFO  (ReceivingManagerAction.java:98) - Validating The Session
+2006-03-16 18:26:17,375 INFO  (ReceivingManagerAction.java:101) - sessionID in Action :12700120060316055458
+2006-03-16 18:26:17,421 INFO  (ReceivingManagerAction.java:145) - the string valuetrue
+2006-03-16 18:26:17,500 INFO  (ReceivingManagerAction.java:237) - Before returning to success
+2006-03-16 18:26:23,375 INFO  (ReceivingManagerAction.java:66) - Inside Action ReceivingManagerAction....... 
+2006-03-16 18:26:23,375 INFO  (ReceivingManagerAction.java:98) - Validating The Session
+2006-03-16 18:26:23,375 INFO  (ReceivingManagerAction.java:101) - sessionID in Action :12700120060316055458
+2006-03-16 18:26:23,406 INFO  (ReceivingManagerAction.java:145) - the string valuetrue
+2006-03-16 18:26:24,093 INFO  (ReceivingManagerAction.java:219) - The EnvolopeNo is:PE005
+2006-03-16 18:26:24,093 INFO  (ReceivingManagerAction.java:223) - Trading Partner Source is:Cardinal Health
+2006-03-16 18:26:24,093 INFO  (ReceivingManagerAction.java:225) - Trading Partner Destination is:CVS Pharmacy
+2006-03-16 18:26:24,093 INFO  (ReceivingManagerAction.java:219) - The EnvolopeNo is:PE006
+2006-03-16 18:26:24,093 INFO  (ReceivingManagerAction.java:223) - Trading Partner Source is:Cardinal Health
+2006-03-16 18:26:24,093 INFO  (ReceivingManagerAction.java:225) - Trading Partner Destination is:CVS Pharmacy
+2006-03-16 18:26:24,109 INFO  (ReceivingManagerAction.java:237) - Before returning to success
+2006-03-16 18:26:29,796 INFO  (EnvelopeDetailsAction.java:52) - Validating The Session
+2006-03-16 18:26:29,812 INFO  (EnvelopeDetailsAction.java:56) - sessionID in Action :12700120060316055458
+2006-03-16 18:26:35,015 INFO  (PedigreeDetailsAction.java:52) - Validating The Session
+2006-03-16 18:26:35,015 INFO  (PedigreeDetailsAction.java:56) - sessionID in Action :12700120060316055458
+2006-03-16 18:26:35,078 ERROR (PedigreeDetailsAction.java:134) - Error in OrderSearchAction execute method.........com.rdta.commons.persistence.PersistanceException: com.rdta.tlapi.xql.XQLException: [xq-internal-00015] - No stored procedure with name [Shippedpedigreedetails] was found.
+2006-03-16 18:27:10,765 INFO  (EnvelopeDetailsAction.java:52) - Validating The Session
+2006-03-16 18:27:10,765 INFO  (EnvelopeDetailsAction.java:56) - sessionID in Action :12700120060316055458
+2006-03-16 18:27:14,687 INFO  (EnvelopeDetailsAction.java:52) - Validating The Session
+2006-03-16 18:27:14,687 INFO  (EnvelopeDetailsAction.java:56) - sessionID in Action :12700120060316055458
+2006-03-16 18:27:22,640 INFO  (PedigreeDetailsAction.java:52) - Validating The Session
+2006-03-16 18:27:22,640 INFO  (PedigreeDetailsAction.java:56) - sessionID in Action :12700120060316055458
+2006-03-16 18:28:13,265 INFO  (ReceivingManagerAction.java:66) - Inside Action ReceivingManagerAction....... 
+2006-03-16 18:28:13,281 INFO  (ReceivingManagerAction.java:98) - Validating The Session
+2006-03-16 18:28:13,281 INFO  (ReceivingManagerAction.java:101) - sessionID in Action :12700120060316055458
+2006-03-16 18:28:13,328 INFO  (ReceivingManagerAction.java:145) - the string valuetrue
+2006-03-16 18:28:13,390 INFO  (ReceivingManagerAction.java:237) - Before returning to success
+2006-03-16 18:30:08,421 INFO  (ReceivingManagerAction.java:66) - Inside Action ReceivingManagerAction....... 
+2006-03-16 18:30:08,437 INFO  (ReceivingManagerAction.java:98) - Validating The Session
+2006-03-16 18:30:08,437 INFO  (ReceivingManagerAction.java:101) - sessionID in Action :12700120060316055458
+2006-03-16 18:30:08,484 INFO  (ReceivingManagerAction.java:145) - the string valuetrue
+2006-03-16 18:30:08,546 INFO  (ReceivingManagerAction.java:237) - Before returning to success
+2006-03-16 18:30:52,062 INFO  (ReceivingManagerAction.java:66) - Inside Action ReceivingManagerAction....... 
+2006-03-16 18:30:52,078 INFO  (ReceivingManagerAction.java:98) - Validating The Session
+2006-03-16 18:30:52,078 INFO  (ReceivingManagerAction.java:101) - sessionID in Action :12700120060316055458
+2006-03-16 18:30:52,109 INFO  (ReceivingManagerAction.java:145) - the string valuetrue
+2006-03-16 18:30:52,562 INFO  (ReceivingManagerAction.java:219) - The EnvolopeNo is:PE005
+2006-03-16 18:30:52,562 INFO  (ReceivingManagerAction.java:223) - Trading Partner Source is:Cardinal Health
+2006-03-16 18:30:52,562 INFO  (ReceivingManagerAction.java:225) - Trading Partner Destination is:CVS Pharmacy
+2006-03-16 18:30:52,578 INFO  (ReceivingManagerAction.java:219) - The EnvolopeNo is:PE006
+2006-03-16 18:30:52,578 INFO  (ReceivingManagerAction.java:223) - Trading Partner Source is:Cardinal Health
+2006-03-16 18:30:52,578 INFO  (ReceivingManagerAction.java:225) - Trading Partner Destination is:CVS Pharmacy
+2006-03-16 18:30:52,578 INFO  (ReceivingManagerAction.java:237) - Before returning to success
+2006-03-16 18:31:00,343 INFO  (EnvelopeDetailsAction.java:52) - Validating The Session
+2006-03-16 18:31:00,343 INFO  (EnvelopeDetailsAction.java:56) - sessionID in Action :12700120060316055458
+2006-03-16 18:31:06,265 INFO  (PedigreeDetailsAction.java:52) - Validating The Session
+2006-03-16 18:31:06,265 INFO  (PedigreeDetailsAction.java:56) - sessionID in Action :12700120060316055458
+2006-03-16 18:31:41,906 INFO  (ReceivingManagerAction.java:66) - Inside Action ReceivingManagerAction....... 
+2006-03-16 18:31:41,906 INFO  (ReceivingManagerAction.java:98) - Validating The Session
+2006-03-16 18:31:41,906 INFO  (ReceivingManagerAction.java:101) - sessionID in Action :12700120060316055458
+2006-03-16 18:31:41,968 INFO  (ReceivingManagerAction.java:145) - the string valuetrue
+2006-03-16 18:31:42,078 INFO  (ReceivingManagerAction.java:237) - Before returning to success
+2006-03-16 18:32:00,515 INFO  (ReceivingManagerAction.java:66) - Inside Action ReceivingManagerAction....... 
+2006-03-16 18:32:00,515 INFO  (ReceivingManagerAction.java:98) - Validating The Session
+2006-03-16 18:32:00,515 INFO  (ReceivingManagerAction.java:101) - sessionID in Action :12700120060316055458
+2006-03-16 18:32:00,546 INFO  (ReceivingManagerAction.java:145) - the string valuetrue
+2006-03-16 18:32:01,093 INFO  (ReceivingManagerAction.java:219) - The EnvolopeNo is:PE005
+2006-03-16 18:32:01,093 INFO  (ReceivingManagerAction.java:223) - Trading Partner Source is:Cardinal Health
+2006-03-16 18:32:01,093 INFO  (ReceivingManagerAction.java:225) - Trading Partner Destination is:CVS Pharmacy
+2006-03-16 18:32:01,093 INFO  (ReceivingManagerAction.java:219) - The EnvolopeNo is:PE006
+2006-03-16 18:32:01,093 INFO  (ReceivingManagerAction.java:223) - Trading Partner Source is:Cardinal Health
+2006-03-16 18:32:01,093 INFO  (ReceivingManagerAction.java:225) - Trading Partner Destination is:CVS Pharmacy
+2006-03-16 18:32:01,109 INFO  (ReceivingManagerAction.java:237) - Before returning to success
+2006-03-16 18:32:05,625 INFO  (EnvelopeDetailsAction.java:52) - Validating The Session
+2006-03-16 18:32:05,625 INFO  (EnvelopeDetailsAction.java:56) - sessionID in Action :12700120060316055458
+2006-03-16 18:32:10,156 INFO  (PedigreeDetailsAction.java:52) - Validating The Session
+2006-03-16 18:32:10,171 INFO  (PedigreeDetailsAction.java:56) - sessionID in Action :12700120060316055458
+2006-03-16 18:35:06,843 INFO  (PedigreeDetailsAction.java:52) - Validating The Session
+2006-03-16 18:35:06,843 INFO  (PedigreeDetailsAction.java:56) - sessionID in Action :12700120060316055458
+2006-03-16 18:36:21,703 INFO  (PedigreeDetailsAction.java:52) - Validating The Session
+2006-03-16 18:36:21,703 INFO  (PedigreeDetailsAction.java:56) - sessionID in Action :12700120060316055458
+2006-03-16 18:37:14,437 INFO  (PedigreeDetailsAction.java:52) - Validating The Session
+2006-03-16 18:37:14,453 INFO  (PedigreeDetailsAction.java:56) - sessionID in Action :12700120060316055458
+2006-03-16 18:38:09,203 INFO  (PedigreeDetailsAction.java:52) - Validating The Session
+2006-03-16 18:38:09,218 INFO  (PedigreeDetailsAction.java:56) - sessionID in Action :12700120060316055458
+2006-03-16 18:38:34,421 INFO  (PedigreeDetailsAction.java:52) - Validating The Session
+2006-03-16 18:38:34,437 INFO  (PedigreeDetailsAction.java:56) - sessionID in Action :12700120060316055458
+2006-03-16 18:39:36,562 INFO  (PedigreeDetailsAction.java:52) - Validating The Session
+2006-03-16 18:39:36,562 INFO  (PedigreeDetailsAction.java:56) - sessionID in Action :12700120060316055458
+2006-03-16 18:39:56,906 INFO  (PedigreeDetailsAction.java:52) - Validating The Session
+2006-03-16 18:39:56,906 INFO  (PedigreeDetailsAction.java:56) - sessionID in Action :12700120060316055458
+2006-03-16 18:40:23,984 INFO  (PedigreeDetailsAction.java:52) - Validating The Session
+2006-03-16 18:40:23,984 INFO  (PedigreeDetailsAction.java:56) - sessionID in Action :12700120060316055458
+2006-03-16 18:41:10,828 INFO  (PedigreeDetailsAction.java:52) - Validating The Session
+2006-03-16 18:41:10,843 INFO  (PedigreeDetailsAction.java:56) - sessionID in Action :12700120060316055458
+2006-03-16 18:41:23,125 INFO  (PedigreeDetailsAction.java:52) - Validating The Session
+2006-03-16 18:41:23,125 INFO  (PedigreeDetailsAction.java:56) - sessionID in Action :12700120060316055458
+2006-03-16 18:42:36,265 INFO  (PedigreeDetailsAction.java:52) - Validating The Session
+2006-03-16 18:42:36,281 INFO  (PedigreeDetailsAction.java:56) - sessionID in Action :12700120060316055458
+2006-03-16 18:44:23,156 INFO  (PedigreeDetailsAction.java:52) - Validating The Session
+2006-03-16 18:44:23,156 INFO  (PedigreeDetailsAction.java:56) - sessionID in Action :12700120060316055458
+2006-03-16 18:45:31,171 INFO  (PedigreeDetailsAction.java:52) - Validating The Session
+2006-03-16 18:45:31,171 INFO  (PedigreeDetailsAction.java:56) - sessionID in Action :12700120060316055458
+2006-03-16 18:47:29,875 INFO  (PedigreeDetailsAction.java:52) - Validating The Session
+2006-03-16 18:47:29,875 INFO  (PedigreeDetailsAction.java:56) - sessionID in Action :12700120060316055458
+2006-03-16 18:47:38,953 INFO  (PedigreeDetailsAction.java:52) - Validating The Session
+2006-03-16 18:47:38,953 INFO  (PedigreeDetailsAction.java:56) - sessionID in Action :12700120060316055458
+2006-03-16 18:48:06,000 INFO  (PedigreeDetailsAction.java:52) - Validating The Session
+2006-03-16 18:48:06,000 INFO  (PedigreeDetailsAction.java:56) - sessionID in Action :12700120060316055458
+2006-03-16 18:48:25,937 INFO  (PedigreeDetailsAction.java:52) - Validating The Session
+2006-03-16 18:48:25,937 INFO  (PedigreeDetailsAction.java:56) - sessionID in Action :12700120060316055458
+2006-03-16 18:49:06,343 INFO  (PedigreeDetailsAction.java:52) - Validating The Session
+2006-03-16 18:49:06,343 INFO  (PedigreeDetailsAction.java:56) - sessionID in Action :12700120060316055458
+2006-03-16 18:50:02,140 INFO  (PedigreeDetailsAction.java:52) - Validating The Session
+2006-03-16 18:50:02,140 INFO  (PedigreeDetailsAction.java:56) - sessionID in Action :12700120060316055458
+2006-03-16 18:50:46,140 INFO  (PedigreeDetailsAction.java:52) - Validating The Session
+2006-03-16 18:50:46,156 INFO  (PedigreeDetailsAction.java:56) - sessionID in Action :12700120060316055458
+2006-03-16 18:51:31,531 INFO  (PedigreeDetailsAction.java:52) - Validating The Session
+2006-03-16 18:51:31,531 INFO  (PedigreeDetailsAction.java:56) - sessionID in Action :12700120060316055458
+2006-03-16 18:51:52,843 INFO  (PedigreeDetailsAction.java:52) - Validating The Session
+2006-03-16 18:51:52,843 INFO  (PedigreeDetailsAction.java:56) - sessionID in Action :12700120060316055458
+2006-03-16 18:52:22,453 INFO  (PedigreeDetailsAction.java:52) - Validating The Session
+2006-03-16 18:52:22,453 INFO  (PedigreeDetailsAction.java:56) - sessionID in Action :12700120060316055458
+2006-03-16 18:52:59,203 INFO  (PedigreeDetailsAction.java:52) - Validating The Session
+2006-03-16 18:52:59,203 INFO  (PedigreeDetailsAction.java:56) - sessionID in Action :12700120060316055458
+2006-03-16 18:54:27,140 INFO  (PedigreeDetailsAction.java:52) - Validating The Session
+2006-03-16 18:54:27,140 INFO  (PedigreeDetailsAction.java:56) - sessionID in Action :12700120060316055458
+2006-03-16 18:55:00,140 INFO  (PedigreeDetailsAction.java:52) - Validating The Session
+2006-03-16 18:55:00,140 INFO  (PedigreeDetailsAction.java:56) - sessionID in Action :12700120060316055458
+2006-03-16 18:55:14,437 INFO  (PedigreeDetailsAction.java:52) - Validating The Session
+2006-03-16 18:55:14,437 INFO  (PedigreeDetailsAction.java:56) - sessionID in Action :12700120060316055458
+2006-03-16 18:55:31,328 INFO  (PedigreeDetailsAction.java:52) - Validating The Session
+2006-03-16 18:55:31,328 INFO  (PedigreeDetailsAction.java:56) - sessionID in Action :12700120060316055458
+2006-03-16 18:55:45,625 INFO  (PedigreeDetailsAction.java:52) - Validating The Session
+2006-03-16 18:55:45,625 INFO  (PedigreeDetailsAction.java:56) - sessionID in Action :12700120060316055458
+2006-03-16 18:56:34,750 INFO  (PedigreeDetailsAction.java:52) - Validating The Session
+2006-03-16 18:56:34,765 INFO  (PedigreeDetailsAction.java:56) - sessionID in Action :12700120060316055458
+2006-03-16 18:57:52,296 INFO  (PedigreeDetailsAction.java:52) - Validating The Session
+2006-03-16 18:57:52,296 INFO  (PedigreeDetailsAction.java:56) - sessionID in Action :12700120060316055458
+2006-03-16 18:58:05,984 INFO  (PedigreeDetailsAction.java:52) - Validating The Session
+2006-03-16 18:58:05,984 INFO  (PedigreeDetailsAction.java:56) - sessionID in Action :12700120060316055458
+2006-03-16 18:58:51,765 INFO  (AuditTrailAction.java:52) - Validating The Session
+2006-03-16 18:58:51,765 INFO  (AuditTrailAction.java:56) - sessionID in Action :12700120060316055458
+2006-03-16 18:59:07,671 INFO  (PedigreeStatusAction.java:50) - Validating The Session
+2006-03-16 18:59:07,671 INFO  (PedigreeStatusAction.java:54) - sessionID in Action :12700120060316055458
+2006-03-16 19:00:25,125 INFO  (AttachmentAction.java:51) - Validating The Session
+2006-03-16 19:00:25,140 INFO  (AttachmentAction.java:55) - sessionID in Action :12700120060316055458
+2006-03-16 19:00:25,140 INFO  (AttachmentAction.java:64) - pedigreeidS006
+2006-03-16 19:00:25,140 INFO  (AttachmentAction.java:66) - Audit trail query:tlsp:RecgetAttachmentDetails('ReceivedPedigree','S006')
+2006-03-16 19:00:25,234 INFO  (AttachmentAction.java:68) - Audit trail query:[<data><true>true</true><mimeType>pdf</mimeType><PedigreeID>S006</PedigreeID><TransactionType>Dispatch Advice</TransactionType><Date>2005-12-02T07:30:47</Date><TransactionNo>CO00021</TransactionNo></data>]
+2006-03-16 19:00:25,234 INFO  (AttachmentAction.java:71) -  ClassnName   :java.lang.String
+2006-03-16 19:00:25,234 INFO  (AttachmentAction.java:73) -  String Name <data><true>true</true><mimeType>pdf</mimeType><PedigreeID>S006</PedigreeID><TransactionType>Dispatch Advice</TransactionType><Date>2005-12-02T07:30:47</Date><TransactionNo>CO00021</TransactionNo></data>
+2006-03-16 19:00:25,250 INFO  (AttachmentAction.java:80) - ATTACHMENT  pdf
+2006-03-16 19:00:33,156 INFO  (AttachmentAction.java:51) - Validating The Session
+2006-03-16 19:00:33,156 INFO  (AttachmentAction.java:55) - sessionID in Action :12700120060316055458
+2006-03-16 19:00:33,156 INFO  (AttachmentAction.java:64) - pedigreeidS006
+2006-03-16 19:00:33,156 INFO  (AttachmentAction.java:66) - Audit trail query:tlsp:RecgetAttachmentDetails('ReceivedPedigree','S006')
+2006-03-16 19:00:33,234 INFO  (AttachmentAction.java:68) - Audit trail query:[<data><true>true</true><mimeType>pdf</mimeType><PedigreeID>S006</PedigreeID><TransactionType>Dispatch Advice</TransactionType><Date>2005-12-02T07:30:47</Date><TransactionNo>CO00021</TransactionNo></data>]
+2006-03-16 19:00:33,234 INFO  (AttachmentAction.java:71) -  ClassnName   :java.lang.String
+2006-03-16 19:00:33,234 INFO  (AttachmentAction.java:73) -  String Name <data><true>true</true><mimeType>pdf</mimeType><PedigreeID>S006</PedigreeID><TransactionType>Dispatch Advice</TransactionType><Date>2005-12-02T07:30:47</Date><TransactionNo>CO00021</TransactionNo></data>
+2006-03-16 19:00:33,250 INFO  (AttachmentAction.java:80) - ATTACHMENT  pdf
+2006-03-16 19:02:22,875 INFO  (ShippingManagerAction.java:77) - Validating The Session
+2006-03-16 19:02:22,875 INFO  (ShippingManagerAction.java:80) - sessionID in Action :12700120060316055458
+2006-03-16 19:02:22,921 INFO  (ShippingManagerAction.java:88) - Cheking the Access Previliges on Shping Manager[true]
+2006-03-16 19:02:22,937 INFO  (ShippingManagerAction.java:97) - this is the CreateAPN :[true]
+2006-03-16 19:02:22,968 INFO  (ShippingManagerAction.java:125) - The Transaction No is:null
+2006-03-16 19:02:23,015 INFO  (ShippingManagerAction.java:132) - Cheking the AcessPreviliges on Search Button:[true]
+2006-03-16 19:02:28,953 INFO  (ShippingManagerAction.java:77) - Validating The Session
+2006-03-16 19:02:28,953 INFO  (ShippingManagerAction.java:80) - sessionID in Action :12700120060316055458
+2006-03-16 19:02:28,968 INFO  (ShippingManagerAction.java:88) - Cheking the Access Previliges on Shping Manager[true]
+2006-03-16 19:02:29,000 INFO  (ShippingManagerAction.java:97) - this is the CreateAPN :[true]
+2006-03-16 19:02:29,015 INFO  (ShippingManagerAction.java:125) - The Transaction No is:null
+2006-03-16 19:02:29,046 INFO  (ShippingManagerAction.java:132) - Cheking the AcessPreviliges on Search Button:[true]
+2006-03-16 19:02:29,046 INFO  (ShippingManagerAction.java:163) -  DespatchAdvice search option 
+2006-03-16 19:02:34,875 INFO  (ShippingManagerAction.java:77) - Validating The Session
+2006-03-16 19:02:34,875 INFO  (ShippingManagerAction.java:80) - sessionID in Action :12700120060316055458
+2006-03-16 19:02:34,906 INFO  (ShippingManagerAction.java:88) - Cheking the Access Previliges on Shping Manager[true]
+2006-03-16 19:02:34,953 INFO  (ShippingManagerAction.java:97) - this is the CreateAPN :[true]
+2006-03-16 19:02:34,968 INFO  (ShippingManagerAction.java:125) - The Transaction No is:C28785100006
+2006-03-16 19:02:35,015 INFO  (ShippingManagerAction.java:132) - Cheking the AcessPreviliges on Search Button:[true]
+2006-03-16 19:02:35,015 INFO  (ShippingManagerAction.java:163) -  DespatchAdvice search option 
+2006-03-16 19:02:35,125 INFO  (ShippingManagerAction.java:333) - The Create pedigree Sp:tlsp:CreateShippedPedigree('C28785100006','DespatchAdvice','4','R1138026580109','12700120060316055458') 
+2006-03-16 19:03:13,328 INFO  (ShippingManagerAction.java:77) - Validating The Session
+2006-03-16 19:03:13,328 INFO  (ShippingManagerAction.java:80) - sessionID in Action :12700120060316055458
+2006-03-16 19:03:13,359 INFO  (ShippingManagerAction.java:88) - Cheking the Access Previliges on Shping Manager[true]
+2006-03-16 19:03:13,390 INFO  (ShippingManagerAction.java:97) - this is the CreateAPN :[true]
+2006-03-16 19:03:13,406 INFO  (ShippingManagerAction.java:125) - The Transaction No is:C28785100006
+2006-03-16 19:03:13,437 INFO  (ShippingManagerAction.java:132) - Cheking the AcessPreviliges on Search Button:[true]
+2006-03-16 19:03:13,437 INFO  (ShippingManagerAction.java:163) -  DespatchAdvice search option 
+2006-03-16 19:03:13,515 INFO  (ShippingManagerAction.java:333) - The Create pedigree Sp:tlsp:CreateShippedPedigree('C28785100006','DespatchAdvice','4','R1138026580109','12700120060316055458') 
+2006-03-16 19:03:14,046 INFO  (ShippingManagerAction.java:336) - The Results are:[tig:///ePharma/ShippedPedigree/1395568593B]
+2006-03-16 19:03:42,718 INFO  (ShippingManagerAction.java:77) - Validating The Session
+2006-03-16 19:03:42,718 INFO  (ShippingManagerAction.java:80) - sessionID in Action :12700120060316055458
+2006-03-16 19:03:42,750 INFO  (ShippingManagerAction.java:88) - Cheking the Access Previliges on Shping Manager[true]
+2006-03-16 19:03:42,781 INFO  (ShippingManagerAction.java:97) - this is the CreateAPN :[true]
+2006-03-16 19:03:42,812 INFO  (ShippingManagerAction.java:125) - The Transaction No is:C28785100006
+2006-03-16 19:03:42,843 INFO  (ShippingManagerAction.java:132) - Cheking the AcessPreviliges on Search Button:[true]
+2006-03-16 19:03:42,843 INFO  (ShippingManagerAction.java:163) -  DespatchAdvice search option 
+2006-03-16 19:03:49,062 INFO  (ShippingManagerAction.java:77) - Validating The Session
+2006-03-16 19:03:49,062 INFO  (ShippingManagerAction.java:80) - sessionID in Action :12700120060316055458
+2006-03-16 19:03:49,093 INFO  (ShippingManagerAction.java:88) - Cheking the Access Previliges on Shping Manager[true]
+2006-03-16 19:03:49,125 INFO  (ShippingManagerAction.java:97) - this is the CreateAPN :[true]
+2006-03-16 19:03:49,140 INFO  (ShippingManagerAction.java:125) - The Transaction No is:C28785100006
+2006-03-16 19:03:49,171 INFO  (ShippingManagerAction.java:132) - Cheking the AcessPreviliges on Search Button:[true]
+2006-03-16 19:03:49,171 INFO  (ShippingManagerAction.java:163) -  DespatchAdvice search option 
+2006-03-16 19:03:49,250 INFO  (ShippingManagerAction.java:333) - The Create pedigree Sp:tlsp:CreateShippedPedigree('C28785100006','DespatchAdvice','4','R1138026580109','12700120060316055458') 
+2006-03-16 19:03:49,390 INFO  (ShippingManagerAction.java:336) - The Results are:[tig:///ePharma/ShippedPedigree/1395568629C]
+2006-03-16 19:04:23,734 INFO  (ShippingManagerAction.java:77) - Validating The Session
+2006-03-16 19:04:23,734 INFO  (ShippingManagerAction.java:80) - sessionID in Action :12700120060316055458
+2006-03-16 19:04:23,796 INFO  (ShippingManagerAction.java:88) - Cheking the Access Previliges on Shping Manager[true]
+2006-03-16 19:04:23,828 INFO  (ShippingManagerAction.java:97) - this is the CreateAPN :[true]
+2006-03-16 19:04:23,875 INFO  (ShippingManagerAction.java:125) - The Transaction No is:C28785100006
+2006-03-16 19:04:23,906 INFO  (ShippingManagerAction.java:132) - Cheking the AcessPreviliges on Search Button:[true]
+2006-03-16 19:04:23,906 INFO  (ShippingManagerAction.java:163) -  DespatchAdvice search option 
+2006-03-16 19:04:29,203 INFO  (ShippingManagerAction.java:77) - Validating The Session
+2006-03-16 19:04:29,203 INFO  (ShippingManagerAction.java:80) - sessionID in Action :12700120060316055458
+2006-03-16 19:04:29,218 INFO  (ShippingManagerAction.java:88) - Cheking the Access Previliges on Shping Manager[true]
+2006-03-16 19:04:29,250 INFO  (ShippingManagerAction.java:97) - this is the CreateAPN :[true]
+2006-03-16 19:04:29,265 INFO  (ShippingManagerAction.java:125) - The Transaction No is:C28785100006
+2006-03-16 19:04:29,296 INFO  (ShippingManagerAction.java:132) - Cheking the AcessPreviliges on Search Button:[true]
+2006-03-16 19:04:29,296 INFO  (ShippingManagerAction.java:163) -  DespatchAdvice search option 
+2006-03-16 19:04:29,375 INFO  (ShippingManagerAction.java:333) - The Create pedigree Sp:tlsp:CreateShippedPedigree('C28785100006','DespatchAdvice','4','R1138026580109','12700120060316055458') 
+2006-03-16 19:04:29,468 INFO  (ShippingManagerAction.java:336) - The Results are:[tig:///ePharma/ShippedPedigree/1395568669D]
+2006-03-16 19:05:05,718 INFO  (ShippingManagerAction.java:77) - Validating The Session
+2006-03-16 19:05:05,718 INFO  (ShippingManagerAction.java:80) - sessionID in Action :12700120060316055458
+2006-03-16 19:05:05,750 INFO  (ShippingManagerAction.java:88) - Cheking the Access Previliges on Shping Manager[true]
+2006-03-16 19:05:05,781 INFO  (ShippingManagerAction.java:97) - this is the CreateAPN :[true]
+2006-03-16 19:05:05,796 INFO  (ShippingManagerAction.java:125) - The Transaction No is:C28785100006
+2006-03-16 19:05:05,828 INFO  (ShippingManagerAction.java:132) - Cheking the AcessPreviliges on Search Button:[true]
+2006-03-16 19:05:05,828 INFO  (ShippingManagerAction.java:163) -  DespatchAdvice search option 
+2006-03-16 19:05:10,390 INFO  (ShippingManagerAction.java:77) - Validating The Session
+2006-03-16 19:05:10,390 INFO  (ShippingManagerAction.java:80) - sessionID in Action :12700120060316055458
+2006-03-16 19:05:10,406 INFO  (ShippingManagerAction.java:88) - Cheking the Access Previliges on Shping Manager[true]
+2006-03-16 19:05:10,437 INFO  (ShippingManagerAction.java:97) - this is the CreateAPN :[true]
+2006-03-16 19:05:10,468 INFO  (ShippingManagerAction.java:125) - The Transaction No is:C28785100006
+2006-03-16 19:05:10,500 INFO  (ShippingManagerAction.java:132) - Cheking the AcessPreviliges on Search Button:[true]
+2006-03-16 19:05:10,500 INFO  (ShippingManagerAction.java:163) -  DespatchAdvice search option 
+2006-03-16 19:05:10,578 INFO  (ShippingManagerAction.java:333) - The Create pedigree Sp:tlsp:CreateShippedPedigree('C28785100006','DespatchAdvice','4','R1138026580109','12700120060316055458') 
+2006-03-16 19:05:10,687 INFO  (ShippingManagerAction.java:336) - The Results are:[tig:///ePharma/ShippedPedigree/1395568710G]
+2006-03-16 19:05:10,875 INFO  (ShippingManagerAction.java:381) - To view the Pedigree Details: tlsp:PedigreeDetails('C28785100006') 
+2006-03-16 19:05:10,875 INFO  (ShippingManagerAction.java:386) - ============START FOR LOOP===================
+2006-03-16 19:05:10,890 INFO  (ShippingManagerAction.java:391) - dataRcvd is:2006-03-16T15:35:10.593Z
+2006-03-16 19:05:10,890 INFO  (ShippingManagerAction.java:393) - orderNum is:C28785100006
+2006-03-16 19:05:10,890 INFO  (ShippingManagerAction.java:395) - pedigreeNum is:PE1142516110609
+2006-03-16 19:05:10,890 INFO  (ShippingManagerAction.java:397) - product is:Pfizer
+2006-03-16 19:05:10,890 INFO  (ShippingManagerAction.java:399) - quantity is:1
+2006-03-16 19:05:10,890 INFO  (ShippingManagerAction.java:401) - status is:
+2006-03-16 19:05:10,890 INFO  (ShippingManagerAction.java:404) - ============END FOR LOOP===================
+2006-03-16 19:05:44,328 INFO  (pedigreeEnvelopeAction.java:56) - Validating The Session
+2006-03-16 19:05:44,328 INFO  (pedigreeEnvelopeAction.java:60) - sessionID in Action :12700120060316055458
+2006-03-16 19:05:44,406 ERROR (pedigreeEnvelopeAction.java:133) - Error in OrderSearchAction execute method.........com.rdta.commons.persistence.PersistanceException: com.rdta.tlapi.xql.XQLException: [xq-internal-00015] - No stored procedure with name [ShippingMgnrEnvelopesDisplay] was found.
+2006-03-16 19:07:43,593 INFO  (ShippingManagerAction.java:77) - Validating The Session
+2006-03-16 19:07:43,593 INFO  (ShippingManagerAction.java:80) - sessionID in Action :12700120060316055458
+2006-03-16 19:07:43,625 INFO  (ShippingManagerAction.java:88) - Cheking the Access Previliges on Shping Manager[true]
+2006-03-16 19:07:43,640 INFO  (ShippingManagerAction.java:97) - this is the CreateAPN :[true]
+2006-03-16 19:07:43,656 INFO  (ShippingManagerAction.java:125) - The Transaction No is:C28785100006
+2006-03-16 19:07:43,687 INFO  (ShippingManagerAction.java:132) - Cheking the AcessPreviliges on Search Button:[true]
+2006-03-16 19:07:43,687 INFO  (ShippingManagerAction.java:163) -  DespatchAdvice search option 
+2006-03-16 19:07:43,765 INFO  (ShippingManagerAction.java:333) - The Create pedigree Sp:tlsp:CreateShippedPedigree('C28785100006','DespatchAdvice','4','R1138026580109','12700120060316055458') 
+2006-03-16 19:07:43,859 INFO  (ShippingManagerAction.java:336) - The Results are:[tig:///ePharma/ShippedPedigree/1395568863I]
+2006-03-16 19:07:44,046 INFO  (ShippingManagerAction.java:381) - To view the Pedigree Details: tlsp:PedigreeDetails('C28785100006') 
+2006-03-16 19:07:44,062 INFO  (ShippingManagerAction.java:386) - ============START FOR LOOP===================
+2006-03-16 19:07:44,062 INFO  (ShippingManagerAction.java:391) - dataRcvd is:2006-03-16T15:37:43.765Z
+2006-03-16 19:07:44,062 INFO  (ShippingManagerAction.java:393) - orderNum is:C28785100006
+2006-03-16 19:07:44,062 INFO  (ShippingManagerAction.java:395) - pedigreeNum is:PE1142516263796
+2006-03-16 19:07:44,062 INFO  (ShippingManagerAction.java:397) - product is:Pfizer
+2006-03-16 19:07:44,062 INFO  (ShippingManagerAction.java:399) - quantity is:1
+2006-03-16 19:07:44,078 INFO  (ShippingManagerAction.java:401) - status is:
+2006-03-16 19:07:44,078 INFO  (ShippingManagerAction.java:404) - ============END FOR LOOP===================
+2006-03-16 19:07:50,390 INFO  (pedigreeEnvelopeAction.java:56) - Validating The Session
+2006-03-16 19:07:50,390 INFO  (pedigreeEnvelopeAction.java:60) - sessionID in Action :12700120060316055458
+2006-03-16 19:07:50,453 ERROR (pedigreeEnvelopeAction.java:133) - Error in OrderSearchAction execute method.........com.rdta.commons.persistence.PersistanceException: com.rdta.tlapi.xql.XQLException: [xq-internal-00015] - No stored procedure with name [ShippingMgnrEnvelopesDisplay] was found.
+2006-03-16 19:08:14,875 INFO  (ShippingManagerAction.java:77) - Validating The Session
+2006-03-16 19:08:14,875 INFO  (ShippingManagerAction.java:80) - sessionID in Action :12700120060316055458
+2006-03-16 19:08:14,906 INFO  (ShippingManagerAction.java:88) - Cheking the Access Previliges on Shping Manager[true]
+2006-03-16 19:08:14,937 INFO  (ShippingManagerAction.java:97) - this is the CreateAPN :[true]
+2006-03-16 19:08:14,968 INFO  (ShippingManagerAction.java:125) - The Transaction No is:C28785100006
+2006-03-16 19:08:15,000 INFO  (ShippingManagerAction.java:132) - Cheking the AcessPreviliges on Search Button:[true]
+2006-03-16 19:08:15,000 INFO  (ShippingManagerAction.java:163) -  DespatchAdvice search option 
+2006-03-16 19:08:15,078 INFO  (ShippingManagerAction.java:333) - The Create pedigree Sp:tlsp:CreateShippedPedigree('C28785100006','DespatchAdvice','4','R1138026580109','12700120060316055458') 
+2006-03-16 19:08:15,171 INFO  (ShippingManagerAction.java:336) - The Results are:[tig:///ePharma/ShippedPedigree/1395568895K]
+2006-03-16 19:08:15,359 INFO  (ShippingManagerAction.java:381) - To view the Pedigree Details: tlsp:PedigreeDetails('C28785100006') 
+2006-03-16 19:08:15,375 INFO  (ShippingManagerAction.java:386) - ============START FOR LOOP===================
+2006-03-16 19:08:15,390 INFO  (ShippingManagerAction.java:391) - dataRcvd is:2006-03-16T15:38:15.093Z
+2006-03-16 19:08:15,390 INFO  (ShippingManagerAction.java:393) - orderNum is:C28785100006
+2006-03-16 19:08:15,390 INFO  (ShippingManagerAction.java:395) - pedigreeNum is:PE1142516295125
+2006-03-16 19:08:15,390 INFO  (ShippingManagerAction.java:397) - product is:Pfizer
+2006-03-16 19:08:15,390 INFO  (ShippingManagerAction.java:399) - quantity is:1
+2006-03-16 19:08:15,390 INFO  (ShippingManagerAction.java:401) - status is:
+2006-03-16 19:08:15,390 INFO  (ShippingManagerAction.java:404) - ============END FOR LOOP===================
+2006-03-16 19:12:00,515 INFO  (pedigreeEnvelopeAction.java:56) - Validating The Session
+2006-03-16 19:12:00,515 INFO  (pedigreeEnvelopeAction.java:60) - sessionID in Action :12700120060316055458
+2006-03-16 19:12:00,578 ERROR (pedigreeEnvelopeAction.java:133) - Error in OrderSearchAction execute method.........com.rdta.commons.persistence.PersistanceException: com.rdta.tlapi.xql.XQLException: [xq-internal-00015] - No stored procedure with name [ShippingStatusElement] was found.
+2006-03-16 19:12:25,828 INFO  (ShippingManagerAction.java:77) - Validating The Session
+2006-03-16 19:12:25,828 INFO  (ShippingManagerAction.java:80) - sessionID in Action :12700120060316055458
+2006-03-16 19:12:25,859 INFO  (ShippingManagerAction.java:88) - Cheking the Access Previliges on Shping Manager[true]
+2006-03-16 19:12:25,875 INFO  (ShippingManagerAction.java:97) - this is the CreateAPN :[true]
+2006-03-16 19:12:25,906 INFO  (ShippingManagerAction.java:125) - The Transaction No is:C28785100006
+2006-03-16 19:12:25,921 INFO  (ShippingManagerAction.java:132) - Cheking the AcessPreviliges on Search Button:[true]
+2006-03-16 19:12:25,921 INFO  (ShippingManagerAction.java:163) -  DespatchAdvice search option 
+2006-03-16 19:12:26,031 INFO  (ShippingManagerAction.java:333) - The Create pedigree Sp:tlsp:CreateShippedPedigree('C28785100006','DespatchAdvice','4','R1138026580109','12700120060316055458') 
+2006-03-16 19:12:26,328 INFO  (ShippingManagerAction.java:336) - The Results are:[tig:///ePharma/ShippedPedigree/1395569146M]
+2006-03-16 19:12:26,500 INFO  (ShippingManagerAction.java:381) - To view the Pedigree Details: tlsp:PedigreeDetails('C28785100006') 
+2006-03-16 19:12:26,500 INFO  (ShippingManagerAction.java:386) - ============START FOR LOOP===================
+2006-03-16 19:12:26,500 INFO  (ShippingManagerAction.java:391) - dataRcvd is:2006-03-16T15:42:26.046Z
+2006-03-16 19:12:26,500 INFO  (ShippingManagerAction.java:393) - orderNum is:C28785100006
+2006-03-16 19:12:26,500 INFO  (ShippingManagerAction.java:395) - pedigreeNum is:PE1142516546218
+2006-03-16 19:12:26,500 INFO  (ShippingManagerAction.java:397) - product is:Pfizer
+2006-03-16 19:12:26,500 INFO  (ShippingManagerAction.java:399) - quantity is:1
+2006-03-16 19:12:26,500 INFO  (ShippingManagerAction.java:401) - status is:
+2006-03-16 19:12:26,515 INFO  (ShippingManagerAction.java:404) - ============END FOR LOOP===================
+2006-03-16 19:12:32,015 INFO  (pedigreeEnvelopeAction.java:56) - Validating The Session
+2006-03-16 19:12:32,015 INFO  (pedigreeEnvelopeAction.java:60) - sessionID in Action :12700120060316055458
+2006-03-16 19:12:32,140 ERROR (pedigreeEnvelopeAction.java:133) - Error in OrderSearchAction execute method.........com.rdta.commons.persistence.PersistanceException: com.rdta.tlapi.xql.XQLException: [xq-internal-00015] - No stored procedure with name [ShippingMgnrEnvelopeDetails] was found.
+2006-03-16 19:12:55,437 INFO  (ShippingManagerAction.java:77) - Validating The Session
+2006-03-16 19:12:55,437 INFO  (ShippingManagerAction.java:80) - sessionID in Action :12700120060316055458
+2006-03-16 19:12:55,453 INFO  (ShippingManagerAction.java:88) - Cheking the Access Previliges on Shping Manager[true]
+2006-03-16 19:12:55,484 INFO  (ShippingManagerAction.java:97) - this is the CreateAPN :[true]
+2006-03-16 19:12:55,515 INFO  (ShippingManagerAction.java:125) - The Transaction No is:C28785100006
+2006-03-16 19:12:55,531 INFO  (ShippingManagerAction.java:132) - Cheking the AcessPreviliges on Search Button:[true]
+2006-03-16 19:12:55,531 INFO  (ShippingManagerAction.java:163) -  DespatchAdvice search option 
+2006-03-16 19:12:55,640 INFO  (ShippingManagerAction.java:333) - The Create pedigree Sp:tlsp:CreateShippedPedigree('C28785100006','DespatchAdvice','4','R1138026580109','12700120060316055458') 
+2006-03-16 19:12:55,734 INFO  (ShippingManagerAction.java:336) - The Results are:[tig:///ePharma/ShippedPedigree/1395569175O]
+2006-03-16 19:12:55,937 INFO  (ShippingManagerAction.java:381) - To view the Pedigree Details: tlsp:PedigreeDetails('C28785100006') 
+2006-03-16 19:12:55,937 INFO  (ShippingManagerAction.java:386) - ============START FOR LOOP===================
+2006-03-16 19:12:55,953 INFO  (ShippingManagerAction.java:391) - dataRcvd is:2006-03-16T15:42:55.640Z
+2006-03-16 19:12:55,953 INFO  (ShippingManagerAction.java:393) - orderNum is:C28785100006
+2006-03-16 19:12:55,953 INFO  (ShippingManagerAction.java:395) - pedigreeNum is:PE1142516575671
+2006-03-16 19:12:55,953 INFO  (ShippingManagerAction.java:397) - product is:Pfizer
+2006-03-16 19:12:55,953 INFO  (ShippingManagerAction.java:399) - quantity is:1
+2006-03-16 19:12:55,953 INFO  (ShippingManagerAction.java:401) - status is:
+2006-03-16 19:12:55,953 INFO  (ShippingManagerAction.java:404) - ============END FOR LOOP===================
+2006-03-16 19:13:00,656 INFO  (pedigreeEnvelopeAction.java:56) - Validating The Session
+2006-03-16 19:13:00,671 INFO  (pedigreeEnvelopeAction.java:60) - sessionID in Action :12700120060316055458
+2006-03-16 19:13:13,375 INFO  (ShippingManagerDetailsAction.java:52) - Validating The Session
+2006-03-16 19:13:13,390 INFO  (ShippingManagerDetailsAction.java:56) - sessionID in Action :12700120060316055458
+2006-03-16 19:13:13,484 ERROR (ShippingManagerDetailsAction.java:137) - Error in OrderSearchAction execute method.........com.rdta.commons.persistence.PersistanceException: com.rdta.tlapi.xql.XQLException: [xq-internal-00015] - No stored procedure with name [ShippingPedigreeDetails] was found.
+2006-03-16 19:13:40,343 INFO  (pedigreeEnvelopeAction.java:56) - Validating The Session
+2006-03-16 19:13:40,343 INFO  (pedigreeEnvelopeAction.java:60) - sessionID in Action :12700120060316055458
+2006-03-16 19:13:46,765 INFO  (ShippingManagerDetailsAction.java:52) - Validating The Session
+2006-03-16 19:13:46,765 INFO  (ShippingManagerDetailsAction.java:56) - sessionID in Action :12700120060316055458
+2006-03-16 19:14:14,593 INFO  (ViewShippingMfrDetailAction.java:59) - Validating The Session
+2006-03-16 19:14:14,593 INFO  (ViewShippingMfrDetailAction.java:66) - sessionID in ViewShippingMfrDetailAction :12700120060316055458
+2006-03-16 19:14:14,593 INFO  (ViewShippingMfrDetailAction.java:73) - Inside Action ViewShippingMfrDetailAction....... 
+2006-03-16 19:14:14,593 INFO  (ViewShippingMfrDetailAction.java:74) - Inside Action execute of ViewShippingMfrDetailAction....
+2006-03-16 19:14:14,718 ERROR (ViewShippingMfrDetailAction.java:133) - Error inside ViewShippingMfrDetailAction class.......com.rdta.commons.persistence.PersistanceException: com.rdta.tlapi.xql.XQLException: [xq-internal-00015] - No stored procedure with name [ShippingManagerPedigreeDetails] was found.
+2006-03-16 19:14:16,406 INFO  (ShippingManagerDetailsAction.java:52) - Validating The Session
+2006-03-16 19:14:16,406 INFO  (ShippingManagerDetailsAction.java:56) - sessionID in Action :12700120060316055458
+2006-03-16 19:14:36,453 INFO  (ShippingManagerAuditTrailAction.java:50) - Validating The Session
+2006-03-16 19:14:36,453 INFO  (ShippingManagerAuditTrailAction.java:54) - sessionID in Action :12700120060316055458
+2006-03-16 19:14:36,515 ERROR (ShippingManagerAuditTrailAction.java:142) - Error in ShippingManagerAuditTrailAction execute method.........com.rdta.commons.persistence.PersistanceException: com.rdta.tlapi.xql.XQLException: [xq-internal-00015] - No stored procedure with name [getAuditTrailDetails] was found.
+2006-03-16 19:14:55,203 INFO  (ShippingManagerDetailsAction.java:52) - Validating The Session
+2006-03-16 19:14:55,203 INFO  (ShippingManagerDetailsAction.java:56) - sessionID in Action :12700120060316055458
+2006-03-16 19:14:59,203 INFO  (ShippingManagerAuditTrailAction.java:50) - Validating The Session
+2006-03-16 19:14:59,203 INFO  (ShippingManagerAuditTrailAction.java:54) - sessionID in Action :12700120060316055458
+2006-03-16 19:14:59,312 ERROR (ShippingManagerAuditTrailAction.java:142) - Error in ShippingManagerAuditTrailAction execute method.........com.rdta.commons.persistence.PersistanceException: com.rdta.tlapi.xql.XQLException: [xq-internal-00015] - No stored procedure with name [getStatusOfPedigree] was found.
+2006-03-16 19:15:18,343 INFO  (ShippingManagerDetailsAction.java:52) - Validating The Session
+2006-03-16 19:15:18,359 INFO  (ShippingManagerDetailsAction.java:56) - sessionID in Action :12700120060316055458
+2006-03-16 19:15:22,078 INFO  (ShippingManagerAuditTrailAction.java:50) - Validating The Session
+2006-03-16 19:15:22,078 INFO  (ShippingManagerAuditTrailAction.java:54) - sessionID in Action :12700120060316055458
+2006-03-16 19:15:22,140 ERROR (ShippingManagerAuditTrailAction.java:142) - Error in ShippingManagerAuditTrailAction execute method.........java.lang.NullPointerException
+2006-03-16 19:15:45,671 INFO  (ShippingManagerDetailsAction.java:52) - Validating The Session
+2006-03-16 19:15:45,671 INFO  (ShippingManagerDetailsAction.java:56) - sessionID in Action :12700120060316055458
+2006-03-16 19:15:50,859 INFO  (ShippingManagerStatusAction.java:51) - Validating The Session
+2006-03-16 19:15:50,859 INFO  (ShippingManagerStatusAction.java:55) - sessionID in Action :12700120060316055458
+2006-03-16 19:15:50,921 ERROR (ShippingManagerStatusAction.java:110) - Error in ShippingManagerStatusAction execute method.........com.rdta.commons.persistence.PersistanceException: com.rdta.tlapi.xql.XQLException: [xq-internal-00015] - No stored procedure with name [ShippingManagerPedigreeDetails] was found.
+2006-03-16 19:16:19,109 INFO  (ShippingManagerDetailsAction.java:52) - Validating The Session
+2006-03-16 19:16:19,109 INFO  (ShippingManagerDetailsAction.java:56) - sessionID in Action :12700120060316055458
+2006-03-16 19:16:23,828 INFO  (ShippingManagerStatusAction.java:51) - Validating The Session
+2006-03-16 19:16:23,828 INFO  (ShippingManagerStatusAction.java:55) - sessionID in Action :12700120060316055458
+2006-03-16 19:16:31,453 INFO  (ShippingManagerAuditTrailAction.java:50) - Validating The Session
+2006-03-16 19:16:31,453 INFO  (ShippingManagerAuditTrailAction.java:54) - sessionID in Action :12700120060316055458
+2006-03-16 19:16:31,531 ERROR (ShippingManagerAuditTrailAction.java:142) - Error in ShippingManagerAuditTrailAction execute method.........java.lang.NullPointerException
+2006-03-16 19:17:06,234 INFO  (ShippingManagerStatusAction.java:51) - Validating The Session
+2006-03-16 19:17:06,234 INFO  (ShippingManagerStatusAction.java:55) - sessionID in Action :12700120060316055458
+2006-03-16 19:17:23,343 INFO  (ShippingManagerAuditTrailAction.java:50) - Validating The Session
+2006-03-16 19:17:23,359 INFO  (ShippingManagerAuditTrailAction.java:54) - sessionID in Action :12700120060316055458
+2006-03-16 19:17:23,421 ERROR (ShippingManagerAuditTrailAction.java:142) - Error in ShippingManagerAuditTrailAction execute method.........java.lang.NullPointerException
+2006-03-16 19:19:11,484 INFO  (ShippingManagerStatusAction.java:51) - Validating The Session
+2006-03-16 19:19:11,484 INFO  (ShippingManagerStatusAction.java:55) - sessionID in Action :12700120060316055458
+2006-03-16 19:19:16,812 INFO  (TradingPartnerListAction.java:46) - Inside Action TradingPartnerListAction....... 
+2006-03-16 19:19:16,812 INFO  (TradingPartnerListAction.java:47) - Inside Action execute of TradingPartnerListAction....
+2006-03-16 19:19:16,843 INFO  (TradingPartnerListAction.java:58) - The insertStatus is true
+2006-03-16 19:19:21,625 INFO  (TradingPartnerAccessPrivilage.java:46) - Inside TradingPartnerAccessPrivilage Class
+2006-03-16 19:19:21,656 INFO  (TradingPartnerAccessPrivilage.java:52) - The insertStatus is true
+2006-03-16 19:19:32,890 INFO  (TradingPartnerListAction.java:46) - Inside Action TradingPartnerListAction....... 
+2006-03-16 19:19:32,890 INFO  (TradingPartnerListAction.java:47) - Inside Action execute of TradingPartnerListAction....
+2006-03-16 19:19:32,937 INFO  (TradingPartnerListAction.java:58) - The insertStatus is true
+2006-03-16 19:19:36,718 INFO  (TradingPartnerViewAction.java:47) - Inside Action TradingPartnerViewAction....... 
+2006-03-16 19:19:36,718 INFO  (TradingPartnerViewAction.java:48) - Inside Action execute of TradingPartnerViewAction....
+2006-03-16 19:19:36,718 DEBUG (TradingPartnerViewAction.java:55) - Before doing Operation : FIND
+2006-03-16 19:19:36,953 INFO  (TradingPartnerViewAction.java:96) - before retuning Success! 
+2006-03-16 19:19:52,375 INFO  (CatalogListAction.java:40) - Inside Action CatalogListAction....... 
+2006-03-16 19:19:52,375 INFO  (CatalogListAction.java:41) - Inside Action execute of CatalogListAction....
+2006-03-16 19:19:52,375 INFO  (CatalogListAction.java:44) -  Inside List Action, tpGenId: 2
+2006-03-16 19:21:07,890 INFO  (TradingPartnerListAction.java:46) - Inside Action TradingPartnerListAction....... 
+2006-03-16 19:21:07,890 INFO  (TradingPartnerListAction.java:47) - Inside Action execute of TradingPartnerListAction....
+2006-03-16 19:21:07,921 INFO  (TradingPartnerListAction.java:58) - The insertStatus is true
+2006-03-16 19:24:24,359 INFO  (TradingPartnerListAction.java:46) - Inside Action TradingPartnerListAction....... 
+2006-03-16 19:24:24,359 INFO  (TradingPartnerListAction.java:47) - Inside Action execute of TradingPartnerListAction....
+2006-03-16 19:24:24,390 INFO  (TradingPartnerListAction.java:58) - The insertStatus is true
+2006-03-16 19:24:30,421 INFO  (TradingPartnerListAction.java:46) - Inside Action TradingPartnerListAction....... 
+2006-03-16 19:24:30,421 INFO  (TradingPartnerListAction.java:47) - Inside Action execute of TradingPartnerListAction....
+2006-03-16 19:24:30,453 INFO  (TradingPartnerListAction.java:58) - The insertStatus is true
+2006-03-16 19:24:37,343 INFO  (TradingPartnerViewAction.java:47) - Inside Action TradingPartnerViewAction....... 
+2006-03-16 19:24:37,343 INFO  (TradingPartnerViewAction.java:48) - Inside Action execute of TradingPartnerViewAction....
+2006-03-16 19:24:37,343 DEBUG (TradingPartnerViewAction.java:55) - Before doing Operation : FIND
+2006-03-16 19:24:37,437 INFO  (TradingPartnerViewAction.java:96) - before retuning Success! 
+2006-03-16 19:26:09,671 INFO  (TradingPartnerViewAction.java:47) - Inside Action TradingPartnerViewAction....... 
+2006-03-16 19:26:09,671 INFO  (TradingPartnerViewAction.java:48) - Inside Action execute of TradingPartnerViewAction....
+2006-03-16 19:26:09,671 DEBUG (TradingPartnerViewAction.java:55) - Before doing Operation : FIND
+2006-03-16 19:26:09,718 INFO  (TradingPartnerViewAction.java:96) - before retuning Success! 
+2006-03-16 19:29:22,109 INFO  (TradingPartnerViewAction.java:47) - Inside Action TradingPartnerViewAction....... 
+2006-03-16 19:29:22,109 INFO  (TradingPartnerViewAction.java:48) - Inside Action execute of TradingPartnerViewAction....
+2006-03-16 19:29:22,109 DEBUG (TradingPartnerViewAction.java:55) - Before doing Operation : FIND
+2006-03-16 19:29:22,203 INFO  (TradingPartnerViewAction.java:96) - before retuning Success! 
+2006-03-16 19:29:44,812 INFO  (TradingPartnerAccessPrivilage.java:46) - Inside TradingPartnerAccessPrivilage Class
+2006-03-16 19:29:44,843 INFO  (TradingPartnerAccessPrivilage.java:52) - The insertStatus is true
+2006-03-16 19:29:49,515 INFO  (TradingPartnerListAction.java:46) - Inside Action TradingPartnerListAction....... 
+2006-03-16 19:29:49,515 INFO  (TradingPartnerListAction.java:47) - Inside Action execute of TradingPartnerListAction....
+2006-03-16 19:29:49,546 INFO  (TradingPartnerListAction.java:58) - The insertStatus is true
+2006-03-16 19:29:53,593 INFO  (TradingPartnerViewAction.java:47) - Inside Action TradingPartnerViewAction....... 
+2006-03-16 19:29:53,593 INFO  (TradingPartnerViewAction.java:48) - Inside Action execute of TradingPartnerViewAction....
+2006-03-16 19:29:53,609 DEBUG (TradingPartnerViewAction.java:55) - Before doing Operation : FIND
+2006-03-16 19:29:53,671 INFO  (TradingPartnerViewAction.java:96) - before retuning Success! 
+2006-03-16 19:36:36,078 DEBUG [CommonUtil] [main::]  Debug is on. webContext + C:\jakarta-tomcat-5.0.29\webapps\ePharma new\.
+2006-03-16 19:36:36,125 DEBUG [CommonUtil] [main::]  Debug is on. webContext + C:\jakarta-tomcat-5.0.29\webapps\ePharma new\.
+2006-03-16 19:36:55,515 INFO  (TLDBConfig.java:53) -  TLDBConfig all values:  localhost 
+ 3408 
+ admin 
+ admin 
+ 
+2006-03-16 19:36:57,234 INFO  (EpedigreeAction.java:42) - ********Inside Action EpedigreeAction....... 
+2006-03-16 19:36:57,234 INFO  (EpedigreeAction.java:43) - Inside Action execute of EpedigreeAction....
+2006-03-16 19:36:57,250 INFO  (EpedigreeAction.java:53) - Validating The Session
+2006-03-16 19:36:57,250 INFO  (EpedigreeAction.java:57) - sessionID in EpedigreeAction :12700120060316055458
+2006-03-16 19:36:57,296 INFO  (EpedigreeAction.java:67) - The readStatus is : true
+2006-03-16 19:36:57,296 INFO  (EpedigreeAction.java:74) - My Query in EpedigreeAction class.....tlsp:DisplayMessage('12700120060316055458') 
+2006-03-16 19:36:57,453 INFO  (EpedigreeAction.java:86) - MessageTitle is:sample
+2006-03-16 19:36:57,453 INFO  (EpedigreeAction.java:88) - CreatedBy is:Brian Cheek
+2006-03-16 19:36:57,453 INFO  (EpedigreeAction.java:90) - CreatedDate is:2006-02-06T08:00:50
+2006-03-16 19:36:57,453 INFO  (EpedigreeAction.java:92) - MessageID is:12458487189334891204507701084109
+2006-03-16 19:36:57,453 INFO  (EpedigreeAction.java:94) - RelatedProcess is:fgfgtodaysss
+2006-03-16 19:36:57,468 INFO  (EpedigreeAction.java:96) - SeverityLevel is:1
+2006-03-16 19:36:57,468 INFO  (EpedigreeAction.java:98) - status is:Accepted
+2006-03-16 19:36:57,468 INFO  (EpedigreeAction.java:103) - Before returning to success
+2006-03-16 19:37:06,421 INFO  (ShippingManagerAction.java:77) - Validating The Session
+2006-03-16 19:37:06,421 INFO  (ShippingManagerAction.java:80) - sessionID in Action :12700120060316055458
+2006-03-16 19:37:06,484 INFO  (ShippingManagerAction.java:88) - Cheking the Access Previliges on Shping Manager[true]
+2006-03-16 19:37:06,500 INFO  (ShippingManagerAction.java:97) - this is the CreateAPN :[true]
+2006-03-16 19:37:06,531 INFO  (ShippingManagerAction.java:125) - The Transaction No is:null
+2006-03-16 19:37:06,562 INFO  (ShippingManagerAction.java:132) - Cheking the AcessPreviliges on Search Button:[true]
+2006-03-16 19:37:13,343 INFO  (ShippingManagerAction.java:77) - Validating The Session
+2006-03-16 19:37:13,359 INFO  (ShippingManagerAction.java:80) - sessionID in Action :12700120060316055458
+2006-03-16 19:37:13,375 INFO  (ShippingManagerAction.java:88) - Cheking the Access Previliges on Shping Manager[true]
+2006-03-16 19:37:13,421 INFO  (ShippingManagerAction.java:97) - this is the CreateAPN :[true]
+2006-03-16 19:37:13,437 INFO  (ShippingManagerAction.java:125) - The Transaction No is:null
+2006-03-16 19:37:13,468 INFO  (ShippingManagerAction.java:132) - Cheking the AcessPreviliges on Search Button:[true]
+2006-03-16 19:37:13,468 INFO  (ShippingManagerAction.java:163) -  DespatchAdvice search option 
+2006-03-16 19:37:29,437 INFO  (ShippingManagerAction.java:77) - Validating The Session
+2006-03-16 19:37:29,437 INFO  (ShippingManagerAction.java:80) - sessionID in Action :12700120060316055458
+2006-03-16 19:37:29,468 INFO  (ShippingManagerAction.java:88) - Cheking the Access Previliges on Shping Manager[true]
+2006-03-16 19:37:29,500 INFO  (ShippingManagerAction.java:97) - this is the CreateAPN :[true]
+2006-03-16 19:37:29,515 INFO  (ShippingManagerAction.java:125) - The Transaction No is:C28785100006
+2006-03-16 19:37:29,546 INFO  (ShippingManagerAction.java:132) - Cheking the AcessPreviliges on Search Button:[true]
+2006-03-16 19:37:29,546 INFO  (ShippingManagerAction.java:163) -  DespatchAdvice search option 
+2006-03-16 19:37:33,937 INFO  (ShippingManagerAction.java:77) - Validating The Session
+2006-03-16 19:37:33,937 INFO  (ShippingManagerAction.java:80) - sessionID in Action :12700120060316055458
+2006-03-16 19:37:33,968 INFO  (ShippingManagerAction.java:88) - Cheking the Access Previliges on Shping Manager[true]
+2006-03-16 19:37:33,984 INFO  (ShippingManagerAction.java:97) - this is the CreateAPN :[true]
+2006-03-16 19:37:34,000 INFO  (ShippingManagerAction.java:125) - The Transaction No is:C28785100006
+2006-03-16 19:37:34,031 INFO  (ShippingManagerAction.java:132) - Cheking the AcessPreviliges on Search Button:[true]
+2006-03-16 19:37:34,031 INFO  (ShippingManagerAction.java:163) -  DespatchAdvice search option 
+2006-03-16 19:37:34,125 INFO  (ShippingManagerAction.java:333) - The Create pedigree Sp:tlsp:CreateShippedPedigree('C28785100006','DespatchAdvice','4','R1138026580109','12700120060316055458') 
+2006-03-16 19:37:35,062 INFO  (ShippingManagerAction.java:336) - The Results are:[tig:///ePharma/ShippedPedigree/1395570654Q]
+2006-03-16 19:37:35,328 INFO  (ShippingManagerAction.java:381) - To view the Pedigree Details: tlsp:PedigreeDetails('C28785100006') 
+2006-03-16 19:37:35,328 INFO  (ShippingManagerAction.java:386) - ============START FOR LOOP===================
+2006-03-16 19:37:35,328 INFO  (ShippingManagerAction.java:391) - dataRcvd is:2006-03-16T14:07:34.921Z
+2006-03-16 19:37:35,343 INFO  (ShippingManagerAction.java:393) - orderNum is:C28785100006
+2006-03-16 19:37:35,343 INFO  (ShippingManagerAction.java:395) - pedigreeNum is:PE1142518054968
+2006-03-16 19:37:35,343 INFO  (ShippingManagerAction.java:397) - product is:Pfizer
+2006-03-16 19:37:35,343 INFO  (ShippingManagerAction.java:399) - quantity is:1
+2006-03-16 19:37:35,343 INFO  (ShippingManagerAction.java:401) - status is:
+2006-03-16 19:37:35,343 INFO  (ShippingManagerAction.java:404) - ============END FOR LOOP===================
+2006-03-16 19:37:40,359 INFO  (pedigreeEnvelopeAction.java:56) - Validating The Session
+2006-03-16 19:37:40,375 INFO  (pedigreeEnvelopeAction.java:60) - sessionID in Action :12700120060316055458
+2006-03-16 19:37:44,484 INFO  (ShippingManagerDetailsAction.java:52) - Validating The Session
+2006-03-16 19:37:44,484 INFO  (ShippingManagerDetailsAction.java:56) - sessionID in Action :12700120060316055458
+2006-03-16 19:40:38,031 DEBUG [CommonUtil] [main::]  Debug is on. webContext + C:\jakarta-tomcat-5.0.29\webapps\ePharma new\.
+2006-03-16 19:40:38,046 DEBUG [CommonUtil] [main::]  Debug is on. webContext + C:\jakarta-tomcat-5.0.29\webapps\ePharma new\.
+2006-03-16 19:40:55,500 INFO  (TLDBConfig.java:53) -  TLDBConfig all values:  localhost 
+ 3408 
+ admin 
+ admin 
+ 
+2006-03-16 19:40:57,109 INFO  (EpedigreeAction.java:42) - ********Inside Action EpedigreeAction....... 
+2006-03-16 19:40:57,109 INFO  (EpedigreeAction.java:43) - Inside Action execute of EpedigreeAction....
+2006-03-16 19:40:57,125 INFO  (EpedigreeAction.java:53) - Validating The Session
+2006-03-16 19:40:57,125 INFO  (EpedigreeAction.java:57) - sessionID in EpedigreeAction :12700120060316055458
+2006-03-16 19:40:57,156 INFO  (EpedigreeAction.java:67) - The readStatus is : true
+2006-03-16 19:40:57,156 INFO  (EpedigreeAction.java:74) - My Query in EpedigreeAction class.....tlsp:DisplayMessage('12700120060316055458') 
+2006-03-16 19:40:57,218 INFO  (EpedigreeAction.java:86) - MessageTitle is:sample
+2006-03-16 19:40:57,218 INFO  (EpedigreeAction.java:88) - CreatedBy is:Brian Cheek
+2006-03-16 19:40:57,218 INFO  (EpedigreeAction.java:90) - CreatedDate is:2006-02-06T08:00:50
+2006-03-16 19:40:57,218 INFO  (EpedigreeAction.java:92) - MessageID is:12458487189334891204507701084109
+2006-03-16 19:40:57,234 INFO  (EpedigreeAction.java:94) - RelatedProcess is:fgfgtodaysss
+2006-03-16 19:40:57,234 INFO  (EpedigreeAction.java:96) - SeverityLevel is:1
+2006-03-16 19:40:57,234 INFO  (EpedigreeAction.java:98) - status is:Accepted
+2006-03-16 19:40:57,234 INFO  (EpedigreeAction.java:103) - Before returning to success
+2006-03-16 19:41:03,875 INFO  (ShippingManagerAction.java:77) - Validating The Session
+2006-03-16 19:41:03,875 INFO  (ShippingManagerAction.java:80) - sessionID in Action :12700120060316055458
+2006-03-16 19:41:03,906 INFO  (ShippingManagerAction.java:88) - Cheking the Access Previliges on Shping Manager[true]
+2006-03-16 19:41:03,953 INFO  (ShippingManagerAction.java:97) - this is the CreateAPN :[true]
+2006-03-16 19:41:03,968 INFO  (ShippingManagerAction.java:125) - The Transaction No is:null
+2006-03-16 19:41:04,000 INFO  (ShippingManagerAction.java:132) - Cheking the AcessPreviliges on Search Button:[true]
+2006-03-16 19:41:10,984 INFO  (ReceivedPedigreeSearchAction.java:63) - Inside Action ReceivedPedigreeSearchAction....... 
+2006-03-16 19:41:10,984 INFO  (ReceivedPedigreeSearchAction.java:64) - Inside Action execute of ReceivedPedigreeSearchAction....
+2006-03-16 19:41:11,000 INFO  (ReceivedPedigreeSearchAction.java:92) - Validating The Session
+2006-03-16 19:41:11,000 INFO  (ReceivedPedigreeSearchAction.java:95) - sessionID in Action :12700120060316055458
+2006-03-16 19:41:11,156 ERROR (ReceivedPedigreeSearchAction.java:185) - Error in ReceivedPedigreeSearchAction execute method.........com.rdta.commons.persistence.PersistanceException: com.rdta.tlapi.xql.XQLException: [xq-internal-00015] - No stored procedure with name [ShippingEnvelopeSearch] was found.
+2006-03-16 19:41:12,562 INFO  (ShippingManagerAction.java:77) - Validating The Session
+2006-03-16 19:41:12,562 INFO  (ShippingManagerAction.java:80) - sessionID in Action :12700120060316055458
+2006-03-16 19:41:12,593 INFO  (ShippingManagerAction.java:88) - Cheking the Access Previliges on Shping Manager[true]
+2006-03-16 19:41:12,625 INFO  (ShippingManagerAction.java:97) - this is the CreateAPN :[true]
+2006-03-16 19:41:12,656 INFO  (ShippingManagerAction.java:125) - The Transaction No is:null
+2006-03-16 19:41:12,703 INFO  (ShippingManagerAction.java:132) - Cheking the AcessPreviliges on Search Button:[true]
+2006-03-16 19:41:15,359 INFO  (EpedigreeAction.java:42) - ********Inside Action EpedigreeAction....... 
+2006-03-16 19:41:15,359 INFO  (EpedigreeAction.java:43) - Inside Action execute of EpedigreeAction....
+2006-03-16 19:41:15,359 INFO  (EpedigreeAction.java:53) - Validating The Session
+2006-03-16 19:41:15,359 INFO  (EpedigreeAction.java:57) - sessionID in EpedigreeAction :12700120060316055458
+2006-03-16 19:41:15,406 INFO  (EpedigreeAction.java:67) - The readStatus is : true
+2006-03-16 19:41:15,406 INFO  (EpedigreeAction.java:74) - My Query in EpedigreeAction class.....tlsp:DisplayMessage('12700120060316055458') 
+2006-03-16 19:41:15,437 INFO  (EpedigreeAction.java:86) - MessageTitle is:sample
+2006-03-16 19:41:15,453 INFO  (EpedigreeAction.java:88) - CreatedBy is:Brian Cheek
+2006-03-16 19:41:15,453 INFO  (EpedigreeAction.java:90) - CreatedDate is:2006-02-06T08:00:50
+2006-03-16 19:41:15,453 INFO  (EpedigreeAction.java:92) - MessageID is:12458487189334891204507701084109
+2006-03-16 19:41:15,453 INFO  (EpedigreeAction.java:94) - RelatedProcess is:fgfgtodaysss
+2006-03-16 19:41:15,453 INFO  (EpedigreeAction.java:96) - SeverityLevel is:1
+2006-03-16 19:41:15,453 INFO  (EpedigreeAction.java:98) - status is:Accepted
+2006-03-16 19:41:15,453 INFO  (EpedigreeAction.java:103) - Before returning to success
+2006-03-16 19:41:18,515 INFO  (EpedigreeAction.java:42) - ********Inside Action EpedigreeAction....... 
+2006-03-16 19:41:18,531 INFO  (EpedigreeAction.java:43) - Inside Action execute of EpedigreeAction....
+2006-03-16 19:41:18,531 INFO  (EpedigreeAction.java:53) - Validating The Session
+2006-03-16 19:41:18,531 INFO  (EpedigreeAction.java:57) - sessionID in EpedigreeAction :12700120060316055458
+2006-03-16 19:41:18,546 INFO  (EpedigreeAction.java:67) - The readStatus is : true
+2006-03-16 19:41:18,546 INFO  (EpedigreeAction.java:74) - My Query in EpedigreeAction class.....tlsp:DisplayMessage('12700120060316055458') 
+2006-03-16 19:41:18,593 INFO  (EpedigreeAction.java:86) - MessageTitle is:sample
+2006-03-16 19:41:18,593 INFO  (EpedigreeAction.java:88) - CreatedBy is:Brian Cheek
+2006-03-16 19:41:18,593 INFO  (EpedigreeAction.java:90) - CreatedDate is:2006-02-06T08:00:50
+2006-03-16 19:41:18,593 INFO  (EpedigreeAction.java:92) - MessageID is:12458487189334891204507701084109
+2006-03-16 19:41:18,593 INFO  (EpedigreeAction.java:94) - RelatedProcess is:fgfgtodaysss
+2006-03-16 19:41:18,593 INFO  (EpedigreeAction.java:96) - SeverityLevel is:1
+2006-03-16 19:41:18,609 INFO  (EpedigreeAction.java:98) - status is:Accepted
+2006-03-16 19:41:18,609 INFO  (EpedigreeAction.java:103) - Before returning to success
+2006-03-16 19:41:20,781 INFO  (ShippingManagerAction.java:77) - Validating The Session
+2006-03-16 19:41:20,781 INFO  (ShippingManagerAction.java:80) - sessionID in Action :12700120060316055458
+2006-03-16 19:41:20,796 INFO  (ShippingManagerAction.java:88) - Cheking the Access Previliges on Shping Manager[true]
+2006-03-16 19:41:20,843 INFO  (ShippingManagerAction.java:97) - this is the CreateAPN :[true]
+2006-03-16 19:41:20,859 INFO  (ShippingManagerAction.java:125) - The Transaction No is:null
+2006-03-16 19:41:20,906 INFO  (ShippingManagerAction.java:132) - Cheking the AcessPreviliges on Search Button:[true]
+2006-03-16 19:41:24,937 INFO  (ShippingManagerAction.java:77) - Validating The Session
+2006-03-16 19:41:24,937 INFO  (ShippingManagerAction.java:80) - sessionID in Action :12700120060316055458
+2006-03-16 19:41:24,968 INFO  (ShippingManagerAction.java:88) - Cheking the Access Previliges on Shping Manager[true]
+2006-03-16 19:41:24,984 INFO  (ShippingManagerAction.java:97) - this is the CreateAPN :[true]
+2006-03-16 19:41:25,015 INFO  (ShippingManagerAction.java:125) - The Transaction No is:null
+2006-03-16 19:41:25,046 INFO  (ShippingManagerAction.java:132) - Cheking the AcessPreviliges on Search Button:[true]
+2006-03-16 19:41:25,046 INFO  (ShippingManagerAction.java:163) -  DespatchAdvice search option 
+2006-03-16 19:41:30,703 INFO  (ShippingManagerAction.java:77) - Validating The Session
+2006-03-16 19:41:30,703 INFO  (ShippingManagerAction.java:80) - sessionID in Action :12700120060316055458
+2006-03-16 19:41:30,734 INFO  (ShippingManagerAction.java:88) - Cheking the Access Previliges on Shping Manager[true]
+2006-03-16 19:41:30,765 INFO  (ShippingManagerAction.java:97) - this is the CreateAPN :[true]
+2006-03-16 19:41:30,781 INFO  (ShippingManagerAction.java:125) - The Transaction No is:C28785100006
+2006-03-16 19:41:30,796 INFO  (ShippingManagerAction.java:132) - Cheking the AcessPreviliges on Search Button:[true]
+2006-03-16 19:41:30,812 INFO  (ShippingManagerAction.java:163) -  DespatchAdvice search option 
+2006-03-16 19:41:30,875 INFO  (ShippingManagerAction.java:333) - The Create pedigree Sp:tlsp:CreateShippedPedigree('C28785100006','DespatchAdvice','4','R1138026580109','12700120060316055458') 
+2006-03-16 19:41:30,968 INFO  (ShippingManagerAction.java:336) - The Results are:[tig:///ePharma/ShippedPedigree/1395570890R]
+2006-03-16 19:41:31,093 INFO  (ShippingManagerAction.java:381) - To view the Pedigree Details: tlsp:PedigreeDetails('C28785100006') 
+2006-03-16 19:41:31,093 INFO  (ShippingManagerAction.java:386) - ============START FOR LOOP===================
+2006-03-16 19:41:31,093 INFO  (ShippingManagerAction.java:391) - dataRcvd is:2006-03-16T14:11:30.890Z
+2006-03-16 19:41:31,093 INFO  (ShippingManagerAction.java:393) - orderNum is:C28785100006
+2006-03-16 19:41:31,093 INFO  (ShippingManagerAction.java:395) - pedigreeNum is:PE1142518290921
+2006-03-16 19:41:31,093 INFO  (ShippingManagerAction.java:397) - product is:Pfizer
+2006-03-16 19:41:31,093 INFO  (ShippingManagerAction.java:399) - quantity is:1
+2006-03-16 19:41:31,093 INFO  (ShippingManagerAction.java:401) - status is:
+2006-03-16 19:41:31,093 INFO  (ShippingManagerAction.java:404) - ============END FOR LOOP===================
+2006-03-16 19:41:35,515 INFO  (pedigreeEnvelopeAction.java:56) - Validating The Session
+2006-03-16 19:41:35,515 INFO  (pedigreeEnvelopeAction.java:60) - sessionID in Action :12700120060316055458
+2006-03-16 19:41:39,625 INFO  (ShippingManagerDetailsAction.java:52) - Validating The Session
+2006-03-16 19:41:39,625 INFO  (ShippingManagerDetailsAction.java:56) - sessionID in Action :12700120060316055458
+2006-03-16 19:41:43,875 INFO  (ShippingManagerAttachmentAction.java:54) - Validating The Session
+2006-03-16 19:41:43,875 INFO  (ShippingManagerAttachmentAction.java:58) - sessionID in Action :12700120060316055458
+2006-03-16 19:42:04,281 INFO  (ShippingManagerAttachmentAction.java:54) - Validating The Session
+2006-03-16 19:42:04,281 INFO  (ShippingManagerAttachmentAction.java:58) - sessionID in Action :12700120060316055458
+2006-03-16 19:42:33,953 INFO  (ShippingManagerAction.java:77) - Validating The Session
+2006-03-16 19:42:33,953 INFO  (ShippingManagerAction.java:80) - sessionID in Action :12700120060316055458
+2006-03-16 19:42:33,984 INFO  (ShippingManagerAction.java:88) - Cheking the Access Previliges on Shping Manager[true]
+2006-03-16 19:42:34,000 INFO  (ShippingManagerAction.java:97) - this is the CreateAPN :[true]
+2006-03-16 19:42:34,015 INFO  (ShippingManagerAction.java:125) - The Transaction No is:null
+2006-03-16 19:42:34,062 INFO  (ShippingManagerAction.java:132) - Cheking the AcessPreviliges on Search Button:[true]
+2006-03-16 19:42:38,875 INFO  (ShippingManagerAction.java:77) - Validating The Session
+2006-03-16 19:42:38,890 INFO  (ShippingManagerAction.java:80) - sessionID in Action :12700120060316055458
+2006-03-16 19:42:38,906 INFO  (ShippingManagerAction.java:88) - Cheking the Access Previliges on Shping Manager[true]
+2006-03-16 19:42:38,937 INFO  (ShippingManagerAction.java:97) - this is the CreateAPN :[true]
+2006-03-16 19:42:38,968 INFO  (ShippingManagerAction.java:125) - The Transaction No is:null
+2006-03-16 19:42:39,000 INFO  (ShippingManagerAction.java:132) - Cheking the AcessPreviliges on Search Button:[true]
+2006-03-16 19:42:39,000 INFO  (ShippingManagerAction.java:163) -  DespatchAdvice search option 
+2006-03-16 19:42:48,140 INFO  (ShippingManagerAction.java:77) - Validating The Session
+2006-03-16 19:42:48,140 INFO  (ShippingManagerAction.java:80) - sessionID in Action :12700120060316055458
+2006-03-16 19:42:48,156 INFO  (ShippingManagerAction.java:88) - Cheking the Access Previliges on Shping Manager[true]
+2006-03-16 19:42:48,187 INFO  (ShippingManagerAction.java:97) - this is the CreateAPN :[true]
+2006-03-16 19:42:48,203 INFO  (ShippingManagerAction.java:125) - The Transaction No is:C28785100007
+2006-03-16 19:42:48,234 INFO  (ShippingManagerAction.java:132) - Cheking the AcessPreviliges on Search Button:[true]
+2006-03-16 19:42:48,234 INFO  (ShippingManagerAction.java:163) -  DespatchAdvice search option 
+2006-03-16 19:42:48,296 INFO  (ShippingManagerAction.java:333) - The Create pedigree Sp:tlsp:CreateShippedPedigree('C28785100007','DespatchAdvice','4','R1138026580109','12700120060316055458') 
+2006-03-16 19:42:48,390 INFO  (ShippingManagerAction.java:336) - The Results are:[tig:///ePharma/ShippedPedigree/1395570968T]
+2006-03-16 19:42:48,484 INFO  (ShippingManagerAction.java:381) - To view the Pedigree Details: tlsp:PedigreeDetails('C28785100007') 
+2006-03-16 19:42:48,484 INFO  (ShippingManagerAction.java:386) - ============START FOR LOOP===================
+2006-03-16 19:42:48,484 INFO  (ShippingManagerAction.java:391) - dataRcvd is:2006-03-16T14:12:48.312Z
+2006-03-16 19:42:48,500 INFO  (ShippingManagerAction.java:393) - orderNum is:C28785100007
+2006-03-16 19:42:48,500 INFO  (ShippingManagerAction.java:395) - pedigreeNum is:PE1142518368343
+2006-03-16 19:42:48,500 INFO  (ShippingManagerAction.java:397) - product is:Cardinal Health
+2006-03-16 19:42:48,500 INFO  (ShippingManagerAction.java:399) - quantity is:1
+2006-03-16 19:42:48,500 INFO  (ShippingManagerAction.java:401) - status is:
+2006-03-16 19:42:48,500 INFO  (ShippingManagerAction.java:404) - ============END FOR LOOP===================
+2006-03-16 19:43:43,859 INFO  (ShippingManagerAction.java:77) - Validating The Session
+2006-03-16 19:43:43,859 INFO  (ShippingManagerAction.java:80) - sessionID in Action :12700120060316055458
+2006-03-16 19:43:43,890 INFO  (ShippingManagerAction.java:88) - Cheking the Access Previliges on Shping Manager[true]
+2006-03-16 19:43:43,921 INFO  (ShippingManagerAction.java:97) - this is the CreateAPN :[true]
+2006-03-16 19:43:43,953 INFO  (ShippingManagerAction.java:125) - The Transaction No is:null
+2006-03-16 19:43:44,000 INFO  (ShippingManagerAction.java:132) - Cheking the AcessPreviliges on Search Button:[true]
+2006-03-16 19:43:49,171 INFO  (ShippingManagerAction.java:77) - Validating The Session
+2006-03-16 19:43:49,171 INFO  (ShippingManagerAction.java:80) - sessionID in Action :12700120060316055458
+2006-03-16 19:43:49,203 INFO  (ShippingManagerAction.java:88) - Cheking the Access Previliges on Shping Manager[true]
+2006-03-16 19:43:49,234 INFO  (ShippingManagerAction.java:97) - this is the CreateAPN :[true]
+2006-03-16 19:43:49,250 INFO  (ShippingManagerAction.java:125) - The Transaction No is:null
+2006-03-16 19:43:49,281 INFO  (ShippingManagerAction.java:132) - Cheking the AcessPreviliges on Search Button:[true]
+2006-03-16 19:43:49,296 INFO  (ShippingManagerAction.java:163) -  DespatchAdvice search option 
+2006-03-16 19:43:54,281 INFO  (ShippingManagerAction.java:77) - Validating The Session
+2006-03-16 19:43:54,281 INFO  (ShippingManagerAction.java:80) - sessionID in Action :12700120060316055458
+2006-03-16 19:43:54,328 INFO  (ShippingManagerAction.java:88) - Cheking the Access Previliges on Shping Manager[true]
+2006-03-16 19:43:54,359 INFO  (ShippingManagerAction.java:97) - this is the CreateAPN :[true]
+2006-03-16 19:43:54,390 INFO  (ShippingManagerAction.java:125) - The Transaction No is:C28785100006
+2006-03-16 19:43:54,421 INFO  (ShippingManagerAction.java:132) - Cheking the AcessPreviliges on Search Button:[true]
+2006-03-16 19:43:54,421 INFO  (ShippingManagerAction.java:163) -  DespatchAdvice search option 
+2006-03-16 19:43:54,484 INFO  (ShippingManagerAction.java:333) - The Create pedigree Sp:tlsp:CreateShippedPedigree('C28785100006','DespatchAdvice','1','','12700120060316055458')
+2006-03-16 19:43:54,968 INFO  (ShippingManagerAction.java:336) - The Results are:[tig:///ePharma/ShippedPedigree/1395571034V]
+2006-03-16 19:43:55,140 INFO  (ShippingManagerAction.java:381) - To view the Pedigree Details: tlsp:PedigreeDetails('C28785100006') 
+2006-03-16 19:43:55,140 INFO  (ShippingManagerAction.java:386) - ============START FOR LOOP===================
+2006-03-16 19:43:55,140 INFO  (ShippingManagerAction.java:391) - dataRcvd is:2006-03-16T14:13:54.500Z
+2006-03-16 19:43:55,140 INFO  (ShippingManagerAction.java:393) - orderNum is:C28785100006
+2006-03-16 19:43:55,140 INFO  (ShippingManagerAction.java:395) - pedigreeNum is:PE1142518434531
+2006-03-16 19:43:55,140 INFO  (ShippingManagerAction.java:397) - product is:Pfizer
+2006-03-16 19:43:55,156 INFO  (ShippingManagerAction.java:399) - quantity is:1
+2006-03-16 19:43:55,156 INFO  (ShippingManagerAction.java:401) - status is:
+2006-03-16 19:43:55,156 INFO  (ShippingManagerAction.java:404) - ============END FOR LOOP===================
+2006-03-16 19:44:00,609 INFO  (pedigreeEnvelopeAction.java:56) - Validating The Session
+2006-03-16 19:44:00,609 INFO  (pedigreeEnvelopeAction.java:60) - sessionID in Action :12700120060316055458
+2006-03-16 19:44:04,625 INFO  (ShippingManagerDetailsAction.java:52) - Validating The Session
+2006-03-16 19:44:04,625 INFO  (ShippingManagerDetailsAction.java:56) - sessionID in Action :12700120060316055458
+2006-03-16 19:44:25,968 INFO  (ShippingManagerAttachmentAction.java:54) - Validating The Session
+2006-03-16 19:44:25,968 INFO  (ShippingManagerAttachmentAction.java:58) - sessionID in Action :12700120060316055458
+2006-03-16 19:44:31,453 INFO  (ShippingManagerAttachmentAction.java:54) - Validating The Session
+2006-03-16 19:44:31,453 INFO  (ShippingManagerAttachmentAction.java:58) - sessionID in Action :12700120060316055458
+2006-03-16 19:45:58,234 INFO  (ShippingManagerAttachmentAction.java:54) - Validating The Session
+2006-03-16 19:45:58,234 INFO  (ShippingManagerAttachmentAction.java:58) - sessionID in Action :12700120060316055458
+2006-03-16 19:46:41,000 INFO  (ShippingManagerAttachmentAction.java:54) - Validating The Session
+2006-03-16 19:46:41,000 INFO  (ShippingManagerAttachmentAction.java:58) - sessionID in Action :12700120060316055458
+2006-03-16 19:51:13,406 INFO  (ShippingManagerAttachmentAction.java:54) - Validating The Session
+2006-03-16 19:51:13,406 INFO  (ShippingManagerAttachmentAction.java:58) - sessionID in Action :12700120060316055458
+2006-03-16 19:57:59,718 INFO  (ShippingManagerAttachmentAction.java:54) - Validating The Session
+2006-03-16 19:57:59,734 INFO  (ShippingManagerAttachmentAction.java:58) - sessionID in Action :12700120060316055458
+2006-03-16 20:02:45,906 INFO  (ShippingManagerAttachmentAction.java:54) - Validating The Session
+2006-03-16 20:02:45,906 INFO  (ShippingManagerAttachmentAction.java:58) - sessionID in Action :12700120060316055458
+2006-03-16 20:02:46,062 ERROR (ShippingManagerAttachmentAction.java:132) - Error in ShippingManagerAttachmentAction execute method.........com.rdta.commons.persistence.PersistanceException: com.rdta.tlapi.xql.XQLExecuteException: [xq-lexx-00005] - Illegal element content value at line [1] offset [482].
+2006-03-16 20:04:03,734 INFO  (ShippingManagerAttachmentAction.java:54) - Validating The Session
+2006-03-16 20:04:03,734 INFO  (ShippingManagerAttachmentAction.java:58) - sessionID in Action :12700120060316055458
+2006-03-16 20:04:03,843 ERROR (ShippingManagerAttachmentAction.java:132) - Error in ShippingManagerAttachmentAction execute method.........com.rdta.commons.persistence.PersistanceException: com.rdta.tlapi.xql.XQLExecuteException: [xq-lexx-00005] - Illegal element content value at line [1] offset [483].
+2006-03-16 20:04:09,500 INFO  (ShippingManagerAttachmentAction.java:54) - Validating The Session
+2006-03-16 20:04:09,500 INFO  (ShippingManagerAttachmentAction.java:58) - sessionID in Action :12700120060316055458
+2006-03-16 20:04:12,453 INFO  (ShippingManagerDetailsAction.java:52) - Validating The Session
+2006-03-16 20:04:12,453 INFO  (ShippingManagerDetailsAction.java:56) - sessionID in Action :12700120060316055458
+2006-03-16 20:04:18,328 INFO  (ShippingManagerAttachmentAction.java:54) - Validating The Session
+2006-03-16 20:04:18,328 INFO  (ShippingManagerAttachmentAction.java:58) - sessionID in Action :12700120060316055458
+2006-03-16 20:04:26,000 INFO  (ShippingManagerAttachmentAction.java:54) - Validating The Session
+2006-03-16 20:04:26,000 INFO  (ShippingManagerAttachmentAction.java:58) - sessionID in Action :12700120060316055458
+2006-03-16 20:04:26,140 ERROR (ShippingManagerAttachmentAction.java:132) - Error in ShippingManagerAttachmentAction execute method.........com.rdta.commons.persistence.PersistanceException: com.rdta.tlapi.xql.XQLExecuteException: [xq-lexx-00005] - Illegal element content value at line [1] offset [483].
+2006-03-16 20:05:55,390 INFO  (ShippingManagerAttachmentAction.java:54) - Validating The Session
+2006-03-16 20:05:55,390 INFO  (ShippingManagerAttachmentAction.java:58) - sessionID in Action :12700120060316055458
+2006-03-16 20:05:57,640 INFO  (ShippingManagerDetailsAction.java:52) - Validating The Session
+2006-03-16 20:05:57,640 INFO  (ShippingManagerDetailsAction.java:56) - sessionID in Action :12700120060316055458
+2006-03-16 20:06:02,312 INFO  (ShippingManagerAttachmentAction.java:54) - Validating The Session
+2006-03-16 20:06:02,312 INFO  (ShippingManagerAttachmentAction.java:58) - sessionID in Action :12700120060316055458
+2006-03-16 20:06:10,031 INFO  (ShippingManagerAttachmentAction.java:54) - Validating The Session
+2006-03-16 20:06:10,031 INFO  (ShippingManagerAttachmentAction.java:58) - sessionID in Action :12700120060316055458
+2006-03-16 20:06:20,890 INFO  (ShippingManagerAction.java:77) - Validating The Session
+2006-03-16 20:06:20,890 INFO  (ShippingManagerAction.java:80) - sessionID in Action :12700120060316055458
+2006-03-16 20:06:20,937 INFO  (ShippingManagerAction.java:88) - Cheking the Access Previliges on Shping Manager[true]
+2006-03-16 20:06:20,968 INFO  (ShippingManagerAction.java:97) - this is the CreateAPN :[true]
+2006-03-16 20:06:20,984 INFO  (ShippingManagerAction.java:125) - The Transaction No is:null
+2006-03-16 20:06:21,000 INFO  (ShippingManagerAction.java:132) - Cheking the AcessPreviliges on Search Button:[true]
+2006-03-16 20:06:25,390 INFO  (ShippingManagerAction.java:77) - Validating The Session
+2006-03-16 20:06:25,390 INFO  (ShippingManagerAction.java:80) - sessionID in Action :12700120060316055458
+2006-03-16 20:06:25,421 INFO  (ShippingManagerAction.java:88) - Cheking the Access Previliges on Shping Manager[true]
+2006-03-16 20:06:25,437 INFO  (ShippingManagerAction.java:97) - this is the CreateAPN :[true]
+2006-03-16 20:06:25,453 INFO  (ShippingManagerAction.java:125) - The Transaction No is:null
+2006-03-16 20:06:25,484 INFO  (ShippingManagerAction.java:132) - Cheking the AcessPreviliges on Search Button:[true]
+2006-03-16 20:06:25,484 INFO  (ShippingManagerAction.java:163) -  DespatchAdvice search option 
+2006-03-16 20:06:33,875 INFO  (ShippingManagerAction.java:77) - Validating The Session
+2006-03-16 20:06:33,875 INFO  (ShippingManagerAction.java:80) - sessionID in Action :12700120060316055458
+2006-03-16 20:06:33,906 INFO  (ShippingManagerAction.java:88) - Cheking the Access Previliges on Shping Manager[true]
+2006-03-16 20:06:33,921 INFO  (ShippingManagerAction.java:97) - this is the CreateAPN :[true]
+2006-03-16 20:06:33,953 INFO  (ShippingManagerAction.java:125) - The Transaction No is:C28785100006
+2006-03-16 20:06:33,968 INFO  (ShippingManagerAction.java:132) - Cheking the AcessPreviliges on Search Button:[true]
+2006-03-16 20:06:33,968 INFO  (ShippingManagerAction.java:163) -  DespatchAdvice search option 
+2006-03-16 20:06:34,031 INFO  (ShippingManagerAction.java:333) - The Create pedigree Sp:tlsp:CreateShippedPedigree('C28785100006','DespatchAdvice','1','','12700120060316055458')
+2006-03-16 20:06:34,250 INFO  (ShippingManagerAction.java:336) - The Results are:[tig:///ePharma/ShippedPedigree/1395572394X]
+2006-03-16 20:06:34,375 INFO  (ShippingManagerAction.java:381) - To view the Pedigree Details: tlsp:PedigreeDetails('C28785100006') 
+2006-03-16 20:06:34,375 INFO  (ShippingManagerAction.java:386) - ============START FOR LOOP===================
+2006-03-16 20:06:34,375 INFO  (ShippingManagerAction.java:391) - dataRcvd is:2006-03-16T16:36:34.046Z
+2006-03-16 20:06:34,375 INFO  (ShippingManagerAction.java:393) - orderNum is:C28785100006
+2006-03-16 20:06:34,375 INFO  (ShippingManagerAction.java:395) - pedigreeNum is:PE1142519794171
+2006-03-16 20:06:34,375 INFO  (ShippingManagerAction.java:397) - product is:Pfizer
+2006-03-16 20:06:34,375 INFO  (ShippingManagerAction.java:399) - quantity is:1
+2006-03-16 20:06:34,390 INFO  (ShippingManagerAction.java:401) - status is:
+2006-03-16 20:06:34,390 INFO  (ShippingManagerAction.java:404) - ============END FOR LOOP===================
+2006-03-16 20:06:46,062 INFO  (pedigreeEnvelopeAction.java:56) - Validating The Session
+2006-03-16 20:06:46,062 INFO  (pedigreeEnvelopeAction.java:60) - sessionID in Action :12700120060316055458
+2006-03-16 20:06:50,156 INFO  (ShippingManagerDetailsAction.java:52) - Validating The Session
+2006-03-16 20:06:50,156 INFO  (ShippingManagerDetailsAction.java:56) - sessionID in Action :12700120060316055458
+2006-03-16 20:06:54,531 INFO  (ShippingManagerAttachmentAction.java:54) - Validating The Session
+2006-03-16 20:06:54,531 INFO  (ShippingManagerAttachmentAction.java:58) - sessionID in Action :12700120060316055458
+2006-03-16 20:07:12,703 INFO  (ShippingManagerAttachmentAction.java:54) - Validating The Session
+2006-03-16 20:07:12,703 INFO  (ShippingManagerAttachmentAction.java:58) - sessionID in Action :12700120060316055458
+2006-03-16 20:08:25,734 INFO  (ShippingManagerAction.java:77) - Validating The Session
+2006-03-16 20:08:25,734 INFO  (ShippingManagerAction.java:80) - sessionID in Action :12700120060316055458
+2006-03-16 20:08:25,781 INFO  (ShippingManagerAction.java:88) - Cheking the Access Previliges on Shping Manager[true]
+2006-03-16 20:08:25,828 INFO  (ShippingManagerAction.java:97) - this is the CreateAPN :[true]
+2006-03-16 20:08:25,859 INFO  (ShippingManagerAction.java:125) - The Transaction No is:null
+2006-03-16 20:08:25,906 INFO  (ShippingManagerAction.java:132) - Cheking the AcessPreviliges on Search Button:[true]
+2006-03-16 20:08:31,734 INFO  (ShippingManagerAction.java:77) - Validating The Session
+2006-03-16 20:08:31,734 INFO  (ShippingManagerAction.java:80) - sessionID in Action :12700120060316055458
+2006-03-16 20:08:31,765 INFO  (ShippingManagerAction.java:88) - Cheking the Access Previliges on Shping Manager[true]
+2006-03-16 20:08:31,796 INFO  (ShippingManagerAction.java:97) - this is the CreateAPN :[true]
+2006-03-16 20:08:31,812 INFO  (ShippingManagerAction.java:125) - The Transaction No is:null
+2006-03-16 20:08:31,843 INFO  (ShippingManagerAction.java:132) - Cheking the AcessPreviliges on Search Button:[true]
+2006-03-16 20:08:31,843 INFO  (ShippingManagerAction.java:163) -  DespatchAdvice search option 

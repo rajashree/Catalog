@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="C:/Documents and Settings/Phani Kiran/workspace/ePharma_SW/WEB-INF/lib/activation.jar"/>
+	<classpathentry kind="lib" path="C:/Documents and Settings/Phani Kiran/workspace/ePharma_SW/WEB-INF/lib/avalon-framework-4.2.0.jar"/>
+	<classpathentry kind="lib" path="C:/Documents and Settings/Phani Kiran/workspace/ePharma_SW/WEB-INF/lib/batik-all-1.6.jar"/>
+	<classpathentry kind="lib" path="C:/Documents and Settings/Phani Kiran/workspace/ePharma_SW/WEB-INF/lib/com.efaxdeveloper.util.jar"/>
+	<classpathentry kind="lib" path="C:/Documents and Settings/Phani Kiran/workspace/ePharma_SW/WEB-INF/lib/commons-beanutils.jar"/>
+	<classpathentry kind="lib" path="C:/Documents and Settings/Phani Kiran/workspace/ePharma_SW/WEB-INF/lib/commons-collections.jar"/>
+	<classpathentry kind="lib" path="C:/Documents and Settings/Phani Kiran/workspace/ePharma_SW/WEB-INF/lib/commons-digester.jar"/>
+	<classpathentry kind="lib" path="C:/Documents and Settings/Phani Kiran/workspace/ePharma_SW/WEB-INF/lib/commons-fileupload.jar"/>
+	<classpathentry kind="lib" path="C:/Documents and Settings/Phani Kiran/workspace/ePharma_SW/WEB-INF/lib/commons-io-1.1.jar"/>
+	<classpathentry kind="lib" path="C:/Documents and Settings/Phani Kiran/workspace/ePharma_SW/WEB-INF/lib/commons-lang-2.1.jar"/>
+	<classpathentry kind="lib" path="C:/Documents and Settings/Phani Kiran/workspace/ePharma_SW/WEB-INF/lib/commons-logging.jar"/>
+	<classpathentry kind="lib" path="C:/Documents and Settings/Phani Kiran/workspace/ePharma_SW/WEB-INF/lib/commons-pool-1.2.jar"/>
+	<classpathentry kind="lib" path="C:/Documents and Settings/Phani Kiran/workspace/ePharma_SW/WEB-INF/lib/commons-validator.jar"/>
+	<classpathentry kind="lib" path="C:/Documents and Settings/Phani Kiran/workspace/ePharma_SW/WEB-INF/lib/connector.jar"/>
+	<classpathentry kind="lib" path="C:/Documents and Settings/Phani Kiran/workspace/ePharma_SW/WEB-INF/lib/cos.jar"/>
+	<classpathentry kind="lib" path="C:/Documents and Settings/Phani Kiran/workspace/ePharma_SW/WEB-INF/lib/dom.jar"/>
+	<classpathentry kind="lib" path="C:/Documents and Settings/Phani Kiran/workspace/ePharma_SW/WEB-INF/lib/fop.jar"/>
+	<classpathentry kind="lib" path="C:/Documents and Settings/Phani Kiran/workspace/ePharma_SW/WEB-INF/lib/imap.jar"/>
+	<classpathentry kind="lib" path="C:/Documents and Settings/Phani Kiran/workspace/ePharma_SW/WEB-INF/lib/isorelax.jar"/>
+	<classpathentry kind="lib" path="C:/Documents and Settings/Phani Kiran/workspace/ePharma_SW/WEB-INF/lib/iso-relax.jar"/>
+	<classpathentry kind="lib" path="C:/Documents and Settings/Phani Kiran/workspace/ePharma_SW/WEB-INF/lib/jakarta-oro.jar"/>
+	<classpathentry kind="lib" path="C:/Documents and Settings/Phani Kiran/workspace/ePharma_SW/WEB-INF/lib/jaxen-core.jar"/>
+	<classpathentry kind="lib" path="C:/Documents and Settings/Phani Kiran/workspace/ePharma_SW/WEB-INF/lib/jaxen-dom.jar"/>
+	<classpathentry kind="lib" path="C:/Documents and Settings/Phani Kiran/workspace/ePharma_SW/WEB-INF/lib/jca-connector.jar"/>
+	<classpathentry kind="lib" path="C:/Documents and Settings/Phani Kiran/workspace/ePharma_SW/WEB-INF/lib/jcommon-1.0.0-rc1.jar"/>
+	<classpathentry kind="lib" path="C:/Documents and Settings/Phani Kiran/workspace/ePharma_SW/WEB-INF/lib/jfreechart-1.0.0-rc1.jar"/>
+	<classpathentry kind="lib" path="C:/Documents and Settings/Phani Kiran/workspace/ePharma_SW/WEB-INF/lib/jstl.jar"/>
+	<classpathentry kind="lib" path="C:/Documents and Settings/Phani Kiran/workspace/ePharma_SW/WEB-INF/lib/log4j-1.2.8.jar"/>
+	<classpathentry kind="lib" path="C:/Documents and Settings/Phani Kiran/workspace/ePharma_SW/WEB-INF/lib/mail.jar"/>
+	<classpathentry kind="lib" path="C:/Documents and Settings/Phani Kiran/workspace/ePharma_SW/WEB-INF/lib/mailapi.jar"/>
+	<classpathentry kind="lib" path="C:/Documents and Settings/Phani Kiran/workspace/ePharma_SW/WEB-INF/lib/msbase.jar"/>
+	<classpathentry kind="lib" path="C:/Documents and Settings/Phani Kiran/workspace/ePharma_SW/WEB-INF/lib/mssqlserver.jar"/>
+	<classpathentry kind="lib" path="C:/Documents and Settings/Phani Kiran/workspace/ePharma_SW/WEB-INF/lib/msutil.jar"/>
+	<classpathentry kind="lib" path="C:/Documents and Settings/Phani Kiran/workspace/ePharma_SW/WEB-INF/lib/msv.jar"/>
+	<classpathentry kind="lib" path="C:/Documents and Settings/Phani Kiran/workspace/ePharma_SW/WEB-INF/lib/pop3.jar"/>
+	<classpathentry kind="lib" path="C:/Documents and Settings/Phani Kiran/workspace/ePharma_SW/WEB-INF/lib/saxpath.jar"/>
+	<classpathentry kind="lib" path="C:/Documents and Settings/Phani Kiran/workspace/ePharma_SW/WEB-INF/lib/serializer-2.7.0.jar"/>
+	<classpathentry kind="lib" path="C:/Documents and Settings/Phani Kiran/workspace/ePharma_SW/WEB-INF/lib/servlet-api.jar"/>
+	<classpathentry kind="lib" path="C:/Documents and Settings/Phani Kiran/workspace/ePharma_SW/WEB-INF/lib/smtp.jar"/>
+	<classpathentry kind="lib" path="C:/Documents and Settings/Phani Kiran/workspace/ePharma_SW/WEB-INF/lib/smtpClient.jar"/>
+	<classpathentry kind="lib" path="C:/Documents and Settings/Phani Kiran/workspace/ePharma_SW/WEB-INF/lib/standard.jar"/>
+	<classpathentry kind="lib" path="C:/Documents and Settings/Phani Kiran/workspace/ePharma_SW/WEB-INF/lib/struts.jar"/>
+	<classpathentry kind="lib" path="C:/Documents and Settings/Phani Kiran/workspace/ePharma_SW/WEB-INF/lib/tlapi.jar"/>
+	<classpathentry kind="lib" path="C:/Documents and Settings/Phani Kiran/workspace/ePharma_SW/WEB-INF/lib/tlerror.jar"/>
+	<classpathentry kind="lib" path="C:/Documents and Settings/Phani Kiran/workspace/ePharma_SW/WEB-INF/lib/utility.jar"/>
+	<classpathentry kind="lib" path="C:/Documents and Settings/Phani Kiran/workspace/ePharma_SW/WEB-INF/lib/xalan.jar"/>
+	<classpathentry kind="lib" path="C:/Documents and Settings/Phani Kiran/workspace/ePharma_SW/WEB-INF/lib/xercesImpl.jar"/>
+	<classpathentry kind="lib" path="C:/Documents and Settings/Phani Kiran/workspace/ePharma_SW/WEB-INF/lib/xmlparser.jar"/>
+	<classpathentry kind="lib" path="C:/Documents and Settings/Phani Kiran/workspace/ePharma_SW/WEB-INF/lib/xmlsec-1.2.1.jar"/>
+	<classpathentry kind="lib" path="C:/Documents and Settings/Phani Kiran/workspace/ePharma_SW/WEB-INF/lib/xmltypes.jar"/>
+	<classpathentry kind="output" path="WEB-INF/classes"/>
+</classpath>

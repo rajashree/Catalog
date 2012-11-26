@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PedigreeBank>
+	<InventoryOnHand>
+		<NDC>55513-267-01</NDC>
+		<SWNDC>12334</SWNDC>
+		<TotalInventory>1600</TotalInventory>
+		<LotInfo>
+			<LotNumber>L001</LotNumber>
+			<SWLotNum>L124</SWLotNum>
+			<Quantity>10</Quantity>
+			<ReceivedPedigreeID>R1148032034312A</ReceivedPedigreeID>
+			<LocationID>1</LocationID>
+			<SerialNumber>3999 9929 29929</SerialNumber>
+			<Returned>false</Returned>
+		</LotInfo>
+	</InventoryOnHand>
+</PedigreeBank>

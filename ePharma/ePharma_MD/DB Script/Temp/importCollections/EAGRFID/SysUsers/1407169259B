@@ -1,0 +1,29 @@
+<User>
+	<UserID>23836883706277927282238626987996</UserID>
+	<FirstName>Paul M.</FirstName>
+	<LastName>Dickson</LastName>
+	<UserName>paul</UserName>
+	<Email>PedigreeAdmin@MorrisDickson.com</Email>
+	<Password>paul</Password>
+	<Disable>false</Disable>
+	<Signer>true</Signer>
+	<AccessLevel>
+		<Access>ac22243afaddbf1a:282d90d:109797c2a3b:-80001140223742617</Access>
+		<Access>3fe29258d1efb468:bfd66a:10730185438:-80001130422954516</Access>
+		<Access>3fe29258d1efb468:bfd66a:10730185438:-80001130422954515</Access>
+	</AccessLevel>
+	<UserRole>COO</UserRole>
+	<Phone>318-797-7900</Phone>
+	<Fax>(318)797-7900</Fax>
+	<Keys>
+		<Private>string</Private>
+		<Public>string</Public>
+	</Keys>
+	<BelongsToCompany>Morris and Dickson</BelongsToCompany>
+	<EAG-TimeStamp>
+		<origin-serverID/>
+		<updated-timestamp>2005-10-05T06:02:25</updated-timestamp>
+		<updated-serverID/>
+		<reported>false</reported>
+	</EAG-TimeStamp>
+</User>

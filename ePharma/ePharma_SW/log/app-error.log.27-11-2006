@@ -1,0 +1,94 @@
+2006-11-27 10:50:41,588 INFO  (?:?) - Deatils of Error with TL messages..
+2006-11-27 10:50:41,588 INFO  (?:?) - Error Code :pool-sql-00005
+2006-11-27 10:50:41,588 INFO  (?:?) - Error Message :[pool-sql-00005] - Unable to create an SQL connection from the datasource: [rainingdata][SQLServer JDBC Driver][SQLServer]Login failed for user 'epharma'..
+2006-11-27 10:50:41,588 INFO  (?:?) - Full Message :com.rdta.error.pool.SQLConnectionCreationException: [pool-sql-00005] - Unable to create an SQL connection from the datasource: [rainingdata][SQLServer JDBC Driver][SQLServer]Login failed for user 'epharma'..
+2006-11-27 10:50:41,635 INFO  (?:?) - Definition :pool-sql-00005[]
+2006-11-27 10:55:45,619 INFO  (?:?) - Deatils of Error with TL messages..
+2006-11-27 10:55:45,619 INFO  (?:?) - Error Code :pool-sql-00005
+2006-11-27 10:55:45,619 INFO  (?:?) - Error Message :[pool-sql-00005] - Unable to create an SQL connection from the datasource: [rainingdata][SQLServer JDBC Driver][SQLServer]Login failed for user 'epharma'..
+2006-11-27 10:55:45,619 INFO  (?:?) - Full Message :com.rdta.error.pool.SQLConnectionCreationException: [pool-sql-00005] - Unable to create an SQL connection from the datasource: [rainingdata][SQLServer JDBC Driver][SQLServer]Login failed for user 'epharma'..
+2006-11-27 10:55:45,619 INFO  (?:?) - Definition :pool-sql-00005[]
+2006-11-27 10:57:50,026 INFO  (?:?) - Deatils of Error with TL messages..
+2006-11-27 10:57:50,026 INFO  (?:?) - Error Code :pool-sql-00005
+2006-11-27 10:57:50,026 INFO  (?:?) - Error Message :[pool-sql-00005] - Unable to create an SQL connection from the datasource: [rainingdata][SQLServer JDBC Driver][SQLServer]Login failed for user 'epharma'..
+2006-11-27 10:57:50,026 INFO  (?:?) - Full Message :com.rdta.error.pool.SQLConnectionCreationException: [pool-sql-00005] - Unable to create an SQL connection from the datasource: [rainingdata][SQLServer JDBC Driver][SQLServer]Login failed for user 'epharma'..
+2006-11-27 10:57:50,026 INFO  (?:?) - Definition :pool-sql-00005[]
+2006-11-27 11:07:00,713 INFO  (?:?) - Deatils of Error with TL messages..
+2006-11-27 11:07:00,713 INFO  (?:?) - Error Code :pool-sql-00005
+2006-11-27 11:07:00,713 INFO  (?:?) - Error Message :[pool-sql-00005] - Unable to create an SQL connection from the datasource: [rainingdata][SQLServer JDBC Driver][SQLServer]Cannot open database requested in login 'Pedigree_Interface'. Login fails..
+2006-11-27 11:07:00,713 INFO  (?:?) - Full Message :com.rdta.error.pool.SQLConnectionCreationException: [pool-sql-00005] - Unable to create an SQL connection from the datasource: [rainingdata][SQLServer JDBC Driver][SQLServer]Cannot open database requested in login 'Pedigree_Interface'. Login fails..
+2006-11-27 11:07:00,713 INFO  (?:?) - Definition :pool-sql-00005[]
+2006-11-27 11:33:37,307 INFO  (?:?) - Deatils of Error with TL messages..
+2006-11-27 11:33:37,307 INFO  (?:?) - Error Message :null
+2006-11-27 11:33:37,307 INFO  (?:?) - Stack Trace :class java.lang.ClassCastException
+2006-11-27 11:33:37,307 INFO  (?:?) - Definition :null
+2006-11-27 11:34:46,026 INFO  (?:?) - Deatils of Error with TL messages..
+2006-11-27 11:34:46,026 INFO  (?:?) - Error Message :null
+2006-11-27 11:34:46,026 INFO  (?:?) - Stack Trace :class java.lang.ClassCastException
+2006-11-27 11:34:46,026 INFO  (?:?) - Definition :null
+2006-11-27 11:49:08,869 INFO  (?:?) - Deatils of Error with TL messages..
+2006-11-27 11:49:08,869 INFO  (?:?) - Error Message :java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+2006-11-27 11:49:08,869 INFO  (?:?) - Stack Trace :class java.lang.Exception
+2006-11-27 11:49:08,869 INFO  (?:?) - Definition :null
+2006-11-27 11:54:31,510 INFO  (?:?) - Deatils of Error with TL messages..
+2006-11-27 11:54:31,510 INFO  (?:?) - Error Code :xq-lexx-00003
+2006-11-27 11:54:31,510 INFO  (?:?) - Error Message :[xq-lexx-00003] - Unmatched quote in statement at position [109].
+2006-11-27 11:54:31,510 INFO  (?:?) - Full Message :com.rdta.xquery.language.LexxException: [xq-lexx-00003] - Unmatched quote in statement at position [109].
+2006-11-27 11:54:31,510 INFO  (?:?) - Definition :xq-lexx-00003[]
+2006-11-27 12:02:09,807 INFO  (?:?) - Deatils of Error with TL messages..
+2006-11-27 12:02:09,807 INFO  (?:?) - Error Message :java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+2006-11-27 12:02:09,807 INFO  (?:?) - Stack Trace :class java.lang.Exception
+2006-11-27 12:02:09,807 INFO  (?:?) - Definition :null
+2006-11-27 12:02:40,229 INFO  (?:?) - Deatils of Error with TL messages..
+2006-11-27 12:02:40,229 INFO  (?:?) - Error Message :java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+2006-11-27 12:02:40,229 INFO  (?:?) - Stack Trace :class java.lang.Exception
+2006-11-27 12:02:40,229 INFO  (?:?) - Definition :null
+2006-11-27 12:17:59,323 INFO  (?:?) - Deatils of Error with TL messages..
+2006-11-27 12:17:59,323 INFO  (?:?) - Error Message :java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+2006-11-27 12:17:59,323 INFO  (?:?) - Stack Trace :class java.lang.Exception
+2006-11-27 12:17:59,323 INFO  (?:?) - Definition :null
+2006-11-27 13:22:47,307 INFO  (?:?) - Deatils of Error with TL messages..
+2006-11-27 13:22:47,307 INFO  (?:?) - Error Message :java.lang.NullPointerException
+2006-11-27 13:22:47,307 INFO  (?:?) - Stack Trace :class java.lang.Exception
+2006-11-27 13:22:47,307 INFO  (?:?) - Definition :null
+2006-11-27 13:23:58,791 INFO  (?:?) - Deatils of Error with TL messages..
+2006-11-27 13:23:58,791 INFO  (?:?) - Error Message :java.lang.NullPointerException
+2006-11-27 13:23:58,791 INFO  (?:?) - Stack Trace :class java.lang.Exception
+2006-11-27 13:23:58,791 INFO  (?:?) - Definition :null
+2006-11-27 13:25:43,198 INFO  (?:?) - Deatils of Error with TL messages..
+2006-11-27 13:25:43,198 INFO  (?:?) - Error Message :java.lang.NullPointerException
+2006-11-27 13:25:43,198 INFO  (?:?) - Stack Trace :class java.lang.Exception
+2006-11-27 13:25:43,198 INFO  (?:?) - Definition :null
+2006-11-27 14:21:43,682 INFO  (?:?) - Deatils of Error with TL messages..
+2006-11-27 14:21:43,682 INFO  (?:?) - Error Code :xq-static-00000
+2006-11-27 14:21:43,682 INFO  (?:?) - Error Message :[xq-static-00000] - [TERMINAL] [)] cannot follow [TERMINAL] [,] in this context. Line: [1], Position: [189].
+2006-11-27 14:21:43,682 INFO  (?:?) - Full Message :com.rdta.xquery.language.ParseException: [xq-static-00000] - [TERMINAL] [)] cannot follow [TERMINAL] [,] in this context. Line: [1], Position: [189].
+2006-11-27 14:21:43,760 INFO  (?:?) - Definition :xq-static-00000[]
+2006-11-27 14:53:10,573 INFO  (?:?) - Deatils of Error with TL messages..
+2006-11-27 14:53:10,573 INFO  (?:?) - Error Message :java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+2006-11-27 14:53:10,573 INFO  (?:?) - Stack Trace :class java.lang.Exception
+2006-11-27 14:53:10,573 INFO  (?:?) - Definition :null
+2006-11-27 14:55:21,760 INFO  (?:?) - Deatils of Error with TL messages..
+2006-11-27 14:55:21,760 INFO  (?:?) - Error Message :java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+2006-11-27 14:55:21,760 INFO  (?:?) - Stack Trace :class java.lang.Exception
+2006-11-27 14:55:21,760 INFO  (?:?) - Definition :null
+2006-11-27 15:22:10,494 INFO  (?:?) - Deatils of Error with TL messages..
+2006-11-27 15:22:10,494 INFO  (?:?) - Error Message :java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+2006-11-27 15:22:10,494 INFO  (?:?) - Stack Trace :class java.lang.Exception
+2006-11-27 15:22:10,494 INFO  (?:?) - Definition :null
+2006-11-27 15:22:46,338 INFO  (?:?) - Deatils of Error with TL messages..
+2006-11-27 15:22:46,338 INFO  (?:?) - Error Message :java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+2006-11-27 15:22:46,338 INFO  (?:?) - Stack Trace :class java.lang.Exception
+2006-11-27 15:22:46,338 INFO  (?:?) - Definition :null
+2006-11-27 15:23:23,510 INFO  (?:?) - Deatils of Error with TL messages..
+2006-11-27 15:23:23,510 INFO  (?:?) - Error Message :java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+2006-11-27 15:23:23,510 INFO  (?:?) - Stack Trace :class java.lang.Exception
+2006-11-27 15:23:23,510 INFO  (?:?) - Definition :null
+2006-11-27 15:28:46,151 INFO  (?:?) - Deatils of Error with TL messages..
+2006-11-27 15:28:46,151 INFO  (?:?) - Error Message :null
+2006-11-27 15:28:46,151 INFO  (?:?) - Stack Trace :class java.lang.ClassCastException
+2006-11-27 15:28:46,151 INFO  (?:?) - Definition :null
+2006-11-27 22:09:07,744 INFO  (?:?) - Deatils of Error with TL messages..
+2006-11-27 22:09:07,744 INFO  (?:?) - Error Message :java.lang.NullPointerException
+2006-11-27 22:09:07,744 INFO  (?:?) - Stack Trace :class java.lang.Exception
+2006-11-27 22:09:07,744 INFO  (?:?) - Definition :null

@@ -1,0 +1,11 @@
+tig:drop-stored-procedure("InsertDocForAB"),
+tig:drop-stored-procedure("ndcExists_MD"),
+tig:drop-stored-procedure("ndcExists_MDNew"),
+tig:drop-stored-procedure("BinNumberExists_MD"),
+tig:drop-stored-procedure("InsertPedigreeBankDocForMD"),
+tig:drop-stored-procedure("UpDateTotalInventoryforAB_MD"),
+tig:drop-stored-procedure("insertBinInfoNodetoPedigreeBank_MD"),
+tig:drop-stored-procedure("insertLotInfoForSameBin_MD"),
+tig:drop-stored-procedure("createBinInfoForAB"),
+tig:drop-stored-procedure("createLotInfoForAB"),
+tig:drop-stored-procedure("InsertPedigreeBankAudit")

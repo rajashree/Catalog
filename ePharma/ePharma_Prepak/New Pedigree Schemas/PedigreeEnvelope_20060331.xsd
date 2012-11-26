@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema targetNamespace="urn:epcGlobal:PedigreeEnvelope:xsd:1" xmlns:pedenv="urn:epcGlobal:PedigreeEnvelope:xsd:1" xmlns:ped="urn:epcGlobal:Pedigree:xsd:1" xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:import namespace="urn:epcGlobal:Pedigree:xsd:1" schemaLocation="PedigreeSchema_20060331.xsd"/>
+	<xs:annotation xml:lang="en">
+		<xs:documentation>This schema needs to import the pedigree schema.</xs:documentation>
+	</xs:annotation>
+	<xs:complexType name="BaseExtensibleType">
+		<xs:annotation>
+			<xs:documentation xml:lang="en">base Type that  can be used for extensibility. Extensibility is only allowed in NameSpace ##other ensures that any extensibility in targetNameSpace goes thru normal EPC Global Vetting Process </xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:any namespace="##other" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+		<xs:anyAttribute processContents="lax"/>
+	</xs:complexType>
+	<xs:element name="pedigreeEnvelope">
+		<xs:complexType>
+			<xs:complexContent>
+				<xs:extension base="pedenv:PedigreeEnvelopeType"/>
+			</xs:complexContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:complexType name="PedigreeEnvelopeType">
+		<xs:complexContent>
+			<xs:extension base="pedenv:BaseExtensibleType">
+				<xs:sequence>
+					<xs:element name="version" type="xs:string" minOccurs="0"/>
+					<xs:element name="serialNumber" type="xs:string"/>
+					<xs:element name="date" type="xs:date" minOccurs="0"/>
+					<xs:element name="sourceRoutingCode" type="xs:string" minOccurs="0"/>
+					<xs:element name="destinationRoutingCode" type="xs:string" minOccurs="0"/>
+					<xs:element name="container" type="pedenv:ContainerType" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element ref="ped:pedigree" maxOccurs="unbounded"/>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="ContainerType">
+		<xs:complexContent>
+			<xs:extension base="pedenv:BaseExtensibleType">
+				<xs:sequence>
+					<xs:element name="containerCode" type="xs:string"/>
+					<xs:element name="container" type="pedenv:ContainerType" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element name="shipmentHandle" type="xs:string" minOccurs="0"/>
+					<xs:element name="shipFromLocationCode" type="xs:string" minOccurs="0"/>
+					<xs:element name="shipToLocationCode" type="xs:string" minOccurs="0"/>
+					<xs:element name="pedigreeHandle" type="pedenv:PedigreeHandleType" minOccurs="0" maxOccurs="unbounded"/>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="PedigreeHandleType">
+		<xs:complexContent>
+			<xs:extension base="pedenv:BaseExtensibleType">
+				<xs:sequence>
+					<xs:element name="serialNumber" type="xs:string"/>
+					<xs:element name="itemSerialNumber" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element name="productCode" type="ped:ProductCodeType" minOccurs="0"/>
+					<xs:sequence minOccurs="0" maxOccurs="unbounded">
+						<xs:element name="quantity" type="xs:integer"/>
+						<xs:element name="lot" type="xs:string"/>
+					</xs:sequence>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>	
+</xs:schema>

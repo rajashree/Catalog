@@ -1,0 +1,925 @@
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+         version="3.0">
+
+
+<!--##################DEVASHREE's EXAMPLES#############################-->
+   	<listener>
+		<listener-class>com.sourcen.session.ListenerSession</listener-class>
+	</listener>
+	<filter>
+		<filter-name>logging</filter-name>
+		<filter-class>com.sourcen.filters.LoggingFilter</filter-class>
+		<init-param>
+			<param-name>initparams</param-name>
+			<param-value>First initparam in filters</param-value>
+		</init-param>
+	</filter>
+	<filter>
+		<filter-name>ipfilter</filter-name>
+		<filter-class>com.sourcen.filters.IPFilter</filter-class>
+	</filter>
+
+	<servlet>
+		<servlet-name>listUsers</servlet-name>
+	    <servlet-class>com.sourcen.db.listUsers</servlet-class>
+	    <load-on-startup>-1</load-on-startup>
+  	</servlet>
+	<servlet>
+	    <servlet-name>addUser</servlet-name>
+	    <servlet-class>com.sourcen.db.addUser</servlet-class>
+  	</servlet>
+  	<servlet>
+	    <servlet-name>deleteUser</servlet-name>
+	    <servlet-class>com.sourcen.db.deleteUser</servlet-class>
+  	</servlet>
+  	<servlet>
+  		<servlet-name>simpleCounter</servlet-name>
+  		<servlet-class>com.sourcen.SimpleCounter</servlet-class>
+  	</servlet>
+  	 <servlet>
+  	 	<servlet-name>initParams</servlet-name>
+  		<servlet-class>com.sourcen.InitParams</servlet-class>
+ 		<init-param>
+  			<param-name>firstName</param-name>
+  			<param-value>Devashree</param-value>
+  		</init-param>
+  		<init-param>
+  			<param-name>lastName</param-name>
+  			<param-value>Meganathan</param-value>
+  		</init-param>
+  	</servlet>
+  	<servlet>
+	    <servlet-name>timeUpdater</servlet-name>
+	    <servlet-class>com.sourcen.TimeUpdater</servlet-class>
+  	</servlet>
+  	<servlet>
+	    <servlet-name>sessionData</servlet-name>
+	    <servlet-class>com.sourcen.session.SessionData</servlet-class>
+  	</servlet>
+  	<servlet>
+	    <servlet-name>servletListenerSession</servlet-name>
+	    <servlet-class>com.sourcen.session.ServletListenerSession</servlet-class>
+  	</servlet>
+  	<servlet>
+	    <servlet-name>callIPFilter</servlet-name>
+	    <servlet-class>com.sourcen.filters.CallIPFilter</servlet-class>
+  	</servlet>
+  	<servlet>
+	    <servlet-name>cookies</servlet-name>
+	    <servlet-class>com.sourcen.cookies.Cookies</servlet-class>
+  	</servlet>
+  	<servlet>
+		<servlet-name>xmlServlet</servlet-name>
+		<servlet-class>com.sourcen.XmlServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>csvServlet</servlet-name>
+		<servlet-class>com.sourcen.CsvFile</servlet-class>
+	</servlet>
+	<servlet>
+     <servlet-name>image</servlet-name>
+     <servlet-class>com.sourcen.Image</servlet-class>
+   </servlet>
+
+	<filter-mapping>
+  		<filter-name>logging</filter-name>
+  		<url-pattern>/jsp/logging.jsp</url-pattern>
+  	</filter-mapping>
+  	<filter-mapping>
+  		<filter-name>ipfilter</filter-name>
+  		<url-pattern>/callIPFilter</url-pattern>
+  	</filter-mapping>
+
+  	<servlet-mapping>
+	    <servlet-name>listUsers</servlet-name>
+	    <url-pattern>/listUsers</url-pattern>
+  	</servlet-mapping>
+	<servlet-mapping>
+	    <servlet-name>addUser</servlet-name>
+	    <url-pattern>/addUser</url-pattern>
+  	</servlet-mapping>
+  	<servlet-mapping>
+	    <servlet-name>deleteUser</servlet-name>
+	    <url-pattern>/deleteUser</url-pattern>
+  	</servlet-mapping>
+  	<servlet-mapping>
+  		<servlet-name>simpleCounter</servlet-name>
+  		<url-pattern>/simpleCounter</url-pattern>
+  	</servlet-mapping>
+  	<servlet-mapping>
+  		<servlet-name>initParams</servlet-name>
+  		<url-pattern>/initParams</url-pattern>
+  	</servlet-mapping>
+  	<servlet-mapping>
+  		<servlet-name>timeUpdater</servlet-name>
+  		<url-pattern>/timeUpdater</url-pattern>
+  	</servlet-mapping>
+  	<servlet-mapping>
+  		<servlet-name>sessionData</servlet-name>
+  		<url-pattern>/sessionData</url-pattern>
+  	</servlet-mapping>
+  	<servlet-mapping>
+  		<servlet-name>servletListenerSession</servlet-name>
+  		<url-pattern>/servletListenerSession</url-pattern>
+  	</servlet-mapping>
+  	<servlet-mapping>
+  		<servlet-name>callIPFilter</servlet-name>
+  		<url-pattern>/callIPFilter</url-pattern>
+  	</servlet-mapping>
+  	<servlet-mapping>
+  		<servlet-name>cookies</servlet-name>
+  		<url-pattern>/cookies</url-pattern>
+  	</servlet-mapping>
+  	<servlet-mapping>
+		<servlet-name>xmlServlet</servlet-name>
+		<url-pattern>/xmlServlet</url-pattern>
+	</servlet-mapping>
+  	<servlet-mapping>
+		<servlet-name>csvServlet</servlet-name>
+		<url-pattern>/csvServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+    <servlet-name>image</servlet-name>
+    <url-pattern>/image</url-pattern>
+   </servlet-mapping>
+
+
+  	<servlet>
+		<servlet-name>ListUsers</servlet-name>
+		<servlet-class>com.sourcen.users.ListUsers</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ListUsers</servlet-name>
+		<url-pattern>/ListUsers</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>RemoveUser</servlet-name>
+		<servlet-class>com.sourcen.users.RemoveUser</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>RemoveUser</servlet-name>
+		<url-pattern>/RemoveUser</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>AddUser</servlet-name>
+		<servlet-class>com.sourcen.users.AddUser</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AddUser</servlet-name>
+		<url-pattern>/AddUser</url-pattern>
+	</servlet-mapping>
+
+
+    <!--##################DEVASHREE's EXAMPLES#############################-->
+
+
+	<!--Description : HelloWorld4 class prints Hello World  on the screen -->
+	<!--Execution : /HelloWorldExample4 in the url-->
+	<servlet>
+        <servlet-name>HelloWorldExample4</servlet-name>
+        <servlet-class>com.servlets.HelloWorld4</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>HelloWorldExample4</servlet-name>
+        <url-pattern>/HelloWorldExample4</url-pattern>
+    </servlet-mapping>
+
+
+	<!--Description : RequestInfo5 class prints the request information by calling methods available for request object-->
+	<!--Execution : /RequestInfoExample5 in the url-->
+	<servlet>
+        <servlet-name>RequestInfoExample5</servlet-name>
+        <servlet-class>com.servlets.RequestInfo5</servlet-class>
+    </servlet>
+	<servlet-mapping>
+        <servlet-name>RequestInfoExample5</servlet-name>
+        <url-pattern>/RequestInfoExample5</url-pattern>
+    </servlet-mapping>
+
+
+	<!--Description : RequestHeader6 class prints HeaderNames along with their values obtained using request.getHeaderNames() method on the screen -->
+	<!--Execution : /RequestHeaderExample in the url-->
+	<servlet>
+        <servlet-name>RequestHeaderExample</servlet-name>
+        <servlet-class>com.servlets.RequestHeader6</servlet-class>
+    </servlet>
+	<servlet-mapping>
+        <servlet-name>RequestHeaderExample</servlet-name>
+        <url-pattern>/RequestHeaderExample</url-pattern>
+    </servlet-mapping>
+
+
+	<!--Description : RequestParamExample8 class obtains the values(firstname and lastname) in the request object and prints them on the screen -->
+	<!--Execution : /RequestParamExample in the url-->
+	<servlet>
+        <servlet-name>RequestParamExample</servlet-name>
+        <servlet-class>com.servlets.RequestParamExample8</servlet-class>
+    </servlet>
+	<servlet-mapping>
+        <servlet-name>RequestParamExample</servlet-name>
+        <url-pattern>/RequestParamExample</url-pattern>
+    </servlet-mapping>
+
+
+	<!--Description : CookieExample7 class prints prints the cookies in the request object to the screen, provides screen to send cookies  -->
+	<!--Execution : /CookieExample in the url-->
+	<servlet>
+        <servlet-name>CookieExample</servlet-name>
+        <servlet-class>com.servlets.CookieExample7</servlet-class>
+    </servlet>
+	<servlet-mapping>
+        <servlet-name>CookieExample</servlet-name>
+        <url-pattern>/CookieExample</url-pattern>
+    </servlet-mapping>
+
+
+    <!--Description : SessionExample9 class gets value from session object, based on post method, get method, url encoded method  and prints them on the screen -->
+	<!--Execution : /SessionExample in the url-->
+	<servlet>
+        <servlet-name>SessionExample</servlet-name>
+        <servlet-class>com.servlets.SessionExample9</servlet-class>
+    </servlet>
+	<servlet-mapping>
+        <servlet-name>SessionExample</servlet-name>
+        <url-pattern>/SessionExample</url-pattern>
+    </servlet-mapping>
+
+
+	<!--Description : DeviFirst2 class prints first Servlet Program  on the screen -->
+	<!--Execution : /DeviFirst2 in the url-->
+	<servlet>
+        <servlet-name>DeviFirst2</servlet-name>
+        <servlet-class>com.servlets.DeviFirst2</servlet-class>
+    </servlet>
+	<servlet-mapping>
+        <servlet-name>DeviFirst2</servlet-name>
+        <url-pattern>/DeviFirst2</url-pattern>
+    </servlet-mapping>
+
+
+	<!--Description : DeviSecond3 class fetches name and password from the html, check if it is test and test and prints valid or invalid on the screen -->
+	<!--Execution : /Login3.html in the url-->
+	<servlet>
+		<servlet-name>DeviSecond</servlet-name>
+		<servlet-class>com.servlets.DeviSecond3</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DeviSecond</servlet-name>
+		<url-pattern>/DeviSecond</url-pattern>
+	</servlet-mapping>
+
+
+	<!--Description : First1 class gets name and color from the html and puts them in the session object -->
+	<!--Execution : /Html1.html in the url-->
+	<servlet>
+		<servlet-name>First1</servlet-name>
+		<servlet-class>com.servlets.First1</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>First1</servlet-name>
+		<url-pattern>/First1</url-pattern>
+	</servlet-mapping>
+
+
+	<!--Description : Second1 class obtains the name from session object and prints them on the screen -->
+	<!--Execution : Related to Previous-->
+	<servlet>
+		<servlet-name>Second1</servlet-name>
+		<servlet-class>com.servlets.Second1</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Second1</servlet-name>
+		<url-pattern>/Second1</url-pattern>
+	</servlet-mapping>
+
+
+	<!--Description : Third1 class obtains the color from the session object and prints the color on the screen -->
+	<!--Execution : Related to Previous-->
+	<servlet>
+		<servlet-name>Third1</servlet-name>
+		<servlet-class>com.servlets.Third1</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Third1</servlet-name>
+		<url-pattern>/Third1</url-pattern>
+	</servlet-mapping>
+
+
+	<!--Description : servlet_config10 class obtains the value of raj from init param and prints on the screen -->
+	<!--Execution : /servletconfig10.html in the url-->
+	<servlet>
+		<servlet-name>servlet_config</servlet-name>
+		<servlet-class>com.servlets.servlet_config10</servlet-class>
+
+			<init-param>
+                <param-name> raj </param-name>
+                <param-value> Value Of Raj is Rajashree </param-value>
+            </init-param>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>servlet_config</servlet-name>
+		<url-pattern>/servlet_config</url-pattern>
+	</servlet-mapping>
+
+
+	<!--Doesnot work as expected.. image -->
+	<!--Description : Redirect11 class redirects to result.jsp that prints the value of name and pwd on the screen -->
+	<!--Execution : /Redirect11 in the url-->
+	<servlet>
+		<servlet-name>Redirect11</servlet-name>
+		<servlet-class>com.servlets.Redirect11</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Redirect11</servlet-name>
+		<url-pattern>/Redirect11</url-pattern>
+	</servlet-mapping>
+
+
+	<!--Description : Hidden12 class calls second12.jsp by passing values using hidden parameter -->
+	<!--Execution : /Home12.html in the url-->
+	<servlet>
+		<servlet-name>Hidden12</servlet-name>
+		<servlet-class>com.servlets.Hidden12</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Hidden12</servlet-name>
+		<url-pattern>/Hidden12</url-pattern>
+	</servlet-mapping>
+
+
+	<!--Description : Shows how to use req.getRequestDispatcher-->
+	<!--Execution : /ReqDispatcher13.html in the url-->
+	<servlet>
+		<servlet-name>Reqdispatcher13</servlet-name>
+		<servlet-class>com.servlets.Reqdispatcher13</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Reqdispatcher13</servlet-name>
+		<url-pattern>/Reqdispatcher13</url-pattern>
+	</servlet-mapping>
+
+
+	<!--Description : -->
+	<!--Execution : Related to Previous one-->
+	<servlet>
+		<servlet-name>url113</servlet-name>
+		<servlet-class>com.servlets.url113</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>url113</servlet-name>
+		<url-pattern>/url113</url-pattern>
+	</servlet-mapping>
+
+
+	<!--Description :  -->
+	<!--Execution : Related to Previous one-->
+	<servlet>
+		<servlet-name>url213</servlet-name>
+		<servlet-class>com.servlets.url213</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>url213</servlet-name>
+		<url-pattern>/url213</url-pattern>
+	</servlet-mapping>
+
+
+	<!--Description :  -->
+	<!--Execution : RElated to Previous one-->
+	<servlet>
+		<servlet-name>url313</servlet-name>
+		<servlet-class>com.servlets.url313</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>url313</servlet-name>
+		<url-pattern>/url313</url-pattern>
+	</servlet-mapping>
+
+
+	<!--Description : -->
+	<!--Execution : /Color14.html in the url-->
+	<servlet>
+		<servlet-name>color14</servlet-name>
+		<servlet-class>com.servlets.color14</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>color14</servlet-name>
+		<url-pattern>/color14</url-pattern>
+	</servlet-mapping>
+
+
+	<!--Description :  -->
+	<!--Execution : Related to Previous one-->
+	<servlet>
+		<servlet-name>one14</servlet-name>
+		<servlet-class>com.servlets.one14</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>one14</servlet-name>
+		<url-pattern>/one14</url-pattern>
+	</servlet-mapping>
+
+
+	<!--Description : HelloWorld4 class prints Hello World  on the screen -->
+	<!--Execution : /-->
+	<servlet>
+		<servlet-name>Age15</servlet-name>
+		<servlet-class>com.servlets.Age15</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Age15</servlet-name>
+		<url-pattern>/Age15</url-pattern>
+	</servlet-mapping>
+
+	<!--Description : HelloWorld4 class prints Hello World  on the screen -->
+	<!--Execution : /HelloWorldExample4 in the url-->
+	<servlet>
+		<servlet-name>Young15</servlet-name>
+		<servlet-class>com.servlets.Young15</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Young15</servlet-name>
+		<url-pattern>/Young15</url-pattern>
+	</servlet-mapping>
+
+
+	<!--Description : HelloWorld4 class prints Hello World  on the screen -->
+	<!--Execution : /HelloWorldExample4 in the url-->
+	<servlet>
+		<servlet-name>Old15</servlet-name>
+		<servlet-class>com.servlets.Old15</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Old15</servlet-name>
+		<url-pattern>/Old15</url-pattern>
+	</servlet-mapping>
+
+
+	<!--Description : HelloWorld4 class prints Hello World  on the screen -->
+	<!--Execution : /HelloWorldExample4 in the url-->
+	<servlet>
+		<servlet-name>Ch1_Hello</servlet-name>
+		<servlet-class>com.servlets.Ch1_Hello</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Ch1_Hello</servlet-name>
+		<url-pattern>/Ch1_Hello</url-pattern>
+	</servlet-mapping>
+
+
+	<!--Description : HelloWorld4 class prints Hello World  on the screen -->
+	<!--Execution : /HelloWorldExample4 in the url-->
+	<servlet>
+		<servlet-name>Ch3_a_SimpleCounter</servlet-name>
+		<servlet-class>com.servlets.Ch3_a_SimpleCounter</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Ch3_a_SimpleCounter</servlet-name>
+		<url-pattern>/Ch3_a_SimpleCounter</url-pattern>
+	</servlet-mapping>
+
+
+	<!--Description : HelloWorld4 class prints Hello World  on the screen -->
+	<!--Execution : /HelloWorldExample4 in the url-->
+	<servlet>
+        <servlet-name>
+            Ch3_b_InitCounter
+        </servlet-name>
+        <servlet-class>
+           com.servlets.Ch3_b_InitCounter
+        </servlet-class>
+        <init-param>
+            <param-name>
+                initial
+            </param-name>
+            <param-value>
+                1000
+            </param-value>
+        </init-param>
+    </servlet>
+	<servlet-mapping>
+		<servlet-name>Ch3_b_InitCounter</servlet-name>
+		<url-pattern>/Ch3_b_InitCounter</url-pattern>
+	</servlet-mapping>
+
+
+    <!--Description : HelloWorld4 class prints Hello World  on the screen -->
+	<!--Execution : /HelloWorldExample4 in the url-->
+	<servlet>
+        <servlet-name>
+            Ch3_c_HolisticCounter
+        </servlet-name>
+        <servlet-class>
+           com.servlets.Ch3_c_HolisticCounter
+        </servlet-class>
+     </servlet>
+	<servlet-mapping>
+		<servlet-name>Ch3_c_HolisticCounter</servlet-name>
+		<url-pattern>/Ch3_c_HolisticCounter</url-pattern>
+	</servlet-mapping>
+
+
+	<!--Description : HelloWorld4 class prints Hello World  on the screen -->
+	<!--Execution : /HelloWorldExample4 in the url-->
+	<servlet>
+        <servlet-name>
+            Ch3_d_InitDestroyCounter
+        </servlet-name>
+        <servlet-class>
+           com.servlets.Ch3_d_InitDestroyCounter
+        </servlet-class>
+    </servlet>
+	<servlet-mapping>
+		<servlet-name>Ch3_d_InitDestroyCounter</servlet-name>
+		<url-pattern>/Ch3_d_InitDestroyCounter</url-pattern>
+	</servlet-mapping>
+
+
+	<!--Description : HelloWorld4 class prints Hello World  on the screen -->
+	<!--Execution : /HelloWorldExample4 in the url-->
+	<servlet>
+        <servlet-name>
+            Ch3_e_PrimeSearcher
+        </servlet-name>
+        <servlet-class>
+            com.servlets.Ch3_e_PrimeSearcher
+        </servlet-class>
+    </servlet>
+	<servlet-mapping>
+		<servlet-name>Ch3_e_PrimeSearcher</servlet-name>
+		<url-pattern>/Ch3_e_PrimeSearcher</url-pattern>
+	</servlet-mapping>
+
+
+	<!--Description : HelloWorld4 class prints Hello World  on the screen -->
+	<!--Execution : /HelloWorldExample4 in the url-->
+	<servlet>
+        <servlet-name>
+            Ch3_f_GuestBook
+        </servlet-name>
+        <servlet-class>
+            com.servlets.Ch3_f_GuestBook
+        </servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Ch3_f_GuestBook</servlet-name>
+		<url-pattern>/Ch3_f_GuestBook</url-pattern>
+	</servlet-mapping>
+
+
+	<!--Description : HelloWorld4 class prints Hello World  on the screen -->
+	<!--Execution : /HelloWorldExample4 in the url-->
+	<servlet>
+        <servlet-name>Ch4_a_HeaderSnoop</servlet-name>
+        <servlet-class>com.servlets.Ch4_a_HeaderSnoop</servlet-class>
+    </servlet>
+	<servlet-mapping>
+		<servlet-name>Ch4_a_HeaderSnoop</servlet-name>
+		<url-pattern>/Ch4_a_HeaderSnoop</url-pattern>
+	</servlet-mapping>
+
+
+	<!--Description : HelloWorld4 class prints Hello World  on the screen -->
+	<!--Execution : /HelloWorldExample4 in the url-->
+	<servlet>
+        <servlet-name>Ch4_b_InitSnoop</servlet-name>
+        <servlet-class>com.servlets.Ch4_b_InitSnoop</servlet-class>
+		<init-param>
+                <param-name> raj </param-name>
+                <param-value> Value Of Raj is Rajashree </param-value>
+            </init-param>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Ch4_b_InitSnoop</servlet-name>
+		<url-pattern>/Ch4_b_InitSnoop</url-pattern>
+	</servlet-mapping>
+
+
+	<!--Description : HelloWorld4 class prints Hello World  on the screen -->
+	<!--Execution : /HelloWorldExample4 in the url-->
+	<servlet>
+        <servlet-name>Ch4_c_ServerSnoop</servlet-name>
+        <servlet-class>com.servlets.Ch4_c_ServerSnoop</servlet-class>
+    </servlet>
+	<servlet-mapping>
+		<servlet-name>Ch4_c_ServerSnoop</servlet-name>
+		<url-pattern>/Ch4_c_ServerSnoop</url-pattern>
+	</servlet-mapping>
+
+
+	<!--Description : HelloWorld4 class prints Hello World  on the screen -->
+	<!--Execution : /HelloWorldExample4 in the url-->
+	<servlet>
+        <servlet-name>Ch4_e_ParameterSnoop</servlet-name>
+        <servlet-class>com.servlets.Ch4_e_ParameterSnoop</servlet-class>
+    </servlet>
+	<servlet-mapping>
+		<servlet-name>Ch4_e_ParameterSnoop</servlet-name>
+		<url-pattern>/Ch4_e_ParameterSnoop</url-pattern>
+	</servlet-mapping>
+
+
+	<!--Description : HelloWorld4 class prints Hello World  on the screen -->
+	<!--Execution : /HelloWorldExample4 in the url-->
+	<servlet>
+        <servlet-name>Ch4_e_QueryString</servlet-name>
+        <servlet-class>com.servlets.Ch4_e_QueryString</servlet-class>
+    </servlet>
+	<servlet-mapping>
+		<servlet-name>Ch4_e_QueryString</servlet-name>
+		<url-pattern>/Ch4_e_QueryString</url-pattern>
+	</servlet-mapping>
+
+
+	<!--Description : HelloWorld4 class prints Hello World  on the screen -->
+	<!--Execution : /HelloWorldExample4 in the url-->
+	<servlet>
+        <servlet-name>Ch4_f_PersonalizedWelcome</servlet-name>
+        <servlet-class>com.servlets.Ch4_f_PersonalizedWelcome</servlet-class>
+    </servlet>
+	<servlet-mapping>
+		<servlet-name>Ch4_f_PersonalizedWelcome</servlet-name>
+		<url-pattern>/Ch4_f_PersonalizedWelcome</url-pattern>
+	</servlet-mapping>
+
+
+	<!--Description : HelloWorld4 class prints Hello World  on the screen -->
+	<!--Execution : /HelloWorldExample4 in the url-->
+	<servlet>
+        <servlet-name>Ch5_a_KeepAlive</servlet-name>
+        <servlet-class>com.servlets.Ch5_a_KeepAlive</servlet-class>
+    </servlet>
+	<servlet-mapping>
+		<servlet-name>Ch5_a_KeepAlive</servlet-name>
+		<url-pattern>/Ch5_a_KeepAlive</url-pattern>
+	</servlet-mapping>
+
+
+	 <!--Description : HelloWorld4 class prints Hello World  on the screen -->
+	<!--Execution : /HelloWorldExample4 in the url-->
+	<servlet>
+        <servlet-name>MysqlPrg1a</servlet-name>
+        <servlet-class>com.servlets.MysqlPrg1a</servlet-class>
+     </servlet>
+	 <servlet-mapping>
+        <servlet-name>MysqlPrg1a</servlet-name>
+        <url-pattern>/MysqlPrg1a</url-pattern>
+    </servlet-mapping>
+
+
+	 <!--Description : HelloWorld4 class prints Hello World  on the screen -->
+	<!--Execution : /HelloWorldExample4 in the url-->
+	<servlet>
+        <servlet-name>MysqlPrg1b</servlet-name>
+        <servlet-class>com.servlets.MysqlPrg1b</servlet-class>
+     </servlet>
+	 <servlet-mapping>
+        <servlet-name>MysqlPrg1b</servlet-name>
+        <url-pattern>/MysqlPrg1b</url-pattern>
+     </servlet-mapping>
+
+
+
+	<!--Description : HelloWorld4 class prints Hello World  on the screen -->
+	<!--Execution : /HelloWorldExample4 in the url-->
+	<servlet>
+        <servlet-name>MysqlPrg2</servlet-name>
+        <servlet-class>com.servlets.MysqlPrg2</servlet-class>
+    </servlet>
+	<servlet-mapping>
+        <servlet-name>MysqlPrg2</servlet-name>
+        <url-pattern>/MysqlPrg2</url-pattern>
+    </servlet-mapping>
+
+
+	<!--Description : HelloWorld4 class prints Hello World  on the screen -->
+	<!--Execution : /HelloWorldExample4 in the url-->
+	<servlet>
+        <servlet-name>MysqlPrg3</servlet-name>
+        <servlet-class>com.servlets.MysqlPrg3</servlet-class>
+			<init-param>
+                <param-name>DriverClassName</param-name>
+                <param-value>com.mysql.jdbc.Driver</param-value>
+            </init-param>
+    </servlet>
+	<servlet-mapping>
+        <servlet-name>MysqlPrg3</servlet-name>
+        <url-pattern>/MysqlPrg3</url-pattern>
+    </servlet-mapping>
+
+	<!--Description : HelloWorld4 class prints Hello World  on the screen -->
+	<!--Execution : /HelloWorldExample4 in the url-->
+	<servlet>
+        <servlet-name>CookieServlet16</servlet-name>
+        <servlet-class>com.servlets.CookieServlet16</servlet-class>
+	</servlet>
+	<servlet-mapping>
+        <servlet-name>CookieServlet16</servlet-name>
+        <url-pattern>/CookieServlet16</url-pattern>
+    </servlet-mapping>
+
+
+	 <!--Description : HelloWorld4 class prints Hello World  on the screen -->
+	<!--Execution : /HelloWorldExample4 in the url-->
+	<servlet>
+        <servlet-name>MysqlPrg4</servlet-name>
+        <servlet-class>com.servlets.MysqlPrg4</servlet-class>
+	</servlet>
+	<servlet-mapping>
+        <servlet-name>MysqlPrg4</servlet-name>
+        <url-pattern>/MysqlPrg4</url-pattern>
+    </servlet-mapping>
+
+
+	 <!--Description : HelloWorld4 class prints Hello World  on the screen -->
+	<!--Execution : /HelloWorldExample4 in the url-->
+	<servlet>
+        <servlet-name>MysqlPrg4a</servlet-name>
+        <servlet-class>com.servlets.MysqlPrg4a</servlet-class>
+	</servlet>
+	<servlet-mapping>
+        <servlet-name>MysqlPrg4a</servlet-name>
+        <url-pattern>/MysqlPrg4a</url-pattern>
+    </servlet-mapping>
+
+
+	<!--Description : HelloWorld4 class prints Hello World  on the screen -->
+	<!--Execution : /HelloWorldExample4 in the url-->
+	<servlet>
+        <servlet-name>Sample17</servlet-name>
+        <servlet-class>com.servlets.Sample17</servlet-class>
+	</servlet>
+	<servlet-mapping>
+        <servlet-name>Sample17</servlet-name>
+        <url-pattern>/Sample17</url-pattern>
+    </servlet-mapping>
+
+
+	<!--Description : HelloWorld4 class prints Hello World  on the screen -->
+	<!--Execution : /HelloWorldExample4 in the url-->
+	<servlet>
+        <servlet-name>MysqlPrg5_einsert</servlet-name>
+        <servlet-class>com.servlets.MysqlPrg5a_empinsert</servlet-class>
+    </servlet>
+	<servlet-mapping>
+              <servlet-name>MysqlPrg5_einsert</servlet-name>
+              <url-pattern>/MysqlPrg5_einsert</url-pattern>
+    </servlet-mapping>
+
+
+    <!--Description : HelloWorld4 class prints Hello World  on the screen -->
+	<!--Execution : /HelloWorldExample4 in the url-->
+	<servlet>
+              <servlet-name>MysqlPrg5_edelete</servlet-name>
+              <servlet-class>com.servlets.MysqlPrg5b_empdelete</servlet-class>
+    </servlet>
+	<servlet-mapping>
+              <servlet-name>MysqlPrg5_edelete</servlet-name>
+              <url-pattern>/MysqlPrg5_edelete</url-pattern>
+    </servlet-mapping>
+
+    <!--Description : HelloWorld4 class prints Hello World  on the screen -->
+	<!--Execution : /HelloWorldExample4 in the url-->
+	<servlet>
+         <servlet-name>MysqlPrg5_eupdate</servlet-name>
+         <servlet-class>com.servlets.MysqlPrg5d_empupdate</servlet-class>
+    </servlet>
+	<servlet-mapping>
+         <servlet-name>MysqlPrg5_eupdate</servlet-name>
+         <url-pattern>/MysqlPrg5_eupdate</url-pattern>
+    </servlet-mapping>
+
+
+    <!--Description : HelloWorld4 class prints Hello World  on the screen -->
+	<!--Execution : /HelloWorldExample4 in the url-->
+	<servlet>
+        <servlet-name>MysqlPrg5_edisplay</servlet-name>
+        <servlet-class>com.servlets.MysqlPrg5c_empdisplay</servlet-class>
+    </servlet>
+    <servlet-mapping>
+              <servlet-name>MysqlPrg5_edisplay</servlet-name>
+              <url-pattern>/MysqlPrg5_edisplay</url-pattern>
+    </servlet-mapping>
+
+
+
+	<!--Description : HelloWorld4 class prints Hello World  on the screen -->
+	<!--Execution : /HelloWorldExample4 in the url-->
+	<servlet>
+              <servlet-name>MysqlPrg6a</servlet-name>
+              <servlet-class>com.servlets.MysqlPrg6a</servlet-class>
+    </servlet>
+	<servlet-mapping>
+			<servlet-name>MysqlPrg6a</servlet-name>
+			<url-pattern>/MysqlPrg6a</url-pattern>
+	</servlet-mapping>
+
+
+	<!--Description : HelloWorld4 class prints Hello World  on the screen -->
+	<!--Execution : /HelloWorldExample4 in the url-->
+	<servlet>
+              <servlet-name>MysqlPrg6b</servlet-name>
+              <servlet-class>com.servlets.MysqlPrg6b</servlet-class>
+    </servlet>
+	<servlet-mapping>
+			<servlet-name>MysqlPrg6b</servlet-name>
+			<url-pattern>/MysqlPrg6b</url-pattern>
+	</servlet-mapping>
+
+
+	<!--Description : HelloWorld4 class prints Hello World  on the screen -->
+	<!--Execution : /HelloWorldExample4 in the url-->
+	<servlet>
+              <servlet-name>MysqlPrg6c</servlet-name>
+              <servlet-class>com.servlets.MysqlPrg6c</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+		    <servlet-name>MysqlPrg6c</servlet-name>
+			<url-pattern>/MysqlPrg6c</url-pattern>
+	</servlet-mapping>
+
+
+	<!--Description : HelloWorld4 class prints Hello World  on the screen -->
+	<!--Execution : /HelloWorldExample4 in the url-->
+	<servlet>
+              <servlet-name>MysqlPrg7a</servlet-name>
+              <servlet-class>com.servlets.MysqlPrg7a</servlet-class>
+    </servlet>
+	<servlet-mapping>
+		    <servlet-name>MysqlPrg7a</servlet-name>
+			<url-pattern>/MysqlPrg7a</url-pattern>
+	</servlet-mapping>
+
+
+	<!--Description : HelloWorld4 class prints Hello World  on the screen -->
+	<!--Execution : /HelloWorldExample4 in the url-->
+	<servlet>
+              <servlet-name>MysqlPrg7b</servlet-name>
+              <servlet-class>com.servlets.MysqlPrg7b</servlet-class>
+    </servlet>
+	<servlet-mapping>
+		    <servlet-name>MysqlPrg7b</servlet-name>
+			<url-pattern>/MysqlPrg7b</url-pattern>
+	</servlet-mapping>
+
+
+	<!--Description : HelloWorld4 class prints Hello World  on the screen -->
+	<!--Execution : /HelloWorldExample4 in the url-->
+	<servlet>
+              <servlet-name>MysqlPrg7c</servlet-name>
+              <servlet-class>com.servlets.MysqlPrg7c</servlet-class>
+    </servlet>
+	<servlet-mapping>
+		    <servlet-name>MysqlPrg7c</servlet-name>
+			<url-pattern>/MysqlPrg7c</url-pattern>
+	</servlet-mapping>
+
+
+	<!--Description : HelloWorld4 class prints Hello World  on the screen -->
+	<!--Execution : /HelloWorldExample4 in the url-->
+	<servlet>
+              <servlet-name>MysqlPrg7d</servlet-name>
+              <servlet-class>com.servlets.MysqlPrg7d</servlet-class>
+    </servlet>
+	<servlet-mapping>
+		    <servlet-name>MysqlPrg7d</servlet-name>
+			<url-pattern>/MysqlPrg7d</url-pattern>
+	</servlet-mapping>
+
+
+	<!--Description : HelloWorld4 class prints Hello World  on the screen -->
+	<!--Execution : /HelloWorldExample4 in the url-->
+	<servlet>
+              <servlet-name>MysqlPrg7e</servlet-name>
+              <servlet-class>com.servlets.MysqlPrg7e</servlet-class>
+    </servlet>
+	<servlet-mapping>
+		    <servlet-name>MysqlPrg7e</servlet-name>
+			<url-pattern>/MysqlPrg7e</url-pattern>
+	</servlet-mapping>
+
+
+	<!--Description : GMap Servlet -->
+	<!--Execution : /GMapServlet in the url-->
+	<servlet>
+              <servlet-name>GMapServlet</servlet-name>
+              <servlet-class>com.servlets.GMapServlet</servlet-class>
+    </servlet>
+	<servlet-mapping>
+		    <servlet-name>GMapServlet</servlet-name>
+			<url-pattern>/GMapServlet</url-pattern>
+	</servlet-mapping>
+
+
+
+
+	<context-param>
+           <param-name>driverclassname</param-name>
+           <param-value>com.mysql.jdbc.Driver</param-value>
+    </context-param>
+	<listener>
+         <listener-class>com.servlets.MysqlPrg1c</listener-class>
+    </listener>
+</web-app>

@@ -1,0 +1,133 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<TITLE>R & D - eList</TITLE>
+<HEAD>
+<SCRIPT>
+	function redirect() {
+		window.location = 'ManageCategories.jsp?sessionID=172164010320050805060140&catalogID=20050803095244';
+	}
+	
+</SCRIPT>
+</HEAD>
+<body>
+	<table align="center" border="1" cellspacing="1" cellpadding="1" bgColor="459EBE" width="90%">
+		<tr bgcolor="white">
+			<td colspan="5">
+				<table align="center" border="0" ID="Table2">
+					<tr>
+						<td align="center"><IMG alt="" src="IMG/CHR.gif"></td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		<tr bgcolor="white">
+			<td align="center"><FONT face="Arial" color="#cc0033" size="2"><STRONG>Selected Attribute</STRONG></FONT></td>
+			<td align="center"><FONT face="Arial" color="#cc0033" size="2"><STRONG>New Attribute</STRONG></FONT></td>
+		</tr>
+		<tr bgcolor="D3E5ED">
+			<td>
+				<br><form action="UpdateCategory.jsp" method="post" target="_top" OnSubmit="redirect();">
+					<input type="hidden" name="catalogID" value="20050803095244">
+					<input type="hidden" name="sessionID" value="172164010320050805060140">
+					<input type="hidden" name="categoryID" value="">
+					<table border=0 align=center>
+						<tr>
+							<td colspan=2><b>Selected Category - Summary</b></td>
+						</tr>
+						<tr><td colspan=2>SELECT CATEGORY</td></tr>
+						
+					</table>
+				</form>
+			</td>
+			
+			<td>
+				<br><form action="SaveCategory.jsp" method="post" target="_top" OnSubmit="redirect();">
+					<input type="hidden" name="categoryID" value="">
+					<input type="hidden" name="catalogID" value="20050803095244">
+					<input type="hidden" name="sessionID" value="172164010320050805060140">
+					<table border=0 align=center>
+						<tr>
+							<td>Topic Name:</td><td><input type="text" name="name" value="" size='30'></td>
+						</tr>
+						<tr>
+							<td>Topic Type:</td><td><select name="topicType">
+									<option value="root" selected>Root</option>
+									<option value="element">Element</option>
+							</td>
+						</tr>
+						<tr>
+							<td colspan=2 align=center><input type="submit" value="Submit"></td>
+						</tr>
+					</table>
+				</form>
+			</td>
+			
+		</tr>
+		
+		<TR bgcolor="D3E5ED">
+			<TD align="center" colspan=2 align=center><br>
+			<form action="Main.jsp" method="post" target="_top"><input type="hidden" name="sessionID" value="172164010320050805060140">
+			<input type="submit" value=" Home "></form></TD>
+		</TR>
+	</table>
+	
+	<br>
+		<CENTER>	
+		<A HREF="http://rainingdata.com/products/tl/index.html" target="_new"><IMG SRC="IMG/poweredby.gif" border=0></A>
+	</CENTER>
+</body>
+

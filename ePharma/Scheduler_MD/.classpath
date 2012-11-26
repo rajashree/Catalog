@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="C:/Documents and Settings/Rajashree/workspace/Scheduler_Prepak/lib/activation.jar"/>
+	<classpathentry kind="lib" path="C:/Documents and Settings/Rajashree/workspace/Scheduler_Prepak/lib/avalon-framework-4.2.0.jar"/>
+	<classpathentry kind="lib" path="C:/Documents and Settings/Rajashree/workspace/Scheduler_Prepak/lib/axis.jar"/>
+	<classpathentry kind="lib" path="C:/Documents and Settings/Rajashree/workspace/Scheduler_Prepak/lib/axis-ant.jar"/>
+	<classpathentry kind="lib" path="C:/Documents and Settings/Rajashree/workspace/Scheduler_Prepak/lib/bcprov-jdk14-129.jar"/>
+	<classpathentry kind="lib" path="C:/Documents and Settings/Rajashree/workspace/Scheduler_Prepak/lib/commons-collections.jar"/>
+	<classpathentry kind="lib" path="C:/Documents and Settings/Rajashree/workspace/Scheduler_Prepak/lib/commons-discovery-0.2.jar"/>
+	<classpathentry kind="lib" path="C:/Documents and Settings/Rajashree/workspace/Scheduler_Prepak/lib/commons-fileupload.jar"/>
+	<classpathentry kind="lib" path="C:/Documents and Settings/Rajashree/workspace/Scheduler_Prepak/lib/commons-io-1.1.jar"/>
+	<classpathentry kind="lib" path="C:/Documents and Settings/Rajashree/workspace/Scheduler_Prepak/lib/commons-logging-1.0.4.jar"/>
+	<classpathentry kind="lib" path="C:/Documents and Settings/Rajashree/workspace/Scheduler_Prepak/lib/commons-net-1.4.1.jar"/>
+	<classpathentry kind="lib" path="C:/Documents and Settings/Rajashree/workspace/Scheduler_Prepak/lib/commons-pool-1.2.jar"/>
+	<classpathentry kind="lib" path="C:/Documents and Settings/Rajashree/workspace/Scheduler_Prepak/lib/digitalsignature-1.0.jar"/>
+	<classpathentry kind="lib" path="C:/Documents and Settings/Rajashree/workspace/Scheduler_Prepak/lib/fop.jar"/>
+	<classpathentry kind="lib" path="C:/Documents and Settings/Rajashree/workspace/Scheduler_Prepak/lib/jaxen-core.jar"/>
+	<classpathentry kind="lib" path="C:/Documents and Settings/Rajashree/workspace/Scheduler_Prepak/lib/jaxen-dom.jar"/>
+	<classpathentry kind="lib" path="C:/Documents and Settings/Rajashree/workspace/Scheduler_Prepak/lib/jaxrpc.jar"/>
+	<classpathentry kind="lib" path="C:/Documents and Settings/Rajashree/workspace/Scheduler_Prepak/lib/log4j-1.2.8.jar"/>
+	<classpathentry kind="lib" path="C:/Documents and Settings/Rajashree/workspace/Scheduler_Prepak/lib/mail.jar"/>
+	<classpathentry kind="lib" path="C:/Documents and Settings/Rajashree/workspace/Scheduler_Prepak/lib/mailapi.jar"/>
+	<classpathentry kind="lib" path="C:/Documents and Settings/Rajashree/workspace/Scheduler_Prepak/lib/ostermillerutils_1_05_00_for_java_1_4.jar"/>
+	<classpathentry kind="lib" path="C:/Documents and Settings/Rajashree/workspace/Scheduler_Prepak/lib/PDFBox-0.7.2.jar"/>
+	<classpathentry kind="lib" path="C:/Documents and Settings/Rajashree/workspace/Scheduler_Prepak/lib/PDFBox-0.7.2-log4j.jar"/>
+	<classpathentry kind="lib" path="C:/Documents and Settings/Rajashree/workspace/Scheduler_Prepak/lib/saaj.jar"/>
+	<classpathentry kind="lib" path="C:/Documents and Settings/Rajashree/workspace/Scheduler_Prepak/lib/saxpath.jar"/>
+	<classpathentry kind="lib" path="C:/Documents and Settings/Rajashree/workspace/Scheduler_Prepak/lib/servlet-api.jar"/>
+	<classpathentry kind="lib" path="C:/Documents and Settings/Rajashree/workspace/Scheduler_Prepak/lib/smtp.jar"/>
+	<classpathentry kind="lib" path="C:/Documents and Settings/Rajashree/workspace/Scheduler_Prepak/lib/smtpClient.jar"/>
+	<classpathentry kind="lib" path="C:/Documents and Settings/Rajashree/workspace/Scheduler_Prepak/lib/wsdl4j-1.5.1.jar"/>
+	<classpathentry kind="lib" path="C:/Documents and Settings/Rajashree/workspace/Scheduler_Prepak/lib/xalan.jar"/>
+	<classpathentry kind="lib" path="C:/Documents and Settings/Rajashree/workspace/Scheduler_Prepak/lib/xercesImpl.jar"/>
+	<classpathentry kind="lib" path="C:/Documents and Settings/Rajashree/workspace/Scheduler_Prepak/lib/xml-apis.jar"/>
+	<classpathentry kind="lib" path="C:/Documents and Settings/Rajashree/workspace/Scheduler_Prepak/lib/xmlquery.jar"/>
+	<classpathentry kind="lib" path="C:/Documents and Settings/Rajashree/workspace/Scheduler_Prepak/lib/xmlsec-1.3.0.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/rainingdata/tigerlogic/tljdk/lib/connector.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/rainingdata/tigerlogic/tljdk/lib/deployer.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/rainingdata/tigerlogic/tljdk/lib/jca-connector.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/rainingdata/tigerlogic/tljdk/lib/tlapi.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/rainingdata/tigerlogic/tljdk/lib/tlerror.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/rainingdata/tigerlogic/tljdk/lib/utility.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/rainingdata/tigerlogic/tljdk/lib/xmlparser.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/rainingdata/tigerlogic/tljdk/lib/xmltypes.jar"/>
+	<classpathentry kind="output" path="build"/>
+</classpath>

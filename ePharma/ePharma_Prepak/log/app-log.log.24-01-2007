@@ -1,0 +1,102 @@
+2007-01-24 12:46:09,895 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-01-24 12:46:09,926 INFO  (LoginAction.java:57) - In execute method
+2007-01-24 12:46:09,942 INFO  (SecurityServiceImpl.java:140) - In authenticate method
+2007-01-24 12:46:09,942 INFO  (SecurityServiceImpl.java:54) - In getUser method
+2007-01-24 12:46:09,942 INFO  (SecurityServiceImpl.java:56) - Query:tlsp:loginUserInfo('test')
+2007-01-24 12:46:11,082 INFO  (User.java:146) - In passwordMatch method
+2007-01-24 12:46:11,082 INFO  (User.java:176) - In valueBound method
+2007-01-24 12:46:11,082 INFO  (SecurityServiceImpl.java:101) - In insertSessionDoc method
+2007-01-24 12:46:11,082 INFO  (SecurityServiceImpl.java:85) - In replaceString method
+2007-01-24 12:46:11,082 INFO  (SecurityServiceImpl.java:128) - Query:tig:insert-document( 'tig:///EAGRFID/SysSessions/', <session><sessionid>12700120070124124611</sessionid><userid>23802960038774853494040455282174</userid><username>raje raje</username><accesslevel>epedigree</accesslevel><sessionstart>2007-01-24T12:46:11</sessionstart><userip>127.0.0.1</userip><lastuse>2007-01-24T12:46:11</lastuse><tp_company_nm>Southwood</tp_company_nm><tp_company_id>null</tp_company_id></session>)
+2007-01-24 12:46:11,192 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-01-24 12:46:11,426 INFO  (EpedigreeAction.java:67) - ********Inside Action EpedigreeAction....... 
+2007-01-24 12:46:11,426 INFO  (EpedigreeAction.java:68) - Inside Action execute of EpedigreeAction....
+2007-01-24 12:46:11,442 INFO  (EpedigreeAction.java:78) - Validating The Session
+2007-01-24 12:46:11,442 INFO  (EpedigreeAction.java:82) - sessionID in EpedigreeAction :12700120070124124611
+2007-01-24 12:46:11,645 INFO  (EpedigreeAction.java:92) - The readStatus is : true
+2007-01-24 12:46:11,645 INFO  (EpedigreeAction.java:99) - My Query in EpedigreeAction class.....tlsp:DisplayMessage('12700120070124124611') 
+2007-01-24 12:46:12,301 INFO  (EpedigreeAction.java:128) - Before returning to success
+2007-01-24 12:46:23,160 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-01-24 12:46:23,207 DEBUG (AdminUser.java:56) - sessionID :12700120070124124611
+2007-01-24 12:46:29,707 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-01-24 12:46:29,800 INFO  (TradingPartnerListAction.java:77) - Inside Action TradingPartnerListAction....... 
+2007-01-24 12:46:29,800 INFO  (TradingPartnerListAction.java:78) - Inside Action execute of TradingPartnerListAction....
+2007-01-24 12:46:29,800 INFO  (TradingPartnerListAction.java:100) - query tlsp:validateAccess('12700120070124124611','4.0','Read')
+2007-01-24 12:46:29,816 INFO  (TradingPartnerListAction.java:103) - The insertStatus is true
+2007-01-24 12:46:34,613 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-01-24 12:46:34,660 INFO  (EpedigreeAction.java:67) - ********Inside Action EpedigreeAction....... 
+2007-01-24 12:46:34,660 INFO  (EpedigreeAction.java:68) - Inside Action execute of EpedigreeAction....
+2007-01-24 12:46:34,660 INFO  (EpedigreeAction.java:78) - Validating The Session
+2007-01-24 12:46:34,660 INFO  (EpedigreeAction.java:82) - sessionID in EpedigreeAction :12700120070124124611
+2007-01-24 12:46:34,691 INFO  (EpedigreeAction.java:92) - The readStatus is : true
+2007-01-24 12:46:34,691 INFO  (EpedigreeAction.java:99) - My Query in EpedigreeAction class.....tlsp:DisplayMessage('12700120070124124611') 
+2007-01-24 12:46:34,722 INFO  (EpedigreeAction.java:128) - Before returning to success
+2007-01-24 12:47:53,407 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-01-24 12:47:53,470 WARN  (RequestUtils.java:177) - No FormBeanConfig found under 'ProcessedEnteredPedigreesForm'
+2007-01-24 12:47:53,501 INFO  (ProcessedEnteredPedigreesAction.java:77) - Inside Action ProcessedEnteredPedigreesAction....... 
+2007-01-24 12:47:53,501 INFO  (ProcessedEnteredPedigreesAction.java:93) - query for FaxDetails is:tlsp:GetProcessedEnteredPedigrees()
+2007-01-24 12:47:53,704 INFO  (ProcessedEnteredPedigreesAction.java:115) - vendorNamevendorNamevendorNamenull
+2007-01-24 12:48:12,953 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-01-24 12:48:13,031 INFO  (InitialPedigreeAction.java:94) - Query for Getting Trading partners in InitialPedigreeAction for $i in collection('tig:///CatalogManager/TradingPartner')/TradingPartner order by $i/name ascending return data($i/name) 
+2007-01-24 12:48:17,656 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-01-24 12:48:17,719 WARN  (RequestUtils.java:177) - No FormBeanConfig found under 'ProcessedEnteredPedigreesForm'
+2007-01-24 12:48:17,719 INFO  (ProcessedEnteredPedigreesAction.java:77) - Inside Action ProcessedEnteredPedigreesAction....... 
+2007-01-24 12:48:17,719 INFO  (ProcessedEnteredPedigreesAction.java:93) - query for FaxDetails is:tlsp:GetProcessedEnteredPedigrees()
+2007-01-24 12:48:17,734 INFO  (ProcessedEnteredPedigreesAction.java:115) - vendorNamevendorNamevendorNamenull
+2007-01-24 12:48:29,781 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-01-24 12:48:29,812 INFO  (TradingPartnerListAction.java:77) - Inside Action TradingPartnerListAction....... 
+2007-01-24 12:48:29,812 INFO  (TradingPartnerListAction.java:78) - Inside Action execute of TradingPartnerListAction....
+2007-01-24 12:48:29,812 INFO  (TradingPartnerListAction.java:100) - query tlsp:validateAccess('12700120070124124611','4.0','Read')
+2007-01-24 12:48:29,843 INFO  (TradingPartnerListAction.java:103) - The insertStatus is true
+2007-01-24 12:48:31,937 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-01-24 12:48:32,000 INFO  (TradingPartnerAccessPrivilage.java:71) - Inside TradingPartnerAccessPrivilage Class
+2007-01-24 12:48:32,015 INFO  (TradingPartnerAccessPrivilage.java:77) - The insertStatus is true
+2007-01-24 12:48:40,421 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-01-24 12:48:40,468 INFO  (TradingPartnerListAction.java:77) - Inside Action TradingPartnerListAction....... 
+2007-01-24 12:48:40,468 INFO  (TradingPartnerListAction.java:78) - Inside Action execute of TradingPartnerListAction....
+2007-01-24 12:48:40,468 INFO  (TradingPartnerListAction.java:100) - query tlsp:validateAccess('12700120070124124611','4.0','Read')
+2007-01-24 12:48:40,484 INFO  (TradingPartnerListAction.java:103) - The insertStatus is true
+2007-01-24 12:48:43,265 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-01-24 12:48:43,296 INFO  (TradingPartnerListAction.java:77) - Inside Action TradingPartnerListAction....... 
+2007-01-24 12:48:43,296 INFO  (TradingPartnerListAction.java:78) - Inside Action execute of TradingPartnerListAction....
+2007-01-24 12:48:43,312 INFO  (TradingPartnerListAction.java:100) - query tlsp:validateAccess('12700120070124124611','4.0','Read')
+2007-01-24 12:48:43,327 INFO  (TradingPartnerListAction.java:103) - The insertStatus is true
+2007-01-24 12:48:45,921 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-01-24 12:48:45,968 INFO  (TradingPartnerListAction.java:77) - Inside Action TradingPartnerListAction....... 
+2007-01-24 12:48:45,968 INFO  (TradingPartnerListAction.java:78) - Inside Action execute of TradingPartnerListAction....
+2007-01-24 12:48:45,968 INFO  (TradingPartnerListAction.java:100) - query tlsp:validateAccess('12700120070124124611','4.0','Read')
+2007-01-24 12:48:45,983 INFO  (TradingPartnerListAction.java:103) - The insertStatus is true
+2007-01-24 12:48:48,640 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-01-24 12:48:48,671 INFO  (TradingPartnerListAction.java:77) - Inside Action TradingPartnerListAction....... 
+2007-01-24 12:48:48,671 INFO  (TradingPartnerListAction.java:78) - Inside Action execute of TradingPartnerListAction....
+2007-01-24 12:48:48,671 INFO  (TradingPartnerListAction.java:100) - query tlsp:validateAccess('12700120070124124611','4.0','Read')
+2007-01-24 12:48:48,687 INFO  (TradingPartnerListAction.java:103) - The insertStatus is true
+2007-01-24 12:48:52,811 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-01-24 12:48:52,843 INFO  (TradingPartnerAccessPrivilage.java:71) - Inside TradingPartnerAccessPrivilage Class
+2007-01-24 12:48:52,858 INFO  (TradingPartnerAccessPrivilage.java:77) - The insertStatus is true
+2007-01-24 12:48:56,530 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-01-24 12:48:56,561 DEBUG (AdminUser.java:56) - sessionID :12700120070124124611
+2007-01-24 12:48:59,327 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-01-24 12:48:59,405 DEBUG (AddGroup.java:254) - Inside EditGroup ......
+2007-01-24 12:48:59,405 INFO  (AddGroup.java:274) - Query<root> { for $l in collection('tig:///EAGRFID/SysGroups')/Group order by $l/GroupID return <output> { <GroupID>{data($l/GroupID)}</GroupID>, <GroupName>{data($l/GroupName)}</GroupName>} </output>	 } </root>
+2007-01-24 12:48:59,436 INFO  (AddGroup.java:276) - QueryResult<root> <output> <GroupID>16075183416912828642579285802861</GroupID><GroupName>abc</GroupName> </output><output> <GroupID>22446472733630946761456657891181</GroupID><GroupName>test</GroupName> </output><output> <GroupID>26619065693159003344865905344365</GroupID><GroupName>testing</GroupName> </output><output> <GroupID>26913000290237854405790663180141</GroupID><GroupName>rest</GroupName> </output><output> <GroupID>29567575320621459578625558314861</GroupID><GroupName>testing</GroupName> </output><output> <GroupID>3fe29258d1efb468:bfd66a:10730185438:-80001130422954515</GroupID><GroupName>Group9</GroupName> </output><output> <GroupID>3fe29258d1efb468:bfd66a:10730185438:-80001130422954516</GroupID><GroupName>Group10</GroupName> </output><output> <GroupID>8418737044586836262501551177581</GroupID><GroupName>viv</GroupName> </output><output> <GroupID>ac22243afaddbf1a:282d90d:109797c2a3b:-80001140223742617</GroupID><GroupName>admin</GroupName> </output> </root>
+2007-01-24 12:49:06,717 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-01-24 12:49:06,780 DEBUG (AddUser.java:309) - Inside EditUserList ......
+2007-01-24 12:49:06,780 INFO  (UserUtility.java:258) - Inside method getUsersList
+2007-01-24 12:49:06,780 INFO  (UserUtility.java:269) - Query<root> { for $l in collection('tig:///EAGRFID/SysUsers')/User order by $l/UserID return <output> { <UserID>{data($l/UserID)}</UserID>, <UserName>{data($l/UserName)}</UserName>, <Email>{data($l/Email)}</Email>, <Disable>{data($l/Disable)}</Disable> } </output> } </root>
+2007-01-24 12:49:06,811 INFO  (UserUtility.java:271) - QueryResult<root> <output> <UserID>16075183416912828642574990835565</UserID><UserName>abc</UserName><Email>212</Email><Disable>false</Disable> </output><output> <UserID>224793791150493102680841912214</UserID><UserName>paul</UserName><Email>PedigreeAdmin@MorrisDickson.com</Email><Disable>false</Disable> </output><output> <UserID>23802960038774853494040455282174</UserID><UserName>test</UserName><Email>raje</Email><Disable>false</Disable> </output><output> <UserID>26913000290237854405777778278253</UserID><UserName>23</UserName><Email>123</Email><Disable>false</Disable> </output><output> <UserID>26913000290237854405786368212845</UserID><UserName>rrrrrrrrrrrrrrr</UserName><Email>bb</Email><Disable>false</Disable> </output><output> <UserID>29383916519049139238555285454701</UserID><UserName>rhgoodrich</UserName><Email>rhg@southwoodhealthcare.com</Email><Disable>false</Disable> </output><output> <UserID>487452268999545629670425231254</UserID><UserName>dloy</UserName><Email>dloy@prepak.com</Email><Disable>false</Disable> </output> </root>
+2007-01-24 12:49:12,561 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-01-24 12:49:12,592 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-01-24 12:49:12,608 INFO  (AddUser.java:83) - Inside method AddNewUser
+2007-01-24 12:49:12,608 INFO  (UserUtility.java:60) - Inside method getGroupList
+2007-01-24 12:49:12,608 INFO  (UserUtility.java:66) - Query<GroupData>{for $i in collection('tig:///EAGRFID/SysGroups') return <data>{$i/Group/GroupID}{$i/Group/GroupName}</data>}</GroupData>
+2007-01-24 12:49:12,655 INFO  (UserUtility.java:68) - QueryResult<GroupData><data><GroupID>8418737044586836262501551177581</GroupID><GroupName>viv</GroupName></data><data><GroupID>22446472733630946761456657891181</GroupID><GroupName>test</GroupName></data><data><GroupID>26913000290237854405790663180141</GroupID><GroupName>rest</GroupName></data><data><GroupID>29567575320621459578625558314861</GroupID><GroupName>testing</GroupName></data><data><GroupID>ac22243afaddbf1a:282d90d:109797c2a3b:-80001140223742617</GroupID><GroupName>admin</GroupName></data><data><GroupID>3fe29258d1efb468:bfd66a:10730185438:-80001130422954515</GroupID><GroupName>Group9</GroupName></data><data><GroupID>3fe29258d1efb468:bfd66a:10730185438:-80001130422954516</GroupID><GroupName>Group10</GroupName></data><data><GroupID>16075183416912828642579285802861</GroupID><GroupName>abc</GroupName></data><data><GroupID>26619065693159003344865905344365</GroupID><GroupName>testing</GroupName></data></GroupData>
+2007-01-24 12:49:12,670 INFO  (AddUser.java:83) - Inside method AddNewUser
+2007-01-24 12:49:12,670 INFO  (UserUtility.java:60) - Inside method getGroupList
+2007-01-24 12:49:12,670 INFO  (UserUtility.java:66) - Query<GroupData>{for $i in collection('tig:///EAGRFID/SysGroups') return <data>{$i/Group/GroupID}{$i/Group/GroupName}</data>}</GroupData>
+2007-01-24 12:49:12,701 INFO  (UserUtility.java:68) - QueryResult<GroupData><data><GroupID>8418737044586836262501551177581</GroupID><GroupName>viv</GroupName></data><data><GroupID>22446472733630946761456657891181</GroupID><GroupName>test</GroupName></data><data><GroupID>26913000290237854405790663180141</GroupID><GroupName>rest</GroupName></data><data><GroupID>29567575320621459578625558314861</GroupID><GroupName>testing</GroupName></data><data><GroupID>ac22243afaddbf1a:282d90d:109797c2a3b:-80001140223742617</GroupID><GroupName>admin</GroupName></data><data><GroupID>3fe29258d1efb468:bfd66a:10730185438:-80001130422954515</GroupID><GroupName>Group9</GroupName></data><data><GroupID>3fe29258d1efb468:bfd66a:10730185438:-80001130422954516</GroupID><GroupName>Group10</GroupName></data><data><GroupID>16075183416912828642579285802861</GroupID><GroupName>abc</GroupName></data><data><GroupID>26619065693159003344865905344365</GroupID><GroupName>testing</GroupName></data></GroupData>
+2007-01-24 12:49:32,326 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-01-24 12:49:32,373 DEBUG (AdminUser.java:56) - sessionID :12700120070124124611
+2007-01-24 12:59:54,259 INFO  (SessionListener.java:55) - In sessionDestroyed method
+2007-01-24 12:59:54,259 INFO  (SessionListener.java:60) - Query:tlsp:deleteInvlidSessionID('12700120070124124611')
+2007-01-24 12:59:54,290 INFO  (User.java:189) - In valueUnbound method

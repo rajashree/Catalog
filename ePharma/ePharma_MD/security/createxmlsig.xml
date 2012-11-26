@@ -1,0 +1,26 @@
+
+<function-descriptor id="createSignature" author="Sunitha Anumolu">
+
+	<classpath url="file:///C:/security/digitalsignature-1.0.jar"/>
+	<classpath url="file:///C:/security/lib/xmlsec-1.2.1.jar"/>
+	<classpath url="file:///C:/security/lib/commons-logging.jar"/>
+
+	<classpath url="file:///c:/Security/lib/jaxen-core.jar"/>
+	<classpath url="file:///c:/Security/lib/jaxen-dom.jar"/>
+	<classpath url="file:///c:/Security/lib/saxpath.jar"/>
+	<classpath url="file:///c:/Security/lib/xml-apis.jar"/>
+	<classpath url="file:///c:/Security/lib/xmlparser.jar"/>
+	<classpath url="file:///c:/Security/lib/xalan.jar"/>
+	<classpath url="file:///c:/Security/lib/verifysignature.jar"/>
+
+	<function package="com.rdta.eag.security" class="CreateSig" 
+				name="signNode" bound-name="signNode">
+		<java return="string" mode="primitive">
+			<arg type="string" mode="primitive"/>
+			<arg type="string" mode="primitive"/>
+			<arg type="string" mode="primitive"/>
+			<arg type="string" mode="primitive"/>
+			<arg type="string" mode="primitive"/>
+		</java>
+	</function>
+</function-descriptor>

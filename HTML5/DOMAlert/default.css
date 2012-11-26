@@ -1,0 +1,64 @@
+.default_alertWindow
+{
+	border: 2px solid #000000;  /* this is the border around the alert window */
+}
+.default_titleBar
+{
+	/* title bar settings */
+	color: #ffffff;
+	font: 10px Verdana;
+	border-bottom: 1px solid #000000; /* the bottom border of your title bar, the border that separates it from the content area */
+	background: #336699; 
+	line-height: 16px; /* if you have an icon, you probably want to set this as the same size or a bit larger than the icon size */
+	padding: 5px;
+}
+.default_titleBarLeftIcon
+{
+	/* left icon settings */
+	background: transparent url(information.png) no-repeat;
+	width: 16px;
+	height: 16px;
+}
+.default_titleBarRightIcon
+{
+	/* right icon settings */
+	/* background: transparent url(/icons/cancel.png) no-repeat;
+	width: 16px;
+	height: 16px; */
+}
+.default_contentArea
+{
+	/* the contente area, where the actual message text is shown */
+	color: #000000;
+	font: 14px Verdana;
+	overflow: auto;  /* setting this to auto will make scrollbars appear if the message text is too long for the height attribute, assuming you set it */
+	padding: 5px;
+	background: #e7ebef; /* your background color.  the button area background color should be set the same as well */
+}
+.default_buttonArea
+{
+	/* the button area, the div that your buttons are placed into */
+	text-align: right; /* if you want you buttons to the left or center of the alert box, change this setting */
+	background: #e7ebef; /* your background color.  the content area background color should be set the same as well */
+	padding-bottom: 5px;
+}
+.default_okButton
+{
+	/* ok button settings */
+	background: url(accept.png);
+	padding-left: 15px;
+	margin-right: 5px;
+	background-repeat: no-repeat;
+	background-position: center left;
+	height: 35px;
+}
+.default_cancelButton
+{
+	/* cancel button settings, if present */
+	background: url(cancel.png);
+	padding-left: 15px;
+	margin-right: 5px;
+	background-repeat: no-repeat;
+	background-position: center left;
+	height: 35px;
+}

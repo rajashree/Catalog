@@ -1,0 +1,21 @@
+2007-02-06 18:52:42,968 INFO  (ActionExceptionHandler.java:114) - Deatils of Error with TL messages..
+2007-02-06 18:52:42,984 INFO  (ActionExceptionHandler.java:128) - Error Code :xq-dynamic-00013
+2007-02-06 18:52:42,984 INFO  (ActionExceptionHandler.java:129) - Error Message :[xq-dynamic-00013] - XP0006:Argument [collection('tig:///ePharma_MD/PedigreeTradingPartner')[PedigreeTradingPartner/deaNumber =$deaNumber]] to [document-uri(for $i in collection('tig:///ePharma_MD/PedigreeTradingPartner')[PedigreeTradingPartner/deaNumber =$deaNumber]
+						  return $i)] contained too many items.
+2007-02-06 18:52:42,984 INFO  (ActionExceptionHandler.java:130) - Full Message :com.rdta.xquery.error.DynamicException: [xq-dynamic-00013] - XP0006:Argument [collection('tig:///ePharma_MD/PedigreeTradingPartner')[PedigreeTradingPartner/deaNumber =$deaNumber]] to [document-uri(for $i in collection('tig:///ePharma_MD/PedigreeTradingPartner')[PedigreeTradingPartner/deaNumber =$deaNumber]
+						  return $i)] contained too many items.
+2007-02-06 18:52:43,453 INFO  (ActionExceptionHandler.java:142) - Definition :xq-dynamic-00013[]
+2007-02-06 18:53:44,046 INFO  (ActionExceptionHandler.java:114) - Deatils of Error with TL messages..
+2007-02-06 18:53:44,046 INFO  (ActionExceptionHandler.java:128) - Error Code :xq-dynamic-00013
+2007-02-06 18:53:44,046 INFO  (ActionExceptionHandler.java:129) - Error Message :[xq-dynamic-00013] - XP0006:Argument [collection('tig:///ePharma_MD/PedigreeTradingPartner')[PedigreeTradingPartner/deaNumber =$deaNumber]] to [document-uri(for $i in collection('tig:///ePharma_MD/PedigreeTradingPartner')[PedigreeTradingPartner/deaNumber =$deaNumber]
+						  return $i)] contained too many items.
+2007-02-06 18:53:44,046 INFO  (ActionExceptionHandler.java:130) - Full Message :com.rdta.xquery.error.DynamicException: [xq-dynamic-00013] - XP0006:Argument [collection('tig:///ePharma_MD/PedigreeTradingPartner')[PedigreeTradingPartner/deaNumber =$deaNumber]] to [document-uri(for $i in collection('tig:///ePharma_MD/PedigreeTradingPartner')[PedigreeTradingPartner/deaNumber =$deaNumber]
+						  return $i)] contained too many items.
+2007-02-06 18:53:44,046 INFO  (ActionExceptionHandler.java:142) - Definition :xq-dynamic-00013[]
+2007-02-06 18:54:46,468 INFO  (ActionExceptionHandler.java:114) - Deatils of Error with TL messages..
+2007-02-06 18:54:46,468 INFO  (ActionExceptionHandler.java:128) - Error Code :xq-dynamic-00013
+2007-02-06 18:54:46,468 INFO  (ActionExceptionHandler.java:129) - Error Message :[xq-dynamic-00013] - XP0006:Argument [collection('tig:///ePharma_MD/PedigreeTradingPartner')[PedigreeTradingPartner/deaNumber =$deaNumber]] to [document-uri(for $i in collection('tig:///ePharma_MD/PedigreeTradingPartner')[PedigreeTradingPartner/deaNumber =$deaNumber]
+						  return $i)] contained too many items.
+2007-02-06 18:54:46,468 INFO  (ActionExceptionHandler.java:130) - Full Message :com.rdta.xquery.error.DynamicException: [xq-dynamic-00013] - XP0006:Argument [collection('tig:///ePharma_MD/PedigreeTradingPartner')[PedigreeTradingPartner/deaNumber =$deaNumber]] to [document-uri(for $i in collection('tig:///ePharma_MD/PedigreeTradingPartner')[PedigreeTradingPartner/deaNumber =$deaNumber]
+						  return $i)] contained too many items.
+2007-02-06 18:54:46,468 INFO  (ActionExceptionHandler.java:142) - Definition :xq-dynamic-00013[]

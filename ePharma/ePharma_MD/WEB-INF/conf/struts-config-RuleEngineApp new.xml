@@ -1,0 +1,568 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+
+<!DOCTYPE struts-config PUBLIC
+ "-//Apache Software Foundation//DTD Struts Configuration 1.0//EN"
+ "http://jakarta.apache.org/struts/dtds/struts-config_1_1.dtd">
+<struts-config>
+
+
+
+	 <form-beans>
+		
+		<form-bean  name="TradingPartnerForm" 	type="com.rdta.catalog.trading.action.TradingPartnerForm"/>   
+		<form-bean name="StartUploadProcessForm" type="com.rdta.catalog.trading.action.StartUploadProcessFormBean"/> 
+		<form-bean  name="CatalogUploadForm" 	type="com.rdta.catalog.trading.action.CatalogUploadForm"/>   
+			
+		<form-bean  name="ProductMasterForm" 	type="com.rdta.catalog.trading.action.ProductMasterForm"/>   
+		<form-bean  name="MapTradingPartnerForm" type="com.rdta.catalog.trading.action.MapTradingPartnerForm"/> 
+		
+		<form-bean name="EpedigreeForm" type="com.rdta.epharma.epedigree.action.EpedigreeForm"/>
+	 	<form-bean name="ASNSearchForm" type="com.rdta.epharma.epedigree.action.ASNSearchForm"/>
+	 	<form-bean name="APNSearchForm" type="com.rdta.epharma.epedigree.action.APNSearchForm"/>
+	 	<form-bean name="POsSearchForm" type="com.rdta.epharma.epedigree.action.POsSearchForm"/>
+		<form-bean name="OrderSearchForm" type="com.rdta.epharma.epedigree.action.OrderSearchForm"/>
+	  	<form-bean name="GenerateAlertForm" type="com.rdta.epharma.epedigree.action.GenerateAlertFormBean"/>
+	  	<form-bean name="OrderNumberSearchForm" type="com.rdta.epharma.epedigree.action.OrderNumberSearchForm"/>
+		<form-bean name="ReceivingManagerForm" type="com.rdta.epharma.epedigree.action.ReceivingManagerForm"/>
+	    <form-bean name="ReconcileStatusFormBean" type="com.rdta.epharma.epedigree.action.ReconcileStatusFormBean"/>
+	    <form-bean name="ShipStatusFormBean" type="com.rdta.epharma.epedigree.action.ShipStatusFormBean"/>
+	    <form-bean name="SearchInvoicesForm" type="com.rdta.epharma.epedigree.action.SearchInvoicesForm"/>		
+		<form-bean name="ShowMasterCatalogsForm" type="com.rdta.catalog.trading.action.ShowMasterCatalogsForm"/>
+		
+	  </form-beans>
+
+ 
+  <!-- ========== Action Mapping Definitions ============ -->
+  <action-mappings>
+  	
+  	 <!-- Rule -->
+	 <action  path="/CreateRule"   forward="/dist/rules/CreateRules.jsp">
+     </action> 
+     
+	 <action  path="/dist/rules/CreateRuleAction"   type="com.rdta.rules.Action.CreateRuleAction" scope="request">
+	 	<forward name="success" path="/dist/rules/CreateRules.jsp"/>
+     </action>
+     
+  	 <!-- Rule Display-->
+	 <action  path="/DisplayRule"   forward="/dist/rules/DisplayRules.jsp">
+     </action> 
+     
+	 <action  path="/dist/rules/DisplayRuleAction"   type="com.rdta.rules.Action.DisplayRuleAction" scope="request">
+	 	<forward name="success" path="/dist/rules/DisplayRules.jsp"/>
+     </action>      
+
+  	 <!-- RuleSet -->     
+	 <action  path="/CreateRuleSet"   forward="/dist/rules/CreateRulesSet.jsp">
+     </action> 
+     
+	 <action  path="/dist/rules/CreateRuleSetAction"   type="com.rdta.rules.Action.CreateRuleSetAction" scope="request">
+	 	<forward name="success" path="/dist/rules/CreateRulesSet.jsp"/>
+     </action>     
+     
+  	 <!-- Category Code -->     
+	 <action  path="/CategoryCode"   forward="/dist/rules/CreateCategoryCode.jsp">
+     </action> 
+     
+	 <action  path="/dist/rules/CreateCategoryCodeAction"   type="com.rdta.rules.Action.CreateCategoryCodeAction" scope="request">
+	 	<forward name="success" path="/dist/rules/CreateCategoryCode.jsp"/>
+     </action>      
+     
+    <action path="/RuleEngineRequest" forward="/dist/rules/RuleEngineRequest.jsp"/>
+    <action path="/StartRuleEngine" type="com.rdta.rules.RuleEngineAction" scope="request">
+    <forward name="success" path="/dist/rules/RuleEngineRequest.jsp"/>
+    </action>
+
+  	 <!-- DisplayRuleSet -->
+	 <action  path="/DisplayRuleSet"   forward="/dist/rules/DisplayRuleSet.jsp">
+     </action> 
+     
+	 <action  path="/dist/rules/DisplayRuleSetAction"   type="com.rdta.rules.Action.DisplayRuleSetAction" scope="request">
+	 	<forward name="success" path="/dist/rules/DisplayRuleSet.jsp"/>
+     </action>
+     
+  	 <!-- RuleSet - rule display  -->     
+	 <action  path="/dist/rules/RS_RuleAction"   forward="/dist/rules/RS_RuleAction.jsp">
+     </action> 
+     
+	<action  path="/dist/rules/RS_RuleDtAction"   type="com.rdta.rules.Action.RS_RuleDtAction" scope="request">
+	 	<forward name="success" path="/dist/rules/RS_RuleAction.jsp"/>
+     </action>
+     
+     
+     		<!-- ==========  REPORT ACTIONS  ========== -->
+     	 <action  path="/dist/reports/AdvancedReports"   type="com.rdta.epharma.reports.action.ShowReportCubesAction" scope="request">
+     	 	<forward name="success" path="/dist/reports/ReportCubes.jsp"/>
+          	 </action> 
+              <action  path="/dist/reports/ShowAdvancedReports"   forward="/dist/reports/ReportCubes.jsp">
+              </action> 
+     	 <action  path="/dist/reports/DisplayReportOutputFields"   type="com.rdta.epharma.reports.action.SelectReportOutputFieldsAction" scope="request">
+     	 	<forward name="success" path="/dist/reports/ReportOutputField.jsp"/>
+          	 </action> 
+     	 <action  path="/dist/reports/DisplayReportFilters"   type="com.rdta.epharma.reports.action.ShowReportFilterAction" scope="request">
+     	 	<forward name="success" path="/dist/reports/ReportFilters.jsp"/>
+          	 </action> 
+              
+     	 <action  path="/dist/reports/SubmitReportFilters"   type="com.rdta.epharma.reports.action.SubmitReportFilters" scope="request">
+     	 	<forward name="success" path="/dist/reports/ReportsResult.jsp"/>
+          	 </action> 
+              <action  path="/dist/reports/ShowReports"   forward="/dist/reports/Reports.jsp">
+              </action> 
+             <action  path="/dist/reports/ReportsSchedule"   forward="/dist/reports/ReportsSchedule.jsp">
+              </action> 
+             <action  path="/dist/reports/ReportsScheduleResult"   forward="/dist/reports/ReportsScheduleResult.jsp">
+              </action> 
+
+
+<!-- Premal Added -->
+
+
+<!--Create APN-->
+<action path="/APN" forward="/manu/rules/APN.jsp"/>
+
+
+<action path="/APNAction" type="com.rdta.rules.APNAction" scope="request">
+<forward name="success" path="/manu/rules/APN.jsp"/>
+</action>
+<action path="/AppendProducts" forward="/manu/rules/AppendProducts.jsp"/>
+<action path="/AppendProductsAction" type="com.rdta.rules.AppendProductsAction" scope="request">
+<forward name="success" path="/manu/rules/AppendProducts.jsp"/>
+</action>
+<action path="/SignAPN" forward="/manu/rules/SignAPN.jsp"/>
+<action path="/SignAPNAction" type="com.rdta.rules.SignAPNAction">
+<forward name="success" path="/manu/rules/SignAPN.jsp"/>
+</action>
+
+
+
+	<!-- ===============================   Raju URLSSSSSSSSSSSSS  -->
+
+<action  path="/FrameTopHeader"   forward="/dist/globalIncludes/FramesHeader.jsp">
+     </action> 
+
+
+  	
+		<!-- ==========  TRADING PARTNER ACTIONS  ========== -->
+	 <action  path="/TradingPartnerNew"   forward="/dist/tradingPartnerManager/TradingPartnerManager_Detail.jsp">
+     </action> 
+
+
+	 <action  path="/TradingPartnerList"   type="com.rdta.catalog.trading.action.TradingPartnerListAction" scope="request">
+	 	<forward name="success" path="/dist/tradingPartnerManager/index.jsp"/>
+     </action> 
+
+
+    <action path="/TradingPartner" name="TradingPartnerForm"  input="/dist/tradingPartnerManager/TradingPartnerManager_Detail.jsp" 			type="com.rdta.catalog.trading.action.TradingPartnerAction" scope="request">
+			<forward name="success" path="/dist/tradingPartnerManager/TradingPartnerManager_Detail.jsp"/>          
+    </action>   
+
+
+	<action path="/TradingPartnerView" 	type="com.rdta.catalog.trading.action.TradingPartnerViewAction" scope="request">
+			<forward name="success" path="/dist/tradingPartnerManager/TradingPartnerManager_Detail.jsp"/>          
+    </action>   
+
+	
+
+
+		<!-- ==========  Location ACTIONS  ========== -->
+	 <action  path="/LocationNew"   forward="/dist/tradingPartnerManager/Location_Detail.jsp">
+     </action> 
+
+
+	 <action  path="/TPLocationList"   type="com.rdta.catalog.trading.action.LocationListAction" scope="request">
+	 	<forward name="success" path="/dist/tradingPartnerManager/TradingPartnerManager_Detail_Locations.jsp"/>
+     </action> 
+
+
+	<action path="/Location" 	type="com.rdta.catalog.trading.action.LocationAction" scope="request">
+			<forward name="success" path="/dist/tradingPartnerManager/Location_Detail.jsp"/>          
+    </action>   
+
+
+
+		<!-- ==========  Catalog ACTIONS  ========== -->
+	 <action  path="/CatalogNew"   forward="/dist/tradingPartnerManager/Catalog_Detail.jsp">
+     </action> 
+
+
+	 <action  path="/TPCatalogList"   type="com.rdta.catalog.trading.action.CatalogListAction" scope="request">
+	 	<forward name="success" path="/dist/tradingPartnerManager/TradingPartnerManager_Detail_Catalogs.jsp"/>
+     </action> 
+
+
+	<action path="/Catalog" 	type="com.rdta.catalog.trading.action.CatalogAction" scope="request">
+			<forward name="success" path="/dist/tradingPartnerManager/Catalog_Detail.jsp"/>          
+    </action>   
+
+
+
+	<!--  ====================  Schema  Tree Related links  ========================  --> 
+
+<action path="/OpenCatalogSchemaDef"      type="com.rdta.catalog.trading.action.CatalogSchemaDefAction" scope="request"> 
+          <forward name="success" path="/dist/tradingPartnerManager/CatalogSchemaDef.jsp"/> 
+    </action> 
+
+	<action path="/GCPIMOpenCatalogSchemaDef" 	type="com.rdta.catalog.trading.action.ShowStandardCatalog" scope="request">
+		<forward name="success" path="/dist/tradingPartnerManager/ShowStandardCatalogList.jsp"/>
+    </action> 
+
+
+	<action path="/SchemaElementTree" forward="/dist/tradingPartnerManager/SchemaElementTree.jsp">
+    </action>
+    <action path="/GCPIMSchemaElementTree" forward="/dist/catalog/SchemaElementTree.jsp">
+    </action>
+
+	<action path="/SchemaElementEdit" 	forward="/dist/tradingPartnerManager/SchemaElementEdit.jsp">
+    </action>   
+
+	<action path="/UpdateSchemaElementTree" 	type="com.rdta.catalog.trading.action.UpdateSchemaTreeAction" scope="request">	
+			<forward name="success" path="/dist/tradingPartnerManager/CatalogSchemaDef.jsp"/>
+    </action>   
+
+	<action path="/CreateCatalogSchemaFromFile" name="CatalogUploadForm"  input="/dist/tradingPartnerManager/Catalog_Detail.jsp"	type="com.rdta.catalog.trading.action.CatalogSchemaDefAction" scope="request">	
+			<forward name="success" path="/dist/tradingPartnerManager/CatalogSchemaDef.jsp"/>
+    </action>  
+
+
+	<action path="/UploadCatalog" name="CatalogUploadForm"  input="/dist/tradingPartnerManager/Catalog_Detail.jsp"     type="com.rdta.catalog.trading.action.UploadCatalogAction" scope="request">      
+               <forward name="reconcilableReview" path="/dist/tradingPartnerManager/UploadCatalogReview.jsp"/> 
+               <forward name="startUploadProcess" path="/dist/tradingPartnerManager/StartUploadProcess.jsp"/> 
+               <forward name="summary" path="/dist/tradingPartnerManager/ResultOfMapping.jsp"/> 
+    </action> 
+
+
+	<action path="/FirstUploadMapValuesToStandards" forward="/dist/tradingPartnerManager/UploadMapValuesToStandards.jsp">
+    </action>
+	
+
+	<action path="/UploadMapValuesToStandards"  type="com.rdta.catalog.trading.action.UploadMapValuesAction" scope="request">	
+			<forward name="success" path="/dist/tradingPartnerManager/UploadMapValuesToStandards.jsp"/>
+			<forward name="startUploadProcess" path="/dist/tradingPartnerManager/StartUploadProcess.jsp"/>
+    </action>  
+
+
+    <action path="/UploadLoad" 	name="StartUploadProcessForm" type="com.rdta.catalog.trading.action.UploadLoadAction" scope="request">	
+			<forward name="success" path="/dist/tradingPartnerManager/StatusOfUpload.jsp"/>
+    </action>  
+	
+	<!--  =======================  Standard Catalog Schemas ======================== --> 
+	
+	<action path="/DisplayTPNames" type="com.rdta.catalog.trading.action.StandardCatalogAction" scope="request">
+		<forward name="success" path="/dist/tradingPartnerManager/TradingPartnerList.jsp"/>
+	</action>
+	
+ 	<action  path="/StandardCatalogNew"   forward="/dist/tradingPartnerManager/Standard_Catalog_Detail.jsp">
+    </action> 
+    <action  path="/GCPIMStandardCatalogNew"   forward="/dist/catalog/Standard_Catalog_Detail.jsp">
+    </action> 
+    
+    <action  path="/StandardCatalogList"   type="com.rdta.catalog.trading.action.StandardCatalogListAction" scope="request">
+	 	<forward name="success" path="/dist/tradingPartnerManager/Standard_Catalogs_Detail.jsp"/>
+     </action> 
+     <action  path="/GCPIMStandardCatalogList"   type="com.rdta.catalog.trading.action.StandardCatalogListAction" scope="request">
+	 	<forward name="success" path="/dist/catalog/Standard_Catalogs_Detail.jsp"/>
+     </action> 
+	
+	 <action  path="/StandardCatalog"   type="com.rdta.catalog.trading.action.CatalogStandardAction" scope="request">
+	 	<forward name="success" path="/dist/tradingPartnerManager/Standard_Catalog_Detail.jsp"/>
+     </action> 
+     
+      <action  path="/GCPIMStandardCatalog"   type="com.rdta.catalog.trading.action.CatalogStandardAction" scope="request">
+	 	<forward name="success" path="/dist/catalog/Standard_Catalog_Detail.jsp"/>
+     </action> 
+     <action path="/CreateStandardCatalogSchemaFromFile" name="CatalogUploadForm"  input="/dist/tradingPartnerManager/Standard_Catalog_Detail.jsp"	type="com.rdta.catalog.trading.action.CatalogSchemaDefAction" scope="request">	
+			<forward name="success" path="/dist/tradingPartnerManager/StandardCatalogSchemaDef.jsp"/>
+    </action>
+    
+        <action path="/GCPIMCreateStandardCatalogSchemaFromFile" name="CatalogUploadForm"  input="/dist/catalog/Standard_Catalog_Detail.jsp"	type="com.rdta.catalog.trading.action.CatalogSchemaDefAction" scope="request">	
+			<forward name="success" path="/dist/catalog/StandardCatalogSchemaDef.jsp"/>
+    </action>
+    
+    <action path="/GCPIMStandardSchemaElementEdit" 	forward="/dist/catalog/StandardSchemaElementEdit.jsp">
+    </action>   
+    	<action path="/StandardSchemaElementEdit" 	forward="/dist/tradingPartnerManager/StandardSchemaElementEdit.jsp">
+    </action>   
+    
+    <action path="/UpdateStandardSchemaElementTree" 	type="com.rdta.catalog.trading.action.UpdateSchemaTreeAction" scope="request">	
+			<forward name="success" path="/dist/tradingPartnerManager/StandardCatalogSchemaDef.jsp"/>
+    </action>   
+      <action path="/GCPIMUpdateStandardSchemaElementTree" 	type="com.rdta.catalog.trading.action.UpdateSchemaTreeAction" scope="request">	
+			<forward name="success" path="/dist/catalog/StandardCatalogSchemaDef.jsp"/>
+    </action>   
+    
+    
+    <action path="/SchemaElementNewTop" forward="/dist/tradingPartnerManager/newtop.jsp">
+    </action>
+    <!--  =======================  Mapping Standard Catalog Schemas ======================== --> 
+    <action path="/SelectMasterCatalog"      type="com.rdta.catalog.trading.action.MasterCatalogListAction" scope="request">      
+               <forward name="success" path="/dist/tradingPartnerManager/MasterCatalogs.jsp"/> 
+   	 </action>
+
+
+
+	<action path="/MapTradingPartnerCat" 		
+		type="com.rdta.catalog.trading.action.MapTradingPartnerCatalogDA" 				
+		scope="request"
+		parameter="exec"
+		name ="MapTradingPartnerForm">
+		<forward name="listTrdPartners" path="/dist/tradingPartnerManager/TradingPartnerManager_List.jsp"/>          
+		<forward name="listTrdPartCats" path="/dist/tradingPartnerManager/TradingPartnerCatalog_List.jsp"/> 
+    </action>
+    
+    
+    <action path="/TradingPartnerMappingAction"      type="com.rdta.catalog.trading.action.TradingPartnerMappingAction" scope="request"> 
+               <forward name="success" path="/dist/tradingPartnerManager/MapTradingCatalogSchemas.jsp"/>           
+               <forward name="failure" path="/dist/tradingPartnerManager/failure.jsp"/>           
+    </action> 
+    
+	<!--  =======================  Mapping Catalog Schemas ======================== --> 
+    <action path="/MapCatalogSchemas" 	type="com.rdta.catalog.trading.action.MappingSchemaAction" scope="request">	
+			<forward name="success" path="/dist/tradingPartnerManager/MapCatalogSchemas.jsp"/>
+    </action>  
+
+
+	<action path="/CatalogMappingEdit"  type="com.rdta.catalog.trading.action.UpdateMapCatalogsAction" scope="request">	
+			<forward name="success" path="/dist/tradingPartnerManager/CatalogMappingEdit.jsp"/>
+   </action>   
+
+    <!--  =======================  Select Master Catalog Schemas ======================== --> 
+    
+
+	 <action path="/SelectMasterCatelog" 	type="com.rdta.catalog.trading.action.selectMasterCatelog" scope="request">	
+			<forward name="success" path="/dist/tradingPartnerManager/MapCatalogSchemas.jsp"/>
+    </action>
+    
+	<!--  ======================= Product Master URLS ======================== --> 
+
+	 <action  path="/ProductMasterNew"   forward="/dist/catalog/ProductMasterEdit.jsp">
+     </action> 
+
+	<action path="/ShowMasterCatalogs" type="com.rdta.catalog.trading.action.ShowMasterCatalogsAction" scope="request">
+        <forward name="success" path="/dist/catalog/ShowMasterCatalogs.jsp"/>
+    </action>
+
+	 <action  path="/ProductMasterSearchEmpty"   forward="/dist/catalog/ProductMasterSearch.jsp">
+     </action> 
+
+
+	 <action  path="/ProductMasterSearch"   type="com.rdta.catalog.trading.action.ProductMasterSearchAction" scope="request">
+	 	<forward name="success" path="/dist/catalog/ProductMasterSearch.jsp"/>
+     </action> 
+
+
+	<action path="/ProductMaster" 	 name="ProductMasterForm"  input="/dist/catalog/ProductMasterEdit.jsp" type="com.rdta.catalog.trading.action.ProductMasterAction" scope="request">
+			<forward name="success" path="/dist/catalog/ProductMasterEdit.jsp"/>          
+    </action>   
+
+	<action path="/AddMasterCatalogDetails" type="com.rdta.catalog.trading.action.AddMasterCatalogDetails" scope="request"> 
+          <forward name="success" path="/dist/catalog/ShowMasterCatalogsDetails.jsp"/> 
+     </action>
+
+	<action path="/SaveDynamicForm" type="com.rdta.catalog.trading.action.SaveDynamicFormAction" scope="request">
+			<forward name="success" path="/dist/catalog/success.jsp"/>
+		</action>
+		
+		
+		<action path="/dist/epedigree/ProductDisplay" type="com.rdta.epharma.epedigree.action.ProductDisplayAction" scope="request">
+			<forward name="success" path="/dist/epedigree/ePedigree_Manager_Verify_Product.jsp"/>
+			<forware name="showproductslist" path="/dist/epedigree/ePedigree_Manager_Reconcile_Products.jsp"/>
+	</action>
+	
+	
+	<action path="/dist/epedigree/ProductList"	type="com.rdta.epharma.epedigree.action.ProductList" scope="request" >
+			<forward name="success" path="/dist/epedigree/ePedigree_Manager_Reconcile_Products.jsp" />
+	</action>
+
+	<!--  ======================= Kit URLS ======================== --> 
+	<action  path="/KitNew"   forward="/dist/catalog/KitEdit.jsp">
+     </action> 
+
+	<action path="/Kit" 	name="ProductMasterForm"  input="/dist/catalog/KitEdit.jsp" type="com.rdta.catalog.trading.action.KitAction" scope="request">
+			<forward name="success" path="/dist/catalog/KitEdit.jsp"/> 
+			<forward name="searchPage" path="/dist/catalog/ProductMasterSearch.jsp"/> 
+    </action> 
+
+
+	<action path="/ProductAddToKit" 	type="com.rdta.catalog.trading.action.ProductAddToKitAction" scope="request">
+			<forward name="success" path="/dist/catalog/KitEdit.jsp"/>    
+	
+    </action> 
+
+	<action path="/removeProduct" 	type="com.rdta.catalog.trading.action.RemoveProduct" scope="request">
+			<forward name="success" path="/dist/catalog/KitEdit.jsp"/>    
+	
+    </action> 
+
+
+
+
+<!-- ===============================    Receiving Manager ======================================  -->
+	
+	<action path="/dist/epedigree/epedigree" 
+			name="EpedigreeForm" 
+			type="com.rdta.epharma.epedigree.action.EpedigreeAction" scope="request">
+			<forward name="success" path="/dist/epedigree/index.jsp"/>
+			<forward name="exception" path="/serverbusy.html" />
+			<forward name="loginPage" path="/login.html" />
+	</action>
+	
+	
+	<action path="/GenerateAlert" 
+			name="GenerateAlertForm" 
+			type="com.rdta.epharma.epedigree.action.GenerateAlertAction" scope="request">
+			<forward name="success" path="/dist/epedigree/AlertCreated.jsp"/>
+			<forward name="exception" path="/serverbusy.html" />
+			<forward name="loginPage" path="/login.html" />
+	</action>
+	
+	<action path="/dist/epedigree/Resolve"
+	        type="com.rdta.epharma.epedigree.action.ResolveAction" scope="request">
+	        <forward name="success" path="/dist/epedigree/epedigree.do" />
+	        <forward name="exception" path="/serverbusy.html" />
+	        <forward name="loginPage" path="/login.html" />
+    </action>
+    
+    <action path="/dist/epedigree/ChangeStatus"
+	        type="com.rdta.epharma.epedigree.action.ChangeStatusAction" scope="request">
+	        <forward name="success" path="/dist/epedigree/epedigree.do" />
+  			<forward name="exception" path="/serverbusy.html" />
+  			<forward name="loginPage" path="/login.html" />
+    </action>
+    
+	
+	 <action path="/dist/epedigree/Update" 
+			 name="ReconcileStatusFormBean"
+			 type="com.rdta.epharma.epedigree.action.ReconcileStatusAction" 
+			 scope="request">   
+			 <forward name="success" path="/dist/epedigree/ePedigree_Manager_Reconcile_Status.jsp" />
+	 		 <forward name="exception" path="/serverbusy.html" />
+	 		 <forward name="loginPage" path="/login.html" />
+	</action>
+	 
+	 <action path="/dist/epedigree/ePedigree_ReceivingManager" 
+			 name="ReceivingManagerForm" 
+		     type="com.rdta.epharma.epedigree.action.ReceivingManagerAction" 
+	   		 scope="request">
+			<forward name="success" path="/dist/epedigree/ePedigree_ReceivingManager.jsp"/> 
+			<forward name="exception" path="/serverbusy.html" />
+			<forward name="loginPage" path="/login.html" />
+	</action>		
+	
+	<action path="/dist/epedigree/OrderSearch"
+			type="com.rdta.epharma.epedigree.action.OrderSearchAction"
+			scope="request">
+			<forward name="success" path="/dist/epedigree/ePedigree_Orders_Search.jsp"/>
+			<forward name="exception" path="/serverbusy.html" />
+			<forward name="loginPage" path="/login.html" />
+	</action>
+	
+	<action path="/dist/epedigree/OrderNumberSearch"
+			name="OrderNumberSearchForm"
+			type="com.rdta.epharma.epedigree.action.OrderNumberSearchAction"
+			scope="request">
+			<forward name="success" path="/dist/epedigree/ePedigree_ViewOrder.jsp"/>
+			<forward name="exception" path="/serverbusy.html" />
+			<forward name="loginPage" path="/login.html" />
+	</action>
+	
+	<action path="/dist/epedigree/ePedigree_POs_Search"
+			name="POsSearchForm"
+			type="com.rdta.epharma.epedigree.action.POsSearchAction"
+			scope="request">
+			<forward name="success" path="/dist/epedigree/ePedigree_POs_Search.jsp"/>
+	</action>
+	
+	<action path="/dist/epedigree/EmailAPN"
+			type="com.rdta.epharma.epedigree.action.SendEmailAction"
+			scope="request">
+			<forward name="true" path="/dist/epedigree/EmailSuccess.jsp"/>
+			<forward name="false" path="/dist/epedigree/EmailFailure.jsp"/>
+			<forward name="loginPage" path="/login.html" />
+	</action>
+	
+	<action path="/dist/epedigree/APNSearch"
+			name="APNSearchForm"
+			type="com.rdta.epharma.epedigree.action.APNSearchAction"
+			scope="request">
+			<forward name="success" path="/dist/epedigree/ePedigree_APN_Search.jsp"/>
+			<forward name="exception" path="/serverbusy.html" />
+			<forward name="loginPage" path="/login.html" />
+	</action>
+	
+	<action path="/dist/epedigree/APNRefSearch"
+			name="APNSearchForm"
+			type="com.rdta.epharma.epedigree.action.APNSearchAction"
+			scope="request">
+			<forward name="success" path="/dist/epedigree/ePedigree_APN_Search.jsp"/>
+			<forward name="loginPage" path="/login.html" />
+	</action>
+
+<!-- =================================  Shipping manager   ======================================  -->
+
+
+	 <action  path="/dist/epedigree/ShippingManagerSearchEmpty"   forward="/dist/epedigree/ePedigree_ShippingManager.jsp">
+     </action> 
+	
+	<action path="/dist/epedigree/ShippingManagerSearch" 	 
+			type="com.rdta.epharma.epedigree.action.ShippingManagerAction" scope="request">
+			<forward name="success" path="/dist/epedigree/ePedigree_ShippingManager.jsp"/>    
+			<forward name="success1" path="/dist/epedigree/ePedigree_ShippingManager.jsp"/>
+			<forward name="exception" path="/serverbusy.html" />
+			<forward name="loginPage" path="/login.html" />
+    </action> 
+	
+	<action  path="/dist/epedigree/ShipUpdate" name="ShipStatusFormBean"
+			 type="com.rdta.epharma.epedigree.action.ShipStatusAction" scope="request"> 
+            <forward name="success" path="/dist/epedigree/ePedigree_ShipManager_Status.jsp"/>
+            <forward name="loginPage" path="/login.html" />
+     </action> 
+
+
+	<action  path="/dist/epedigree/CollectSSCCNumbersNew"   forward="/dist/epedigree/ePedigree_SSCC_Numbers.jsp">
+     </action> 
+
+
+	  <action  path="/dist/epedigree/CollectSSCCNumbers"   type="com.rdta.epharma.epedigree.action.SSCCNumberAction" scope="request">
+			<forward name="success" path="/dist/epedigree/ePedigree_SSCC_Numbers.jsp"/>    
+	
+    </action> 
+    
+    <action path="/dist/epedigree/ASNSearch" 
+ 			type="com.rdta.epharma.epedigree.action.ASNSearchAction" 
+ 			scope="request">
+ 			<forward name="success" path="/dist/epedigree/ePedigree_ASN_Search.jsp"/>
+			<forward name="exception" path="/serverbusy.html" />
+			<forward name="loginPage" path="/login.html" />
+ 	</action>   
+ 	
+ 	<action path="/dist/epedigree/ASNNumberSearch"
+			type="com.rdta.epharma.epedigree.action.ASNNumberSearchAction"
+			scope="request">
+			<forward name="success" path="/dist/epedigree/ePedigree_ASN_Details.jsp"/>
+			<forward name="failure" path="/dist/epedigree/ePedigree_ASN_Search.jsp" />
+			<forward name="loginPage" path="/login.html" />
+	</action>
+
+
+   <!-- ==========  TRADING PARTNER  Service Level ACTIONS  ========== -->
+	 <action  path="/TPServiceLevelNew"   forward="/dist/tradingPartnerManager/TradingPartnerManager_Detail_SLAs.jsp">
+     </action> 
+
+
+	<!-- ==========  TRADING PARTNER  KPI ACTIONS  ========== -->
+	 <action  path="/TPKPINew"   forward="/dist/tradingPartnerManager/TradingPartnerManager_Detail_KPIs.jsp">
+     </action> 
+		
+    <!-- ==========  FIND SEARCH EPEDIGREE ACTIONS  ========== -->
+          <action  path="/dist/epedigree/SearchInvoicesEmpty" 
+        forward="/dist/epedigree/ePedigree_Manager_SearchInvoices.jsp">
+     </action>     
+     
+     
+      <action path="/dist/epedigree/SearchInvoices"  
+       		  type="com.rdta.epharma.epedigree.action.SearchInvoiceAction" scope="request">
+			<forward name="success" path="/dist/epedigree/ePedigree_Manager_SearchInvoices.jsp"/> 
+     </action> 		
+ 
+ </action-mappings>  
+ 
+</struts-config>

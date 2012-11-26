@@ -1,0 +1,3 @@
+<?xml version="1.0"?>
+<dbConfig hostName="localhost" port="3408" userName="admin" password="admin">
+</dbConfig>

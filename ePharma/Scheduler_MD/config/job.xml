@@ -1,0 +1,11 @@
+<jobs>
+	<!-- <job type="epharmaSchedular" >
+    	    <task name="AutomatedUseCase" class="com.rdta.eag.epharma.activity.AutomatedCaseForMD" delayDuration="0" sleepDuration="1"/>
+	</job> 
+  <job type="epharmaSchedular" >
+	    	    <task name="DropShip" class="com.rdta.eag.epharma.activity.DropShip" delayDuration="0" sleepDuration="1"/>
+	</job> -->
+	 <job type="epharmaSchedular" >
+		    	    <task name="ManualShippedPedigree" class="com.rdta.eag.epharma.activity.ManualShippedPedigree" delayDuration="0" sleepDuration="1"/>
+	</job>
+</jobs>

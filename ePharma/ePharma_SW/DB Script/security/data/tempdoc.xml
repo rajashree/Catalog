@@ -1,0 +1,35 @@
+<APN><DocumentId>APN1131515890390</DocumentId><DateTime>2005-11-09T07:58:10.359Z</DateTime><From><Name>Cardinal Health</Name><Address>Lakeshore Dr,32 W.,
+LakeLand,60022,
+FL</Address><LicenseNumber>CH-198452</LicenseNumber><PartyType>Distributor</PartyType><ContactName>Nick Danger</ContactName><Phone>(312) 865-2194</Phone><Fax/><Email/></From><To><Name>CVS Pharmacy</Name><Address>Spring St.,
+413,
+Orlando,
+60123,
+FL</Address><LicenseNumber>CV234156</LicenseNumber><PartyType>Pharmacy</PartyType><ContactName/><Phone/><Fax/><Email/><TransactionType>DespatchAdvice</TransactionType><TransactionNumber>C28785100007</TransactionNumber></To><Pedigrees><Pedigree order="0"><DocumentId>0</DocumentId><IssueDate>2005-11-09T07:58:10.359Z</IssueDate><Products><Product><EPC>00103003339876543218</EPC><ParentEPC>00103003339876543218</ParentEPC><BarCode></BarCode><NDC>NDC 67158-157-23</NDC><DosageForm>Tablet</DosageForm><DosageStrength>40mg</DosageStrength><ContainerSize>100</ContainerSize><LotNumber/><LotExpireDate/><PackageUPC>3671581572312</PackageUPC><Description>Lipitor Tablets</Description><Quantity>100</Quantity><ManufacturerName>Pfizer</ManufacturerName><ManufacturerLicense>21345</ManufacturerLicense><CustodyLicenseNumber>125678</CustodyLicenseNumber></Product></Products><Manufacturer><Name>Pfizer</Name><Address>fdfdddfdbangalore,karnataka,</Address><Contact>kdfkk</Contact><ContactPhone>19929939</ContactPhone><ContactFax>93994939</ContactFax><ContactEmail>santosh@sourcen.com</ContactEmail><LicenseNumber/><Signature xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo xmlns="http://www.w3.org/2000/09/xmldsig#"><CanonicalizationMethod xmlns="http://www.w3.org/2000/09/xmldsig#" Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/><SignatureMethod xmlns="http://www.w3.org/2000/09/xmldsig#" Algorithm="http://www.w3.org/2000/09/xmldsig#dsa-sha1"/><Reference xmlns="http://www.w3.org/2000/09/xmldsig#" URI=""><Transforms xmlns="http://www.w3.org/2000/09/xmldsig#"><Transform xmlns="http://www.w3.org/2000/09/xmldsig#" Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/><Transform xmlns="http://www.w3.org/2000/09/xmldsig#" Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315#WithComments"/></Transforms><DigestMethod xmlns="http://www.w3.org/2000/09/xmldsig#" Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/><DigestValue xmlns="http://www.w3.org/2000/09/xmldsig#">lhspnia8JSeWUtRZ/ke+H19SLKw=</DigestValue></Reference><Reference xmlns="http://www.w3.org/2000/09/xmldsig#" URI="http://www.w3.org/TR/xml-stylesheet"><DigestMethod xmlns="http://www.w3.org/2000/09/xmldsig#" Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/><DigestValue xmlns="http://www.w3.org/2000/09/xmldsig#">RFJNR7jm3subSypvlLe4iwd2fAI=</DigestValue></Reference><Reference xmlns="http://www.w3.org/2000/09/xmldsig#" URI="http://www.nue.et-inf.uni-siegen.de/index.html"><DigestMethod xmlns="http://www.w3.org/2000/09/xmldsig#" Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/><DigestValue xmlns="http://www.w3.org/2000/09/xmldsig#">Hpg+6h1k1jYY5yr3TRzDZzw23CQ=</DigestValue></Reference></SignedInfo><SignatureValue xmlns="http://www.w3.org/2000/09/xmldsig#">Z9VEHWUCAwaTjufuaVGI3kAPqd1YpSigBlYVk1DjG3xC8d875J4qxw==</SignatureValue><KeyInfo xmlns="http://www.w3.org/2000/09/xmldsig#"><X509Data xmlns="http://www.w3.org/2000/09/xmldsig#"><X509Certificate xmlns="http://www.w3.org/2000/09/xmldsig#">
+MIIDLDCCAuoCBELwQzkwCwYHKoZIzjgEAwUAMHwxCzAJBgNVBAYTAlVTMQswCQYDVQQIEwJDQTER
+MA8GA1UEBxMIU2FuIEpvc2UxFTATBgNVBAoTDFJhaW5pbmcgRGF0YTEUMBIGA1UECxMLRW5naW5l
+ZXJpbmcxIDAeBgNVBAMTF0FTYW5naGEgTWlkZGxld2FyZSBUZWFtMB4XDTA1MDgwMzA0MDgyNVoX
+DTE1MDgwMTA0MDgyNVowfDELMAkGA1UEBhMCVVMxCzAJBgNVBAgTAkNBMREwDwYDVQQHEwhTYW4g
+Sm9zZTEVMBMGA1UEChMMUmFpbmluZyBEYXRhMRQwEgYDVQQLEwtFbmdpbmVlcmluZzEgMB4GA1UE
+AxMXQVNhbmdoYSBNaWRkbGV3YXJlIFRlYW0wggG3MIIBLAYHKoZIzjgEATCCAR8CgYEA/X9TgR11
+EilS30qcLuzk5/YRt1I870QAwx4/gLZRJmlFXUAiUftZPY1Y+r/F9bow9subVWzXgTuAHTRv8mZg
+t2uZUKWkn5/oBHsQIsJPu6nX/rfGG/g7V+fGqKYVDwT7g/bTxR7DAjVUE1oWkTL2dfOuK2HXKu/y
+IgMZndFIAccCFQCXYFCPFSMLzLKSuYKi64QL8Fgc9QKBgQD34aCF1ps93su8q1w2uFe5eZSvu/o6
+6oL5V0wLPQeCZ1FZV4661FlP5nEHEIGAtEkWcSPoTCgWE7fPCTKMyKbhPBZ6i1R8jSjgo64eK7Om
+dZFuo38L+iE1YvH7YnoBJDvMpPG+qFGQiaiD3+Fa5Z8GkotmXoB7VSVkAUw7/s9JKgOBhAACgYB4
+bCKptwOSfyYQpfEe9hfvWeYXhg6gg2HU3TL1OWqWQuTTZKgNRTZ0AjEtth2D9BNVD4UT6qj1c1Te
+YmZl+sUHOhxB0ss5xrX+7mDzJGfrG2mfjY/EMQJdMwCkSGMbrlSUOJmiNME0HP+YN37hmtwZYIOW
+M/cd/44XCw0CIDAMZDALBgcqhkjOOAQDBQADLwAwLAIUEj9NGCgobCiNeRb1+QzfdO/SKjkCFBGi
+S2WzCn4Hix1OhsRoD3jeCqSS
+</X509Certificate></X509Data><KeyValue xmlns="http://www.w3.org/2000/09/xmldsig#"><DSAKeyValue xmlns="http://www.w3.org/2000/09/xmldsig#"><P xmlns="http://www.w3.org/2000/09/xmldsig#">
+/X9TgR11EilS30qcLuzk5/YRt1I870QAwx4/gLZRJmlFXUAiUftZPY1Y+r/F9bow9subVWzXgTuA
+HTRv8mZgt2uZUKWkn5/oBHsQIsJPu6nX/rfGG/g7V+fGqKYVDwT7g/bTxR7DAjVUE1oWkTL2dfOu
+K2HXKu/yIgMZndFIAcc=
+</P><Q xmlns="http://www.w3.org/2000/09/xmldsig#">l2BQjxUjC8yykrmCouuEC/BYHPU=</Q><G xmlns="http://www.w3.org/2000/09/xmldsig#">
+9+GghdabPd7LvKtcNrhXuXmUr7v6OuqC+VdMCz0HgmdRWVeOutRZT+ZxBxCBgLRJFnEj6EwoFhO3
+zwkyjMim4TwWeotUfI0o4KOuHiuzpnWRbqN/C/ohNWLx+2J6ASQ7zKTxvqhRkImog9/hWuWfBpKL
+Zl6Ae1UlZAFMO/7PSSo=
+</G><Y xmlns="http://www.w3.org/2000/09/xmldsig#">
+eGwiqbcDkn8mEKXxHvYX71nmF4YOoINh1N0y9TlqlkLk02SoDUU2dAIxLbYdg/QTVQ+FE+qo9XNU
+3mJmZfrFBzocQdLLOca1/u5g8yRn6xtpn42PxDECXTMApEhjG65UlDiZojTBNBz/mDd+4ZrcGWCD
+ljP3Hf+OFwsNAiAwDGQ=
+</Y></DSAKeyValue></KeyValue></KeyInfo></Signature></Manufacturer><Custody type="Pharmacy" order="0"><Name>CVS Pharmacy</Name><Address>Spring St.,413,Orlando,60123,FL</Address><ContactName/><TransactionDate>2006-07-17T09:30:47</TransactionDate><TransactionType>DespatchAdvice</TransactionType><TransactionNumber>C28785100007</TransactionNumber><AuthenticatorName/><AuthenticatorEmail/><AuthenticatorPhone/><LicenseNumber>CV234156</LicenseNumber><InCustodyFromDate></InCustodyFromDate><InCustodyToDate>2005-11-09T07:58:10.359Z</InCustodyToDate></Custody><PedigreeStatus><Status><StatusChangedOn>2005-11-09T07:58:10.359Z</StatusChangedOn><status>Sent</status></Status></PedigreeStatus></Pedigree></Pedigrees></APN>

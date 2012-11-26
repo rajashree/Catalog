@@ -1,0 +1,11 @@
+/CreateProcedure(Signature)/1.2/Fri Nov  3 12:53:17 2006/-kb/
+/CreateProcedure_MD_forAP.xq/1.14/Thu Aug 24 11:04:47 2006/-kb/
+/DeleteAndInsertPedigree.xq/1.2/Wed Mar 14 07:03:21 2007/-kb/
+/DropProcedure_MD_forAP.xq/1.2/Thu Jul 27 13:55:58 2006/-kb/
+/ManualSHippedPedigree.xq/1.6/Thu Mar  1 05:30:45 2007/-kb/
+/SpsForPortal.xq/1.6/Thu Mar 15 06:15:18 2007/-kb/
+/createprocforpedigreeBank.xq/1.1/Mon Jul 24 14:04:12 2006/-kb/
+/dropProcforPedigreeBank.xq/1.1/Mon Jul 24 14:04:12 2006/-kb/
+/dropSpsForPortal.xq/1.1/Fri Sep 22 08:27:35 2006/-kb/
+/register.xq/1.2/Fri Nov  3 12:45:28 2006/-kb/
+/unregister.xq/1.1/Mon Jul 24 14:04:12 2006/-kb/

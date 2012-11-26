@@ -1,0 +1,43 @@
+2006-10-12 05:39:52,927 INFO  (?:?) - In processPreprocess method::Requested action::/ePharma
+2006-10-12 05:39:52,943 INFO  (?:?) - In execute method
+2006-10-12 05:39:52,959 INFO  (?:?) - In authenticate method
+2006-10-12 05:39:52,959 INFO  (?:?) - In getUser method
+2006-10-12 05:39:52,959 INFO  (?:?) - Query:tlsp:loginUserInfo('test')
+2006-10-12 05:39:53,490 INFO  (?:?) - In passwordMatch method
+2006-10-12 05:39:53,506 INFO  (?:?) - In valueBound method
+2006-10-12 05:39:53,506 INFO  (?:?) - In insertSessionDoc method
+2006-10-12 05:39:53,506 INFO  (?:?) - In replaceString method
+2006-10-12 05:39:53,506 INFO  (?:?) - Query:tig:insert-document( 'tig:///EAGRFID/SysSessions/', <session><sessionid>12700120061012053953</sessionid><userid>6120645223803314407198380497886</userid><username>Test Test</username><accesslevel>epedigree</accesslevel><sessionstart>2006-10-12T05:39:53</sessionstart><userip>127.0.0.1</userip><lastuse>2006-10-12T05:39:53</lastuse><tp_company_nm>Southwood</tp_company_nm><tp_company_id>null</tp_company_id></session>)
+2006-10-12 05:39:53,537 INFO  (?:?) - In processPreprocess method::Requested action::/ePharma
+2006-10-12 05:39:53,599 INFO  (?:?) - ********Inside Action EpedigreeAction....... 
+2006-10-12 05:39:53,615 INFO  (?:?) - Inside Action execute of EpedigreeAction....
+2006-10-12 05:39:53,615 INFO  (?:?) - Validating The Session
+2006-10-12 05:39:53,615 INFO  (?:?) - sessionID in EpedigreeAction :12700120061012053953
+2006-10-12 05:39:53,709 INFO  (?:?) - The readStatus is : true
+2006-10-12 05:39:53,709 INFO  (?:?) - My Query in EpedigreeAction class.....tlsp:DisplayMessage('12700120061012053953') 
+2006-10-12 05:39:53,865 INFO  (?:?) - Before returning to success
+2006-10-12 05:40:02,177 INFO  (?:?) - In processPreprocess method::Requested action::/ePharma
+2006-10-12 05:40:02,256 INFO  (?:?) - Inside Action TradingPartnerListAction....... 
+2006-10-12 05:40:02,256 INFO  (?:?) - Inside Action execute of TradingPartnerListAction....
+2006-10-12 05:40:02,256 INFO  (?:?) - query tlsp:validateAccess('12700120061012053953','4.0','Read')
+2006-10-12 05:40:02,271 INFO  (?:?) - The insertStatus is true
+2006-10-12 05:40:05,787 INFO  (?:?) - In processPreprocess method::Requested action::/ePharma
+2006-10-12 05:40:05,834 INFO  (?:?) - Inside TradingPartnerAccessPrivilage Class
+2006-10-12 05:40:05,865 INFO  (?:?) - The insertStatus is true
+2006-10-12 05:40:48,115 INFO  (?:?) - In processPreprocess method::Requested action::/ePharma
+2006-10-12 05:40:48,381 INFO  (?:?) - Inside Action TradingPartnerAction....... 
+2006-10-12 05:40:48,396 INFO  (?:?) - Inside Action execute of TradingPartnerAction....
+2006-10-12 05:40:48,396 DEBUG (?:?) - Before doing Operation : ADD
+2006-10-12 05:40:48,396 INFO  (?:?) -  Befoe converting to form!!!! operation : ADD
+2006-10-12 05:40:48,396 INFO  (?:?) -  Before converting to form!!!! operation : ADD
+2006-10-12 05:40:48,396 INFO  (?:?) -  Inside ADD methods Befoe converting to form!!!! 
+2006-10-12 05:40:48,490 INFO  (?:?) -  Before converting to form!!!!
+2006-10-12 05:40:48,662 INFO  (?:?) - before retuning Success! 
+2006-10-12 05:40:48,662 INFO  (?:?) - In processPreprocess method::Requested action::/ePharma
+2006-10-12 05:40:48,693 INFO  (?:?) - Inside Action TradingPartnerListAction....... 
+2006-10-12 05:40:48,693 INFO  (?:?) - Inside Action execute of TradingPartnerListAction....
+2006-10-12 05:40:48,709 INFO  (?:?) - query tlsp:validateAccess('12700120061012053953','4.0','Read')
+2006-10-12 05:40:48,724 INFO  (?:?) - The insertStatus is true
+2006-10-12 05:41:06,631 INFO  (?:?) - In valueUnbound method
+2006-10-12 05:41:06,646 INFO  (?:?) - In contextDestroyed method
+2006-10-12 05:41:06,646 INFO  (?:?) - Query:tlsp:deleteSessions()

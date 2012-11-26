@@ -1,0 +1,10 @@
+2007-03-08 18:17:24,528 INFO  (ActionExceptionHandler.java:98) - Deatils of Error with TL messages..
+2007-03-08 18:17:24,575 INFO  (ActionExceptionHandler.java:112) - Error Code :xq-static-00010
+2007-03-08 18:17:24,575 INFO  (ActionExceptionHandler.java:113) - Error Message :[xq-static-00010] - [ndcLength] references an implicit context where none is defined.
+2007-03-08 18:17:24,575 INFO  (ActionExceptionHandler.java:114) - Full Message :com.rdta.xquery.compile.StaticException: [xq-static-00010] - [ndcLength] references an implicit context where none is defined.
+2007-03-08 18:17:24,606 INFO  (ActionExceptionHandler.java:126) - Definition :xq-static-00010[]
+2007-03-08 18:18:11,653 INFO  (ActionExceptionHandler.java:98) - Deatils of Error with TL messages..
+2007-03-08 18:18:11,653 INFO  (ActionExceptionHandler.java:112) - Error Code :xq-type-00000
+2007-03-08 18:18:11,653 INFO  (ActionExceptionHandler.java:113) - Error Message :[xq-type-00000] - [http://www.rainingdata.com/TigerLogic/namespaces/stored-procedures,getSearchResultsNew] [( xs:string*, xs:string* )] cannot be applied to [( xs:string, xs:string, xs:integer )].
+2007-03-08 18:18:11,668 INFO  (ActionExceptionHandler.java:114) - Full Message :com.rdta.xquery.error.TypeException: [xq-type-00000] - [http://www.rainingdata.com/TigerLogic/namespaces/stored-procedures,getSearchResultsNew] [( xs:string*, xs:string* )] cannot be applied to [( xs:string, xs:string, xs:integer )].
+2007-03-08 18:18:11,668 INFO  (ActionExceptionHandler.java:126) - Definition :xq-type-00000[]

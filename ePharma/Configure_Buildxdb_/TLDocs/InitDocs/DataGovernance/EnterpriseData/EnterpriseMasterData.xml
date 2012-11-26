@@ -1,0 +1,19 @@
+<!-- This enterprise data is the central repository of high value data and its used in computation models and this is the data that is being requested to change -->
+<EnterpriseMasterData>
+<DataElement type='ProductDiscount' id='1'>
+		<Percentage>3</Percentage>
+		<TriggerAmount>100</TriggerAmount>
+</DataElement>
+<DataElement type='ProductDiscount' id='2'>
+		<Percentage>8</Percentage>
+		<TriggerAmount>250</TriggerAmount>
+</DataElement>
+<DataElement type='ProductDiscount' id='3'>
+		<Percentage>12</Percentage>
+		<TriggerAmount>450</TriggerAmount>
+</DataElement>
+<DataElement type='VendorContact' id='4'>
+	<VendorId>123</VendorId>
+	<Address type='Primary'>123 First St, San Jose, CA 95128</Address>
+</DataElement>
+</EnterpriseMasterData>

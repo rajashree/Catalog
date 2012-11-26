@@ -6,5 +6,14 @@
     <welcome-file-list>
         <welcome-file>index.html</welcome-file>
     </welcome-file-list>
+    <servlet>
+		<servlet-name>ValidateServlet</servlet-name>
+		<servlet-class>ValidateServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>ValidateServlet</servlet-name>
+		<url-pattern>/ValidateServlet</url-pattern>
+	</servlet-mapping>
 
 </web-app>

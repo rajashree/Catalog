@@ -1,0 +1,298 @@
+
+
+tig:create-stored-procedure("PEDSHIPManual_PP","
+declare variable $shipNode as node() external;
+declare variable $signerId as string external;
+declare variable $deaNumber as string external;
+declare variable $sourceRoutingCode as string external;
+
+for $ship_data in $shipNode//pedshipData
+(:let $final_shipdata as node() := tlsp:ReformatingPedShipData($ship_data):)
+let $result := tlsp:CreateManualShippedPedigree_PP(<root>{$ship_data}</root>,$signerId,$deaNumber,$sourceRoutingCode)
+return $result
+
+"),
+
+tig:create-stored-procedure("PTPExists","
+ declare variable $shipNode as node()* external;
+ let $deaNumber := distinct-values($shipNode[1]//CustomerDea)
+return if(exists(for $i in collection('tig:///ePharma/PedigreeTradingPartner')/PedigreeTradingPartner
+ 	 where upper-case($i/deaNumber) = upper-case($deaNumber)
+	 return $i)) then
+	 'true'
+	else 'false'
+"),
+tig:create-stored-procedure("GetInvoiceNo","
+declare variable $shipNode as node()* external;
+
+let $b := $shipNode//Invoice
+return data($b[1])
+
+"),
+
+tig:create-stored-procedure("InsertProcessedEnvelope","
+declare variable $envIds as node()* external;
+declare variable $fileName as string external;
+
+tig:insert-document('tig:///ePharma/ProcessedEnvelope',
+			<ProcessedEnvelope>
+				<fileName>{$fileName}</fileName>
+				{$envIds/envelopeId}
+			</ProcessedEnvelope>)
+"),
+
+tig:create-stored-procedure("RetrievePedTradingPartnerInfo", "
+
+declare variable $deaNumber as string external;
+
+<root>{
+for $i in collection('tig:///ePharma/PedigreeTradingPartner')/PedigreeTradingPartner where $i/deaNumber = $deaNumber
+return ($i/notificationDescription,
+       $i/notificationInfo,
+       $i/localFolder)          
+}</root>"),
+tig:create-stored-procedure("CreateManualShippedPedigree_PP","
+import module namespace util = 'xquery:modules:util';
+declare variable $xmlString as node()* external;
+
+
+declare variable $signerId as string external;
+declare variable $deaNumber as string external;
+declare variable $sourceRoutingCode as string external;
+let $docid := util:create-uuid()
+let $shipid := util:create-uuid()
+let $pedshipdata := $xmlString//pedshipData
+let $ind_pedship := (for $i in $pedshipdata return $i/pedship)[1]
+let $values := tlsp:TPCustomization($ind_pedship/CustomerDea,'manualusecase')
+let $drc := (for $i in collection('tig:///ePharma/PedigreeTradingPartner')/PedigreeTradingPartner
+where $i/deaNumber = $ind_pedship/CustomerDea
+return data($i/destinationRoutingCode))
+
+let $date := substring-before(fn:current-dateTime() cast as string,'T')
+let $dateTime := substring-before(fn:current-dateTime() cast as string,'.')
+let $envid := concat('urn:uuid:',util:create-uuid())
+
+let $signerInfo := for $y in collection('tig:///EAGRFID/SysUsers')/User
+where $y/UserID = $signerId
+
+return <signerInfo><name>{concat(data($y/FirstName),' ',data($y/LastName))}</name><title>{data($y/UserRole)}</title><telephone>{data($y/Phone)}</telephone>
+<email>{data($y/Email)}</email>
+</signerInfo>
+
+let $PP := (for $i in collection('tig:///CatalogManager/TradingPartner')/TradingPartner where $i/deaNumber = $deaNumber return $i)
+
+let $senderinfo := (
+	<senderInfo><businessAddress><businessName>{data($PP/name)}</businessName>
+	<street1>{data($PP/businessAddress/line1)}</street1><street2>{data($PP/businessAddress/line2)}</street2><city>{data($PP/businessAddress/city)}</city><stateOrRegion>{data($PP/businessAddress/state)}</stateOrRegion>
+	<postalCode>{data($PP/businessAddress/zip)}</postalCode><country>{data($PP/businessAddress/country)}</country></businessAddress>
+	<shippingAddress><businessName>{data($PP/name)}</businessName>
+	<street1>{data($PP/shippingAddress/line1)}</street1><street2>{data($PP/shippingAddress/line2)}</street2><city>{data($PP/shippingAddress/city)}</city><stateOrRegion>{data($PP/shippingAddress/state)}</stateOrRegion>
+	<postalCode>{data($PP/shippingAddress/zip)}</postalCode><country>{data($PP/shippingAddress/country)}</country></shippingAddress>
+	<licenseNumber>{data($PP/deaNumber)}</licenseNumber>
+	<contactInfo>
+		<name>{data($PP/contact)}</name>
+                  <title>{data($PP/title)}</title>
+		<telephone>{data($PP/phone)}</telephone>
+		<email>{data($PP/email)}</email>
+        <url>{data($PP/webURL)}</url>  
+	</contactInfo>
+	</senderInfo>
+)
+
+let $pedigree_data := <Result>{(for $shipNode in $pedshipdata/pedship
+
+let $docid := util:create-uuid()
+let $shipid := util:create-uuid()
+let $quantity := data($shipNode/QuantityPulled)
+let $NDC := data($shipNode/NDC)
+
+let $productNode := (<productInfo><drugName>{data($shipNode/LegendDrugName)}</drugName><manufacturer>{data($shipNode/MFGName)}</manufacturer>
+	   	   <productCode type='NDC'>{$NDC}</productCode><dosageForm>{data($shipNode/Dosage)}</dosageForm>
+    	            <strength>{data($shipNode/Strength)}</strength><containerSize>{data($shipNode/ContainerSize)}</containerSize></productInfo> )
+
+let $mfgrInfo := (<senderInfo><businessAddress><businessName>{data($shipNode/MFGName)}</businessName>
+		 <street1>{data($shipNode/MfgStreet1)}</street1><street2>{data($shipNode/MfgStreet2)}</street2><city>{data($shipNode/MfgCity)}</city><stateOrRegion>{data($shipNode/MfgState)}</stateOrRegion>
+		<postalCode>{data($shipNode/MfgPostalCode)}</postalCode><country>{data($shipNode/MfgCountry)}</country></businessAddress>
+		<licenseNumber>{data($shipNode/MfgDEANumber)}</licenseNumber>
+		<contactInfo><name>{data($shipNode/MfgContactName)}</name><title>{data($shipNode/MfgContactTitle)}</title>
+		<email>{data($shipNode/MfgContactEMail)}</email>
+		</contactInfo>
+		</senderInfo> )
+
+let $recipientinfo := (
+	<recipientInfo><businessAddress><businessName>{data($shipNode/CustomerName)}</businessName>
+	<street1>{data($shipNode/CustomerAddressStreet1)}</street1>
+	<street2>{data($shipNode/CustomerAddressStreet2)}</street2>
+	<city>{data($shipNode/CustomerCity)}</city><stateOrRegion>{data($shipNode/CustomerState)}</stateOrRegion>
+	<postalCode>{data($shipNode/CustomerPostalCode)}</postalCode><country>{data($shipNode/CustomerCountry)}</country>
+	</businessAddress><shippingAddress><businessName>{data($shipNode/CustomerName)}</businessName>
+	<street1>{data($shipNode/ShipToCustomerAddressLine1)}</street1>
+	<street2>{data($shipNode/ShipToCustomerAddressLine2)}</street2>
+	<city>{data($shipNode/ShipToCustomerCity)}</city><stateOrRegion>{data($shipNode/ShipToState)}</stateOrRegion>
+	<postalCode>{data($shipNode/ShipToCustomerZip)}</postalCode><country>{data($shipNode/ShipToCountry)}</country>
+	</shippingAddress>
+	<licenseNumber>{data($shipNode/CustomerDea)}</licenseNumber>
+	</recipientInfo>)
+let $init :=(<initialPedigree>
+	   {$productNode}
+	   <itemInfo>
+	     <lot>{data($shipNode/LotNo)}</lot> 
+	     <expirationDate>{data($shipNode/ExpYYYYMMDD)}</expirationDate> 
+	     <quantity>{data($shipNode/QuantityPulled)}</quantity> 
+	    </itemInfo>
+	    <transactionInfo>
+	   	{$mfgrInfo}
+	         <recipientInfo><businessAddress>{$senderinfo/businessAddress//*}</businessAddress><shippingAddress>{$senderinfo/shippingAddress//*}</shippingAddress></recipientInfo>
+	   	<transactionIdentifier>
+			<identifier>{data($shipNode/Invoice)}</identifier><identifierType>InvoiceNumber</identifierType>
+	         </transactionIdentifier>
+		<transactionType>Sale</transactionType>
+	   	<transactionDate>{data($shipNode/PODateYYYYMMDD)}</transactionDate>
+	    </transactionInfo>
+	    <receivingInfo>
+		<dateReceived>{data($shipNode/RecDateYYYYMMDD)}</dateReceived>
+	    </receivingInfo>
+	 </initialPedigree>)
+
+let $ped1 := (for $j in collection('tig:///ePharma/ShippedPedigree')/*:pedigree
+where $j/*:receivedPedigree/*:documentInfo/*:serialNumber = $shipNode/PedigreeId
+return $j) return
+
+let $initialPed := (for $j in collection('tig:///ePharma/PaperPedigree')/*:pedigree
+where $j/*:initialPedigree/*:documentInfo/*:serialNumber = $shipNode/PedigreeId
+return $j)
+
+let $result := (if (exists($ped1)) then $ped1
+	       else
+	       if(exists($initialPed)) then $initialPed
+	       else $init)
+let $container := (<pedigreeHandle><serialNumber>{$docid}</serialNumber></pedigreeHandle> )
+
+return
+(
+<pedigree>
+  <shippedPedigree id='{$shipid}'>
+	<documentInfo>
+	  <serialNumber>{$docid}</serialNumber>
+	  <version>20060916</version>
+	</documentInfo>
+	{$result}
+	<itemInfo>			
+		<lot>{data($shipNode/LotNumberInitial)}</lot>
+		<expirationDate>{data($shipNode/ExpiryDate)}</expirationDate>
+		<quantity>{data($shipNode/Quantity)}</quantity>
+	</itemInfo>
+ 	<transactionInfo>
+	   {$senderinfo}
+	   {$recipientinfo}
+	   <transactionIdentifier>
+		<identifier>{data($shipNode/Invoice)}</identifier><identifierType>InvoiceNumber</identifierType>
+	   </transactionIdentifier>
+	   <transactionType>Sale</transactionType>
+	   <transactionDate>{data($shipNode/PODateYYYYMMDD)}</transactionDate>
+	</transactionInfo>
+	<signatureInfo>
+	  {$signerInfo}
+	  <signatureDate>{$dateTime}</signatureDate>
+	  <signatureMeaning>Certified</signatureMeaning>
+	</signatureInfo>
+  </shippedPedigree>
+  <Signature>
+	<SignedInfo>
+		<CanonicalizationMethod Algorithm=''/>
+		<SignatureMethod Algorithm=''/>
+		<Reference>
+			<DigestMethod Algorithm=''/>
+			<DigestValue/>
+		</Reference>
+	</SignedInfo>
+	<SignatureValue/>
+   </Signature>
+</pedigree> ,$container ))}</Result>
+
+let $pedEnv := (<pedigreeEnvelope>
+<version>20060916</version>
+<serialNumber>{$envid}</serialNumber>
+<date>{$date}</date>
+<sourceRoutingCode>{$sourceRoutingCode}</sourceRoutingCode><destinationRoutingCode>{$drc}</destinationRoutingCode>
+<container><containerCode>{if($values/containerCode = 'PONumber') then distinct-values(data($ind_pedship/Invoice)) 
+		else if($values/shipmentHandle = 'InvoiceNumber') then distinct-values(data($ind_pedship/Invoice))
+		else 'NA'}</containerCode>
+		<shipmentHandle>{if($values/shipmentHandle = 'PONumber') then distinct-values(data($ind_pedship/Invoice)) 
+		else if($values/shipmentHandle = 'InvoiceNumber') then distinct-values(data($ind_pedship/Invoice))
+		else 'NA'}</shipmentHandle>
+		{$pedigree_data/pedigreeHandle}
+		</container>
+
+{$pedigree_data/pedigree}
+</pedigreeEnvelope>
+)
+return $pedEnv 
+"),
+
+tig:create-stored-procedure("InsertShippedPedigree","
+declare variable $envNode as node() external;
+declare variable $fileName as string external;
+let $test := $envNode/node()
+let $envId := data($test/*:serialNumber)
+let $result := tig:insert-document('tig:///ePharma/ShippedPedigree',$envNode)
+let $sign := tlsp:CreateSignatureToEnvelope_PP($envId)
+return $envId
+"), 
+
+
+tig:create-stored-procedure("TPCustomization","
+declare variable $deaNumber as string external;
+declare variable $usecase as string external;
+let $config := <root>{(for $i in collection('tig:///ePharma/PedigreeTradingPartner')/PedigreeTradingPartner
+where $i/deaNumber = $deaNumber
+return
+if( $usecase = 'manualusecase') then $i/configurationElements/manualusecase/config 
+else if ( $usecase = 'dropshipusecase')then $i/configurationElements/dropshipusecase/config 
+else if ( $usecase = 'automatedusecase')then $i/configurationElements/automatedusecase/config 
+else ()
+)}</root>
+
+let $ccode := for $i in $config/config where $i/element = 'containerCode' return data($i/value)
+let $shipment := for $i in $config/config where $i/element = 'shipmentHandle' return data($i/value)
+return 
+<result>
+{
+<containerCode>{$ccode}</containerCode>,
+<shipmentHandle>{$shipment}</shipmentHandle>
+}
+</result>
+"),
+tig:create-stored-procedure("CreateSignatureToEnvelope_PP","
+declare xmlspace preserve;
+
+import module namespace util = 'xquery:modules:util';
+import module namespace xmlf = 'xquery:modules:xml';
+declare namespace bin = 'http://www.rainingdata.com/TigerLogic/binary-support';
+
+declare variable $EnvelopeId as string external; 
+
+declare variable $keyFile as xs:string {'C:/security/keys/SW_keystore'}; 
+declare variable $keyPwd as xs:string {'md1841'}; 
+declare variable $keyAlias as xs:string {'MDAlias'}; 
+
+declare function local:createSignature($doc as node(),$local_key_file as xs:string,
+	 $local_keyPwd as xs:string, $local_keyAlias as xs:string,$signURI as xs:string,
+	 $signId as xs:string) as node(){ 
+
+	let $signedDoc := local:signPedigreeNode($doc, $local_key_file, $local_keyPwd , $local_keyAlias, $signURI, $signId) 
+	return 
+		(:xmlf:parse(bin:as-string(binary{$signedDoc},'UTF-8')):)
+		$signedDoc
+}; 
+
+(: Make this generic, right now using it for signing shippedPedigree node :)
+update
+for $pedigree in collection('tig:///ePharma/ShippedPedigree')/*:pedigreeEnvelope[*:serialNumber = $EnvelopeId ]/*:pedigree
+let $pedNode := document{<pedigree xmlns=""urn:epcGlobal:Pedigree:xsd:1"">{$pedigree/*:shippedPedigree}</pedigree>}
+let $pedigree_sign := local:createSignature($pedNode,
+					$keyFile,$keyPwd,$keyAlias,
+					concat('#',$pedigree/*:shippedPedigree/@id),
+					concat('_',util:create-uuid()))
+replace $pedigree with $pedigree_sign/*:pedigree
+")

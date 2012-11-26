@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="C:/Documents and Settings/Rajashree/Desktop/FromDevashree/datagovernance1/datagovernance1/lib/activation.jar"/>
+	<classpathentry kind="lib" path="C:/Documents and Settings/Rajashree/Desktop/FromDevashree/datagovernance1/datagovernance1/lib/axis.jar"/>
+	<classpathentry kind="lib" path="C:/Documents and Settings/Rajashree/Desktop/FromDevashree/datagovernance1/datagovernance1/lib/commons-beanutils.jar"/>
+	<classpathentry kind="lib" path="C:/Documents and Settings/Rajashree/Desktop/FromDevashree/datagovernance1/datagovernance1/lib/commons-collections.jar"/>
+	<classpathentry kind="lib" path="C:/Documents and Settings/Rajashree/Desktop/FromDevashree/datagovernance1/datagovernance1/lib/commons-discovery.jar"/>
+	<classpathentry kind="lib" path="C:/Documents and Settings/Rajashree/Desktop/FromDevashree/datagovernance1/datagovernance1/lib/commons-lang-2.1.jar"/>
+	<classpathentry kind="lib" path="C:/Documents and Settings/Rajashree/Desktop/FromDevashree/datagovernance1/datagovernance1/lib/commons-logging.jar"/>
+	<classpathentry kind="lib" path="C:/Documents and Settings/Rajashree/Desktop/FromDevashree/datagovernance1/datagovernance1/lib/commons-pool-1.2.jar"/>
+	<classpathentry kind="lib" path="C:/Documents and Settings/Rajashree/Desktop/FromDevashree/datagovernance1/datagovernance1/lib/datagov.jar"/>
+	<classpathentry kind="lib" path="C:/Documents and Settings/Rajashree/Desktop/FromDevashree/datagovernance1/datagovernance1/lib/eag-commons.jar"/>
+	<classpathentry kind="lib" path="C:/Documents and Settings/Rajashree/Desktop/FromDevashree/datagovernance1/datagovernance1/lib/exb-wsclient.jar"/>
+	<classpathentry kind="lib" path="C:/Documents and Settings/Rajashree/Desktop/FromDevashree/datagovernance1/datagovernance1/lib/j2ee.jar"/>
+	<classpathentry kind="lib" path="C:/Documents and Settings/Rajashree/Desktop/FromDevashree/datagovernance1/datagovernance1/lib/jaxen-core.jar"/>
+	<classpathentry kind="lib" path="C:/Documents and Settings/Rajashree/Desktop/FromDevashree/datagovernance1/datagovernance1/lib/jaxen-dom.jar"/>
+	<classpathentry kind="lib" path="C:/Documents and Settings/Rajashree/Desktop/FromDevashree/datagovernance1/datagovernance1/lib/jcommon-1.0.0-rc1.jar"/>
+	<classpathentry kind="lib" path="C:/Documents and Settings/Rajashree/Desktop/FromDevashree/datagovernance1/datagovernance1/lib/jfreechart-1.0.0-rc1.jar"/>
+	<classpathentry kind="lib" path="C:/Documents and Settings/Rajashree/Desktop/FromDevashree/datagovernance1/datagovernance1/lib/log4j-1.2.8.jar"/>
+	<classpathentry kind="lib" path="C:/Documents and Settings/Rajashree/Desktop/FromDevashree/datagovernance1/datagovernance1/lib/loop.jar"/>
+	<classpathentry kind="lib" path="C:/Documents and Settings/Rajashree/Desktop/FromDevashree/datagovernance1/datagovernance1/lib/mail.jar"/>
+	<classpathentry kind="lib" path="C:/Documents and Settings/Rajashree/Desktop/FromDevashree/datagovernance1/datagovernance1/lib/saxpath.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/rainingdata/tigerlogic/tljdk/lib/connector.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/rainingdata/tigerlogic/tljdk/lib/deployer.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/rainingdata/tigerlogic/tljdk/lib/jca-connector.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/rainingdata/tigerlogic/tljdk/lib/tlapi.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/rainingdata/tigerlogic/tljdk/lib/tlerror.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/rainingdata/tigerlogic/tljdk/lib/utility.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/rainingdata/tigerlogic/tljdk/lib/xmlparser.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/rainingdata/tigerlogic/tljdk/lib/xmltypes.jar"/>
+	<classpathentry kind="output" path="WEB-INF/classes"/>
+</classpath>

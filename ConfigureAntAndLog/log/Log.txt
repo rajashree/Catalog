@@ -1,0 +1,2 @@
+INFO  2011-01-13 12:20:02,375 [main] -  Result  Hello World !!! 
+INFO  2011-01-13 14:20:02,265 [main] -  Result  Hello World !!! 

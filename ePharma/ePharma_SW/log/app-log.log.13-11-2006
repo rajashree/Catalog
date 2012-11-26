@@ -1,0 +1,111 @@
+2006-11-13 16:17:17,498 INFO  (?:?) - In processPreprocess method::Requested action::/ePharma
+2006-11-13 16:17:17,529 INFO  (?:?) - In execute method
+2006-11-13 16:17:17,529 INFO  (?:?) - In authenticate method
+2006-11-13 16:17:17,529 INFO  (?:?) - In getUser method
+2006-11-13 16:17:17,529 INFO  (?:?) - Query:tlsp:loginUserInfo('test')
+2006-11-13 16:17:18,061 INFO  (?:?) - In passwordMatch method
+2006-11-13 16:17:18,061 INFO  (?:?) - In valueBound method
+2006-11-13 16:17:18,061 INFO  (?:?) - In insertSessionDoc method
+2006-11-13 16:17:18,076 INFO  (?:?) - In replaceString method
+2006-11-13 16:17:18,076 INFO  (?:?) - Query:tig:insert-document( 'tig:///EAGRFID/SysSessions/', <session><sessionid>19216810011220061113041718</sessionid><userid>6120645223803314407198380497886</userid><username>Test Test</username><accesslevel>epedigree</accesslevel><sessionstart>2006-11-13T16:17:18</sessionstart><userip>192.168.100.112</userip><lastuse>2006-11-13T16:17:18</lastuse><tp_company_nm>Southwood</tp_company_nm><tp_company_id>null</tp_company_id></session>)
+2006-11-13 16:17:20,045 INFO  (?:?) - In processPreprocess method::Requested action::/ePharma
+2006-11-13 16:17:20,107 INFO  (?:?) - ********Inside Action EpedigreeAction....... 
+2006-11-13 16:17:20,107 INFO  (?:?) - Inside Action execute of EpedigreeAction....
+2006-11-13 16:17:20,123 INFO  (?:?) - Validating The Session
+2006-11-13 16:17:20,123 INFO  (?:?) - sessionID in EpedigreeAction :19216810011220061113041718
+2006-11-13 16:17:20,186 INFO  (?:?) - The readStatus is : true
+2006-11-13 16:17:20,186 INFO  (?:?) - My Query in EpedigreeAction class.....tlsp:DisplayMessage('19216810011220061113041718') 
+2006-11-13 16:17:20,248 INFO  (?:?) - Before returning to success
+2006-11-13 16:17:23,857 INFO  (?:?) - In processPreprocess method::Requested action::/ePharma
+2006-11-13 16:17:23,904 INFO  (?:?) - Inside Action ReceivingManagerAction....... 
+2006-11-13 16:17:23,904 INFO  (?:?) - Hi..................*********** offsetnull
+2006-11-13 16:17:23,904 INFO  (?:?) - Hi..................*********** off :null
+2006-11-13 16:17:23,904 INFO  (?:?) - Validating The Session
+2006-11-13 16:17:23,904 INFO  (?:?) - sessionID in Action :19216810011220061113041718
+2006-11-13 16:17:23,904 INFO  (?:?) - ****** recvng
+2006-11-13 16:17:23,920 INFO  (?:?) - Query[true]
+2006-11-13 16:17:23,951 INFO  (?:?) - the string valuetrue
+2006-11-13 16:17:23,998 INFO  (?:?) - TP Names : [Abbott Laboratories, ALPHAGEN LABORATORIES,INC., McKESSON CORP, ANDA GENERICS, INC., MEDSOURCE DIRECT, BARNES WHOLESALE, MODERN MEDICAL PRODUCTS, INC., BARR LABORATORIES INC., NUTRAMAX LABS, BERGEN BRUNSWIG DRUG COMPANY, PARMED PHARMACEUTICALS, INC., CALPAC CONTAINER CO, PHARMACEUTICAL INNOVATORS INC., COBB RX, QUEST PHARMACEUTICALS, INC., CONNAUGHT LABORATORIES, R and S SALES, INC., DBS TRADING, INC., RICHIE PHARMACAL CO., INC., DURAMED PHARMACEUTICALS, INC., SEARLE, FDC PACKAGING INC, SKINNER'S RX PHARMACY INC., GENETCO, INC., H.D. SMITH WHOLESALE DRUG, SOUTHWOOD PHARMACEUTICALS, INC., Spectrum Label, HARVARD DRUG GROUP, LLC, STAT PHARMACEUTICALS, INTERPHARM INC, STERIS LABORATORIES, INC., MAJOR PHARMACEUTICALS, SUPERIOR PHARMACEUTICAL C0., Masters Pharmaceuticals, erter, VALLEY DRUG COMPANY SOUTH -VDP]
+2006-11-13 16:17:24,279 INFO  (?:?) - Before returning to success
+2006-11-13 16:17:27,342 INFO  (?:?) - In processPreprocess method::Requested action::/ePharma
+2006-11-13 16:17:27,404 INFO  (?:?) - Query for Getting Trading partners in InitialPedigreeAction for $i in collection('tig:///CatalogManager/TradingPartner')/TradingPartner order by $i/name ascending return data($i/name) 
+2006-11-13 16:17:31,748 INFO  (?:?) - In processPreprocess method::Requested action::/ePharma
+2006-11-13 16:17:32,045 INFO  (?:?) - Query for Getting Trading partners in InitialPedigreeAction for $i in collection('tig:///CatalogManager/TradingPartner')/TradingPartner order by $i/name ascending return data($i/name) 
+2006-11-13 16:18:24,920 INFO  (?:?) - In processPreprocess method::Requested action::/ePharma
+2006-11-13 16:18:25,123 INFO  (?:?) - Query for Getting Trading partners in InitialPedigreeAction for $i in collection('tig:///CatalogManager/TradingPartner')/TradingPartner order by $i/name ascending return data($i/name) 
+2006-11-13 16:19:42,732 INFO  (?:?) - In processPreprocess method::Requested action::/ePharma
+2006-11-13 16:19:42,732 INFO  (?:?) - In execute method
+2006-11-13 16:19:42,732 INFO  (?:?) - In authenticate method
+2006-11-13 16:19:42,732 INFO  (?:?) - In getUser method
+2006-11-13 16:19:42,732 INFO  (?:?) - Query:tlsp:loginUserInfo('test')
+2006-11-13 16:19:42,764 INFO  (?:?) - In passwordMatch method
+2006-11-13 16:19:42,764 INFO  (?:?) - Query:tlsp:deleteInvlidUserByID('6120645223803314407198380497886')
+2006-11-13 16:19:42,795 INFO  (?:?) - In valueBound method
+2006-11-13 16:19:42,811 INFO  (?:?) - In insertSessionDoc method
+2006-11-13 16:19:42,811 INFO  (?:?) - In replaceString method
+2006-11-13 16:19:42,811 INFO  (?:?) - Query:tig:insert-document( 'tig:///EAGRFID/SysSessions/', <session><sessionid>19216810011220061113041942</sessionid><userid>6120645223803314407198380497886</userid><username>Test Test</username><accesslevel>epedigree</accesslevel><sessionstart>2006-11-13T16:19:42</sessionstart><userip>192.168.100.112</userip><lastuse>2006-11-13T16:19:42</lastuse><tp_company_nm>Southwood</tp_company_nm><tp_company_id>null</tp_company_id></session>)
+2006-11-13 16:19:42,842 INFO  (?:?) - In processPreprocess method::Requested action::/ePharma
+2006-11-13 16:19:42,873 INFO  (?:?) - ********Inside Action EpedigreeAction....... 
+2006-11-13 16:19:42,873 INFO  (?:?) - Inside Action execute of EpedigreeAction....
+2006-11-13 16:19:42,873 INFO  (?:?) - Validating The Session
+2006-11-13 16:19:42,873 INFO  (?:?) - sessionID in EpedigreeAction :19216810011220061113041942
+2006-11-13 16:19:42,889 INFO  (?:?) - The readStatus is : true
+2006-11-13 16:19:42,904 INFO  (?:?) - My Query in EpedigreeAction class.....tlsp:DisplayMessage('19216810011220061113041942') 
+2006-11-13 16:19:42,920 INFO  (?:?) - Before returning to success
+2006-11-13 16:19:46,607 INFO  (?:?) - In processPreprocess method::Requested action::/ePharma
+2006-11-13 16:19:46,639 INFO  (?:?) - Inside Action ReceivingManagerAction....... 
+2006-11-13 16:19:46,639 INFO  (?:?) - Hi..................*********** offsetnull
+2006-11-13 16:19:46,639 INFO  (?:?) - Hi..................*********** off :null
+2006-11-13 16:19:46,654 INFO  (?:?) - Validating The Session
+2006-11-13 16:19:46,654 INFO  (?:?) - sessionID in Action :19216810011220061113041942
+2006-11-13 16:19:46,654 INFO  (?:?) - ****** recvng
+2006-11-13 16:19:46,670 INFO  (?:?) - Query[true]
+2006-11-13 16:19:46,686 INFO  (?:?) - the string valuetrue
+2006-11-13 16:19:46,717 INFO  (?:?) - TP Names : [Abbott Laboratories, ALPHAGEN LABORATORIES,INC., McKESSON CORP, ANDA GENERICS, INC., MEDSOURCE DIRECT, BARNES WHOLESALE, MODERN MEDICAL PRODUCTS, INC., BARR LABORATORIES INC., NUTRAMAX LABS, BERGEN BRUNSWIG DRUG COMPANY, PARMED PHARMACEUTICALS, INC., CALPAC CONTAINER CO, PHARMACEUTICAL INNOVATORS INC., COBB RX, QUEST PHARMACEUTICALS, INC., CONNAUGHT LABORATORIES, R and S SALES, INC., DBS TRADING, INC., RICHIE PHARMACAL CO., INC., DURAMED PHARMACEUTICALS, INC., SEARLE, FDC PACKAGING INC, SKINNER'S RX PHARMACY INC., GENETCO, INC., H.D. SMITH WHOLESALE DRUG, SOUTHWOOD PHARMACEUTICALS, INC., Spectrum Label, HARVARD DRUG GROUP, LLC, STAT PHARMACEUTICALS, INTERPHARM INC, STERIS LABORATORIES, INC., MAJOR PHARMACEUTICALS, SUPERIOR PHARMACEUTICAL C0., Masters Pharmaceuticals, erter, VALLEY DRUG COMPANY SOUTH -VDP]
+2006-11-13 16:19:46,732 INFO  (?:?) - Before returning to success
+2006-11-13 16:19:56,842 INFO  (?:?) - In processPreprocess method::Requested action::/ePharma
+2006-11-13 16:19:56,873 INFO  (?:?) - Query for Getting Trading partners in InitialPedigreeAction for $i in collection('tig:///CatalogManager/TradingPartner')/TradingPartner order by $i/name ascending return data($i/name) 
+2006-11-13 16:20:00,529 INFO  (?:?) - In sessionDestroyed method
+2006-11-13 16:20:00,529 INFO  (?:?) - Query:tlsp:deleteInvlidSessionID('19216810011220061113041718')
+2006-11-13 16:20:00,561 INFO  (?:?) - In valueUnbound method
+2006-11-13 16:20:07,389 INFO  (?:?) - In sessionDestroyed method
+2006-11-13 16:20:07,389 INFO  (?:?) - Query:tlsp:deleteInvlidSessionID('19216810011220061113041942')
+2006-11-13 16:20:07,404 INFO  (?:?) - In valueUnbound method
+2006-11-13 16:20:18,639 INFO  (?:?) - In processPreprocess method::Requested action::/ePharma
+2006-11-13 16:20:18,639 INFO  (?:?) - In execute method
+2006-11-13 16:20:18,639 INFO  (?:?) - In authenticate method
+2006-11-13 16:20:18,639 INFO  (?:?) - In getUser method
+2006-11-13 16:20:18,654 INFO  (?:?) - Query:tlsp:loginUserInfo('test')
+2006-11-13 16:20:18,670 INFO  (?:?) - In passwordMatch method
+2006-11-13 16:20:18,686 INFO  (?:?) - In valueBound method
+2006-11-13 16:20:18,686 INFO  (?:?) - In insertSessionDoc method
+2006-11-13 16:20:18,686 INFO  (?:?) - In replaceString method
+2006-11-13 16:20:18,686 INFO  (?:?) - Query:tig:insert-document( 'tig:///EAGRFID/SysSessions/', <session><sessionid>19216810011220061113042018</sessionid><userid>6120645223803314407198380497886</userid><username>Test Test</username><accesslevel>epedigree</accesslevel><sessionstart>2006-11-13T16:20:18</sessionstart><userip>192.168.100.112</userip><lastuse>2006-11-13T16:20:18</lastuse><tp_company_nm>Southwood</tp_company_nm><tp_company_id>null</tp_company_id></session>)
+2006-11-13 16:20:19,889 INFO  (?:?) - In processPreprocess method::Requested action::/ePharma
+2006-11-13 16:20:19,936 INFO  (?:?) - ********Inside Action EpedigreeAction....... 
+2006-11-13 16:20:19,936 INFO  (?:?) - Inside Action execute of EpedigreeAction....
+2006-11-13 16:20:19,936 INFO  (?:?) - Validating The Session
+2006-11-13 16:20:19,936 INFO  (?:?) - sessionID in EpedigreeAction :19216810011220061113042018
+2006-11-13 16:20:19,951 INFO  (?:?) - The readStatus is : true
+2006-11-13 16:20:19,951 INFO  (?:?) - My Query in EpedigreeAction class.....tlsp:DisplayMessage('19216810011220061113042018') 
+2006-11-13 16:20:19,967 INFO  (?:?) - Before returning to success
+2006-11-13 16:20:25,701 INFO  (?:?) - In processPreprocess method::Requested action::/ePharma
+2006-11-13 16:20:25,732 INFO  (?:?) - Inside Action ReceivingManagerAction....... 
+2006-11-13 16:20:25,732 INFO  (?:?) - Hi..................*********** offsetnull
+2006-11-13 16:20:25,732 INFO  (?:?) - Hi..................*********** off :null
+2006-11-13 16:20:25,732 INFO  (?:?) - Validating The Session
+2006-11-13 16:20:25,732 INFO  (?:?) - sessionID in Action :19216810011220061113042018
+2006-11-13 16:20:25,732 INFO  (?:?) - ****** recvng
+2006-11-13 16:20:25,748 INFO  (?:?) - Query[true]
+2006-11-13 16:20:25,764 INFO  (?:?) - the string valuetrue
+2006-11-13 16:20:25,779 INFO  (?:?) - TP Names : [Abbott Laboratories, ALPHAGEN LABORATORIES,INC., McKESSON CORP, ANDA GENERICS, INC., MEDSOURCE DIRECT, BARNES WHOLESALE, MODERN MEDICAL PRODUCTS, INC., BARR LABORATORIES INC., NUTRAMAX LABS, BERGEN BRUNSWIG DRUG COMPANY, PARMED PHARMACEUTICALS, INC., CALPAC CONTAINER CO, PHARMACEUTICAL INNOVATORS INC., COBB RX, QUEST PHARMACEUTICALS, INC., CONNAUGHT LABORATORIES, R and S SALES, INC., DBS TRADING, INC., RICHIE PHARMACAL CO., INC., DURAMED PHARMACEUTICALS, INC., SEARLE, FDC PACKAGING INC, SKINNER'S RX PHARMACY INC., GENETCO, INC., H.D. SMITH WHOLESALE DRUG, SOUTHWOOD PHARMACEUTICALS, INC., Spectrum Label, HARVARD DRUG GROUP, LLC, STAT PHARMACEUTICALS, INTERPHARM INC, STERIS LABORATORIES, INC., MAJOR PHARMACEUTICALS, SUPERIOR PHARMACEUTICAL C0., Masters Pharmaceuticals, erter, VALLEY DRUG COMPANY SOUTH -VDP]
+2006-11-13 16:20:25,795 INFO  (?:?) - Before returning to success
+2006-11-13 16:20:42,592 INFO  (?:?) - In processPreprocess method::Requested action::/ePharma
+2006-11-13 16:20:42,623 INFO  (?:?) - Query for Getting Trading partners in InitialPedigreeAction for $i in collection('tig:///CatalogManager/TradingPartner')/TradingPartner order by $i/name ascending return data($i/name) 
+2006-11-13 16:21:07,889 INFO  (?:?) - In processPreprocess method::Requested action::/ePharma
+2006-11-13 16:21:07,936 INFO  (?:?) - Query for Getting Trading partners in InitialPedigreeAction for $i in collection('tig:///CatalogManager/TradingPartner')/TradingPartner order by $i/name ascending return data($i/name) 
+2006-11-13 16:22:10,170 INFO  (?:?) - In processPreprocess method::Requested action::/ePharma
+2006-11-13 16:22:10,217 INFO  (?:?) - Query for Getting Trading partners in InitialPedigreeAction for $i in collection('tig:///CatalogManager/TradingPartner')/TradingPartner order by $i/name ascending return data($i/name) 
+2006-11-13 16:33:08,639 INFO  (?:?) - In sessionDestroyed method
+2006-11-13 16:33:08,639 INFO  (?:?) - Query:tlsp:deleteInvlidSessionID('19216810011220061113042018')
+2006-11-13 16:33:08,686 INFO  (?:?) - In valueUnbound method

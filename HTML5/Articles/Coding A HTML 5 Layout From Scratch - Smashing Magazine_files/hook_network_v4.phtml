@@ -1,0 +1,142 @@
+var WidgetItems = [{"href":"http:\/\/speckyboy.com\/2010\/04\/23\/html5-video-libraries-toolkits-and-players\/","title":"HTML5 video Libraries, Toolkits and Players","source":"speckyboy.com"},{"href":"http:\/\/www.webdesignerdepot.com\/2010\/04\/outstanding-photos-with-partial-color\/","title":"Outstanding Photos with Partial Color","source":"webdesignerdepot.com"},{"href":"http:\/\/webdesignledger.com\/tutorials\/12-excellent-css3-button-and-menu-techniques","title":"12 Excellent CSS3 Button and Menu Techniques","source":"webdesignledger.com"},{"href":"http:\/\/www.hongkiat.com\/blog\/symbols-impact-on-logo-design\/","title":"Symbols and Its Impact on Logo Design","source":"hongkiat.com"},{"href":"http:\/\/www.1stwebdesigner.com\/design\/how-to-work-undisturbed\/","title":"11 Awesome tips to Work without Distraction","source":"1stwebdesigner.com"},{"href":"http:\/\/designm.ag\/inspiration\/showcase-typography\/","title":"Design Inspiration: Showcase of Beautiful Typography and Text Effects","source":"designm.ag"},{"href":"http:\/\/carsonified.com\/blog\/business\/how-to-crowdfund-your-startup\/","title":"How to Crowdfund your Startup","source":"carsonified.com"},{"href":"http:\/\/sixrevisions.com\/user-interface\/sleek-interface-designs-from-deviantart\/","title":"Sleek Interface Designs from DeviantART","source":"sixrevisions.com"},{"href":"http:\/\/www.impressivewebs.com\/css3-click-chart-updates\/","title":"Updates to the CSS3 Click Chart","source":"impressivewebs.com"},{"href":"http:\/\/designshack.co.uk\/articles\/inspiration\/40-amazing-resources-for-design-freebies","title":"40 Amazing Resources for Design Freebies","source":"designshack.co.uk"}];
+var SmashingWidget = {
+	filtersource : null,
+	params_def : [],
+	params : [],
+	init : function() {
+		this.params_def.items = 5;	
+		this.params_def.cssclass = 'default';	
+		this.params_def.targetid = 'smashingwidget1';	
+	},
+	addevent : function( obj, type, fn ) // http://ejohn.org/blog/flexible-javascript-events/
+	{
+		if (obj.addEventListener) 
+		{
+			obj.addEventListener( type, fn, false );
+		} else if (obj.attachEvent) 
+		{
+			obj["e"+type+fn] = fn;
+			obj[type+fn] = function() { obj["e"+type+fn]( window.event ); };
+			obj.attachEvent( "on"+type, obj[type+fn] );
+		}
+	},
+	getparam : function(opt) { 
+		if(typeof(SmashingWidgetConfig) !== 'undefined' && typeof(SmashingWidgetConfig[opt]) !== 'undefined')
+		{
+			return SmashingWidgetConfig[opt];
+		}
+		if(typeof(this.params_def[opt]) !== 'undefined')
+		{ 
+			return this.params_def[opt];
+		}
+		return false;
+	},
+	myMatch : function(obj,filter)
+	{
+		if(filter === false || filter.length < 1)
+		{
+			return false;
+		}
+		filter = filter.replace(/[^a-z]/, '');
+		pattern=eval("/"+filter + "/");
+		if(obj.match(pattern) !== null)
+		{
+			//console.log('filtering:'+filter);
+		}
+		return obj.match(pattern) !== null;
+	},				
+	addItem : function(item,last)
+	{
+		if(!SmashingWidget.myMatch(item.source,SmashingWidget.filtersource))
+		{
+			var my_li = document.createElement('li'), my_liclass = document.createAttribute("class");
+			my_liclass.nodeValue = (last?'sw-last':'');
+			my_li.setAttributeNode(my_liclass);
+			
+			var my_a = document.createElement("a"), my_aclass = document.createAttribute("class"), my_href = document.createAttribute("href"), my_atxt = document.createTextNode(item.title);
+			my_aclass.nodeValue = 'sw-title';
+			my_href.nodeValue = item.href;
+			my_a.setAttributeNode(my_aclass);
+			my_a.setAttributeNode(my_href);
+			my_a.appendChild(my_atxt);
+						
+			var my_div = document.createElement("div"), my_txt = document.createTextNode(item.source);
+			var my_class = document.createAttribute("class");
+			my_class.nodeValue = 'sw-source';
+			my_div.setAttributeNode(my_class);
+			my_div.appendChild(my_txt);
+						
+			my_li.appendChild(my_a);
+			my_li.appendChild(my_div);
+			return my_li;
+		}
+		return null;
+	},
+	printlist : function() 
+	{
+		var my_div = document.createElement("div");
+		var my_divclass = document.createAttribute("class");
+		my_divclass.nodeValue = 'smashingwidget '+SmashingWidget.getparam('cssclass');
+		my_div.setAttributeNode(my_divclass);
+
+		var my_h3 = document.createElement("h3");
+		SmashingWidget.addevent(my_h3, 'click', function(){window.location = 'http://www.smashingmagazine.com/network-posts/';});
+
+		var my_a = document.createElement("a"), my_href = document.createAttribute("href");
+		my_href.nodeValue = "http://www.smashingmagazine.com/network-posts/";
+		my_a.setAttributeNode(my_href);
+
+		var my_span = document.createElement("span"), my_spantext = document.createTextNode("Smashing Network");
+		my_span.appendChild(my_spantext);
+
+		var my_img = document.createElement("img"), my_src = document.createAttribute("src"), my_alt = document.createAttribute("alt");
+		my_src.nodeValue = "http://media.smashingmagazine.com/cdn_smash/files/smashing-widget/v006/img/sn-icon-style-6-32px.png?v=006";
+		my_alt.nodeValue = "Smashing Network";
+		my_img.setAttributeNode(my_src);
+		my_img.setAttributeNode(my_alt);
+		
+		var my_ol = document.createElement("ol"), added = 0, li_t = null; 
+		
+		SmashingWidget.filtersource = SmashingWidget.getparam('filtersource');
+		
+		for(var i = 0; i<WidgetItems.length-1 && added<parseInt(SmashingWidget.getparam('items'),10)-1;i++)
+		{
+			if(WidgetItems[i] !== undefined)
+			{
+				li_t = SmashingWidget.addItem(WidgetItems[i], false);
+				if(li_t !== null)
+				{					
+					my_ol.appendChild(li_t);
+					added++;
+				}
+			}
+		}
+
+		added = 0;
+		for(var y = i; y<WidgetItems.length && added<1;y++)
+		{			
+			if(WidgetItems[y] !== undefined)
+			{
+				li_t = SmashingWidget.addItem(WidgetItems[y], true);
+				
+				if(li_t !== null)
+				{		
+					my_ol.appendChild(li_t);			
+					added++;
+				}
+			}
+		}
+
+		my_a.appendChild(my_span);
+		my_a.appendChild(my_img);
+		my_h3.appendChild(my_a);
+		my_div.appendChild(my_h3);
+		my_div.appendChild(my_ol);		
+		
+		var rep = document.getElementById(SmashingWidget.getparam('targetid'));
+		rep.parentNode.insertBefore(my_div,rep);	
+	}
+};
+
+SmashingWidget.init();
+SmashingWidget.printlist();

@@ -1,0 +1,12 @@
+2007-04-11 15:34:47,812 INFO  (CtxListener.java:61) - In contextDestroyed method
+2007-04-11 15:34:47,843 INFO  (CtxListener.java:63) - Query:tlsp:deleteSessions()
+2007-04-11 15:34:47,890 ERROR (CtxListener.java:66) - error:com.rdta.commons.persistence.PersistanceException: [system-security-00001] - Authentication failed: server failure. [admin], [[C@1eb139e].
+2007-04-11 15:40:32,015 INFO  (CtxListener.java:61) - In contextDestroyed method
+2007-04-11 15:40:32,046 INFO  (CtxListener.java:63) - Query:tlsp:deleteSessions()
+2007-04-11 15:40:32,093 ERROR (CtxListener.java:66) - error:com.rdta.commons.persistence.PersistanceException: [system-security-00001] - Authentication failed: server failure. [admin], [[C@18df055].
+2007-04-11 16:30:43,140 INFO  (CtxListener.java:61) - In contextDestroyed method
+2007-04-11 16:30:43,187 INFO  (CtxListener.java:63) - Query:tlsp:deleteSessions()
+2007-04-11 16:30:43,234 ERROR (CtxListener.java:66) - error:com.rdta.commons.persistence.PersistanceException: [system-security-00001] - Authentication failed: server failure. [admin], [[C@13e3940].
+2007-04-11 16:45:48,140 INFO  (CtxListener.java:61) - In contextDestroyed method
+2007-04-11 16:45:48,171 INFO  (CtxListener.java:63) - Query:tlsp:deleteSessions()
+2007-04-11 16:45:48,218 ERROR (CtxListener.java:66) - error:com.rdta.commons.persistence.PersistanceException: [system-security-00001] - Authentication failed: server failure. [admin], [[C@190d536].

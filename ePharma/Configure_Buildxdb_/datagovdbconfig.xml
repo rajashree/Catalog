@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<dbConfig hostName="localhost" port="3408" userName="admin" password="admin" dataSource="root">
+ <database name="DataGovernance">
+    <collection load="true"> 
+	     <name>ChangeRequest</name>
+		 <desc>ChangeRequest</desc>
+		 <schemaName>ChangeRequest.xsd</schemaName>
+		 <data>
+			 <input load="false" source="all"/>
+			 <output load="false"/>
+		 </data>
+	</collection>
+    <collection load="true"> 
+	     <name>Policy</name>
+		 <desc>Policy</desc>
+		 <schemaName>Policy.xsd</schemaName>
+		 <data>
+			 <input load="true" source="all"/>
+			 <output load="false"/>
+		 </data>
+	</collection>	
+	<collection load="true"> 
+	     <name>ComputationModel</name>
+		 <desc>ComputationModel</desc> 
+		 <schemaName>ComputationModel.xsd</schemaName>
+		 <data>
+			 <input load="true" source="all"/>
+			 <output load="false"/>
+		 </data>
+	</collection>
+	<collection load="true"> 
+	     <name>DataGovernor</name>
+		 <desc>DataGovernor</desc> 
+		 <schemaName>DataGovernor.xsd</schemaName>
+		 <data>
+			 <input load="true" source="all"/>
+			 <output load="false"/>
+		 </data>
+	</collection>
+	<collection load="true"> 
+	     <name>EnterpriseData</name>
+		 <desc>EnterpriseData</desc>
+		 <schemaName>EnterpriseData.xsd</schemaName>
+		 <data>
+			 <input load="true" source="all"/>
+			 <output load="false"/>
+		 </data>
+	</collection>	
+	<collection load="true"> 
+	     <name>CaseManagement</name>
+		 <desc>CaseManagement</desc>
+		 <schemaName>CaseManagement.xsd</schemaName>
+		 <data>
+			 <input load="true" source="all"/>
+			 <output load="false"/>
+		 </data>
+	</collection>	
+ </database>
+</dbConfig>

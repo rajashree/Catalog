@@ -1,0 +1,7 @@
+2006-12-04 11:56:37,267 INFO  (?:?) - In sessionDestroyed method
+2006-12-04 11:56:37,267 INFO  (?:?) - Query:tlsp:deleteInvlidSessionID('null')
+2006-12-04 12:13:00,017 INFO  (?:?) - In contextDestroyed method
+2006-12-04 12:13:00,017 INFO  (?:?) - Query:tlsp:deleteSessions()
+2006-12-04 12:13:03,158 ERROR (?:?) - error:com.rdta.commons.persistence.PersistanceException: [system-io-00002] - Lost connection to remote system.
+2006-12-04 12:16:20,830 INFO  (?:?) - In contextDestroyed method
+2006-12-04 12:16:20,845 INFO  (?:?) - Query:tlsp:deleteSessions()

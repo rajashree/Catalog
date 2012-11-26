@@ -1,0 +1,20 @@
+2007-07-12 15:01:41,968 INFO  (CtxListener.java:61) - In contextDestroyed method
+2007-07-12 15:01:43,437 INFO  (CtxListener.java:63) - Query:tlsp:deleteSessions()
+2007-07-12 15:01:43,562 ERROR (CtxListener.java:66) - error:com.rdta.commons.persistence.PersistanceException: [system-security-00001] - Authentication failed: server failure. [admin], [[C@1fe177].
+2007-07-12 15:25:21,078 INFO  (CtxListener.java:61) - In contextDestroyed method
+2007-07-12 15:25:21,265 INFO  (CtxListener.java:63) - Query:tlsp:deleteSessions()
+2007-07-12 15:25:21,296 ERROR (CtxListener.java:66) - error:com.rdta.commons.persistence.PersistanceException: [system-security-00001] - Authentication failed: server failure. [admin], [[C@1142447].
+2007-07-12 15:55:42,296 INFO  (CtxListener.java:61) - In contextDestroyed method
+2007-07-12 15:55:42,343 INFO  (CtxListener.java:63) - Query:tlsp:deleteSessions()
+2007-07-12 15:58:38,593 INFO  (CtxListener.java:61) - In contextDestroyed method
+2007-07-12 15:58:38,625 INFO  (CtxListener.java:63) - Query:tlsp:deleteSessions()
+2007-07-12 16:01:15,375 INFO  (CtxListener.java:61) - In contextDestroyed method
+2007-07-12 16:01:15,406 INFO  (CtxListener.java:63) - Query:tlsp:deleteSessions()
+2007-07-12 16:03:08,812 INFO  (CtxListener.java:61) - In contextDestroyed method
+2007-07-12 16:03:08,859 INFO  (CtxListener.java:63) - Query:tlsp:deleteSessions()
+2007-07-12 16:06:57,687 INFO  (CtxListener.java:61) - In contextDestroyed method
+2007-07-12 16:06:57,734 INFO  (CtxListener.java:63) - Query:tlsp:deleteSessions()
+2007-07-12 16:07:33,531 ERROR (CtxListener.java:66) - error:com.rdta.commons.persistence.PersistanceException: [system-io-00013] - The remote system was unreachable.
+2007-07-12 16:11:10,937 INFO  (CtxListener.java:61) - In contextDestroyed method
+2007-07-12 16:11:10,984 INFO  (CtxListener.java:63) - Query:tlsp:deleteSessions()
+2007-07-12 16:11:46,656 ERROR (CtxListener.java:66) - error:com.rdta.commons.persistence.PersistanceException: [system-io-00013] - The remote system was unreachable.

@@ -1,0 +1,12 @@
+/CreateSignature.xq/1.1/Tue Jun 20 10:32:04 2006/-kb/
+/VerifySig.java/1.1/Tue Jun 20 10:32:04 2006//
+/call a fn verify.xq/1.1/Tue Jun 20 10:32:04 2006/-kb/
+/call a fn verify1.xq/1.1/Tue Jun 20 10:32:04 2006/-kb/
+/createxmlsig.xml/1.1/Tue Jun 20 10:32:04 2006//
+/register-jfn create.xq/1.1/Tue Jun 20 10:32:04 2006/-kb/
+/register-jfn verify.xq/1.1/Tue Jun 20 10:32:04 2006/-kb/
+/unregister-jfn verify.xq/1.1/Tue Jun 20 10:32:04 2006/-kb/
+/unregisterxq.xq/1.1/Tue Jun 20 10:32:04 2006/-kb/
+/verifysignature.jar/1.1/Tue Jun 20 10:32:04 2006/-kb/
+/verifyxmlsig.xml/1.1/Tue Jun 20 10:32:04 2006//
+/vssver.scc/1.1/Tue Jun 20 10:32:04 2006/-kb/

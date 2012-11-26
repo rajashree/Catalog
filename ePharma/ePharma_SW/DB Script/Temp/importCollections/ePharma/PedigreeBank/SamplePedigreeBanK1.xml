@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PedigreeBank>
+	<InventoryOnHand>
+		<NDC>58016-0312-**</NDC>
+		<SWNDC>12345</SWNDC>
+		<TotalInventory>1984</TotalInventory>
+		<LotInfo>
+			<LotNumber>V95999</LotNumber>
+			<SWLotNum>BR781</SWLotNum>
+			<Quantity>20</Quantity>
+			<ReceivedPedigreeID>31393843945529672246633950583774</ReceivedPedigreeID>
+			<LocationID>1</LocationID>
+			<SerialNumber>3999 9929 29929</SerialNumber>
+			<Returned>false</Returned>
+		</LotInfo>
+		<LotInfo>
+			<LotNumber>V1233</LotNumber>
+			<SWLotNum>AA11224</SWLotNum>
+			<Quantity>2</Quantity>
+			<ReceivedPedigreeID>fff36a31-8e80-1e83-c001-164bd69dff95</ReceivedPedigreeID>
+			<LocationID>1</LocationID>
+			<SerialNumber>3999 9929 29929</SerialNumber>
+			<Returned>false</Returned>
+		</LotInfo>
+	</InventoryOnHand>
+</PedigreeBank>

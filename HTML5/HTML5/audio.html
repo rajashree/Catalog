@@ -1,0 +1,40 @@
+<html>
+<body>
+
+<script type="text/javascript">
+function time_update(v, t) {
+  document.getElementById(t).innerHTML=document.getElementById(v).currentTime; 
+}
+  
+function play(video, time) {
+  var v = document.getElementById(video);
+  var t = document.getElementById(time);
+  v.play();
+}
+
+function pause(video) {
+  var v = document.getElementById(video);
+  v.pause();
+}
+
+function buffering_start(t) {
+  var b = document.getElementById(t);
+  b.innerHTML = "Buffering...";
+}
+
+function buffering_stop(t) {
+  var b = document.getElementById(t);
+  b.innerHTML = "";
+}
+</script>
+<!--  autoplay="autoplay" attribute for autoplay -->
+<button onclick="play('v1', 't1'); return false;">Play</button><button onclick="pause('v1'); return false;">Pause</button>
+<audio src="bricktrailer.ogg" id='v1'   ontimeupdate="time_update('v1','t1'); return false;"></audio>
+<br>
+<p>Current Position is: <span id="t1">0.00</span></p>
+<p id='b1'></p>
+
+
+
+</body>
+</html>

@@ -1,0 +1,16 @@
+<deployment xmlns="http://xml.apache.org/axis/wsdd/"
+            xmlns:java="http://xml.apache.org/axis/wsdd/providers/java">
+
+ <service name="MyService" provider="java:RPC">
+  <parameter name="className" value="samples.userguide.example3.MyService"/>
+  <parameter name="allowedMethods" value="*"/>
+ </service>
+<service name="PortalIntegration" provider="java:RPC">
+		<parameter name="allowedMethods" value="getPedigreeGivenInvoiceNumber,getPedigreeGivenInvoiceNumberNDC"/>
+		<parameter name="className" value="com.rdta.eag.epharma.api.PortalIntegration"/>	
+	</service>
+<service name="EpharmaAPIInterface" provider="java:RPC">
+		  <parameter name="className" value="com.rdta.eag.epharma.api.EpharmaAPI"/>
+		  <parameter name="allowedMethods" value="subscribeTradingPartner,submitPublicKey,getSession,submitPedigreeEnvelope,logOut"/>
+</service>
+</deployment>

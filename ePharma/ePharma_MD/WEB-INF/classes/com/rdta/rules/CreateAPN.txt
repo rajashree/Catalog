@@ -1,0 +1,321 @@
+
+
+tig:create-stored-procedure("createAPNATReceiving", "
+declare variable $sscc as string external;
+if (count(for $i in collection('tig:///ePharma/DespatchAdvice')/*:DespatchAdvice
+where $i/*:DespatchLine/*:Item/*:AdditionalItemIdentification/*:ID = $sscc
+return $i) > 0) then
+for $i in collection('tig:///ePharma/DespatchAdvice')/*:DespatchAdvice
+where $i/*:DespatchLine/*:Item/*:AdditionalItemIdentification/*:ID = $sscc
+return 
+tig:insert-document('tig:///ePharma/APN',
+<APN>
+<DocumentId>{fn:max(for $i in collection('tig:///ePharma/APN')/APN return xs:int($i/DocumentId + 1))}</DocumentId>
+<DateTime>{fn:current-dateTime()}</DateTime>
+<From>
+<Name>{data($i/*:SellerParty/*:Party/*:PartyName/*:Name)}</Name>
+<Address>{data($i/*:SellerParty/*:Party/*:Address/*:StreetName)},
+{data($i/*:SellerParty/*:Party/*:Address/*:BuildingNumber)},
+{data($i/*:SellerParty/*:Party/*:Address/*:CityName)},
+{data($i/*:SellerParty/*:Party/*:Address/*:PostalZone)},
+{data($i/*:SellerParty/*:Party/*:Address/*:CountrySubentityCode)}
+</Address>
+<LicenseNumber></LicenseNumber>
+<PartyType>Pharmacy</PartyType>
+<ContactName>{data($i/*:SellerParty/*:ShippingContact/*:Name)}</ContactName>
+<Phone>{data($i/*:SellerParty/*:ShippingContact/*:Telephone)}</Phone>
+<Fax></Fax>
+<Email></Email>
+</From>
+<To>
+<Name>{data($i/*:BuyerParty/*:Party/*:PartyName/*:Name)}</Name>
+<Address>{data($i/*:BuyerParty/*:Party/*:Address/*:StreetName)},
+{data($i/*:BuyerParty/*:Party/*:Address/*:BuildingNumber)},
+{data($i/*:BuyerParty/*:Party/*:Address/*:CityName)},
+{data($i/*:BuyerParty/*:Party/*:Address/*:PostalZone)},
+{data($i/*:BuyerParty/*:Party/*:Address/*:CountrySubentityCode)}
+</Address>
+<LicenseNumber></LicenseNumber>
+<PartyType>Distributor</PartyType>
+<ContactName></ContactName>
+<Phone></Phone>
+<Fax></Fax>
+<Email></Email>
+<TransactionType>despatchAdvice</TransactionType>
+<TransactionNumber>{data($i/*:ID)}</TransactionNumber>
+</To>
+<Pedigrees>
+<Pedigree order='0'>
+<DocumentId></DocumentId>
+<IssueDate>{fn:current-dateTime()}</IssueDate>
+<Products>
+
+</Products>
+<Manufacturer>
+<Name></Name>
+<Address></Address>
+<Contact></Contact>
+<ContactPhone></ContactPhone>
+<ContactEmail></ContactEmail>
+<LicenseNumber></LicenseNumber>
+</Manufacturer>
+<PedigreeStatus>
+<Status>
+ <StatusChangedOn>{fn:current-dateTime()}</StatusChangedOn>
+
+<Status>Created</Status>
+</Status>
+</PedigreeStatus>
+</Pedigree>
+</Pedigrees>
+</APN> )
+else ' No Despatch Advice  Found' ")
+
+****************************************************
+
+
+
+
+tig:create-stored-procedure("createAPNBasedOnDespatchAdvice","
+declare variable $DespatchAdviceId as string external;
+if (count(for $i in collection('tig:///ePharma/DespatchAdvice')/*:DespatchAdvice
+where $i/*:ID = $DespatchAdviceId
+return $i) > 0) then
+for $i in collection('tig:///ePharma/DespatchAdvice')/*:DespatchAdvice
+where $i/*:ID = $DespatchAdviceId
+return
+ tig:insert-document('tig:///ePharma/APN',
+<APN>
+<DocumentId>{fn:max(for $i in collection('tig:///ePharma/APN')/APN return xs:int($i/DocumentId + 1))}</DocumentId>
+<DateTime>{fn:current-dateTime()}</DateTime>
+<From>
+<Name>{data($i/*:SellerParty/*:Party/*:PartyName/*:Name)}</Name>
+<Address>{data($i/*:SellerParty/*:Party/*:Address/*:StreetName)},
+{data($i/*:SellerParty/*:Party/*:Address/*:BuildingNumber)},
+{data($i/*:SellerParty/*:Party/*:Address/*:CityName)},
+{data($i/*:SellerParty/*:Party/*:Address/*:PostalZone)},
+{data($i/*:SellerParty/*:Party/*:Address/*:CountrySubentityCode)}
+</Address>
+<LicenseNumber></LicenseNumber>
+<PartyType>Pharmacy</PartyType>
+<ContactName>{data($i/*:SellerParty/*:ShippingContact/*:Name)}</ContactName>
+<Phone>{data($i/*:SellerParty/*:ShippingContact/*:Telephone)}</Phone>
+<Fax></Fax>
+<Email></Email>
+</From>
+<To>
+<Name>{data($i/*:BuyerParty/*:Party/*:PartyName/*:Name)}</Name>
+<Address>{data($i/*:BuyerParty/*:Party/*:Address/*:StreetName)},
+{data($i/*:BuyerParty/*:Party/*:Address/*:BuildingNumber)},
+{data($i/*:BuyerParty/*:Party/*:Address/*:CityName)},
+{data($i/*:BuyerParty/*:Party/*:Address/*:PostalZone)},
+{data($i/*:BuyerParty/*:Party/*:Address/*:CountrySubentityCode)}
+</Address>
+<LicenseNumber></LicenseNumber>
+<PartyType>Distributor</PartyType>
+<ContactName></ContactName>
+<Phone></Phone>
+<Fax></Fax>
+<Email></Email>
+<TransactionType>despatchAdvice</TransactionType>
+<TransactionNumber>{data($i/*:ID)}</TransactionNumber>
+</To>
+<Pedigrees>
+<Pedigree order='0'>
+<DocumentId></DocumentId>
+<IssueDate>{fn:current-dateTime()}</IssueDate>
+<Products>
+
+</Products>
+<Manufacturer>
+<Name></Name>
+<Address></Address>
+<Contact></Contact>
+<ContactPhone></ContactPhone>
+<ContactEmail></ContactEmail>
+<LicenseNumber></LicenseNumber>
+</Manufacturer>
+<PedigreeStatus>
+<Status>
+ <StatusChangedOn>{fn:current-dateTime()}</StatusChangedOn>
+
+<Status>Created</Status>
+</Status>
+</PedigreeStatus>
+</Pedigree>
+</Pedigrees>
+</APN> )
+else 'No Desptach Advice Found'
+")
+
+*******************************************************
+
+
+tig:create-stored-procedure("createAPNBasedOnOrder","
+declare variable $orderId as string external;
+if (count(for $i in collection('tig:///ePharma/Orders')/*:Order
+where $i/*:BuyersID = $orderId
+return $i) > 0) then
+for $i in collection('tig:///ePharma/Orders')/*:Order
+where $i/*:BuyersID = $orderId
+return tig:insert-document('tig:///ePharma/APN',
+<APN>
+<DocumentId>{fn:max(for $i in collection('tig:///ePharma/APN')/APN return xs:int($i/DocumentId + 1))}</DocumentId>
+<DateTime>{fn:current-dateTime()}</DateTime>
+<From>
+<Name>{data($i/*:SellerParty/*:Party/*:PartyName/*:Name)}</Name>
+<Address>{data($i/*:SellerParty/*:Party/*:Address/*:StreetName)},
+{data($i/*:SellerParty/*:Party/*:Address/*:BuildingNumber)},
+{data($i/*:SellerParty/*:Party/*:Address/*:CityName)},
+{data($i/*:SellerParty/*:Party/*:Address/*:PostalZone)},
+{data($i/*:SellerParty/*:Party/*:Address/*:CountrySubentityCode)}
+</Address>
+<LicenseNumber></LicenseNumber>
+<PartyType>Distributor</PartyType>
+<ContactName>{data($i/*:SellerParty/*:ShippingContact/*:Name)}</ContactName>
+<Phone>{data($i/*:SellerParty/*:ShippingContact/*:Telephone)}</Phone>
+<Fax></Fax>
+<Email></Email>
+</From>
+<To>
+<Name>{data($i/*:BuyerParty/*:Party/*:PartyName/*:Name)}</Name>
+<Address>{data($i/*:BuyerParty/*:Party/*:Address/*:StreetName)},
+{data($i/*:BuyerParty/*:Party/*:Address/*:BuildingNumber)},
+{data($i/*:BuyerParty/*:Party/*:Address/*:CityName)},
+{data($i/*:BuyerParty/*:Party/*:Address/*:PostalZone)},
+{data($i/*:BuyerParty/*:Party/*:Address/*:CountrySubentityCode)}
+</Address>
+<LicenseNumber></LicenseNumber>
+<PartyType>Pharmacy</PartyType>
+<ContactName></ContactName>
+<Phone></Phone>
+<Fax></Fax>
+<Email></Email>
+<TransactionType>PurchaseOrder</TransactionType>
+<TransactionNumber>{data($i/*:BuyersId)}</TransactionNumber>
+</To>
+<Pedigrees>
+<Pedigree order='0'>
+<DocumentId></DocumentId>
+<IssueDate>{fn:current-dateTime()}</IssueDate>
+<Products>
+
+</Products>
+<Manufacturer>
+<Name></Name>
+<Address></Address>
+<Contact></Contact>
+<ContactPhone></ContactPhone>
+<ContactEmail></ContactEmail>
+<LicenseNumber></LicenseNumber>
+</Manufacturer>
+<PedigreeStatus>
+<Status>
+<StatusChangedOn>{fn:current-dateTime()}</StatusChangedOn>
+<Status>Created</Status>
+</Status>
+</PedigreeStatus>
+</Pedigree>
+</Pedigrees>
+</APN> )
+else 'No Order Found'
+")
+
+
+******************************************************************
+
+tig:drop-stored-procedure("createPedigreeNode"),
+tig:create-stored-procedure("createPedigreeNode", "
+declare variable $NDC as string external;
+if (count(for $i in collection('tig:///ePharma/ProductMaster')/Product
+where $i/NDC = $NDC
+return $i) > 0) then
+for $i in collection('tig:///ePharma/ProductMaster')/Product
+where $i/NDC = $NDC
+return 
+<Pedigree order='0'>
+<DocumentId></DocumentId>
+<IssueDate>{fn:current-dateTime()}</IssueDate>
+<Products>
+<Product>
+<ParentEPC>{data($i/ParentEPC)}</ParentEPC>
+<NDC>{$NDC}</NDC>
+<LegendDrugName>{data($i/LegendDrugName)}</LegendDrugName>
+<DosageForm>{data($i/DosageForm)}</DosageForm>
+<DosageStrength>{data($i/DosageStrength)}</DosageStrength>
+<ContainerSize>{data($i/ContainerSize)}</ContainerSize>
+<LotNumber>{data($i/LotNumber)}</LotNumber>
+<LotExpireDate>{data($i/LotExpireDate)}</LotExpireDate>
+<PackageUPC>{data($i/PackageUPC)}</PackageUPC>
+<Quantity quantityUnitCode='{data($i/quantityUnitCode)}'>{data($i/Quantity)}</Quantity>
+<ManufacturerLicense>{data($i/ManufacturerLicense)}</ManufacturerLicense>
+<CustodyLicenseNumber>{data($i/CustodyLicenseNumber)}</CustodyLicenseNumber>
+</Product>
+</Products>
+<Manufacturer>
+<Name>{data($i/ManufacturerName)}</Name>
+<Address></Address>
+<Contact></Contact>
+<ContactPhone></ContactPhone>
+<ContactEmail></ContactEmail>
+<LicenseNumber></LicenseNumber>
+</Manufacturer>
+<PedigreeStatus>
+<Status>
+<Status>Created</Status>
+</Status>
+</PedigreeStatus>
+</Pedigree>
+else 'No Product Found'
+")
+
+
+
+************************************************************
+
+
+******************************************************************
+
+
+tig:create-stored-procedure("returnProductNode","
+declare variable $EPC as string external;
+for $j in collection('tig:///ePharma/BreakDown')/BreakDown
+where $j/EPC = $EPC
+return
+for $i in collection('tig:///CatalogManager/ProductMaster')/Product
+where $i/NDC = $j/NDC
+return 
+<Product>
+<EPC>{$EPC}</EPC>
+<ParentEPC>{data($j/ParentEPC)}</ParentEPC>
+<NDC>{data($i/NDC)}</NDC>
+<LegendDrugName>{data($i/LegendDrugName)}</LegendDrugName>
+<DosageForm>{data($i/DosageForm)}</DosageForm>
+<DosageStrength>{data($i/DosageStrength)}</DosageStrength>
+<ContainerSize>{data($i/ContainerSize)}</ContainerSize>
+<LotNumber>{data($i/LotNumber)}</LotNumber>
+<LotExpireDate>{data($i/LotExpireDate)}</LotExpireDate>
+<PackageUPC>{data($i/PackageUPC)}</PackageUPC>
+<Quantity quantityUnitCode='{data($i/quantityUnitCode)}'>{data($i/Quantity)}</Quantity>
+<ManufacturerLicense>{data($i/ManufacturerLicense)}</ManufacturerLicense>
+<CustodyLicenseNumber>{data($i/CustodyLicenseNumber)}</CustodyLicenseNumber>
+</Product>")
+
+
+
+********************************88
+
+tig:create-stored-procedure("updateAPNforEPC","
+declare variable $EPC as string external;
+declare variable $APNRef as string external;
+update
+for $j in collection('tig:///ePharma/APN')/APN
+where $j/DocumentId = $APNRef
+insert tlsp:returnProductNode($EPC) into  $j/Pedigrees/Pedigree/Products
+")
+
+
+************************888
+
+
+Testing tlsp:updateAPNforEPC('C28785100004','12348')

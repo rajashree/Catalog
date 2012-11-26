@@ -1,0 +1,78 @@
+2007-03-08 15:45:48,640 INFO  (SessionListener.java:55) - In sessionDestroyed method
+2007-03-08 15:45:48,656 INFO  (SessionListener.java:60) - Query:tlsp:deleteInvlidSessionID('null')
+2007-03-08 15:45:48,671 INFO  (SessionListener.java:55) - In sessionDestroyed method
+2007-03-08 15:45:48,671 INFO  (SessionListener.java:60) - Query:tlsp:deleteInvlidSessionID('12700120070301034315')
+2007-03-08 15:45:48,687 INFO  (User.java:189) - In valueUnbound method
+2007-03-08 18:16:12,372 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-03-08 18:16:12,434 INFO  (LoginAction.java:57) - In execute method
+2007-03-08 18:16:12,450 INFO  (SecurityServiceImpl.java:140) - In authenticate method
+2007-03-08 18:16:12,450 INFO  (SecurityServiceImpl.java:54) - In getUser method
+2007-03-08 18:16:12,450 INFO  (SecurityServiceImpl.java:56) - Query:tlsp:loginUserInfo('test')
+2007-03-08 18:16:13,981 INFO  (User.java:146) - In passwordMatch method
+2007-03-08 18:16:13,981 INFO  (User.java:176) - In valueBound method
+2007-03-08 18:16:13,981 INFO  (SecurityServiceImpl.java:101) - In insertSessionDoc method
+2007-03-08 18:16:13,981 INFO  (SecurityServiceImpl.java:85) - In replaceString method
+2007-03-08 18:16:13,981 INFO  (SecurityServiceImpl.java:128) - Query:tig:insert-document( 'tig:///EAGRFID/SysSessions/', <session><sessionid>12700120070308061613</sessionid><userid>23802960038774853494040455282174</userid><username>raje raje</username><accesslevel>epedigree</accesslevel><sessionstart>2007-03-08T18:16:13</sessionstart><userip>127.0.0.1</userip><lastuse>2007-03-08T18:16:13</lastuse><tp_company_nm>Southwood</tp_company_nm><tp_company_id>null</tp_company_id></session>)
+2007-03-08 18:16:14,278 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-03-08 18:16:15,059 INFO  (EpedigreeAction.java:67) - ********Inside Action EpedigreeAction....... 
+2007-03-08 18:16:15,059 INFO  (EpedigreeAction.java:68) - Inside Action execute of EpedigreeAction....
+2007-03-08 18:16:15,090 INFO  (EpedigreeAction.java:78) - Validating The Session
+2007-03-08 18:16:15,090 INFO  (EpedigreeAction.java:82) - sessionID in EpedigreeAction :12700120070308061613
+2007-03-08 18:16:15,606 INFO  (EpedigreeAction.java:92) - The readStatus is : true
+2007-03-08 18:16:15,606 INFO  (EpedigreeAction.java:99) - My Query in EpedigreeAction class.....tlsp:DisplayMessage('12700120070308061613') 
+2007-03-08 18:16:15,856 INFO  (EpedigreeAction.java:128) - Before returning to success
+2007-03-08 18:16:18,653 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-03-08 18:16:18,809 INFO  (PedigreeSearchAction.java:116) - Inside Action PedigreeSearchAction....... 
+2007-03-08 18:16:18,809 INFO  (PedigreeSearchAction.java:153) - Validating The Session
+2007-03-08 18:16:18,809 INFO  (PedigreeSearchAction.java:158) - sessionID in Action :12700120070308061613
+2007-03-08 18:16:18,809 INFO  (PedigreeSearchAction.java:170) - Query for getting Accesstlsp:validateAccess('12700120070308061613','2.10','Insert')
+2007-03-08 18:16:18,825 INFO  (PedigreeSearchAction.java:173) - The readStatus is : true
+2007-03-08 18:16:18,825 INFO  (PedigreeSearchAction.java:210) - Querying for From Date to To Date.......
+2007-03-08 18:16:18,840 INFO  (PedigreeSearchAction.java:216) - Query for Getting Trading partners in PedigreeSearchActionfor $i in collection('tig:///CatalogManager/TradingPartner')/TradingPartner return data($i/name) 
+2007-03-08 18:16:33,247 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-03-08 18:16:33,340 INFO  (InitialPedigreeAction.java:94) - Query for Getting Trading partners in InitialPedigreeAction for $i in collection('tig:///CatalogManager/TradingPartner')/TradingPartner order by $i/name ascending return data($i/name) 
+2007-03-08 18:16:37,700 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-03-08 18:16:37,856 INFO  (InitialPedigreeAction.java:94) - Query for Getting Trading partners in InitialPedigreeAction for $i in collection('tig:///CatalogManager/TradingPartner')/TradingPartner order by $i/name ascending return data($i/name) 
+2007-03-08 18:17:03,825 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-03-08 18:17:04,090 INFO  (InitialPedigreeAction.java:94) - Query for Getting Trading partners in InitialPedigreeAction for $i in collection('tig:///CatalogManager/TradingPartner')/TradingPartner order by $i/name ascending return data($i/name) 
+2007-03-08 18:17:04,184 INFO  (PedigreeUtil.java:42) - Inside PedigreeUtil Class............ 
+2007-03-08 18:17:04,262 INFO  (PedigreeUtil.java:47) - pedId inside PedigreeUtil Class is :fff37135-ba12-14c0-c001-041ca2fd6417
+2007-03-08 18:17:07,231 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-03-08 18:17:08,090 INFO  (PedigreeSearchAction.java:116) - Inside Action PedigreeSearchAction....... 
+2007-03-08 18:17:08,106 INFO  (PedigreeSearchAction.java:153) - Validating The Session
+2007-03-08 18:17:08,106 INFO  (PedigreeSearchAction.java:158) - sessionID in Action :12700120070308061613
+2007-03-08 18:17:08,106 INFO  (PedigreeSearchAction.java:170) - Query for getting Accesstlsp:validateAccess('12700120070308061613','2.10','Insert')
+2007-03-08 18:17:08,137 INFO  (PedigreeSearchAction.java:173) - The readStatus is : true
+2007-03-08 18:17:08,137 INFO  (PedigreeSearchAction.java:210) - Querying for From Date to To Date.......
+2007-03-08 18:17:08,137 INFO  (PedigreeSearchAction.java:216) - Query for Getting Trading partners in PedigreeSearchActionfor $i in collection('tig:///CatalogManager/TradingPartner')/TradingPartner return data($i/name) 
+2007-03-08 18:17:10,372 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-03-08 18:17:10,403 INFO  (PedigreeSearchAction.java:116) - Inside Action PedigreeSearchAction....... 
+2007-03-08 18:17:24,106 INFO  (PedigreeSearchAction.java:153) - Validating The Session
+2007-03-08 18:17:24,122 INFO  (PedigreeSearchAction.java:158) - sessionID in Action :12700120070308061613
+2007-03-08 18:17:24,122 INFO  (PedigreeSearchAction.java:170) - Query for getting Accesstlsp:validateAccess('12700120070308061613','2.10','Insert')
+2007-03-08 18:17:24,153 INFO  (PedigreeSearchAction.java:173) - The readStatus is : true
+2007-03-08 18:17:24,168 INFO  (PedigreeSearchAction.java:210) - Querying for From Date to To Date.......
+2007-03-08 18:17:24,168 INFO  (PedigreeSearchAction.java:216) - Query for Getting Trading partners in PedigreeSearchActionfor $i in collection('tig:///CatalogManager/TradingPartner')/TradingPartner return data($i/name) 
+2007-03-08 18:17:24,215 INFO  (PedigreeSearchAction.java:250) - query for pedigree search: tlsp:getSearchResultsNew(('NDC'),('1234'),ndcLength)
+2007-03-08 18:17:24,497 ERROR (PedigreeSearchAction.java:326) - Error in PedigreeSearchAction execute method.........com.rdta.commons.persistence.PersistanceException: [xq-static-00010] - [ndcLength] references an implicit context where none is defined.
+2007-03-08 18:18:03,762 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-03-08 18:18:03,809 INFO  (PedigreeSearchAction.java:116) - Inside Action PedigreeSearchAction....... 
+2007-03-08 18:18:03,809 INFO  (PedigreeSearchAction.java:153) - Validating The Session
+2007-03-08 18:18:03,809 INFO  (PedigreeSearchAction.java:158) - sessionID in Action :12700120070308061613
+2007-03-08 18:18:03,809 INFO  (PedigreeSearchAction.java:170) - Query for getting Accesstlsp:validateAccess('12700120070308061613','2.10','Insert')
+2007-03-08 18:18:03,840 INFO  (PedigreeSearchAction.java:173) - The readStatus is : true
+2007-03-08 18:18:03,840 INFO  (PedigreeSearchAction.java:210) - Querying for From Date to To Date.......
+2007-03-08 18:18:03,840 INFO  (PedigreeSearchAction.java:216) - Query for Getting Trading partners in PedigreeSearchActionfor $i in collection('tig:///CatalogManager/TradingPartner')/TradingPartner return data($i/name) 
+2007-03-08 18:18:07,793 INFO  (CustomRequestProcessor.java:65) - In processPreprocess method::Requested action::/ePharma
+2007-03-08 18:18:07,840 INFO  (PedigreeSearchAction.java:116) - Inside Action PedigreeSearchAction....... 
+2007-03-08 18:18:11,543 INFO  (PedigreeSearchAction.java:153) - Validating The Session
+2007-03-08 18:18:11,543 INFO  (PedigreeSearchAction.java:158) - sessionID in Action :12700120070308061613
+2007-03-08 18:18:11,543 INFO  (PedigreeSearchAction.java:170) - Query for getting Accesstlsp:validateAccess('12700120070308061613','2.10','Insert')
+2007-03-08 18:18:11,575 INFO  (PedigreeSearchAction.java:173) - The readStatus is : true
+2007-03-08 18:18:11,575 INFO  (PedigreeSearchAction.java:210) - Querying for From Date to To Date.......
+2007-03-08 18:18:11,575 INFO  (PedigreeSearchAction.java:216) - Query for Getting Trading partners in PedigreeSearchActionfor $i in collection('tig:///CatalogManager/TradingPartner')/TradingPartner return data($i/name) 
+2007-03-08 18:18:11,590 INFO  (PedigreeSearchAction.java:250) - query for pedigree search: tlsp:getSearchResultsNew(('NDC'),('1234'),4)
+2007-03-08 18:18:11,653 ERROR (PedigreeSearchAction.java:326) - Error in PedigreeSearchAction execute method.........com.rdta.commons.persistence.PersistanceException: [xq-type-00000] - [http://www.rainingdata.com/TigerLogic/namespaces/stored-procedures,getSearchResultsNew] [( xs:string*, xs:string* )] cannot be applied to [( xs:string, xs:string, xs:integer )].
+2007-03-08 18:28:19,122 INFO  (SessionListener.java:55) - In sessionDestroyed method
+2007-03-08 18:28:19,122 INFO  (SessionListener.java:60) - Query:tlsp:deleteInvlidSessionID('12700120070308061613')
+2007-03-08 18:28:19,168 INFO  (User.java:189) - In valueUnbound method

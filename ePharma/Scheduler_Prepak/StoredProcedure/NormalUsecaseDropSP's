@@ -1,0 +1,9 @@
+tig:drop-stored-procedure("TPCustomization"),
+tig:drop-stored-procedure("InsertShippedPedigree"),
+tig:drop-stored-procedure("CreateManualShippedPedigree_PP"),
+tig:drop-stored-procedure("RetrievePedTradingPartnerInfo"),
+tig:drop-stored-procedure("InsertProcessedEnvelope"),
+tig:drop-stored-procedure("GetInvoiceNo"),
+tig:drop-stored-procedure("PTPExists"),
+tig:drop-stored-procedure("PEDSHIPManual_PP"),
+tig:drop-stored-procedure("CreateSignatureToEnvelope_PP")

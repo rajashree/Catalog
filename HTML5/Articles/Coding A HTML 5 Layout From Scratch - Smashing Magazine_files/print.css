@@ -1,0 +1,16 @@
+/*  (sl) 2009/10 */
+
+body {font-family: "Times New Roman", Times, serif; font-size: 12pt; letter-spacing: normal;}
+
+#header,#logo,#rightcolumn,#rss,#spnsrlist,#social,#greetbox,#bio,#about,#comment-tabs,#forum,#footer-inner,#spnsrlist,#comment-tabs,#respond,#function, #logoedtarget, #smashtabs, .bar, .rating, .post-ratings, .post-ratings-loading {display: none;}
+
+pre { font-size: 0.9em; }
+
+IMG {border: 0px;}
+
+.tag-explorer,.browse-tags,.tags,.ed,.soc-icons-bar,.site,.comment,.wp-pagenavi,.count,.post-image,.current-pages, .separator, .network-favicon, .back-to-top {display: none;}
+
+a:link,a:hover,a:focus,a:active,a:visited{font-weight: bold; color: black; text-decoration: none; }
+a:link:after { font-style: italic; font-weight: normal; content: " (" attr(href) ") "; }
+
+#copyright {font-style: italic;}

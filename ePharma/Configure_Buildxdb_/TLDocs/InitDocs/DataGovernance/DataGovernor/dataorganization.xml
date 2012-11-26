@@ -1,0 +1,50 @@
+<DataOrganization>
+	<Employee id='1' type='DataSteward'>
+		<Name>John Doe</Name>
+		<Department>Marketing</Department>
+		<Email>john.doe@abc.com</Email>
+		<Phone>408-555-1234</Phone>
+	</Employee>
+	<Employee id='2' type='DataSteward'>
+		<Name>Mark Hary</Name>
+		<Department>Finance</Department>
+		<Email>mark.hary@abc.com</Email>
+		<Phone>408-555-1235</Phone>
+	</Employee>
+	<Employee id='3' type='DataSteward'>
+		<Name>Bill Johnson</Name>
+		<Department>Sales</Department>
+		<Email>Bill.Johnson@abc.com</Email>
+		<Phone>408-555-1236</Phone>
+	</Employee>
+	<Employee id='4' type='DataSteward'>
+		<Name>Sam Jackson</Name>
+		<Department>IT</Department>
+		<Email>Sam.Jackson@abc.com</Email>
+		<Phone>408-555-1237</Phone>
+	</Employee>
+	<Employee id='5' type='DataCaptain'>
+		<Name>Ronny Jackson</Name>
+		<Department>Sales-Marketing</Department>
+		<Email>ronny.jackson@abc.com</Email>
+		<Phone>408-555-1238</Phone>
+	</Employee>
+	<Employee id='6' type='DataCaptain'>
+		<Name>Ron Bielaski</Name>
+		<Department>IT-Finance</Department>
+		<Email>ron.bielaski@abc.com</Email>
+		<Phone>408-555-1239</Phone>
+	</Employee>
+		<Employee id='7' type='GovernanceBoard'>
+		<Name>Eric Burk</Name>
+		<Department>Data Governance Board</Department>
+		<Email>eric.burk@abc.com</Email>
+		<Phone>408-555-1240</Phone>
+	</Employee>
+		<Employee id='8' type='GovernanceBoard'>
+		<Name>Ray Sliter</Name>
+		<Department>Data Governance Board</Department>
+		<Email>ray.sliter@abc.com</Email>
+		<Phone>408-555-1241</Phone>
+	</Employee>
+</DataOrganization>

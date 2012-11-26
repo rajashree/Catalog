@@ -1146,6 +1146,116 @@
         </element>
       </root>
     </artifact>
+    <artifact type="war" name="Freemarker:war">
+      <output-path>$PROJECT_DIR$/Freemarker/target</output-path>
+      <root id="archive" name="Freemarker.war">
+        <element id="artifact" artifact-name="Freemarker:war exploded" />
+      </root>
+    </artifact>
+    <artifact type="exploded-war" name="Freemarker:war exploded">
+      <output-path>$PROJECT_DIR$/Freemarker/target/Freemarker</output-path>
+      <root id="root">
+        <element id="javaee-facet-resources" facet="Freemarker/web/Web" />
+        <element id="directory" name="WEB-INF">
+          <element id="directory" name="classes">
+            <element id="module-output" name="Freemarker" />
+          </element>
+          <element id="directory" name="lib">
+            <element id="library" level="project" name="Maven: org.freemarker:freemarker:2.3.19" />
+            <element id="library" level="project" name="Maven: javax.servlet:jstl:1.2" />
+            <element id="library" level="project" name="Maven: javax.servlet:servlet-api:2.5" />
+          </element>
+        </element>
+      </root>
+    </artifact>
+    <artifact type="war" name="Plantronics_Admin:war">
+      <output-path>$PROJECT_DIR$/Plantronics_Admin/target</output-path>
+      <root id="archive" name="Plantronics_Admin.war">
+        <element id="artifact" artifact-name="Plantronics_Admin:war exploded" />
+      </root>
+    </artifact>
+    <artifact type="exploded-war" name="Plantronics_Admin:war exploded">
+      <output-path>$PROJECT_DIR$/Plantronics_Admin/target/Plantronics_Admin</output-path>
+      <root id="root">
+        <element id="javaee-facet-resources" facet="Plantronics_Admin/web/Web" />
+        <element id="directory" name="WEB-INF">
+          <element id="directory" name="classes">
+            <element id="module-output" name="Plantronics_Admin" />
+          </element>
+          <element id="directory" name="lib">
+            <element id="library" level="project" name="Maven: javax.servlet:jstl:1.2" />
+            <element id="library" level="project" name="Maven: javax.servlet:servlet-api:2.5" />
+            <element id="library" level="project" name="Maven: mysql:mysql-connector-java:5.1.21" />
+          </element>
+        </element>
+      </root>
+    </artifact>
+    <artifact type="war" name="Servlets:war">
+      <output-path>$PROJECT_DIR$/Servlets/target</output-path>
+      <root id="archive" name="Servlets.war">
+        <element id="artifact" artifact-name="Servlets:war exploded" />
+      </root>
+    </artifact>
+    <artifact type="exploded-war" name="Servlets:war exploded">
+      <output-path>$PROJECT_DIR$/Servlets/target/Servlets</output-path>
+      <root id="root">
+        <element id="javaee-facet-resources" facet="Servlets/web/Web" />
+        <element id="directory" name="WEB-INF">
+          <element id="directory" name="classes">
+            <element id="module-output" name="Servlets" />
+          </element>
+          <element id="directory" name="lib">
+            <element id="library" level="project" name="Maven: javax.servlet:jstl:1.2" />
+            <element id="library" level="project" name="Maven: javax.servlet:servlet-api:2.5" />
+            <element id="library" level="project" name="Maven: mysql:mysql-connector-java:5.1.21" />
+          </element>
+        </element>
+      </root>
+    </artifact>
+    <artifact type="war" name="OSWorkflow:war">
+      <output-path>$PROJECT_DIR$/OSWorkflow/target</output-path>
+      <root id="archive" name="OSWorkflow.war">
+        <element id="artifact" artifact-name="OSWorkflow:war exploded" />
+      </root>
+    </artifact>
+    <artifact type="exploded-war" name="OSWorkflow:war exploded">
+      <output-path>$PROJECT_DIR$/OSWorkflow/target/OSWorkflow</output-path>
+      <root id="root">
+        <element id="javaee-facet-resources" facet="OSWorkflow/web/Web" />
+        <element id="directory" name="WEB-INF">
+          <element id="directory" name="classes">
+            <element id="module-output" name="OSWorkflow" />
+          </element>
+          <element id="directory" name="lib">
+            <element id="library" level="project" name="Maven: opensymphony:osworkflow:3.0.0" />
+            <element id="library" level="project" name="Maven: javax.servlet:jstl:1.2" />
+            <element id="library" level="project" name="Maven: javax.servlet:servlet-api:2.5" />
+          </element>
+        </element>
+      </root>
+    </artifact>
+    <artifact type="war" name="BookStore:war">
+      <output-path>$PROJECT_DIR$/BookStore/target</output-path>
+      <root id="archive" name="BookStore.war">
+        <element id="artifact" artifact-name="BookStore:war exploded" />
+      </root>
+    </artifact>
+    <artifact type="exploded-war" name="BookStore:war exploded">
+      <output-path>$PROJECT_DIR$/BookStore/target/BookStore</output-path>
+      <root id="root">
+        <element id="javaee-facet-resources" facet="BookStore/web/Web" />
+        <element id="directory" name="WEB-INF">
+          <element id="directory" name="classes">
+            <element id="module-output" name="BookStore" />
+          </element>
+          <element id="directory" name="lib">
+            <element id="library" level="project" name="Maven: javax.servlet:jstl:1.2" />
+            <element id="library" level="project" name="Maven: javax.servlet:servlet-api:2.5" />
+            <element id="library" level="project" name="Maven: mysql:mysql-connector-java:5.1.21" />
+          </element>
+        </element>
+      </root>
+    </artifact>
   </component>
   <component name="CCaseConfig">
     <option name="checkoutReserved" value="false" />
@@ -1216,9 +1326,14 @@
       <facet-type id="web">
         <modules>
           <module name="Ajax_Ex" />
+          <module name="BookStore" />
+          <module name="Freemarker" />
           <module name="JasperReport" />
           <module name="JSON" />
           <module name="JSP" />
+          <module name="OSWorkflow" />
+          <module name="Plantronics_Admin" />
+          <module name="Servlets" />
           <module name="SitemeshBlank" />
           <module name="SitemeshDemo" />
           <module name="SiteMeshExamples" />
@@ -1290,6 +1405,13 @@
         <option value="$PROJECT_DIR$/SiteMesh/SiteMeshExamples/pom.xml" />
         <option value="$PROJECT_DIR$/SiteMesh/SiteSprings/pom.xml" />
         <option value="$PROJECT_DIR$/JasperReport/pom.xml" />
+        <option value="$PROJECT_DIR$/Freemarker/pom.xml" />
+        <option value="$PROJECT_DIR$/Plantronics_Admin/pom.xml" />
+        <option value="$PROJECT_DIR$/Servlets/pom.xml" />
+        <option value="$PROJECT_DIR$/ConfigureAntAndLog/pom.xml" />
+        <option value="$PROJECT_DIR$/HTML5/pom.xml" />
+        <option value="$PROJECT_DIR$/OSWorkflow/pom.xml" />
+        <option value="$PROJECT_DIR$/BookStore/pom.xml" />
       </list>
     </option>
   </component>
@@ -1436,14 +1558,21 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Ajax_Ex/Ajax_Ex.iml" filepath="$PROJECT_DIR$/Ajax_Ex/Ajax_Ex.iml" />
+      <module fileurl="file://$PROJECT_DIR$/BookStore/BookStore.iml" filepath="$PROJECT_DIR$/BookStore/BookStore.iml" />
       <module fileurl="file://$PROJECT_DIR$/Catalog.iml" filepath="$PROJECT_DIR$/Catalog.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ConfigureAntAndLog/ConfigureAntAndLog.iml" filepath="$PROJECT_DIR$/ConfigureAntAndLog/ConfigureAntAndLog.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Freemarker/Freemarker.iml" filepath="$PROJECT_DIR$/Freemarker/Freemarker.iml" />
+      <module fileurl="file://$PROJECT_DIR$/HTML5/HTML5.iml" filepath="$PROJECT_DIR$/HTML5/HTML5.iml" />
       <module fileurl="file://$PROJECT_DIR$/JSON/JSON.iml" filepath="$PROJECT_DIR$/JSON/JSON.iml" />
       <module fileurl="file://$PROJECT_DIR$/JSP/JSP.iml" filepath="$PROJECT_DIR$/JSP/JSP.iml" />
       <module fileurl="file://$PROJECT_DIR$/JasperReport/JasperReport.iml" filepath="$PROJECT_DIR$/JasperReport/JasperReport.iml" />
       <module fileurl="file://$PROJECT_DIR$/Java/Java.iml" filepath="$PROJECT_DIR$/Java/Java.iml" />
       <module fileurl="file://$PROJECT_DIR$/KB/KB.iml" filepath="$PROJECT_DIR$/KB/KB.iml" />
+      <module fileurl="file://$PROJECT_DIR$/OSWorkflow/OSWorkflow.iml" filepath="$PROJECT_DIR$/OSWorkflow/OSWorkflow.iml" />
       <module fileurl="file://$PROJECT_DIR$/OldScheduler/OldScheduler.iml" filepath="$PROJECT_DIR$/OldScheduler/OldScheduler.iml" />
       <module fileurl="file://$PROJECT_DIR$/PDFGenerator/PDFGenerator.iml" filepath="$PROJECT_DIR$/PDFGenerator/PDFGenerator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Plantronics_Admin/Plantronics_Admin.iml" filepath="$PROJECT_DIR$/Plantronics_Admin/Plantronics_Admin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Servlets/Servlets.iml" filepath="$PROJECT_DIR$/Servlets/Servlets.iml" />
       <module fileurl="file://$PROJECT_DIR$/SiteMesh/SiteMeshExamples/SiteMeshExamples.iml" filepath="$PROJECT_DIR$/SiteMesh/SiteMeshExamples/SiteMeshExamples.iml" />
       <module fileurl="file://$PROJECT_DIR$/SiteMesh/SitemeshBlank/SitemeshBlank.iml" filepath="$PROJECT_DIR$/SiteMesh/SitemeshBlank/SitemeshBlank.iml" />
       <module fileurl="file://$PROJECT_DIR$/SiteMesh/SitemeshDemo/SitemeshDemo.iml" filepath="$PROJECT_DIR$/SiteMesh/SitemeshDemo/SitemeshDemo.iml" />
@@ -1481,6 +1610,16 @@
     </option>
   </component>
   <component name="libraryTable">
+    <library name="Libs">
+      <CLASSES>
+        <root url="file://$PROJECT_DIR$/Java/src/lib" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$PROJECT_DIR$/Java/src/lib/libcurl.jar!/" />
+      </SOURCES>
+      <jarDirectory url="file://$PROJECT_DIR$/Java/src/lib" recursive="false" />
+    </library>
     <library name="Maven: asm:asm-commons:3.3">
       <CLASSES>
         <root url="jar://$MAVEN_REPOSITORY$/asm/asm-commons/3.3/asm-commons-3.3.jar!/" />
@@ -1838,6 +1977,17 @@
       </JAVADOC>
       <SOURCES>
         <root url="jar://$MAVEN_REPOSITORY$/ognl/ognl/3.0.5/ognl-3.0.5-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: opensymphony:osworkflow:3.0.0">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/opensymphony/osworkflow/3.0.0/osworkflow-3.0.0.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/opensymphony/osworkflow/3.0.0/osworkflow-3.0.0-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/opensymphony/osworkflow/3.0.0/osworkflow-3.0.0-sources.jar!/" />
       </SOURCES>
     </library>
     <library name="Maven: opensymphony:sitemesh:2.4.2">

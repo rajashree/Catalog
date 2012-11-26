@@ -1,0 +1,80 @@
+2007-02-13 22:29:48,687 INFO  (?:?) - In sessionDestroyed method
+2007-02-13 22:29:48,734 INFO  (?:?) - Query:tlsp:deleteInvlidSessionID('12700120061222120212')
+2007-02-13 22:29:56,516 INFO  (?:?) - In processPreprocess method::Requested action::/ePharma
+2007-02-13 22:29:56,532 INFO  (?:?) - In execute method
+2007-02-13 22:29:56,547 INFO  (?:?) - In authenticate method
+2007-02-13 22:29:56,547 INFO  (?:?) - In getUser method
+2007-02-13 22:29:56,547 INFO  (?:?) - Query:tlsp:loginUserInfo('test')
+2007-02-13 22:29:57,844 INFO  (?:?) - In passwordMatch method
+2007-02-13 22:29:57,844 INFO  (?:?) - In valueBound method
+2007-02-13 22:29:57,860 INFO  (?:?) - In insertSessionDoc method
+2007-02-13 22:29:57,860 INFO  (?:?) - In replaceString method
+2007-02-13 22:29:57,860 INFO  (?:?) - Query:tig:insert-document( 'tig:///EAGRFID/SysSessions/', <session><sessionid>12700120070213102957</sessionid><userid>6120645223803314407198380497886</userid><username>Test Test</username><accesslevel>epedigree</accesslevel><sessionstart>2007-02-13T22:29:57</sessionstart><userip>127.0.0.1</userip><lastuse>2007-02-13T22:29:57</lastuse><tp_company_nm>Southwood</tp_company_nm><tp_company_id>null</tp_company_id></session>)
+2007-02-13 22:29:58,047 INFO  (?:?) - In processPreprocess method::Requested action::/ePharma
+2007-02-13 22:29:58,110 INFO  (?:?) - ********Inside Action EpedigreeAction....... 
+2007-02-13 22:29:58,110 INFO  (?:?) - Inside Action execute of EpedigreeAction....
+2007-02-13 22:29:58,126 INFO  (?:?) - Validating The Session
+2007-02-13 22:29:58,126 INFO  (?:?) - sessionID in EpedigreeAction :12700120070213102957
+2007-02-13 22:29:58,219 INFO  (?:?) - The readStatus is : true
+2007-02-13 22:29:58,219 INFO  (?:?) - My Query in EpedigreeAction class.....tlsp:DisplayMessage('12700120070213102957') 
+2007-02-13 22:29:58,485 INFO  (?:?) - Before returning to success
+2007-02-13 22:30:05,517 INFO  (?:?) - In processPreprocess method::Requested action::/ePharma
+2007-02-13 22:30:05,564 DEBUG (?:?) - sessionID :12700120070213102957
+2007-02-13 22:30:09,127 INFO  (?:?) - In processPreprocess method::Requested action::/ePharma
+2007-02-13 22:30:09,174 INFO  (?:?) - Inside Action PedigreeBankSearchAction....... 
+2007-02-13 22:30:09,174 INFO  (?:?) - Inside Action execute of PedigreeBankSearchAction....
+2007-02-13 22:30:09,189 INFO  (?:?) - for $i in collection('tig:///ePharma/PedigreeBank')/PedigreeBank/InventoryOnHand return<TR class='tableRow_Off'><TD height='16'  align='center'>{data($i/NDC)}</TD><TD  height='16' align='center'>{data($i/TotalInventory)}</TD><TD height='16' align='center'>NA</TD><TD height='16' align='center'>{data($i/TotalInventory)}</TD></TR>
+2007-02-13 22:30:10,564 INFO  (?:?) - before retuning Success! 
+2007-02-13 22:30:14,112 INFO  (?:?) - In processPreprocess method::Requested action::/ePharma
+2007-02-13 22:30:14,159 INFO  (?:?) - Inside Action TradingPartnerListAction....... 
+2007-02-13 22:30:14,159 INFO  (?:?) - Inside Action execute of TradingPartnerListAction....
+2007-02-13 22:30:14,159 INFO  (?:?) - query tlsp:validateAccess('12700120070213102957','4.0','Read')
+2007-02-13 22:30:14,174 INFO  (?:?) - The insertStatus is true
+2007-02-13 22:30:55,585 INFO  (?:?) - In processPreprocess method::Requested action::/ePharma
+2007-02-13 22:30:55,617 DEBUG (?:?) - sessionID :12700120070213102957
+2007-02-13 22:31:01,477 INFO  (?:?) - In processPreprocess method::Requested action::/ePharma
+2007-02-13 22:31:01,523 INFO  (?:?) - ********Inside Action EpedigreeAction....... 
+2007-02-13 22:31:01,523 INFO  (?:?) - Inside Action execute of EpedigreeAction....
+2007-02-13 22:31:01,523 INFO  (?:?) - Validating The Session
+2007-02-13 22:31:01,523 INFO  (?:?) - sessionID in EpedigreeAction :12700120070213102957
+2007-02-13 22:31:01,539 INFO  (?:?) - The readStatus is : true
+2007-02-13 22:31:01,539 INFO  (?:?) - My Query in EpedigreeAction class.....tlsp:DisplayMessage('12700120070213102957') 
+2007-02-13 22:31:01,555 INFO  (?:?) - Before returning to success
+2007-02-13 22:31:03,492 INFO  (?:?) - In processPreprocess method::Requested action::/ePharma
+2007-02-13 22:31:03,524 INFO  (?:?) - Inside Action PedigreeBankSearchAction....... 
+2007-02-13 22:31:03,524 INFO  (?:?) - Inside Action execute of PedigreeBankSearchAction....
+2007-02-13 22:31:03,539 INFO  (?:?) - for $i in collection('tig:///ePharma/PedigreeBank')/PedigreeBank/InventoryOnHand return<TR class='tableRow_Off'><TD height='16'  align='center'>{data($i/NDC)}</TD><TD  height='16' align='center'>{data($i/TotalInventory)}</TD><TD height='16' align='center'>NA</TD><TD height='16' align='center'>{data($i/TotalInventory)}</TD></TR>
+2007-02-13 22:31:03,774 INFO  (?:?) - before retuning Success! 
+2007-02-13 22:31:05,649 INFO  (?:?) - In processPreprocess method::Requested action::/ePharma
+2007-02-13 22:31:05,696 INFO  (?:?) - Executing execute Method of ShowReportCubesAction
+2007-02-13 22:31:05,696 INFO  (?:?) - getting the User Info...
+2007-02-13 22:31:05,899 INFO  (?:?) - After executing the tlsp:getReportCubes() stored procedure 
+2007-02-13 22:31:07,649 INFO  (?:?) - In processPreprocess method::Requested action::/ePharma
+2007-02-13 22:31:07,680 INFO  (?:?) - Inside Action TradingPartnerListAction....... 
+2007-02-13 22:31:07,680 INFO  (?:?) - Inside Action execute of TradingPartnerListAction....
+2007-02-13 22:31:07,680 INFO  (?:?) - query tlsp:validateAccess('12700120070213102957','4.0','Read')
+2007-02-13 22:31:07,696 INFO  (?:?) - The insertStatus is true
+2007-02-13 22:31:54,045 INFO  (?:?) - In processPreprocess method::Requested action::/ePharma
+2007-02-13 22:31:54,061 INFO  (?:?) - Executing execute Method of ShowReportCubesAction
+2007-02-13 22:31:54,061 INFO  (?:?) - getting the User Info...
+2007-02-13 22:31:54,092 INFO  (?:?) - After executing the tlsp:getReportCubes() stored procedure 
+2007-02-13 22:31:55,342 INFO  (?:?) - In processPreprocess method::Requested action::/ePharma
+2007-02-13 22:31:55,373 INFO  (?:?) - Inside Action PedigreeBankSearchAction....... 
+2007-02-13 22:31:55,373 INFO  (?:?) - Inside Action execute of PedigreeBankSearchAction....
+2007-02-13 22:31:55,373 INFO  (?:?) - for $i in collection('tig:///ePharma/PedigreeBank')/PedigreeBank/InventoryOnHand return<TR class='tableRow_Off'><TD height='16'  align='center'>{data($i/NDC)}</TD><TD  height='16' align='center'>{data($i/TotalInventory)}</TD><TD height='16' align='center'>NA</TD><TD height='16' align='center'>{data($i/TotalInventory)}</TD></TR>
+2007-02-13 22:31:55,623 INFO  (?:?) - before retuning Success! 
+2007-02-13 22:31:56,999 INFO  (?:?) - In processPreprocess method::Requested action::/ePharma
+2007-02-13 22:31:57,014 INFO  (?:?) - ********Inside Action EpedigreeAction....... 
+2007-02-13 22:31:57,014 INFO  (?:?) - Inside Action execute of EpedigreeAction....
+2007-02-13 22:31:57,030 INFO  (?:?) - Validating The Session
+2007-02-13 22:31:57,030 INFO  (?:?) - sessionID in EpedigreeAction :12700120070213102957
+2007-02-13 22:31:57,030 INFO  (?:?) - The readStatus is : true
+2007-02-13 22:31:57,030 INFO  (?:?) - My Query in EpedigreeAction class.....tlsp:DisplayMessage('12700120070213102957') 
+2007-02-13 22:31:57,045 INFO  (?:?) - Before returning to success
+2007-02-13 22:31:58,139 INFO  (?:?) - In processPreprocess method::Requested action::/ePharma
+2007-02-13 22:31:58,155 DEBUG (?:?) - sessionID :12700120070213102957
+2007-02-13 22:42:01,912 INFO  (?:?) - In sessionDestroyed method
+2007-02-13 22:42:01,912 INFO  (?:?) - Query:tlsp:deleteInvlidSessionID('12700120070213102957')
+2007-02-13 22:42:01,990 INFO  (?:?) - In valueUnbound method
+2007-02-13 22:51:17,570 INFO  (?:?) - In contextDestroyed method
+2007-02-13 22:51:17,570 INFO  (?:?) - Query:tlsp:deleteSessions()

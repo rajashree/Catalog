@@ -1,0 +1,68 @@
+
+(: Get Pedigree DocumentID based on SSCC)
+
+
+tig:drop-stored-procedure("getPedigreeBasedOnSSCC"),
+tig:create-stored-procedure("getPedigreeBasedOnSSCC","
+declare variable $sscc as string external;
+if (count(for $i in collection('tig:///ePharma/APN')/*:APN/Pedigrees/Pedigree
+where $i/Products/Product/ParentEPC = $sscc
+return $i ) > 0) then 
+for $i in collection('tig:///ePharma/APN')/*:APN/Pedigrees/Pedigree
+where $i/Products/Product/ParentEPC = $sscc
+return data($i/DocumentId)
+else if (count(for $i in collection('tig:///ePharma/DespatchAdvice')/*:DespatchAdvice
+where $i/*:DespatchLine/*:Item/*:AdditionalItemIdentification/*:ID = $sscc
+return $i) > 0) then
+for $i in collection('tig:///ePharma/DespatchAdvice')/*:DespatchAdvice
+where $i/*:DespatchLine/*:Item/*:AdditionalItemIdentification/*:ID = $sscc
+return 
+for $j in  collection('tig:///ePharma/Orders')/*:Order
+where $j/*:BuyersID = $i/*:OrderReference/*:BuyersID
+return 
+for $k in collection('tig:///ePharma/APN')/*:APN/Pedigrees/Pedigree
+where $k/Custody/TransactionType = 'purchaseorder' and $k/Custody/TransactionNumber = $j/*:BuyersID
+return data($k/DocumentId)
+else  error('No Despatch Advice Found')
+")
+
+
+tig:drop-stored-procedure("updatePedigreeStatus"),
+tig:create-stored-procedure("updatePedigreeStatus","
+declare variable $DocumentId as string external;
+update
+for $i in collection('tig:///ePharma/APN')/*:APN/Pedigrees/Pedigree
+where $i/DocumentId = $DocumentId 
+insert  
+<Status>
+<StatusChangedOn>fn:current-date()}</StatusChangedOn>
+<Status>Verified</Status>
+</Status> into $i/PedigreeStatus 
+")
+
+
+(: Apend  Pedigree Status :)
+
+tig:drop-stored-procedure("updatePedigreeStatusAndReturnDocumentId"),
+tig:create-stored-procedure("updatePedigreeStatusAndReturnDocumentId","
+declare variable $DocumentId as string external;
+let $a := tlsp:updatePedigreeStatus($DocumentId)
+return
+$DocumentId
+")
+
+
+tig:create-stored-procedure("sendPedigreeCertifyMessage","
+declare variable $PedigreeDocumentId as string external;
+tig:insert-document('tig:///ePharma/Inbox',<Inbox>
+<User>John Doe</User>
+<TransactionType>Pedigree Document</TransactionType>
+<TransactionNumber>{$PedigreeDocumentId}</TransactionNumber>
+<Message>Pedigree Needs to be Certify</Message>
+<Severity>High</Severity>
+<Status>Generated</Status>
+<CreatedOn>{fn:current-date()}</CreatedOn>
+</Inbox>
+ )")
+
+

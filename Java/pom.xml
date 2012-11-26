@@ -40,7 +40,11 @@
             <artifactId>mysql-connector-java</artifactId>
             <version>5.1.21</version>
         </dependency>
-
+        <dependency>
+            <groupId>net.awired.js</groupId>
+            <artifactId>curl</artifactId>
+            <version>0.5.4</version>
+        </dependency>
 
     </dependencies>
 </project>

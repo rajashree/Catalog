@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+<log4j:configuration debug="true" xmlns:log4j="http://jakarta.apache.org/log4j/">
+	<appender name="DEBUG" class="org.apache.log4j.DailyRollingFileAppender">
+		<param name="DatePattern" value="'.'dd-MM-yyyy"/>
+		<param name="File" value="${log.home}/schJob.log"/>
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%d %-5p (%F:%L) - %m%n"/>
+		</layout>
+	</appender>
+	<logger name="org.apache">
+		<level value="warn"/>
+	</logger>
+	<root>
+		<priority value="debug"/>
+		<appender-ref ref="DEBUG"/>
+	</root>
+</log4j:configuration>

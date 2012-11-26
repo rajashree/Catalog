@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <xsd:element name="User">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="UserID" type="xsd:string"/>
+                <xsd:element name="FirstName" type="xsd:string"/>
+                <xsd:element name="LastName" type="xsd:string"/>
+                <xsd:element name="UserName" type="xsd:string"/>
+                <xsd:element name="Email" type="xsd:string"/>
+                <xsd:element name="Password" type="xsd:string"/>
+                <xsd:element name="Disable" type="xsd:string"/>
+		<xsd:element name="Signer" type="xsd:string"/>
+                <xsd:element name="AccessLevel">
+                    <xsd:complexType>
+                        <xsd:sequence minOccurs="0" maxOccurs="unbounded">
+                            <xsd:element name="Access" type="xsd:string"/>
+                        </xsd:sequence>
+                    </xsd:complexType>
+                </xsd:element>
+                <xsd:element name="UserRole" type="xsd:string"/>
+		
+		
+                
+                <xsd:element name="Phone" type="xsd:string"/>
+                <xsd:element name="Fax" type="xsd:string"/>
+               
+                <xsd:element name="BelongsToCompany" type="xsd:string"/>		
+		<xsd:element name="EAG-TimeStamp">
+				<xsd:annotation>
+					<xsd:documentation>EAG internal timestamp node to be used for ONS and P2P replication of content</xsd:documentation>
+				</xsd:annotation>
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="origin-serverID">
+							<xsd:annotation>
+								<xsd:documentation>created on server ID</xsd:documentation>
+							</xsd:annotation>
+						</xsd:element>
+						<xsd:element name="updated-timestamp" type="xsd:dateTime">
+							<xsd:annotation>
+								<xsd:documentation>created/updated timestamp</xsd:documentation>
+							</xsd:annotation>
+						</xsd:element>
+						<xsd:element name="updated-serverID">
+							<xsd:annotation>
+								<xsd:documentation>last server updated on</xsd:documentation>
+							</xsd:annotation>
+						</xsd:element>
+						<xsd:element name="reported" type="xsd:boolean">
+							<xsd:annotation>
+								<xsd:documentation>true or false - marks this record as reported. otherwise will be picked up by replication service.</xsd:documentation>
+							</xsd:annotation>
+						</xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+		</xsd:element>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+</xsd:schema>

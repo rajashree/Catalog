@@ -1,0 +1,8 @@
+tig:register-java-functions( "createSignature", doc('file:///C:/CreateSig/CreateSigFunctionDescriptor.xml')  )
+
+
+tig:unregister-java-functions( 'xmlsecurity' )
+
+local:testCreateSig(xs:string("anthony.sangha@rainingdata.com") )
+
+tig:list-java-functions()
