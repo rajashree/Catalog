@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       default-init-method="init" default-destroy-method="destroy"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.1.xsd">
+
+    <!-- MAIN APPLICATION DATASOURCE -->
+    <bean id="dataSource" parent="ds_${datasource.beanName}"/>
+
+    <!-- ========= DATA SOURCES =========-->
+    <bean id="__baseDS" class="com.mchange.v2.c3p0.ComboPooledDataSource" destroy-method="close">
+
+
+        <property name="initialPoolSize" value="3"/>
+        <property name="minPoolSize" value="5"/>
+        <property name="maxPoolSize" value="50"/>
+        <property name="acquireIncrement" value="1"/>
+        <property name="maxIdleTime" value="500"/>
+        <property name="checkoutTimeout" value="1800000"/>
+        <property name="idleConnectionTestPeriod" value="500"/>
+        <property name="maxStatements" value="50"/>
+        <property name="preferredTestQuery" value="SELECT 1"/>
+        <property name="testConnectionOnCheckout" value="true"/>
+
+        <!--<property name="driverClass" value="org.gjt.mm.mysql.Driver"/>-->
+        <property name="driverClass" value="com.mysql.jdbc.Driver"/>
+        <property name="jdbcUrl" value="jdbc:mysql://127.0.0.1:3306/dell_datawarehousing?autoReconnect=true"/>
+        <property name="user" value="root"/>
+        <property name="password" value=""/>
+    </bean>
+
+    <!--<bean id="ds_sourcen_uat" parent="__baseDS">
+        <property name="jdbcUrl" value="jdbc:mysql://localhost:3306/dell_dwh?autoReconnect=true"/>
+        <property name="user" value="dell_dwh"/>
+        <property name="password" value="dell_dwh"/>
+    </bean>
+
+    <bean id="ds_local" parent="__baseDS">
+        <property name="jdbcUrl" value="jdbc:mysql://127.0.0.1:3306/dell_datawarehousing?autoReconnect=true"/>
+        <property name="user" value="root"/>
+        <property name="password" value=""/>
+    </bean>
+
+    <bean id="ds_dell_dev" parent="__baseDS">
+        <property name="jdbcUrl" value="jdbc:mysql://172.30.0.49:3306/dell_dwh?autoReconnect=true"/>
+        <property name="user" value="dell_dwh"/>
+        <property name="password" value="dell_dwh123"/>
+    </bean>
+
+    <bean id="ds_dell_production" parent="__baseDS">
+        <property name="jdbcUrl" value="jdbc:mysql://172.30.0.46:3306/dell_dwh?autoReconnect=true"/>
+        <property name="user" value="dell_dwh"/>
+        <property name="password" value="DW2@y$"/>
+    </bean>-->
+
+    <bean id="ds_sourcen_uat" parent="__baseDS">
+        <property name="driverClass" value="net.sourceforge.jtds.jdbc.Driver"/>
+        <property name="jdbcUrl" value="jdbc:jtds:sqlserver://192.168.0.15/dell_dwh;database=dell_dwh;Server=192.168.0.15;ResultSetMetaDataOptions=1;"/>
+        <property name="user" value="dell_dwh"/>
+        <property name="password" value="dell_dwh123"/>
+    </bean>
+
+    <bean id="ds_local" parent="__baseDS">
+        <property name="driverClass" value="net.sourceforge.jtds.jdbc.Driver"/>
+        <property name="jdbcUrl" value="jdbc:jtds:sqlserver://192.168.0.118/dell_dw;database=dell_dw;Server=192.168.0.118;ResultSetMetaDataOptions=1;"/>
+        <property name="user" value="sa"/>
+        <property name="password" value="root"/>
+    </bean>
+
+    <bean id="ds_dell_uat" parent="__baseDS">
+        <property name="driverClass" value="net.sourceforge.jtds.jdbc.Driver"/>
+        <property name="jdbcUrl" value="jdbc:jtds:sqlserver://172.30.0.102/dell_dwh;database=dell_dwh;Server=172.30.0.102;ResultSetMetaDataOptions=1;"/>
+        <property name="user" value="dell_dw_admin"/>
+        <property name="password" value="AD@@r1!"/>
+    </bean>
+
+    <bean id="ds_dell_dev" parent="__baseDS">
+        <property name="driverClass" value="net.sourceforge.jtds.jdbc.Driver"/>
+        <property name="jdbcUrl" value="jdbc:jtds:sqlserver://172.30.0.102/dell_dwh;database=dell_dwh;Server=172.30.0.102;ResultSetMetaDataOptions=1;"/>
+        <property name="user" value="dell_dw_admin"/>
+        <property name="password" value="AD@@r1!"/>
+    </bean>
+
+    <bean id="ds_dell_production" parent="__baseDS">
+        <property name="driverClass" value="net.sourceforge.jtds.jdbc.Driver"/>
+        <property name="jdbcUrl" value="jdbc:jtds:sqlserver://172.31.0.203/dell_dwh;database=dell_dwh;Server=172.31.0.203;ResultSetMetaDataOptions=1;"/>
+        <property name="user" value="dell_dwh"/>
+        <property name="password" value="HWqy44!*"/>
+    </bean>
+
+
+
+</beans>

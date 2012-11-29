@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/meteriffic/!svn/ver/2/trunk/src/com/sourcen/meteriffic/action
+END
+ForgotPasswordAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/meteriffic/!svn/ver/2/trunk/src/com/sourcen/meteriffic/action/ForgotPasswordAction.java
+END
+ResetPasswordAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/meteriffic/!svn/ver/2/trunk/src/com/sourcen/meteriffic/action/ResetPasswordAction.java
+END
+SignUpAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/meteriffic/!svn/ver/2/trunk/src/com/sourcen/meteriffic/action/SignUpAction.java
+END
+DashBoardAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/meteriffic/!svn/ver/2/trunk/src/com/sourcen/meteriffic/action/DashBoardAction.java
+END
+IndexAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/meteriffic/!svn/ver/2/trunk/src/com/sourcen/meteriffic/action/IndexAction.java
+END
+AdminAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/meteriffic/!svn/ver/2/trunk/src/com/sourcen/meteriffic/action/AdminAction.java
+END
+LoginAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/meteriffic/!svn/ver/2/trunk/src/com/sourcen/meteriffic/action/LoginAction.java
+END
+PasswordChangeAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/meteriffic/!svn/ver/2/trunk/src/com/sourcen/meteriffic/action/PasswordChangeAction.java
+END
+SpaceActionSupport.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/meteriffic/!svn/ver/2/trunk/src/com/sourcen/meteriffic/action/SpaceActionSupport.java
+END
+LogoutAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/meteriffic/!svn/ver/2/trunk/src/com/sourcen/meteriffic/action/LogoutAction.java
+END
+AccountAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/meteriffic/!svn/ver/5/trunk/src/com/sourcen/meteriffic/action/AccountAction.java
+END
+TaxonomyAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/meteriffic/!svn/ver/2/trunk/src/com/sourcen/meteriffic/action/TaxonomyAction.java
+END
+SettingsAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/meteriffic/!svn/ver/2/trunk/src/com/sourcen/meteriffic/action/SettingsAction.java
+END

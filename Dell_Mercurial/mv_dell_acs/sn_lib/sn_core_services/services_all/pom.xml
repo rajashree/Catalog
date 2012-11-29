@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Copyright (c) Sourcen Inc. 2004-2012
+  ~ All rights reserved.
+  -->
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+    <groupId>com.sourcen.core.services</groupId>
+    <artifactId>services_all</artifactId>
+    <version>1.0</version>
+    <packaging>jar</packaging>
+    <name>Sourcen Core Services - All Jar</name>
+    <description>Sourcen core services support.</description>
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.sourcen.core</groupId>
+        <artifactId>sn_core_parent</artifactId>
+        <relativePath>../../sn_core/build/parent/pom.xml</relativePath>
+        <version>1.0</version>
+    </parent>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.sourcen.core.services</groupId>
+            <artifactId>config</artifactId>
+            <version>1.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.sourcen.core.services</groupId>
+            <artifactId>event</artifactId>
+            <version>1.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.sourcen.core.services</groupId>
+            <artifactId>cache</artifactId>
+            <version>1.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.sourcen.core.services</groupId>
+            <artifactId>texttemplate</artifactId>
+            <version>1.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.sourcen.core.services</groupId>
+            <artifactId>i18n</artifactId>
+            <version>1.0</version>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-shade-plugin</artifactId>
+                <version>1.6</version>
+                <configuration>
+                    <!--<finalName>${artifactId}</finalName>-->
+                    <!--<shadedArtifactAttached>true</shadedArtifactAttached>-->
+                    <!--<shadedClassifierName>combined</shadedClassifierName>-->
+                </configuration>
+                <executions>
+                    <execution>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>shade</goal>
+                        </goals>
+                        <configuration>
+                            <artifactSet>
+                                <includes>
+                                    <exclude>com.sourcen.core.services:*</exclude>
+                                </includes>
+                            </artifactSet>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>

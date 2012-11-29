@@ -1,0 +1,55 @@
+<!--
+  ~ Copyright (c) Sourcen Inc. 2004-2012
+  ~ All rights reserved.
+  -->
+
+<schema>
+
+    <table destinationTable="com.dell.acs.persistence.domain.Product" sourceTable="product" mapKeys="true">
+
+        <properties>
+            <property name="tableType" value="csv"/>
+            <property name="sheetIndex" value="0"/>
+            <property name="rowstoskip" value="1"/>
+            <property name="maxRows" value="100000"/>
+            <property name="isPathAbsolute" value="true"/>
+            <property name="mapKeys" value="true"/>
+            <property name="batchSize" value="100"/>
+            <!--<property name="disableBatchUpdate" value="true"/>-->
+
+            <!-- decimal value of the character -->
+            <property name="separator" value="9"/>
+        </properties>
+
+        <keys>
+            <key type="primary" destinationKey="id" sourceKey="SKU,NAME"/>
+        </keys>
+
+
+        <!--// ID SiteName ProductID Category1 Category2 Category3 Category4 Category5 Category6-->
+        <!--// URL SKU WebPartNumber Title ClearanceTag SaleTag PriceCutTag TempPriceCutTag NewProduct-->
+        <!--// BestSeller Description Stars Reviews ReviewsLink ListPrice HasListPriceRange Price-->
+        <!--// HasPriceRange HasVariations Estimated Ship Date FacebookLikes PlusOneGoogle Tweets-->
+        <!--// Promotional ShippingPromotion BuyLink FlashLink Specifications UpdateDateTime-->
+
+        <!--<column source="PROGRAMNAME" destination="siteName" type="string"/>-->
+        <!--<column source="ProductID" destination="productId" type="string"/>-->
+        <column source="siteName" destination="siteName" type="string"/>
+        <column source="THIRDPARTYCATEGORY" destination="category1" type="string"/>
+        <column source="ADVERTISERCATEGORY" destination="category2" type="string"/>
+        <column source="BUYURL" destination="url" type="string"/>
+        <column source="IMAGEURL" destination="image.srcImageURL" type="string"/>
+        <column source="SKU" destination="productId" type="string"/>
+        <column source="NAME" destination="title" type="string"/>
+        <column source="SALEPRICE" destination="price" type="float"/>
+        <column source="DESCRIPTION" destination="description" type="string" defaultValue="null"/>
+        <column source="PRICE" destination="listPrice" type="float" defaultValue="0"/>
+        <column source="PROMOTIONALTEXT" destination="promotional" type="string"/>
+        <column source="MANUFACTURER" destination="specifications" type="string"/>
+        <!--<column source="MANUFACTURERID" destination="specifications" type="string"/>-->
+        <!--<column source="UPC" destination="specifications" type="string"/>-->
+        <column source="LASTUPDATED" destination="updateDateTime" type="datetime" defaultValue="TIMESTAMP"/>
+        <column source="INSTOCK" destination="availability" type="int" transformerClass="com.dell.acs.dataimport.cj.AvailabilityColumnTransformer"/>
+        <column source="NAME,PRICE,SKU" destination="searchItemHash" type="string" />
+    </table>
+</schema>

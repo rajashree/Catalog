@@ -1,0 +1,431 @@
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+
+	<constant name="struts.objectFactory" value="spring" />
+	<constant name="struts.url.includeParams" value="none" />
+	<constant name="struts.devMode" value="false" />
+	<constant name="struts.action.extension" value="htm" />
+	<constant name="struts.custom.i18n.resources"
+		value="ii8n/global_resource_ii8n">
+	</constant>
+
+	<package name="default" namespace="/" extends="struts-default">
+
+		<result-types>
+			<result-type name="freemarker"
+				class="org.apache.struts2.views.freemarker.FreemarkerResult"
+				default="true" />
+		</result-types>
+
+
+		<interceptors>
+
+			<interceptor name="authentication"
+				class="com.sourcen.microsite.security.AuthenticationInterceptor" />
+
+			<interceptor-stack name="defaultStack">
+				<interceptor-ref name="exception" />
+				<interceptor-ref name="alias" />
+				<interceptor-ref name="servletConfig" />
+				<interceptor-ref name="prepare" />
+				<interceptor-ref name="i18n" />
+				<interceptor-ref name="chain" />
+				<interceptor-ref name="debugging" />
+				<interceptor-ref name="profiling" />
+				<interceptor-ref name="scopedModelDriven" />
+				<interceptor-ref name="modelDriven" />
+				<interceptor-ref name="fileUpload" />
+				<interceptor-ref name="checkbox" />
+				<interceptor-ref name="staticParams" />
+				<interceptor-ref name="params">
+					<param name="excludeParams">
+						dojo\..*,^struts\..*
+					</param>
+				</interceptor-ref>
+				<interceptor-ref name="conversionError" />
+				<interceptor-ref name="validation">
+					<param name="excludeMethods">
+						input,back,cancel,browse
+					</param>
+				</interceptor-ref>
+				<interceptor-ref name="workflow">
+					<param name="excludeMethods">
+						input,back,cancel,browse,list,delete
+					</param>
+				</interceptor-ref>
+			</interceptor-stack>
+			<interceptor-stack name="user">
+				<interceptor-ref name="authentication" />
+				<interceptor-ref name="defaultStack" />
+			</interceptor-stack>
+			<interceptor-stack name="guest">
+				<interceptor-ref name="defaultStack" />
+			</interceptor-stack>
+		</interceptors>
+		<default-interceptor-ref name="guest" />
+
+		<global-results>
+			<result name="login" type="redirect-action">
+				<param name="actionName">login</param>
+				<param name="namespace">/</param>
+			</result>
+			<result name="success" type="freemarker">
+				/freemarker/global/success.ftl
+			</result>
+			<result name="error" type="freemarker">
+				/freemarker/global/error.ftl
+			</result>
+			<result name="unauthorized" type="redirect-action">
+				error
+			</result>
+			<result name="unauthenticated" type="redirect-action">
+				login
+			</result>
+			<result name="notfound" type="freemarker">
+				/freemarker/global/not-found.ftl
+			</result>
+			<result name="redirect" type="redirect">${url}</result>
+			<result name="error" type="freemarker">
+				/freemarker/global/error.ftl
+			</result>
+			<result name="none" type="httpheader">204</result>
+			<result name="invalid.token" type="freemarker">
+				/template/global/error.ftl
+			</result>
+			<result name="doc-deleted" type="redirect">
+				document!deleted.jspa
+			</result>
+			<result name="feature-disabled">
+				/template/global/feature-disabled.ftl
+			</result>
+		</global-results>
+
+
+		<action name="validate.account"
+			class="com.sourcen.microsite.action.IndexAction" method="varifyEmail">
+		</action>
+		
+
+		<action name="index"
+			class="com.sourcen.microsite.action.IndexAction">
+			<result name="success" type="redirect-action">login</result>
+		</action>
+
+		<action name="login"
+			class="com.sourcen.microsite.action.LoginAction">
+			<result name="input">/freemarker/login.ftl</result>
+			<result name="success" type="redirect-action">
+				<param name="actionName">index</param>
+				<param name="namespace">/user</param>
+			</result>
+		</action>
+
+		<action name="signup"
+			class="com.sourcen.microsite.action.SignUpAction" method="input">
+			<result name="input">/freemarker/signup.ftl</result>
+			<result name="unavailable">
+				/freemarker/registration-unavailable.ftl
+			</result>
+		</action>
+		<action name="forget.password"
+			class="com.sourcen.microsite.action.ForgetPasswordAction">
+			<result name="unavailable">
+				/freemarker/resetPassword-unavailable.ftl
+			</result>
+			<result name="input">/freemarker/forgetPassword.ftl</result>
+		</action>
+		<action name="reset.password"
+			class="com.sourcen.microsite.action.ResetPasswordAction">
+			<result name="input">/freemarker/resetPassword.ftl</result>
+		</action>		
+		
+		<action name="logout"
+			class="com.sourcen.microsite.action.LogoutAction">
+			<result name="success">/freemarker/logout.ftl</result>
+		</action>
+
+				
+		<action name="edit.header.footer"
+			class="com.sourcen.microsite.action.EditHeaderFooterAction">
+			<result name="success">
+				/freemarker/editheaderfooter.ftl
+			</result>
+
+		</action>
+		<action name="viewpage"
+			class="com.sourcen.microsite.action.ViewPageAction">
+			<result name="success">/freemarker/viewPage.ftl</result>
+		</action>
+		<action name="settings"
+			class="com.sourcen.microsite.action.SettingsAction">
+			<result name="success">/freemarker/settings.ftl</result>
+		</action>
+
+		<action name="change.password"
+			class="com.sourcen.microsite.action.PasswordChangeAction">
+			<result name="input">/freemarker/changePassword.ftl</result>
+		</action>
+
+
+
+	</package>
+	<package name="user" namespace="/user" extends="default">
+
+		<default-interceptor-ref name="user" />
+		<default-action-ref name="index"></default-action-ref>
+		<action name="index"
+			class="com.sourcen.microsite.action.IndexAction">
+
+			<result name="success">/freemarker/index.ftl</result>
+		</action>
+		<action name="site.create"
+			class="com.sourcen.microsite.action.CreateSiteAction">
+
+			<result name="input">/freemarker/SiteInfo.ftl</result>
+			<result name="success" type="redirect-action">
+				<param name="actionName">siteInfo-edit-page</param>
+				<param name="sid">${site.id}</param>
+			</result>
+		</action>
+		
+		<action name="site.edit"
+			class="com.sourcen.microsite.action.EditSiteAction">
+			<result name="input">/freemarker/edit-site-info.ftl</result>
+			<result name="success" type="redirect-action">
+				<param name="actionName">siteInfo-edit-page</param>
+				<param name="sid">${site.id}</param>
+			</result>
+		</action>
+				
+		<action name="siteInfo-publish"
+			class="com.sourcen.microsite.action.SiteInfoPublishAction">
+
+		</action>
+		<action name="siteInfo-edit-page"
+			class="com.sourcen.microsite.action.SiteEditPageAction">						
+			<result name="success" type="redirect">
+				<param name="actionName">siteInfo-publish</param>
+				<param name="sid">${sid}</param>
+			</result>			
+			<result name="edit">/freemarker/siteEditPage.ftl</result>
+
+		</action>
+
+
+		<action name="account"
+			class="com.sourcen.microsite.action.AccountAction">
+			<interceptor-ref name="user" />
+			<result name="view">/freemarker/myAccount.ftl</result>
+			<result name="input">/freemarker/editProfile.ftl</result>
+
+		</action>
+		<action name="site"
+			class="com.sourcen.microsite.action.SiteActionSupport">
+			<result name="input">/freemarker/createSite.ftl</result>
+			<result name="update">/freemarker/updateSite.ftl</result>
+			<result name="list">/freemarker/listSites.ftl</result>
+			<result name="download" type="stream">
+				<param name="contentType">application/zip</param>
+				<param name="inputName">inputStream</param>
+				<param name="contentDisposition">
+					filename="${site.name}.zip"
+				</param>
+				<param name="bufferSize">4096</param>
+			</result>
+
+		</action>
+		<action name="file"
+			class="com.sourcen.microsite.action.FileActionSupport">
+			<result name="input">/freemarker/file-upload.ftl</result>
+			<result name="update">/freemarker/updateSite.ftl</result>
+			<result name="list">/freemarker/list-files.ftl</result>
+			<result name="download" type="stream">
+				<param name="contentType">application/zip</param>
+				<param name="inputName">inputStream</param>
+				<param name="contentDisposition">
+					filename="${site.name}"
+				</param>
+				<param name="bufferSize">4096</param>
+			</result>
+
+		</action>
+
+	</package>
+	
+
+	<package name="admin" namespace="/admin" extends="user">
+
+
+		
+		<action name="theme"
+			class="com.sourcen.microsite.action.ThemeAction">
+			<result name="input">/freemarker/createTheme.ftl</result>
+			<result name="update">/freemarker/updateTheme.ftl</result>
+			<result name="list">/freemarker/listTheme.ftl</result>
+		</action>
+
+
+		<action name="block"
+			class="com.sourcen.microsite.action.BlockAction">
+			<result name="input">/freemarker/createBlock.ftl</result>
+			<result name="update">/freemarker/updateBlock.ftl</result>
+			<result name="list">/freemarker/listBlock.ftl</result>
+
+		</action>
+		<action name="page"
+			class="com.sourcen.microsite.action.PageAction" method="list">
+			<result name="input">/freemarker/createPage.ftl</result>
+			<result name="update">/freemarker/updatePage.ftl</result>
+			<result name="list">/freemarker/listPage.ftl</result>
+			<result name="addblock">/freemarker/addBlock.ftl</result>
+		</action>
+		<action name="page.block"
+			class="com.sourcen.microsite.action.PageAddBlockAction">
+			<result name="input">/freemarker/addBlock.ftl</result>
+			
+		</action>
+		
+
+
+	</package>
+
+<package name="admin-settings-action" namespace="/admin/settings"
+		extends="admin">
+
+		<default-action-ref name="users"></default-action-ref>
+
+		<action name="index"
+			class="com.sourcen.microsite.action.admin.AdminAction">
+			<result name="success">
+				/freemarker/admin/settings-registration.ftl
+			</result>
+		</action>
+
+
+		<action name="email.templates"
+			class="com.sourcen.microsite.action.admin.EmailTemplateAction">
+			<result name="success">
+				/freemarker/admin/message-templates.ftl
+			</result>
+			<result name="input">
+				/freemarker/admin/edit-message-templates.ftl
+			</result>
+		</action>
+		<action name="edit.email.templates"
+			class="com.sourcen.microsite.action.admin.EmailTemplateAction" method="edit">
+			<result name="success">
+				/freemarker/admin/message-templates.ftl
+			</result>
+			<result name="input">
+				/freemarker/admin/edit-message-templates.ftl
+			</result>
+		</action>
+		<action name="update.email.templates"
+			class="com.sourcen.microsite.action.admin.EmailTemplateAction" method="update">
+			<result name="success">
+				/freemarker/admin/message-templates.ftl
+			</result>
+			<result name="input">
+				/freemarker/admin/edit-message-templates.ftl
+			</result>
+		</action>
+		<action name="users"
+			class="com.sourcen.microsite.action.admin.UsersAction"
+			method="list">
+			<result name="list">
+				/freemarker/admin/list-Users.ftl
+			</result>
+			<result name="edit">
+				/freemarker/admin/edit-user.ftl
+			</result>
+		</action>
+		
+		<action name="new.user"
+			class="com.sourcen.microsite.action.admin.UsersAction">
+			<result name="input">
+				/freemarker/admin/create-user.ftl
+			</result>
+		</action>
+		
+		<action name="create.user"
+			class="com.sourcen.microsite.action.admin.UsersAction">
+			<result name="input">
+				/freemarker/admin/create-user.ftl
+			</result>
+		</action>
+		
+		<action name="groups"
+			class="com.sourcen.microsite.action.admin.ListGroupInfoAction">
+			<result name="success">
+				/freemarker/admin/list-group-info.ftl
+			</result>
+		</action>
+		<action name="create.group"
+			class="com.sourcen.microsite.action.admin.CreateGroupAction">
+			<result name="input">
+				/freemarker/admin/create-group.ftl
+			</result>
+		</action>
+		
+
+
+		<action name="group.user.info"
+			class="com.sourcen.microsite.action.admin.GroupUserAction">
+			<result name="success">
+				/freemarker/admin/group-user-info.ftl
+			</result>
+		</action>
+
+		<action name="add.group.user"
+			class="com.sourcen.microsite.action.admin.GroupUserAction"
+			method="addGroupUser">
+			<result name="input">
+				/freemarker/admin/group-user-info.ftl
+			</result>
+		</action>
+		<action name="remove.group.user"
+			class="com.sourcen.microsite.action.admin.GroupUserAction"
+			method="removeGroupUser">
+			<result name="input">
+				/freemarker/admin/group-user-info.ftl
+			</result>
+		</action>
+
+		<action name="locale.settings"
+			class="com.sourcen.microsite.action.admin.LocaleSettingsAction">
+			<result name="success">
+				/freemarker/admin/settings-locale.ftl
+			</result>
+		</action>
+		<action name="mail.settings"
+			class="com.sourcen.microsite.action.admin.EmailSettingsAction"
+			method="input">
+			<result name="input">
+				/freemarker/admin/settings-mail.ftl
+			</result>
+		</action>
+		<action name="save.mail.settings"
+			class="com.sourcen.microsite.action.admin.EmailSettingsAction"
+			method="execute">
+			<result name="success">
+				/freemarker/admin/settings-mail.ftl
+			</result>
+		</action>
+
+		<action name="test.mail.settings"
+			class="com.sourcen.microsite.action.admin.EmailSettingsAction"
+			method="testMailInput">
+			<result name="testinput">
+				/freemarker/admin/test-settings-mail.ftl
+			</result>
+		</action>
+		<action name="testmail.mail.settings"
+			class="com.sourcen.microsite.action.admin.EmailSettingsAction"
+			method="testMailSettings">
+
+		</action>
+	</package>
+
+</struts>

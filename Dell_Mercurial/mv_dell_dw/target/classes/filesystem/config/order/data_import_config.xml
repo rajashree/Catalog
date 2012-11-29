@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema>
+
+    <table destinationTable="com.dell.dw.persistence.domain.OrderItem" sourceTable="orderItem" mapKeys="true">
+
+        <properties>
+            <property name="mapKeys" value="true"/>
+        </properties>
+
+        <keys>
+            <key type="primary" destinationKey="id" sourceKey="orderItemId"/>
+        </keys>
+        <column source="orderItemId" destination="orderItemId" type="string"/>
+        <column source="sku" destination="sku"  type="string"/>
+        <column source="name" destination="name"  type="string"/>
+        <column source="category" destination="category"  type="string"/>
+        <column source="unitPrice" destination="unitPrice"  type="double"/>
+        <column source="unitDiscount" destination="unitDiscount"  type="double"/>
+        <column source="quantity" destination="quantity"  type="int"/>
+        <column source="orderItemCancelled" destination="orderItemCancelled"  type="boolean"/>
+        <column source="cancelQuantity" destination="cancelQuantity"  type="int"/>
+        <column source="cancelReason" destination="cancelReason" type="string"/>
+        <column source="commissionAmount" destination="commissionAmount"  type="double"/>
+
+        <column source="orderOrderId" destination="orderOrderId"  type="string"/>
+        <column source="orderSiteId" destination="orderSiteId"  type="string"/>
+        <column source="orderCity" destination="orderCity"  type="string"/>
+        <column source="orderState" destination="orderState"  type="string"/>
+        <column source="orderCountry" destination="orderCountry"  type="string"/>
+        <column source="orderTransactionId" destination="orderTransactionId"  type="string"/>
+        <column source="orderCreationDate" destination="orderCreationDate"  type="date"/>
+        <column source="orderTransactionDate" destination="orderTransactionDate"  type="date"/>
+        <column source="orderOrderCancelled" destination="orderOrderCancelled"  type="boolean"/>
+        <column source="orderStatus" destination="orderStatus"  type="string"/>
+        <column source="orderCancelReason" destination="orderCancelReason"  type="string"/>
+        <column source="orderOriginalSaleAmount" destination="orderOriginalSaleAmount"  type="double"/>
+        <column source="orderOriginalCommissionAmount" destination="orderOriginalCommissionAmount"  type="double"/>
+        <column source="orderFinalSaleAmount" destination="orderFinalSaleAmount"  type="double"/>
+        <column source="orderFinalCommissionAmount" destination="orderFinalCommissionAmount"  type="double"/>
+        <column source="orderTotalDiscountAmountToDate" destination="orderTotalDiscountAmountToDate"  type="double"/>
+        <column source="orderTotalCancellationAmountToDate" destination="orderTotalCancellationAmountToDate"  type="double"/>
+
+        <column source="leadId" destination="leadId"  type="string"/>
+        <column source="leadSiteId" destination="leadSiteId"  type="string"/>
+        <column source="leadEntityId" destination="leadEntityId"  type="string"/>
+        <column source="leadRedirectUrl" destination="leadRedirectUrl"  type="string"/>
+        <column source="leadMaxOrderCount" destination="leadMaxOrderCount"  type="int"/>
+        <column source="leadCreationDate" destination="leadCreationDate"  type="date"/>
+        <column source="leadExpirationDate" destination="leadExpirationDate"  type="date"/>
+    </table>
+</schema>

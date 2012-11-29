@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<!--
+  ~ Copyright(C) 2011, Sourcen Framework and the original authors.
+  ~ All Rights Reserved. Use is subject to license terms and conditions.
+  -->
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+    <name>Sourcen Core Services - Text Template Module</name>
+    <groupId>com.sourcen.core.services</groupId>
+    <artifactId>texttemplate</artifactId>
+    <description>This module provides the required managers to handle text based templating</description>
+    <version>1.0</version>
+    <packaging>jar</packaging>
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.sourcen.core</groupId>
+        <artifactId>sn_core_parent</artifactId>
+        <relativePath>../../sn_core/build/parent/pom.xml</relativePath>
+        <version>1.0</version>
+    </parent>
+
+
+    <dependencies>
+
+        <dependency>
+            <groupId>com.sourcen.core</groupId>
+            <artifactId>sn_core</artifactId>
+            <version>1.0</version>
+            <type>jar</type>
+        </dependency>
+
+
+        <dependency>
+            <groupId>com.sourcen.core.services</groupId>
+            <artifactId>config</artifactId>
+            <version>1.0</version>
+            <type>jar</type>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-webmvc</artifactId>
+            <version>${spring.version}</version>
+            <scope>compile</scope>
+            <type>jar</type>
+        </dependency>
+
+    </dependencies>
+
+</project>

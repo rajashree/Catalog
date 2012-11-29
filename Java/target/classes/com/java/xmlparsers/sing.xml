@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE Flowers SYSTEM "E:\IdeaWorkspace\Catalog\Java\src\main\resources\com\java\xmlparsers\flow.dtd">
+<Flowers xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="flow.xsd">
+    <Flower national="INDIAN">
+	<name>j</name>
+	<color>white</color>
+    </Flower>
+    <Flower national="France">
+	<name>rose</name>
+	<color>red</color>
+    </Flower>
+    <Flower national="USA">
+	<name>lilly</name>
+	<color>white</color>
+     </Flower>
+</Flowers>
+    

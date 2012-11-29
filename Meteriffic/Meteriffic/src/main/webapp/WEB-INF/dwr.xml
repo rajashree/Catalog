@@ -1,0 +1,15 @@
+<!DOCTYPE dwr PUBLIC "-//GetAhead Limited//DTD Direct Web Remoting 2.0//EN" "http://getahead.org/dwr//dwr20.dtd">
+
+<dwr>
+	<allow>
+		<create creator="spring" javascript="userDwrService" scope="application">
+			<param name="beanName" value="userDwrService" />
+		</create>
+		<create creator="spring" javascript="adminDwrService" scope="application">
+			<param name="beanName" value="adminDwrService"></param>
+		</create>
+		
+		<convert converter="bean" match="com.sourcen.meteriffic.model.Search"/>
+		<convert converter="bean" match="com.sourcen.meteriffic.model.Product"/>
+	</allow>
+</dwr>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE sqlMap PUBLIC "-//iBATIS.com//DTD SQL Map 2.0//EN" "http://www.ibatis.com/dtd/sql-map-2.dtd">
+
+<sqlMap>
+
+
+	<typeAlias alias="group" type="com.sourcen.microsite.model.Group" />
+
+	<cacheModel id="group-cache" type="MEMORY">
+		<flushInterval hours="24" />
+		<flushOnExecute statement="saveGroup" />
+		<flushOnExecute statement="updateGroup" />
+		<flushOnExecute statement="deleteGroup" />
+		<property name="reference-type" value="SOFT" />
+	</cacheModel>
+
+	<resultMap id="group" class="group">
+		<result property="id" column="gid" />
+		<result property="name" column="name" />
+		<result property="description" column="description" />
+		<result property="created" column="created" />
+		<result property="modified" column="modified" />
+	</resultMap>
+
+
+	<select id="getGroup" resultMap="group" parameterClass="String"
+		cacheModel="group-cache">
+		SELECT * FROM groups WHERE gid = #gid#
+	</select>
+	<select id="listGroup" resultMap="group" 
+		cacheModel="group-cache">
+		SELECT * FROM groups
+	</select>
+
+	<insert id="saveGroup" parameterClass="group">
+		INSERT INTO groups (NAME,DESCRIPTION,CREATED,MODIFIED) VALUES
+		(#name#, #description#,#created#,#modified#)
+	</insert>
+	<update id="updateGroup" parameterClass="group">
+		UPDATE groups set
+		NAME=#name#,DESCRIPTION=#description#,MODIFIED=#modified# where
+		GID=#id#
+	</update>
+	<delete id="deleteGroup" parameterClass="String">
+		DELETE from groups where gid=#gid#
+	</delete>
+
+
+	<select id="searchGroups" resultMap="group" parameterClass="String"
+		cacheModel="user-cache">
+		select * from groups where name like #name#
+	</select>
+
+	<select id="getGroupUsers" resultMap="user"
+		parameterClass="String">
+		select * from users where id in (select uid from usergroups
+		where gid = #gid#)
+	</select>
+	<select id="getUserGroups" resultMap="user"
+		parameterClass="String">
+		select * from groups where gid in (select gid from usergroups
+		where uid = #uid#)
+	</select>
+
+	<select id="getUserNotInGroups" resultMap="user"
+		parameterClass="String">
+		select * from users where id not in (select uid from usergroups
+		where gid = #gid#)
+	</select>
+
+
+
+	<insert id="addUserToGroup" parameterClass="HashMap">
+		INSERT INTO usergroups (UID,GID,CREATED) VALUES (#uid#,
+		#gid#,#created#)
+	</insert>
+	<delete id="deleteUserFromGroup" parameterClass="HashMap">
+		DELETE from usergroups where gid=#gid# AND UID=#uid#
+	</delete>
+
+</sqlMap>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

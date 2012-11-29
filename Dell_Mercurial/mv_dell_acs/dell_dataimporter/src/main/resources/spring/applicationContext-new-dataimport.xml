@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       default-init-method="init" default-destroy-method="destroy"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.1.xsd">
+
+
+    <bean id="dataImportService" class="com.dell.acs.dataimport.DataImportServiceImpl" factory-method="getInstance"/>
+    <bean id="prevalidatedProductDataImportHandler" class="com.dell.acs.dataimport.prevalidated.ProductDataImportHandler"/>
+    <bean id="prevalidatedProductImageDataImportHandler" class="com.dell.acs.dataimport.prevalidated.ProductImageDataImportHandler"/>
+    <bean id="prevalidatedProductReviewDataImportHandler" class="com.dell.acs.dataimport.prevalidated.ProductReviewDataImportHandler"/>
+    <bean id="prevalidatedProductSliderDataImportHandler" class="com.dell.acs.dataimport.prevalidated.ProductSliderDataImportHandler"/>
+    <bean id="ficstarPreprocessorHandler" class="com.dell.acs.dataimport.preprocessor.FicstarPreprocessorHandler"/>
+    <bean id="googlePreprocessorHandler" class="com.dell.acs.dataimport.preprocessor.GooglePreprocessorHandler"/>
+    <bean id="merchantUrbanDecayPreprocessorHandler" class="com.dell.acs.dataimport.preprocessor.UrbanDecayPreprocessorHandler"/>
+</beans>

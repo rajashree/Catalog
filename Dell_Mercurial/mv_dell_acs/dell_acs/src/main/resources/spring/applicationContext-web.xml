@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--suppress SpringModelInspection -->
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:util="http://www.springframework.org/schema/util"
+       default-init-method="init" default-destroy-method="destroy"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.1.xsd   http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-2.0.xsd">
+
+
+    <bean id="dellWebServiceModelAndViewResolver" class="com.sourcen.core.web.servlet.annotation.WebServiceModelAndViewResolver">
+        <property name="packageName" value="com.dell.acs.web.ws"/>
+    </bean>
+
+    <util:list id="customModelAndViewResolvers">
+        <ref bean="dellWebServiceModelAndViewResolver"/>
+    </util:list>
+
+    <context:component-scan base-package="com.dell.acs.web.controller"
+                            annotation-config="true"
+                            scope-resolver="org.springframework.context.annotation.AnnotationScopeMetadataResolver">
+        <context:include-filter type="annotation" expression="org.springframework.stereotype.Controller"/>
+    </context:component-scan>
+
+    <context:component-scan base-package="com.dell.acs.web.ws.v1.rest,com.dell.acs.web.ws.v2.rest"
+                            annotation-config="true"
+                            scope-resolver="org.springframework.context.annotation.AnnotationScopeMetadataResolver">
+        <context:include-filter type="annotation" expression="javax.jws.WebService"/>
+    </context:component-scan>
+
+
+
+     <!-- include some core controllers as helpers -->
+    <context:component-scan base-package="com.sourcen.core.web.controller.admin"
+                            annotation-config="true"
+                            scope-resolver="org.springframework.context.annotation.AnnotationScopeMetadataResolver">
+        <context:include-filter type="annotation" expression="org.springframework.stereotype.Controller"/>
+    </context:component-scan>
+
+    <bean id="outputTransformerFactory" class="com.sourcen.core.web.ws.views.transformer.OutputTransformerFactory"
+          lazy-init="false" scope="singleton">
+        <property name="transformPrefix">
+            <util:map key-type="java.lang.String" value-type="java.lang.String">
+                <entry key="/api/v1/rest/" value="com.dell.acs.web.ws.v1.views.transformer.retailers.Dell"/>
+                <entry key="/api/v2/rest/" value="com.sourcen.core.web.ws.views.transformer.Standard"/>
+            </util:map>
+        </property>
+    </bean>
+
+    <bean id="dellJsonOutputTransformer"
+          class="com.dell.acs.web.ws.v1.views.transformer.retailers.DellJsonOutputTransformer">
+        <property name="retailerSiteRepository" ref="retailerSiteRepositoryImpl"/>
+    </bean>
+
+    <!-- Pixel Tracking Related Beans -->
+    <bean id="linkTrackerPixel" class="com.dell.acs.pixeltracker.LinkTrackerPixel"/>
+    <bean id="marketVinePixel" class="com.dell.acs.pixeltracker.MarketVinePixel"/>
+    <bean id="linkTrackerPixelV2" class="com.dell.acs.pixeltracker.LinkTrackerPixelV2"/>
+    <bean id="marketVinePixelV2" class="com.dell.acs.pixeltracker.MarketVinePixelV2"/>
+
+
+    <bean id="pixelTrackerContext" class="com.dell.acs.pixeltracker.PixelTrackerContext">
+        <!--<property name="retailerSiteRepository" ref="retailerSiteRepositoryImpl"/>-->
+        <property name="linkTrackerStrategy" ref="linkTrackerPixel"/>
+        <property name="marketVineStrategy" ref="marketVinePixel"/>
+        <property name="linkTrackerStrategyV2" ref="linkTrackerPixelV2"/>
+        <property name="marketVineStrategyV2" ref="marketVinePixelV2"/>
+    </bean>
+
+</beans>

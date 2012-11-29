@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE sqlMap PUBLIC "-//iBATIS.com//DTD SQL Map 2.0//EN" "http://www.ibatis.com/dtd/sql-map-2.dtd">
+
+<sqlMap>
+
+
+	<typeAlias alias="template" type="com.sourcen.space.model.EmailTemplate" />
+
+	<resultMap id="template" class="template">
+		<result property="id" column="id" />
+		<result property="name" column="name" />
+		<result property="description" column="description" />
+		<result property="subject" column="subject" />
+		<result property="body" column="body" />
+		<result property="created" column="created" />
+		<result property="modified" column="modified" />
+	</resultMap>
+
+	<select id="getTemplateByName" resultMap="template"
+		parameterClass="String">
+		SELECT * FROM TEMPLATES WHERE NAME = #name#
+	</select>
+	
+	<insert id="saveTemplate"  	parameterClass="template">
+		 INSERT INTO TEMPLATES (NAME,DESCRIPTION,SUBJECT,BODY,CREATED,MODIFIED)    VALUES (#name#, #description#,#subject#,#body#,now(),now())
+	</insert>
+	<update id="updateTemplate"  	parameterClass="user">
+		
+	</update>
+
+</sqlMap>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

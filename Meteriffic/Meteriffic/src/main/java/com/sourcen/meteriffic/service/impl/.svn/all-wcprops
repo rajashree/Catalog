@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/meteriffic/!svn/ver/2/trunk/src/com/sourcen/meteriffic/service/impl
+END
+ApplicationManagerImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/meteriffic/!svn/ver/2/trunk/src/com/sourcen/meteriffic/service/impl/ApplicationManagerImpl.java
+END
+SearchManagerImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/meteriffic/!svn/ver/2/trunk/src/com/sourcen/meteriffic/service/impl/SearchManagerImpl.java
+END
+EmailManagerImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/meteriffic/!svn/ver/2/trunk/src/com/sourcen/meteriffic/service/impl/EmailManagerImpl.java
+END
+SerendioManagerImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/meteriffic/!svn/ver/2/trunk/src/com/sourcen/meteriffic/service/impl/SerendioManagerImpl.java
+END
+SmtpProxy.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/meteriffic/!svn/ver/2/trunk/src/com/sourcen/meteriffic/service/impl/SmtpProxy.java
+END
+RegistrationManagerImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/meteriffic/!svn/ver/2/trunk/src/com/sourcen/meteriffic/service/impl/RegistrationManagerImpl.java
+END
+UserManagerImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/meteriffic/!svn/ver/2/trunk/src/com/sourcen/meteriffic/service/impl/UserManagerImpl.java
+END
+ProductManagerImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/meteriffic/!svn/ver/2/trunk/src/com/sourcen/meteriffic/service/impl/ProductManagerImpl.java
+END

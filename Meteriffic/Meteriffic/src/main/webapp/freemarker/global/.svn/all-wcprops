@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/meteriffic/!svn/ver/2/trunk/WebContent/freemarker/global
+END
+form-message.ftl
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/meteriffic/!svn/ver/2/trunk/WebContent/freemarker/global/form-message.ftl
+END
+success.ftl
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/meteriffic/!svn/ver/2/trunk/WebContent/freemarker/global/success.ftl
+END
+error.ftl
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/meteriffic/!svn/ver/2/trunk/WebContent/freemarker/global/error.ftl
+END

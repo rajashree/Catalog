@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       default-init-method="init" default-destroy-method="destroy"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.1.xsd">
+
+    <bean id="tableSequenceService" class="com.sourcen.dataimport.service.support.hibernate.TableSequenceServiceImpl"
+          scope="singleton">
+        <property name="autowiredSessionFactory" ref="hibernateSessionFactory"/>
+    </bean>
+
+    <bean id="dataImportLookupService"
+          class="com.sourcen.dataimport.service.support.hibernate.DataImportLookupServiceImpl" scope="singleton">
+        <property name="sessionFactory" ref="hibernateSessionFactory"/>
+        <property name="dataImportLookupClass" value="com.dell.acs.persistence.domain.DataImportLookup"/>
+    </bean>
+
+    <bean id="dataImportConfig" class="com.sourcen.dataimport.definition.DataImportConfig" scope="prototype">
+        <property name="tableSequenceService" ref="tableSequenceService"/>
+        <property name="dataImportLookupService" ref="dataImportLookupService"/>
+    </bean>
+
+
+    <bean id="fkColumnTransformer" class="com.sourcen.dataimport.transformer.FkColumnTransformer" scope="prototype">
+        <property name="dataImportLookupService" ref="dataImportLookupService"/>
+    </bean>
+
+    <bean id="genericColumnTransformer" class="com.sourcen.dataimport.transformer.GenericColumnTransformer"
+          scope="prototype"/>
+
+    <bean id="genericDataImportService" class="com.sourcen.dataimport.service.support.GenericDataImportService"
+          scope="prototype">
+        <property name="batchSize" value="100"/>
+    </bean>
+
+    <bean id="genericDataExceptionHandler" class="com.sourcen.dataimport.service.errors.DataExceptionHandlerAdapter"
+          scope="prototype"/>
+
+    <!-- data exception handlers -->
+    <bean id="productDataExceptionHandler"
+          class="com.dell.acs.dataimport.ficstar.ProductDataExceptionHandler"
+          scope="prototype"/>
+    <bean id="imageDataExceptionHandler"
+          class="com.dell.acs.dataimport.ficstar.ProductImageDataExceptionHandler"
+          scope="prototype"/>
+    <bean id="reviewDataExceptionHandler"
+          class="com.dell.acs.dataimport.ficstar.ProductReviewsDataExceptionHandler"
+          scope="prototype"/>
+    <bean id="sliderDataExceptionHandler"
+          class="com.dell.acs.dataimport.ficstar.ProductSliderDataExceptionHandler"
+          scope="prototype"/>
+
+
+    <bean id="csvDataReader" class="com.sourcen.dataimport.service.support.csv.CSVDataReader" scope="prototype">
+        <property name="exceptionHandler" ref="genericDataExceptionHandler"/>
+    </bean>
+
+    <bean id="hibernateDataWriter" class="com.sourcen.dataimport.service.support.hibernate.HibernateDataWriter"
+          scope="prototype">
+        <property name="sessionFactory" ref="hibernateSessionFactory"/>
+        <property name="exceptionHandler" ref="genericDataExceptionHandler"/>
+        <property name="beanProcessors">
+            <list>
+                <ref bean="ficstarProductBeanProcessor"/>
+                <ref bean="ficstarProductImageBeanProcessor"/>
+                <ref bean="ficstarProductReviewBeanProcessor"/>
+                <ref bean="ficstarProductSliderProcessor"/>
+            </list>
+        </property>
+    </bean>
+
+    <bean id="ficstarProductBeanProcessor" class="com.dell.acs.dataimport.ficstar.ProductBeanProcessor"
+          scope="prototype">
+        <property name="userRepository" ref="userRepositoryImpl"/>
+        <property name="retailerSiteRepository" ref="retailerSiteRepositoryImpl"/>
+        <property name="taxonomyCategoryRepository" ref="taxonomyCategoryRepositoryImpl"/>
+        <property name="taxonomyRepository" ref="taxonomyRepositoryImpl"/>
+        <property name="productRepository" ref="productRepositoryImpl"/>
+    </bean>
+    <bean id="ficstarProductImageBeanProcessor" class="com.dell.acs.dataimport.ficstar.ProductImageBeanProcessor"
+          scope="prototype">
+        <property name="productRepository" ref="productRepositoryImpl"/>
+    </bean>
+    <bean id="ficstarProductReviewBeanProcessor" class="com.dell.acs.dataimport.ficstar.ProductReviewBeanProcessor"
+          scope="prototype">
+        <property name="productRepository" ref="productRepositoryImpl"/>
+    </bean>
+    <bean id="ficstarProductSliderProcessor" class="com.dell.acs.dataimport.ficstar.ProductSliderProcessor"
+          scope="prototype">
+        <property name="productRepository" ref="productRepositoryImpl"/>
+        <property name="retailerSiteRepository" ref="retailerSiteRepositoryImpl"/>
+    </bean>
+
+
+    <bean id="golfsmithProductBeanProcessor" class="com.dell.acs.dataimport.golfsmith.ProductBeanProcessor"
+          parent="ficstarProductBeanProcessor">
+    </bean>
+
+    <bean id="golfsmithHibernateDataWriter" parent="hibernateDataWriter">
+        <property name="beanProcessors">
+            <list>
+                <ref bean="golfsmithProductBeanProcessor"/>
+            </list>
+        </property>
+    </bean>
+
+
+    <!--Bean processor configuration for the target retailer-->
+    <bean id="targetProductBeanProcessor" class="com.dell.acs.dataimport.target.ProductBeanProcessor"
+          parent="ficstarProductBeanProcessor">
+    </bean>
+
+    <bean id="targetHibernateDataWriter" parent="hibernateDataWriter">
+        <property name="beanProcessors">
+            <list>
+                <ref bean="targetProductBeanProcessor"/>
+            </list>
+        </property>
+    </bean>
+
+
+    <!--Bean processor configuration for the dermstore retailer-->
+    <bean id="dermstoreProductBeanProcessor" class="com.dell.acs.dataimport.dermstore.ProductBeanProcessor"
+          parent="ficstarProductBeanProcessor">
+    </bean>
+
+    <bean id="dermstoreHibernateDataWriter" parent="hibernateDataWriter">
+        <property name="beanProcessors">
+            <list>
+                <ref bean="dermstoreProductBeanProcessor"/>
+            </list>
+        </property>
+    </bean>
+
+    <!--Bean processor configuration for the cj feed provider-->
+    <bean id="cjProductBeanProcessor" class="com.dell.acs.dataimport.cj.ProductBeanProcessor"
+          parent="ficstarProductBeanProcessor">
+    </bean>
+
+    <bean id="cjHibernateDataWriter" parent="hibernateDataWriter">
+        <property name="beanProcessors">
+            <list>
+                <ref bean="cjProductBeanProcessor"/>
+            </list>
+        </property>
+    </bean>
+
+
+    <!--Bean processor configuration for the Google retailer-->
+    <bean id="googleProductBeanProcessor" class="com.dell.acs.dataimport.google.ProductBeanProcessor"
+          parent="ficstarProductBeanProcessor">
+    </bean>
+
+    <bean id="googleHibernateDataWriter" parent="hibernateDataWriter">
+        <property name="beanProcessors">
+            <list>
+                <ref bean="googleProductBeanProcessor"/>
+            </list>
+        </property>
+    </bean>
+
+    <bean id="The_Sportsmans_GuideHibernateDataWriter" parent="googleHibernateDataWriter"/>
+    <bean id="CabelascomHibernateDataWriter" parent="googleHibernateDataWriter"/>
+
+
+    <!--Bean processor configuration for the Urban_Decay retailer-->
+    <bean id="Urban_DecayProductBeanProcessor" class="com.dell.acs.dataimport.urbandecay.ProductBeanProcessor"
+          parent="ficstarProductBeanProcessor">
+    </bean>
+
+    <bean id="Urban_DecayHibernateDataWriter" parent="hibernateDataWriter">
+        <property name="beanProcessors">
+            <list>
+                <ref bean="Urban_DecayProductBeanProcessor"/>
+            </list>
+        </property>
+    </bean>
+
+
+    <!--Bean processor configuration for the cafepress retailer-->
+    <bean id="cafepressProductBeanProcessor" class="com.dell.acs.dataimport.cafepress.ProductBeanProcessor"
+          parent="ficstarProductBeanProcessor">
+    </bean>
+
+    <bean id="cafepressHibernateDataWriter" parent="hibernateDataWriter">
+        <property name="beanProcessors">
+            <list>
+                <ref bean="cafepressProductBeanProcessor"/>
+            </list>
+        </property>
+    </bean>
+
+
+</beans>

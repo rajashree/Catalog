@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       default-init-method="init" default-destroy-method="destroy"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.1.xsd">
+
+    <!-- Download CSV job for different feed providers -->
+    <bean id="downloadFicstarDataFilesJobTrigger" class="org.springframework.scheduling.quartz.SimpleTriggerBean">
+        <property name="jobDetail" ref="downloadFicstarDataFilesJobDetail"/>
+        <property name="startDelay" value="10000"/>
+        <property name="repeatInterval" value="60000"/>
+    </bean>
+    <bean name="downloadFicstarDataFilesJobDetail" class="org.springframework.scheduling.quartz.JobDetailBean">
+        <property name="jobClass" value="com.dell.acs.jobs.DownloadDataFilesJob"/>
+        <property name="jobDataAsMap">
+            <map>
+                <entry key="providerName" value="ficstar"/>
+                <entry key="configurationService" value-ref="configurationService"/>
+                <entry key="dataFilesDownloadManager" value-ref="dataFilesDownloadManagerImpl"/>
+            </map>
+        </property>
+    </bean>
+    <bean id="downloadCJDataFilesJobTrigger" class="org.springframework.scheduling.quartz.SimpleTriggerBean">
+        <property name="jobDetail" ref="downloadCJDataFilesJobDetail"/>
+        <property name="startDelay" value="12000"/>
+        <property name="repeatInterval" value="60000"/>
+    </bean>
+    <bean name="downloadCJDataFilesJobDetail" class="org.springframework.scheduling.quartz.JobDetailBean">
+        <property name="jobClass" value="com.dell.acs.jobs.DownloadDataFilesJob"/>
+        <property name="jobDataAsMap">
+            <map>
+                <entry key="providerName" value="cj"/>
+                <entry key="configurationService" value-ref="configurationService"/>
+                <entry key="dataFilesDownloadManager" value-ref="dataFilesDownloadManagerImpl"/>
+            </map>
+        </property>
+    </bean>
+    <bean id="downloadGoogleDataFilesJobTrigger" class="org.springframework.scheduling.quartz.SimpleTriggerBean">
+        <property name="jobDetail" ref="downloadGoogleDataFilesJobDetail"/>
+        <property name="startDelay" value="14000"/>
+        <property name="repeatInterval" value="60000"/>
+    </bean>
+    <bean name="downloadGoogleDataFilesJobDetail" class="org.springframework.scheduling.quartz.JobDetailBean">
+        <property name="jobClass" value="com.dell.acs.jobs.DownloadDataFilesJob"/>
+        <property name="jobDataAsMap">
+            <map>
+                <entry key="providerName" value="google"/>
+                <entry key="configurationService" value-ref="configurationService"/>
+                <entry key="dataFilesDownloadManager" value-ref="dataFilesDownloadManagerImpl"/>
+            </map>
+        </property>
+    </bean>
+    <bean id="downloadMerchantDataFilesJobTrigger" class="org.springframework.scheduling.quartz.SimpleTriggerBean">
+        <property name="jobDetail" ref="downloadMerchantDataFilesJobDetail"/>
+        <property name="startDelay" value="16000"/>
+        <property name="repeatInterval" value="60000"/>
+    </bean>
+    <bean name="downloadMerchantDataFilesJobDetail" class="org.springframework.scheduling.quartz.JobDetailBean">
+        <property name="jobClass" value="com.dell.acs.jobs.DownloadDataFilesJob"/>
+        <property name="jobDataAsMap">
+            <map>
+                <entry key="providerName" value="merchant"/>
+                <entry key="configurationService" value-ref="configurationService"/>
+                <entry key="dataFilesDownloadManager" value-ref="dataFilesDownloadManagerImpl"/>
+            </map>
+        </property>
+    </bean>
+
+
+    <!-- job to download active curation source content and cache it -->
+    <bean id="curationSourceCacheImportJobTrigger" class="org.springframework.scheduling.quartz.SimpleTriggerBean">
+        <property name="jobDetail" ref="curationSourceCacheImportJobDetail"/>
+        <property name="startDelay" value="10000"/>
+        <property name="repeatInterval" value="60000"/>
+    </bean>
+    <bean name="curationSourceCacheImportJobDetail" class="org.springframework.scheduling.quartz.JobDetailBean">
+        <property name="jobClass" value="com.dell.acs.jobs.CurationSourceCacheImportJob"/>
+        <property name="jobDataAsMap">
+            <map>
+                <entry key="configurationService" value-ref="configurationService"/>
+                <entry key="curationSourceManager" value-ref="curationSourceManagerImpl"/>
+            </map>
+        </property>
+    </bean>
+
+</beans>

@@ -1,0 +1,152 @@
+<project name="branch" default="debug_build_clean">
+	<property environment="env"/>
+
+	<target name="build" depends="init, build_sn_lib, build_dell_core, build_dell_testing, build_dell_acs, build_dell_dataimporter" description="Build the entire world for dell_acs.">
+	</target>
+
+	<target name="debug" description="Debug build the entire world for dell_acs.">
+		<property name="debug" value="on"/>
+		<antcall target="build"/>
+	</target>
+
+	<target name="clean" depends="checkos, splash, clean_sn_lib, clean_dell_core, clean_dell_testing, clean_dell_acs, clean_dell_dataimporter" description="Clean up the entire world for dell_acs.">
+	</target>
+
+	<target name="build_clean" description="Clean and Build up the entire world for dell_acs.">
+		<antcall target="clean"/>
+		<antcall target="build"/>
+	</target>
+
+	<target name="debug_build_clean" description="Clean and Debug Build up the entire world for dell_acs.">
+		<antcall target="clean"/>
+		<antcall target="debug"/>
+	</target>
+
+	<target name="test" depends="build, test_sn_lib, test_dell_core, test_dell_acs, test_dell_dataimporter" description="Test the entire world for dell_acs.">
+	</target>
+
+	<target name="integration" depends="build, test, integration_sn_lib, integration_dell_core, integration_dell_acs, integration_dell_dataimporter" description="Test the entire world for dell_acs.">
+	</target>
+
+	<target name="init" depends="checkos, splash, build.versionFile">
+	</target>
+
+	<target name="splash" if="isWindows">
+		<splash imageurl="file:///${user.dir}/dontpanic_sm.jpg"/>
+	</target>
+
+	<target name="checkos">
+	        <condition property="isWindows">
+	                <os family="windows" />
+	        </condition>
+
+	        <condition property="isLinux">
+	                <os family="unix" />
+	        </condition>
+	</target>
+
+	<target name="build_sn_lib" description="Build sn_lib library.">
+		<ant dir="sn_lib" target="build"/>
+	</target>
+
+	<target name="clean_sn_lib" description="Clean sn_lib library.">
+		<ant dir="sn_lib" target="clean"/>
+	</target>
+
+	<target name="test_sn_lib" description="Test sn_lib library.">
+		<ant dir="sn_lib" target="test"/>
+	</target>
+
+	<target name="integration_sn_lib" description="Integration test sn_lib library.">
+		<ant dir="sn_lib" target="integration"/>
+	</target>
+
+	<target name="build_dell_core" depends="build_sn_lib" description="Build dell_core library.">
+		<ant dir="dell_core" target="build"/>
+	</target>
+
+	<target name="clean_dell_core"  depends="clean_sn_lib" description="Clean dell_core library.">
+		<ant dir="dell_core" target="clean"/>
+	</target>
+
+	<target name="test_dell_core" depends="test_sn_lib" description="Test dell_core library.">
+		<ant dir="dell_core" target="test"/>
+	</target>
+
+	<target name="integration_dell_core" depends="integration_sn_lib" description="Integration dell_core library.">
+		<ant dir="dell_core" target="integration"/>
+	</target>
+
+	<target name="build_dell_testing" depends="build_sn_lib" description="Build dell_testing library.">
+		<ant dir="dell_testing" target="build"/>
+	</target>
+
+	<target name="clean_dell_testing"  depends="clean_sn_lib" description="Clean dell_testing library.">
+		<ant dir="dell_testing" target="clean"/>
+	</target>
+
+	<target name="build_dell_acs" depends="build_sn_lib, build_dell_core" description="Build dell_acs web application.">
+		<ant dir="dell_acs" target="build"/>
+	</target>
+
+	<target name="clean_dell_acs"  depends="clean_sn_lib, clean_dell_core" description="Clean dell_acs web application.">
+		<ant dir="dell_acs" target="clean"/>
+	</target>
+
+	<target name="test_dell_acs" depends="test_sn_lib" description="Test dell_acs web application.">
+		<ant dir="dell_acs" target="test"/>
+	</target>
+
+	<target name="integration_dell_acs" depends="integration_sn_lib" description="Integration dell_acs web application.">
+		<ant dir="dell_acs" target="integration"/>
+	</target>
+
+	<target name="build_dell_dataimporter" depends="build_sn_lib, build_dell_core, build_dell_testing" description="Build dell_dataimporter application.">
+		<ant dir="dell_dataimporter" target="build"/>
+	</target>
+
+	<target name="clean_dell_dataimporter"  depends="clean_sn_lib, clean_dell_core, clean_dell_testing" description="Clean dell_dataimporter application.">
+		<ant dir="dell_dataimporter" target="clean"/>
+	</target>
+
+	<target name="test_dell_dataimporter" depends="test_sn_lib" description="Test dell_dataimporter application.">
+		<ant dir="dell_dataimporter" target="test"/>
+	</target>
+
+	<target name="integration_dell_dataimporter" depends="integration_sn_lib" description="Integration dell_dataimporter application.">
+		<ant dir="dell_dataimporter" target="integration"/>
+	</target>
+
+	<target name="build.versionFile">
+		<property name="project.buildName" value="dell_acs"/>
+		<loadproperties srcFile="buildNumber.properties"/>
+		<tstamp>
+			<format property="current.time"
+				pattern="yyyyMMddHHmmss" />
+		</tstamp>
+		<exec executable="hg" outputproperty="scm.version.tag.id">
+	        	<arg value="id"/>
+	        	<arg value="-i"/>
+	    	</exec>
+	  	<exec executable="hg" outputproperty="scm.version.tag.branch">
+	        	<arg value="id"/>
+	        	<arg value="-b"/>
+	    	</exec>
+	 	<propertyfile
+	   		file="version.properties" comment="Version Properties">
+	  		<entry  key="buildNumber" value="${build.number}_${scm.version.tag.id}"/>
+			<entry  key="version.major" value="1"/>
+			<entry  key="version.minor" value="1"/>
+	  		<entry  key="project.buildName" value="${project.buildName}"/>
+	  		<entry  key="timestamp" value="${current.time}"/>
+	  		<entry  key="project.build.sourceEncoding" value="UTF-8"/>
+	  		<entry  key="scmBranch" value="${scm.version.tag.branch}"/>
+		</propertyfile>
+		<property file="version.properties"/>
+	</target>
+
+	<target name="production" description="Increment the build number for production">
+		<buildnumber file="buildNumber.properties"/>
+	</target>
+</project>
+

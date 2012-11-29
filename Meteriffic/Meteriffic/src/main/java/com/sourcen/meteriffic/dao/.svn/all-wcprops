@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/meteriffic/!svn/ver/2/trunk/src/com/sourcen/meteriffic/dao
+END
+UserDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/meteriffic/!svn/ver/2/trunk/src/com/sourcen/meteriffic/dao/UserDAO.java
+END
+ProductDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/meteriffic/!svn/ver/2/trunk/src/com/sourcen/meteriffic/dao/ProductDAO.java
+END
+PropertyDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/meteriffic/!svn/ver/2/trunk/src/com/sourcen/meteriffic/dao/PropertyDAO.java
+END
+SearchDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/meteriffic/!svn/ver/2/trunk/src/com/sourcen/meteriffic/dao/SearchDAO.java
+END

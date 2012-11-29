@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema>
+
+    <table destinationTable="product" sourceTable="product" mapKeys="true">
+
+        <properties>
+            <!--<property name="tableType" value="spreadsheet"/>-->
+            <!--<property name="path" value="/excel/accounts/UsersAccounts-v14.xls"/>-->
+            <property name="sheetIndex" value="0"/>
+            <property name="rowstoskip" value="1"/>
+            <property name="maxRows" value="2000"/>
+        </properties>
+
+        <keys>
+            <key type="primary" destinationKey="ID" sourceKey="ID" destinationKeySource="destination"
+                 sourceKeySource="destination"/>
+        </keys>
+
+        <column destination="ID" type="long" defaultValue="null" source="" index="1"/>
+
+        <column destination="SiteName" type="string" defaultValue="null" source="	" index="2	"/>
+        <column destination="ProductID" type="long" defaultValue="null" source="	" index="3	"/>
+        <column destination="Category1" type="" defaultValue="null" source="" index="4	"/>
+        <column destination="Category2" type="" defaultValue="null" source="" index="5"/>
+        <column destination="Category3" type="" defaultValue="null" source="	" index="6	"/>
+        <column destination="Category4" type="" defaultValue="null" source="	" index="7	"/>
+        <column destination="Category5" type="" defaultValue="null" source="	" index="8	"/>
+        <column destination="Category6" type="" defaultValue="null" source="	" index="9	"/>
+        <column destination="URL" type="stirng" defaultValue="null" source="	" index="10"/>
+        <column destination="SKU" type="" defaultValue="null" source="	" index="11"/>
+        <column destination="WebPartNumber" type="" defaultValue="null" source="	" index="12"/>
+        <column destination="Title" type="string" defaultValue="null" source="	" index="13"/>
+        <column destination="ClearanceTag" type="" defaultValue="null" source="	" index="14"/>
+        <column destination="SaleTag" type="" defaultValue="null" source="	" index="15"/>
+        <column destination="PriceCutTag" type="" defaultValue="null" source="	" index="16"/>
+        <column destination="TempPriceCutTag" type="" defaultValue="null" source="	" index="17"/>
+        <column destination="New Product" type="" defaultValue="null" source="	" index="18"/>
+        <column destination="Best Seller" type="" defaultValue="null" source="	" index="19"/>
+        <column destination="Description" type="string" defaultValue="null" source="	" index="20"/>
+        <column destination="Stars" type="" defaultValue="null" source="	" index="21"/>
+        <column destination="Reviews" type="" defaultValue="null" source="	" index="22"/>
+        <column destination="ReviewsLin" type="" defaultValue="null" source="	" index="23"/>
+        <column destination="ListPrice" type="" defaultValue="null" source="	" index="24"/>
+        <column destination="HasListPriceRange" type="" defaultValue="null" source="	" index="25"/>
+        <column destination="Price" type="" defaultValue="null" source="	" index="26"/>
+        <column destination="HasPriceRange" type="" defaultValue="null" source="	" index="27"/>
+        <column destination="HasVariations" type="" defaultValue="null" source="	" index="28"/>
+        <column destination="Estimated Ship Date" type="" defaultValue="null" source="	" index="29"/>
+        <column destination="FacebookLikes" type="" defaultValue="null" source="	" index="30"/>
+        <column destination="PlusOneGoogle" type="" defaultValue="null" source="	" index="31"/>
+        <column destination="Tweets" type="" defaultValue="null" source="	" index="32"/>
+        <column destination="Promotional" type="" defaultValue="null" source="	" index="33"/>
+        <column destination="ShippingPromotion" type="" defaultValue="null" source="	" index="3	"/>
+        <column destination="BuyLink" type="" defaultValue="null" source="	" index="35"/>
+        <column destination="FlashLink" type="string" defaultValue="null" source="	" index="36"/>
+        <column destination="Specifications" type="" defaultValue="null" source="	" index="37"/>
+        <column destination="UpdateDateTime" type="datetime" defaultValue="null" source="	" index="38"/>
+
+
+        <!--<column destination="ID" type="long" source="ID" primaryKey="true" index="0"/>
+
+        <column destination="Account_Num" type="string" defaultValue="null" source="Account_Num" index="0"/>
+        <column destination="Account_Name" type="string" defaultValue="null" source="Account_Name" index="1"/>
+        <column destination="Description" type="string" defaultValue="null" source="Description" index="3"/>
+        <column destination="Acct_Reg_Date" type="datetime" defaultValue="TIMESTAMP" source="Acct_Reg_Date" index="24"/>
+        <column destination="Account_URL" type="string" defaultValue="null" source="Account_URL" index="5"/>
+        <column destination="Creation_Date" type="datetime" defaultValue="TIMESTAMP"/>
+        <column destination="Created_By" type="long" defaultValue="0"/>
+        <column destination="Last_Update_Date" type="timestamp" defaultValue="TIMESTAMP"/>
+        <column destination="Last_Updated_By" type="long" defaultValue="0"/>
+        <column destination="Organization_ID" type="int" defaultValue="10"/>
+        <column destination="AvgMW_NetReqLd" type="double" defaultValue="null" source="AvgMW_NetReqLd" index="6"/>-->
+
+    </table>
+
+
+</schema>

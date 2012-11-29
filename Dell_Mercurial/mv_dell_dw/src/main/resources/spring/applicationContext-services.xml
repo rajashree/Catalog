@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.1.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.1.xsd">
+
+    <context:component-scan base-package="com.dell.dw.managers">
+        <context:include-filter type="annotation" expression="org.springframework.stereotype.Service"/>
+    </context:component-scan>
+
+    <bean id="gaDataSchedulerManager" class="com.dell.dw.managers.GADataSchedulerManagerImpl"/>
+    <bean id="gaDataImportManager" class="com.dell.dw.managers.GADataImportManagerImpl"/>
+    <bean id="d3DataSchedulerManager" class="com.dell.dw.managers.D3DataSchedulerManagerImpl"/>
+    <bean id="d3DataImportManager" class="com.dell.dw.managers.D3DataImportManagerImpl"/>
+    <bean id="sfOrderDataSchedulerManager" class="com.dell.dw.managers.SFOrderDataSchedulerManagerImpl"/>
+    <bean id="sfOrderDataImportManager" class="com.dell.dw.managers.SFOrderDataImportManagerImpl"/>
+    <bean id="orderDataSchedulerManager" class="com.dell.dw.managers.OrderDataSchedulerManagerImpl"/>
+    <bean id="orderDataImportManager" class="com.dell.dw.managers.OrderDataImportManagerImpl"/>
+
+</beans>

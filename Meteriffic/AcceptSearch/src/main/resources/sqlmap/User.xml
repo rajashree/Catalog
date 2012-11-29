@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE sqlMap PUBLIC "-//iBATIS.com//DTD SQL Map 2.0//EN" "http://www.ibatis.com/dtd/sql-map-2.dtd">
+
+<sqlMap>
+
+
+	<cacheModel id="user-cache" type="MEMORY">
+		<flushInterval hours="24" />
+		<flushOnExecute statement="saveUser" />
+		<flushOnExecute statement="updateUser" />
+		<flushOnExecute statement="deleteUser" />
+		<property name="reference-type" value="WEAK" />
+	</cacheModel>
+
+	<typeAlias alias="user" type="com.sourcen.space.model.User" />
+
+	<resultMap id="user" class="user">
+		<result property="id" column="id" />
+		<result property="username" column="username" />
+		<result property="firstName" column="firstname" />
+		<result property="lastName" column="lastname" />
+		<result property="username" column="username" />
+		<result property="password" column="password" />
+		<result property="email" column="email" />
+		<result property="created" column="created" />
+		<result property="modified" column="modified" />
+		<result property="enabled" column="enabled" />
+	</resultMap>
+
+	<typeAlias alias="role" type="com.sourcen.space.model.Role" />
+
+	<resultMap id="role" class="role">
+		<result property="role" column="role" />
+	</resultMap>
+
+
+	<select id="getRoles" resultMap="role" parameterClass="String"
+		cacheModel="">
+		select * from user_role where username = #username#
+	</select>
+	<select id="getUserByName" resultMap="user" parameterClass="String"
+		cacheModel="user-cache">
+		select * from users where username = #username#
+	</select>
+	<delete id="deleteUser" parameterClass="String">
+		delete from users where username = #username#
+	</delete>
+	<insert id="saveUser" parameterClass="user">
+		insert into users
+		(username,password,firstname,lastname,email,created,modified,enabled)
+		values (#username#,
+		#password#,#firstName#,#lastName#,#email#,#created#,#modified#,#enabled#)
+	</insert>
+	<update id="updateUser" parameterClass="user">
+		update users set password = #password#,firstname =
+		#firstName#,lastname = #lastName#,email = #email#,modified =
+		#modified# WHERE username = #username#
+	</update>
+	<select id="listUser_limit" resultMap="user"
+		parameterClass="HashMap" cacheModel="user-cache">
+		select * from users ORDER by created DESC LIMIT #start#,#count#;
+	</select>
+	<select id="listAllUser" resultMap="user"
+		parameterClass="HashMap" cacheModel="user-cache">
+		select * from users 
+	</select>
+
+</sqlMap>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

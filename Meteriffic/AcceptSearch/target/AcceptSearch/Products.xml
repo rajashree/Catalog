@@ -1,0 +1,381 @@
+<tag  label="Smart Phones" id="0"  open="1"  call="1" select="1">
+	<tag id="1" label="Apple">
+		<tag id="2" label="iPhone">
+			<tag id="3" label="iPhone 8GB" />
+			<tag id="4" label="iPhone 16GB" />
+		</tag>
+		<tag id="5" label="iPhone 3G">
+			<tag id="6" label="iPhone 3G 16GB" />
+		</tag>
+	</tag>
+	<tag id="7" label="RIM">
+		<tag id="8" label="Blackberry Curve">
+			<tag id="9" label="Blackberry Curve 8300" />
+			<tag id="10" label="Blackberry Curve 8310" />
+			<tag id="11" label="Blackberry Curve 8310 Red" />
+			<tag id="12" label="Blackberry Curve 8320" />
+		</tag>
+		<tag id="13" label="Blackberry 8800 Series">
+			<tag id="14" label="Blackberry 8800" />
+			<tag id="15" label="Blackberry 8820" />
+			<tag id="16" label="Blackberry 8830" />
+		</tag>
+	</tag>
+	<tag id="17" label="Palm">
+		<tag id="18" label="Palm Centro Series">
+			<tag id="19" label="Palm Centro" />
+		</tag>
+		<tag id="20" label="Palm Treo">
+			<tag id="21" label="Palm Treo 755p" />
+			<tag id="22" label="Palm Treo 750" />
+			<tag id="23" label="Palm Treo 700w/wx" />
+			<tag id="24" label="Palm Treo 700p" />
+			<tag id="25" label="Palm Treo 680" />
+		</tag>
+	</tag>
+	<tag id="26" label="HTC">
+		<tag id="27" label="HTC Touch Phone">
+			<tag id="28" label="HTC Touch" />
+			<tag id="29" label="HTC Touch Dual" />
+			<tag id="30" label="HTC Touch Cruise" />
+		</tag>
+		<tag id="31" label="HTC PDA Phone">
+			<tag id="32" label="HTC TyTN II" />
+			<tag id="33" label="HTC P6500" />
+			<tag id="34" label="HTC P6300" />
+			<tag id="35" label="HTC P4350" />
+			<tag id="36" label="HTC P3600" />
+			<tag id="37" label="HTC P3470" />
+			<tag id="38" label="HTC P3400" />
+			<tag id="39" label="HTC P3300" />
+		</tag>
+		<tag id="40" label="HTC Smartphone">
+			<tag id="41" label="HTC S730" />
+			<tag id="42" label="HTC S710" />
+			<tag id="43" label="HTC S620" />
+			<tag id="44" label="HTC S310" />
+		</tag>
+	</tag>
+	<tag id="45" label="Samsung">
+		<tag id="46" label="Samsung Mobile Phones">
+			<tag id="47" label="Samsung BlackJack" />
+			<tag id="48" label="Samsung BlackJack II" />
+			<tag id="49" label="Samsung ACE" />
+			<tag id="50" label="Samsung UpStage" />
+			<tag id="51" label="Samsung Katalyst" />
+			<tag id="52" label="Samsung Beat" />
+			<tag id="53" label="Samsung Blast" />
+			<tag id="54" label="Samsung Instinct" />
+			<tag id="55" label="Samsung Trace" />
+			<tag id="56" label="Samsung FlipShot" />
+			<tag id="57" label="Samsung Juke" />
+			<tag id="58" label="Samsung Gleam" />
+		</tag>
+	</tag>
+	<tag id="59" label="Motorola">
+		<tag id="60" label="Motorola Razr">
+			<tag id="61" label="Razr2" />
+			<tag id="62" label="Razr V3" />
+		</tag>
+		<tag id="63" label="Motorola Q Series">
+			<tag id="64" label="MotoQ" />
+			<tag id="65" label="Motorola Q" />
+			<tag id="66" label="Motorola Q9C" />
+		</tag>
+	</tag>
+	<tag id="67" label="Nokia">
+		<tag id="68" label="Nokia N95 Series">
+			<tag id="69" label="Nokia N95" />
+		</tag>
+		<tag id="70" label="Nokia N96">
+			<tag id="71" label="Nokia N96 16GB" />
+		</tag>
+		<tag id="72" label="Nokia N93i">
+			<tag id="73" label="Nokia N931i" />
+		</tag>
+		<tag id="74" label="Nokia N810">
+			<tag id="75" label="Nokia N810 WiMAX" />
+		</tag>
+		<tag id="76" label="Nokia N82 Series">
+			<tag id="77" label="Nokia N82" />
+		</tag>
+		<tag id="78" label="Nokia N81">
+			<tag id="79" label="Nokia N81 8GB" />
+		</tag>
+		<tag id="80" label="Nokia N80">
+			<tag id="81" label="Nokia N80 Internet Edition" />
+		</tag>
+		<tag id="82" label="Nokia E61i Series">
+			<tag id="83" label="Nokia E61i" />
+		</tag>
+		<tag id="84" label="Nokia xPressMusic">
+			<tag id="85" label="Nokia 5300 XpressMusic" />
+			<tag id="86" label="Nokia 5310 XpressMusic" />
+			<tag id="87" label="Nokia 5610 XpressMusic" />
+		</tag>
+	</tag>
+	<tag id="88" label="Pantech">
+		<tag id="89" label="Pantech Mobile Phones">
+			<tag id="90" label="Pantech Duo" />
+			<tag id="91" label="Pantech C120" />
+		</tag>
+	</tag>
+	<tag id="92" label="I-mate">
+		<tag id="93" label="i-mate Ultimate">
+			<tag id="94" label="i-mate Ultimate 6150" />
+			<tag id="95" label="i-mate Ultimate 8150" />
+			<tag id="96" label="i-mate Ultimate 8502" />
+			<tag id="97" label="i-mate Ultimate9502" />
+		</tag>
+		<tag id="98" label="i-mate Jama">
+			<tag id="99" label="i-mate Jama 101" />
+			<tag id="100" label="i-mate Jama 201" />
+			<tag id="101" label="i-mate Jama 202" />
+		</tag>
+	</tag>
+	<tag id="102" label="Helio">
+		<tag id="103" label="Helio Mobile Phones">
+			<tag id="104" label="Helio Ocean" />
+			<tag id="105" label="Helio Mysto" />
+			<tag id="106" label="Helio Fin" />
+			<tag id="107" label="Helio Heat" />
+		</tag>
+	</tag>
+	<tag id="108" label="LG">
+		<tag id="109" label="LG CDMA">
+			<tag id="110" label="AX830" />
+			<tag id="111" label="CU515" />
+			<tag id="112" label="LX570" />
+			<tag id="113" label="VX8800" />
+			<tag id="114" label="VX10000" />
+			<tag id="115" label="VX8500R" />
+			<tag id="116" label="VX8600" />
+		</tag>
+		<tag id="117" label="LG GSM">
+			<tag id="118" label="KF510" />
+			<tag id="119" label="KF700" />
+			<tag id="120" label="KF600" />
+			<tag id="121" label="LG-KS20" />
+			<tag id="122" label="LG-KS10" />
+			<tag id="123" label="KU990" />
+		</tag>
+	</tag>
+	<tag id="124" label="Sony Ericsson">
+		<tag id="125" label="Sony Ericsson C702" />
+		<tag id="126" label="Sony Ericsson C902" />
+		<tag id="127" label="Sony Ericsson D750i" />
+		<tag id="128" label="Sony Ericsson F500i" />
+		<tag id="129" label="Sony Ericsson J100i" />
+		<tag id="130" label="Sony Ericsson J100c" />
+		<tag id="131" label="Sony Ericsson J100a" />
+		<tag id="132" label="Sony Ericsson J110i" />
+		<tag id="133" label="Sony Ericsson J110c" />
+		<tag id="134" label="Sony Ericsson J110a" />
+		<tag id="135" label="Sony Ericsson J120i" />
+		<tag id="136" label="Sony Ericsson J120c" />
+		<tag id="137" label="Sony Ericsson J200i" />
+		<tag id="138" label="Sony Ericsson J200c" />
+		<tag id="139" label="Sony Ericsson J210i" />
+		<tag id="140" label="Sony Ericsson J210c" />
+		<tag id="141" label="Sony Ericsson J220i" />
+		<tag id="142" label="Sony Ericsson J220c" />
+		<tag id="143" label="Sony Ericsson J220a" />
+		<tag id="144" label="Sony Ericsson J230i" />
+		<tag id="145" label="Sony Ericsson J230c" />
+		<tag id="146" label="Sony Ericsson J230a" />
+		<tag id="147" label="Sony Ericsson J300i" />
+		<tag id="148" label="Sony Ericsson J300c" />
+		<tag id="149" label="Sony Ericsson J300a" />
+		<tag id="150" label="Sony Ericsson K200i" />
+		<tag id="151" label="Sony Ericsson K200c" />
+		<tag id="152" label="Sony Ericsson K200a" />
+		<tag id="153" label="Sony Ericsson K220i" />
+		<tag id="154" label="Sony Ericsson K220c" />
+		<tag id="155" label="Sony Ericsson K300i" />
+		<tag id="156" label="Sony Ericsson K300c" />
+		<tag id="157" label="Sony Ericsson K300a" />
+		<tag id="158" label="Sony Ericsson K310i" />
+		<tag id="159" label="Sony Ericsson K310c" />
+		<tag id="160" label="Sony Ericsson K310a" />
+		<tag id="161" label="Sony Ericsson K320i" />
+		<tag id="162" label="Sony Ericsson K500i" />
+		<tag id="163" label="Sony Ericsson K500c" />
+		<tag id="164" label="Sony Ericsson K506c" />
+		<tag id="165" label="Sony Ericsson K508i" />
+		<tag id="166" label="Sony Ericsson K508c" />
+		<tag id="167" label="Sony Ericsson K510i" />
+		<tag id="168" label="Sony Ericsson K510c" />
+		<tag id="169" label="Sony Ericsson K510a" />
+		<tag id="170" label="Sony Ericsson K530i" />
+		<tag id="171" label="Sony Ericsson K550i" />
+		<tag id="172" label="Sony Ericsson K550c" />
+		<tag id="173" label="Sony Ericsson K550im" />
+		<tag id="174" label="Sony Ericsson K600" />
+		<tag id="175" label="Sony Ericsson K608" />
+		<tag id="176" label="Sony Ericsson K610" />
+		<tag id="177" label="Sony Ericsson K610c" />
+		<tag id="178" label="Sony Ericsson K610im" />
+		<tag id="179" label="Sony Ericsson K618i" />
+		<tag id="180" label="Sony Ericsson K630" />
+		<tag id="181" label="Sony Ericsson K660" />
+		<tag id="182" label="Sony Ericsson K700i" />
+		<tag id="183" label="Sony Ericsson K700c" />
+		<tag id="184" label="Sony Ericsson K750i" />
+		<tag id="185" label="Sony Ericsson K750c" />
+		<tag id="186" label="Sony Ericsson K758c" />
+		<tag id="187" label="Sony Ericsson K770i" />
+		<tag id="188" label="Sony Ericsson K790i" />
+		<tag id="189" label="Sony Ericsson K790c" />
+		<tag id="190" label="Sony Ericsson K790a" />
+		<tag id="191" label="Sony Ericsson K800i" />
+		<tag id="192" label="Sony Ericsson K800c" />
+		<tag id="193" label="Sony Ericsson K810i" />
+		<tag id="194" label="Sony Ericsson K818c" />
+		<tag id="195" label="Sony Ericsson K850i" />
+		<tag id="196" label="Sony Ericsson P910i" />
+		<tag id="197" label="Sony Ericsson P910c" />
+		<tag id="198" label="Sony Ericsson T61d" />
+		<tag id="199" label="Sony Ericsson T61ds" />
+		<tag id="200" label="Sony Ericsson T61LX" />
+		<tag id="201" label="Sony Ericsson T62u" />
+		<tag id="202" label="Sony Ericsson T66" />
+		<tag id="203" label="Sony Ericsson T68" />
+		<tag id="204" label="Sony Ericsson T68i" />
+		<tag id="205" label="Sony Ericsson T68ie" />
+		<tag id="206" label="Sony Ericsson T100" />
+		<tag id="207" label="Sony Ericsson T105" />
+		<tag id="208" label="Sony Ericsson T200" />
+		<tag id="209" label="Sony Ericsson T202" />
+		<tag id="210" label="Sony Ericsson T206" />
+		<tag id="211" label="Sony Ericsson T226" />
+		<tag id="212" label="Sony Ericsson T226s" />
+		<tag id="213" label="Sony Ericsson T230" />
+		<tag id="214" label="Sony Ericsson T226m" />
+		<tag id="215" label="Sony Ericsson T237" />
+		<tag id="216" label="Sony Ericsson T238" />
+		<tag id="217" label="Sony Ericsson T250i" />
+		<tag id="218" label="Sony Ericsson T250c" />
+		<tag id="219" label="Sony Ericsson T290i" />
+		<tag id="220" label="Sony Ericsson T290c" />
+		<tag id="221" label="Sony Ericsson T290a" />
+		<tag id="222" label="Sony Ericsson T300" />
+		<tag id="223" label="Sony Ericsson T310" />
+		<tag id="224" label="Sony Ericsson T312" />
+		<tag id="225" label="Sony Ericsson T316" />
+		<tag id="226" label="Sony Ericsson T600" />
+		<tag id="227" label="Sony Ericsson T606" />
+		<tag id="228" label="Sony Ericsson T608" />
+		<tag id="229" label="Sony Ericsson T610" />
+		<tag id="230" label="Sony Ericsson T616" />
+		<tag id="231" label="Sony Ericsson T618" />
+		<tag id="232" label="Sony Ericsson T610 NZ" />
+		<tag id="233" label="Sony Ericsson T628" />
+		<tag id="234" label="Sony Ericsson T630" />
+		<tag id="235" label="Sony Ericsson T637" />
+		<tag id="236" label="Sony Ericsson T650i" />
+		<tag id="237" label="Sony Ericsson T650c" />
+		<tag id="238" label="Sony Ericsson V600i" />
+		<tag id="239" label="Sony Ericsson V640i" />
+		<tag id="240" label="Sony Ericsson W200i" />
+		<tag id="241" label="Sony Ericsson W200c" />
+		<tag id="242" label="Sony Ericsson W200a" />
+		<tag id="243" label="Sony Ericsson W610i" />
+		<tag id="244" label="Sony Ericsson W610c" />
+		<tag id="245" label="Sony Ericsson W660i" />
+		<tag id="246" label="Sony Ericsson W580i" />
+		<tag id="247" label="Sony Ericsson W700i" />
+		<tag id="248" label="Sony Ericsson W700c" />
+		<tag id="249" label="Sony Ericsson W800i" />
+		<tag id="250" label="Sony Ericsson W800c" />
+		<tag id="251" label="Sony Ericsson W810i" />
+		<tag id="252" label="Sony Ericsson W810c" />
+		<tag id="253" label="Sony Ericsson W880i" />
+		<tag id="254" label="Sony Ericsson W888c" />
+		<tag id="255" label="Sony Ericsson W890i" />
+		<tag id="256" label="Sony Ericsson T39m" />
+		<tag id="257" label="Sony Ericsson T39mc" />
+		<tag id="258" label="Sony Ericsson V800" />
+		<tag id="259" label="Sony Ericsson Vodafone 802S" />
+		<tag id="260" label="Sony Ericsson W300i" />
+		<tag id="261" label="Sony Ericsson W300c" />
+		<tag id="262" label="Sony Ericsson W710i" />
+		<tag id="263" label="Sony Ericsson W710c" />
+		<tag id="264" label="Sony Ericsson Z200" />
+		<tag id="265" label="Sony Ericsson Z208" />
+		<tag id="266" label="Sony Ericsson Z300i" />
+		<tag id="267" label="Sony Ericsson Z300c" />
+		<tag id="268" label="Sony Ericsson Z300a" />
+		<tag id="269" label="Sony Ericsson Z310i" />
+		<tag id="270" label="Sony Ericsson Z310a" />
+		<tag id="271" label="Sony Ericsson Z500a" />
+		<tag id="272" label="Sony Ericsson Z520i" />
+		<tag id="273" label="Sony Ericsson Z520c" />
+		<tag id="274" label="Sony Ericsson Z520a" />
+		<tag id="275" label="Sony Ericsson Z525a" />
+		<tag id="276" label="Sony Ericsson Z530i" />
+		<tag id="277" label="Sony Ericsson Z530c" />
+		<tag id="278" label="Sony Ericsson Z550i" />
+		<tag id="279" label="Sony Ericsson Z550c" />
+		<tag id="280" label="Sony Ericsson Z550a" />
+		<tag id="281" label="Sony Ericsson Z558i" />
+		<tag id="282" label="Sony Ericsson Z558c" />
+		<tag id="283" label="Sony Ericsson Z600" />
+		<tag id="284" label="Sony Ericsson Z608" />
+		<tag id="285" label="Sony Ericsson Z610" />
+		<tag id="286" label="Sony Ericsson Z710i" />
+		<tag id="287" label="Sony Ericsson Z710c" />
+		<tag id="288" label="Sony Ericsson Z75" />
+		<tag id="289" label="Sony Ericsson Z800" />
+		<tag id="290" label="Sony Ericsson Z101" />
+		<tag id="291" label="Sony Ericsson Z32" />
+		<tag id="292" label="Sony Ericsson S700" />
+		<tag id="293" label="Sony Ericsson S710a" />
+		<tag id="294" label="Sony Ericsson W550c" />
+		<tag id="295" label="Sony Ericsson W550i" />
+		<tag id="296" label="Sony Ericsson W600c" />
+		<tag id="297" label="Sony Ericsson W600i" />
+		<tag id="298" label="Sony Ericsson W900" />
+		<tag id="299" label="Sony Ericsson C905i" />
+		<tag id="300" label="Sony Ericsson K900i" />
+		<tag id="301" label="Sony Ericsson K900c" />
+		<tag id="302" label="Sony Ericsson K890i" />
+		<tag id="303" label="Sony Ericsson K890c" />
+		<tag id="304" label="Sony Ericsson S500i" />
+		<tag id="305" label="Sony Ericsson S500c" />
+		<tag id="306" label="Sony Ericsson W580i" />
+		<tag id="307" label="Sony Ericsson W580c" />
+		<tag id="308" label="Sony Ericsson W830i" />
+		<tag id="309" label="Sony Ericsson W830c" />
+		<tag id="310" label="Sony Ericsson W850" />
+		<tag id="311" label="Sony Ericsson W910" />
+		<tag id="312" label="Sony Ericsson M600i" />
+		<tag id="313" label="Sony Ericsson M608" />
+		<tag id="314" label="Sony Ericsson P1i" />
+		<tag id="315" label="Sony Ericsson P1c" />
+		<tag id="316" label="Sony Ericsson P800" />
+		<tag id="317" label="Sony Ericsson P802" />
+		<tag id="318" label="Sony Ericsson P900" />
+		<tag id="319" label="Sony Ericsson P908" />
+		<tag id="320" label="Sony Ericsson P910i" />
+		<tag id="321" label="Sony Ericsson P910c" />
+		<tag id="322" label="Sony Ericsson P910a" />
+		<tag id="323" label="Sony Ericsson P990i" />
+		<tag id="324" label="Sony Ericsson P990c" />
+		<tag id="325" label="Sony Ericsson W950i" />
+		<tag id="326" label="Sony Ericsson W958" />
+		<tag id="327" label="Sony Ericsson W960i" />
+		<tag id="328" label="Sony Ericsson Z750" />
+		<tag id="329" label="Sony Ericsson P990i" />
+		<tag id="330" label="Sony Ericsson P900" />
+		<tag id="331" label="Sony Ericsson W800" />
+		<tag id="332" label="Sony Ericsson W850i" />
+	</tag>
+	<tag id="333" label="Kyocera">
+		<tag id="334" label="Kyocera 6035" />
+		<tag id="335" label="Kyocera KX16" />
+		<tag id="336" label="Kyocera KX414" />
+		<tag id="337" label="Kyocera KX5" />
+		<tag id="338" label="Kyocera Slider" />
+		<tag id="339" label="Kyocera Strobe" />
+	</tag>
+</tag>

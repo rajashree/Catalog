@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+  ~ Copyright(C) 2011, Sourcen Framework and the original authors.
+  ~ All Rights Reserved. Use is subject to license terms and conditions.
+  -->
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation=" http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.1.xsd"
+       default-init-method="initialize" default-destroy-method="destroy" default-lazy-init="false">
+
+    <bean id="configurationService" class="com.sourcen.core.config.ConfigurationServiceImpl"
+          factory-method="getInstance" autowire-candidate="true" lazy-init="false"/>
+
+    <bean id="sourcenPropertyPlaceholderConfigurer"
+          class="com.sourcen.core.config.util.spring.SourcenPropertyPlaceholderConfigurer" lazy-init="false">
+        <property name="configurationService" ref="configurationService"/>
+    </bean>
+
+    <bean id="configurationAwarePostProcessor"
+          class="com.sourcen.core.config.util.spring.ConfigurationAwarePostProcessor">
+        <property name="configurationService" ref="configurationService"/>
+    </bean>
+
+    <!-- these 3 default property providers are wired to the ConfigurationServiceImpl, this is just a reference if needed for other spring beans -->
+    <bean id="systemPropertiesProvider" class="com.sourcen.core.config.providers.SystemPropertiesProvider"
+          factory-method="getInstance"  lazy-init="false" />
+
+    <bean id="applicationPropertiesProvider" class="com.sourcen.core.config.providers.ApplicationPropertiesProvider"
+          factory-method="getInstance" lazy-init="false"/>
+
+    <bean id="environmentPropertiesProvider" class="com.sourcen.core.config.providers.EnvironmentPropertiesProvider"
+          factory-method="getInstance"  lazy-init="false"/>
+
+    <!-- spring listeners / util, this will auto-register due to the annotation @EventListener -->
+    <bean id="log4JPropertyListener" class="com.sourcen.core.config.util.Log4JPropertyListener">
+        <property name="configurationService" ref="configurationService"/>
+    </bean>
+    <bean id="springBeanPropertyConfigListener"
+          class="com.sourcen.core.config.util.spring.SpringBeanPropertyConfigurer"/>
+
+</beans>

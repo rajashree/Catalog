@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/meteriffic/!svn/ver/2/trunk/resources/sqlmap
+END
+Product.xml
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/meteriffic/!svn/ver/2/trunk/resources/sqlmap/Product.xml
+END
+Property.xml
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/meteriffic/!svn/ver/2/trunk/resources/sqlmap/Property.xml
+END
+Search.xml
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/meteriffic/!svn/ver/2/trunk/resources/sqlmap/Search.xml
+END
+sql-map-config.xml
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/meteriffic/!svn/ver/2/trunk/resources/sqlmap/sql-map-config.xml
+END
+User.xml
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/meteriffic/!svn/ver/2/trunk/resources/sqlmap/User.xml
+END

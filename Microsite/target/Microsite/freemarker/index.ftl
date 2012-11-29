@@ -1,0 +1,1 @@
+<a href="<@s.url action='site.create' method="input"/>">create your site</a>

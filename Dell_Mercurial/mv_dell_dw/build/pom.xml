@@ -1,0 +1,19 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.dell.dw</groupId>
+    <artifactId>dell_dw_aggregrator</artifactId>
+    <version>1.0</version>
+    <packaging>pom</packaging>
+    <name>dell_dw_aggregrator</name>
+    <description>Dell Reporting - Data Warehousing Aggregator</description>
+
+    <!-- Change sn_lib module path as per your local project set-up -->
+    <modules>
+        <module>../../mv_dell_acs/sn_lib/sn_core</module>
+        <module>../../mv_dell_acs/sn_lib/dataimport</module>
+        <module>../../mv_dell_acs/sn_lib/sn_webapp_support</module>
+        <module>../../mv_dell_acs/sn_lib/sn_core_services</module>
+        <module>..</module>
+    </modules>
+</project>

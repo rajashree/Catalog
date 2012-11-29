@@ -1,0 +1,125 @@
+<project name="config" default="debug_build_clean">
+	<property environment="env"/>
+	<property file="../../../version.properties"/>
+
+	<target name="build" depends="init, compile, jar, junit, i-junit" description="Build the config library.">
+		<jar destfile="target/config.jar" basedir="target/classes"/>
+	</target>
+
+	<target name="compile" depends="init">
+		<javac debug="${debug}" destdir="target/classes" includeAntRuntime="false" source="1.6" target="1.6">
+			<src path="src/main/java"/>
+			<classpath>
+				<pathelement path="../../../libs/commons-io-2.0.1.jar"/>
+				<pathelement path="../../../libs/hibernate-core-4.1.0.Final.jar"/>
+				<pathelement path="../../../libs/hibernate-jpa-2.0-api-1.0.1.Final.jar"/>
+				<pathelement path="../../../libs/log4j-1.2.16.jar"/>
+				<pathelement path="../../../libs/slf4j-api-1.6.1.jar"/>
+				<pathelement path="../../../libs/spring-beans-3.1.1.RELEASE.jar"/>
+				<pathelement path="../../../libs/spring-context-3.1.1.RELEASE.jar"/>
+				<pathelement path="../../../libs/spring-core-3.1.1.RELEASE.jar"/>
+				<pathelement path="../../../libs/spring-tx-3.1.1.RELEASE.jar"/>
+				<pathelement path="../../../libs/servlet-api-2.4.jar"/>
+				<pathelement path="../../sn_core/target/sn_core.jar"/>
+				<pathelement path="../event/target/event.jar"/>
+			</classpath>
+		</javac>
+		<copy todir="target/classes">
+			<fileset dir="src/main/resources"/>
+		</copy>
+	</target>
+
+	<target name="jar" depends="compile">
+		<jar destfile="target/config.jar" basedir="target/classes"/>
+	</target>
+
+	<target name="junit" depends="jar">
+		<javac debug="${debug}" destdir="target/test/classes" includeAntRuntime="false" source="1.6" target="1.6">
+			<src path="src/test/java"/>
+			<classpath>
+				<pathelement path="../../../libs/junit-4.8.2.jar"/>
+				<pathelement path="../../../libs/commons-io-2.0.1.jar"/>
+				<pathelement path="../../../libs/hibernate-core-4.1.0.Final.jar"/>
+				<pathelement path="../../../libs/hibernate-jpa-2.0-api-1.0.1.Final.jar"/>
+				<pathelement path="../../../libs/log4j-1.2.16.jar"/>
+				<pathelement path="../../../libs/slf4j-api-1.6.1.jar"/>
+				<pathelement path="../../../libs/spring-beans-3.1.1.RELEASE.jar"/>
+				<pathelement path="../../../libs/spring-context-3.1.1.RELEASE.jar"/>
+				<pathelement path="../../../libs/spring-core-3.1.1.RELEASE.jar"/>
+				<pathelement path="../../../libs/spring-tx-3.1.1.RELEASE.jar"/>
+				<pathelement path="../../../libs/servlet-api-2.4.jar"/>
+				<pathelement path="../../sn_core/target/sn_core.jar"/>
+				<pathelement path="../event/target/event.jar"/>
+				<pathelement path="target/config.jar"/>
+			</classpath>
+		</javac>
+		<copy todir="target/test/classes">
+			<fileset dir="src/test/resources"/>
+		</copy>
+		<jar destfile="target/config_test.jar" basedir="target/test/classes"/>
+	</target>
+
+	<target name="i-junit" depends="jar">
+		<echo message="No Integration test at this time."/>
+	</target>
+
+	<target name="test" depends="build" description="Test the config library">
+		<junit printsummary="on" haltonfailure="no">
+			<classpath>
+				<pathelement path="../../../libs/junit-4.8.2.jar"/>
+				<pathelement path="../../../libs/commons-io-2.0.1.jar"/>
+				<pathelement path="../../../libs/hibernate-core-4.1.0.Final.jar"/>
+				<pathelement path="../../../libs/hibernate-jpa-2.0-api-1.0.1.Final.jar"/>
+				<pathelement path="../../../libs/log4j-1.2.16.jar"/>
+				<pathelement path="../../../libs/slf4j-api-1.6.1.jar"/>
+				<pathelement path="../../../libs/spring-beans-3.1.1.RELEASE.jar"/>
+				<pathelement path="../../../libs/spring-context-3.1.1.RELEASE.jar"/>
+				<pathelement path="../../../libs/spring-core-3.1.1.RELEASE.jar"/>
+				<pathelement path="../../../libs/spring-tx-3.1.1.RELEASE.jar"/>
+				<pathelement path="../../../libs/spring-web-3.1.1.RELEASE.jar"/>
+				<pathelement path="../../../libs/servlet-api-2.4.jar"/>
+				<pathelement path="../../sn_core/target/sn_core.jar"/>
+				<pathelement path="../event/target/event.jar"/>
+				<pathelement path="target/config.jar"/>
+				<pathelement path="target/config_test.jar"/>
+			</classpath>
+			<formatter type="plain"/>
+			<batchtest fork="yes" todir="target/test/reports">
+				<fileset dir="src/test/java">
+					<include name="**/*Test*.java"/>
+					<exclude name="**/AllTests.java"/>
+				</fileset>
+			</batchtest>
+		</junit>
+	</target>
+
+	<target name="integration" depends="build" description="Integration the config library">
+		<echo message="No Integration test at this time."/>
+	</target>
+
+	<target name="debug" description="Debug build config library.">
+		<property name="debug" value="on"/>
+		<antcall target="build"/>
+	</target>
+
+	<target name="clean" description="Clean the config library.">
+		<delete dir="target"/>
+	</target>
+
+	<target name="build_clean" description="Clean and Build the config library.">
+		<antcall target="clean"/>
+		<antcall target="build"/>
+	</target>
+
+	<target name="debug_build_clean" description="Clean and Debug Build the config library.">
+		<antcall target="clean"/>
+		<antcall target="debug"/>
+	</target>
+
+	<target name="init">
+		<mkdir dir="target/classes"/>
+		<mkdir dir="target/test/classes"/>
+		<mkdir dir="target/test/reports"/>
+		<mkdir dir="target/integration/classes"/>
+	</target>
+</project>

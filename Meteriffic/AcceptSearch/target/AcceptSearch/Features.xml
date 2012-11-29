@@ -1,0 +1,509 @@
+<tag  label="Smart Phones" id="0"  open="1"  call="1" select="1">
+	<tag dimensionalpolarity="True" id="2" label="Multimedia">
+		<synonym>media system</synonym>
+		<synonym>multi media</synonym>
+		<synonym>multi-media</synonym>
+		<tag dimensionalpolarity="True" id="3" label="Music">
+			<synonym>music system</synonym>
+			<synonym>music player</synonym>
+			<synonym>media player</synonym>
+			<synonym>media playback</synonym>
+			<tag dimensionalpolarity="True" id="4" label="WMV">
+				<synonym>windows media</synonym>
+			</tag>
+			<tag dimensionalpolarity="True" id="5" label="I Tunes" />
+			<tag dimensionalpolarity="True" id="6" label="AAC" />
+			<tag dimensionalpolarity="True" id="7" label="MP3">
+				<synonym>mp3s</synonym>
+			</tag>
+			<tag dimensionalpolarity="True" id="8"
+				label="Audio Quality" />
+			<tag dimensionalpolarity="True" id="9"
+				label="Voice Recording" />
+			<tag dimensionalpolarity="True" id="10"
+				label="Online Store" />
+			<tag dimensionalpolarity="True" id="11"
+				label="Streaming music" />
+		</tag>
+		<tag dimensionalpolarity="True" id="12" label="Video">
+			<synonym>videos</synonym>
+			<tag dimensionalpolarity="True" id="13"
+				label="MP4 Support" />
+			<tag dimensionalpolarity="True" id="14"
+				label="WMV Support" />
+			<tag dimensionalpolarity="True" id="15"
+				label="Online Store" />
+			<tag dimensionalpolarity="True" id="16" label="TV" />
+			<tag dimensionalpolarity="True" id="17"
+				label="YouTube">
+				<synonym>u tube</synonym>
+				<synonym>utube</synonym>
+				<synonym>you tube</synonym>
+				<synonym>you-tube</synonym>
+			</tag>
+		</tag>
+		<tag dimensionalpolarity="True" id="18" label="Camera">
+			<synonym>built in camera</synonym>
+			<synonym>auto flash</synonym>
+			<tag dimensionalpolarity="True" id="19"
+				label="Video Recording" />
+			<tag dimensionalpolarity="True" id="20" label="Zoom" />
+			<tag dimensionalpolarity="True" id="21"
+				label="Camera Resolution">
+				<synonym>hi-res</synonym>
+				<synonym>hi res</synonym>
+				<synonym>high resolution</synonym>
+				<synonym>Good resolution</synonym>
+				<synonym>picture resolution</synonym>
+				<synonym>cameras resolution</synonym>
+				<synonym>resolution of the camera</synonym>
+				<synonym>resolution of its camera</synonym>
+				<synonym>resolution of camera</synonym>
+			</tag>
+			<tag dimensionalpolarity="True" id="22" label="Flash">
+				<synonym>built in flash</synonym>
+			</tag>
+			<tag dimensionalpolarity="True" id="23"
+				label="Automatic flash" />
+			<tag dimensionalpolarity="True" id="24"
+				label="Digital Zoom" />
+			<tag dimensionalpolarity="True" id="25"
+				label="Auto Adjustable Brightness" />
+		</tag>
+		<tag dimensionalpolarity="True" id="26" label="Speaker">
+			<synonym>speaker phone</synonym>
+			<synonym>phone's speaker</synonym>
+			<synonym>phones speaker</synonym>
+			<tag dimensionalpolarity="True" id="27"
+				label="Noise cancellation" />
+		</tag>
+		<tag dimensionalpolarity="True" id="28" label="Headphone">
+			<synonym>stereo headphones</synonym>
+			<synonym>head phone</synonym>
+			<synonym>head set</synonym>
+			<synonym>headset</synonym>
+			<tag dimensionalpolarity="True" id="29"
+				label="3.5 mm Audio Jack" />
+		</tag>
+		<tag dimensionalpolarity="True" id="30" label="Photo">
+			<synonym>iphoto</synonym>
+			<synonym>jpeg</synonym>
+			<synonym>tiff</synonym>
+			<synonym>giff</synonym>
+			<tag dimensionalpolarity="True" id="31" label="flickr" />
+		</tag>
+	</tag>
+	<tag dimensionalpolarity="True" id="32" label="Organizer">
+		<tag dimensionalpolarity="True" id="33" label="Memo Pad" />
+		<tag dimensionalpolarity="True" id="34"
+			label="Synchronization">
+			<synonym>PIM</synonym>
+			<synonym>transfer contact</synonym>
+			<synonym>transferring contacts</synonym>
+			<synonym>contact transfer</synonym>
+			<synonym>transfer of contact</synonym>
+			<synonym>contacts transfer</synonym>
+			<synonym>transfer calendar</synonym>
+			<synonym>transferring calender</synonym>
+			<synonym>synchronizing calendar</synonym>
+			<synonym>calendar synchonization</synonym>
+		</tag>
+		<tag dimensionalpolarity="True" id="35" label="Calendar" />
+		<tag dimensionalpolarity="True" id="36"
+			label="Address/Contact Book">
+			<synonym>contacts</synonym>
+			<synonym>address book</synonym>
+			<synonym>phone book</synonym>
+		</tag>
+		<tag dimensionalpolarity="True" id="37" label="Task List">
+			<tag dimensionalpolarity="True" id="38"
+				label="Microsoft Exchange Support" />
+		</tag>
+		<tag dimensionalpolarity="True" id="39" label="Note Pad">
+			<synonym>notepage</synonym>
+			<synonym>note-pad</synonym>
+		</tag>
+		<tag dimensionalpolarity="True" id="40" label="Calculator" />
+		<tag dimensionalpolarity="True" id="41" label="Voice Notes" />
+	</tag>
+	<tag dimensionalpolarity="True" id="42" label="Display">
+		<synonym>TFT display</synonym>
+		<synonym>QVGA</synonym>
+		<synonym>Screen</synonym>
+		<tag dimensionalpolarity="True" id="43" label="Resolution">
+			<synonym>Screen resolution</synonym>
+		</tag>
+		<tag dimensionalpolarity="True" id="44" label="Screen Size" />
+		<tag dimensionalpolarity="True" id="45" label="Durability" />
+		<tag dimensionalpolarity="True" id="46" label="Screen saver" />
+		<tag dimensionalpolarity="True" id="47"
+			label="Touch Screen">
+			<synonym>touch interface</synonym>
+			<synonym>touch-screen</synonym>
+		</tag>
+	</tag>
+	<tag dimensionalpolarity="True" id="48" label="Interface">
+		<synonym>themes</synonym>
+		<synonym>UI</synonym>
+		<synonym>user interface</synonym>
+		<synonym>theme</synonym>
+		<synonym>icons</synonym>
+		<synonym>skins</synonym>
+		<synonym>skin</synonym>
+		<tag dimensionalpolarity="True" id="49" label="Typeface">
+			<synonym>font</synonym>
+			<synonym>type face</synonym>
+			<synonym>type-face</synonym>
+		</tag>
+		<tag dimensionalpolarity="True" id="50"
+			label="Application Switching" />
+		<tag dimensionalpolarity="True" id="51"
+			label="QWERTY Keyboard">
+			<synonym>keyboard</synonym>
+			<synonym>QWERTY</synonym>
+		</tag>
+		<tag dimensionalpolarity="True" id="52" label="Keypad">
+			<synonym>num pad</synonym>
+			<synonym>controls</synonym>
+			<synonym>control</synonym>
+			<synonym>keys</synonym>
+			<synonym>key-pad</synonym>
+			<synonym>num-pad</synonym>
+			<synonym>button</synonym>
+		</tag>
+		<tag dimensionalpolarity="True" id="53" label="Joystick">
+			<synonym>rolling cursor</synonym>
+			<synonym>cursor</synonym>
+			<synonym>ball</synonym>
+			<synonym>thumb wheel</synonym>
+			<synonym>thumbwheel</synonym>
+			<synonym>thumb-wheel</synonym>
+			<synonym>roller ball</synonym>
+			<synonym>rollerball</synonym>
+			<synonym>roller-ball</synonym>
+			<synonym>track ball</synonym>
+			<synonym>trackball</synonym>
+			<synonym>track-ball</synonym>
+			<synonym>click wheel</synonym>
+			<synonym>click-wheel</synonym>
+			<synonym>clickwheel</synonym>
+		</tag>
+	</tag>
+	<tag dimensionalpolarity="True" id="54" label="Battery">
+		<tag dimensionalpolarity="True" id="55"
+			label="Battery Life">
+			<synonym>recharge time</synonym>
+			<tag dimensionalpolarity="True" id="56"
+				label="Standby">
+				<synonym>stand-by</synonym>
+				<synonym>stand by</synonym>
+				<synonym>idle mode</synonym>
+			</tag>
+			<tag dimensionalpolarity="True" id="57" label="talktime" />
+			<tag dimensionalpolarity="False" id="58"
+				label="Recharge Speed" />
+		</tag>
+		<tag dimensionalpolarity="True" id="59" label="Replaceable" />
+		<tag dimensionalpolarity="True" id="60" label="charger" />
+	</tag>
+	<tag dimensionalpolarity="True" id="61" label="Calling">
+		<tag dimensionalpolarity="True" id="62"
+			label="Speakerphone">
+			<synonym>speaker phone</synonym>
+		</tag>
+		<tag dimensionalpolarity="True" id="63"
+			label="Speed Dialing">
+			<synonym>speed dial</synonym>
+		</tag>
+		<tag dimensionalpolarity="True" id="64"
+			label="Voice Activated Dialing">
+			<synonym>voice dialing</synonym>
+		</tag>
+		<tag dimensionalpolarity="True" id="65" label="Ringtones">
+			<tag dimensionalpolarity="True" id="66"
+				label="Ring Volume">
+				<synonym>volume</synonym>
+				<synonym>ringtone volume</synonym>
+			</tag>
+		</tag>
+		<tag dimensionalpolarity="True" id="67"
+			label="Conference Calling">
+			<synonym>conferencing</synonym>
+			<synonym>call conference</synonym>
+			<synonym>call confrencing</synonym>
+		</tag>
+		<tag dimensionalpolarity="True" id="68" label="Voice Mail">
+			<synonym>voice mails</synonym>
+			<synonym>voicemail</synonym>
+			<synonym>voicemails</synonym>
+			<synonym>voice-mail</synonym>
+			<synonym>voice-mails</synonym>
+			<synonym>voice mails</synonym>
+			<tag dimensionalpolarity="True" id="69"
+				label="Visual Voicemail" />
+		</tag>
+		<tag dimensionalpolarity="True" id="70"
+			label="Sound Quality">
+			<synonym>call quality</synonym>
+			<synonym>call-quality</synonym>
+			<synonym>Call Volume</synonym>
+			<synonym>voice sound quality</synonym>
+			<synonym>call volume</synonym>
+			<synonym>callvolume</synonym>
+		</tag>
+		<tag dimensionalpolarity="True" id="71" label="VOIP" />
+	</tag>
+	<tag dimensionalpolarity="True" id="72" label="Messaging">
+		<tag dimensionalpolarity="True" id="73"
+			label="Text Messaging">
+			<tag dimensionalpolarity="True" id="74"
+				label="conversation listing">
+				<synonym>text conversation</synonym>
+			</tag>
+			<tag dimensionalpolarity="True" id="75"
+				label="SMS Support">
+				<synonym>SMS</synonym>
+				<synonym>text message</synonym>
+				<synonym>text messaging</synonym>
+				<synonym>text messages</synonym>
+			</tag>
+			<tag dimensionalpolarity="True" id="76"
+				label="MMS Support">
+				<synonym>MMS</synonym>
+			</tag>
+		</tag>
+		<tag dimensionalpolarity="True" id="77"
+			label="Instant Messaging">
+			<tag dimensionalpolarity="True" id="78"
+				label="Yahoo Messenger Support">
+				<synonym>YM</synonym>
+			</tag>
+			<tag dimensionalpolarity="True" id="79"
+				label="Google Talk Support">
+				<synonym>GTalk</synonym>
+				<synonym>google talk</synonym>
+			</tag>
+			<tag dimensionalpolarity="True" id="80"
+				label="Windows Live Messenger Support">
+				<synonym>Live Messenger</synonym>
+			</tag>
+			<tag dimensionalpolarity="True" id="81"
+				label="AOL Instant Messager Support" />
+			<tag dimensionalpolarity="True" id="82"
+				label="ICQ Support" />
+			<tag dimensionalpolarity="True" id="83"
+				label="Lotus Sametime Support" />
+		</tag>
+	</tag>
+	<tag dimensionalpolarity="True" id="84" label="Location">
+		<tag dimensionalpolarity="True" id="85" label="GPRS" />
+		<tag dimensionalpolarity="True" id="86" label="GPS">
+			<tag dimensionalpolarity="True" id="87" label="telenav" />
+		</tag>
+		<tag dimensionalpolarity="True" id="88"
+			label="WiFi/HotSpot">
+			<synonym>WiFi</synonym>
+			<synonym>wi-fi</synonym>
+			<synonym>HotSpot</synonym>
+			<synonym>Hot Spot</synonym>
+			<synonym>Hot-spot</synonym>
+		</tag>
+		<tag dimensionalpolarity="True" id="89" label="Maps">
+			<tag dimensionalpolarity="True" id="90"
+				label="google maps" />
+			<tag dimensionalpolarity="True" id="91"
+				label="blackberry maps" />
+		</tag>
+	</tag>
+	<tag dimensionalpolarity="True" id="92" label="Browser">
+		<synonym>web browser</synonym>
+		<synonym>browsing</synonym>
+		<synonym>safari</synonym>
+		<synonym>opera</synonym>
+		<synonym>firefox</synonym>
+		<synonym>internet explorer</synonym>
+		<synonym>ie</synonym>
+		<tag dimensionalpolarity="True" id="93" label="Bookmarks" />
+		<tag dimensionalpolarity="True" id="94" label="RSS Feeds" />
+		<tag dimensionalpolarity="True" id="95"
+			label="Full Screen Page View" />
+	</tag>
+	<tag dimensionalpolarity="True" id="96" label="Email">
+		<synonym>e-mail</synonym>
+		<synonym>e mail</synonym>
+		<tag dimensionalpolarity="True" id="97"
+			label="Microsoft Exchange Support">
+			<synonym>Outlook support</synonym>
+			<synonym>Microsoft Exchange</synonym>
+			<synonym>Microsoft Outlook</synonym>
+		</tag>
+		<tag dimensionalpolarity="True" id="98" label="gmail">
+			<synonym>g mail</synonym>
+			<synonym>g-mail</synonym>
+		</tag>
+		<tag dimensionalpolarity="True" id="99" label="POP3" />
+		<tag dimensionalpolarity="True" id="100" label="IMAP" />
+		<tag dimensionalpolarity="True" id="101"
+			label="Lotus Notes Support" />
+		<tag dimensionalpolarity="True" id="102"
+			label="Blackberry Exchange Server" />
+		<tag dimensionalpolarity="True" id="103"
+			label="Push Delivery">
+			<synonym>push email</synonym>
+		</tag>
+	</tag>
+	<tag dimensionalpolarity="True" id="104" label="Storage">
+		<synonym>memory card slot</synonym>
+		<synonym>memory card</synonym>
+		<tag dimensionalpolarity="True" id="105"
+			label="Built-In Memory" />
+		<tag dimensionalpolarity="True" id="106"
+			label="Expansion Card Support">
+			<synonym>SDHC</synonym>
+			<synonym>data card</synonym>
+			<synonym>data card</synonym>
+			<synonym>mini-sd card</synonym>
+			<synonym>microSD</synonym>
+			<synonym>micro sd</synonym>
+		</tag>
+	</tag>
+	<tag dimensionalpolarity="True" id="107"
+		label="Online Connectivity">
+		<tag dimensionalpolarity="True" id="108" label="EDGE">
+			<synonym>GPRS</synonym>
+			<synonym>EDGE/GPRS</synonym>
+		</tag>
+		<tag dimensionalpolarity="True" id="109" label="DSL" />
+		<tag dimensionalpolarity="True" id="110"
+			label="Wireless Modem Capability" />
+		<tag dimensionalpolarity="True" id="111" label="PTT">
+			<synonym>push to talk</synonym>
+		</tag>
+		<tag dimensionalpolarity="True" id="112" label="Bluetooth">
+			<synonym>blue tooth</synonym>
+			<synonym>blue-tooth</synonym>
+			<tag dimensionalpolarity="True" id="113"
+				label="Bluetooth tethering">
+				<synonym>tethering</synonym>
+				<synonym>blue tooth tethering</synonym>
+			</tag>
+		</tag>
+		<tag dimensionalpolarity="True" id="114" label="3G">
+			<synonym>UMTS/HSDPA</synonym>
+		</tag>
+		<tag dimensionalpolarity="True" id="115" label="WIFI">
+			<synonym>wi-fi</synonym>
+			<synonym>wi fi</synonym>
+		</tag>
+	</tag>
+	<tag dimensionalpolarity="True" id="116"
+		label="Enterprise Integration">
+		<synonym>integration</synonym>
+		<tag dimensionalpolarity="True" id="117"
+			label="Central IT Management" />
+	</tag>
+	<tag dimensionalpolarity="True" id="118"
+		label="Attachment Viewing">
+		<tag dimensionalpolarity="True" id="119"
+			label="View Adobe PDF Documents">
+			<synonym>pdf</synonym>
+			<synonym>adobe pdf</synonym>
+		</tag>
+		<tag dimensionalpolarity="True" id="120"
+			label="Microsoft Office Documents">
+			<synonym>microsoft office</synonym>
+			<synonym>office package</synonym>
+			<synonym>office packages</synonym>
+			<synonym>office document</synonym>
+			<synonym>word document</synonym>
+			<synonym>microsoft word</synonym>
+			<synonym>excel</synonym>
+			<synonym>excel spreadsheet</synonym>
+		</tag>
+	</tag>
+	<tag dimensionalpolarity="True" id="121" label="Hardware">
+		<tag dimensionalpolarity="False" id="122"
+			label="Construction">
+			<synonym>flip</synonym>
+			<synonym>slide</synonym>
+			<synonym>flip top</synonym>
+			<synonym>slide top</synonym>
+			<synonym>form factor</synonym>
+			<synonym>sturdy</synonym>
+			<synonym>sleek</synonym>
+			<synonym>stylish</synonym>
+			<synonym>body</synonym>
+			<synonym>slim</synonym>
+		</tag>
+		<tag dimensionalpolarity="True" id="123" label="Quality" />
+		<tag dimensionalpolarity="True" id="124"
+			label="Reliability">
+			<synonym>reliable</synonym>
+			<synonym>durable</synonym>
+			<synonym>unreliable</synonym>
+			<synonym>stable</synonym>
+			<synonym>unstable</synonym>
+		</tag>
+		<tag dimensionalpolarity="False" id="125" label="Weight">
+			<synonym>lightweight</synonym>
+			<synonym>bulky</synonym>
+			<synonym>heavy</synonym>
+			<synonym>sleek</synonym>
+		</tag>
+		<tag dimensionalpolarity="False" id="126" label="Size" />
+	</tag>
+	<tag dimensionalpolarity="True" id="127" label="Software">
+		<tag dimensionalpolarity="True" id="128"
+			label="Software Reliability" />
+	</tag>
+	<tag dimensionalpolarity="True" id="129" label="OS">
+		<synonym>operating system</synonym>
+		<synonym>windows</synonym>
+		<synonym>Mac Os</synonym>
+		<synonym>symbian</synonym>
+		<tag dimensionalpolarity="True" id="130"
+			label="OS Reliability">
+			<synonym>crashed</synonym>
+			<synonym>crash</synonym>
+		</tag>
+		<tag dimensionalpolarity="True" id="131"
+			label="OS Usability">
+			<synonym>usability</synonym>
+		</tag>
+	</tag>
+	<tag dimensionalpolarity="True" id="132"
+		label="Value for money">
+		<tag dimensionalpolarity="False" id="133" label="Cost">
+			<synonym>expensive</synonym>
+			<synonym>inexpensive</synonym>
+			<synonym>costly</synonym>
+			<synonym>cheap</synonym>
+			<synonym>affordable</synonym>
+			<synonym>unaffordable</synonym>
+		</tag>
+	</tag>
+	<tag dimensionalpolarity="True" id="134"
+		label="Phone Performance" />
+	<tag dimensionalpolarity="True" id="135"
+		label="Advance tags">
+		<tag dimensionalpolarity="True" id="136"
+			label="Screen Protection">
+			<synonym>screen guard</synonym>
+			<synonym>silicone slip</synonym>
+			<synonym>silicone screen</synonym>
+			<synonym>silicone skin</synonym>
+		</tag>
+		<tag dimensionalpolarity="True" id="137"
+			label="spell check">
+			<synonym>spelling checker</synonym>
+			<synonym>spelling check</synonym>
+			<tag dimensionalpolarity="True" id="138"
+				label="Predictive Text">
+				<synonym>text prediction</synonym>
+				<synonym>auto correction</synonym>
+				<synonym>auto-correction</synonym>
+			</tag>
+		</tag>
+	</tag>
+	<tag dimensionalpolarity="True" id="139" label="warranty" />
+</tag>

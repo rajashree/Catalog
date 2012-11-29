@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       default-init-method="init" default-destroy-method="destroy"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.1.xsd">
+
+    <bean id="dataFilesDownloadCJManagerImpl" class="com.dell.acs.managers.cj.DataFilesDownloadManagerImpl"/>
+    <bean id="dataFilesDownloadFicstarManagerImpl" class="com.dell.acs.managers.ficstar.DataFilesDownloadManagerImpl"/>
+    <bean id="dataFilesDownloadGoogleManagerImpl" class="com.dell.acs.managers.google.DataFilesDownloadManagerImpl"/>
+    <bean id="dataFilesDownloadMerchantManagerImpl" class="com.dell.acs.managers.merchant.DataFilesDownloadManagerImpl"/>
+
+    <!-- Scheduler -->
+    <bean id="newDownloadSchedulerFactoryBean" class="org.springframework.scheduling.quartz.SchedulerFactoryBean">
+        <property name="triggers">
+            <list>
+                <ref bean="downloadFicstarDataFilesJobTrigger"/>
+                <ref bean="downloadCJDataFilesJobTrigger"/>
+                <ref bean="downloadGoogleDataFilesJobTrigger"/>
+                <ref bean="downloadMerchantDataFilesJobTrigger"/>
+            </list>
+        </property>
+        <property name="taskExecutor" ref="quartzTaskExecutor"/>
+    </bean>
+    
+    <!-- Download CSV job for different feed providers -->
+    <bean id="downloadFicstarDataFilesJobTrigger" class="org.springframework.scheduling.quartz.SimpleTriggerBean">
+        <property name="jobDetail" ref="downloadFicstarDataFilesJobDetail"/>
+        <property name="startDelay" value="5000"/>
+        <property name="repeatInterval" value="5000"/>
+    </bean>
+    <bean name="downloadFicstarDataFilesJobDetail" class="org.springframework.scheduling.quartz.JobDetailBean">
+        <property name="jobClass" value="com.dell.acs.jobs.NewDownloadDataFilesJob"/>
+        <property name="jobDataAsMap">
+            <map>
+                <entry key="configurationService" value-ref="configurationService"/>
+                <entry key="dataFilesDownloadManager" value-ref="dataFilesDownloadFicstarManagerImpl"/>
+            </map>
+        </property>
+    </bean>
+    <bean id="downloadCJDataFilesJobTrigger" class="org.springframework.scheduling.quartz.SimpleTriggerBean">
+        <property name="jobDetail" ref="downloadCJDataFilesJobDetail"/>
+        <property name="startDelay" value="1000"/>
+        <property name="repeatInterval" value="5000"/>
+    </bean>
+    <bean name="downloadCJDataFilesJobDetail" class="org.springframework.scheduling.quartz.JobDetailBean">
+        <property name="jobClass" value="com.dell.acs.jobs.NewDownloadDataFilesJob"/>
+        <property name="jobDataAsMap">
+            <map>
+                <entry key="configurationService" value-ref="configurationService"/>
+                <entry key="dataFilesDownloadManager" value-ref="dataFilesDownloadCJManagerImpl"/>
+            </map>
+        </property>
+    </bean>
+    <bean id="downloadGoogleDataFilesJobTrigger" class="org.springframework.scheduling.quartz.SimpleTriggerBean">
+        <property name="jobDetail" ref="downloadGoogleDataFilesJobDetail"/>
+        <property name="startDelay" value="1000"/>
+        <property name="repeatInterval" value="5000"/>
+    </bean>
+    <bean name="downloadGoogleDataFilesJobDetail" class="org.springframework.scheduling.quartz.JobDetailBean">
+        <property name="jobClass" value="com.dell.acs.jobs.NewDownloadDataFilesJob"/>
+        <property name="jobDataAsMap">
+            <map>
+                <entry key="configurationService" value-ref="configurationService"/>
+                <entry key="dataFilesDownloadManager" value-ref="dataFilesDownloadGoogleManagerImpl"/>
+            </map>
+        </property>
+    </bean>
+    <bean id="downloadMerchantDataFilesJobTrigger" class="org.springframework.scheduling.quartz.SimpleTriggerBean">
+        <property name="jobDetail" ref="downloadMerchantDataFilesJobDetail"/>
+        <property name="startDelay" value="1000"/>
+        <property name="repeatInterval" value="5000"/>
+    </bean>
+    <bean name="downloadMerchantDataFilesJobDetail" class="org.springframework.scheduling.quartz.JobDetailBean">
+        <property name="jobClass" value="com.dell.acs.jobs.NewDownloadDataFilesJob"/>
+        <property name="jobDataAsMap">
+            <map>
+                <entry key="configurationService" value-ref="configurationService"/>
+                <entry key="dataFilesDownloadManager" value-ref="dataFilesDownloadMerchantManagerImpl"/>
+            </map>
+        </property>
+    </bean>
+
+</beans>

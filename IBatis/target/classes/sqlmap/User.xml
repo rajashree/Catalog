@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE sqlMap PUBLIC "-//iBATIS.com//DTD SQL Map 2.0//EN" "http://www.ibatis.com/dtd/sql-map-2.dtd">
+
+<sqlMap>
+
+
+	<cacheModel id="user-cache" type="MEMORY">
+		<flushInterval hours="24" />
+		<property name="reference-type" value="SOFT" />
+	</cacheModel>
+
+	<typeAlias alias="user" type="com.sourcen.model.User" />
+
+	<resultMap id="user" class="user">
+		<result property="id" column="id" />
+		<result property="userName" column="username" />
+		<result property="firstName" column="firstname" />
+		<result property="lastName" column="lastname" />
+		<result property="userName" column="username" />
+		<result property="password" column="password" />
+		<result property="email" column="email" />		
+	</resultMap>
+
+	<select id="getUserByName" resultMap="user" parameterClass="String"
+		cacheModel="user-cache">
+		select * from users where username = #userName#
+	</select>
+</sqlMap>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

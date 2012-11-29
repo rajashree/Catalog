@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation=" http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans-3.1.xsd"
+       default-init-method="initialize" default-destroy-method="destroy">
+
+
+    <bean id="i18nTemplateServiceConfigurer" class="com.sourcen.core.texttemplate.TextTemplateServiceConfigurer">
+        <property name="serviceProvider" ref="textTemplateService"/>
+        <property name="providers">
+            <map key-type="java.lang.Integer">
+                <entry key="0" value-ref="i18NResourceBundleTemplateProvider"/>
+            </map>
+        </property>
+    </bean>
+
+    <bean id="i18nService" class="com.sourcen.core.i18n.I18NServiceImpl">
+        <property name="textTemplateService" ref="textTemplateService"/>
+    </bean>
+
+
+    <bean id="messageSource" class="com.sourcen.core.i18n.spring.I18NTemplateProviderMessageSourceImpl">
+        <property name="i18NService" ref="i18nService"/>
+    </bean>
+
+    <bean id="i18NResourceBundleTemplateProvider"
+          class="com.sourcen.core.i18n.texttemplate.providers.I18NResourceBundleTemplateProvider">
+        <property name="parentName" value="i18n/application-messages"/>
+        <!-- parent name is the bundle name -->
+        <property name="fallbackMessageSource" ref="fallbackMessageSource"/>
+    </bean>
+
+    <bean id="fallbackMessageSource" class="org.springframework.context.support.ReloadableResourceBundleMessageSource">
+        <property name="basenames" value="classpath:/i18n/app-messages, classpath:/i18n/app-messages-*"/>
+        <property name="fallbackToSystemLocale" value="false"/>
+        <property name="cacheSeconds" value="1"/>
+    </bean>
+
+
+    <!-- persistence-profile bean -->
+    <beans profile="persistence">
+        <bean id="i18NDbTemplateProvider" class="com.sourcen.core.i18n.texttemplate.providers.I18NDbTemplateProvider">
+            <property name="textTemplateRepository" ref="textTemplateRepository"/>
+        </bean>
+
+        <bean id="i18nDbTemplateServiceConfigurer" class="com.sourcen.core.texttemplate.TextTemplateServiceConfigurer">
+            <property name="serviceProvider" ref="textTemplateService"/>
+            <property name="providers">
+                <map key-type="java.lang.Integer">
+                    <entry key="0" value-ref="i18NDbTemplateProvider"/>
+                </map>
+            </property>
+        </bean>
+
+        <bean id="textTemplateRepository"
+              class="com.sourcen.core.persistence.repository.impl.hibernate.TextTemplateRepositoryImpl"
+              parent="repositoryImpl"/>
+    </beans>
+
+
+</beans>

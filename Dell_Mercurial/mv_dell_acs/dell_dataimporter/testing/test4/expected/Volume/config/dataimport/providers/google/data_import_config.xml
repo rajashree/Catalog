@@ -1,0 +1,116 @@
+<schema>
+
+    <table destinationTable="com.dell.acs.persistence.domain.Product" sourceTable="product" mapKeys="true">
+
+        <properties>
+            <property name="tableType" value="csv"/>
+            <!--<property name="encoding" value="UTF-16LE"/>-->
+            <property name="sheetIndex" value="0"/>
+            <property name="rowstoskip" value="1"/>
+            <property name="maxRows" value="100000"/>
+            <property name="isPathAbsolute" value="true"/>
+            <property name="mapKeys" value="true"/>
+            <property name="batchSize" value="100"/>
+            <property name="dataTypes.boolean.trueValues" value="true,1,yes,new"/>
+            <!--<property name="disableBatchUpdate" value="true"/>-->
+
+            <!-- decimal value of the character -->
+            <property name="separator" value="9"/>
+        </properties>
+
+        <keys>
+            <key type="primary" destinationKey="id" sourceKey="ProductID,ProductName,ManufacturerModel"/>
+        </keys>
+
+        <column source="ProductID" destination="productId" type="string"/>
+        <column source="siteName" destination="siteName" type="string"/>
+        <column source="ProductName" destination="properties.ProductName" type="string" defaultValue="null"/>
+        <column source="ProductURL" destination="url" type="string" defaultValue="null"/>
+        <column source="BuyURL" destination="buyLink" type="string" defaultValue="null"/>
+        <column source="ImageURL" destination="image.srcImageURL" type="string"/>
+        <column source="Category" destination="category1" type="string"/>
+        <column source="CategoryID" destination="properties.CategoryID" type="string"/>
+        <column source="PFXCategory" destination="properties.PFXCategory" type="string"/>
+        <column source="BriefDesc" destination="properties.BriefDesc" type="string"/>
+        <column source="ShortDesc" destination="properties.ShortDesc" type="string"/>
+        <column source="IntermDesc" destination="properties.IntermDesc" type="string"/>
+        <column source="LongDesc" destination="description" type="string" defaultValue="null"/>
+        <column source="ProductKeyword" destination="properties.ProductKeyword" type="string"/>
+        <column source="Brand" destination="properties.Brand" type="string"/>
+        <column source="Manufacturer" destination="properties.Manufacturer" type="string"/>
+        <column source="Manufacturer" destination="properties.Manufacturer" type="string"/>
+        <column source="ManfID" destination="properties.ManfID" type="string"/>
+        <column source="ManufacturerModel" destination="properties.ManufacturerModel" type="string"/>
+        <column source="UPC" destination="webPartNumber" type="string"/>
+        <column source="Platform" destination="properties.Platform" type="string"/>
+        <column source="MediaTypeDesc" destination="properties.MediaTypeDesc" type="string"/>
+        <column source="MerchandiseType" destination="newProduct" type="boolean" defaultValue="true"/>
+        <column source="Price" destination="listPrice" type="float"/>
+        <column source="SalePrice" destination="price" type="float"/>
+        <column source="VariableCommission" destination="properties.VariableCommission" type="string"/>
+        <column source="SubFeedID" destination="properties.SubFeedID" type="string"/>
+        <column source="InStock" destination="availability" type="int"
+                transformerClass="com.dell.acs.dataimport.google.AvailabilityColumnTransformer"/>
+        <column source="Inventory" destination="properties.Inventory" type="string"/>
+        <column source="RemoveDate" destination="properties.RemoveDate" type="string"/>
+        <column source="RewPoints" destination="properties.RewPoints" type="string"/>
+        <column source="PartnerSpecific" destination="properties.PartnerSpecific" type="string"/>
+        <column source="ShipAvail" destination="properties.ShipAvail" type="string"/>
+        <column source="ShipCost" destination="properties.ShipCost" type="string"/>
+        <column source="ShippingIsAbsolut" destination="properties.ShippingIsAbsolut" type="string"/>
+        <column source="ShippingWeight" destination="properties.ShippingWeight" type="string"/>
+        <column source="ShipNeeds" destination="properties.ShipNeeds" type="string"/>
+        <column source="ShipPromoText" destination="properties.ShipPromoText" type="string"/>
+        <column source="ProductPromoText" destination="properties.ProductPromoText" type="string"/>
+        <column source="DailySpecialsInd" destination="properties.DailySpecialsInd" type="string"/>
+        <column source="GiftBoxing" destination="properties.GiftBoxing" type="string"/>
+        <column source="GiftWrapping" destination="properties.GiftWrapping" type="string"/>
+        <column source="GiftMessaging" destination="properties.GiftMessaging" type="string"/>
+        <column source="ProductContainerName" destination="properties.ProductContainerName" type="string"/>
+        <column source="CrossSellRef" destination="properties.CrossSellRef" type="string"/>
+        <column source="AltImagePrompt" destination="properties.AltImagePrompt" type="string"/>
+        <column source="AltImageURL" destination="properties.AltImageURL" type="string"/>
+        <column source="AgeRangeMin" destination="properties.AgeRangeMin" type="string"/>
+        <column source="AgeRangeMax" destination="properties.AgeRangeMax" type="string"/>
+        <column source="ISBN" destination="properties.ISBN" type="string"/>
+        <column source="Title" destination="title" type="string"/>
+        <column source="Publisher" destination="properties.Publisher" type="string"/>
+        <column source="Author" destination="properties.Author" type="string"/>
+        <column source="Genre" destination="properties.Genre" type="string"/>
+        <column source="Media" destination="properties.Media" type="string"/>
+        <column source="Material" destination="properties.Material" type="string"/>
+        <column source="PermuColor" destination="properties.PermuColor" type="string"/>
+        <column source="PermuSize" destination="properties.PermuSize" type="string"/>
+        <column source="PermuWeight" destination="properties.PermuWeight" type="string"/>
+        <column source="PermuItemPrice" destination="properties.PermuItemPrice" type="string"/>
+        <column source="PermuSalePrice" destination="properties.PermuSalePrice" type="string"/>
+        <column source="PermuInventorySta" destination="properties.PermuInventorySta" type="string"/>
+        <column source="Permutation" destination="properties.Permutation" type="string"/>
+        <column source="PermutationSKU" destination="sku" type="string"/>
+        <column source="BaseProductID" destination="properties.BaseProductID" type="string"/>
+        <column source="Option1" destination="properties.Option1" type="string"/>
+        <column source="Option2" destination="properties.Option2" type="string"/>
+        <column source="Option3" destination="properties.Option3" type="string"/>
+        <column source="Option4" destination="properties.Option4" type="string"/>
+        <column source="Option5" destination="properties.Option5" type="string"/>
+        <column source="Option6" destination="properties.Option6" type="string"/>
+        <column source="Option7" destination="properties.Option7" type="string"/>
+        <column source="Option8" destination="properties.Option8" type="string"/>
+        <column source="Option9" destination="properties.Option9" type="string"/>
+        <column source="Option10" destination="properties.Option10" type="string"/>
+        <column source="Option11" destination="properties.Option11" type="string"/>
+        <column source="Option12" destination="properties.Option12" type="string"/>
+        <column source="Option13" destination="properties.Option13" type="string"/>
+        <column source="Option14" destination="properties.Option14" type="string"/>
+        <column source="Option15" destination="properties.Option15" type="string"/>
+        <column source="Option16" destination="properties.Option16" type="string"/>
+        <column source="Option17" destination="properties.Option17" type="string"/>
+        <column source="Option18" destination="properties.Option18" type="string"/>
+        <column source="Option19" destination="properties.Option19" type="string"/>
+        <column source="Option20" destination="properties.Option20" type="string"/>
+        <column source="Title,SalePrice,PermutationSKU" destination="searchItemHash" type="string" />
+
+    </table>
+
+
+</schema>

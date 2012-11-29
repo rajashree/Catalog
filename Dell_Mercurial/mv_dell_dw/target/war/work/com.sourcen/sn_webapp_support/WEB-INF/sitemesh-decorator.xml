@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Copyright (c) Sourcen Inc. 2004-2012
+  ~ All rights reserved.
+  -->
+
+<decorators defaultdir="/WEB-INF/ui/decorator">
+
+    <!-- Any urls that are excluded will never be decorated by Sitemesh -->
+    <excludes>
+        <pattern>/exclude/*</pattern>
+        <pattern>/json/*</pattern>
+        <pattern>/xml/*</pattern>
+        <pattern>/unprotected/json/*</pattern>
+    </excludes>
+
+    <decorator name="admin" page="admin/template.jsp">
+        <pattern>/admin/*.do</pattern>
+    </decorator>
+
+    <decorator name="default" page="default/template.jsp">
+        <pattern>/*.do</pattern>
+        <pattern>/</pattern>
+    </decorator>
+
+
+    <decorator name="none" page="none/template.jsp">
+    </decorator>
+
+
+</decorators>

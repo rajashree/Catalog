@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       default-init-method="init" default-destroy-method="destroy"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.1.xsd">
+
+    <bean id="seedDataInjector_1_01" class="com.dell.acs.upgrade.SeedDataInjector" lazy-init="true"/>
+
+    <bean id="cleanup_1_01_executeSprint2Scripts" class="com.sourcen.core.persistence.util.SQLScriptTask"
+          lazy-init="true">
+        <property name="scriptFile" value="classpath:/sql/sprint2.sql"/>
+    </bean>
+
+    <bean class="com.dell.acs.jobs.ProductWeightComputationJob"/>
+    <bean id="cleanup_1_03_computeProductWeights" class="com.dell.acs.upgrade.ComputeProductWeights">
+    </bean>
+
+    <bean id="cleanup_1_04_dataImportCacheColumnSizeFix" class="com.dell.acs.upgrade.DataImportCacheColumnSizeFix"/>
+
+    <!--
+        Please ensure the the version is changed and the script file is also different.
+        sprint4.sql -
+            New Table : t_tags, t_tag_mapping
+            Alter Table :
+                t_taxonomy - add new column 'type'
+                t_taxonomy_categories - add new column 'order'
+
+        Any new changes should go in different sql file with naming convention 'sprint4_1.sql' and
+        replicate the below bean definition for new UpgradeTask related to spring 4
+
+        Add an entry in upgrade.xml
+    -->
+    <bean id="sprint4_0" class="com.dell.acs.upgrade.Sprint4UpgradeTask"
+          lazy-init="true">
+        <property name="scriptFile" value="classpath:/sql/sprint4.sql"/>
+        <property name="version" value="0"/>
+    </bean>
+
+    <bean id="sprint4_0_1" class="com.dell.acs.upgrade.Sprint4UpgradeTask"
+          lazy-init="true">
+        <property name="scriptFile" value="classpath:/sql/sprint4_0_1.sql"/>
+        <property name="version" value="1"/>
+    </bean>
+
+    <bean id="sql_sprint_4_0_2" class="com.sourcen.core.persistence.util.SQLScriptTask"
+          lazy-init="true">
+        <property name="scriptFile" value="classpath:/sql/sprint4_0_2.sql"/>
+    </bean>
+
+    <bean id="sql_sprint_4_0_3" class="com.sourcen.core.persistence.util.SQLScriptTask"
+          lazy-init="true">
+        <property name="scriptFile" value="classpath:/sql/sprint4_0_3.sql"/>
+    </bean>
+
+    <bean id="sql_sprint_4_0_4" class="com.dell.acs.upgrade.Sprint4UpgradeTask"
+          lazy-init="true">
+        <property name="scriptFile" value="classpath:/sql/sprint4_0_4.sql"/>
+    </bean>
+
+
+      <bean id="sql_sprint_4_0_5" class="com.dell.acs.upgrade.Sprint4UpgradeTask"
+          lazy-init="true">
+        <property name="scriptFile" value="classpath:/sql/sprint4_0_5.sql"/>
+    </bean>
+
+    <bean id="sql_sprint_4_0_6" class="com.dell.acs.upgrade.Sprint4UpgradeTask"
+          lazy-init="true">
+        <property name="scriptFile" value="classpath:/sql/sprint4_0_6.sql"/>
+    </bean>
+    <bean id="sql_sprint_4_0_7" class="com.dell.acs.upgrade.Sprint4UpgradeTask"
+          lazy-init="true">
+        <property name="scriptFile" value="classpath:/sql/sprint4_0_7.sql"/>
+    </bean>
+
+    <bean class="com.dell.acs.upgrade.MigrateDocumentPropertyDataToColumn"/>
+    <bean id="sprint4_0_2" class="com.dell.acs.upgrade.MigrateDocumentPropertyDataToColumn">
+    </bean>
+
+    <bean id="sql_sprint_4_0_8" class="com.dell.acs.upgrade.Sprint4UpgradeTask"
+          lazy-init="true">
+        <property name="scriptFile" value="classpath:/sql/sprint4_0_8.sql"/>
+    </bean>
+
+    <bean id="sql_sprint_4_1_0" class="com.dell.acs.upgrade.Sprint4UpgradeTask"
+          lazy-init="true">
+        <property name="scriptFile" value="classpath:/sql/sprint4_1_0.sql"/>
+    </bean>
+
+    <bean id="sql_sprint_4_1_1" class="com.dell.acs.upgrade.Sprint4UpgradeTask"
+          lazy-init="true">
+        <property name="scriptFile" value="classpath:/sql/sprint4_1_1.sql"/>
+    </bean>
+
+    <bean id="sql_sprint_4_1_2" class="com.dell.acs.upgrade.Sprint4UpgradeTask"
+          lazy-init="true">
+        <property name="scriptFile" value="classpath:/sql/sprint4_1_2.sql"/>
+    </bean>
+
+    <bean id="sql_sprint_4_1_3" class="com.dell.acs.upgrade.Sprint4UpgradeTask"
+          lazy-init="true">
+        <property name="scriptFile" value="classpath:/sql/sprint4_1_3.sql"/>
+    </bean>
+
+    <bean id="sql_sprint_4_1_4" class="com.dell.acs.upgrade.Sprint4UpgradeTask"
+          lazy-init="true">
+        <property name="scriptFile" value="classpath:/sql/sprint4_1_4.sql"/>
+    </bean>
+
+    <bean id="sql_sprint_4_1_5" class="com.dell.acs.upgrade.Sprint4UpgradeTask"
+          lazy-init="true">
+        <property name="scriptFile" value="classpath:/sql/sprint4_1_5.sql"/>
+    </bean>
+
+    <bean id="sql_sprint_4_1_6" class="com.dell.acs.upgrade.Sprint4UpgradeTask"
+          lazy-init="true">
+        <property name="scriptFile" value="classpath:/sql/sprint4_1_6.sql"/>
+    </bean>
+
+    <bean id="sql_sprint_4_1_7" class="com.dell.acs.upgrade.Sprint4UpgradeTask"
+          lazy-init="true">
+        <property name="scriptFile" value="classpath:/sql/sprint4_1_7.sql"/>
+    </bean>
+
+    <bean id="sql_sprint_4_1_8" class="com.dell.acs.upgrade.Sprint4UpgradeTask"
+          lazy-init="true">
+        <property name="scriptFile" value="classpath:/sql/sprint4_1_8.sql"/>
+    </bean>
+
+    <!-- Upgrade script for the Curation Content Foreign Keys -->
+    <bean id="sql_sprint_4_1_9" class="com.dell.acs.upgrade.Sprint4UpgradeTask"
+          lazy-init="true">
+        <property name="scriptFile" value="classpath:/sql/sprint4_1_9.sql"/>
+    </bean>
+
+    <!-- Upgrade script for the unvalidated product tables to align with product. -->
+    <bean id="sql_sprint_4_2_0" class="com.dell.acs.upgrade.Sprint4UpgradeTask"
+          lazy-init="true">
+        <property name="scriptFile" value="classpath:/sql/sprint4_2_0.sql"/>
+    </bean>
+
+    <!-- Upgrade script for the unvalidated product tables to align with product. -->
+    <bean id="sql_sprint_4_2_1" class="com.dell.acs.upgrade.Sprint4UpgradeTask"
+          lazy-init="true">
+        <property name="scriptFile" value="classpath:/sql/sprint4_2_1.sql"/>
+    </bean>
+
+    <bean id="sql_sprint_4_2_2" class="com.dell.acs.upgrade.Sprint4UpgradeTask"
+          lazy-init="true">
+        <property name="scriptFile" value="classpath:/sql/sprint4_2_2.sql"/>
+    </bean>
+
+    <!-- Add data file tracking for each type. -->
+    <bean id="sql_sprint_4_2_3" class="com.dell.acs.upgrade.Sprint4UpgradeTask"
+          lazy-init="true">
+        <property name="scriptFile" value="classpath:/sql/sprint4_2_3.sql"/>
+    </bean>
+
+    <!-- Adding updating to the data file statistic information. -->
+    <bean id="sql_sprint_4_2_4" class="com.dell.acs.upgrade.Sprint4UpgradeTask"
+          lazy-init="true">
+        <property name="scriptFile" value="classpath:/sql/sprint4_2_4.sql"/>
+    </bean>
+</beans>

@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:security="http://www.springframework.org/schema/security"
+       default-init-method="init" default-destroy-method="destroy"
+       xsi:schemaLocation="http://www.springframework.org/schema/security http://www.springframework.org/schema/security/spring-security-3.1.xsd
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.1.xsd
+		http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-3.1.xsd">
+
+    <security:global-method-security secured-annotations="disabled" jsr250-annotations="disabled"
+                                     pre-post-annotations="disabled"/>
+
+
+    <!-- all scripts, images and static resources -->
+    <!-- unprotected pages -->
+    <security:http pattern="/favicon.ico" security="none"/>
+    <security:http pattern="/cdn/**" security="none"/>
+    <security:http pattern="/css/**" security="none"/>
+    <security:http pattern="/images/**" security="none"/>
+    <security:http pattern="/scripts/**" security="none"/>
+    <security:http pattern="/js/**" security="none"/>
+    <security:http pattern="/resources/**" security="none"/>
+    <security:http pattern="/crossdomain.xml" security="none"/>
+    <security:http pattern="/api/v2/rest/list.*" security="none"/>
+    <!-- ignore all the /tests that we can run within the app -->
+    <security:http pattern="/tests/**" security="none"/>
+
+
+    <!-- The AccessKeyFilter is not applied when the application property "app.devMode=true" -->
+    <!-- The custom filter should always fire after SECURITY_CONTEXT_FILTER, else the SecurityContext is reset. -->
+    <security:http pattern="/api/v2/rest/**" auto-config="false" entry-point-ref="portalAuthenticationEntryPoint">
+        <security:custom-filter ref="accesskeyFilter" after="SECURITY_CONTEXT_FILTER"/>
+    </security:http>
+
+    <security:http auto-config="false" entry-point-ref="portalAuthenticationEntryPoint">
+        <!-- Verify API Page-->
+        <security:intercept-url pattern="/verifyAPIKey.*" access="IS_AUTHENTICATED_ANONYMOUSLY"/>
+        <security:intercept-url pattern="/testAPIKey.*" access="IS_AUTHENTICATED_ANONYMOUSLY"/>
+        <security:intercept-url pattern="/generateAuthHeader.json" access="IS_AUTHENTICATED_ANONYMOUSLY"/>
+
+        <!-- we want the filter chain to execute for some requests.-->
+        <security:intercept-url pattern="/api/v1/rest/**" access="IS_AUTHENTICATED_ANONYMOUSLY"/>
+
+        <!-- Status page -->
+        <security:intercept-url pattern="/system-status.do" access="IS_AUTHENTICATED_ANONYMOUSLY"/>
+
+        <security:intercept-url pattern="/login.do" access="IS_AUTHENTICATED_ANONYMOUSLY"/>
+        <security:intercept-url pattern="/login-process.do" access="IS_AUTHENTICATED_ANONYMOUSLY"/>
+        <security:intercept-url pattern="/logout.do" access="ROLE_USER"/>
+
+        <security:intercept-url pattern="/fb-login.do" access="IS_AUTHENTICATED_ANONYMOUSLY"/>
+        <security:intercept-url pattern="/fb-login-process.do" access="IS_AUTHENTICATED_ANONYMOUSLY"/>
+        <!-- Restrict URLs based on role -->
+        <!-- secure pages -->
+        <security:intercept-url pattern="/admin/**" access="ROLE_ADMIN,ROLE_SUPERADMIN"/>
+        <security:intercept-url pattern="/adpublisher/**" access="ROLE_AD_PUBLISHER"/>
+
+        <!-- all users must be logged in -->
+        <security:intercept-url pattern="/**" access="ROLE_USER,ROLE_ADMIN, ROLE_SUPERADMIN"/>
+
+        <security:custom-filter ref="anonymousAuthenticationFilter" before="ANONYMOUS_FILTER"/>
+        <security:custom-filter ref="usernamePasswordAuthenticationFilter" position="FORM_LOGIN_FILTER"/>
+        <security:logout logout-url="/logout.do" logout-success-url="/login.do" invalidate-session="true"
+                         delete-cookies="JSESSIONID"/>
+
+        <security:http-basic/>
+    </security:http>
+
+    <bean id="accesskeyFilter" class="com.dell.acs.auth.AccessKeyFilter">
+    </bean>
+
+    <bean id="anonymousAuthenticationFilter"
+          class="org.springframework.security.web.authentication.AnonymousAuthenticationFilter">
+        <property name="key" value="AnonymousUser"/>
+        <property name="userAttribute" value="anonymous,ANONYMOUS,anonymous"/>
+    </bean>
+
+    <bean id="portalAuthenticationEntryPoint"
+          class="org.springframework.security.web.authentication.LoginUrlAuthenticationEntryPoint">
+        <property name="loginFormUrl" value="/login.do"/>
+        <property name="useForward" value="false"/>
+    </bean>
+
+    <!-- -->
+    <!-- == PORTAL - AuthenticationProcessingFilter == -->
+    <!-- -->
+    <bean id="usernamePasswordAuthenticationFilter"
+          class="com.dell.acs.spring.security.UsernamePasswordAuthenticationFilter">
+        <property name="authenticationManager" ref="authenticationManager"/>
+        <property name="authenticationSuccessHandler" ref="authenticationSuccessHandler"/>
+        <property name="authenticationFailureHandler" ref="portalExceptionMappingAuthenticationFailureHandler"/>
+        <property name="usernameParameter" value="username"/>
+        <property name="passwordParameter" value="password"/>
+        <property name="filterProcessesUrl" value="/login-process.do"/>
+        <property name="postOnly" value="true"/>
+    </bean>
+
+    <bean id="authenticationSuccessHandler"
+          class="com.dell.acs.spring.security.SavedRequestAwareAuthenticationSuccessHandler">
+        <property name="useRequestAttribute" value="true"/>
+    </bean>
+
+    <bean id="portalExceptionMappingAuthenticationFailureHandler"
+          class="org.springframework.security.web.authentication.ExceptionMappingAuthenticationFailureHandler">
+        <property name="defaultFailureUrl" value="/login.do?error=internalLoginError"/>
+        <property name="exceptionMappings" ref="portalExceptionMappings"/>
+    </bean>
+    <util:map id="portalExceptionMappings">
+        <entry key="org.springframework.security.access.AccessDeniedException"
+               value="/login.do?error=accessDenied"/>
+        <entry key="org.springframework.security.access.AuthorizationServiceException"
+               value="/login.do?error=unableToAuthorize"/>
+        <entry key="org.springframework.security.authentication.AccountExpiredException"
+               value="/account-expired.do"/>
+        <entry key="org.springframework.security.authentication.DisabledException"
+               value="/login.do?error=accountDisabled"/>
+        <entry key="org.springframework.security.authentication.LockedException" value="/login.do?error=locked"/>
+        <entry key="org.springframework.security.authentication.AuthenticationServiceException"
+               value="/login.do?error=loginSystemDown"/>
+        <entry key="org.springframework.security.authentication.BadCredentialsException"
+               value="/login.do?error=badCredentials"/>
+    </util:map>
+
+
+    <!-- -->
+    <!-- == AUTHENTICATION MANAGER & PROVIDERS == -->
+    <!-- -->
+    <bean id="authenticationManager" class="org.springframework.security.authentication.ProviderManager">
+        <property name="providers">
+            <list>
+                <ref bean="daoAuthenticationProvider"/>
+                <ref bean="anonymousAuthenticationProvider"/>
+            </list>
+        </property>
+    </bean>
+
+    <alias name="authenticationManager" alias="org.springframework.security.authenticationManager"/>
+
+
+    <bean id="daoAuthenticationProvider"
+          class="org.springframework.security.authentication.dao.DaoAuthenticationProvider">
+        <property name="userDetailsService" ref="dbUserDetailsService"/>
+        <property name="passwordEncoder" ref="md5PasswordEncoder"/>
+    </bean>
+    <bean id="md5PasswordEncoder" class="org.springframework.security.authentication.encoding.Md5PasswordEncoder"/>
+
+    <bean id="anonymousAuthenticationProvider"
+          class="org.springframework.security.authentication.AnonymousAuthenticationProvider">
+        <property name="key" value="AnonymousUser"/>
+    </bean>
+
+    <bean id="dbUserDetailsService" class="com.dell.acs.spring.security.DbUserDetailsService">
+        <property name="userManager" ref="userManagerImpl"/>
+    </bean>
+
+</beans>

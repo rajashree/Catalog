@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       default-init-method="init" default-destroy-method="destroy"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.1.xsd">
+
+
+    <!-- curation specific beans -->
+    <bean id="curationSourceHandlerStrategy" class="com.dell.acs.curation.CurationSourceHandlerStrategy">
+        <property name="curationSourceDataHandlers">
+            <map>
+                <entry key="rssFeedHandler" value-ref="rssFeedHandler"/>
+                <entry key="facebookPageStatusHandler" value-ref="facebookPageStatusHandler"/>
+                <entry key="facebookUserStatusHandler" value-ref="facebookUserStatusHandler"/>
+
+                <entry key="youtubeChannelFeedHandler" value-ref="youtubeChannelFeedHandler"/>
+                <entry key="youtubeKeywordFeedHandler" value-ref="youtubeKeywordFeedHandler"/>
+                <entry key="youtubeUserFeedHandler" value-ref="youtubeUserFeedHandler"/>
+
+                <entry key="twitterUserTweetsHandler" value-ref="twitterUserTweetsHandler"/>
+                <entry key="twitterUserListTweetsHandler" value-ref="twitterUserListTweetsHandler"/>
+                <entry key="twitterKeywordTweetsHandler" value-ref="twitterKeywordTweetsHandler"/>
+                <entry key="twitterHashtagTweetsHandler" value-ref="twitterHashtagTweetsHandler"/>
+            </map>
+        </property>
+    </bean>
+
+    <bean id="rssFeedHandler" class="com.dell.acs.curation.RSSFeedHandler" scope="prototype"/>
+
+    <bean id="facebookPageStatusHandler" class="com.dell.acs.curation.FacebookPageStatusHandler" scope="prototype"/>
+    <bean id="facebookUserStatusHandler" class="com.dell.acs.curation.FacebookUserStatusHandler" scope="prototype"/>
+
+    <bean id="youtubeChannelFeedHandler" class="com.dell.acs.curation.YoutubeChannelFeedHandler" scope="prototype"/>
+    <bean id="youtubeKeywordFeedHandler" class="com.dell.acs.curation.YoutubeKeywordFeedHandler" scope="prototype"/>
+    <bean id="youtubeUserFeedHandler" class="com.dell.acs.curation.YoutubeUserFeedHandler" scope="prototype"/>
+
+    <bean id="twitterUserTweetsHandler" class="com.dell.acs.curation.TwitterUserTweetsHandler" scope="prototype"/>
+    <bean id="twitterUserListTweetsHandler" class="com.dell.acs.curation.TwitterUserListTweetsHandler"
+          scope="prototype"/>
+    <bean id="twitterKeywordTweetsHandler" class="com.dell.acs.curation.TwitterKeywordTweetsHandler" scope="prototype"/>
+    <bean id="twitterHashtagTweetsHandler" class="com.dell.acs.curation.TwitterHashTagTweetsHandler" scope="prototype"/>
+
+    <bean id="curationSourceReader" class="com.dell.acs.curation.CurationSourceReader">
+        <property name="rowsToSkip" value="0"/>
+        <property name="maxRows" value="10000"/>
+    </bean>
+
+</beans>

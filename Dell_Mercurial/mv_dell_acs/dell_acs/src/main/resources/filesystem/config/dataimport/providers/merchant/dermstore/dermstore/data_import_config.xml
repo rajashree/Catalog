@@ -1,0 +1,44 @@
+<schema>
+
+    <table destinationTable="com.dell.acs.persistence.domain.Product" sourceTable="product" mapKeys="true">
+
+        <properties>
+            <property name="tableType" value="txt"/>
+            <property name="sheetIndex" value="0"/>
+            <property name="rowstoskip" value="1"/>
+            <property name="maxRows" value="100000"/>
+            <property name="isPathAbsolute" value="true"/>
+            <property name="mapKeys" value="true"/>
+            <property name="batchSize" value="100"/>
+            <property name="dataTypes.boolean.trueValues" value="new"/>
+            <!--<property name="disableBatchUpdate" value="true"/>-->
+
+            <!-- decimal value of the character -->
+            <property name="separator" value="9"/>
+        </properties>
+
+        <keys>
+            <key type="primary" destinationKey="id" sourceKey="ID,Item_URL"/>
+        </keys>
+
+        <column source="ID" destination="productId" type="string"/>
+        <column source="siteName" destination="siteName" type="string"/>
+        <column source="Title" destination="title" type="string" defaultValue="null"/>
+        <column source="Description" destination="description" type="string" defaultValue="null"/>
+        <column source="Condition" destination="newProduct" type="boolean" defaultValue="true"/>
+        <column source="Price" destination="price" type="float" defaultValue="0"/>
+        <column source="Availability" destination="availability" type="int"
+                transformerClass="com.dell.acs.dataimport.dermstore.AvailabilityColumnTransformer" defaultValue="1"/>
+        <column source="Item_URL" destination="url" type="string"/>
+        <column source="Image_URL" destination="image.srcImageURL" type="string"/>
+        <column source="Brand" destination="properties.brand" type="string" defaultValue="null"/>
+        <column source="Merchant_Product_Category" destination="properties.google_product_category" type="string"/>
+        <column source="Google_Product_Category" destination="category1" type="string" defaultValue="null"/>
+        <column source="Keywords" destination="properties.Keywords" type="string" defaultValue="null"/>
+        <column source="UPC" destination="properties.UPC" type="string" defaultValue="null"/>
+        <column source="Group_ID" destination="properties.Group ID" type="string" defaultValue="null"/>
+        <column source="Title,Price,UPC" destination="searchItemHash" type="string" />
+    </table>
+
+
+</schema>

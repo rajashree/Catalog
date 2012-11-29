@@ -1,0 +1,58 @@
+<schema>
+
+    <table destinationTable="com.dell.acs.persistence.domain.Product" sourceTable="product" mapKeys="true">
+
+        <properties>
+            <property name="tableType" value="csv"/>
+            <property name="sheetIndex" value="0"/>
+            <property name="rowstoskip" value="1"/>
+            <property name="maxRows" value="100000"/>
+            <property name="isPathAbsolute" value="true"/>
+            <property name="mapKeys" value="true"/>
+            <property name="batchSize" value="100"/>
+            <property name="dataTypes.boolean.trueValues" value="true,1,yes,new"/>
+            <!--<property name="disableBatchUpdate" value="true"/>-->
+
+            <!-- decimal value of the character -->
+            <property name="separator" value="9"/>
+        </properties>
+
+        <keys>
+            <key type="primary" destinationKey="id" sourceKey="id,title"/>
+        </keys>
+
+        <column source="id" destination="productId" type="string"/>
+        <column source="siteName" destination="siteName" type="string"/>
+        <column source="title" destination="title" type="string" defaultValue="null"/>
+        <column source="condition" destination="newProduct" type="boolean" defaultValue="true"/>
+        <column source="description" destination="description" type="string" defaultValue="null"/>
+        <column source="link" destination="url" type="string"/>
+        <column source="price" destination="price" type="float" defaultValue="0"/>
+        <column source="brand" destination="properties.brand" type="string"/>
+        <column source="manufacturer" destination="properties.manufacturer" type="string"/>
+        <column source="image_link" destination="image.srcImageURL" type="string"/>
+        <column source="product_type" destination="category1" type="string"/>
+        <column source="gtin" destination="properties.gtin" type="string"/>
+        <column source="color" destination="properties.color" type="string"/>
+        <column source="expiration_date" destination="properties.expiration_date" type="string"/>
+        <column source="featured_product" destination="properties.featured_product" type="string"/>
+        <column source="mpn" destination="sku" type="string"/>
+        <column source="online_only" destination="properties.online_only" type="string"/>
+        <column source="quantity" destination="properties.quantity" type="string"/>
+        <column source="shipping" destination="shippingPromotion" type="string" defaultValue="null"/>
+        <column source="size" destination="properties.size" type="string"/>
+        <column source="availability" destination="availability" type="int"
+                transformerClass="com.dell.acs.dataimport.urbandecay.AvailabilityColumnTransformer" defaultValue="1"/>
+        <column source="width" destination="properties.width" type="string"/>
+        <column source="year" destination="properties.year" type="string"/>
+        <column source="product_review_average" destination="properties.product_review_average" type="string"/>
+        <column source="product_review_count" destination="properties.product_review_count" type="string"/>
+        <column source="google_product_category" destination="properties.google_product_category" type="string"/>
+        <column source="c:keywords:string" destination="properties.c:keywords:string" type="string"/>
+        <column source="adwords_grouping" destination="properties.adwords_grouping" type="string"/>
+        <column source="adwords_redirect" destination="properties.adwords_redirect" type="string"/>
+        <column source="title,price,mpn" destination="searchItemHash" type="string" />
+    </table>
+
+
+</schema>

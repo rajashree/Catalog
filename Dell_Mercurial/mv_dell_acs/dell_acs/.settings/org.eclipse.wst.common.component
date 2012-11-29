@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="dell_acs">
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/java"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/resources"/>
+        <wb-resource deploy-path="/" source-path="/src/main/webapp"/>
+        <wb-resource deploy-path="/" source-path="/sn_webapp_support"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/test/java"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/dell_core_resource"/>
+        <dependent-module archiveName="texttemplate.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/texttemplate/texttemplate">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="sn_core.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/sn_core/sn_core">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="cache.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/cache/cache">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="sn_webapp_support.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/sn_webapp_support/sn_webapp_support">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="dataimport.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/dataimport/dataimport">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="i18n.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/i18n/i18n">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="event.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/event/event">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="config.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/config/config">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="dell_core.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/dell_core/dell_core">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <property name="context-root" value="dell_acs"/>
+        <property name="java-output-path" value="/dell_acs/build/classes"/>
+    </wb-module>
+</project-modules>

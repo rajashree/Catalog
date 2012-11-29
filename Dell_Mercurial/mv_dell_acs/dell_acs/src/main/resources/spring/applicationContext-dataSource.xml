@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       default-init-method="init" default-destroy-method="destroy"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.1.xsd">
+
+    <!-- MAIN APPLICATION DATASOURCE -->
+    <bean id="dataSource" parent="__baseDS">
+        <!-- we have data import processes that run for 30 minutes!! -->
+        <property name="unreturnedConnectionTimeout" value="1800"/>
+        <!-- sfisk - CS-380 -->
+        <property name="jdbcUrl" value="jdbc:jtds:sqlserver://${datasource.hostname|127.0.0.1}:${datasource.portNumber|1433}/${datasource.database|dell_acs};sendStringParametersAsUnicode=true"/>
+        <property name="user" value="${datasource.username|root}"/>
+        <property name="password" value="${datasource.password|}"/>
+        <property name="driverClass" value="net.sourceforge.jtds.jdbc.Driver"/>
+    </bean>
+
+</beans>

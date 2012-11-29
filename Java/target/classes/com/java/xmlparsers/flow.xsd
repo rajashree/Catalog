@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+<xs:simpleType name="resname">
+ <xs:restriction base="xs:string">
+  <xs:pattern value="([a-z])+"/>
+ </xs:restriction>
+</xs:simpleType>
+
+<xs:element name="Flowers">
+ <xs:complexType>
+  <xs:sequence>
+    <xs:element name="Flower" minOccurs="1" maxOccurs="unbounded">
+    <xs:complexType>
+     <xs:sequence>
+      <xs:element name="name" type="resname" minOccurs="1"/>
+      <xs:element name="color" type="xs:string" minOccurs="1"/>
+     </xs:sequence>
+     <xs:attribute name="national" type="xs:string" use="required"/>
+     </xs:complexType>
+    </xs:element>
+  </xs:sequence>
+  </xs:complexType>
+  </xs:element>
+  </xs:schema>

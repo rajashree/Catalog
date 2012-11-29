@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/meteriffic/!svn/ver/2/trunk/WebContent/WEB-INF/decorators
+END
+user.ftl
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/meteriffic/!svn/ver/2/trunk/WebContent/WEB-INF/decorators/user.ftl
+END
+withalertuser.ftl
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/meteriffic/!svn/ver/2/trunk/WebContent/WEB-INF/decorators/withalertuser.ftl
+END
+default.ftl
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/meteriffic/!svn/ver/2/trunk/WebContent/WEB-INF/decorators/default.ftl
+END
+admin.ftl
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/meteriffic/!svn/ver/2/trunk/WebContent/WEB-INF/decorators/admin.ftl
+END

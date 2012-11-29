@@ -1,0 +1,121 @@
+/*
+Plugin Name: Dellacs 
+Description: Used to style the Dell acs.
+#before css name , it is an id of some html element
+*/
+
+#dellacs_myfbframe{
+	border: none;
+	width:1px;
+	height:1px;
+	scrolling: none;
+}
+.makeMeDraggable { width: 100px; height: 100px; background: green; }
+.dellacs_myfdiv { border-bottom:5px solid black; }
+.dellacs_bordersolid { border-bottom:1px solid black; }
+.dellacs_mtop15{margin-top:15px;}
+.cboth{clear:both;}
+.dellacs_savebanner_div{margin: 24px 0pt 0pt 10px;}
+.dellacs_save_btnc{background-color:#CFECEC;}
+.dellacs_post_dropdown{width:170px;}
+.dellacs_cat_td{width:1%;height:8px;}
+.dellacs_instruction{
+	margin:3px 0px 0px 6px;width:96%;
+	font-size: 12;
+}
+#dellacs_pagename{
+	border:1px solid black;
+	height:400px;
+	float: left;
+}
+
+#dellacs_adtype{
+	border:1px solid black;
+	height:401px;
+    margin-top:44px;
+}
+#dellacs_ad_main{
+	margin-top:15px;
+	float:left;
+	width:96%
+}
+#dellacs_ad_one{
+	float:left;width:310px;
+}
+#dellacs_ad_one .dellacs_para1{
+	margin-bottom:20px;
+	font-weight:bold;
+}
+#dellacs_ad_one .dellacs_para2{
+font-weight:normal;
+}
+#dellacs_ad_two{
+float:left;width:310px;margin-left:20px;
+}
+.b_950_90{
+	background-color:#FAAFBA; cursor:pointer;
+	width:274px; height:20px;
+	margin:8px;  border: 1px solid #6D7B8D;	   
+}
+.b_950_90 p{margin-top: 3px; padding-left: 93px;}
+.b_728_90{
+	background-color:#ECD672; cursor:pointer;
+	width:253px; height:20px;
+	margin:8px;  border: 1px solid #6D7B8D;	   
+}
+.b_728_90 p{margin-top:3px; padding-left:80px;}
+.b_728_315{
+	background-color:#FFF8C6; cursor:pointer;
+	width:253px; height:28px;
+	margin:8px;  border: 1px solid #6D7B8D;	   
+}
+.b_728_315 p{margin-top:6px; padding-left:56px;}
+.b_600_250{
+	background-color:#C8B560; cursor:pointer;
+	width:178px; height:30px; float:left;
+	margin:8px;  border: 1px solid #6D7B8D;	   
+}
+.b_600_250 p{margin-top:4px; padding-left:24px;}
+.b_300_250{
+	background-color:#FFE87C; cursor:pointer;
+	width:68px; height:35px;float:left;
+	margin:8px;  border: 1px solid #6D7B8D;	   
+}
+.b_300_250 p{margin-top:7px; padding-left:4px;}
+.bfs_300_250{
+	background-color:#FBB917; cursor:pointer;
+	width:68px; height:35px; float:left;
+	margin:8px;  border: 1px solid #6D7B8D;	   
+}
+.bfs_300_250 p{margin-top:3px; padding-left:2px;}
+.b_160_600{
+	background-color:#FF66FF; cursor:pointer;
+	width:38px; height:125px; float:left;
+	margin:8px;  border: 1px solid #6D7B8D;	   
+}
+.b_160_600 p{margin-top:3px; padding-left:8px;}
+.bsk_160_600{
+	background-color:#FFCCCC; cursor:pointer;
+	width:38px; height:125px; float:left;
+	margin:8px;  border: 1px solid #6D7B8D;	   
+}
+.bsk_160_600 p{margin-top:5px; padding-left:2px;}
+.dellacs_add_cat{ border: 1px solid; padding:6px; width: 40%; margin-bottom:10px; }
+.dellacs_phead{padding-left:100px;font-weight: bold;font-size: 12px; background-color: #eeeeee;text-align: left;}
+#content_bottom{
+	padding:5px;line-height:9px;position: relative; 
+	top: 0px; width:291px; background-color: #ffffff;text-align: justify; 
+	min-height: 50px;font-size: 7px;
+}
+#content_middle{
+	padding:5px;line-height:9px;position: relative; top: 0px; width:291px;
+	 background-color: #ffffff;text-align: justify; min-height: 20px;font-size: 7px;
+}
+#content_middlebottom{
+	padding:5px;line-height:9px;position: relative; top: 0px; width:291px; 
+	background-color: #ffffff;text-align: justify; min-height: 50px;font-size: 7px;
+}
+#content_top{
+	padding:5px;line-height:9px;position:relative;top:0px; width:291px; 
+	background-color:#ffffff;text-align:justify;font-size:7px;min-height:45px;
+}

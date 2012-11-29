@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tasks>
+    <task group="core" version="1.01" beanName="seedDataInjector_1_01"/>
+    <task group="cleanup" version="1.01" beanName="cleanup_1_01_executeSprint2Scripts"/>
+    <task group="cleanup" version="1.03" beanName="cleanup_1_03_computeProductWeights"/>
+    <task group="cleanup" version="1.04" beanName="cleanup_1_04_dataImportCacheColumnSizeFix"/>
+    <task group="core" version="1.02" beanName="sprint4_0"/>
+    <task group="core" version="1.03" beanName="sprint4_0_1"/>
+    <task group="sql" version="1.0402" beanName="sql_sprint_4_0_2"/>
+    <task group="sql" version="1.0403" beanName="sql_sprint_4_0_3"/>
+    <task group="sql" version="1.0404" beanName="sql_sprint_4_0_4"/>
+    <task group="sql" version="1.0405" beanName="sql_sprint_4_0_5"/>
+
+
+    <task group="sql" version="1.0406" beanName="sql_sprint_4_0_6"/>
+    <task group="core" version="1.04" beanName="sprint4_0_2"/>
+    <task group="sql" version="1.0408" beanName="sql_sprint_4_0_8"/>
+    <task group="sql" version="1.0410" beanName="sql_sprint_4_1_0"/>
+    <task group="sql" version="1.0411" beanName="sql_sprint_4_1_1"/>
+    <task group="sql" version="1.0412" beanName="sql_sprint_4_1_2"/>
+    <!-- The entry for sql_sprint_4_1_3 was missing. Included the same for the upgrade -->
+    <task group="sql" version="1.0413" beanName="sql_sprint_4_1_3"/>
+    <task group="sql" version="1.0414" beanName="sql_sprint_4_1_4"/>
+    <!-- The entry for sql_sprint_4_1_5 was missing. Included the same for the upgrade -->
+    <task group="sql" version="1.0415" beanName="sql_sprint_4_1_5"/>
+    <task group="sql" version="1.0416" beanName="sql_sprint_4_1_6"/>
+    <task group="sql" version="1.0417" beanName="sql_sprint_4_1_7"/>
+    <task group="sql" version="1.0418" beanName="sql_sprint_4_1_8"/>
+    <task group="sql" version="1.0419" beanName="sql_sprint_4_1_9"/>
+    <task group="sql" version="1.0420" beanName="sql_sprint_4_2_0"/>
+    <task group="sql" version="1.0421" beanName="sql_sprint_4_2_1"/>
+</tasks>

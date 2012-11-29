@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema>
+
+    <table destinationTable="com.dell.acs.persistence.domain.Product" sourceTable="product" mapKeys="true">
+
+        <properties>
+            <property name="tableType" value="csv"/>
+            <property name="sheetIndex" value="0"/>
+            <property name="rowstoskip" value="1"/>
+            <property name="maxRows" value="1000000"/>
+            <property name="isPathAbsolute" value="true"/>
+            <property name="mapKeys" value="true"/>
+            <property name="batchSize" value="100"/>
+            <!--<property name="disableBatchUpdate" value="true"/>-->
+
+            <!-- decimal value of the character -->
+            <property name="separator" value="9"/>
+        </properties>
+
+        <keys>
+            <key type="primary" destinationKey="id" sourceKey="Retailer_Name,Retailer_SKU"/>
+        </keys>
+
+
+        <!--// ID SiteName ProductID Category1 Category2 Category3 Category4 Category5 Category6-->
+        <!--// URL SKU WebPartNumber Title ClearanceTag SaleTag PriceCutTag TempPriceCutTag NewProduct-->
+        <!--// BestSeller Description Stars Reviews ReviewsLink ListPrice HasListPriceRange Price-->
+        <!--// HasPriceRange HasVariations Estimated Ship Date FacebookLikes PlusOneGoogle Tweets-->
+        <!--// Promotional ShippingPromotion BuyLink FlashLink Specifications UpdateDateTime-->
+
+
+        <column source="Retailer_Name" destination="siteName" type="string"/>
+        <column source="Retailer_SKU" destination="productId" type="string"/>
+
+        <column source="Mfr_Name" destination="properties.Mfr_Name" type="string"/>
+        <column source="Mfr_Part_No" destination="webPartNumber" type="string"/>
+        <column source="UPC_EAN" destination="properties.UPC_EAN" type="string"/>
+        <column source="Group_ID" destination="properties.Group_ID" type="string"/>
+
+
+        <column source="Short_Desc" destination="title" type="string"/>
+        <column source="Long_Desc" destination="description" type="string"/>
+        <column source="Buy_URL" destination="buyLink" type="string"/>
+        <column source="Image_URL" destination="image.srcImageURL" type="string"/>
+
+        <column source="Keywords" destination="properties.Keywords" type="string"/>
+        <column source="Condition" destination="newProduct" type="boolean" defaultValue="false"/>
+        <column source="Currency" destination="properties.Currency" type="string"/>
+        <column source="Regular_Price" destination="listPrice" type="float" defaultValue="0"/>
+        <column source="Sale_Price" destination="price" type="float" defaultValue="0"/>
+        <column source="Availability" destination="availability" type="int"
+                transformerClass="com.dell.acs.dataimport.golfsmith.AvailabilityColumnTransformer"/>
+
+
+        <column source="Promo_Text" destination="promotional" type="string"/>
+        <column source="Ship_Promo_Text" destination="shippingPromotion" type="string"/>
+        <column source="Category_Hierarchy" destination="properties.Category_Hierarchy" type="string"/>
+
+        <!-- Ignored Properties persisted  for future purpose -->
+        <column source="Category" destination="properties.Category" type="string"/>
+        <column source="Primary_Product" destination="properties.Primary_Product" type="string"/>
+        <column source="Variation_Names" destination="properties.Variation_Names" type="string"/>
+        <column source="Variation_Values" destination="properties.Variation_Values" type="string"/>
+        <column source="SKU_Name" destination="properties.SKU_Name" type="string"/>
+        <column source="Qty_In_Stock" destination="properties.Qty_In_Stock" type="string"/>
+        <column source="Shipping_Cost" destination="properties.Shipping_Cost" type="string"/>
+        <column source="Shipping_Status" destination="properties.Shipping_Status" type="string"/>
+        <column source="Live_Date" destination="properties.Live_Date" type="string"/>
+        <column source="Short_Desc,Sale_Price,SKU_Name" destination="searchItemHash" type="string" />
+
+
+        <!--<column source="Category_Hierarchy" destination="category1" type="string"/>-->
+        <!-- <column source="Category_Hierarchy" destination="category2" type="string"/>-->
+        <!--<column source="Category_Hierarchy" destination="category3" type="string"/>-->
+        <!--<column source="Category_Hierarchy" destination="category4" type="string"/>-->
+        <!--<column source="Buy_URL" destination="buyLink" type="string"/>-->
+        <!--<column source="Ship_Promo_Text" destination="shippingPromotion" type="string"/>-->
+        <!--<column source="Category_Hierarchy" destination="category5" type="string"/>-->
+        <!--<column source="Category_Hierarchy" destination="category6" type="string"/>-->
+        <!--<column source="Retailer_SKU" destination="sku" type="string"/>-->
+        <!--<column source="Sale_Price" destination="price" type="float" defaultValue="0"/>-->
+        <!--<column source="Mfr_Part_No" destination="webPartNumber" type="string"/>-->
+        <!--<column source="Promo_Text" destination="promotional" type="string"/>-->
+        <!--<column source="Long_Desc" destination="description" type="string"/>-->
+        <!--<column source=" Short_Desc" destination="title" type="string"/>-->
+        <!--<column source="Regular_Price" destination="listPrice" type="float" defaultValue="0"/>-->
+        <!--<column source="Condition" destination="newProduct" type="boolean" defaultValue="false"/>-->
+        <!--<column source="__UNDEFINED__" destination="url" type="string"/>-->
+        <!--<column source="__UNDEFINED__" destination="productId" type="string"/>-->
+        <!--<column source="__UNDEFINED__" destination="clearanceTag" type="boolean" defaultValue="false"/>-->
+        <!--<column source="__UNDEFINED__" destination="saleTag" type="boolean" defaultValue="false"/>-->
+        <!--<column source="__UNDEFINED__" destination="priceCutTag" type="boolean" defaultValue="false"/>-->
+        <!--<column source="__UNDEFINED__" destination="tempPriceCutTag" type="boolean" defaultValue="false"/>-->
+        <!--<column source="__UNDEFINED__" destination="bestSeller" type="boolean" defaultValue="false"/>-->
+        <!--<column source="__UNDEFINED__" destination="stars" type="float" defaultValue="0"/>-->
+        <!--<column source="__UNDEFINED__" destination="reviews" type="int" defaultValue="0"/>-->
+        <!--<column source="__UNDEFINED__" destination="reviewsLink" type="string"/>-->
+        <!--<column source="__UNDEFINED__" destination="__UNDEFINED__" type="boolean" defaultValue="false"/>-->
+        <!--<column source="__UNDEFINED__" destination="hasPriceRange" type="boolean" defaultValue="false"/>-->
+        <!--<column source="__UNDEFINED__" destination="hasVariations" type="boolean" defaultValue="false"/>-->
+        <!--<column source="__UNDEFINED__" destination="estimatedShipDate" type="string"/>-->
+        <!--<column source="__UNDEFINED__" destination="facebookLikes" type="int" defaultValue="0"/>-->
+        <!--<column source="__UNDEFINED__" destination="plusOneGoogle" type="int" defaultValue="0"/>-->
+        <!--<column source="__UNDEFINED__" destination="tweets" type="int" defaultValue="0"/>-->
+        <!--<column source="__UNDEFINED__" destination="flashLink" type="string"/>-->
+        <!--<column source="__UNDEFINED__" destination="specifications" type="string"/>-->
+        <!--<column source="__UNDEFINED__" destination="updateDateTime" type="datetime" defaultValue="TIMESTAMP"-->
+        <!--transformerClass="com.dell.acs.managers.dataimport.DateColumnTransformer"/>-->
+        <!--<column source="Availability" destination="availability" type="int" transformerClass="com.dell.acs.dataimport.ficstar.AvailabilityColumnTransformer"/>-->
+    </table>
+
+
+    <!--
+    e================-mapping done================
+    Retailer_Name	- Product -> SiteName
+    Retailer_SKU	- Product -> SKU
+    Mfr_Part_No	- Product -> WebPartNumber
+    Short_Desc	- Product -> Title
+    Long_Desc	- Product -> Description
+    Buy_URL	 - Product -> Buy Link
+    Image_URL	- Product Images -> Image URL
+    Condition	- Product -> New product (Boolean)
+    Regular_Price	- Product -> List price
+    Sale_Price	- Product -> Price
+    Availability	- Product -> Availability
+    Promo_Text	- Product -> promotional
+    Ship_Promo_Text	- Product -> shipping promotion
+    Category_Hierarchy - 1,2,3 ..n -> category
+
+    e================checkinge================
+    Category	- Product -> Category Name
+    Currency	- USD
+
+    ===-process at the time of insertione======
+    Mfr_Name	- Product -> Extended Property
+    Group_ID	- Product -> Extended Property
+    Keywords	- Product -> Extended Property
+
+
+    e================not founde================
+    UPC_EAN	 -
+    Variation_Names	-
+    Variation_Values -
+
+    e================ignoree================
+    Primary_Product	- Ignore
+    SKU_Name	- Ignore
+    Qty_In_Stock	- Ignore
+    Shipping_Cost	- Ignore
+    Shipping_Status	- Ignore
+    Live_Date	- Ignore
+    -->
+
+</schema>

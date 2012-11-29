@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE sqlMap PUBLIC "-//iBATIS.com//DTD SQL Map 2.0//EN" "http://www.ibatis.com/dtd/sql-map-2.dtd">
+
+<sqlMap>
+
+	<typeAlias alias="property" type="com.sourcen.microsite.model.Property" />
+	<cacheModel id="property-cache" type="MEMORY">
+		<flushInterval hours="24" />
+		<flushOnExecute statement="saveProperty" />
+		<flushOnExecute statement="updateProperty" />
+		<flushOnExecute statement="deleteProperty" />
+		<property name="reference-type" value="SOFT" />
+	</cacheModel>
+	<resultMap id="property" class="property">
+		<result property="key" column="pkey" />
+		<result property="value" column="pvalue" />
+	</resultMap>
+
+	<select id="getProperty" resultMap="property"
+		cacheModel="property-cache" parameterClass="String">
+		select * from property as property where property.pkey = #key#
+	</select>
+	<insert id="saveProperty" parameterClass="property" >
+		insert into property (pkey,pvalue) values (#key#, #value#)
+	</insert>
+	<update id="updateProperty" parameterClass="property" >
+		update property set pvalue = #value# where pkey = #key#
+	</update>
+	<select id="getAllProperty" resultMap="property">
+		select * from property as property
+	</select>
+	<delete id="deleteProperty" parameterClass="String"  >
+		delete from property where pkey = #key#
+	</delete>
+
+
+</sqlMap>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

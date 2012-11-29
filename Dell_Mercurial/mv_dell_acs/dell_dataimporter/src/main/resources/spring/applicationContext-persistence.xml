@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:util="http://www.springframework.org/schema/util"
+       default-init-method="init" default-destroy-method="destroy"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.1.xsd
+
+	  http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-2.0.xsd">
+
+    <util:list id="hibernatePackagesToScan">
+        <value>com.sourcen.core.persistence.domain.impl.hibernate</value>
+        <value>com.dell.acs.persistence.domain</value>
+    </util:list>
+
+    <context:component-scan base-package="com.dell.acs.persistence.repository.impl.hibernate">
+        <context:include-filter type="annotation" expression="org.springframework.stereotype.Repository"/>
+        <!--<context:exclude-filter type="custom" expression="com.dell.acs.persistence.repository.impl.hibernate.DataFileRepositoryImpl"  />-->
+    </context:component-scan>
+
+    <!--<context:component-scan base-package="com.dell.acs.dataimport.persistence.repository.impl.hibernate">-->
+        <!--<context:include-filter type="annotation" expression="org.springframework.stereotype.Repository"/>-->
+    <!--</context:component-scan>-->
+
+</beans>

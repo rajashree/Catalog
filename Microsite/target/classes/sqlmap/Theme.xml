@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE sqlMap PUBLIC "-//iBATIS.com//DTD SQL Map 2.0//EN" "http://www.ibatis.com/dtd/sql-map-2.dtd">
+
+<sqlMap>
+
+
+	<typeAlias alias="theme" type="com.sourcen.microsite.model.Theme" />
+
+	<resultMap id="theme" class="theme">
+		<result property="id" column="tid" />
+		<result property="name" column="name" />
+		<result property="description" column="description" />
+		<result property="created" column="created" />
+		<result property="modified" column="modified" />
+	</resultMap>
+
+	<select id="getTheme" resultMap="theme"
+		parameterClass="String">
+		SELECT * FROM themes WHERE NAME = #name#
+	</select>
+	<select id="getAllThemes" resultMap="theme"
+		parameterClass="String">
+		SELECT * FROM themes 
+	</select>
+	
+	<insert id="saveTheme"  	parameterClass="theme">
+		 INSERT INTO themes (NAME,DESCRIPTION,CREATED,MODIFIED)    VALUES (#name#, #description#,now(),now())
+	   <selectKey resultClass="int" keyProperty="id">
+	      select last_insert_id() as id
+	    </selectKey>
+	</insert>
+	<update id="updateTheme"  	parameterClass="theme">
+		UPDATE themes set NAME=#name#,DESCRIPTION=#description# where TID=#id#
+	</update>
+	<delete id="deleteTheme"  	parameterClass="String">
+		DELETE from themes where name=#name#
+	</delete>
+	 
+	
+
+</sqlMap>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

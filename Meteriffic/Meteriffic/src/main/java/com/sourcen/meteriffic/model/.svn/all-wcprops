@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/meteriffic/!svn/ver/2/trunk/src/com/sourcen/meteriffic/model
+END
+Product.java
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/meteriffic/!svn/ver/2/trunk/src/com/sourcen/meteriffic/model/Product.java
+END
+Role.java
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/meteriffic/!svn/ver/2/trunk/src/com/sourcen/meteriffic/model/Role.java
+END
+Property.java
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/meteriffic/!svn/ver/2/trunk/src/com/sourcen/meteriffic/model/Property.java
+END
+Search.java
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/meteriffic/!svn/ver/2/trunk/src/com/sourcen/meteriffic/model/Search.java
+END
+EmailMessage.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/meteriffic/!svn/ver/2/trunk/src/com/sourcen/meteriffic/model/EmailMessage.java
+END
+User.java
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/meteriffic/!svn/ver/2/trunk/src/com/sourcen/meteriffic/model/User.java
+END

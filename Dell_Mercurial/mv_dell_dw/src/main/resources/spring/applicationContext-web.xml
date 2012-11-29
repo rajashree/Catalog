@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--suppress SpringModelInspection -->
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       default-init-method="init" default-destroy-method="destroy"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.1.xsd   http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+
+    <context:component-scan base-package="com.dell.dw.web.controller"
+                            annotation-config="true"
+                            scope-resolver="org.springframework.context.annotation.AnnotationScopeMetadataResolver">
+        <context:include-filter type="annotation" expression="org.springframework.stereotype.Controller"/>
+    </context:component-scan>
+
+    <context:component-scan base-package="com.dell.dw.web.ws.v1.rest"
+                            annotation-config="true"
+                            scope-resolver="org.springframework.context.annotation.AnnotationScopeMetadataResolver">
+        <context:include-filter type="annotation" expression="javax.jws.WebService"/>
+    </context:component-scan>
+
+     <!-- include some core controllers as helpers -->
+    <context:component-scan base-package="com.sourcen.core.web.controller.admin"
+                            annotation-config="true"
+                            scope-resolver="org.springframework.context.annotation.AnnotationScopeMetadataResolver">
+        <context:include-filter type="annotation" expression="org.springframework.stereotype.Controller"/>
+    </context:component-scan>
+</beans>

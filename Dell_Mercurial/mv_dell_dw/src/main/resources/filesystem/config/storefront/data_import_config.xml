@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema>
+
+    <table destinationTable="com.dell.dw.persistence.domain.Store" sourceTable="store" mapKeys="true">
+
+        <properties>
+            <property name="tableType" value="csv"/>
+            <property name="sheetIndex" value="0"/>
+            <property name="rowstoskip" value="1"/>
+            <property name="maxRows" value="1000000"/>
+            <property name="isPathAbsolute" value="true"/>
+            <property name="mapKeys" value="true"/>
+            <property name="batchSize" value="100"/>
+        </properties>
+
+        <keys>
+            <key type="primary" destinationKey="id" sourceKey="storeId"/>
+        </keys>
+
+        <column source="StoreID" destination="storeId" type="string"/>
+        <column source="StoreName" destination="storeName" type="string"/>
+        <column source="Merchantid" destination="merchantId" type="string"/>
+        <column source="MerchantName" destination="merchantName" type="string"/>
+    </table>
+
+
+    <table destinationTable="com.dell.dw.persistence.domain.SFOrder" sourceTable="sfOrder" mapKeys="true">
+
+        <properties>
+            <property name="tableType" value="csv"/>
+            <property name="sheetIndex" value="0"/>
+            <property name="rowstoskip" value="1"/>
+            <property name="maxRows" value="1000000"/>
+            <property name="isPathAbsolute" value="true"/>
+            <property name="mapKeys" value="true"/>
+            <property name="batchSize" value="100"/>
+        </properties>
+
+        <keys>
+            <key type="primary" destinationKey="id" sourceKey="orderId"/>
+        </keys>
+
+        <column source="StoreId" destination="store"  type="long" lookupTable="com.dell.dw.persistence.domain.Store"/>
+
+        <column source="StoreOwnerId" destination="storeOwnerId" type="string"/>
+        <column source="StoreOwnerName" destination="storeOwnerName" type="string"/>
+
+        <column source="Id" destination="orderId" type="string"/>
+        <column source="MerchantOrderId" destination="merchantOrderId" type="string"/>
+        <column source="PurchaseDate" destination="purchaseDate" type="date" transformerClass="com.dell.dw.managers.dataimport.transformer.DateColumnTransformer"/>
+        <column source="ClickThroughDate" destination="clickThroughDate" type="date" transformerClass="com.dell.dw.managers.dataimport.transformer.DateColumnTransformer"/>
+        <column source="Status" destination="status" type="string"/>
+        <column source="CancelOrderReason" destination="cancelOrderReason" type="string"/>
+        <column source="IsOrderCancelled" destination="orderCancelled" type="boolean"/>
+        <column source="CancelStatus" destination="cancelStatus" type="string"/>
+        <column source="OriginalSaleAmount" destination="originalSaleAmount" type="double"/>
+        <column source="OriginalCommissionAmount" destination="originalCommissionAmount" type="double"/>
+        <column source="FinalSaleAmount" destination="finalSaleAmount" type="double"/>
+        <column source="FinalCommissionAmount" destination="finalCommissionAmount" type="double"/>
+        <column source="TotalDiscountAmountToDate" destination="totalDiscountAmountToDate" type="double"/>
+        <column source="TotalCancellationAmountToDate" destination="totalCancellationAmountToDate" type="double"/>
+        <column source="WeightedCommission" destination="weightedCommission" type="double"/>
+        <column source="ReconiliationDate" destination="reconiliationDate" type="date" transformerClass="com.dell.dw.managers.dataimport.transformer.DateColumnTransformer"/>
+    </table>
+    <table destinationTable="com.dell.dw.persistence.domain.SFOrderItem" sourceTable="sfOrderItem" mapKeys="true">
+
+        <properties>
+            <property name="tableType" value="csv"/>
+            <property name="sheetIndex" value="0"/>
+            <property name="rowstoskip" value="1"/>
+            <property name="maxRows" value="1000000"/>
+            <property name="isPathAbsolute" value="true"/>
+            <property name="mapKeys" value="true"/>
+            <property name="batchSize" value="100"/>
+        </properties>
+
+        <keys>
+            <key type="primary" destinationKey="id" sourceKey="orderItemId"/>
+        </keys>
+
+        <column source="OrderID" destination="order" type="long" lookupTable="com.dell.dw.persistence.domain.SFOrder"/>
+
+        <column source="Id" destination="orderItemId" type="string"/>
+        <column source="ItemImageSlug" destination="itemImageSlug" type="string"/>
+        <column source="ItemNumber" destination="itemNumber" type="string"/>
+        <column source="UnitPrice" destination="unitPrice" type="double"/>
+        <column source="UnitDiscount" destination="unitDiscount" type="double"/>
+        <column source="CommissionAmount" destination="commissionAmount" type="double"/>
+        <column source="Quantity" destination="quantity" type="int"/>
+        <column source="CancelReason" destination="cancelReason" type="string"/>
+        <column source="IsOrderItemCancelled" destination="orderItemCancelled" type="boolean"/>
+        <column source="CancelQuantity" destination="cancelQuantity" type="int"/>
+        <column source="Sku" destination="sku" type="string"/>
+        <column source="Category" destination="category" type="string"/>
+
+
+    </table>
+</schema>

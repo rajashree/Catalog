@@ -1,0 +1,54 @@
+For Overall selected features - Buzz data
+
+http://demo.serendio.com/usvoomsrv/flex/topProductBuzz?post_type=blog,review,forum,microblog&end_date=2009-06-15&category_id=14&is_curated=true&product_ids=1162,1176,1186,1208,1211,1218,1231,1243,1258,1266,1268,1275,1283,1292,1323&tg_random=Mon Jun 15 12%3A39%3A37 GMT%2B0530 2009&feature_ids=644,686,664,660,681&sentiment_ids=1,2&start_date=2009-03-17
+
+For Overall selected features - Sentiment data
+
+http://demo.serendio.com/usvoomsrv/flex/topProductSentiment?post_type=blog,review,forum,microblog&end_date=2009-06-15&category_id=14&is_curated=true&product_ids=1162,1176,1186,1208,1211,1218,1231,1243,1258,1266,1268,1275,1283,1292,1323&tg_random=Mon Jun 15 12%3A39%3A37 GMT%2B0530 2009&feature_ids=644,686,664,660,681&sentiment_ids=1,2&start_date=2009-03-17
+
+
+For each of  selected features - Buzz data
+
+http://demo.serendio.com/usvoomsrv/flex/getBuzzCount?post_type=blog,review,forum,microblog&end_date=2009-06-15&category_id=14&is_curated=true&product_ids=1162,1176,1186,1208,1211,1218,1231,1243,1258,1266,1268,1275,1283,1292,1323&tg_random=Mon Jun 15 12%3A39%3A37 GMT%2B0530 2009&feature_ids=644,686,664,660,681&sentiment_ids=1,2&start_date=2009-03-17
+
+post_type=blog,review,forum,microblog&
+end_date=2009-06-15&
+category_id=14&
+is_curated=true&
+product_ids=1162,1176,1186,1208,1211,1218,1231,1243,1258,1266,1268,1275,1283,1292,1323&
+tg_random=Mon Jun 15 12%3A39%3A37 GMT%2B0530 2009&
+feature_ids=644,686,664,660,681&
+sentiment_ids=1,2&
+start_date=2009-03-17
+
+For each of selected features - Sentiment data
+
+http://demo.serendio.com/usvoomsrv/flex/getSentimentCount?post_type=blog,review,forum,microblog&end_date=2009-06-15&category_id=14&is_curated=true&product_ids=1162,1176,1186,1208,1211,1218,1231,1243,1258,1266,1268,1275,1283,1292,1323&tg_random=Mon Jun 15 12%3A39%3A37 GMT%2B0530 2009&feature_ids=644,686,664,660,681&sentiment_ids=1,2&start_date=2009-03-17
+
+
+Params passed.
+
+http://demo.serendio.com/usvoomsrv/flex/topProductSentiment?
+
+post_type=blog,review,forum,microblog&
+end_date=2009-06-15&
+category_id=14&
+is_curated=true&
+product_ids=1162,1176,1186,1208,1211,1218,1231,1243,1258,1266,1268,1275,1283,1292,1323&
+tg_random=Mon Jun 15 12%3A39%3A37 GMT%2B0530 2009&
+feature_ids=644,686,664,660,681&
+sentiment_ids=1,2
+&start_date=2009-03-17
+
+http://demo.serendio.com/usvoomsrv/flex/getSentimentCount?category%5Fid=10&feature%5Fids=438%2C447&tg%5Frandom=Mon%20May%2018%2018%3A48%3A13%20GMT%2B0530%202009&is%5Fcurated=true&product%5Fids=650%2C787&sentiment_ids=1,2
+
+http://demo.serendio.com/usvoomsrv/login?password=ad0234829205b9033196ba818f7a872b&category%5Fid=14&login=&user%5Fname=test2
+
+http://demo.serendio.com/usvoomsrv/flex/getSentimentCount?post_type=blog,review,forum,microblog&category%5Fid=10&feature%5Fids=438%2C447&tg%5Frandom=Mon%20May%2018%2018%3A48%3A13%20GMT%2B0530%202009&is%5Fcurated=true&product%5Fids=650%2C787&sentiment_ids=1,2
+
+http://demo.serendio.com/usvoomsrv/flex/getSentimentCount?post_type=blog,review,forum,microblog&end_date=2009-06-15&sentiment_ids=1,2&start_date=2009-03-17
+
+
+
+
+http://demo.serendio.com/usvoomsrv/login?password=ad0234829205b9033196ba818f7a872b&category%5Fid=14&login=&user%5Fname=test2

@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/meteriffic/!svn/ver/2/trunk/resources/spring
+END
+application-service.xml
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/meteriffic/!svn/ver/2/trunk/resources/spring/application-service.xml
+END
+application-dao.xml
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/meteriffic/!svn/ver/2/trunk/resources/spring/application-dao.xml
+END
+ehcache-acegi.xml
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/meteriffic/!svn/ver/2/trunk/resources/spring/ehcache-acegi.xml
+END
+application-security.xml
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/meteriffic/!svn/ver/2/trunk/resources/spring/application-security.xml
+END

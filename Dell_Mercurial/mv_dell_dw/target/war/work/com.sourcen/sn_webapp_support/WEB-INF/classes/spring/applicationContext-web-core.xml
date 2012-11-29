@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:util="http://www.springframework.org/schema/util"
+       default-init-method="init" default-destroy-method="destroy"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.1.xsd http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-3.1.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-2.0.xsd">
+
+    <context:annotation-config/>
+    <mvc:annotation-driven/>
+
+    <mvc:interceptors>
+        <bean class="org.springframework.orm.hibernate4.support.OpenSessionInViewInterceptor">
+            <property name="sessionFactory" ref="hibernateSessionFactory"/>
+        </bean>
+    </mvc:interceptors>
+
+    <bean id="localeResolver" class="org.springframework.web.servlet.i18n.AcceptHeaderLocaleResolver"/>
+
+    <bean class="org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping"/>
+
+    <bean id="annotationMethodHandlerAdapter"
+          class="com.sourcen.core.web.servlet.annotation.AnnotationMethodHandlerAdapter">
+        <property name="messageSource" ref="messageSource"/>
+        <property name="localeResolver" ref="localeResolver"/>
+        <property name="customModelAndViewResolvers" ref="customModelAndViewResolvers"/>
+    </bean>
+
+    <bean id="webServiceModelAndViewResolver"
+          class="com.sourcen.core.web.servlet.annotation.WebServiceModelAndViewResolver"/>
+
+    <util:list id="customModelAndViewResolvers">
+        <ref bean="webServiceModelAndViewResolver"/>
+    </util:list>
+
+    <!-- spring 3 way of defining content-type based response resolvers -->
+    <bean class="org.springframework.web.servlet.view.ContentNegotiatingViewResolver">
+        <property name="order" value="2"/>
+        <property name="mediaTypes">
+            <map>
+                <entry key="do" value="text/html"/>
+                <entry key="json" value="application/json"/>
+                <entry key="csv" value="text/csv"/>
+                <entry key="xml" value="text/xml"/>
+            </map>
+        </property>
+        <property name="viewResolvers">
+            <list>
+                <bean id="viewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+                    <property name="viewClass" value="org.springframework.web.servlet.view.JstlView"/>
+                    <property name="prefix" value="/WEB-INF/ui/views/"/>
+                    <property name="suffix" value=".jsp"/>
+                </bean>
+            </list>
+        </property>
+        <property name="defaultViews">
+            <list>
+                <!-- define the views -->
+                <bean class="com.sourcen.core.web.ws.views.JsonView"/>
+                <bean class="com.sourcen.core.web.ws.views.XmlView"/>
+            </list>
+        </property>
+    </bean>
+
+    <!--  for file uploads -->
+    <bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+    </bean>
+
+</beans>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       default-init-method="init" default-destroy-method="destroy"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.1.xsd">
+
+    <bean id="tableSequenceService" class="com.sourcen.dataimport.service.support.hibernate.TableSequenceServiceImpl"
+          scope="singleton">
+        <property name="autowiredSessionFactory" ref="hibernateSessionFactory"/>
+    </bean>
+
+    <bean id="dataImportLookupService"
+          class="com.sourcen.dataimport.service.support.hibernate.DataImportLookupServiceImpl" scope="singleton">
+        <property name="sessionFactory" ref="hibernateSessionFactory"/>
+        <property name="dataImportLookupClass" value="com.dell.acs.persistence.domain.DataImportLookup"/>
+    </bean>
+
+    <bean id="dataImportConfig" class="com.sourcen.dataimport.definition.DataImportConfig" scope="prototype">
+        <property name="tableSequenceService" ref="tableSequenceService"/>
+        <property name="dataImportLookupService" ref="dataImportLookupService"/>
+    </bean>
+
+
+    <bean id="fkColumnTransformer" class="com.sourcen.dataimport.transformer.FkColumnTransformer" scope="prototype">
+        <property name="dataImportLookupService" ref="dataImportLookupService"/>
+    </bean>
+
+    <bean id="genericColumnTransformer" class="com.sourcen.dataimport.transformer.GenericColumnTransformer"
+          scope="prototype"/>
+
+    <bean id="genericDataImportService" class="com.sourcen.dataimport.service.support.GenericDataImportService"
+          scope="prototype">
+        <property name="batchSize" value="100"/>
+    </bean>
+
+    <bean id="genericDataExceptionHandler" class="com.sourcen.dataimport.service.errors.DataExceptionHandlerAdapter"
+          scope="prototype"/>
+
+</beans>

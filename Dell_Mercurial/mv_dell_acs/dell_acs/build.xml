@@ -1,0 +1,658 @@
+<project name="dell_acs" default="debug_build_clean">
+	<property environment="env"/>
+	<property file="../version.properties"/>
+
+	<target name="build" depends="init, compile, war, junit, i-junit" description="Build the dell_acs web application.">
+	</target>
+
+	<target name="debug" description="Debug build dell_acs web application.">
+		<property name="debug" value="on"/>
+		<antcall target="build"/>
+	</target>
+
+	<target name="clean" description="Clean the dell_acs web application.">
+		<delete dir="target"/>
+	</target>
+
+	<target name="build_clean" description="Clean and Build the dell_acs web application.">
+		<antcall target="clean"/>
+		<antcall target="build"/>
+	</target>
+
+	<target name="debug_build_clean" description="Clean and Debug Build the dell_acs web application.">
+		<antcall target="clean"/>
+		<antcall target="debug"/>
+	</target>
+
+	<target name="init">
+		<mkdir dir="target/classes"/>
+		<mkdir dir="target/test/classes"/>
+		<mkdir dir="target/test/reports"/>
+		<mkdir dir="target/integration/classes"/>
+	</target>
+
+	<target name="compile" depends="init">
+		<javac debug="${debug}" destdir="target/classes" encoding="utf8" includeAntRuntime="false" source="1.6" target="1.6">
+			<src path="src/main/java"/>
+			<classpath>
+				<pathelement path="../libs/activation-1.1.1.jar"/>
+				<pathelement path="../libs/antlr-2.7.7.jar"/>
+				<pathelement path="../libs/aopalliance-1.0.jar"/>
+				<pathelement path="../libs/apache-mime4j-0.6.jar"/>
+				<pathelement path="../libs/aspectjrt-1.6.12.jar"/>
+				<pathelement path="../libs/aspectjweaver-1.6.12.jar"/>
+				<pathelement path="../libs/bcprov-jdk15-1.43.jar"/>
+				<pathelement path="../libs/c3p0-0.9.1.2.jar"/>
+				<pathelement path="../libs/commons-beanutils-1.8.0.jar"/>
+				<pathelement path="../libs/commons-codec-1.6.jar"/>
+				<pathelement path="../libs/commons-collections-3.2.1.jar"/>
+				<pathelement path="../libs/commons-compress-1.3.jar"/>
+				<pathelement path="../libs/commons-dbcp-1.2.2.jar"/>
+				<pathelement path="../libs/commons-digester-2.0.jar"/>
+				<pathelement path="../libs/commons-fileupload-1.2.1.jar"/>
+				<pathelement path="../libs/commons-httpclient-3.1.jar"/>
+				<pathelement path="../libs/commons-io-2.0.1.jar"/>
+				<pathelement path="../libs/commons-lang-2.6.jar"/>
+				<pathelement path="../libs/commons-logging-1.1.1.jar"/>
+				<pathelement path="../libs/commons-net-3.1.jar"/>
+				<pathelement path="../libs/commons-pool-1.5.5.jar"/>
+				<pathelement path="../libs/commons-vfs2-2.0.jar"/>
+				<pathelement path="../libs/cxf-api-2.5.2.jar"/>
+				<pathelement path="../libs/cxf-common-utilities-2.5.2.jar"/>
+				<pathelement path="../libs/cxf-rt-bindings-xml-2.5.2.jar"/>
+				<pathelement path="../libs/cxf-rt-core-2.5.2.jar"/>
+				<pathelement path="../libs/cxf-rt-frontend-jaxrs-2.5.2.jar"/>
+				<pathelement path="../libs/cxf-rt-transports-common-2.5.2.jar"/>
+				<pathelement path="../libs/cxf-rt-transports-http-2.5.2.jar"/>
+				<pathelement path="../libs/dom4j-1.6.1.jar"/>
+				<pathelement path="../libs/ehcache-core-2.4.7.jar"/>
+				<pathelement path="../libs/ezmorph-1.0.6.jar"/>
+				<pathelement path="../libs/geronimo-javamail_1.4_spec-1.7.1.jar"/>
+				<pathelement path="../libs/geronimo-stax-api_1.0_spec-1.0.jar"/>
+				<pathelement path="../libs/groovy-all-1.8.6.jar"/>
+				<pathelement path="../libs/guava-annotations-r03.jar"/>
+				<pathelement path="../libs/guava-base-r03.jar"/>
+				<pathelement path="../libs/guava-r08.jar"/>
+				<pathelement path="../libs/hibernate-c3p0-4.1.0.Final.jar"/>
+				<pathelement path="../libs/hibernate-commons-annotations-4.0.1.Final.jar"/>
+				<pathelement path="../libs/hibernate-core-4.1.0.Final.jar"/>
+				<pathelement path="../libs/hibernate-ehcache-4.1.0.Final.jar"/>
+				<pathelement path="../libs/hibernate-jpa-2.0-api-1.0.1.Final.jar"/>
+				<pathelement path="../libs/hibernate-validator-4.2.0.Final.jar"/>
+				<pathelement path="../libs/httpclient-4.0.1.jar"/>
+				<pathelement path="../libs/httpcore-4.0.1.jar"/>
+				<pathelement path="../libs/httpmime-4.0.1.jar"/>
+				<pathelement path="../libs/imgscalr-lib-4.2.jar"/>
+				<pathelement path="../libs/javassist-3.15.0-GA.jar"/>
+				<pathelement path="../libs/jaxb-impl-2.1.13.jar"/>
+				<pathelement path="../libs/jazzy-0.5.2-rtext-1.4.1.jar"/>
+				<pathelement path="../libs/jboss-logging-3.1.0.CR2.jar"/>
+				<pathelement path="../libs/jboss-transaction-api_1.1_spec-1.0.0.Final.jar"/>
+				<pathelement path="../libs/jettison-1.3.1.jar"/>
+				<pathelement path="../libs/jsch-0.1.41.jar"/>
+				<pathelement path="../libs/json-lib-2.4-jdk15.jar"/>
+				<pathelement path="../libs/json-lib-ext-spring-1.0.2.jar"/>
+				<pathelement path="../libs/jsr311-api-1.1.1.jar"/>
+				<pathelement path="../libs/jstl-1.2.jar"/>
+				<pathelement path="../libs/jtds-1.2.4.jar"/>
+				<pathelement path="../libs/junit-4.8.2.jar"/>
+				<pathelement path="../libs/juniversalchardet-1.0.3.jar"/>
+				<pathelement path="../libs/jwnl-1.3.3.jar"/>
+				<pathelement path="../libs/log4j-1.2.16.jar"/>
+				<pathelement path="../libs/mail-1.4.1.jar"/>
+				<pathelement path="../libs/maven-scm-api-1.4.jar"/>
+				<pathelement path="../libs/maven-scm-provider-svn-commons-1.4.jar"/>
+				<pathelement path="../libs/maven-scm-provider-svnexe-1.4.jar"/>
+				<pathelement path="../libs/mysql-connector-java-5.1.18.jar"/>
+				<pathelement path="../libs/neethi-3.0.1.jar"/>
+				<pathelement path="../libs/opencsv-2.3.jar"/>
+				<pathelement path="../libs/opennlp-maxent-3.0.2-incubating.jar"/>
+				<pathelement path="../libs/opennlp-tools-1.5.2-incubating.jar"/>
+				<pathelement path="../libs/plexus-utils-1.5.6.jar"/>
+				<pathelement path="../libs/poi-3.2-FINAL.jar"/>
+				<pathelement path="../libs/poi-ooxml-3.7.jar"/>
+				<pathelement path="../libs/poi-ooxml-schemas-3.7.jar"/>
+				<pathelement path="../libs/poi-scratchpad-3.2-FINAL.jar"/>
+				<pathelement path="../libs/quartz-all-1.6.1.jar"/>
+				<pathelement path="../libs/regexp-1.3.jar"/>
+				<pathelement path="../libs/restfb-1.6.9.jar"/>
+				<pathelement path="../libs/sentistrength-1.0.jar"/>
+				<pathelement path="../libs/services_all-1.0.jar"/>
+				<pathelement path="../libs/servlet-api-2.4.jar"/>
+				<pathelement path="../libs/sitemesh-2.4.2.jar"/>
+				<pathelement path="../libs/slf4j-api-1.6.1.jar"/>
+				<pathelement path="../libs/slf4j-log4j12-1.6.1.jar"/>
+				<pathelement path="../libs/sn_webapp_support-1.0-classes.jar"/>
+				<pathelement path="../libs/spring-aop-3.1.1.RELEASE.jar"/>
+				<pathelement path="../libs/spring-asm-3.1.1.RELEASE.jar"/>
+				<pathelement path="../libs/spring-aspects-3.1.1.RELEASE.jar"/>
+				<pathelement path="../libs/spring-beans-3.1.1.RELEASE.jar"/>
+				<pathelement path="../libs/spring-context-3.1.1.RELEASE.jar"/>
+				<pathelement path="../libs/spring-context-support-3.1.1.RELEASE.jar"/>
+				<pathelement path="../libs/spring-core-3.1.1.RELEASE.jar"/>
+				<pathelement path="../libs/spring-expression-3.1.1.RELEASE.jar"/>
+				<pathelement path="../libs/spring-jdbc-3.1.1.RELEASE.jar"/>
+				<pathelement path="../libs/spring-orm-3.1.1.RELEASE.jar"/>
+				<pathelement path="../libs/spring-test-3.1.0.RELEASE.jar"/>
+				<pathelement path="../libs/spring-security-acl-3.1.0.RELEASE.jar"/>
+				<pathelement path="../libs/spring-security-config-3.1.0.RELEASE.jar"/>
+				<pathelement path="../libs/spring-security-core-3.1.0.RELEASE.jar"/>
+				<pathelement path="../libs/spring-security-crypto-3.1.0.RELEASE.jar"/>
+				<pathelement path="../libs/spring-security-taglibs-3.1.0.RELEASE.jar"/>
+				<pathelement path="../libs/spring-security-web-3.1.0.RELEASE.jar"/>
+				<pathelement path="../libs/spring-tx-3.1.1.RELEASE.jar"/>
+				<pathelement path="../libs/spring-web-3.1.1.RELEASE.jar"/>
+				<pathelement path="../libs/spring-webmvc-3.1.1.RELEASE.jar"/>
+				<pathelement path="../libs/stax-api-1.0.1.jar"/>
+				<pathelement path="../libs/stax2-api-3.1.1.jar"/>
+				<pathelement path="../libs/validation-api-1.0.0.GA.jar"/>
+				<pathelement path="../libs/woodstox-core-asl-4.1.1.jar"/>
+				<pathelement path="../libs/wsdl4j-1.6.2.jar"/>
+				<pathelement path="../libs/xml-apis-1.0.b2.jar"/>
+				<pathelement path="../libs/xmlbeans-2.3.0.jar"/>
+				<pathelement path="../libs/xmlpull-1.1.3.1.jar"/>
+				<pathelement path="../libs/xmlschema-core-2.0.1.jar"/>
+				<pathelement path="../libs/xpp3_min-1.1.4c.jar"/>
+				<pathelement path="../libs/xstream-1.4.2.jar"/>
+				<pathelement path="../libs/zehon-file-transfer-1.1.6.jar"/>
+				<pathelement path="../libs/servlet-api-2.4.jar"/>
+				<pathelement path="../sn_lib/sn_core/target/sn_core.jar"/>
+				<pathelement path="../sn_lib/dataimport/target/dataimport.jar"/>
+				<pathelement path="../sn_lib/sn_core_services/cache/target/cache.jar"/>
+				<pathelement path="../sn_lib/sn_core_services/config/target/config.jar"/>
+				<pathelement path="../sn_lib/sn_core_services/event/target/event.jar"/>
+				<pathelement path="../sn_lib/sn_core_services/i18n/target/i18n.jar"/>
+				<pathelement path="../sn_lib/sn_core_services/texttemplate/target/texttemplate.jar"/>
+				<pathelement path="../sn_lib/sn_webapp_support/target/sn_webapp_support.jar"/>
+				<pathelement path="../dell_core/target/dell_core.jar"/>
+			</classpath>
+		</javac>
+		<copy todir="target/classes">
+			<fileset dir="src/main/resources"/>
+		</copy>
+	</target>
+
+	<target name="war" depends="compile">
+		<war destfile="target/dell_acs.war" webxml="src/main/webapp/WEB-INF/web.xml">
+			<classes dir="target/classes"/>
+			<fileset dir="../sn_lib/sn_webapp_support/src/main/webapp">
+				<exclude name="WEB-INF/web.xml"/>
+			</fileset>
+			<fileset dir="../dell_core/src/main/resources">
+				<exclude name="WEB-INF/classes"/>
+			</fileset>
+			<fileset dir="src/main/webapp">
+				<exclude name="WEB-INF/web.xml"/>
+			</fileset>
+			<lib dir="../libs">
+				<include name="activation-1.1.1.jar"/>
+				<include name="antlr-2.7.7.jar"/>
+				<include name="aopalliance-1.0.jar"/>
+				<include name="apache-mime4j-0.6.jar"/>
+				<include name="aspectjrt-1.6.12.jar"/>
+				<include name="aspectjweaver-1.6.12.jar"/>
+				<include name="bcprov-jdk15-1.43.jar"/>
+				<include name="c3p0-0.9.1.2.jar"/>
+				<include name="commons-beanutils-1.8.0.jar"/>
+				<include name="commons-codec-1.6.jar"/>
+				<include name="commons-collections-3.2.1.jar"/>
+				<include name="commons-compress-1.3.jar"/>
+				<include name="commons-dbcp-1.2.2.jar"/>
+				<include name="commons-digester-2.0.jar"/>
+				<include name="commons-fileupload-1.2.1.jar"/>
+				<include name="commons-httpclient-3.1.jar"/>
+				<include name="commons-io-2.0.1.jar"/>
+				<include name="commons-lang-2.6.jar"/>
+				<include name="commons-logging-1.1.1.jar"/>
+				<include name="commons-net-3.1.jar"/>
+				<include name="commons-pool-1.5.5.jar"/>
+				<include name="commons-vfs2-2.0.jar"/>
+				<include name="cxf-api-2.5.2.jar"/>
+				<include name="cxf-common-utilities-2.5.2.jar"/>
+				<include name="cxf-rt-bindings-xml-2.5.2.jar"/>
+				<include name="cxf-rt-core-2.5.2.jar"/>
+				<include name="cxf-rt-frontend-jaxrs-2.5.2.jar"/>
+				<include name="cxf-rt-transports-common-2.5.2.jar"/>
+				<include name="cxf-rt-transports-http-2.5.2.jar"/>
+				<include name="dom4j-1.6.1.jar"/>
+				<include name="ehcache-core-2.4.7.jar"/>
+				<include name="ezmorph-1.0.6.jar"/>
+				<include name="geronimo-javamail_1.4_spec-1.7.1.jar"/>
+				<include name="geronimo-stax-api_1.0_spec-1.0.jar"/>
+				<include name="groovy-all-1.8.6.jar"/>
+				<include name="guava-annotations-r03.jar"/>
+				<include name="guava-base-r03.jar"/>
+				<include name="guava-r08.jar"/>
+				<include name="hibernate-c3p0-4.1.0.Final.jar"/>
+				<include name="hibernate-commons-annotations-4.0.1.Final.jar"/>
+				<include name="hibernate-core-4.1.0.Final.jar"/>
+				<include name="hibernate-ehcache-4.1.0.Final.jar"/>
+				<include name="hibernate-jpa-2.0-api-1.0.1.Final.jar"/>
+				<include name="hibernate-validator-4.2.0.Final.jar"/>
+				<include name="httpclient-4.0.1.jar"/>
+				<include name="httpcore-4.0.1.jar"/>
+				<include name="httpmime-4.0.1.jar"/>
+				<include name="imgscalr-lib-4.2.jar"/>
+				<include name="javassist-3.15.0-GA.jar"/>
+				<include name="jaxb-impl-2.1.13.jar"/>
+				<include name="jazzy-0.5.2-rtext-1.4.1.jar"/>
+				<include name="jboss-logging-3.1.0.CR2.jar"/>
+				<include name="jboss-transaction-api_1.1_spec-1.0.0.Final.jar"/>
+				<include name="jettison-1.3.1.jar"/>
+				<include name="jsch-0.1.41.jar"/>
+				<include name="json-lib-2.4-jdk15.jar"/>
+				<include name="json-lib-ext-spring-1.0.2.jar"/>
+				<include name="jsr311-api-1.1.1.jar"/>
+				<include name="jstl-1.2.jar"/>
+				<include name="jtds-1.2.4.jar"/>
+				<include name="junit-4.8.2.jar"/>
+				<include name="juniversalchardet-1.0.3.jar"/>
+				<include name="jwnl-1.3.3.jar"/>
+				<include name="log4j-1.2.16.jar"/>
+				<include name="mail-1.4.1.jar"/>
+				<include name="maven-scm-api-1.4.jar"/>
+				<include name="maven-scm-provider-svn-commons-1.4.jar"/>
+				<include name="maven-scm-provider-svnexe-1.4.jar"/>
+				<include name="mysql-connector-java-5.1.18.jar"/>
+				<include name="neethi-3.0.1.jar"/>
+				<include name="opencsv-2.3.jar"/>
+				<include name="opennlp-maxent-3.0.2-incubating.jar"/>
+				<include name="opennlp-tools-1.5.2-incubating.jar"/>
+				<include name="plexus-utils-1.5.6.jar"/>
+				<include name="poi-3.2-FINAL.jar"/>
+				<include name="poi-ooxml-3.7.jar"/>
+				<include name="poi-ooxml-schemas-3.7.jar"/>
+				<include name="poi-scratchpad-3.2-FINAL.jar"/>
+				<include name="quartz-all-1.6.1.jar"/>
+				<include name="regexp-1.3.jar"/>
+				<include name="restfb-1.6.9.jar"/>
+				<include name="sentistrength-1.0.jar"/>
+				<include name="services_all-1.0.jar"/>
+				<!--<include name="servlet-api-2.4.jar"/>-->
+				<include name="sitemesh-2.4.2.jar"/>
+				<include name="slf4j-api-1.6.1.jar"/>
+				<include name="slf4j-log4j12-1.6.1.jar"/>
+				<include name="sn_webapp_support-1.0-classes.jar"/>
+				<include name="spring-aop-3.1.1.RELEASE.jar"/>
+				<include name="spring-asm-3.1.1.RELEASE.jar"/>
+				<include name="spring-aspects-3.1.1.RELEASE.jar"/>
+				<include name="spring-beans-3.1.1.RELEASE.jar"/>
+				<include name="spring-context-3.1.1.RELEASE.jar"/>
+				<include name="spring-context-support-3.1.1.RELEASE.jar"/>
+				<include name="spring-core-3.1.1.RELEASE.jar"/>
+				<include name="spring-expression-3.1.1.RELEASE.jar"/>
+				<include name="spring-jdbc-3.1.1.RELEASE.jar"/>
+				<include name="spring-orm-3.1.1.RELEASE.jar"/>
+				<include name="spring-test-3.1.0.RELEASE.jar"/>
+				<include name="spring-security-acl-3.1.0.RELEASE.jar"/>
+				<include name="spring-security-config-3.1.0.RELEASE.jar"/>
+				<include name="spring-security-core-3.1.0.RELEASE.jar"/>
+				<include name="spring-security-crypto-3.1.0.RELEASE.jar"/>
+				<include name="spring-security-taglibs-3.1.0.RELEASE.jar"/>
+				<include name="spring-security-web-3.1.0.RELEASE.jar"/>
+				<include name="spring-tx-3.1.1.RELEASE.jar"/>
+				<include name="spring-web-3.1.1.RELEASE.jar"/>
+				<include name="spring-webmvc-3.1.1.RELEASE.jar"/>
+				<include name="stax-api-1.0.1.jar"/>
+				<include name="stax2-api-3.1.1.jar"/>
+				<include name="validation-api-1.0.0.GA.jar"/>
+				<include name="woodstox-core-asl-4.1.1.jar"/>
+				<include name="wsdl4j-1.6.2.jar"/>
+				<include name="xml-apis-1.0.b2.jar"/>
+				<include name="xmlbeans-2.3.0.jar"/>
+				<include name="xmlpull-1.1.3.1.jar"/>
+				<include name="xmlschema-core-2.0.1.jar"/>
+				<include name="xpp3_min-1.1.4c.jar"/>
+				<include name="xstream-1.4.2.jar"/>
+				<include name="zehon-file-transfer-1.1.6.jar"/>
+			</lib>
+			<lib dir="../sn_lib/sn_core/target/">
+				<include name="sn_core.jar"/>
+			</lib>
+			<lib dir="../sn_lib/dataimport/target//">
+				<include name="dataimport.jar"/>
+			</lib>
+			<lib dir="../sn_lib/sn_core_services/cache/target/">
+				<include name="cache.jar"/>
+			</lib>
+			<lib dir="../sn_lib/sn_core_services/config/target/">
+				<include name="config.jar"/>
+			</lib>
+			<lib dir="../sn_lib/sn_core_services/event/target/">
+				<include name="event.jar"/>
+			</lib>
+			<lib dir="../sn_lib/sn_core_services/i18n/target/">
+				<include name="i18n.jar"/>
+			</lib>
+			<lib dir="../sn_lib/sn_core_services/texttemplate/target/">
+				<include name="texttemplate.jar"/>
+			</lib>
+			<lib dir="../sn_lib/sn_webapp_support/target/">
+				<include name="sn_webapp_support.jar"/>
+			</lib>
+			<lib dir="../dell_core/target/">
+				<include name="dell_core.jar"/>
+			</lib>
+		</war>
+	</target>
+
+	<target name="junit" depends="war">
+		<javac debug="${debug}" destdir="target/test/classes" encoding="utf8" includeAntRuntime="false" source="1.6" target="1.6">
+			<src path="src/test/java"/>
+			<classpath>
+				<pathelement path="target/classes"/>
+				<pathelement path="../libs/junit-4.8.2.jar"/>
+				<pathelement path="../libs/activation-1.1.1.jar"/>
+				<pathelement path="../libs/antlr-2.7.7.jar"/>
+				<pathelement path="../libs/aopalliance-1.0.jar"/>
+				<pathelement path="../libs/apache-mime4j-0.6.jar"/>
+				<pathelement path="../libs/aspectjrt-1.6.12.jar"/>
+				<pathelement path="../libs/aspectjweaver-1.6.12.jar"/>
+				<pathelement path="../libs/bcprov-jdk15-1.43.jar"/>
+				<pathelement path="../libs/c3p0-0.9.1.2.jar"/>
+				<pathelement path="../libs/commons-beanutils-1.8.0.jar"/>
+				<pathelement path="../libs/commons-codec-1.6.jar"/>
+				<pathelement path="../libs/commons-collections-3.2.1.jar"/>
+				<pathelement path="../libs/commons-compress-1.3.jar"/>
+				<pathelement path="../libs/commons-dbcp-1.2.2.jar"/>
+				<pathelement path="../libs/commons-digester-2.0.jar"/>
+				<pathelement path="../libs/commons-fileupload-1.2.1.jar"/>
+				<pathelement path="../libs/commons-httpclient-3.1.jar"/>
+				<pathelement path="../libs/commons-io-2.0.1.jar"/>
+				<pathelement path="../libs/commons-lang-2.6.jar"/>
+				<pathelement path="../libs/commons-logging-1.1.1.jar"/>
+				<pathelement path="../libs/commons-net-3.1.jar"/>
+				<pathelement path="../libs/commons-pool-1.5.5.jar"/>
+				<pathelement path="../libs/commons-vfs2-2.0.jar"/>
+				<pathelement path="../libs/cxf-api-2.5.2.jar"/>
+				<pathelement path="../libs/cxf-common-utilities-2.5.2.jar"/>
+				<pathelement path="../libs/cxf-rt-bindings-xml-2.5.2.jar"/>
+				<pathelement path="../libs/cxf-rt-core-2.5.2.jar"/>
+				<pathelement path="../libs/cxf-rt-frontend-jaxrs-2.5.2.jar"/>
+				<pathelement path="../libs/cxf-rt-transports-common-2.5.2.jar"/>
+				<pathelement path="../libs/cxf-rt-transports-http-2.5.2.jar"/>
+				<pathelement path="../libs/dom4j-1.6.1.jar"/>
+				<pathelement path="../libs/ehcache-core-2.4.7.jar"/>
+				<pathelement path="../libs/ezmorph-1.0.6.jar"/>
+				<pathelement path="../libs/geronimo-javamail_1.4_spec-1.7.1.jar"/>
+				<pathelement path="../libs/geronimo-stax-api_1.0_spec-1.0.jar"/>
+				<pathelement path="../libs/groovy-all-1.8.6.jar"/>
+				<pathelement path="../libs/guava-annotations-r03.jar"/>
+				<pathelement path="../libs/guava-base-r03.jar"/>
+				<pathelement path="../libs/guava-r08.jar"/>
+				<pathelement path="../libs/hibernate-c3p0-4.1.0.Final.jar"/>
+				<pathelement path="../libs/hibernate-commons-annotations-4.0.1.Final.jar"/>
+				<pathelement path="../libs/hibernate-core-4.1.0.Final.jar"/>
+				<pathelement path="../libs/hibernate-ehcache-4.1.0.Final.jar"/>
+				<pathelement path="../libs/hibernate-jpa-2.0-api-1.0.1.Final.jar"/>
+				<pathelement path="../libs/hibernate-validator-4.2.0.Final.jar"/>
+				<pathelement path="../libs/httpclient-4.0.1.jar"/>
+				<pathelement path="../libs/httpcore-4.0.1.jar"/>
+				<pathelement path="../libs/httpmime-4.0.1.jar"/>
+				<pathelement path="../libs/imgscalr-lib-4.2.jar"/>
+				<pathelement path="../libs/javassist-3.15.0-GA.jar"/>
+				<pathelement path="../libs/jaxb-impl-2.1.13.jar"/>
+				<pathelement path="../libs/jazzy-0.5.2-rtext-1.4.1.jar"/>
+				<pathelement path="../libs/jboss-logging-3.1.0.CR2.jar"/>
+				<pathelement path="../libs/jboss-transaction-api_1.1_spec-1.0.0.Final.jar"/>
+				<pathelement path="../libs/jettison-1.3.1.jar"/>
+				<pathelement path="../libs/jsch-0.1.41.jar"/>
+				<pathelement path="../libs/json-lib-2.4-jdk15.jar"/>
+				<pathelement path="../libs/json-lib-ext-spring-1.0.2.jar"/>
+				<pathelement path="../libs/jsr311-api-1.1.1.jar"/>
+				<pathelement path="../libs/jstl-1.2.jar"/>
+				<pathelement path="../libs/jtds-1.2.4.jar"/>
+				<pathelement path="../libs/junit-4.8.2.jar"/>
+				<pathelement path="../libs/juniversalchardet-1.0.3.jar"/>
+				<pathelement path="../libs/jwnl-1.3.3.jar"/>
+				<pathelement path="../libs/log4j-1.2.16.jar"/>
+				<pathelement path="../libs/mail-1.4.1.jar"/>
+				<pathelement path="../libs/maven-scm-api-1.4.jar"/>
+				<pathelement path="../libs/maven-scm-provider-svn-commons-1.4.jar"/>
+				<pathelement path="../libs/maven-scm-provider-svnexe-1.4.jar"/>
+				<pathelement path="../libs/mysql-connector-java-5.1.18.jar"/>
+				<pathelement path="../libs/neethi-3.0.1.jar"/>
+				<pathelement path="../libs/opencsv-2.3.jar"/>
+				<pathelement path="../libs/opennlp-maxent-3.0.2-incubating.jar"/>
+				<pathelement path="../libs/opennlp-tools-1.5.2-incubating.jar"/>
+				<pathelement path="../libs/plexus-utils-1.5.6.jar"/>
+				<pathelement path="../libs/poi-3.2-FINAL.jar"/>
+				<pathelement path="../libs/poi-ooxml-3.7.jar"/>
+				<pathelement path="../libs/poi-ooxml-schemas-3.7.jar"/>
+				<pathelement path="../libs/poi-scratchpad-3.2-FINAL.jar"/>
+				<pathelement path="../libs/quartz-all-1.6.1.jar"/>
+				<pathelement path="../libs/regexp-1.3.jar"/>
+				<pathelement path="../libs/restfb-1.6.9.jar"/>
+				<pathelement path="../libs/sentistrength-1.0.jar"/>
+				<pathelement path="../libs/services_all-1.0.jar"/>
+				<pathelement path="../libs/servlet-api-2.4.jar"/>
+				<pathelement path="../libs/sitemesh-2.4.2.jar"/>
+				<pathelement path="../libs/slf4j-api-1.6.1.jar"/>
+				<pathelement path="../libs/slf4j-log4j12-1.6.1.jar"/>
+				<pathelement path="../libs/sn_webapp_support-1.0-classes.jar"/>
+				<pathelement path="../libs/spring-aop-3.1.1.RELEASE.jar"/>
+				<pathelement path="../libs/spring-asm-3.1.1.RELEASE.jar"/>
+				<pathelement path="../libs/spring-aspects-3.1.1.RELEASE.jar"/>
+				<pathelement path="../libs/spring-beans-3.1.1.RELEASE.jar"/>
+				<pathelement path="../libs/spring-context-3.1.1.RELEASE.jar"/>
+				<pathelement path="../libs/spring-context-support-3.1.1.RELEASE.jar"/>
+				<pathelement path="../libs/spring-core-3.1.1.RELEASE.jar"/>
+				<pathelement path="../libs/spring-expression-3.1.1.RELEASE.jar"/>
+				<pathelement path="../libs/spring-jdbc-3.1.1.RELEASE.jar"/>
+				<pathelement path="../libs/spring-orm-3.1.1.RELEASE.jar"/>
+				<pathelement path="../libs/spring-test-3.1.0.RELEASE.jar"/>
+				<pathelement path="../libs/spring-security-acl-3.1.0.RELEASE.jar"/>
+				<pathelement path="../libs/spring-security-config-3.1.0.RELEASE.jar"/>
+				<pathelement path="../libs/spring-security-core-3.1.0.RELEASE.jar"/>
+				<pathelement path="../libs/spring-security-crypto-3.1.0.RELEASE.jar"/>
+				<pathelement path="../libs/spring-security-taglibs-3.1.0.RELEASE.jar"/>
+				<pathelement path="../libs/spring-security-web-3.1.0.RELEASE.jar"/>
+				<pathelement path="../libs/spring-tx-3.1.1.RELEASE.jar"/>
+				<pathelement path="../libs/spring-web-3.1.1.RELEASE.jar"/>
+				<pathelement path="../libs/spring-webmvc-3.1.1.RELEASE.jar"/>
+				<pathelement path="../libs/stax-api-1.0.1.jar"/>
+				<pathelement path="../libs/stax2-api-3.1.1.jar"/>
+				<pathelement path="../libs/validation-api-1.0.0.GA.jar"/>
+				<pathelement path="../libs/woodstox-core-asl-4.1.1.jar"/>
+				<pathelement path="../libs/wsdl4j-1.6.2.jar"/>
+				<pathelement path="../libs/xml-apis-1.0.b2.jar"/>
+				<pathelement path="../libs/xmlbeans-2.3.0.jar"/>
+				<pathelement path="../libs/xmlpull-1.1.3.1.jar"/>
+				<pathelement path="../libs/xmlschema-core-2.0.1.jar"/>
+				<pathelement path="../libs/xpp3_min-1.1.4c.jar"/>
+				<pathelement path="../libs/xstream-1.4.2.jar"/>
+				<pathelement path="../libs/zehon-file-transfer-1.1.6.jar"/>
+				<pathelement path="../sn_lib/sn_core/target/sn_core.jar"/>
+				<pathelement path="../sn_lib/dataimport/target/dataimport.jar"/>
+				<pathelement path="../sn_lib/sn_core_services/cache/target/cache.jar"/>
+				<pathelement path="../sn_lib/sn_core_services/config/target/config.jar"/>
+				<pathelement path="../sn_lib/sn_core_services/event/target/event.jar"/>
+				<pathelement path="../sn_lib/sn_core_services/i18n/target/i18n.jar"/>
+				<pathelement path="../sn_lib/sn_core_services/texttemplate/target/texttemplate.jar"/>
+				<pathelement path="../sn_lib/sn_webapp_support/target/sn_webapp_support.jar"/>
+				<pathelement path="../dell_core/target/dell_core.jar"/>
+				<pathelement path="../dell_core/target/dell_core_test.jar"/>
+			</classpath>
+		</javac>
+		<copy todir="target/test/classes">
+			<fileset dir="src/test/resources"/>
+		</copy>
+		<jar destfile="target/dell_acs_test.jar" basedir="target/test/classes"/>
+	</target>
+
+	<target name="i-junit" depends="war">
+		<echo message="No Integration test at this time."/>
+	</target>
+
+	<target name="test" depends="junit" description="Test the texttemplate library">
+		<junit printsummary="on" haltonfailure="no">
+			<classpath>
+				<pathelement path="target/classes"/>
+				<pathelement path="../libs/junit-4.8.2.jar"/>
+				<pathelement path="../libs/activation-1.1.1.jar"/>
+				<pathelement path="../libs/antlr-2.7.7.jar"/>
+				<pathelement path="../libs/apache-mime4j-0.6.jar"/>
+				<pathelement path="../libs/aopalliance-1.0.jar"/>
+				<pathelement path="../libs/aspectjrt-1.6.12.jar"/>
+				<pathelement path="../libs/aspectjweaver-1.6.12.jar"/>
+				<pathelement path="../libs/bcprov-jdk15-1.43.jar"/>
+				<pathelement path="../libs/c3p0-0.9.1.2.jar"/>
+				<pathelement path="../libs/commons-beanutils-1.8.0.jar"/>
+				<pathelement path="../libs/commons-codec-1.6.jar"/>
+				<pathelement path="../libs/commons-collections-3.2.1.jar"/>
+				<pathelement path="../libs/commons-compress-1.3.jar"/>
+				<pathelement path="../libs/commons-dbcp-1.2.2.jar"/>
+				<pathelement path="../libs/commons-digester-2.0.jar"/>
+				<pathelement path="../libs/commons-fileupload-1.2.1.jar"/>
+				<pathelement path="../libs/commons-httpclient-3.1.jar"/>
+				<pathelement path="../libs/commons-io-2.0.1.jar"/>
+				<pathelement path="../libs/commons-lang-2.6.jar"/>
+				<pathelement path="../libs/commons-logging-1.1.1.jar"/>
+				<pathelement path="../libs/commons-net-3.1.jar"/>
+				<pathelement path="../libs/commons-pool-1.5.5.jar"/>
+				<pathelement path="../libs/commons-vfs2-2.0.jar"/>
+				<pathelement path="../libs/cxf-api-2.5.2.jar"/>
+				<pathelement path="../libs/cxf-common-utilities-2.5.2.jar"/>
+				<pathelement path="../libs/cxf-rt-bindings-xml-2.5.2.jar"/>
+				<pathelement path="../libs/cxf-rt-core-2.5.2.jar"/>
+				<pathelement path="../libs/cxf-rt-frontend-jaxrs-2.5.2.jar"/>
+				<pathelement path="../libs/cxf-rt-transports-common-2.5.2.jar"/>
+				<pathelement path="../libs/cxf-rt-transports-http-2.5.2.jar"/>
+				<pathelement path="../libs/dom4j-1.6.1.jar"/>
+				<pathelement path="../libs/ehcache-core-2.4.7.jar"/>
+				<pathelement path="../libs/ezmorph-1.0.6.jar"/>
+				<pathelement path="../libs/geronimo-javamail_1.4_spec-1.7.1.jar"/>
+				<pathelement path="../libs/geronimo-stax-api_1.0_spec-1.0.jar"/>
+				<pathelement path="../libs/groovy-all-1.8.6.jar"/>
+				<pathelement path="../libs/guava-annotations-r03.jar"/>
+				<pathelement path="../libs/guava-base-r03.jar"/>
+				<pathelement path="../libs/guava-r08.jar"/>
+				<pathelement path="../libs/hibernate-c3p0-4.1.0.Final.jar"/>
+				<pathelement path="../libs/hibernate-commons-annotations-4.0.1.Final.jar"/>
+				<pathelement path="../libs/hibernate-core-4.1.0.Final.jar"/>
+				<pathelement path="../libs/hibernate-ehcache-4.1.0.Final.jar"/>
+				<pathelement path="../libs/hibernate-jpa-2.0-api-1.0.1.Final.jar"/>
+				<pathelement path="../libs/hibernate-validator-4.2.0.Final.jar"/>
+				<pathelement path="../libs/httpclient-4.0.1.jar"/>
+				<pathelement path="../libs/httpcore-4.0.1.jar"/>
+				<pathelement path="../libs/httpmime-4.0.1.jar"/>
+				<pathelement path="../libs/imgscalr-lib-4.2.jar"/>
+				<pathelement path="../libs/javassist-3.15.0-GA.jar"/>
+				<pathelement path="../libs/jaxb-impl-2.1.13.jar"/>
+				<pathelement path="../libs/jazzy-0.5.2-rtext-1.4.1.jar"/>
+				<pathelement path="../libs/jboss-logging-3.1.0.CR2.jar"/>
+				<pathelement path="../libs/jboss-transaction-api_1.1_spec-1.0.0.Final.jar"/>
+				<pathelement path="../libs/jettison-1.3.1.jar"/>
+				<pathelement path="../libs/jsch-0.1.41.jar"/>
+				<pathelement path="../libs/json-lib-2.4-jdk15.jar"/>
+				<pathelement path="../libs/json-lib-ext-spring-1.0.2.jar"/>
+				<pathelement path="../libs/jsr311-api-1.1.1.jar"/>
+				<pathelement path="../libs/jstl-1.2.jar"/>
+				<pathelement path="../libs/jtds-1.2.4.jar"/>
+				<pathelement path="../libs/junit-4.8.2.jar"/>
+				<pathelement path="../libs/juniversalchardet-1.0.3.jar"/>
+				<pathelement path="../libs/jwnl-1.3.3.jar"/>
+				<pathelement path="../libs/log4j-1.2.16.jar"/>
+				<pathelement path="../libs/mail-1.4.1.jar"/>
+				<pathelement path="../libs/maven-scm-api-1.4.jar"/>
+				<pathelement path="../libs/maven-scm-provider-svn-commons-1.4.jar"/>
+				<pathelement path="../libs/maven-scm-provider-svnexe-1.4.jar"/>
+				<pathelement path="../libs/mysql-connector-java-5.1.18.jar"/>
+				<pathelement path="../libs/neethi-3.0.1.jar"/>
+				<pathelement path="../libs/opencsv-2.3.jar"/>
+				<pathelement path="../libs/opennlp-maxent-3.0.2-incubating.jar"/>
+				<pathelement path="../libs/opennlp-tools-1.5.2-incubating.jar"/>
+				<pathelement path="../libs/plexus-utils-1.5.6.jar"/>
+				<pathelement path="../libs/poi-3.2-FINAL.jar"/>
+				<pathelement path="../libs/poi-ooxml-3.7.jar"/>
+				<pathelement path="../libs/poi-ooxml-schemas-3.7.jar"/>
+				<pathelement path="../libs/poi-scratchpad-3.2-FINAL.jar"/>
+				<pathelement path="../libs/quartz-all-1.6.1.jar"/>
+				<pathelement path="../libs/regexp-1.3.jar"/>
+				<pathelement path="../libs/restfb-1.6.9.jar"/>
+				<pathelement path="../libs/sentistrength-1.0.jar"/>
+				<pathelement path="../libs/services_all-1.0.jar"/>
+				<pathelement path="../libs/servlet-api-2.4.jar"/>
+				<pathelement path="../libs/sitemesh-2.4.2.jar"/>
+				<pathelement path="../libs/slf4j-api-1.6.1.jar"/>
+				<pathelement path="../libs/slf4j-log4j12-1.6.1.jar"/>
+				<pathelement path="../libs/sn_webapp_support-1.0-classes.jar"/>
+				<pathelement path="../libs/spring-aop-3.1.1.RELEASE.jar"/>
+				<pathelement path="../libs/spring-asm-3.1.1.RELEASE.jar"/>
+				<pathelement path="../libs/spring-aspects-3.1.1.RELEASE.jar"/>
+				<pathelement path="../libs/spring-beans-3.1.1.RELEASE.jar"/>
+				<pathelement path="../libs/spring-context-3.1.1.RELEASE.jar"/>
+				<pathelement path="../libs/spring-context-support-3.1.1.RELEASE.jar"/>
+				<pathelement path="../libs/spring-core-3.1.1.RELEASE.jar"/>
+				<pathelement path="../libs/spring-expression-3.1.1.RELEASE.jar"/>
+				<pathelement path="../libs/spring-jdbc-3.1.1.RELEASE.jar"/>
+				<pathelement path="../libs/spring-orm-3.1.1.RELEASE.jar"/>
+				<pathelement path="../libs/spring-test-3.1.0.RELEASE.jar"/>
+				<pathelement path="../libs/spring-security-acl-3.1.0.RELEASE.jar"/>
+				<pathelement path="../libs/spring-security-config-3.1.0.RELEASE.jar"/>
+				<pathelement path="../libs/spring-security-core-3.1.0.RELEASE.jar"/>
+				<pathelement path="../libs/spring-security-crypto-3.1.0.RELEASE.jar"/>
+				<pathelement path="../libs/spring-security-taglibs-3.1.0.RELEASE.jar"/>
+				<pathelement path="../libs/spring-security-web-3.1.0.RELEASE.jar"/>
+				<pathelement path="../libs/spring-tx-3.1.1.RELEASE.jar"/>
+				<pathelement path="../libs/spring-web-3.1.1.RELEASE.jar"/>
+				<pathelement path="../libs/spring-webmvc-3.1.1.RELEASE.jar"/>
+				<pathelement path="../libs/stax-api-1.0.1.jar"/>
+				<pathelement path="../libs/stax2-api-3.1.1.jar"/>
+				<pathelement path="../libs/validation-api-1.0.0.GA.jar"/>
+				<pathelement path="../libs/woodstox-core-asl-4.1.1.jar"/>
+				<pathelement path="../libs/wsdl4j-1.6.2.jar"/>
+				<pathelement path="../libs/xml-apis-1.0.b2.jar"/>
+				<pathelement path="../libs/xmlbeans-2.3.0.jar"/>
+				<pathelement path="../libs/xmlpull-1.1.3.1.jar"/>
+				<pathelement path="../libs/xmlschema-core-2.0.1.jar"/>
+				<pathelement path="../libs/xpp3_min-1.1.4c.jar"/>
+				<pathelement path="../libs/xstream-1.4.2.jar"/>
+				<pathelement path="../libs/zehon-file-transfer-1.1.6.jar"/>
+				<pathelement path="../sn_lib/sn_core/target/sn_core.jar"/>
+				<pathelement path="../sn_lib/dataimport/target/dataimport.jar"/>
+				<pathelement path="../sn_lib/sn_core_services/cache/target/cache.jar"/>
+				<pathelement path="../sn_lib/sn_core_services/config/target/config.jar"/>
+				<pathelement path="../sn_lib/sn_core_services/event/target/event.jar"/>
+				<pathelement path="../sn_lib/sn_core_services/i18n/target/i18n.jar"/>
+				<pathelement path="../sn_lib/sn_core_services/texttemplate/target/texttemplate.jar"/>
+				<pathelement path="../sn_lib/sn_webapp_support/target/sn_webapp_support.jar"/>
+				<pathelement path="../dell_core/target/dell_core.jar"/>
+				<pathelement path="../dell_core/target/dell_core_test.jar"/>
+				<pathelement path="target/dell_acs_test.jar"/>
+			</classpath>
+			<formatter type="plain"/>
+			<batchtest fork="yes" todir="target/test/reports">
+				<fileset dir="src/test/java">
+					<include name="**/*Test*.java"/>
+					<exclude name="**/AllTests.java"/>
+				</fileset>
+			</batchtest>
+		</junit>
+	</target>
+
+	<target name="integration" depends="i-junit" description="Integration the texttemplate library">
+		<echo message="No Integration test at this time."/>
+	</target>
+
+	<target name="pomSetupTomcat" depends="war" description="Setup tocmat to run dell_acs web application.">
+                <delete dir="${env.CATALINA_HOME}\conf\Catalina\localhost"/>
+                <mkdir dir="${env.CATALINA_HOME}\conf\Catalina\localhost"/>
+                <echoxml file="${env.CATALINA_HOME}\conf\Catalina\localhost\dell_acs.xml">
+<Context docBase="${user.dir}/target/dell_acs">
+</Context>
+                </echoxml>
+        </target>
+
+	<target name="setupTomcat" description="POM version: Setup tocmat to run dell_acs web application.">
+                <delete dir="${env.CATALINA_HOME}\conf\Catalina\localhost"/>
+                <mkdir dir="${env.CATALINA_HOME}\conf\Catalina\localhost"/>
+		<mkdir dir="target/dell_acs"/>
+                <delete dir="target/dell_acs"/>
+		<unjar src="target/dell_acs.war" dest="target/dell_acs"/>
+                <echoxml file="${env.CATALINA_HOME}\conf\Catalina\localhost\dell_acs.xml">
+<Context docBase="${user.dir}/target/dell_acs">
+</Context>
+                </echoxml>
+        </target>
+</project>

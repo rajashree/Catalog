@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:util="http://www.springframework.org/schema/util"
+	xsi:schemaLocation="
+http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.0.xsd
+http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd
+http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-2.0.xsd">
+
+
+	<bean id="applicationManager" init-method="init"
+		class="com.sourcen.space.service.impl.DefaultApplicationManager">
+		<property name="configFile" value="c:/wtp/setup.xml"></property>
+		<property name="propertyDAO" ref="propertyDAO"></property>
+		<property name="saltSource" ref="saltSource" />		
+		<property name="passwordEncoder" ref="passwordEncoder" />
+		
+	</bean>
+	
+	<bean id="userManager"
+		class="com.sourcen.space.service.impl.DefaultUserManager">
+		<property name="userDAO" ref="userDAO"></property>
+		<property name="applicationManager" ref="applicationManager"></property>
+			</bean>
+	<bean id="templateManager"
+		class="com.sourcen.space.service.impl.DefaultTemplateManager">		
+		<property name="templateDAO" ref="templateDAO"></property>		
+	</bean>
+	
+	<bean id="emailManager"  init-method="init" factory-method="getInstance"
+		class="com.sourcen.space.service.impl.DefaultEmailManager">
+		<property name="applicationManager" ref="applicationManager"></property>
+	</bean>
+	
+	
+	<bean id="serendioManager"
+		class="com.sourcen.space.service.impl.DefaultSerendioManager">
+		<property name="productDAO" ref="productDAO"></property>
+		<property name="applicationManager" ref="applicationManager"></property>
+		<property name="searchManager" ref="searchManager"></property>
+		<property name="registrationManager" ref="registrationManager"></property>
+		<property name="userManager" ref="userManager"></property>
+		<property name="emailManager" ref="emailManager"></property>
+	</bean>
+
+	<bean id="registrationManager"
+		class="com.sourcen.space.service.impl.DefaultRegistrationManager">
+		<property name="applicationManager" ref="applicationManager"></property>
+	</bean>
+	<bean id="searchManager"
+		class="com.sourcen.space.service.impl.DefaultSearchManager">
+		<property name="applicationManager" ref="applicationManager"></property>		
+		<property name="searchDAO" ref="searchDAO"></property>
+		
+	</bean>
+	
+	<bean id="userDwrService"
+		class="com.sourcen.space.dwr.impl.UserDwrServiceImpl">
+		<property name="userManager" ref="userManager"></property>
+		<property name="serendioManager" ref="serendioManager"></property>
+		<property name="searchManager" ref="searchManager"></property>
+	</bean>
+	<bean id="adminDwrService"
+		class="com.sourcen.space.dwr.impl.AdminDwrServiceImpl">
+		<property name="userManager" ref="userManager"></property>
+		<property name="serendioManager" ref="serendioManager"></property>
+		<property name="searchManager" ref="searchManager"></property>
+		<property name="applicationManager" ref="applicationManager"></property>
+		<property name="registrationManager" ref="registrationManager"></property>	
+	</bean>
+
+
+</beans>

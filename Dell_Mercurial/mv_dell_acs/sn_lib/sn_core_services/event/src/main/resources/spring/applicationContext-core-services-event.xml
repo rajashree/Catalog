@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Copyright(C) 2011, Sourcen Framework and the original authors.
+  ~ All Rights Reserved. Use is subject to license terms and conditions.
+  -->
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation=" http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.1.xsd"
+       default-init-method="initialize" default-destroy-method="destroy">
+
+    <bean id="eventDispatcher" class="com.sourcen.core.event.EventDispatcher" factory-method="getInstance"
+          scope="singleton"/>
+
+    <bean id="springEventRegistry" class="com.sourcen.core.event.spring.SpringEventRegistry" scope="singleton"/>
+
+    <bean id="eventListenerScopeResolver" class="com.sourcen.core.event.spring.EventListenerScopeMetadataResolver"
+          scope="singleton"/>
+
+
+</beans>

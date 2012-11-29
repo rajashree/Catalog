@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema>
+
+    <table destinationTable="com.dell.dw.persistence.domain.GAEventMetrics" sourceTable="events">
+        <properties>
+            <property name="startDate" value="2012-04-01"/>
+            <property name="endDate" value="2012-04-30"/>
+            <property name="startIndex" value="1"/>
+            <property name="mapKeys" value="true"/>
+            <property name="maxResults" value="100"/>
+        </properties>
+        <keys>
+            <key type="primary" destinationKey="id" sourceKey="eventCategory,eventAction,eventLabel,profileId,eventDate"/>
+        </keys>
+        <column source="eventCategory" destination="eventCategory" type="string"/>
+        <column source="eventAction" destination="eventAction" type="string"/>
+        <column source="eventLabel" destination="eventLabel" type="string"/>
+        <column source="profileId" destination="profileId" type="int"/>
+        <column source="entryIndex" destination="entryIndex" type="int"/>
+        <column source="eventDate" destination="date" type="datetime" defaultValue="TIMESTAMP"
+                transformerClass="com.dell.dw.managers.dataimport.transformer.DateColumnTransformer"/>
+        <column source="hour" destination="hour" type="int"/>
+        <column source="totalEvents" destination="totalEvents" type="int"/>
+        <column source="uniqueEvents" destination="uniqueEvents" type="int"/>
+        <column source="eventValue" destination="eventValue" type="int"/>
+        <column source="visitsWithEvent" destination="visitsWithEvent" type="int"/>
+        <column source="avgEventValue" destination="avgEventValue" type="float"/>
+        <column source="eventsPerVisitWithEvent" destination="eventsPerVisitWithEvent" type="float"/>
+
+    </table>
+
+    <table destinationTable="com.dell.dw.persistence.domain.GAPageViewMetrics" sourceTable="pageViews">
+        <properties>
+            <property name="startDate" value="2012-04-01"/>
+            <property name="endDate" value="2012-04-30"/>
+            <property name="startIndex" value="1"/>
+            <property name="mapKeys" value="true"/>
+            <property name="maxResults" value="100"/>
+        </properties>
+        <keys>
+            <key type="primary" destinationKey="id" sourceKey="pageTitle,pagePath,pageDepth,profileId,date"/>
+        </keys>
+
+        <column source="pageTitle" destination="pageTitle" type="string"/>
+        <column source="pagePath" destination="pagePath" type="string"/>
+        <column source="pageDepth" destination="pageDepth" type="int"/>
+        <column source="profileId" destination="profileId" type="int"/>
+        <column source="entryIndex" destination="entryIndex" type="int"/>
+        <column source="date" destination="date" type="datetime" defaultValue="TIMESTAMP"
+                transformerClass="com.dell.dw.managers.dataimport.transformer.DateColumnTransformer"/>
+        <column source="hour" destination="hour" type="int"/>
+
+        <!--<column source="entrances" destination="entrances" type="long"/>-->
+        <column source="pageviews" destination="pageViews" type="long"/>
+        <column source="uniquePageviews" destination="uniquePageViews" type="long"/>
+        <!--<column source="timeOnPage" destination="timeOnPage" type="double"/>-->
+        <!--<column source="exits" destination="exits" type="long"/>-->
+        <column source="visits" destination="visits" type="long"/>
+        <column source="bounces" destination="bounces" type="long"/>
+        <column source="timeOnSite" destination="timeOnSite" type="double"/>
+        <column source="visitors" destination="visitors" type="long"/>
+        <column source="newVisits" destination="newVisits" type="long"/>
+        <column source="pageLoadTime" destination="pageLoadTime" type="long"/>
+        <column source="pageLoadSample" destination="pageLoadSample" type="long"/>
+
+        <!--<column source="entranceRate" destination="entranceRate" type="double"/>-->
+        <column source="pageviewsPerVisit" destination="pageViewsPerVisit" type="double"/>
+        <!--<column source="avgTimeOnPage" destination="avgTimeOnPage" type="double"/>-->
+        <!--<column source="exitRate" destination="exitRate" type="double"/>-->
+        <!--<column source="entranceBounceRate" destination="entranceBounceRate" type="double"/>-->
+        <column source="visitBounceRate" destination="visitBounceRate" type="double"/>
+        <column source="avgTimeOnSite" destination="avgTimeOnSite" type="double"/>
+        <column source="percentNewVisits" destination="percentNewVisits" type="double"/>
+        <column source="avgPageLoadTime" destination="avgPageLoadTime" type="double"/>
+
+    </table>
+
+</schema>

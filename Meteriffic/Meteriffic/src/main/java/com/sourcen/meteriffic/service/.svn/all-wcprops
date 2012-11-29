@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/meteriffic/!svn/ver/2/trunk/src/com/sourcen/meteriffic/service
+END
+UserAlreadyExistsException.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/meteriffic/!svn/ver/2/trunk/src/com/sourcen/meteriffic/service/UserAlreadyExistsException.java
+END
+SearchManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/meteriffic/!svn/ver/2/trunk/src/com/sourcen/meteriffic/service/SearchManager.java
+END
+EmailManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/meteriffic/!svn/ver/2/trunk/src/com/sourcen/meteriffic/service/EmailManager.java
+END
+SerendioManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/meteriffic/!svn/ver/2/trunk/src/com/sourcen/meteriffic/service/SerendioManager.java
+END
+RegistrationManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/meteriffic/!svn/ver/2/trunk/src/com/sourcen/meteriffic/service/RegistrationManager.java
+END
+UserManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/meteriffic/!svn/ver/2/trunk/src/com/sourcen/meteriffic/service/UserManager.java
+END
+ProductManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/meteriffic/!svn/ver/2/trunk/src/com/sourcen/meteriffic/service/ProductManager.java
+END
+ServiceManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/meteriffic/!svn/ver/2/trunk/src/com/sourcen/meteriffic/service/ServiceManager.java
+END
+ApplicationManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/meteriffic/!svn/ver/2/trunk/src/com/sourcen/meteriffic/service/ApplicationManager.java
+END

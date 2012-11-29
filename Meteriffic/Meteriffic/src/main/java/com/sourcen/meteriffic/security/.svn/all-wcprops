@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/meteriffic/!svn/ver/2/trunk/src/com/sourcen/meteriffic/security
+END
+SpaceUserDetailsService.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/meteriffic/!svn/ver/2/trunk/src/com/sourcen/meteriffic/security/SpaceUserDetailsService.java
+END
+SecurityContextAuthenticationProviderImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/meteriffic/!svn/ver/2/trunk/src/com/sourcen/meteriffic/security/SecurityContextAuthenticationProviderImpl.java
+END
+AuthenticationProvider.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/meteriffic/!svn/ver/2/trunk/src/com/sourcen/meteriffic/security/AuthenticationProvider.java
+END
+SpaceUserDetail.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/meteriffic/!svn/ver/2/trunk/src/com/sourcen/meteriffic/security/SpaceUserDetail.java
+END
+AuthenticationInterceptor.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/meteriffic/!svn/ver/2/trunk/src/com/sourcen/meteriffic/security/AuthenticationInterceptor.java
+END
+SpaceAuthenticationProcessingFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/meteriffic/!svn/ver/2/trunk/src/com/sourcen/meteriffic/security/SpaceAuthenticationProcessingFilter.java
+END

@@ -1,0 +1,1 @@
+ALTER TABLE t_product ADD searchItemHash nvarchar(255) NULL;

@@ -1,0 +1,169 @@
+/*
+ * Copyright (c) Sourcen Inc. 2004-2012
+ * All rights reserved.
+ */
+
+package com.sourcen.dataimport.transformer;
+
+import com.google.common.base.Joiner;
+import com.sourcen.core.util.StringUtils;
+import com.sourcen.dataimport.definition.ColumnDefinition;
+import com.sourcen.dataimport.definition.Key;
+import com.sourcen.dataimport.definition.TableDefinition;
+import org.slf4j.LoggerFactory;
+
+import java.sql.SQLException;
+import java.util.LinkedHashMap;
+import java.util.Map;
+
+/**
+ * @author Navin Raj Kumar G.S.
+ * @author $LastChangedBy: rajashreem $
+ * @version $Revision: 3765 $, $Date:: 2012-07-02 15:19:53#$
+ */
+
+/**
+ {@inheritDoc}
+ */
+public class GenericRowTransformer implements RowTransformer {
+
+    /**
+     logger class
+     */
+    private static final org.slf4j.Logger logger = LoggerFactory.getLogger(GenericRowTransformer.class);
+
+    /**
+     Map< srcColumn, destColumn >
+     */
+    private final LinkedHashMap<String, ColumnDefinition> columnsToCopy = new LinkedHashMap<String, ColumnDefinition>();
+
+    private final LinkedHashMap<String, ColumnDefinition> columnsToReInitialize =
+            new LinkedHashMap<String, ColumnDefinition>();
+
+    private final LinkedHashMap<String, ColumnDefinition> fkColumns = new LinkedHashMap<String, ColumnDefinition>();
+
+    private final LinkedHashMap<String, String[]> hashColumns = new LinkedHashMap<String, String[]>();
+
+    /**
+     class fields
+     */
+    private TableDefinition tableDefinition;
+
+    private volatile LinkedHashMap<String, Object> template = null;
+
+    /**
+     {@inheritDoc}
+     */
+    @Override
+    public Map<String, Object> transform(Map<String, Object> source) throws SQLException {
+        Map<String, Object> result = getTemplate();
+
+        for (Map.Entry<String, ColumnDefinition> entry : columnsToReInitialize.entrySet()) {
+            result.put(entry.getKey(), entry.getValue().getDefaultValueAsObject());
+        }
+
+        // hash columns
+        for (Map.Entry<String, String[]> entry : hashColumns.entrySet()) {
+            String[] compositeKeys = entry.getValue();
+            String[] compositeKeyValues = new String[compositeKeys.length];
+            for (int i = 0; i < compositeKeys.length; i++) {
+                compositeKeyValues[i] = String.valueOf(source.get(compositeKeys[i]));
+            }
+            source.put(entry.getKey(), StringUtils.MD5Hash(Joiner.on(",").join(compositeKeyValues)));
+        }
+
+        for (Map.Entry<String, ColumnDefinition> entry : columnsToCopy.entrySet()) {
+            String srcColumnName = entry.getKey();
+            ColumnDefinition destColumn = entry.getValue();
+
+            Object value = source.get(srcColumnName);
+
+            // apply the transformed value
+            try {
+                value = destColumn.getTransformer().transform(source, destColumn, value);
+                result.put(destColumn.getDestination(), value);
+
+            } catch(ForeignKeyException fkEx){
+                throw new ForeignKeyException("Unable to find mapping, srcFkTable:="
+                        + destColumn.getReferenceTable().getSourceTable()
+                        + " srcId:=" + value + ", originalRecord :=" + value);
+            }catch (Exception e) {
+                logger.warn("transformer:" + destColumn.getTransformer()
+                        + ", destColumn:=" + destColumn.getDestination()
+                        + ", srcValue:=" + value
+                        + ",  exception:=" + e.getMessage());
+            }
+        }
+
+        // check if there are any keys to handle.
+        for (Key key : tableDefinition.getKeys()) {
+            if (key.getSourceKey() != null) {
+                String sourceKey = key.getSourceKey();
+                if (sourceKey != null) {
+                    if (sourceKey.contains(",")) {
+                        String[] compositeKeys = sourceKey.split(",");
+                        String[] compositeKeyValues = new String[compositeKeys.length];
+                        for (int i = 0; i < compositeKeys.length; i++) {
+                            compositeKeyValues[i] = String.valueOf(source.get(compositeKeys[i]));
+                        }
+                        source.put(sourceKey, StringUtils.MD5Hash(Joiner.on(",").join(compositeKeyValues)));
+                    } else {
+                        source.put(sourceKey, result.get(sourceKey));
+                    }
+                }
+            }
+        }
+
+        return result;
+    }
+
+    private Map<String, Object> getTemplate() {
+        if (template == null) {
+            initializeTemplate();
+        }
+        return (Map<String, Object>) template.clone();
+    }
+
+    private synchronized void initializeTemplate() {
+        template = new LinkedHashMap<String, Object>();
+        for (ColumnDefinition columnDefinition : tableDefinition.getColumns()) {
+            Object defaultValue = null;
+            // we ignore autogenerated values here. we re-process them later.
+            if (columnDefinition.getDefaultValue() != null &&
+                    columnDefinition.getDefaultValue().equalsIgnoreCase("AUTO_GENERATED")) {
+                template.put(columnDefinition.getDestination(), -1);
+                columnsToReInitialize.put(columnDefinition.getDestination(), columnDefinition);
+                continue;
+            }
+
+            // if its not regenerated values, just insert it once.
+            if (!columnDefinition.getSkipInsert()) {
+                template.put(columnDefinition.getDestination(), columnDefinition.getDefaultValueAsObject());
+            }
+
+
+            if (columnDefinition.getSource().contains(",")) {
+                hashColumns.put(columnDefinition.getSource(), columnDefinition.getSource().split(","));
+            }
+            // check if the column has a "source" attribute, then put it for copy
+            if (columnDefinition.getSource() != null || columnDefinition.getIndex() != null) {
+                if (!columnDefinition.getSkipInsert()) {
+                    columnsToCopy.put(columnDefinition.getSource(), columnDefinition);
+                }
+            }
+            // put FKs
+            if (columnDefinition.getReferenceTable() != null) {
+                fkColumns.put(columnDefinition.getDestination(), columnDefinition);
+            }
+
+        }
+    }
+
+    /**
+     setter() and getter()
+     */
+
+    public GenericRowTransformer(TableDefinition tableDefinition) {
+        this.tableDefinition = tableDefinition;
+    }
+}

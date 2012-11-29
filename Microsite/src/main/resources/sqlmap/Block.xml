@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE sqlMap PUBLIC "-//iBATIS.com//DTD SQL Map 2.0//EN" "http://www.ibatis.com/dtd/sql-map-2.dtd">
+
+<sqlMap>
+
+
+	<typeAlias alias="block" type="com.sourcen.microsite.model.Block" />
+    
+    <cacheModel id="block-cache" type="MEMORY">
+		<flushInterval hours="24" />
+		<flushOnExecute statement="saveBlock" />
+		<flushOnExecute statement="updateBlock" />
+		<flushOnExecute statement="deleteBlock" />
+		<property name="reference-type" value="SOFT" />
+	</cacheModel>
+	
+	<resultMap id="block" class="block">
+		<result property="id" column="bid" />
+		<result property="name" column="name" />
+		<result property="description" column="description" />
+		<result property="content" column="content" />
+		<result property="dynamic" column="dynamic" />
+		<result property="created" column="created" />
+		<result property="modified" column="modified" />
+	</resultMap>
+	<resultMap id="block1" class="block">
+		<result property="id" column="bid" />
+		<result property="name" column="name" />
+		<result property="description" column="description" />
+		<result property="content" column="content" />
+		<result property="dynamic" column="dynamic" />
+		<result property="pos" column="pos" />
+		<result property="created" column="created" />
+		<result property="modified" column="modified" />
+	</resultMap>
+
+	<select id="getBlock" resultMap="block"
+		parameterClass="String" cacheModel="block-cache">
+		SELECT * FROM blocks WHERE NAME = #name#
+	</select>
+	<select id="getAllBlocks" resultMap="block"
+		parameterClass="String" cacheModel="block-cache">
+		SELECT * FROM blocks 
+	</select>
+	
+	<insert id="saveBlock"  	parameterClass="block" >
+		 INSERT INTO blocks (NAME,DESCRIPTION,CONTENT,dynamic,CREATED,MODIFIED)    VALUES (#name#, #description#,#content#,#dynamic#,now(),now())
+	</insert>
+	<update id="updateBlock"  	parameterClass="block" >
+		UPDATE blocks set NAME=#name#,DESCRIPTION=#description#,CONTENT=#content# ,dynamic=#dynamic# where BID=#id#
+	</update>
+	<delete id="deleteBlock"  	parameterClass="String">
+		DELETE from blocks where name=#name#
+	</delete>
+
+	<select id="getPageBlocks" resultMap="block1"
+		parameterClass="Integer">
+		SELECT p.bid,p.pos,b.* FROM page_blocks p,blocks b where p.bid=b.bid and p.pid=#pid# ORDER BY pos ASC;
+	</select>
+
+</sqlMap>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,3 @@
+/** UPGRADE SCRIPT TO MAKE THE STATUSES OF EXISTING DOCUMENTS TO "1" i.e., PUBLISHED **/
+
+UPDATE t_documents SET status = 1 WHERE status is null ;

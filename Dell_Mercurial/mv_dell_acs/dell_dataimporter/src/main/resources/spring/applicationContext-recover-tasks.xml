@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       default-init-method="init" default-destroy-method="destroy"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.1.xsd">
+
+    <bean id="feedPreprocessorRecoverTask" class="com.dell.acs.recover.FeedPreprocessorRecoverTask" lazy-init="true"/>
+
+    <bean id="preValidatedDataImportRecoverTask" class="com.dell.acs.recover.PreValidatedDataImportRecoverTask" lazy-init="true"/>
+
+    <bean id="stuckProductRecoverTask" class="com.dell.acs.recover.StuckProductRecoverTask" lazy-init="true"/>
+
+    <bean id="cleanupTempDirRecoverTask" class="com.dell.acs.recover.CleanupTempDirRecoverTask" lazy-init="true"/>
+
+    <bean id="recoverService" class="com.dell.acs.recover.RecoverServiceImpl" factory-method="getInstance"/>
+
+</beans>

@@ -1,0 +1,256 @@
+#!/bin/bash
+
+#MArketvine Content Server PROD Deployment Script
+# Desc:	Generic tool to deploy war file
+#		Assumes war file in a given location
+# Author:	Daniel Williams
+# Created:	July 2012
+# Updated:	25 July 2012 1:58pm
+#
+# Notes:	Runs slightly differently on production and dev
+#			Dev does not specify a version.  Get the latest version and deploy it.
+#			Prod specifies a version.  Get that particular version and be sure it's deployed.
+#	
+
+DEBUG=false
+
+function display_debug
+{
+	if  $DEBUG ;
+	then
+		echo $1
+	fi
+}
+
+# Where are the Tomcat binaries.  The ROOT link must be in the webapps directory
+# Where are the Tomcat binaries.  The ROOT link must be in the webapps directory
+CATALINA_HOME=/opt/dell_acs/tomcat-7.0.27
+
+# Prod Backup Directory
+PROD_BACKUP_DIR=/opt/dell_acs/backups
+
+#Prod Webapps Directory
+PROD_WEBAPPS_DIR=/opt/dell_acs/versions
+#  $PROD_WEBAPPS_DIR/$BASE_NAME...this is the actual location of destination directory
+
+# MySQL PROD Host
+MYSQL_PROD_HOST=Ena-Iads-LinSql01.dmz.marketvine
+
+#MySQL PROD User Name
+MYSQL_PROD_USER=deployer
+
+#MySQL PROD Password
+MYSQL_PROD_PASS=w1lmpj2hzQhL
+
+#MySQL PROD DB Name
+MYSQL_PROD_DB_NAME=dell_acs_stage
+
+#display_debug "Updates_Path:  <%= @updates_path %>/<%= @environment %>/ "
+FILE_NAME="<%= @war_file %>"
+if [ ${#FILE_NAME} -gt 0 ];
+then
+  #display_debug "Setting FORCE_DEPLOY to true"
+  FILE_NAME="<%= @updates_path %>/<%= @environment %>/$FILE_NAME"
+  FORCE_DEPLOY=false
+else
+  FILE_NAME=`ls -tr  <%= @updates_path %>/<%= @environment %>/dell_acs*.war | tail -1 `
+  FORCE_DEPLOY=false
+  #display_debug "Setting FORCE_DEPLOY to false"
+fi
+#FORCE_DEPLOY is used to force a deploy even if the existing file is on disk.  This ensures that the ROOT symlink is pointing to the right place.
+display_debug "FileName: $FILE_NAME"
+
+if [ $FILE_NAME ]; 
+then
+  BASE_NAME=`basename "$FILE_NAME" .war`
+  display_debug "Base_Name-x: $BASE_NAME" 
+else
+  echo "Unable to find an update file in <%= @updates_path %>/<%= @environment %>/*.war"
+  exit 0
+fi
+
+
+#display_debug "Base_Name: $BASE_NAME" 
+
+#Copy WAR file form UAT 
+copy_war_file () {
+  #Create Directory for New Version
+  display_debug "TO $PROD_WEBAPPS_DIR/$BASE_NAME" 
+  #ls -l $PROD_WEBAPPS_DIR
+  if [ -d $PROD_WEBAPPS_DIR/$BASE_NAME ];
+  then
+    if $FORCE_DEPLOY ;
+	then
+	  display_debug "dir exists & force set"
+      cp <%= @updates_path %>/<%= @environment %>/$FILE_NAME $PROD_WEBAPPS_DIR/$BASE_NAME
+      extract_war
+	fi
+  else
+	display_debug "dir does not exist"
+	display_debug "mkdir -p $PROD_WEBAPPS_DIR/$BASE_NAME"
+    mkdir -p $PROD_WEBAPPS_DIR/$BASE_NAME
+	display_debug "cp <%= @updates_path %>/<%= @environment %>/$FILE_NAME $PROD_WEBAPPS_DIR/$BASE_NAME"
+    cp $FILE_NAME $PROD_WEBAPPS_DIR/$BASE_NAME
+    extract_war
+    #ls -l $PROD_WEBAPPS_DIR
+  fi
+  ##display_debug "cp $FILE_NAME $PROD_WEBAPPS_DIR/$BASE_NAME" 
+  ##display_debug "Copy Complete: $PROD_WEBAPPS_DIR/$BASE_NAME" 
+  #ls -l $PROD_WEBAPPS_DIR/$BASE_NAME
+ }
+
+#Extract WAR file
+extract_war () {
+  /usr/bin/unzip -o $PROD_WEBAPPS_DIR/$BASE_NAME/$BASE_NAME.war -d $PROD_WEBAPPS_DIR/$BASE_NAME 2>&1 > /dev/null
+  display_debug "/usr/bin/unzip -o $PROD_WEBAPPS_DIR/$BASE_NAME/$BASE_NAME.war -d $PROD_WEBAPPS_DIR/$BASE_NAME 2>&1 > /dev/null"
+  rm -rf $PROD_WEBAPPS_DIR/$BASE_NAME/$BASE_NAME.war
+  
+  sed 's/app\.profile=/app\.profile=<%= @dell_acs_profile %>\n#app\.profile=/' $PROD_WEBAPPS_DIR/$BASE_NAME/WEB-INF/classes/application.properties > $PROD_WEBAPPS_DIR/$BASE_NAME/WEB-INF/classes/application_temp.properties
+
+  rm -f $PROD_WEBAPPS_DIR/$BASE_NAME/WEB-INF/clases/application.properties
+  mv $PROD_WEBAPPS_DIR/$BASE_NAME/WEB-INF/classes/application_temp.properties $PROD_WEBAPPS_DIR/$BASE_NAME/WEB-INF/classes/application.properties
+
+  #Put the version number into the version.properties file  
+  VERSION_STRING=`echo $BASE_NAME | sed s/dell_acs_// | sed s/.war//`
+  echo "Version: $VERSION_STRING"
+
+  sed -e "s/buildNumber=/buildNumber=$VERSION_STRING\n#buildNumber=/" $PROD_WEBAPPS_DIR/$BASE_NAME/WEB-INF/classes/version.properties > $PROD_WEBAPPS_DIR/$BASE_NAME/WEB-INF/classes/version_temp.properties
+
+  rm -f $PROD_WEBAPPS_DIR/$BASE_NAME/WEB-INF/classes/version.properties
+  mv $PROD_WEBAPPS_DIR/$BASE_NAME/WEB-INF/classes/version_temp.properties $PROD_WEBAPPS_DIR/$BASE_NAME/WEB-INF/classes/version.properties
+}
+
+#Stop Tomcat
+stop_tomcat () {
+  $CATALINA_HOME/bin/shutdown.sh 2>&1 > /dev/null
+  if [ `ps auxwwww|grep java|grep -v grep|wc -l` -gt 0 ]
+  then
+    for pid in `ps aux | pgrep java`
+    do
+      kill -9 $pid 2>&1 > /dev/null
+    done
+  fi
+}
+
+#App Deploy
+app_deploy () {
+  display_debug "1" 
+  #ls -l $CATALINA_HOME/webapps
+  if ! [ -h $WEB_WEBAPPS_DIR/ROOT_BACKUP1 -a $CATALINA_HOME/webapps/ROOT -ef $WEB_WEBAPPS_DIR/ROOT_BACKUP1 ];
+  then
+	display_debug "############ 2 ###########" 
+    ##display_debug "it works" 
+     # Previous deployment was clean.
+     #Remove 2nd backup.
+     if [ -h $PROD_WEBAPPS_DIR/ROOT_BACKUP2 ]; then
+	    display_debug "############ 3 ###########" 
+       # if the symbolic link exists remove it
+        DELETE_PATH=`readlink $PROD_WEBAPPS_DIR/ROOT_BACKUP2`
+        unlink $PROD_WEBAPPS_DIR/ROOT_BACKUP2
+		##display_debug "rm -rf $DELETE_PATH" 
+        rm -rf $DELETE_PATH
+     fi
+     #Point backup 2 to backup 1.
+     if [ -h $PROD_WEBAPPS_DIR/ROOT_BACKUP1 ]; then
+		display_debug "4"	 
+        NEW_PATH=`readlink $PROD_WEBAPPS_DIR/ROOT_BACKUP1`
+        #if [ 1 -eq 1 ] & [ -h $PROD_WEBAPPS_DIR/ROOT_BACKUP2 ]; then
+        #   unlink $PROD_WEBAPPS_DIR/ROOT_BACKUP2
+        #fi
+		display_debug "new version: $PROD_WEBAPPS_DIR/$BASE_NAME"
+		display_debug "new path: $NEW_PATH"
+		if ! [ $PROD_WEBAPPS_DIR/$BASE_NAME = $NEW_PATH ];
+		then
+		  #since the backup2 link points to a directory that will be deleted, don't set if it is the same as the new version being installed.
+		  #this would only happen in production if the new version matches what is already on the server.
+          ln -sf $NEW_PATH $PROD_WEBAPPS_DIR/ROOT_BACKUP2
+		fi
+     fi
+     #Point 1 to ROOT
+	 display_debug "this doesn't exist? $CATALINA_HOME/webapps/ROOT"
+     if [ -h $CATALINA_HOME/webapps/ROOT ]; then
+		display_debug "5"
+        ##display_debug "readlink $PROD_WEBAPPS_DIR/ROOT" 
+        NEW_PATH=`readlink $CATALINA_HOME/webapps/ROOT`
+        ##display_debug $NEW_PATH 
+        if [ -e $PROD_WEBAPPS_DIR/ROOT_BACKUP1 ]; 
+		then
+          ##display_debug "New 4" 
+          unlink $PROD_WEBAPPS_DIR/ROOT_BACKUP1
+        fi
+        ln -sf $NEW_PATH $PROD_WEBAPPS_DIR/ROOT_BACKUP1
+     else
+		##display_debug "6"	
+        echo "ROOT does not exist.  Continuing and will recover."
+        #exit 1
+     fi
+  fi
+
+  #display_debug "Deploying new WAR File"
+  if [ 1 -eq 1 ] & [ -e $CATALINA_HOME/webapps/ROOT ]; then
+     unlink $CATALINA_HOME/webapps/ROOT
+     ##display_debug "Removed ROOT link" 
+  fi
+  #display_debug "ln -sf $PROD_WEBAPPS_DIR/$BASE_NAME $CATALINA_HOME/webapps/ROOT" 
+  ln -sf $PROD_WEBAPPS_DIR/$BASE_NAME $CATALINA_HOME/webapps/ROOT
+
+  #display_debug "Deleting WORK directory" 
+  rm -rf $CATALINA_HOME/work/Catalina
+}
+
+#Start Tomcat 
+start_tomcat () {
+  $CATALINA_HOME/bin/startup.sh 2>&1 > /dev/null
+}
+
+
+if [ -d $PROD_WEBAPPS_DIR/$BASE_NAME ];
+then
+  if $FORCE_DEPLOY ;
+  then
+    echo "Most recent version ($BASE_NAME) already exists.  Force Deploy is set.  Continuing deployment."
+  else
+    echo "Most recent version ($BASE_NAME) already exists.  Early Out.  Nothing to deploy."
+    exit 0
+  fi
+fi
+
+#If ROOT is already pointing to the version, stop and don't continue
+if [ -h /opt/dell_acs/tomcat-7.0.27/webapps/ROOT ];
+then
+	cd /opt/dell_acs/tomcat-7.0.27/webapps/ROOT
+	REAL_PATH_OF_ROOT=`pwd -P`
+	display_debug $REAL_PATH_OF_ROOT
+	display_debug $PROD_WEBAPPS_DIR/$BASE_NAME
+	PATH_LENGTH=`expr length $REAL_PATH_OF_ROOT`
+	display_debug "Path length: $PATH_LENGTH"
+	#get out of that directory
+	cd /opt/dell_acs/tomcat-7.0.27/webapps/
+	if [ $REAL_PATH_OF_ROOT = $PROD_WEBAPPS_DIR/$BASE_NAME ];
+	then
+	  if $FORCE_DEPLOY ;
+	  then
+		echo 'Root is already pointing to that version.  Force Deploy is set.  Continuing deployment.'
+	  else
+		echo 'Root is already pointing to that version.  Early Out.  Nothing to deploy.'
+		exit 0
+	  fi
+	fi
+fi
+
+echo "Stopping Tomcat"
+stop_tomcat
+
+display_debug "Copying WAR file"
+display_debug "From $FILE_NAME"
+copy_war_file
+
+echo "Deploying Application"
+app_deploy
+
+echo "Starting Tomcat"
+start_tomcat 
+
+echo "Deployment Successful"
+
+exit 0

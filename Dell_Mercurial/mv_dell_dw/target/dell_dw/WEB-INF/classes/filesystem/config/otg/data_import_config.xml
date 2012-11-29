@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema>
+
+    <table destinationTable="com.dell.dw.persistence.domain.OTGLead" sourceTable="otg" mapKeys="true">
+
+        <properties>
+            <property name="tableType" value="csv"/>
+            <property name="sheetIndex" value="0"/>
+            <property name="rowstoskip" value="1"/>
+            <property name="maxRows" value="1000000"/>
+            <property name="isPathAbsolute" value="true"/>
+            <property name="mapKeys" value="true"/>
+            <property name="batchSize" value="100"/>
+            <property name="separator" value="9"/>
+        </properties>
+
+        <keys>
+            <key type="primary" destinationKey="id" sourceKey="id,entryIndex"/>
+        </keys>
+        <column source="id" destination="id" type="long"/>
+        <column source="entryIndex" destination="entryIndex" type="string" defaultValue=""/>
+        <column source="name" destination="name" type="string"/>
+        <column source="companyName" destination="companyName" type="string"/>
+        <column source="companySize" destination="companySize" type="string"/>
+        <column source="email" destination="email" type="string"/>
+        <column source="phone" destination="phone" type="string"/>
+        <column source="zip" destination="zip" type="string"/>
+        <column source="interest" destination="interest" type="string"/>
+        <column source="contactMe" destination="contactMe" type="string"/>
+        <column source="idea" destination="idea" type="string"/>
+        <column source="emailMe" destination="emailMe" type="string"/>
+        <column source="firstname" destination="firstName" type="string"/>
+        <column source="lastname" destination="lastName" type="string"/>
+        <column source="date" destination="date"  type="datetime" defaultValue="TIMESTAMP"
+                transformerClass="com.dell.dw.managers.dataimport.transformer.DateColumnTransformer"/>
+    </table>
+
+</schema>

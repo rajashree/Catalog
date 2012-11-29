@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/meteriffic/!svn/ver/2/trunk/WebContent/error
+END
+500.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/meteriffic/!svn/ver/2/trunk/WebContent/error/500.jsp
+END
+404.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/meteriffic/!svn/ver/2/trunk/WebContent/error/404.jsp
+END
+error.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/meteriffic/!svn/ver/2/trunk/WebContent/error/error.jsp
+END
+accessDenied.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/meteriffic/!svn/ver/2/trunk/WebContent/error/accessDenied.jsp
+END

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Copyright (c) Sourcen Inc. 2004-2012
+  ~ All rights reserved.
+  -->
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+    <groupId>com.sourcen.core.services</groupId>
+    <artifactId>services_aggregrator</artifactId>
+    <version>1.0</version>
+    <packaging>pom</packaging>
+    <name>Sourcen Core Services - Aggregrator</name>
+    <description>Sourcen core services support.</description>
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.sourcen.core</groupId>
+        <artifactId>sn_core_parent</artifactId>
+        <relativePath>../sn_core/build/parent/pom.xml</relativePath>
+        <version>1.0</version>
+    </parent>
+
+
+    <modules>
+        <module>config</module>
+        <module>event</module>
+        <module>cache</module>
+        <module>texttemplate</module>
+        <module>i18n</module>
+        <module>services_all</module>
+    </modules>
+
+</project>

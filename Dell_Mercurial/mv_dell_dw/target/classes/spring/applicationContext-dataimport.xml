@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       default-init-method="init" default-destroy-method="destroy"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.1.xsd">
+
+    <bean id="tableSequenceService" class="com.sourcen.dataimport.service.support.hibernate.TableSequenceServiceImpl"
+          scope="singleton">
+        <property name="autowiredSessionFactory" ref="hibernateSessionFactory"/>
+    </bean>
+
+    <bean id="dataImportLookupService"
+          class="com.sourcen.dataimport.service.support.hibernate.DataImportLookupServiceImpl" scope="singleton">
+        <property name="sessionFactory" ref="hibernateSessionFactory"/>
+        <property name="dataImportLookupClass" value="com.dell.dw.persistence.domain.DataImportLookup"/>
+    </bean>
+
+    <bean id="dataImportConfig" class="com.sourcen.dataimport.definition.DataImportConfig" scope="prototype">
+        <property name="tableSequenceService" ref="tableSequenceService"/>
+        <property name="dataImportLookupService" ref="dataImportLookupService"/>
+    </bean>
+
+
+    <bean id="fkColumnTransformer" class="com.sourcen.dataimport.transformer.FkColumnTransformer" scope="prototype">
+        <property name="dataImportLookupService" ref="dataImportLookupService"/>
+    </bean>
+
+    <bean id="genericColumnTransformer" class="com.sourcen.dataimport.transformer.GenericColumnTransformer"
+          scope="prototype"/>
+
+    <bean id="genericDataImportService" class="com.sourcen.dataimport.service.support.GenericDataImportService"
+          scope="prototype">
+        <property name="batchSize" value="100"/>
+    </bean>
+
+    <bean id="genericDataExceptionHandler" class="com.sourcen.dataimport.service.errors.DataExceptionHandlerAdapter"
+          scope="prototype"/>
+
+    <bean id="storeDataExceptionHandler"
+          class="com.dell.dw.managers.dataimport.storefront.StoreDataExceptionHandler"
+          scope="prototype"/>
+
+    <bean id="sfOrderItemDataExceptionHandler"
+          class="com.dell.dw.managers.dataimport.storefront.SFOrderItemDataExceptionHandler"
+          scope="prototype"/>
+
+    <bean id="sfOrderDataExceptionHandler"
+          class="com.dell.dw.managers.dataimport.storefront.SFOrderDataExceptionHandler"
+          scope="prototype"/>
+
+    <bean id="otgDataExceptionHandler"
+          class="com.dell.dw.managers.dataimport.otg.OTGDataExceptionHandler"
+          scope="prototype"/>
+
+    <bean id="orderItemDataExceptionHandler"
+          class="com.dell.dw.managers.dataimport.order.OrderItemDataExceptionHandler"
+          scope="prototype"/>
+
+
+    <bean id="csvDataReader" class="com.sourcen.dataimport.service.support.csv.CSVDataReader" scope="prototype">
+        <property name="exceptionHandler" ref="genericDataExceptionHandler"/>
+    </bean>
+
+    <bean id="gaDataReader" class="com.dell.dw.managers.dataimport.service.GADataReader" scope="prototype">
+        <property name="exceptionHandler" ref="genericDataExceptionHandler"/>
+    </bean>
+
+    <bean id="d3DataReader" class="com.dell.dw.managers.dataimport.service.D3DataReader" scope="prototype">
+        <property name="exceptionHandler" ref="genericDataExceptionHandler"/>
+    </bean>
+
+    <bean id="sfOrderDataReader" class="com.dell.dw.managers.dataimport.service.SFOrderDataReader" scope="prototype">
+        <property name="exceptionHandler" ref="genericDataExceptionHandler"/>
+    </bean>
+
+    <bean id="orderDataReader" class="com.dell.dw.managers.dataimport.service.OrderDataReader" scope="prototype">
+        <property name="exceptionHandler" ref="genericDataExceptionHandler"/>
+        <property name="configurationService" ref="configurationService"/>
+    </bean>
+
+    <bean id="otgDataReader" class="com.dell.dw.managers.dataimport.service.OTGDataReader" scope="prototype">
+        <property name="exceptionHandler" ref="genericDataExceptionHandler"/>
+    </bean>
+
+    <bean id="hibernateDataWriter" class="com.sourcen.dataimport.service.support.hibernate.HibernateDataWriter"
+          scope="prototype">
+        <property name="sessionFactory" ref="hibernateSessionFactory"/>
+        <property name="exceptionHandler" ref="genericDataExceptionHandler"/>
+        <property name="beanProcessors">
+            <list>
+                <ref bean="gaEventBeanProcessor"/>
+                <ref bean="gaPageViewBeanProcessor"/>
+                <ref bean="d3BeanProcessor"/>
+                <ref bean="storeBeanProcessor"/>
+                <ref bean="sfOrderBeanProcessor"/>
+                <ref bean="sfOrderItemBeanProcessor"/>
+                <ref bean="orderItemBeanProcessor"/>
+                <ref bean="otgBeanProcessor"/>
+            </list>
+        </property>
+    </bean>
+
+    <bean id="gaEventBeanProcessor" class="com.dell.dw.managers.dataimport.ga.GAEventBeanProcessor"/>
+    <bean id="gaPageViewBeanProcessor" class="com.dell.dw.managers.dataimport.ga.GAPageViewBeanProcessor"/>
+    <bean id="d3BeanProcessor" class="com.dell.dw.managers.dataimport.d3.D3BeanProcessor"/>
+    <bean id="storeBeanProcessor" class="com.dell.dw.managers.dataimport.storefront.StoreBeanProcessor"/>
+    <bean id="sfOrderBeanProcessor" class="com.dell.dw.managers.dataimport.storefront.SFOrderBeanProcessor"/>
+    <bean id="sfOrderItemBeanProcessor" class="com.dell.dw.managers.dataimport.storefront.SFOrderItemBeanProcessor"/>
+    <bean id="orderItemBeanProcessor" class="com.dell.dw.managers.dataimport.order.OrderItemBeanProcessor"/>
+    <bean id="otgBeanProcessor" class="com.dell.dw.managers.dataimport.otg.OTGBeanProcessor"/>
+
+</beans>

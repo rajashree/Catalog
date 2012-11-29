@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tasks>
+    <task group="core" version="1.01" beanName="testUpgradeTaskBean"/>
+    <task group="core" version="1.01" className="com.sourcen.core.services.upgrade.TestUpgradeTask"/>
+</tasks>

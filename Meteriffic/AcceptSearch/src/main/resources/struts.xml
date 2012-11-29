@@ -1,0 +1,168 @@
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+
+
+	<!-- Setting "struts.objectFactory" to "spring" will force Struts to instantiate the actions using Spring, injecting all the defined dependencies on applicationContext.xml. -->
+	<constant name="struts.objectFactory" value="spring" />
+	<!-- The default includeParams (as specified in struts-default.properties) is "get", by setting this to "none" in your application's struts.properties file you can prevent the get parameters from being appended (like,http://localhost:8080/app/edit.action?id=2) unless you explicity use a <s:param> tag. The other value for this property is "all" which goes further than "get" by including both post & get parameters. -->
+	<constant name="struts.url.includeParams" value="none" />
+	<!-- when set to true, Struts will act much more friendly for developers. This includes:struts.i18n.reload = true,struts.configuration.xml.reload = true -->
+	<constant name="struts.devMode" value="true" />
+	<constant name="struts.action.extension" value="htm" />
+
+	<constant name="struts.custom.i18n.resources" value="ii8n/global_resource_ii8n">
+	</constant>
+
+	<package name="default" namespace="/" extends="struts-default">
+
+		<result-types>
+			<result-type name="freemarker"
+				class="org.apache.struts2.views.freemarker.FreemarkerResult"
+				default="true" />
+		</result-types>
+		<interceptors>
+			<interceptor name="authentication"
+				class="com.sourcen.space.security.AuthenticationInterceptor" />
+			<interceptor-stack name="user">
+				<interceptor-ref name="authentication" />
+				<interceptor-ref name="defaultStack" />
+			</interceptor-stack>
+			<interceptor-stack name="guest">
+				<interceptor-ref name="defaultStack" />
+			</interceptor-stack>
+		</interceptors>
+		<default-interceptor-ref name="guest" />
+		<global-results>
+			<result name="login" type="redirect-action">
+				<param name="actionName">login</param>
+				<param name="namespace">/</param>
+			</result>
+			<result name="unauthorized" type="redirect-action">
+				login
+				<param name="authnFailed">true</param>
+			</result>
+			<result name="unauthenticated" type="redirect">
+				login.htm
+			</result>
+			<result name="error" type="freemarker">
+				/freemarker/global/error.ftl
+			</result>
+			<result name="success" type="freemarker">
+				/freemarker/global/success.ftl
+			</result>
+
+		</global-results>
+
+		<action name="login"
+			class="com.sourcen.space.action.LoginAction">
+			<result name="input">/freemarker/login.ftl</result>
+			<result name="success" type="redirect-action">
+				user/index
+			</result>
+		</action>
+		<action name="logout"
+			class="com.sourcen.space.action.LogoutAction">
+			<result name="success">/freemarker/logout.ftl</result>
+		</action>
+		<action name="signup"
+			class="com.sourcen.space.action.SignUpAction" method="input">
+			<result name="input">/freemarker/signup.ftl</result>
+			<result name="unavailable">
+				/freemarker/registration-unavailable.ftl
+			</result>
+		</action>
+		<action name="forget.password"
+			class="com.sourcen.space.action.ForgetPasswordAction">
+			<result name="unavailable">
+				/freemarker/resetPassword-unavailable.ftl
+			</result>
+			<result name="input">/freemarker/forgetPassword.ftl</result>
+		</action>
+		<action name="reset.password"
+			class="com.sourcen.space.action.ResetPasswordAction">
+			<result name="input">/freemarker/resetPassword.ftl</result>
+		</action>
+
+		<action name="index"
+			class="com.sourcen.space.action.IndexAction">
+			<result name="success" type="redirect-action">login</result>
+		</action>
+		<action name="serendio"
+			class="com.sourcen.space.action.SerendioAction">
+			<result name="export" type="stream">
+				<param name="contentType">text/xml</param>				
+				<param name="bufferSize">1024</param>
+			</result>
+		</action>
+
+
+
+	</package>
+	<package name="user" namespace="/user" extends="default">
+		<default-interceptor-ref name="user" />
+		<default-action-ref name="index"></default-action-ref>
+		<action name="settings"
+			class="com.sourcen.space.action.SettingsAction">
+			<result name="success">/freemarker/settings.ftl</result>
+		</action>
+
+		<action name="change.password"
+			class="com.sourcen.space.action.PasswordChangeAction">
+			<result name="input">/freemarker/changePassword.ftl</result>
+		</action>
+		
+		<action name="recent.search"
+			class="com.sourcen.space.action.RecentSearchAction">
+			<result name="success">/freemarker/search-info.ftl</result>
+			<result name="list">/freemarker/recent-search.ftl</result>
+		</action>
+
+
+		<action name="account"
+			class="com.sourcen.space.action.AccountAction">
+			<interceptor-ref name="user" />
+			<result name="view">/freemarker/myAccount.ftl</result>
+			<result name="input">/freemarker/editProfile.ftl</result>
+
+		</action>
+
+		<action name="index"
+			class="com.sourcen.space.action.DashBoardAction">
+			<result name="success">/freemarker/dashboard.ftl</result>
+		</action>
+
+
+	</package>
+	<package name="admin" namespace="/admin" extends="user">
+
+		<action name="index"
+			class="com.sourcen.space.action.AdminAction">
+			<result name="success">/freemarker/admin/index.ftl</result>
+			<result name="listUser">
+				/freemarker/admin/manageUsers.ftl
+			</result>
+		</action>
+		<action name="taxonomy"
+			class="com.sourcen.space.action.TaxonomyAction">
+			<result name="input">
+				/freemarker/admin/taxonomy-update.ftl
+			</result>
+		</action>
+		<action name="save.search"
+			class="com.sourcen.space.action.SearchAction">
+			<result name="success">/freemarker/admin/search-info.ftl</result>
+			<result name="list">/freemarker/admin/saved-search.ftl</result>
+		</action>
+		<action name="mail.settings"
+			class="com.sourcen.space.action.MailSettingsAction">
+			<result name="success">/freemarker/admin/setting-mail.ftl</result>
+			<result name="input">/freemarker/admin/setting-mail-input.ftl</result>
+		</action>
+		
+
+	</package>
+
+
+</struts>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE sqlMap PUBLIC "-//iBATIS.com//DTD SQL Map 2.0//EN" "http://www.ibatis.com/dtd/sql-map-2.dtd">
+
+<sqlMap>
+
+
+	<typeAlias alias="page" type="com.sourcen.microsite.model.Page" />
+
+	<resultMap id="page" class="page">
+		<result property="id" column="pid" />
+		<result property="name" column="name" />
+		<result property="title" column="title" />
+		<result property="description" column="description" />
+		<result property="tid" column="tid" />
+		<result property="created" column="created" />
+		<result property="modified" column="modified" />
+	</resultMap>
+  <resultMap id="page1" class="page">
+		<result property="id" column="pid" />		
+		<result property="content" column="content" />
+		<result property="created" column="created" />
+		<result property="modified" column="modified" />
+	</resultMap>
+
+	<select id="getPage" resultMap="page"
+		parameterClass="String">
+		select * from pages where name = #name#
+	</select>
+	<select id="getPageById" resultMap="page"
+		parameterClass="Integer">
+		select * from pages where pid = #pid#
+	</select>
+	<select id="getAllPages" resultMap="page"
+		parameterClass="String">
+		select * from pages 
+	</select>
+	
+	<insert id="savePage"  	parameterClass="page">
+		 insert into pages (name,title,description,tid,created,modified)    values (#name#,#title#,#description#,#tid#,now(),now())
+	</insert>
+	<update id="updatePage"  	parameterClass="page">
+		update pages set name=#name#,title=#title#,description=#description#,tid=#tid# where pid=#id#
+	</update>
+	<delete id="deletePage"  	parameterClass="String">
+		delete from pages where name=#name#
+	</delete>
+	
+ 	
+	 <select id="getThemePages" resultMap="page"
+		parameterClass="Integer">
+		select * from pages where tid=#tid#
+	</select>
+	
+	 <insert id="addPageblock" 		parameterClass="HashMap">
+		insert into page_blocks (pid,bid,pos)    values (#pid#,#bid#,#pos#)
+	</insert>
+	
+	
+	<update id="updatePageblock"  	parameterClass="HashMap">
+		update page_blocks set bid=#bid#  where pid=#pid# and bid=#bid#
+	</update>
+	
+	<delete id="removePageBlocks"  	parameterClass="Integer">
+		delete from page_blocks where pid=#pid#
+	</delete>
+	
+	
+	<update id="updateUserSitePage"  	parameterClass="HashMap">
+		UPDATE user_saved_page set content=#content#,modified= #modified# where sid=#sid# and pid=#pid#  
+	</update>
+	<insert id="saveUserSitePage"  	parameterClass="HashMap">
+		 INSERT INTO user_saved_page (sid,pid,content,created,modified)    VALUES (#sid#,#pid#, #content#,#created#,#modified#)
+	   <selectKey resultClass="int" keyProperty="id">
+	      select last_insert_id() as id
+	    </selectKey>
+	</insert>
+	 <select id="getUserSavedPage" resultMap="page1"
+		parameterClass="HashMap">
+		select * from user_saved_page where sid=#sid# and pid=#pid#  
+	</select>
+	<delete id="cleanUserSitePages"  	parameterClass="String">
+		delete from user_saved_page where sid=#sid#
+	</delete>
+	
+</sqlMap>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

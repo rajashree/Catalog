@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataimport>
+	<preprocessors>
+		<preprocessor provider="ficstar" beanName="ficstarPreprocessorHandler"/>
+		<preprocessor provider="google" beanName="googlePreprocessorHandler"/>
+        <preprocessor provider="merchant" retailerSite="urbandecay" beanName="merchantUrbanDecayPreprocessorHandler"/>
+    </preprocessors>
+	<maps>
+		<map source="product" phase="prevalidated" type="com.dell.acs.persistence.domain.UnvalidatedProduct" handler="prevalidatedProductDataImportHandler"/> 
+		<map source="image" phase="prevalidated" type="com.dell.acs.persistence.domain.UnvalidatedProductImage" handler="prevalidatedProductImageDataImportHandler"/> 
+		<map source="review" phase="prevalidated" type="com.dell.acs.persistence.domain.UnvalidatedProductReview" handler="prevalidatedProductReviewDataImportHandler"/> 
+		<map source="slider" phase="prevalidated" type="com.dell.acs.persistence.domain.UnvalidatedProductSlider" handler="prevalidatedProductSliderDataImportHandler"/> 
+	</maps>
+	<availabilities>
+		<!-- start ficstar -->
+		<availability text="out of stock" value="OUT_OF_STOCK"/>
+		<availability text="outofstock" value="OUT_OF_STOCK"/>
+		<availability text="1" value="IN_STOCK"/>
+		<availability text="in stock" value="IN_STOCK"/>
+		<availability text="instock" value="IN_STOCK"/>
+		<availability text="2" value="AVAILABLE_FOR_ORDER"/>
+		<availability text="available for order" value="AVAILABLE_FOR_ORDER"/>
+		<availability text="3" value="PREORDER"/>
+		<availability text="preorder" value="PREORDER"/>
+		<!-- end ficstar -->
+
+		<!-- start google -->
+		<availability text="out" value="OUT_OF_STOCK"/>
+		<availability text="NO" value="OUT_OF_STOCK"/>
+		<availability text="0" value="OUT_OF_STOCK"/>
+		<availability text="In Stock" value="IN_STOCK"/>
+		<availability text="in" value="IN_STOCK"/>
+		<availability text="YES" value="IN_STOCK"/>
+		<!-- end google -->
+
+        <!-- start urbandecay -->
+        <availability text="null" value="IN_STOCK"/>
+        <!-- end urbandecay -->
+
+    </availabilities>
+	<transformers>
+		<transformer source="product" phase="prevalidated" column="Availability" className="com.dell.acs.dataimport.transformers.AvailabilityColumnTransformer"/>
+	</transformers>
+	<validators>
+		<validator order="1" className="com.dell.acs.dataimport.validators.ProductTitleValidator"/>
+		<validator order="1" className="com.dell.acs.dataimport.validators.ProductListPriceValidator"/>
+		<validator order="1" className="com.dell.acs.dataimport.validators.ProductPriceRangeValidator"/>
+        <validator order="1" className="com.dell.acs.dataimport.validators.ProductURLValidator"/>
+    </validators>
+</dataimport>

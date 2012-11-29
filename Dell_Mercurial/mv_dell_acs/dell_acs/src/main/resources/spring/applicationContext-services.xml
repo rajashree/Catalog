@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       default-init-method="init" default-destroy-method="destroy"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.1.xsd
+
+	  http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+
+    <bean id="statManagerConfiguration" class="com.dell.acs.stats.impl.StatManagerConfigurationImpl"
+          lazy-init="false" scope="singleton">
+        <property name="areas">
+            <map>
+                <!-- Concurrent Job Count -->
+                <entry key="DownloadDataFilesJob.Count" value="com.dell.acs.stats.CountStat"/>
+                <entry key="DataImportJob.Count" value="com.dell.acs.stats.CountStat"/>
+                <entry key="DataExportJob.Count" value="com.dell.acs.stats.CountStat"/>
+                <entry key="DataImportCleanUpJob.Count" value="com.dell.acs.stats.CountStat"/>
+                <entry key="DefaultCouponNotificationJob.Count" value="com.dell.acs.stats.CountStat"/>
+                <entry key="ImageProcessJob.Count" value="com.dell.acs.stats.CountStat"/>
+                <entry key="SrcImageDownloadJob.Count" value="com.dell.acs.stats.CountStat"/>
+                <entry key="SrcImageDownloadJob.ImageCount" value="com.dell.acs.stats.CountMinMaxStat"/>
+                <entry key="SrcImageDownloadJob.ImageTimer" value="com.dell.acs.stats.TimerStat"/>
+                <entry key="UploadDataFilesJob.Count" value="com.dell.acs.stats.CountStat"/>
+                <entry key="UploadDataFilesJob.UploadToFTPTimer" value="com.dell.acs.stats.TimerStat"/>
+
+                <!-- Job Details -->
+                <entry key="ProcessImportedFile.Count" value="com.dell.acs.stats.CountMinMaxStat"/>
+                <entry key="ProcessImportedFile.Timer" value="com.dell.acs.stats.TimerStat"/>
+                <entry key="ProcessImages.Count" value="com.dell.acs.stats.CountMinMaxStat"/>
+                <entry key="ProcessImages.Timer" value="com.dell.acs.stats.TimerStat"/>
+                <entry key="DownloadDataFiles.DownloadCount" value="com.dell.acs.stats.CountMinMaxStat"/>
+                <entry key="DownloadDataFiles.FileCount" value="com.dell.acs.stats.CountMinMaxStat"/>
+                <entry key="DownloadDataFiles.DownloadTiming" value="com.dell.acs.stats.TimerStat"/>
+                <entry key="DownloadDataFiles.DownloadFileTiming" value="com.dell.acs.stats.TimerStat"/>
+
+                <!-- DataImportDatails -->
+                <entry key="DataImportDetails.product.Count" value="com.dell.acs.stats.CountStat"/>
+                <entry key="DataImportDetails.product.FailedCount" value="com.dell.acs.stats.CountStat"/>
+                <entry key="DataImportDetails.product.Timer" value="com.dell.acs.stats.TimerStat"/>
+                <entry key="DataImportDetails.image.Count" value="com.dell.acs.stats.CountStat"/>
+                <entry key="DataImportDetails.image.FailedCount" value="com.dell.acs.stats.CountStat"/>
+                <entry key="DataImportDetails.image.Timer" value="com.dell.acs.stats.TimerStat"/>
+                <entry key="DataImportDetails.review.Count" value="com.dell.acs.stats.CountStat"/>
+                <entry key="DataImportDetails.review.FailedCount" value="com.dell.acs.stats.CountStat"/>
+                <entry key="DataImportDetails.review.Timer" value="com.dell.acs.stats.TimerStat"/>
+                <entry key="DataImportDetails.slider.Count" value="com.dell.acs.stats.CountStat"/>
+                <entry key="DataImportDetails.slider.FailedCount" value="com.dell.acs.stats.CountStat"/>
+                <entry key="DataImportDetails.slider.Timer" value="com.dell.acs.stats.TimerStat"/>
+
+            </map>
+        </property>
+    </bean>
+
+    <bean id="statHeartBeatThread" class="com.dell.acs.stats.thread.StatsHeartBeatThread"
+          lazy-init="false" scope="singleton">
+        <property name="logger" value="${stat.logger|com.dell.acs.stat.heartbeat}"/>
+        <property name="loggerAnalytics" value="${stat.logger|com.dell.acs.stat.analytics}"/>
+        <property name="period" value="${stat.period|30000}"/>
+    </bean>
+
+    <context:component-scan base-package="com.dell.acs.managers">
+        <context:include-filter type="annotation" expression="org.springframework.stereotype.Service"/>
+    </context:component-scan>
+
+    <!--for TaxonomyCategory-->
+    <bean id="taxonomyManager" class="com.dell.acs.managers.TaxonomyManagerImpl"/>
+
+    <bean id="notificationManager" class="com.sourcen.core.notification.NotificationManagerImpl"/>
+
+</beans>

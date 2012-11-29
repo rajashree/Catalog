@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE sqlMap PUBLIC "-//iBATIS.com//DTD SQL Map 2.0//EN" "http://www.ibatis.com/dtd/sql-map-2.dtd">
+
+<sqlMap>
+
+
+	<typeAlias alias="search" type="com.sourcen.space.model.Search" />
+	<cacheModel id="defaultcache" type="MEMORY">
+		<flushInterval hours="24" />
+		<flushOnExecute statement="saveSearch" />
+		<flushOnExecute statement="updateSearch" />
+		<flushOnExecute statement="removeSearch" />
+		<property name="reference-type" value="WEAK" />
+	</cacheModel>
+	<resultMap id="search" class="search">
+
+		<result property="id" column="id" />
+		<result property="title" column="title" />
+		<result property="description" column="description" />
+		<result property="user" column="user" />
+		<result property="buzz" column="isbuzz" />
+		<result property="volume" column="isvolume" />
+		<result property="productsIds" column="productsIds" />
+		<result property="featureIds" column="featureIds" />
+		<result property="sentimentIds" column="sentimentIds" />
+		<result property="postType" column="postType" />
+		<result property="orientation" column="orientation" />
+		<result property="created" column="created" />
+		<result property="modified" column="modified" />
+		<result property="isPrivate" column="isPrivate" />
+		
+	</resultMap>
+
+	
+	<select id="listSavedSearch" resultMap="search"	parameterClass="String"	 cacheModel="defaultcache"> 
+		select * from saved_search  where user = #username#
+
+	</select>
+
+
+	<select id="listSavedSearch_limit" resultMap="search"	parameterClass="HashMap"	 cacheModel="defaultcache"> 
+		select * from saved_search  where user = #username# ORDER by modified DESC  LIMIT #start#,#count#;
+		
+
+	</select>
+
+
+	<select id="getSearchByTitle" resultMap="search" parameterClass="String" cacheModel="defaultcache"> 
+
+		select * from saved_search where title = #title#
+	</select>
+	<select id="getSearchById" resultMap="search" parameterClass="String" cacheModel="defaultcache"> 
+
+		select * from saved_search where id = #sid#
+	</select>
+
+	<insert id="saveSearch" parameterClass="search">
+		insert into saved_search
+		(title,description,user,isbuzz,isvolume,productsIds,featureIds,sentimentIds,postType,orientation,created,modified,isPrivate)
+		values (#title#,
+		#description#,#user#,#buzz#,#volume#,#productsIds#,#featureIds#,#sentimentIds#,#postType#,#orientation#,#created#,#modified#,#isPrivate#)
+		<selectKey resultClass="int" keyProperty="id">
+	      select last_insert_id() as id
+	    </selectKey>
+	</insert>
+	
+	<update id="updateSearch" parameterClass="search">
+		update saved_search SET title=#title#,description=#description#,user=#user#,isbuzz=#buzz#,isvolume=#volume#,productsIds=#productsIds#,featureIds=#featureIds#,sentimentIds=#sentimentIds#,postType=#postType#,orientation=#orientation#,modified=#modified#,isPrivate=#isPrivate# where id=#id#;
+	</update>
+
+
+
+
+	<delete id="removeSearch" parameterClass="int">
+		delete from saved_search where id = #id#;
+	</delete>
+
+</sqlMap>

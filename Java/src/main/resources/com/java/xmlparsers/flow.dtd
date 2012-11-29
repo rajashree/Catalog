@@ -1,0 +1,5 @@
+<!ELEMENT Flowers (Flower)>
+<!ELEMENT Flower (name+)>
+<!ATTLIST Flower national CDATA #REQUIRED>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT color (#PCDATA)>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:util="http://www.springframework.org/schema/util"
+	xsi:schemaLocation="
+http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.0.xsd
+http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd
+http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-2.0.xsd">
+
+	<bean id="propertyPlaceholderConfigurer"
+		class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+		<property name="locations">
+			<list>
+				<value>/WEB-INF/classes/application.properties</value>
+			</list>
+		</property>
+	</bean>
+	<bean id="applicationManager" init-method="init"
+		class="com.sourcen.microsite.service.impl.DefaultApplicationManager">
+		<property name="propertyDAO" ref="propertyDAO"></property>
+		<property name="saltSource" ref="saltSource" />
+		<property name="passwordEncoder" ref="passwordEncoder" />
+
+	</bean>
+
+
+
+	<bean id="userManager"
+		class="com.sourcen.microsite.service.impl.DefaultUserManager">
+		<property name="userDAO" ref="userDAO"></property>
+		<property name="applicationManager" ref="applicationManager"></property>
+	</bean>
+	<bean id="groupManager"
+		class="com.sourcen.microsite.service.impl.GroupManagerImpl">
+		<property name="groupDAO" ref="groupDAO"></property>
+	</bean>
+
+
+	<bean id="emailManager" init-method="start" destroy-method="stop"
+		factory-method="getInstance"
+		class="com.sourcen.microsite.service.impl.DefaultEmailManager">
+		<property name="applicationManager" ref="applicationManager"></property>
+		<property name="host">
+			<value>${mail.smtp.host}</value>
+		</property>
+		<property name="username">
+			<value>${mail.smtp.username}</value>
+		</property>
+		<property name="password">
+			<value>${mail.smtp.password}</value>
+		</property>
+		<property name="defaultEncoding">
+			<value>${mail.smtp.defaultEncoding}</value>
+		</property>
+
+	</bean>
+	<bean id="registrationManager"
+		class="com.sourcen.microsite.service.impl.DefaultRegistrationManager">
+		<property name="applicationManager" ref="applicationManager"></property>
+	</bean>
+
+	<bean id="templateManager"
+		class="com.sourcen.microsite.service.impl.EmailTemplateManagerImpl">
+		<property name="templateDAO" ref="templateDAO"></property>
+	</bean>
+
+	<bean id="blockManager"
+		class="com.sourcen.microsite.service.impl.BlockManagerImpl"
+		init-method="init">
+		<property name="blockDAO" ref="blockDAO"></property>
+		<property name="applicationManager" ref="applicationManager"></property>
+	</bean>
+	<bean id="siteManager"
+		class="com.sourcen.microsite.service.impl.SiteManagerImpl">
+		<property name="siteDAO" ref="siteDAO"></property>
+	</bean>
+	<bean id="themeManager"
+		class="com.sourcen.microsite.service.impl.ThemeManagerImpl">
+		<property name="themeDAO" ref="themeDAO"></property>
+	</bean>
+	<bean id="pageManager"
+		class="com.sourcen.microsite.service.impl.PageManagerImpl"
+		init-method="init">
+		<property name="pageDAO" ref="pageDAO"></property>
+	</bean>
+	
+
+	<bean id="strutsFilter"
+		class="org.apache.struts2.dispatcher.FilterDispatcher" />
+	<bean id="sitemeshFilter"
+		class="org.apache.struts2.sitemesh.FreeMarkerPageFilter">
+
+	</bean>
+
+</beans>

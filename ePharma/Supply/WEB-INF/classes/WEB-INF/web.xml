@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<web-app>
+
+    <welcome-file-list>
+           <welcome-file>signIn</welcome-file>
+</welcome-file-list>
+  
+
+
+<!-- JSPC servlet mappings start -->
+        
+  
+<!-- JSPC servlet mappings end -->
+<servlet>
+        <servlet-name>main</servlet-name>
+        <servlet-class>SCM.suplychain</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>main</servlet-name>
+        <url-pattern>/Login</url-pattern>
+    </servlet-mapping>
+
+<servlet>
+        <servlet-name>LoginCheck</servlet-name>
+        <servlet-class>SCM.Check</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>LoginCheck</servlet-name>
+        <url-pattern>/CheckXml</url-pattern>
+    </servlet-mapping>
+
+<servlet>
+        <servlet-name>PurchaseOrder</servlet-name>
+        <servlet-class>SCM.POposting</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>PurchaseOrder</servlet-name>
+        <url-pattern>/POorder</url-pattern>
+    </servlet-mapping>
+
+
+<servlet>
+        <servlet-name>ASNForm</servlet-name>
+        <servlet-class>SCM.AsnFormPosting</servlet-class>
+    </servlet>
+
+ <servlet-mapping>
+       <servlet-name>ASNForm</servlet-name>
+        <url-pattern>/ASNGeneration</url-pattern>
+    </servlet-mapping>
+
+<servlet>
+        <servlet-name>Posubmit</servlet-name>
+        <servlet-class>SCM.PoSubmit</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>Posubmit</servlet-name>
+        <url-pattern>/POsubmit</url-pattern>
+    </servlet-mapping>
+
+
+<servlet>
+   <servlet-name>BuyerHome</servlet-name>
+   <jsp-file>/BuyerHome.jsp</jsp-file>
+ </servlet>
+<servlet-mapping>
+        <servlet-name>BuyerHome</servlet-name>
+        <url-pattern>/BuyerHome</url-pattern>
+    </servlet-mapping>
+
+<servlet>
+   <servlet-name>POGenerate</servlet-name>
+   <jsp-file>/POGenerate.jsp</jsp-file>
+ </servlet>
+<servlet-mapping>
+        <servlet-name>POGenerate</servlet-name>
+        <url-pattern>/POGenerate</url-pattern>
+    </servlet-mapping>
+
+
+<servlet>
+   <servlet-name>POSubmit</servlet-name>
+   <jsp-file>/POSubmit.jsp</jsp-file>
+   
+
+ </servlet>
+<servlet-mapping>
+        <servlet-name>POSubmit</servlet-name>
+        <url-pattern>/POSubmit</url-pattern>
+    </servlet-mapping>
+
+
+<servlet>
+   <servlet-name>SellerHome</servlet-name>
+   <jsp-file>/SellerHome.jsp</jsp-file>
+   
+
+ </servlet>
+<servlet-mapping>
+        <servlet-name>SellerHome</servlet-name>
+        <url-pattern>/SellerHome</url-pattern>
+    </servlet-mapping>
+
+<servlet>
+   <servlet-name>listpo</servlet-name>
+   <jsp-file>/listpo.jsp</jsp-file>
+   
+
+ </servlet>
+<servlet-mapping>
+        <servlet-name>listpo</servlet-name>
+        <url-pattern>/listpo</url-pattern>
+    </servlet-mapping>
+
+<servlet>
+   <servlet-name>ASNReconsGenerate</servlet-name>
+   <jsp-file>/ASNReconsGenerate.jsp</jsp-file>
+</servlet>
+<servlet-mapping>
+        <servlet-name>ASNReconsGenerate</servlet-name>
+        <url-pattern>/ASNReconsGenerate</url-pattern>
+</servlet-mapping>
+
+<servlet>
+   <servlet-name>ASNGenerationForm</servlet-name>
+   <jsp-file>/ASNGenerationForm.jsp</jsp-file>
+ </servlet>
+
+<servlet-mapping>
+        <servlet-name>ASNGenerationForm</servlet-name>
+        <url-pattern>/ASNGenerationForm</url-pattern>
+    </servlet-mapping>
+
+
+<servlet>
+   <servlet-name>ASNGeneration</servlet-name>
+   <jsp-file>/ASNGeneration.jsp</jsp-file>
+   
+
+ </servlet>
+<servlet-mapping>
+        <servlet-name>ASNGeneration</servlet-name>
+        <url-pattern>/ASNGeneration1</url-pattern>
+    </servlet-mapping>
+
+<servlet>
+   <servlet-name>ASNReconsolation</servlet-name>
+   <jsp-file>/ASNReconsolation.jsp</jsp-file>
+   
+
+ </servlet>
+<servlet-mapping>
+        <servlet-name>ASNReconsolation</servlet-name>
+        <url-pattern>/ASNReconsolation</url-pattern>
+    </servlet-mapping>
+
+
+<servlet>
+   <servlet-name>BuyerNav</servlet-name>
+   <jsp-file>/BuyerNav.jsp</jsp-file>
+   
+
+ </servlet>
+<servlet-mapping>
+        <servlet-name>BuyerNav</servlet-name>
+        <url-pattern>/BuyerNav</url-pattern>
+    </servlet-mapping>
+
+
+
+
+
+
+<servlet>
+   <servlet-name>BuyerPo</servlet-name>
+   <jsp-file>/BuyerPo.jsp</jsp-file>
+   
+
+ </servlet>
+<servlet-mapping>
+        <servlet-name>BuyerPo</servlet-name>
+        <url-pattern>/BuyerPo</url-pattern>
+    </servlet-mapping>
+
+
+
+
+<servlet>
+   <servlet-name>BuyerReport</servlet-name>
+   <jsp-file>/BuyerReport.jsp</jsp-file>
+   
+
+ </servlet>
+<servlet-mapping>
+        <servlet-name>BuyerReport</servlet-name>
+        <url-pattern>/BuyerReport</url-pattern>
+    </servlet-mapping>
+
+
+
+
+
+
+
+
+
+<servlet>
+   <servlet-name>DbOparetions</servlet-name>
+   <jsp-file>/DbOparetions.jsp</jsp-file>
+   
+
+ </servlet>
+<servlet-mapping>
+        <servlet-name>DbOparetions</servlet-name>
+        <url-pattern>/DbOparetions</url-pattern>
+    </servlet-mapping>
+
+
+
+<servlet>
+   <servlet-name>Error</servlet-name>
+   <jsp-file>/Error.jsp</jsp-file>
+   
+
+ </servlet>
+<servlet-mapping>
+        <servlet-name>Error</servlet-name>
+        <url-pattern>/Error</url-pattern>
+    </servlet-mapping>
+
+
+<servlet>
+   <servlet-name>Failure</servlet-name>
+   <jsp-file>/Failure.jsp</jsp-file>
+   
+
+ </servlet>
+<servlet-mapping>
+        <servlet-name>Failure</servlet-name>
+        <url-pattern>/Failure</url-pattern>
+    </servlet-mapping>
+
+
+<servlet>
+   <servlet-name>POASNResult</servlet-name>
+   <jsp-file>/POASNResult.jsp</jsp-file>
+ </servlet>
+
+<servlet-mapping>
+        <servlet-name>POASNResult</servlet-name>
+        <url-pattern>/POASNResult</url-pattern>
+    </servlet-mapping>
+
+
+<servlet>
+   <servlet-name>pofailure</servlet-name>
+   <jsp-file>/pofailure.jsp</jsp-file>
+   
+
+ </servlet>
+<servlet-mapping>
+        <servlet-name>pofailure</servlet-name>
+        <url-pattern>/pofailure</url-pattern>
+    </servlet-mapping>
+
+
+
+<servlet>
+   <servlet-name>POGenReport</servlet-name>
+   <jsp-file>/POGenReport.jsp</jsp-file>
+ </servlet>
+
+<servlet-mapping>
+        <servlet-name>POGenReport</servlet-name>
+        <url-pattern>/POGenReport</url-pattern>
+    </servlet-mapping>
+
+
+<servlet>
+   <servlet-name>PORecReport</servlet-name>
+   <jsp-file>/PORecReport.jsp</jsp-file>
+   
+
+ </servlet>
+<servlet-mapping>
+        <servlet-name>PORecReport</servlet-name>
+        <url-pattern>/PORecReport</url-pattern>
+    </servlet-mapping>
+
+
+
+
+
+<servlet>
+   <servlet-name>POSubmitReport</servlet-name>
+   <jsp-file>/POSubmitReport.jsp</jsp-file>
+   
+
+ </servlet>
+<servlet-mapping>
+        <servlet-name>POSubmitReport</servlet-name>
+        <url-pattern>/POSubmitReport</url-pattern>
+    </servlet-mapping>
+
+
+<servlet>
+   <servlet-name>Reconsolation</servlet-name>
+   <jsp-file>/Reconsolation.jsp</jsp-file>
+   
+
+ </servlet>
+<servlet-mapping>
+        <servlet-name>Reconsolation</servlet-name>
+        <url-pattern>/Reconsolation</url-pattern>
+    </servlet-mapping>
+
+
+<servlet>
+   <servlet-name>ReconSuccess</servlet-name>
+   <jsp-file>/ReconSuccess.jsp</jsp-file>
+   
+
+ </servlet>
+<servlet-mapping>
+        <servlet-name>ReconSuccess</servlet-name>
+        <url-pattern>/ReconSuccess</url-pattern>
+    </servlet-mapping>
+
+
+<servlet>
+   <servlet-name>SellerNav</servlet-name>
+   <jsp-file>/SellerNav.jsp</jsp-file>
+   
+
+ </servlet>
+<servlet-mapping>
+        <servlet-name>SellerNav</servlet-name>
+        <url-pattern>/SellerNav</url-pattern>
+    </servlet-mapping>
+
+
+
+
+<servlet>
+   <servlet-name>SellerReport</servlet-name>
+   <jsp-file>/SellerReport.jsp</jsp-file>
+   
+
+ </servlet>
+<servlet-mapping>
+        <servlet-name>SellerReport</servlet-name>
+        <url-pattern>/SellerReport</url-pattern>
+    </servlet-mapping>
+
+
+<servlet>
+   <servlet-name>success1</servlet-name>
+   <jsp-file>/success1.jsp</jsp-file>
+   
+
+ </servlet>
+<servlet-mapping>
+        <servlet-name>success1</servlet-name>
+        <url-pattern>/success1</url-pattern>
+    </servlet-mapping>
+
+
+
+
+<servlet>
+   <servlet-name>ListPoFailure</servlet-name>
+   <jsp-file>/ListPoFailure.jsp</jsp-file>
+   
+
+ </servlet>
+<servlet-mapping>
+        <servlet-name>ListPoFailure</servlet-name>
+        <url-pattern>/ListPoFailure</url-pattern>
+    </servlet-mapping>
+
+<servlet>
+   <servlet-name>success</servlet-name>
+   <jsp-file>/success.jsp</jsp-file>
+   
+
+ </servlet>
+<servlet-mapping>
+        <servlet-name>success</servlet-name>
+        <url-pattern>/success</url-pattern>
+    </servlet-mapping>
+
+<servlet>
+   <servlet-name>success2</servlet-name>
+   <jsp-file>/success2.jsp</jsp-file>
+   
+
+ </servlet>
+<servlet-mapping>
+        <servlet-name>success2</servlet-name>
+        <url-pattern>/success2</url-pattern>
+    </servlet-mapping>
+
+<servlet>
+   <servlet-name>signIn</servlet-name>
+   <jsp-file>/Login.jsp</jsp-file>
+   
+
+ </servlet>
+<servlet-mapping>
+        <servlet-name>signIn</servlet-name>
+        <url-pattern>/signIn</url-pattern>
+    </servlet-mapping>
+</web-app>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE sqlMap PUBLIC "-//iBATIS.com//DTD SQL Map 2.0//EN" "http://www.ibatis.com/dtd/sql-map-2.dtd">
+<sqlMap>
+	
+	<cacheModel type="MEMORY" id="product-cache">
+		<flushInterval hours="24"/>
+		<flushOnExecute statement="saveProduct"/>
+		<flushOnExecute statement="saveFeature"/>
+		<flushOnExecute statement="removeAllProducts"/>
+		<flushOnExecute statement="removeAllFeatures"/>
+		<property name="reference-type" value="SOFT"/>
+	</cacheModel>
+	
+	<typeAlias alias="product" type="com.sourcen.meteriffic.model.Product"/>
+	
+	<resultMap class="product" id="product">
+		<result property="id" column="id"/>
+		<result property="name" column="name"/>
+		<result property="pid" column="pid"/>
+	</resultMap>
+	
+	<select id="getProducts" resultMap="product"
+		parameterClass="Integer" cacheModel="product-cache">
+		select * from products where pid = #pid#	
+	</select>
+	
+	<select id="getAllFeatures" resultMap="product" cacheModel="product-cache">
+		select * from features
+	</select>
+		
+	<select id="getFeatures" resultMap="product"
+		parameterClass="Integer" cacheModel="product-cache">
+		select * from features where pid = #pid#
+	</select>
+	
+	<delete id="removeAllFeatures">
+		delete from features
+	</delete>
+	
+	<delete id="removeAllProducts">
+		delete from products
+	</delete>
+	
+	<insert id="saveProduct" parameterClass="product">
+		insert into products (id,name,pid) values (#id#,#name#,#pid#)
+	</insert>
+	
+	<insert id="saveFeature" parameterClass="product">
+		insert into features (id,name,pid) values (#id#,#name#,#pid#)
+	</insert>
+	
+</sqlMap>

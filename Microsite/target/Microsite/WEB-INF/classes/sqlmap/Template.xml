@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE sqlMap PUBLIC "-//iBATIS.com//DTD SQL Map 2.0//EN" "http://www.ibatis.com/dtd/sql-map-2.dtd">
+
+<sqlMap>
+
+
+	<cacheModel id="emailTemplate-cache" type="MEMORY">
+		<flushInterval hours="24" />
+		<flushOnExecute statement="saveEmailTemplate" />
+		<flushOnExecute statement="updateEmailTemplate" />
+		<flushOnExecute statement="deleteEmailTemplate" />
+		<property name="reference-type" value="SOFT" />
+	</cacheModel>
+
+	<typeAlias alias="EmailTemplate" type="com.sourcen.microsite.model.EmailTemplate" />
+
+	<resultMap id="emailTemplate" class="EmailTemplate">
+		<result property="tid" column="tid" />
+		<result property="name" column="name" />
+		<result property="description" column="description" />
+		<result property="subject" column="subject" />
+		<result property="body" column="body" />		
+		<result property="created" column="created" />
+		<result property="modified" column="modified" />		
+	</resultMap>
+	
+	
+	<select id="getEmailTemplate" resultMap="emailTemplate" parameterClass="String"
+		cacheModel="user-cache">
+		select * from emailtemplates where tid = #tid#
+	</select>
+		<delete id="deleteEmailTemplate" parameterClass="String">
+		delete from emailtemplates where tid = #tid#
+	</delete>
+	
+	<insert id="saveEmailTemplate" parameterClass="emailTemplate">
+		insert into emailtemplates
+		(name,description,subject,body,created,modified)
+		values (#name#,
+		#description#,#subject#,#body#,#created#,#modified#)
+	</insert>
+	<update id="updateEmailTemplate" parameterClass="emailTemplate">
+		update emailtemplates set name=#name#,subject =	#subject#,body = #body# WHERE tid = #tid#
+	</update>
+	<select id="listAllEmailTemplate" resultMap="emailTemplate" parameterClass="HashMap"
+		cacheModel="emailTemplate-cache">
+		select * from emailtemplates
+	</select>
+	
+
+
+</sqlMap>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

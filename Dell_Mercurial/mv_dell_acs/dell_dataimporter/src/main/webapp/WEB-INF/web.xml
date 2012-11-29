@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+
+    <display-name>Dell ACS</display-name>
+
+    <!-- == CONTEXT PARAMETERS == -->
+    <context-param>
+        <param-name>contextConfigLocation</param-name>
+        <param-value>classpath:/spring/applicationContext.xml</param-value>
+    </context-param>
+    <context-param>
+        <param-name>contextClass</param-name>
+        <param-value>com.sourcen.core.spring.context.SourcenApplicationContext</param-value>
+    </context-param>
+
+    <!-- Enable escaping of form submission contents so that XSS attacks are reduced, and <script.. tags are escaped, used by
+         the requestContextFilter -->
+    <context-param>
+        <param-name>defaultHtmlEscape</param-name>
+        <param-value>true</param-value>
+    </context-param>
+
+    <!-- == SERVLET CONTEXT LISTENERS == -->
+
+    <!-- Creates the Spring Container shared by all Servlets and Filters -->
+    <listener>
+        <listener-class>com.sourcen.core.spring.context.SourcenContextLoaderListener</listener-class>
+    </listener>
+
+    <!-- == FILTERS == -->
+    <filter>
+        <filter-name>requestContextFilter</filter-name>
+        <filter-class>org.springframework.web.filter.RequestContextFilter</filter-class>
+    </filter>
+    <filter>
+        <filter-name>urlCleanupFilter</filter-name>
+        <filter-class>com.sourcen.core.web.filter.URLCleanupFilter</filter-class>
+    </filter>
+    <filter>
+        <filter-name>applicationStateFilter</filter-name>
+        <filter-class>com.sourcen.core.web.filter.ApplicationStateFilter</filter-class>
+    </filter>
+    <filter>
+        <filter-name>requestCharacterEncodingFilter</filter-name>
+        <filter-class>com.sourcen.core.web.filter.RequestCharacterEncodingFilter</filter-class>
+    </filter>
+    <filter>
+        <filter-name>responseCharacterEncodingFilter</filter-name>
+        <filter-class>com.sourcen.core.web.filter.ResponseCharacterEncodingFilter</filter-class>
+    </filter>
+    <filter>
+        <filter-name>servletContextRequestLoggingFilter</filter-name>
+        <filter-class>org.springframework.web.filter.ServletContextRequestLoggingFilter</filter-class>
+    </filter>
+    <filter>
+        <filter-name>shallowEtagHeaderFilter</filter-name>
+        <filter-class>org.springframework.web.filter.ShallowEtagHeaderFilter</filter-class>
+    </filter>
+    <filter>
+        <filter-name>compressionFilter</filter-name>
+        <filter-class>com.sourcen.core.web.filter.compression.CompressionFilter</filter-class>
+    </filter>
+    <filter>
+        <filter-name>sitemeshFilter</filter-name>
+        <filter-class>com.opensymphony.module.sitemesh.filter.PageFilter</filter-class>
+    </filter>
+
+    <filter>
+        <filter-name>springSecurityFilterChain</filter-name>
+        <filter-class>org.springframework.web.filter.DelegatingFilterProxy</filter-class>
+    </filter>
+
+    <!-- == FILTER MAPPINGS == -->
+    <filter-mapping>
+        <filter-name>requestContextFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+    <filter-mapping>
+        <filter-name>servletContextRequestLoggingFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+    <filter-mapping>
+        <filter-name>shallowEtagHeaderFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+    <filter-mapping>
+        <filter-name>compressionFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+    <filter-mapping>
+        <filter-name>urlCleanupFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+    <filter-mapping>
+        <filter-name>applicationStateFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+    <filter-mapping>
+        <filter-name>requestCharacterEncodingFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+    <filter-mapping>
+        <filter-name>responseCharacterEncodingFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+    <filter-mapping>
+        <filter-name>springSecurityFilterChain</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+    <filter-mapping>
+        <filter-name>sitemeshFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+
+    <!-- == SERVLETS == -->
+    <servlet>
+        <servlet-name>dispatcherServlet</servlet-name>
+        <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+        <init-param>
+            <param-name>contextAttribute</param-name>
+            <param-value>org.springframework.web.context.WebApplicationContext.ROOT</param-value>
+        </init-param>
+        <load-on-startup>2</load-on-startup>
+    </servlet>
+    <servlet>
+        <servlet-name>fileSystemCDNResourceServlet</servlet-name>
+        <servlet-class>com.sourcen.core.web.servlet.resources.ImageResourceServlet</servlet-class>
+        <init-param>
+            <param-name>directory</param-name>
+            <param-value>cdn</param-value>
+        </init-param>
+        <load-on-startup>3</load-on-startup>
+    </servlet>
+    <servlet>
+        <servlet-name>fileSystemResourcesServlet</servlet-name>
+        <servlet-class>com.sourcen.core.web.servlet.resources.FileSystemResourceServlet</servlet-class>
+        <init-param>
+            <param-name>directory</param-name>
+            <param-value>resources</param-value>
+        </init-param>
+        <load-on-startup>4</load-on-startup>
+    </servlet>
+    <servlet>
+        <servlet-name>errorFileDownloadServlet</servlet-name>
+        <servlet-class>com.dell.acs.web.resource.servlet.ErrorFileDownloadServlet</servlet-class>
+        <init-param>
+            <param-name>myName</param-name>
+            <param-value>value</param-value>
+        </init-param>
+    </servlet>
+
+
+    <!-- Servlet mapping in order of execution -->
+    <servlet-mapping>
+        <servlet-name>dispatcherServlet</servlet-name>
+        <url-pattern>*.do</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>errorFileDownloadServlet</servlet-name>
+        <url-pattern>/errorFileDownload</url-pattern>
+    </servlet-mapping>
+
+
+    <!-- == ERROR PAGES == -->
+
+    <error-page>
+        <error-code>500</error-code>
+        <location>/errors/500.jsp</location>
+    </error-page>
+    <error-page>
+        <error-code>404</error-code>
+        <location>/errors/404.jsp</location>
+    </error-page>
+    <error-page>
+        <exception-type>java.lang.SecurityException</exception-type>
+        <location>/errors/403.jsp</location>
+    </error-page>
+    <error-page>
+        <error-code>403</error-code>
+        <location>/errors/403.jsp</location>
+    </error-page>
+    <error-page>
+        <exception-type>java.lang.Throwable</exception-type>
+        <location>/errors/500.jsp</location>
+    </error-page>
+
+
+    <!-- == JSP configurations & TAG-LIB DEFINITIONS == -->
+    <jsp-config>
+        <taglib>
+            <taglib-uri>http://www.opensymphony.com/sitemesh/decorator</taglib-uri>
+            <taglib-location>/WEB-INF/taglibs/sitemesh-decorator.tld</taglib-location>
+        </taglib>
+        <taglib>
+            <taglib-uri>http://www.opensymphony.com/sitemesh/page</taglib-uri>
+            <taglib-location>/WEB-INF/taglibs/sitemesh-page.tld</taglib-location>
+        </taglib>
+        <taglib>
+            <taglib-uri>http://www.springframework.org/tags</taglib-uri>
+            <taglib-location>/WEB-INF/taglibs/spring.tld</taglib-location>
+        </taglib>
+        <taglib>
+            <taglib-uri>http://www.springframework.org/tags/form</taglib-uri>
+            <taglib-location>/WEB-INF/taglibs/spring-form.tld</taglib-location>
+        </taglib>
+        <taglib>
+            <taglib-uri>http://www.springframework.org/security/tags</taglib-uri>
+            <taglib-location>/WEB-INF/taglibs/security.tld</taglib-location>
+        </taglib>
+
+        <jsp-property-group>
+            <url-pattern>*.jsp</url-pattern>
+            <trim-directive-whitespaces>true</trim-directive-whitespaces>
+        </jsp-property-group>
+    </jsp-config>
+
+    <!-- == SESSION == -->
+    <session-config>
+        <session-timeout>60</session-timeout>
+    </session-config>
+
+
+    <!-- == WELCOME FILE LIST == -->
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
+
+
+</web-app>

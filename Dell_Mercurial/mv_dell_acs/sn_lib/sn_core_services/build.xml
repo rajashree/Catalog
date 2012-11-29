@@ -1,0 +1,112 @@
+<project name="sn_core_services" default="debug">
+	<property environment="env"/>
+	<property file="../../version.properties"/>
+
+	<target name="build" depends="build_cache, build_event, build_config, build_texttemplate, build_i18n" description="Build the entire world for sn_core_services.">
+	</target>
+
+	<target name="debug" description="Debug build the entire world for dell_acs.">
+		<property name="debug" value="on"/>
+		<antcall target="build"/>
+	</target>
+
+	<target name="clean" depends="clean_cache, clean_event, clean_config, clean_texttemplate, clean_i18n" description="Clean the entire world for sn_core_services.">
+	</target>
+
+	<target name="build_clean" description="Clean and Build the sn_core_services library.">
+		<antcall target="clean"/>
+		<antcall target="build"/>
+	</target>
+
+	<target name="debug_build_clean" description="Clean and Debug Build the sn_core_services library.">
+		<antcall target="clean"/>
+		<antcall target="debug"/>
+	</target>
+
+	<target name="test" depends="build, test_cache, test_event, test_config, test_texttemplate, test_i18n" description="Test the entire world for sn_core_services.">
+	</target>
+
+	<target name="integration" depends="build, test, integration_cache, integration_event, integration_config, integration_texttemplate, integration_i18n" description="Integration the entire world for sn_core_services.">
+	</target>
+
+	<target name="build_cache" description="Build cache library.">
+		<ant dir="cache" target="build"/>
+	</target>
+
+	<target name="clean_cache" description="Clean cache library.">
+		<ant dir="cache" target="clean"/>
+	</target>
+
+	<target name="test_cache" description="Test cache library.">
+		<ant dir="cache" target="test"/>
+	</target>
+
+	<target name="integration_cache" description="Integration cache library.">
+		<ant dir="cache" target="integration"/>
+	</target>
+
+	<target name="build_event" description="Build event library.">
+		<ant dir="event" target="build"/>
+	</target>
+
+	<target name="clean_event" description="Clean event library.">
+		<ant dir="event" target="clean"/>
+	</target>
+
+	<target name="test_event" description="Test event library.">
+		<ant dir="event" target="test"/>
+	</target>
+
+	<target name="integration_event" description="Integration event library.">
+		<ant dir="event" target="integration"/>
+	</target>
+
+	<target name="build_config" depends="build_event" description="Build config library.">
+		<ant dir="config" target="build"/>
+	</target>
+
+	<target name="clean_config" depends="clean_event" description="Clean config library.">
+		<ant dir="config" target="clean"/>
+	</target>
+
+	<target name="test_config" description="Test config library.">
+		<ant dir="config" target="test"/>
+	</target>
+
+	<target name="integration_config" description="Integration config library.">
+		<ant dir="config" target="integration"/>
+	</target>
+
+	<target name="clean_texttemplate" depends="clean_event" description="Clean texttemplate library.">
+		<ant dir="texttemplate" target="clean"/>
+	</target>
+
+	<target name="build_texttemplate" depends="build_event" description="Build texttemplate library.">
+		<ant dir="texttemplate" target="build"/>
+	</target>
+
+	<target name="test_texttemplate" description="Test texttemplate library.">
+		<ant dir="texttemplate" target="test"/>
+	</target>
+
+	<target name="integration_texttemplate" description="Integration texttemplate library.">
+		<ant dir="texttemplate" target="test"/>
+	</target>
+
+	<target name="build_i18n" depends="build_texttemplate" description="Build i18n library.">
+		<ant dir="i18n" target="build"/>
+	</target>
+
+	<target name="clean_i18n" depends="clean_texttemplate" description="Clean i18n library.">
+		<ant dir="i18n" target="clean"/>
+	</target>
+
+	<target name="test_i18n" description="Test i18n library.">
+		<ant dir="i18n" target="test"/>
+	</target>
+
+	<target name="integration_i18n" description="Integration i18n library.">
+		<ant dir="i18n" target="integration"/>
+	</target>
+
+</project>

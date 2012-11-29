@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:util="http://www.springframework.org/schema/util"
+	xsi:schemaLocation="
+http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-2.0.xsd
+http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd">
+	
+	<bean id="loggerListener"
+		class="org.acegisecurity.event.authentication.LoggerListener" />
+
+	<bean id="filterChainProxy"
+		class="org.acegisecurity.util.FilterChainProxy">
+		<property name="filterInvocationDefinitionSource">
+			<value>
+				CONVERT_URL_TO_LOWERCASE_BEFORE_COMPARISON
+				PATTERN_TYPE_APACHE_ANT
+				/security_check*=httpSessionContextIntegrationFilter,authenticationProcessingFilter
+				/user/**=httpSessionContextIntegrationFilter,contextHolderAwareRequestFilter,exceptionTranslationFilter,filterSecurityInterceptor
+				/admin/**=httpSessionContextIntegrationFilter,contextHolderAwareRequestFilter,exceptionTranslationFilter,filterSecurityInterceptor
+				/**=httpSessionContextIntegrationFilter,contextHolderAwareRequestFilter
+			</value>
+		</property>
+	</bean>
+
+	<bean id="authProvider"
+		class="com.sourcen.meteriffic.security.SecurityContextAuthenticationProviderImpl"
+		scope="prototype">
+	</bean>
+
+	<!-- This filter attaches a session to the security context holder, the thread local that
+		proxies and ACL voters look at. -->
+
+	<bean id="httpSessionContextIntegrationFilter"
+		class="org.acegisecurity.context.HttpSessionContextIntegrationFilter">
+		<property name="context">
+			<value>org.acegisecurity.context.SecurityContextImpl</value>
+		</property>
+	</bean>
+	<!-- ===================== contextHolderAwareRequestFilter ==================== -->
+	<bean id="contextHolderAwareRequestFilter"
+		class="org.acegisecurity.wrapper.SecurityContextHolderAwareRequestFilter" />
+	<bean id="exceptionTranslationFilter"
+		class="org.acegisecurity.ui.ExceptionTranslationFilter">
+		<property name="authenticationEntryPoint">
+			<ref local="authenticationProcessingFilterEntryPoint" />
+		</property>
+		<property name="accessDeniedHandler">
+			<bean
+				class="org.acegisecurity.ui.AccessDeniedHandlerImpl">
+				<property name="errorPage" value="/error/accessDenied.jsp" />
+			</bean>
+		</property>
+	</bean>
+	<bean id="authenticationProcessingFilterEntryPoint"
+		class="org.acegisecurity.ui.webapp.AuthenticationProcessingFilterEntryPoint">
+		<property name="loginFormUrl">
+			<value>/index.htm</value>
+		</property>
+		<property name="forceHttps">
+			<value>false</value>
+		</property>
+	</bean>
+	<bean id="filterSecurityInterceptor"
+		class="org.acegisecurity.intercept.web.FilterSecurityInterceptor">
+		<property name="authenticationManager">
+			<ref local="authenticationManager" />
+		</property>
+		<property name="accessDecisionManager">
+			<ref bean="accessDecisionManager" />
+		</property>
+		<property name="objectDefinitionSource">
+			<value>
+				CONVERT_URL_TO_LOWERCASE_BEFORE_COMPARISON
+				PATTERN_TYPE_APACHE_ANT 
+				/admin/**= ROLE_ADMIN
+				
+			</value>
+		</property>
+	</bean>
+
+
+	<bean id="authenticationProcessingFilter"
+		class="com.sourcen.meteriffic.security.SpaceAuthenticationProcessingFilter">
+		<property name="authenticationManager"
+			ref="authenticationManager" />
+		<property name="defaultTargetUrl">
+			<value>/login.htm</value>
+		</property>
+		<property name="authenticationFailureUrl">
+			<value>/login.htm?authnFailed=true</value>
+		</property>
+		<property name="filterProcessesUrl">
+			<value>/security_check</value>
+		</property>
+
+	</bean>
+
+	<!-- A list of authentication sources that will be consulted when attempting to
+		authenticate the user. Each is consulted in order until a provider does
+		*not* return null. This allows us to chain multiple providers together
+		until one decides it can handle the user. -->
+	<bean id="authenticationManager"
+		class="org.acegisecurity.providers.ProviderManager">
+		<property name="providers" ref="authenticationProviderList" />
+		<property name="sessionController">
+			<ref bean="concurrentSessionController" />
+		</property>
+	</bean>
+	<bean id="authenticationProviderList"
+		class="org.springframework.beans.factory.config.ListFactoryBean">
+		<property name="sourceList">
+			<list>
+				<ref bean="daoAuthenticationProvider" />
+
+			</list>
+		</property>
+	</bean>
+	<bean id="daoAuthenticationProvider"
+		class="org.acegisecurity.providers.dao.DaoAuthenticationProvider">
+		<property name="userDetailsService"
+			ref="spaceUserDetailsService" />
+		<property name="saltSource" ref="saltSource" />
+		<property name="passwordEncoder" ref="passwordEncoder" />
+		 <property name="userCache"><ref local="userCache" /></property> 
+	</bean>
+
+<!-- The PasswordEncoder and SaltSource are optional. A PasswordEncoder provides encoding and decoding of passwords presented in the UserDetails object that is returned from the configured UserDetailsService. A SaltSource enables the passwords to be populated with a "salt", which enhances the security of the passwords in the authentication repository. PasswordEncoder  implementations are provided with Acegi Security covering MD5, SHA and cleartext encodings. Two SaltSource implementations are also provided: SystemWideSaltSource which encodes all passwords with the same salt, and ReflectionSaltSource, which inspects a given property of the returned UserDetails object to obtain the salt. -->
+	<bean id="saltSource"
+		class="org.acegisecurity.providers.dao.salt.SystemWideSaltSource">
+		<property name="systemWideSalt" value="meteriffic" />
+	</bean>
+	<!-- The password encoder and salt source to use for password management -->
+	<bean id="passwordEncoder"
+		class="org.acegisecurity.providers.encoding.ShaPasswordEncoder">
+		<constructor-arg value="256" />
+	</bean>
+
+	<!-- Jive User Details Service -->
+	<bean id="spaceUserDetailsService"
+		class="com.sourcen.meteriffic.security.SpaceUserDetailsService">
+		<property name="userManager" ref="userManager" />
+	</bean>
+	<bean id="userCache"
+		class="org.acegisecurity.providers.dao.cache.EhCacheBasedUserCache">
+		<property name="cache">
+			<bean
+				class="org.springframework.cache.ehcache.EhCacheFactoryBean">
+				<property name="cacheManager">
+					<bean
+						class="org.springframework.cache.ehcache.EhCacheManagerFactoryBean">
+
+						<property name="shared">
+							<value>false</value>
+						</property>
+						<property name="configLocation">
+							<value>
+								classpath:/spring/ehcache-acegi.xml
+							</value>
+						</property>
+					</bean>
+				</property>
+				<property name="cacheName">
+					<value>AcegiUserCache</value>
+				</property>
+			</bean>
+		</property>
+	</bean>
+
+	<!-- ===================== accessDecisionManager ==================== -->
+	<bean id="accessDecisionManager"
+		class="org.acegisecurity.vote.AffirmativeBased">
+		<property name="allowIfAllAbstainDecisions">
+			<value>false</value>
+		</property>
+		<property name="decisionVoters">
+			<list>
+				<ref local="roleVoter" />
+			</list>
+		</property>
+	</bean>
+	<bean id="roleVoter" class="org.acegisecurity.vote.RoleVoter">
+		<property name="rolePrefix">
+			<value />
+		</property>
+	</bean>
+
+	<bean id="concurrentSessionController"
+		class="org.acegisecurity.concurrent.ConcurrentSessionControllerImpl">
+		<property name="maximumSessions">
+			<value>1</value>
+		</property>
+		<property name="sessionRegistry">
+			<ref local="sessionRegistry" />
+		</property>
+	</bean>
+
+	<bean id="sessionRegistry"
+		class="org.acegisecurity.concurrent.SessionRegistryImpl" />
+		
+</beans>

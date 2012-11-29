@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       default-init-method="init" default-destroy-method="destroy"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.1.xsd">
+
+    <!-- Scheduler -->
+    <bean id="newDataImportSchedulerFactoryBean" class="org.springframework.scheduling.quartz.SchedulerFactoryBean">
+        <property name="triggers">
+            <list>
+                <ref bean="feedPreprocessorJobTrigger"/>
+                <ref bean="preValidatedDataImportJobTrigger"/>
+                <ref bean="validateProductJobTrigger"/>
+                <ref bean="newUnzipImagesFilesJobTrigger"/>
+                <ref bean="validateProductImagesJobTrigger"/>
+                <ref bean="newSrcImageDownloadJobTrigger"/>
+                <ref bean="transferProductJobTrigger"/>
+                <ref bean="transferProductSliderJobTrigger"/>
+                <ref bean="cleanupTransferProductJobTrigger"/>
+                <ref bean="transferDoneJobTrigger"/>
+            </list>
+        </property>
+        <property name="taskExecutor" ref="quartzTaskExecutor"/>
+    </bean>
+    
+    <!-- Feed Preprocessor Job -->
+    <bean id="feedPreprocessorJobTrigger" class="org.springframework.scheduling.quartz.SimpleTriggerBean">
+        <property name="jobDetail" ref="feedPreprocessorJobDetail"/>
+        <property name="startDelay" value="5000"/>
+        <property name="repeatInterval" value="5000"/>
+    </bean>
+    <bean name="feedPreprocessorJobDetail" class="org.springframework.scheduling.quartz.JobDetailBean">
+        <property name="jobClass" value="com.dell.acs.jobs.FeedPreprocessorJob"/>
+        <property name="jobDataAsMap">
+            <map>
+                <entry key="configurationService" value-ref="configurationService"/>
+                <entry key="feedPreprocessorManager" value-ref="feedPreprocessorManagerImpl"/>
+                <entry key="retailerSiteRepository" value-ref="retailerSiteRepositoryImpl"/>
+            </map>
+        </property>
+    </bean>
+
+    <!-- Image Job -->
+    <bean id="newUnzipImagesFilesJobTrigger" class="org.springframework.scheduling.quartz.SimpleTriggerBean">
+        <property name="jobDetail" ref="newUnzipImagesFilesJobDetail"/>
+        <property name="startDelay" value="5000"/>
+        <property name="repeatInterval" value="5000"/>
+    </bean>
+    <bean name="newUnzipImagesFilesJobDetail" class="org.springframework.scheduling.quartz.JobDetailBean">
+        <property name="jobClass" value="com.dell.acs.jobs.NewUnzipImagesFilesJob"/>
+        <property name="jobDataAsMap">
+            <map>
+                <entry key="configurationService" value-ref="configurationService"/>
+                <entry key="imageManager" value-ref="imageManagerImpl"/>
+                <entry key="retailerSiteRepository" value-ref="retailerSiteRepositoryImpl"/>
+            </map>
+        </property>
+    </bean>
+
+    <!-- Prevalidated Data Item Job -->
+    <bean id="preValidatedDataImportJobTrigger" class="org.springframework.scheduling.quartz.SimpleTriggerBean">
+        <property name="jobDetail" ref="preValidatedDataImportJobDetail"/>
+        <property name="startDelay" value="6000"/>
+        <property name="repeatInterval" value="5000"/>
+    </bean>
+    <bean name="preValidatedDataImportJobDetail" class="org.springframework.scheduling.quartz.JobDetailBean">
+        <property name="jobClass" value="com.dell.acs.jobs.PreValidatedDataImportJob"/>
+        <property name="jobDataAsMap">
+            <map>
+                <entry key="configurationService" value-ref="configurationService"/>
+                <entry key="preValidatedDataImportManager" value-ref="preValidatedDataImportManagerImpl"/>
+                <entry key="retailerSiteRepository" value-ref="retailerSiteRepositoryImpl"/>
+                <entry key="sessionFactory" value-ref="hibernateSessionFactory"/>
+            </map>
+        </property>
+    </bean>
+
+    <!-- Validated Product Job -->
+    <bean id="validateProductJobTrigger" class="org.springframework.scheduling.quartz.SimpleTriggerBean">
+        <property name="jobDetail" ref="validateProductJobDetail"/>
+        <property name="startDelay" value="7000"/>
+        <property name="repeatInterval" value="5000"/>
+    </bean>
+    <bean name="validateProductJobDetail" class="org.springframework.scheduling.quartz.JobDetailBean">
+        <property name="jobClass" value="com.dell.acs.jobs.ValidateProductJob"/>
+        <property name="jobDataAsMap">
+            <map>
+                <entry key="configurationService" value-ref="configurationService"/>
+                <entry key="validateProductManager" value-ref="validateProductManagerImpl"/>
+                <entry key="retailerSiteRepository" value-ref="retailerSiteRepositoryImpl"/>
+                <entry key="sessionFactory" value-ref="hibernateSessionFactory"/>
+            </map>
+        </property>
+    </bean>
+
+    <!-- Validated Product Image Job -->
+    <bean id="validateProductImagesJobTrigger" class="org.springframework.scheduling.quartz.SimpleTriggerBean">
+        <property name="jobDetail" ref="validateProductImagesJobDetail"/>
+        <property name="startDelay" value="8000"/>
+        <property name="repeatInterval" value="5000"/>
+    </bean>
+    <bean name="validateProductImagesJobDetail" class="org.springframework.scheduling.quartz.JobDetailBean">
+        <property name="jobClass" value="com.dell.acs.jobs.ValidateProductImagesJob"/>
+        <property name="jobDataAsMap">
+            <map>
+                <entry key="configurationService" value-ref="configurationService"/>
+                <entry key="validateProductManager" value-ref="validateProductManagerImpl"/>
+                <entry key="retailerSiteRepository" value-ref="retailerSiteRepositoryImpl"/>
+                <entry key="sessionFactory" value-ref="hibernateSessionFactory"/>
+            </map>
+        </property>
+    </bean>
+
+    <!-- New Source Product Image Download Job -->
+    <bean id="newSrcImageDownloadJobTrigger" class="org.springframework.scheduling.quartz.SimpleTriggerBean">
+        <property name="jobDetail" ref="newSrcImageDownloadJobDetail"/>
+        <property name="startDelay" value="9000"/>
+        <property name="repeatInterval" value="5000"/>
+    </bean>
+    <bean name="newSrcImageDownloadJobDetail" class="org.springframework.scheduling.quartz.JobDetailBean">
+        <property name="jobClass" value="com.dell.acs.jobs.NewSrcImageDownloadJob"/>
+        <property name="jobDataAsMap">
+            <map>
+                <entry key="configurationService" value-ref="configurationService"/>
+                <entry key="imageManager" value-ref="imageManagerImpl"/>
+                <entry key="retailerSiteRepository" value-ref="retailerSiteRepositoryImpl"/>
+            </map>
+        </property>
+    </bean>
+
+    <!-- Transfer Product Job -->
+    <bean id="transferProductJobTrigger" class="org.springframework.scheduling.quartz.SimpleTriggerBean">
+        <property name="jobDetail" ref="transferProductJobDetail"/>
+        <property name="startDelay" value="10000"/>
+        <property name="repeatInterval" value="5000"/>
+    </bean>
+    <bean name="transferProductJobDetail" class="org.springframework.scheduling.quartz.JobDetailBean">
+        <property name="jobClass" value="com.dell.acs.jobs.TransferProductJob"/>
+        <property name="jobDataAsMap">
+            <map>
+                <entry key="configurationService" value-ref="configurationService"/>
+                <entry key="transferProductManager" value-ref="transferProductManagerImpl"/>
+                <entry key="retailerSiteRepository" value-ref="retailerSiteRepositoryImpl"/>
+                <entry key="sessionFactory" value-ref="hibernateSessionFactory"/>
+            </map>
+        </property>
+    </bean>
+
+    <!-- Transfer Product Slider Job -->
+    <bean id="transferProductSliderJobTrigger" class="org.springframework.scheduling.quartz.SimpleTriggerBean">
+        <property name="jobDetail" ref="transferProductSliderJobDetail"/>
+        <property name="startDelay" value="11000"/>
+        <property name="repeatInterval" value="5000"/>
+    </bean>
+    <bean name="transferProductSliderJobDetail" class="org.springframework.scheduling.quartz.JobDetailBean">
+        <property name="jobClass" value="com.dell.acs.jobs.TransferProductSliderJob"/>
+        <property name="jobDataAsMap">
+            <map>
+                <entry key="configurationService" value-ref="configurationService"/>
+                <entry key="transferProductManager" value-ref="transferProductManagerImpl"/>
+                <entry key="retailerSiteRepository" value-ref="retailerSiteRepositoryImpl"/>
+                <entry key="sessionFactory" value-ref="hibernateSessionFactory"/>
+            </map>
+        </property>
+    </bean>
+
+    <!-- Clean up Transfer Product Job -->
+    <bean id="cleanupTransferProductJobTrigger" class="org.springframework.scheduling.quartz.SimpleTriggerBean">
+        <property name="jobDetail" ref="cleanupTransferProductJobDetail"/>
+        <property name="startDelay" value="12000"/>
+        <property name="repeatInterval" value="5000"/>
+    </bean>
+    <bean name="cleanupTransferProductJobDetail" class="org.springframework.scheduling.quartz.JobDetailBean">
+        <property name="jobClass" value="com.dell.acs.jobs.CleanupTransferProductJob"/>
+        <property name="jobDataAsMap">
+            <map>
+                <entry key="configurationService" value-ref="configurationService"/>
+                <entry key="transferProductManager" value-ref="transferProductManagerImpl"/>
+                <entry key="retailerSiteRepository" value-ref="retailerSiteRepositoryImpl"/>
+                <entry key="sessionFactory" value-ref="hibernateSessionFactory"/>
+            </map>
+        </property>
+    </bean>
+
+    <!-- Transfer Done Job -->
+    <bean id="transferDoneJobTrigger" class="org.springframework.scheduling.quartz.SimpleTriggerBean">
+        <property name="jobDetail" ref="transferDoneJobDetail"/>
+        <property name="startDelay" value="12000"/>
+        <property name="repeatInterval" value="5000"/>
+    </bean>
+    <bean name="transferDoneJobDetail" class="org.springframework.scheduling.quartz.JobDetailBean">
+        <property name="jobClass" value="com.dell.acs.jobs.TransferDoneJob"/>
+        <property name="jobDataAsMap">
+            <map>
+                <entry key="configurationService" value-ref="configurationService"/>
+                <entry key="transferProductManager" value-ref="transferProductManagerImpl"/>
+                <entry key="retailerSiteRepository" value-ref="retailerSiteRepositoryImpl"/>
+                <entry key="sessionFactory" value-ref="hibernateSessionFactory"/>
+            </map>
+        </property>
+    </bean>
+
+</beans>

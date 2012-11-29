@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:tx="http://www.springframework.org/schema/tx" xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:util="http://www.springframework.org/schema/util"
+       default-init-method="init" default-destroy-method="destroy"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.1.xsd
+
+	http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-3.1.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-2.0.xsd">
+
+
+    <!--Comment the below bean if using Mysql -->
+   <bean id="defaultHibernateProperties" class="org.springframework.beans.factory.config.PropertiesFactoryBean">
+        <property name="properties">
+            <props>
+                <!-- value="create" to build a new database on each run; value="update" to modify an existing database; value="create-drop"
+means the same as "create" but also drops tables when Hibernate closes; value="validate" makes no changes to the database -->
+                <prop key="hibernate.hbm2ddl.auto">${hibernate.hbm2ddl.auto|verify}</prop>
+
+                <prop key="hibernate.max_fetch_depth">${hibernate.max_fetch_depth|1}</prop>
+                <prop key="hibernate.jdbc.batch_size">${hibernate.batch_size|100}</prop>
+                <prop key="hibernate.jdbc.use_scrollable_resultset">${hibernate.jdbc.use_scrollable_resultset|true}
+                </prop>
+
+                <prop key="hibernate.dialect">${hibernate.dialect|org.hibernate.dialect.SQLServer2008Dialect}</prop>
+                <!-- caching -->
+                <prop key="hibernate.cache">${hibernate.cache|true}</prop>
+                <prop key="hibernate.cache.use_query_cache">${use_query_cachibernate.cache.he|true}</prop>
+                <prop key="hibernate.cache.use_second_level_cache">${hibernate.cache.use_second_level_cache|true}</prop>
+                <prop key="hibernate.cache.region.factory_class">
+                    ${hibernate.cache.region.factory_class|com.sourcen.core.cache.ehcache.HibernateEhCacheRegionFactory}
+                </prop>
+                <prop key="hibernate.cache.default_cache_concurrency_strategy">
+                    ${hibernate.cache.default_cache_concurrency_strategy|nonstrict-read-write}
+                </prop>
+                <prop key="hibernate.cache.use_structured_entries">${hibernate.cache.use_structured_entries|true}</prop>
+                <prop key="net.sf.ehcache.configurationResourceName">
+                    ${net.sf.ehcache.configurationResourceName|/config/cache/ehcache-orm.xml}
+                </prop>
+
+                <!--  logging & stats -->
+                <prop key="hibernate.show_sql">${hibernate.show_sql|false}</prop>
+                <prop key="hibernate.format_sql">${hibernate.format_sql|false}</prop>
+                <prop key="hibernate.generate_statistics">${hibernate.generate_statistics|false}</prop>
+
+                <!--<prop key="hibernate.bytecode.use_reflection_optimizer">false</prop>-->
+                <!-- Uncomment the following two properties for JBoss only -->
+                <!--<prop key="hibernate.validator.apply_to_ddl">false</prop>-->
+                <!--<prop key="hibernate.validator.autoregister_listeners">false</prop>-->
+                <!-- this property is ignored as we use spring to handle transactions -->
+                <!--<prop key="hibernate.transaction.factory_class">org.hibernate.transaction.JDBCTransactionFactory</prop>-->
+            </props>
+        </property>
+    </bean>
+
+    <util:list id="hibernatePackagesToScan">
+        <value>com.sourcen.core.persistence.domain.impl.hibernate</value>
+        <value>com.dell.dw.persistence.domain</value>
+    </util:list>
+
+    <context:component-scan base-package="com.dell.dw.persistence.repository.impl.hibernate">
+        <context:include-filter type="annotation" expression="org.springframework.stereotype.Repository"/>
+    </context:component-scan>
+
+</beans>

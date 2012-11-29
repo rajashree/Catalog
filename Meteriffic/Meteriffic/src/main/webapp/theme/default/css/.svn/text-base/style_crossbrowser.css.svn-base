@@ -1,0 +1,310 @@
+
+
+/* ---------------------------------------------------------------- 
+  
+   * Filename:      style.css
+   * Version:       1.0.0 (2008-07-18) YYYY-MM-DD
+   * Website:  		http://
+   * Author: 		Aravind Ajith,
+   					Gopal Raju
+   					
+   * Description: 	Global CSS
+  
+  == STRUCTURE: ==================================
+   * Page width:            960px
+   * Number of columns:     2
+  ================================================ 
+  
+  
+  == SECTIONS: =================================== 
+  
+  	_global					global styles
+	_body
+	_header
+	_footer
+	
+
+  ==================================================================
+
+/* _IE6
+============================================================*/
+
+#leftbar .login ul{
+_padding-right:0px !important;
+}
+
+#leftbar .login .submit_btn{
+_border:0px !important;
+}
+
+#content .content{
+_position:relative !important;
+_padding-bottom:30px !important;
+}
+
+#content{
+_width:674px !important;
+}
+
+#content .content .reg_form .submit_btn{
+_position:relative !important;
+}
+
+#header .mainmenu {
+_top:33px !important;
+}
+
+#basic-accordian {
+_z-index: 1 !important;
+}
+
+
+#basic-accordian .label-group,
+#basic-accordian ul.date_range li.label-group{
+_width:120px !important;
+}
+
+#basic-accordian ul.date_range li.label-group{
+_padding-bottom:0px !important;
+}
+
+#basic-accordian ul.date_range li{
+_width:135px !important;
+_padding-bottom:2px !important;
+}
+
+#basic-accordian ul.date_range{
+_right:50px !important;
+_top:20px !important;
+}
+
+.axis-dtls {
+_position: relative !important;
+}
+
+.axis-dtls label{
+_padding-right:5px !important;
+}
+
+.axis-dtls .sec1{
+_position: relative;
+_left:-10px !important;
+}
+
+#savereport-accordian a.gen-new-rp{
+_margin-top:-16px !important;
+_position:relative !important;
+}
+
+#savereport-accordian h2.block-title{
+_position: static !important;
+}
+
+.admincontent input.admin_update{
+_background:#73AE14 none repeat scroll 0 0;
+_border:1px solid #A5B47E;
+_color:#FFFFFF;
+_cursor:pointer;
+_min-width:64px;
+_padding:3px 10px;
+_text-transform:uppercase;
+_position:absolute;
+_right:0;
+}
+
+.manageusers input{
+_background:#73AE14 none repeat scroll 0 0;
+_border:1px solid #A5B47E;
+_color:#FFFFFF;
+_cursor:pointer;
+_min-width:64px;
+_padding:3px 10px;
+_text-transform:uppercase;
+}
+
+
+.topnav,
+#header{
+_z-index: 999999 !important;
+}
+
+.topnav ul.options {
+_right: 20px !important;
+_z-index: 999999 !important;
+}
+
+.saved_rep,
+.actions{
+_width:248px;
+}
+
+.actions a.active{
+_width:248px !important;
+}
+
+#basic-accordian span.label-group {
+_width:140px !important;
+}
+
+#basic-accordian .submit_btn {
+_bottom:8px !important; 
+}
+
+#posts .pagination{
+_position: relative !important;
+}
+
+
+#posts .posts_title h3{
+_height: 1% !important;
+_position: static !important;
+_padding: 0px !important;
+}
+
+#posts .posts_title{
+_height: 1% !important;
+_position: static !important;
+}
+
+#posts .post-link{
+_height: 1% !important;
+_position: static !important;
+_float: right !important;
+_margin-top: -15px !important;
+}
+
+#posts .post-senti{
+_padding-bottom: 5px !important;
+}
+
+.saved_rep{
+_min-height: 565px;
+_height: auto !important;
+_height: 565px;
+}
+
+* html .feedback-pop {
+_position: absolute; /* position fixed for IE6 */ 
+_top: expression(104+((e=document.documentElement.scrollTop)?e:document.body.scrollTop)+'px'); 
+_left: expression(200+((e=document.documentElement.scrollLeft)?e:document.body.scrollLeft)+'px'); 
+} 
+
+#posts .pos-votes{
+_margin-top:-25px !important;
+}
+
+.forgotpwd_form .submit_btn{
+_position:relative !important;
+}
+
+.taxonomy_form #check li input {
+_position:static !important;
+}
+
+.taxonomy_form #check {
+_width:95% !important;
+}
+/* _IE7
+============================================================*/
+
+html>body #posts .pos-votes{
+*margin-top:-25px !important;
+}
+
+
+html>body #leftbar .saved_rep{
+*min-height: 565px;
+}
+
+html>body .topnav,
+html>body #header{
+*z-index: 999999 !important;
+}
+
+html>body .topnav ul.options {
+*right: 20px !important;
+*z-index: 999999 !important;
+}
+
+
+html>body .axis-dtls .sec1{
+*position: relative;
+*left:-10px !important;
+}
+
+html>body .axis-dtls label{
+*padding-right:5px !important;
+}
+
+html>body .axis-dtls {
+*position: relative !important;
+}
+
+html>body #content .content{
+*padding-bottom:0px !important;
+}
+
+
+html>body #leftbar .login ul{
+*padding-right:0px !important;
+}
+
+html>body #leftbar .login .submit_btn{
+*border:0px !important;
+}
+
+html>body .topnav ul.userbar {
+*margin-right:10px !important;
+}
+
+
+/*--------Safari Hack ------------------------*/
+
+
+ @media screen and (-webkit-min-device-pixel-ratio:0)
+ {
+ 
+.saved_rep .content ul{
+width:240px !important;
+}
+ 
+.saved_rep .content ul li a{
+float: left !important;
+}
+
+.saved_rep .content ul li span.date_saved{
+text-decoration: none !important;
+}
+
+.saved_rep .content ul li a.del.rep-menu{
+float: right !important;
+}
+
+.pos-votes{
+margin-top: 0px !important;
+}
+
+.pos-votes #totalSentimentPosts{
+position: relative !important;
+top:6px !important;
+}
+
+
+#posts .pagination .info li{
+list-style: none !important;
+}
+
+.topnav ul.options{
+width:128px !important;
+}
+
+.taxonomy_form #check li input {
+top:0px !important;
+margin-right:10px !important;
+}
+
+.taxonomy_form li input {
+margin-left:10px !important;
+}
+
+ }

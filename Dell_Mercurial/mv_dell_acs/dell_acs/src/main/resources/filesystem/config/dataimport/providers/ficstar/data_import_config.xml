@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema>
+
+    <table destinationTable="com.dell.acs.persistence.domain.Product" sourceTable="product" mapKeys="true">
+
+        <properties>
+            <property name="tableType" value="csv"/>
+            <property name="sheetIndex" value="0"/>
+            <property name="rowstoskip" value="1"/>
+            <property name="maxRows" value="1000000"/>
+            <property name="isPathAbsolute" value="true"/>
+            <property name="mapKeys" value="true"/>
+            <property name="batchSize" value="100"/>
+            <!--<property name="disableBatchUpdate" value="true"/>-->
+
+            <!-- decimal value of the character -->
+            <property name="separator" value="9"/>
+        </properties>
+
+        <keys>
+            <key type="primary" destinationKey="id" sourceKey="SiteName,ProductID"/>
+        </keys>
+
+
+        <!--// ID SiteName ProductID Category1 Category2 Category3 Category4 Category5 Category6-->
+        <!--// URL SKU WebPartNumber Title ClearanceTag SaleTag PriceCutTag TempPriceCutTag NewProduct-->
+        <!--// BestSeller Description Stars Reviews ReviewsLink ListPrice HasListPriceRange Price-->
+        <!--// HasPriceRange HasVariations Estimated Ship Date FacebookLikes PlusOneGoogle Tweets-->
+        <!--// Promotional ShippingPromotion BuyLink FlashLink Specifications UpdateDateTime-->
+
+        <column source="SiteName" destination="siteName" type="string"/>
+        <column source="ProductID" destination="productId" type="string"/>
+        <column source="Category1" destination="category1" type="string"/>
+        <column source="Category2" destination="category2" type="string"/>
+        <column source="Category3" destination="category3" type="string"/>
+        <column source="Category4" destination="category4" type="string"/>
+        <column source="Category5" destination="category5" type="string"/>
+        <column source="Category6" destination="category6" type="string"/>
+        <column source="URL" destination="url" type="string"/>
+        <column source="SKU" destination="sku" type="string"/>
+        <column source="WebPartNumber" destination="webPartNumber" type="string"/>
+        <column source="Title" destination="title" type="string"/>
+        <column source="ClearanceTag" destination="clearanceTag" type="boolean" defaultValue="false"/>
+        <column source="SaleTag" destination="saleTag" type="boolean" defaultValue="false"/>
+        <column source="PriceCutTag" destination="priceCutTag" type="boolean" defaultValue="false"/>
+        <column source="TempPriceCutTag" destination="tempPriceCutTag" type="boolean" defaultValue="false"/>
+        <column source="NewProduct" destination="newProduct" type="boolean" defaultValue="false"/>
+        <column source="BestSeller" destination="bestSeller" type="boolean" defaultValue="false"/>
+        <column source="Description" destination="description" type="string"/>
+        <column source="Stars" destination="stars" type="float" defaultValue="0"/>
+        <column source="Reviews" destination="reviews" type="int" defaultValue="0"/>
+        <column source="ReviewsLink" destination="reviewsLink" type="string"/>
+        <column source="ListPrice" destination="listPrice" type="float" defaultValue="0"/>
+        <column source="HasListPriceRange" destination="hasListPriceRange" type="boolean" defaultValue="false"/>
+        <column source="Price" destination="price" type="float" defaultValue="0"/>
+        <column source="HasPriceRange" destination="hasPriceRange" type="boolean" defaultValue="false"/>
+        <column source="HasVariations" destination="hasVariations" type="boolean" defaultValue="false"/>
+        <column source="EstimatedShipDate" destination="estimatedShipDate" type="string"/>
+        <column source="FacebookLikes" destination="facebookLikes" type="int" defaultValue="0"/>
+        <column source="PlusOneGoogle" destination="plusOneGoogle" type="int" defaultValue="0"/>
+        <column source="Tweets" destination="tweets" type="int" defaultValue="0"/>
+        <column source="Promotional" destination="promotional" type="string"/>
+        <column source="ShippingPromotion" destination="shippingPromotion" type="string"/>
+        <column source="BuyLink" destination="buyLink" type="string"/>
+        <column source="FlashLink" destination="flashLink" type="string"/>
+        <column source="Specifications" destination="specifications" type="string"/>
+        <column source="UpdateDateTime" destination="updateDateTime" type="datetime" defaultValue="TIMESTAMP"
+                transformerClass="com.dell.acs.managers.dataimport.DateColumnTransformer"/>
+        <column source="Availability" destination="availability" type="int"
+                transformerClass="com.dell.acs.dataimport.ficstar.AvailabilityColumnTransformer"/>
+        <column source="Title,Price,SKU" destination="searchItemHash" type="string" />
+    </table>
+
+    <table destinationTable="com.dell.acs.persistence.domain.ProductImage" sourceTable="image">
+
+        <properties>
+            <property name="tableType" value="csv"/>
+            <property name="sheetIndex" value="0"/>
+            <property name="rowstoskip" value="1"/>
+            <property name="maxRows" value="10000"/>
+            <property name="isPathAbsolute" value="true"/>
+            <property name="mapKeys" value="true"/>
+            <!--<property name="disableBatchUpdate" value="true"/>-->
+            <property name="batchSize" value="100"/>
+
+            <!-- decimal value of the character -->
+            <property name="separator" value="9"/>
+        </properties>
+
+        <keys>
+            <key type="primary" destinationKey="id" sourceKey="SiteName,ProductID,ImageName"/>
+        </keys>
+
+        <column source="SiteName,ProductID" destination="product" type="long"
+                lookupTable="com.dell.acs.persistence.domain.Product"/>
+        <column source="ImageType" destination="imageType" type="string"/>
+        <column source="ImageName" destination="imageName" type="string"/>
+        <column source="ImageURL" destination="srcImageURL" type="string"/>
+
+    </table>
+
+    <table destinationTable="com.dell.acs.persistence.domain.ProductReview" sourceTable="review">
+        <properties>
+            <property name="tableType" value="csv"/>
+            <property name="sheetIndex" value="0"/>
+            <property name="rowstoskip" value="1"/>
+            <property name="maxRows" value="100000"/>
+            <property name="isPathAbsolute" value="true"/>
+            <property name="mapKeys" value="true"/>
+            <!--<property name="disableBatchUpdate" value="false"/>-->
+            <property name="batchSize" value="500"/>
+
+            <!-- decimal value of the character -->
+            <property name="separator" value="9"/>
+        </properties>
+        <keys>
+            <key type="primary" destinationKey="id" sourceKey="SiteName,ProductID,Name,Title,Location"/>
+        </keys>
+        <!--SiteName	ProductID	Title	Date	Name	Location	-->
+        <!--Stars	Featured Review	Duration of Product use	Level of Expertise	Review	Product uses NumberReviewHelpful-->
+        <column source="SiteName,ProductID" destination="product" type="long"
+                lookupTable="com.dell.acs.persistence.domain.Product"/>
+        <column source="Title" destination="title" type="string"/>
+        <column source="Date" destination="date" type="date"/>
+        <column source="Name" destination="name" type="string"/>
+        <column source="Location" destination="location" type="string"/>
+        <column source="Stars" destination="stars" type="float" defaultValue="0"/>
+        <column source="FeaturedReview" destination="featuredReview" type="boolean" defaultValue="false"/>
+        <column source="DurationofProductuse" destination="durationOfProductUse" type="string"/>
+        <column source="LevelofExpertise" destination="levelOfExpertise" type="string"/>
+        <column source="Review" destination="review" type="string"/>
+        <column source="Productuses" destination="productUses" type="string"/>
+        <column source="NoOfHelpfulReviews" destination="numberOfHelpfulReviews" type="int" defaultValue="0"/>
+        <column source="spellCheckWeight" destination="spellCheckWeight" type="int" defaultValue="0"/>
+        <column source="profanityWeight" destination="profanityWeight" type="int" defaultValue="0"/>
+        <column source="sentimentWeight" destination="sentimentWeight" type="int" defaultValue="0"/>
+        <column source="computedWeight" destination="computedWeight" type="double" defaultValue="0"/>
+    </table>
+
+    <table destinationTable="com.dell.acs.persistence.domain.ProductSlider" sourceTable="slider">
+        <properties>
+            <property name="tableType" value="csv"/>
+            <property name="sheetIndex" value="0"/>
+            <property name="rowstoskip" value="1"/>
+            <property name="maxRows" value="100000"/>
+            <property name="isPathAbsolute" value="true"/>
+            <property name="mapKeys" value="true"/>
+            <!--<property name="disableBatchUpdate" value="true"/>-->
+            <property name="batchSize" value="100"/>
+
+            <!-- decimal value of the character -->
+            <property name="separator" value="9"/>
+        </properties>
+
+        <keys>
+            <key type="primary" destinationKey="id" sourceKey="SiteName,SourceProductID,TargetProductID"/>
+        </keys>
+        <column source="SiteName,SourceProductID" destination="sourceProduct" type="long"
+                lookupTable="com.dell.acs.persistence.domain.Product"/>
+
+        <column source="SiteName,TargetProductID" destination="targetProduct" type="long"
+                lookupTable="com.dell.acs.persistence.domain.Product"/>
+
+        <column source="SiteName" destination="retailerSite" type="string"/>
+
+        <column source="TargetURL" destination="targetURL" type="string"/>
+        <column source="SliderTitle" destination="title" type="string"/>
+
+    </table>
+
+</schema>

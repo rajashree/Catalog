@@ -1,0 +1,1059 @@
+/*
+    Document   : style.css
+    Created on : Mar 2, 2012, 9:45:30 AM
+    Author     : Rohith Mohan ( rohith.mohan@sourcen.com )
+    Description:
+        Styles for Dell ACS pages.
+*/
+
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+	}
+.fleft {float:left;}
+.fright{ float:right;}
+.cboth { clear:both;}
+* html .clearfix             { zoom: 1; } /* IE6 */
+*:first-child+html .clearfix { zoom: 1; } /* IE7 */
+
+@font-face {
+    font-family: 'museo_sans_for_dellbold';
+    src: url('../fonts/museosansfordell-bold-webfont.eot');
+    src: url('../fonts/museosansfordell-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/museosansfordell-bold-webfont.woff') format('woff'),
+         url('../fonts/museosansfordell-bold-webfont.ttf') format('truetype'),
+         url('../fonts/museosansfordell-bold-webfont.svg#museo_sans_for_dellbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'museo_500regular';
+    src: url('../fonts/museo500-regular-webfont.eot');
+    src: url('../fonts/museo500-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/museo500-regular-webfont.woff') format('woff'),
+         url('../fonts/museo500-regular-webfont.ttf') format('truetype'),
+         url('../fonts/museo500-regular-webfont.svg#museo_500regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'museo_300regular';
+    src: url('../fonts/museo300-regular-webfont.eot');
+    src: url('../fonts/museo300-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/museo300-regular-webfont.woff') format('woff'),
+         url('../fonts/museo300-regular-webfont.ttf') format('truetype'),
+         url('../fonts/museo300-regular-webfont.svg#museo_300regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'museo_sans_for_dellregular';
+    src: url('../fonts/museosansfordell-regular-webfont.eot');
+    src: url('../fonts/museosansfordell-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/museosansfordell-regular-webfont.woff') format('woff'),
+         url('../fonts/museosansfordell-regular-webfont.ttf') format('truetype'),
+         url('../fonts/museosansfordell-regular-webfont.svg#museo_sans_for_dellregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'museo_for_dellregular';
+    src: url('../fonts/museofordell-regular-webfont.eot');
+    src: url('../fonts/museofordell-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/museofordell-regular-webfont.woff') format('woff'),
+         url('../fonts/museofordell-regular-webfont.ttf') format('truetype'),
+         url('../fonts/museofordell-regular-webfont.svg#museo_for_dellregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'museo_700regular';
+    src: url('../fonts/museo700-regular-webfont.eot');
+    src: url('../fonts/museo700-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/museo700-regular-webfont.woff') format('woff'),
+         url('../fonts/museo700-regular-webfont.ttf') format('truetype'),
+         url('../fonts/museo700-regular-webfont.svg#museo_700regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+.ui-widget, .ui-widget-content{
+	font-family: "MuseoSansForDell-Regular", Arial, Helvetica, sans-serif;
+	}
+.ui-widget-content	{ border:none !important;}
+body {
+/*background-color: #003A63; /*color: #FFFDFD;*/
+    font-size: 12px;
+    font-family: "MuseoSansForDell-Regular", Arial, Helvetica, sans-serif;
+
+}
+
+input {
+    font-family: "MuseoSansForDell-Regular", Arial, Helvetica, sans-serif;
+}
+
+
+fieldset{
+    margin: 0;
+    border-color: #ccc;
+    padding: 0.25em;
+}
+
+
+#title {
+    width: 545px;
+}
+
+a, a:visited {
+    color: #72aa00;
+}
+
+a:hover {
+    color: #299a0b;
+}
+
+td {
+    padding: 5px;
+}
+
+table {
+    /*color: #fbfbfb;*/
+    border-collapse: collapse;
+}
+
+/* Data Table Styles */
+.datatable {
+    width: 100%;
+    border: 1px solid #eee;
+    margin-bottom: 0.5em;
+}
+
+.datatable  th {
+    background-color: #979797;
+    color: #000;
+    padding: 0.5em;
+}
+
+.datatable td{
+    padding: -0.5em;
+    border-right: 1px solid #ebebeb;
+}
+
+.datatable  tbody tr {
+    border-bottom: 1px solid #ccc;
+}
+
+
+#login_form {
+    width: 350px;
+    margin: 0 auto;
+}
+
+#login_form .form-item {
+    margin: 0.5em 0;
+    padding: 0.2em 0;
+    overflow: hidden;
+}
+
+#login_form label {
+    float: left;
+    width: 80px;
+    padding: 8px 0;
+    color: #666;
+}
+
+#login_form .form-text {
+    width: 200px;
+    border: 1px solid #ddd;
+    padding: 8px 0 8px 5px;
+}
+
+#login_form .form-text:focus {
+    -moz-box-shadow: #7ac142 0 0 5px;
+    -webkit-box-shadow: #7ac142 0 0 5px;
+    box-shadow: #7ac142 0 0 5px;
+    outline: 0;
+    border-color: #7ac142;
+}
+
+#login_form input[type=submit], input[type=button] {
+    margin: 5px 0 0 80px;
+}
+
+
+
+/**** footer ****/
+#footer {
+    text-align: center;
+    padding: 1em 0;
+    font-size: 11px;
+/*color: #fff;  */
+}
+
+/****** Page **********/
+#page {
+    width: 1000px;
+    min-height: 600px;
+    margin: 0 auto;
+    /*background: #efefef;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+	 -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+	*/
+
+    -moz-box-shadow: #fff 0 0 10px;
+    -webkit-box-shadow: #fff 0 0 10px;
+    box-shadow: #fff 0 0 10px;
+    margin-top: 5px;
+}
+
+#wrapper {
+    margin: 10px 10px 10px 10px;
+/*border: none !important;*/
+/*background: none;*/
+}
+
+input[type=submit], input[type=button] {
+    color: #fff;
+    border: 1px solid #627d4d;
+    height: 26px;
+    line-height: 25px;
+    padding: 0 10px;
+
+    margin: 0;
+    text-shadow: #444 1px 1px 0;
+
+    background: #7ac142; /* Old browsers */
+/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzdhYzE0MiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM3YWFhM2IiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background: -moz-linear-gradient(top, #7ac142 0%, #7aaa3b 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #7ac142), color-stop(100%, #7aaa3b)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #7ac142 0%, #7aaa3b 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #7ac142 0%, #7aaa3b 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #7ac142 0%, #7aaa3b 100%); /* IE10+ */
+    background: linear-gradient(top, #7ac142 0%, #7aaa3b 100%); /* W3C */
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+
+    font-weight: bold;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr = '#7ac142', endColorstr = '#7aaa3b', GradientType = 0); /*IE6-8*/
+}
+
+.gbutton {
+    line-height: 27px;
+    text-decoration: none;
+    display: inline-block;
+    height: 24px;
+    line-height: 24px;
+    margin: 0;
+    color: #fff !important;
+}
+
+input[type=submit]:hover, input[type=button]:hover {
+    -moz-box-shadow: #7ac142 0 0 5px;
+    -webkit-box-shadow: #7ac142 0 0 5px;
+    box-shadow: #7ac142 0 0 5px;
+    color: #fff;
+}
+
+#action_buttons {
+    padding: 5px 0px 5px 0px;
+}
+
+.error_msg {
+    margin-left: 10px;
+    color: red;
+}
+
+#tabs .items {
+    list-style: none;
+    padding: 0px;
+}
+
+#tabs .header {
+    list-style: none;
+    padding: 0px;
+    background: #808080;
+    font-weight: bold;
+    color: #000000;
+}
+
+#tabs .items .title, #tabs .header .title {
+    width: 60% !important;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#tabs .items .audit, #tabs .header .audit {
+    width: 15% !important;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/* Library - Page END */
+
+/* Form errors - START */
+.error{
+    display: inline-block;
+    color: red;
+}
+
+/* Form errors - END */
+
+.no_data{
+    height: 114px !important;
+}
+
+.no_content{
+    height: 50px !important;
+}
+
+/** Custom **/
+
+
+.ui-widget-header {
+    color: #333 !important;
+}
+#tabs .ui-widget-header {
+    border: none !important;
+    background: none !important;
+}
+
+#tabs .ui-state-active a,
+#tabs .ui-state-active a:link,
+#tabs .ui-state-active a:visited {
+    color: rgb(28, 148, 196);
+    text-decoration: none;
+}
+
+.ui-tabs .ui-tabs-nav li.ui-tabs-selected {
+    background: none !important;
+}
+
+#tabs .ui-widget-content .ui-state-default,
+#tabs .ui-widget-header .ui-state-default {
+    background: rgb(209, 206, 206);
+    font-weight: bold;
+    color: rgb(28, 148, 196);
+
+}
+
+#tabs .ui-state-hover,
+#tabs .ui-widget-content .ui-state-hover,
+#tabs .ui-widget-header .ui-state-hover,
+#tabs .ui-state-focus,
+#tabs .ui-widget-content .ui-state-focus,
+#tabs .ui-widget-header .ui-state-focus {
+   /* background: rgb(28, 148, 196) ;*/
+    font-weight: bold;
+    color: #fff !important;
+   /* border-color: rgb(28, 148, 196);*/
+}
+
+.ui-state-default .ui-icon {
+    background-image: url(jquery/images/ui-icons_ef8c08_256x240.png) !important;
+    float:right;
+}
+
+
+.ui-datepicker-trigger {
+    vertical-align: middle;
+    padding-left: 5px;
+    margin-top: -4px;
+}
+
+.ui-timepicker-div .ui-widget-header {
+    margin-bottom: 8px;
+}
+
+.ui-timepicker-div dl {
+    text-align: left;
+}
+
+.ui-timepicker-div dl dt {
+    height: 25px;
+    margin-bottom: -25px;
+}
+
+.ui-timepicker-div dl dd {
+    margin: 0 10px 10px 65px;
+}
+
+.ui-timepicker-div td {
+    font-size: 90%;
+}
+
+.ui-tpicker-grid-label {
+    background: none;
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+.yfReportTitleOuter  {
+    display : none;
+}
+
+.yfReportFooter   {
+    display : none;
+}
+
+.yfLogon    {
+    display : none;
+}
+
+
+fieldset{
+    border:none;
+    padding:0;
+    margin: 0;
+}
+fieldset legend{
+    background: #003a63;
+    padding: 18px 0 16px 17px;
+    text-align: left;
+    width:98.2%;
+}
+.datatable{
+    border: none;
+    margin:0;
+}
+
+/* ---- Server Health block starts here ------ */
+#serverHealthContainer, #csEndpointContainer, #merchantFeedsContainer, #externalEndpointContainer, #marketvinePixelContainer, #appHealthContainer, #dataImportContainer{
+    border: 1px solid #dde0e4;
+    margin-top:20px;
+	overflow:auto;
+}
+
+#serverHealthContainer fieldset, #csEndpointContainer fieldset, #externalEndpointContainer fieldset, #appHealthContainer fieldset, #dataImportContainer fieldset{
+	overflow-y:auto;
+	overflow-x:hidden;
+}
+
+#dataImportContainer fieldset {padding:0px !important;}
+
+#ds { background-color: #F2F2F2;
+    border: 1px solid #CCCCCC;
+    padding: 20px 10px; }
+
+#ds div.fright input[type="submit"]{ margin-top:5px;}
+
+.dataTables_filter{ width:auto !important; margin-bottom:6px;}
+.dataTables_filter input{
+    border-radius: 5px;
+    border:1px solid #ccc;
+    box-shadow: 1px 2px 3px #EEEEEE inset;
+    padding:3px 5px;
+	height:28px;
+	width:234px;
+
+}
+.dataTables_scroll .ui-state-default{
+    background:none!important;
+    color:#000!important;
+    font-size: 12px!important;
+    border:none!important;
+    padding: 0!important;
+   /* text-decoration: underline!important;*/
+}
+table#serverHealthTable, table#sh_container{
+    width:98%!important;
+    margin: 0 9px!important;
+}
+.datatable tbody tr{
+    border: 1px solid #dde0e4;
+    background-color:#fff;
+    color:#5b5b5b;
+	height:45px;
+}
+tr.odd td.sorting_1{
+    background-color:#EAEBFF !important;
+}
+tr.even td.sorting_1 { background-color:#D3D6FF !important;}
+
+tr.even{ background-color:#E2E4FF !important;}
+
+tr.odd { background-color:#fff !important;}
+
+#tabs .ui-widget-header{
+    margin:6px 20px 0px 15px;
+}
+.dataTables_paginate a{
+    margin-left: 5px!important;
+    display: inline-block;
+    cursor: pointer!important;
+    border: 1px solid #000!important;
+    border-radius:none;
+}
+/* ---- Server Health block ends here ------ */
+
+.wrapperForTwoSections{
+    clear:both;
+
+}
+/* ---- Content Server Endpoints block starts here ------ */
+#csEndpointContainer{
+    width:49%!important;
+    float:left;
+}
+#csEndpointContainer fieldset{
+    width:458px;
+}
+#csEndpointContainer .dataTables_scroll{
+    margin-left:10px!important;
+}
+#csEndpointContainer .dataTables_scrollHeadInner{
+    width:100%!important;
+}
+#csEndpointContainer .dataTables_scrollHeadInner .datatable{
+    width:98%!important;
+}
+#csEndpointContainer .dataTables_scrollBody{
+    width:100%!important;
+}
+#csEndpointContainer .dataTables_scrollBody .datatable{
+    width:98%!important;
+}
+#csEndpointContainer .dataTables_scrollBody .datatable tr{
+    border:1px solid #dde0e4 !important;
+    background: none!important;
+}
+#csEndpointContainer .dataTables_scrollBody .datatable tr td{
+    background: none!important;
+    border-color:#ccc;
+    text-align: center;
+}
+#csEndpointContainer .dataTables_info{
+    width:39%!important;
+    float: left;
+}
+#csEndpointContainer .paging_full_numbers{
+    width:242px!important;
+}
+/* ---- Content Server Endpoints block ends here ------ */
+
+/* ---- Merchant Feeds block starts here ------ */
+#merchantFeedsContainer{
+    width:49%!important;
+    float:left;
+    margin-left: 1%!important;
+}
+#merchantFeedsContainer fieldset{
+    width:456px;
+}
+#merchantFeedsContainer .dataTables_scroll{
+    margin-left:10px!important;
+}
+#merchantFeedsContainer .dataTables_scrollHeadInner{
+    width:100%!important;
+}
+#merchantFeedsContainer .dataTables_scrollHeadInner .datatable{
+    width:95%!important;
+}
+#merchantFeedsContainer .dataTables_scrollBody{
+    width:100%!important;
+}
+#merchantFeedsContainer .dataTables_scrollBody .datatable{
+    width:95%!important;
+}
+#merchantFeedsContainer .dataTables_scrollBody .datatable tr{
+    border:1px solid #000!important;
+    background: none!important;
+}
+#merchantFeedsContainer .dataTables_scrollBody .datatable tr td{
+    background: none!important;
+    border: none!important;
+    text-align: center;
+}
+#merchantFeedsContainer .dataTables_info{
+    width:39%!important;
+    float: left;
+}
+#merchantFeedsContainer .paging_full_numbers{
+    width:242px!important;
+}
+/* ---- Merchant Feeds block ends here ------ */
+
+/* ---- External Endpoints block starts here ------ */
+#externalEndpointContainer{
+
+    width:49%!important;
+    float:left;
+
+}
+#externalEndpointContainer fieldset{
+    width:458px;
+}
+#externalEndpointContainer .dataTables_scroll{
+    margin-left:10px!important;
+}
+#externalEndpointContainer .dataTables_scrollHeadInner{
+    width:100%!important;
+}
+#externalEndpointContainer .dataTables_scrollHeadInner .datatable{
+    width:98%!important;
+}
+#externalEndpointContainer .dataTables_scrollBody{
+    width:100%!important;
+}
+#externalEndpointContainer .dataTables_scrollBody .datatable{
+    width:98%!important;
+}
+#externalEndpointContainer .dataTables_scrollBody .datatable tr{
+    border:1px solid #dde0e4!important;
+    /*background: none!important;*/
+}
+#externalEndpointContainer .dataTables_scrollBody .datatable tr td{
+    /*background: none!important;*/
+    border-color: #ccc;
+    text-align: center;
+}
+#externalEndpointContainer .dataTables_info{
+    width:39%!important;
+    float: left;
+}
+#externalEndpointContainer .paging_full_numbers{
+    width:242px!important;
+}
+/* ---- External Endpoints block ends here ------ */
+
+/* ---- Marketvine Pixel block starts here ------ */
+#marketvinePixelContainer{
+    width:49%!important;
+    float:left;
+    margin-left: 1%!important;
+    margin-bottom:20px;
+}
+#marketvinePixelContainer fieldset{
+    width:456px;
+}
+#marketvinePixelContainer fieldset {
+    height:435px;
+}
+#marketvinePixelContainer .txtPixelStatus{
+    float: left;
+    padding: 10px 10px 20px;
+}
+#marketvinePixelContainer #marketvinePixelStatus{
+    padding-top: 10px;
+    margin-left:65px;
+}
+
+/* ---- Marketvine Pixel block ends here ------ */
+
+/* ---- App Health block starts here ------ */
+#appHealthContainer{
+    clear:both;
+    margin-top:9px!important;
+}
+#appHealthTable_wrapper .dataTables_scrollBody{
+    margin-left:9px;
+}
+#appHealthTable_wrapper .dataTables_scrollBody .datatable{
+    width:98%!important;
+}
+#appHealthTable_wrapper .dataTables_scrollBody .datatable tr{
+    background: none!important;
+    /*border: 1px solid #d0d2d4!important; */
+}
+#appHealthTable_wrapper .dataTables_scrollBody .datatable tr td{
+    background: none!important;
+    border-color: #ccc;
+    /* Fix as per Jira Ticket DW-123 */
+    /*text-align: left !important;*/
+	padding-left: 20px;
+}
+
+
+/* ---- App Health block ends here ------ */
+
+.iconWrong{
+    background: url(../images/wrong.png) no-repeat 0 0;
+    width:18px;
+    height: 17px;
+    text-indent: -9999px;
+    display: block;
+}
+.iconRight{
+    background: url(../images/right.png) no-repeat 0 0;
+    width:18px;
+    height: 17px;
+    text-indent: -9999px;
+    display: block;
+}
+
+.iconApprove{
+    background: url(../images/approve.png) no-repeat 0 0;
+    width:18px;
+    height: 17px;
+    text-indent: -9999px;
+    display: block;
+    margin:0 auto;
+}
+
+.iconReject{
+    background: url(../images/reject.png) no-repeat 0 0;
+    width:18px;
+    height: 17px;
+    text-indent: -9999px;
+    display: block;
+    margin:0 auto;
+}
+
+.iconLoader{
+    background: url(../images/ajax-loader.gif) no-repeat 0 0;
+    width:18px;
+    height: 17px;
+    text-indent: -9999px;
+    display: block;
+}
+
+/*.btnDelete{
+    background: #d34343;
+    background: -moz-linear-gradient(top, #d34343 0%, #d12727 44%, #d10202 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#d34343), color-stop(44%,#d12727), color-stop(100%,#d10202));
+    background: -webkit-linear-gradient(top, #d34343 0%,#d12727 44%,#d10202 100%);
+    background: -o-linear-gradient(top, #d34343 0%,#d12727 44%,#d10202 100%);
+    background: -ms-linear-gradient(top, #d34343 0%,#d12727 44%,#d10202 100%);
+    background: linear-gradient(to bottom, #d34343 0%,#d12727 44%,#d10202 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d34343', endColorstr='#d10202',GradientType=0 );
+    border-radius: 15px;
+    padding:1px 8px;
+    color: #fff;
+    border: none;
+    font-size: 11px!important;
+}
+
+.btnDelete:hover{
+    background: #d10202;
+    background: -moz-linear-gradient(top, #d10202 0%, #d12727 56%, #d34343 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#d10202), color-stop(56%,#d12727), color-stop(100%,#d34343));
+    background: -webkit-linear-gradient(top, #d10202 0%,#d12727 56%,#d34343 100%);
+    background: -o-linear-gradient(top, #d10202 0%,#d12727 56%,#d34343 100%);
+    background: -ms-linear-gradient(top, #d10202 0%,#d12727 56%,#d34343 100%);
+    background: linear-gradient(to bottom, #d10202 0%,#d12727 56%,#d34343 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d10202', endColorstr='#d34343',GradientType=0 );
+}*/
+
+.txtPixelStatus{ font:12px "Museo 300 Regular", Tahoma, Arial !important; color:#5c5c5c !important; float:right;}
+a.linkPixelTest {
+    font:12px "Museo 300 Regular", Tahoma, Arial !important;
+    text-decoration:none !important;
+    color:#5c5c5c !important;
+    display:block;
+    margin-top:20px;
+    margin-left:10px;
+}
+a.linkPixelTest:hover{
+    text-decoration:underline !important;
+}
+.wrapperPixelStatus{
+    float:right;
+    padding: 9px 20px 0 0;
+
+}
+.chartOrders{
+    float:right!important;
+    margin-top:-10px!important;
+    margin-right:30px!important;
+    min-height:320px!important;
+}
+
+/* ---- popup styles starts here ---- */
+#addEndpointForm .validationTips{
+    color:red;
+    font-weight:bold;
+    margin:0;
+    padding:0;
+    margin-bottom:10px;
+    min-height:20px;
+}
+#addEndpointForm label{
+    display:inline-block;
+    width:130px;
+    float:left;
+}
+#addServerForm .validationTips{
+    color:red;
+    font-weight:bold;
+    margin:0;
+    padding:0;
+    margin-bottom:10px;
+    min-height:20px;
+}
+#addServerForm label{
+    display:inline-block;
+    width:190px;
+    float:left;
+}
+.wrapperInputElement{
+    margin-bottom:10px;
+}
+
+#preloader{
+    display:none;
+    position:fixed;
+    top:50%;
+    left:48%;
+    width:100%;
+    height:100%;
+}
+
+#preloader-mask{
+    filter: alpha(opacity=30);
+    -moz-opacity: .3;
+    opacity:0.3;
+    background-color:#000;
+    position:fixed;
+    top:0px;
+    left:0px;
+    width:100%;
+    height:100%;
+}
+
+/*UI styles starts here*/
+/* Button styles starts */
+
+.logout_btn{
+	background:url(../images/bluebtn_lt.png) no-repeat top left transparent;
+	height:31px;
+	width:50px;
+	margin-right:29px;
+    float: right;
+	}
+.logout_btn a{
+	background: url(../images/bluebtn_rt.png) no-repeat top right transparent;
+	padding: 9px 23px 10px 14px;
+	float: left;
+	margin-left: 8px;
+	color: #fff;
+	text-decoration: none;
+	}
+
+.logout_btn a:hover{
+	color: white;
+	text-decoration: none;
+	}
+
+
+button#addServer, button#addExternalEndpoint, button#addCSEndpoint{
+	background:url(../images/greenbtn_lt.png) no-repeat top left transparent !important;
+	height:31px;
+	padding-top:0px;
+	padding-left: 12px;
+    border:none !important;
+    float: right;
+    margin-right: 20px;
+    margin-top: -5px;
+	}
+button#addServer span.ui-button-text, button#addExternalEndpoint span.ui-button-text, button#addCSEndpoint span.ui-button-text {
+	background: url(../images/greenbtn_rt.png) no-repeat top right transparent;
+	padding: 7px 23px 10px 14px;
+	float: left;
+	margin-left: -4px;
+	color: #fff;
+	text-decoration: none;
+	font-weight:normal;
+	text-shadow:-1px 1px 1px #4f4f4f;
+	}
+
+
+/* Button styles ends */
+
+
+/* Tab styles starts here */
+#wrapper #tabs ul{ margin-left:0px; padding-left:0px; margin-bottom:37px; }
+div.ui-tabs ul.ui-tabs-nav li.ui-state-default {
+	background:url(../images/tab_lt.png) no-repeat top left transparent !important;
+	height:37px !important;
+	margin:0 7px 0 0px !important;
+
+	}
+
+div.ui-tabs ul.ui-tabs-nav li.ui-state-default:hover, div.ui-tabs ul.ui-tabs-nav li.ui-state-active {
+	background:url(../images/tabhover_lt.png) no-repeat top left transparent !important;
+	height:37px !important;
+	margin:0 7px 0 0px !important;
+
+	}
+
+.ui-tabs-nav li.ui-state-default a{
+	background:url(../images/tab_rt.png) no-repeat top right transparent !important;
+	padding: 11px 23px 10px 14px !important;
+	float: right !important;
+	color: #fff !important;
+	text-decoration: none;
+	margin-left:10px;
+	font-weight: normal;
+	font-size:14px;
+	}
+
+.ui-tabs-nav li.ui-state-default:hover a, .ui-tabs-nav li.ui-state-active a{
+	background:url(../images/tabhover_rt.png) no-repeat top right transparent !important;
+	padding: 11px 23px 10px 14px !important;
+	float: right !important;
+	color: #158cca !important;
+	text-decoration: none;
+	margin-left:10px;
+	font-weight: normal;
+	}
+.ui-tabs-nav li.ui-state-default a:visited, .ui-tabs-nav li.ui-state-default a.active{ color:#fff; text-decoration: none;  }
+#tabs.ui-widget-content{
+	background:none;
+	}
+
+#systemMonitoring, #yellowfinConfigTab, #dataImportMonitor, #webPropertiesTab { border:1px solid #ccc !important; margin-top: -37px;}
+
+fieldset legend strong { color:#fff; font-size:18px; font-weight:normal; text-align:left;}
+
+.wrapperForTwoSections fieldset legend { width:96.6%}
+
+.dataTables_length label { color:#9a9a99; font-family: "MuseoSansForDell-Regular", Tahoma, Arial, Helvetica, sans-serif; font-size:12px; }
+
+
+.dataTables_wrapper div.dataTables_filter input[type="text"]  { background:url(../images/search_icon.png) no-repeat 219px 9px #f8f8f8;  }
+/* Tab styles ends here */
+
+table.datatable thead tr.hdr_bg th {
+    color: #FFFFFF;
+    font-weight: normal;
+    height: 44px;
+    text-shadow: -1px 1px 1px #4C4C4C;}
+
+
+table.datatable thead th.ui-state-default, table.datatable thead tr.hdr_bg th  { background:url(../images/header_greenbg.png) repeat-x top left #75ba3e !important; border-right:1px solid #60a42a !important; }
+
+
+
+.dataTables_scroll .dataTables_scrollHead .dataTables_scrollHeadInner { margin:0 auto; width:98% !important;}
+
+.dataTables_scrollHeadInner table { width:100% !important; border: 1px solid #ccc;}
+
+.dataTables_scrollHeadInner table tr td { color:#5b5b5b; padding: 0.5em; font:11px "Museo 300 Regular", Tahoma, Arial;}
+
+th div.DataTables_sort_wrapper { color:#fff; text-shadow:#666; font:normal 13px "MuseoSansForDell-Regular", Tahoma, Arial, Helvetica, sans-serif; text-decoration:none !important; position:relative;top:15px; height:44px; text-shadow: -1px 1px 1px #4f4f4f;  }
+
+
+/*.ui-widget-content fieldset { margin-top:-10px; }*/
+
+
+/* Table footer styles  i.e pagination*/
+.fg-toolbar .dataTables_info{ font:11px "Museo 300 Regular", Tahoma, Arial; color:#5c5c5c; }
+
+/* Table footer styles ends  i.e pagination*/
+.dataTables_paginate a.fg-button{  background:url(../images/pagination_bg.png) no-repeat top left transparent !important;
+ border:none !important;
+ padding: 7px 6px 7px 7px;
+ height: 16px;
+ width:16px;
+}
+.dataTables_paginate a.fg-button:hover{  background:url(../images/paginationhover_bg.png) no-repeat top left transparent !important;    padding: 7px 6px 7px 7px;
+ height: 16px;
+ width:16px;
+ border:none !important;
+}
+
+button.btnDelete{ background:url(../images/delete_icon.png) no-repeat top left transparent; height:18px; width:16px; border:none;}
+
+button.btnEdit{ background:url(../images/edit_icon.png) no-repeat top left transparent; height:17px; width:16px; margin-right:10px; border:none !important; }
+
+
+
+.dataTables_length{ margin-top:8px;}
+
+.wrapperactions{ text-align:center;}
+
+
+/* Yellow fin tab */
+
+.ui-tabs { background:none !important; }
+
+#sub-tabs ul { margin-bottom:10px}
+
+#retailersTab, #gaAccountsTab { margin-top: -37px; border:1px solid #ccc !important;}
+
+tr.form_txtcolor td { color:#4c4c4c; font:12px "Museo 300 Regular", Tahoma, Arial;}
+tr.form_txtcolor input{ vertical-align:bottom;}
+
+
+.ui-dialog-titlebar{ background: #003A63 !important; color:#fff; height:25px; padding-top:10px !important;}
+.ui-dialog-titlebar span.ui-dialog-title{ color:#fff;}
+
+.ui-dialog-content .wrapperInputElement input, .wrapperInputElement select { width: 255px; border: 1px solid #CCC; }
+
+a.ui-dialog-titlebar-close { background-color: transparent !important; border:none !important;}
+
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default{
+       background-color:#F6F6F6 !important; color:#75BA3E;
+}
+/*border: 1px solid #75BA3E !important;*/
+.ui-state-hover, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-hover, .ui-state-focus, .ui-widget-content .ui-state-focus, .ui-widget-header .ui-state-focus{ color:#1C94C4;background-color:#75BA3E !important; }
+
+.ui-dialog-buttonset button.ui-button{ width:70px;}
+
+
+.logo{padding-left: 17px;}
+
+.ui-datepicker-week-end span{ color:#5b5b5b ;}
+
+#serverHealthTableBody div.ui-progressbar { border: 1px solid #CCC !important; height: 18px !important; margin:0 6px 0 6px !important; width:75%; float:left;}
+
+#serverHealthTableBody tr td div.ui-progressbar-value { background-image: url(../images/pbar-ani.gif) !important; margin:0px !important;}
+
+#serverHealthTableBody tr td div.progressbarValue{
+    float : right;
+    font-weight: bold;
+}
+
+.retailaction_btn{ margin:15px 0 20px 120px;}
+
+.retailaction_btn input{ margin:0px 15px 0px 0px;}
+
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active {
+    background-color: #1C94C4 !important;
+}
+
+.dataTables_wrapper {
+    clear: both;
+    min-height: 350px;
+    position: relative;
+}
+.dataTables_scrollBody {
+    min-height: 230px;
+    max-height:230px;
+}
+
+#dataImportContainer .dataTables_scrollBody {
+    min-height: 230px;
+    max-height:700px !important;
+}
+
+.numberCell {
+    text-align: right !important;
+}
+
+

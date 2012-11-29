@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       default-init-method="init" default-destroy-method="destroy"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.1.xsd">
+
+    <import resource="applicationContext-core.xml"/>
+    <import resource="applicationContext-dataSource.xml"/>
+    <import resource="applicationContext-persistence.xml"/>
+    <import resource="applicationContext-services.xml"/>
+    <import resource="applicationContext-jobs.xml"/>
+    <import resource="applicationContext-web.xml"/>
+    <import resource="applicationContext-security.xml"/>
+</beans>

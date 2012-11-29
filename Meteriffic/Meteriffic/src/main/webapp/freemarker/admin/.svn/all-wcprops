@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/meteriffic/!svn/ver/2/trunk/WebContent/freemarker/admin
+END
+taxonomy-update.ftl
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/meteriffic/!svn/ver/2/trunk/WebContent/freemarker/admin/taxonomy-update.ftl
+END
+index.ftl
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/meteriffic/!svn/ver/2/trunk/WebContent/freemarker/admin/index.ftl
+END
+manageUsers.ftl
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/meteriffic/!svn/ver/2/trunk/WebContent/freemarker/admin/manageUsers.ftl
+END

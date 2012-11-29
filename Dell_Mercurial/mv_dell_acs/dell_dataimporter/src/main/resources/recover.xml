@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tasks>
+    <task beanName="feedPreprocessorRecoverTask"/>
+    <task beanName="preValidatedDataImportRecoverTask"/>
+    <task beanName="stuckProductRecoverTask"/>
+    <task beanName="cleanupTempDirRecoverTask"/>
+</tasks>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<decorators defaultdir="/WEB-INF/decorators">
+    <!-- Any urls that are excluded will never be decorated by Sitemesh -->
+    
+      <excludes>
+        <pattern>/theme/*</pattern>
+        <pattern>/user/viewpage*</pattern>
+      </excludes>
+      
+     <decorator name="admin-settings" page="settings.ftl">
+        <pattern>/admin/settings/*</pattern>
+    </decorator>   
+    <decorator name="block" page="block.ftl">
+        <pattern>/admin/block*.htm</pattern>
+    </decorator>
+     <decorator name="site" page="site.ftl">
+        <pattern>/admin/site*.htm</pattern>
+    </decorator>
+     <decorator name="theme" page="theme.ftl">
+        <pattern>/admin/theme*.htm</pattern>
+    </decorator>
+     <decorator name="page" page="page.ftl">
+        <pattern>/admin/page*.htm</pattern>
+    </decorator>
+    
+    
+    <decorator name="admin-settings" page="settings.ftl">
+		<pattern>/admin/settings/*</pattern>
+	</decorator>
+    
+     <decorator name="user" page="user.ftl">
+        <pattern>/user/*.htm</pattern>    
+     </decorator> 
+     
+      <decorator name="admin" page="admin.ftl">
+        <pattern>/admin/*.htm</pattern>
+    </decorator> 
+      
+     <decorator name="default" page="default.ftl">
+        <pattern>/*.htm</pattern>
+    </decorator>
+    
+  
+  
+</decorators>

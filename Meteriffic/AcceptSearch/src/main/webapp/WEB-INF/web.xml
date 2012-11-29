@@ -1,0 +1,221 @@
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+         version="3.0">
+    <display-name>AccepSearch360</display-name>
+        <context-param>
+            <param-name>contextConfigLocation</param-name>
+            <param-value>classpath:/spring/application-*.xml,</param-value>
+        </context-param>
+
+        <filter>
+            <filter-name>Acegi HTTP Request Security Filter</filter-name>
+            <filter-class>
+                org.acegisecurity.util.FilterToBeanProxy
+            </filter-class>
+            <init-param>
+                <param-name>targetBean</param-name>
+                <param-value>filterChainProxy</param-value>
+            </init-param>
+        </filter>
+
+        <filter>
+            <filter-name>Spring character encoding filter</filter-name>
+            <filter-class>
+                org.springframework.web.filter.CharacterEncodingFilter
+            </filter-class>
+            <init-param>
+                <param-name>encoding</param-name>
+                <param-value>UTF-8</param-value>
+            </init-param>
+            <init-param>
+                <param-name>forceEncoding</param-name>
+                <param-value>true</param-value>
+            </init-param>
+        </filter>
+
+        <filter>
+            <filter-name>struts-cleanup</filter-name>
+            <filter-class>
+                org.apache.struts2.dispatcher.ActionContextCleanUp
+            </filter-class>
+        </filter>
+        <filter>
+            <filter-name>sitemesh</filter-name>
+            <filter-class>
+                org.apache.struts2.sitemesh.FreeMarkerPageFilter
+            </filter-class>
+        </filter>
+        <filter>
+            <filter-name>struts</filter-name>
+            <filter-class>
+                org.apache.struts2.dispatcher.FilterDispatcher
+            </filter-class>
+        </filter>
+        <filter-mapping>
+            <filter-name>Acegi HTTP Request Security Filter</filter-name>
+            <url-pattern>/*</url-pattern>
+        </filter-mapping>
+
+        <filter-mapping>
+            <filter-name>Spring character encoding filter</filter-name>
+            <url-pattern>/*</url-pattern>
+        </filter-mapping>
+
+        <filter-mapping>
+            <filter-name>struts-cleanup</filter-name>
+            <url-pattern>/*</url-pattern>
+        </filter-mapping>
+        <filter-mapping>
+            <filter-name>sitemesh</filter-name>
+            <url-pattern>/*</url-pattern>
+        </filter-mapping>
+        <filter-mapping>
+            <filter-name>struts</filter-name>
+            <url-pattern>/*</url-pattern>
+        </filter-mapping>
+
+        <listener>
+            <listener-class>
+                org.springframework.web.context.ContextLoaderListener
+            </listener-class>
+        </listener>
+        <listener>
+            <listener-class>
+                org.acegisecurity.ui.session.HttpSessionEventPublisher
+            </listener-class>
+        </listener>
+        <servlet>
+            <servlet-name>dwr</servlet-name>
+            <servlet-class>
+                org.directwebremoting.servlet.DwrServlet
+            </servlet-class>
+            <init-param>
+                <param-name>debug</param-name>
+                <param-value>true</param-value>
+            </init-param>
+        </servlet>
+        <servlet>
+            <servlet-name>Captcha</servlet-name>
+            <servlet-class>nl.captcha.servlet.CaptchaServlet</servlet-class>
+
+            <!--border around captcha. Legal values are yes or no. Defaults to yes Other values will be ignored-->
+            <init-param>
+                <param-name>cap.border</param-name>
+                <param-value>yes</param-value>
+            </init-param>
+            <!--color of the border. Legal values are r,g,b(and optional alpaha) or white,black,etc. Other values will be ignored-->
+            <init-param>
+                <param-name>cap.border.c</param-name>
+                <param-value>black</param-value>
+            </init-param>
+            <!--thickness of the border around captcha. Legal values are > 0 other values will be ignored. Defaults to one-->
+            <init-param>
+                <param-name>cap.border.th</param-name>
+                <param-value>1</param-value>
+            </init-param>
+
+            <init-param>
+                <param-name>cap.obscurificator</param-name>
+                <!--<param-value>nl.captcha.obscurity.imp.ShadowGimpyImp</param-value>-->
+                <!--<param-value>nl.captcha.obscurity.imp.WaterRiple</param-value>-->
+                <param-value>nl.captcha.sandbox.TestGimpyImp</param-value>
+            </init-param>
+
+            <init-param>
+                <param-name>cap.cap.producer</param-name>
+                <param-value>nl.captcha.obscurity.DefaultCaptchaIml</param-value>
+            </init-param>
+
+
+            <init-param>
+                <param-name>cap.word.imp</param-name>
+                <param-value>nl.captcha.text.imp.DefaultWordRenderer</param-value>
+            </init-param>
+
+            <init-param>
+                <param-name>cap.text.producer</param-name>
+                <!--<param-value>nl.captcha.sandbox.ChineseTextProducer</param-value>-->
+                <param-value>nl.captcha.text.imp.FiveLetterFirstNameTextCreator</param-value>
+            </init-param>
+            <init-param>
+                <param-name>cap.char.arr</param-name>
+                <param-value>2,3,4,6,7,8,a,b,c,d,e,f,g,h,k,o,r,s,t,x,y</param-value>
+            </init-param>
+            <!--if default captcha producer is slelected this value represents the amount of chars that are supplied in the captcha. values below 2 are not exepted when omitted defaults to 5-->
+            <init-param>
+                <param-name>cap.char.arr.l</param-name>
+                <param-value>6</param-value>
+            </init-param>
+            <init-param>
+                <param-name>cap.font.arr</param-name>
+
+                <param-value>Arial,Helvetica,Courier,TimesRoman</param-value>
+
+            </init-param>
+            <init-param>
+                <param-name>cap.font.size</param-name>
+                <param-value>40</param-value>
+            </init-param>
+
+            <init-param>
+                <param-name>cap.font.color</param-name>
+                <param-value>166,31,255</param-value>
+            </init-param>
+
+
+            <init-param>
+                <param-name>cap.bg.imp</param-name>
+                <param-value>nl.captcha.obscurity.imp.DefaultBackgroundImp</param-value>
+            </init-param>
+
+            <!--values can be either red,yellow,blue,cya etc or r,g,b,alpha value-->
+
+            <init-param>
+                <param-name>cap.background.c.to</param-name>
+                <param-value>255,255,255</param-value>
+            </init-param>
+
+            <init-param>
+                <param-name>cap.background.c.from</param-name>
+                <param-value>75,75,255</param-value>
+            </init-param>
+
+
+            <init-param>
+                <param-name>cap.noise.imp</param-name>
+                <param-value>nl.captcha.obscurity.imp.DefaultNoiseImp</param-value>
+            </init-param>
+
+            <init-param>
+                <param-name>cap.noise.c</param-name>
+                <param-value>166,31,255</param-value>
+            </init-param>
+
+        </servlet>
+        <servlet-mapping>
+            <servlet-name>Captcha</servlet-name>
+            <url-pattern>/jcaptcha</url-pattern>
+        </servlet-mapping>
+        <servlet-mapping>
+            <servlet-name>dwr</servlet-name>
+            <url-pattern>/dwr/*</url-pattern>
+        </servlet-mapping>
+        <error-page>
+            <error-code>500</error-code>
+            <location>/error/404.jsp</location>
+        </error-page>
+
+        <error-page>
+            <error-code>404</error-code>
+            <location>/error/500.jsp</location>
+        </error-page>
+
+
+        <welcome-file-list>
+            <welcome-file>index.html</welcome-file>
+            <welcome-file>index.htm</welcome-file>
+            <welcome-file>index.jsp</welcome-file>
+
+        </welcome-file-list>
+    </web-app>

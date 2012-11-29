@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       default-init-method="init" default-destroy-method="destroy"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.1.xsd">
+
+    <!-- Upload TXT job to external SFTP -->
+    <bean id="uploadDataFilesJobTrigger" class="org.springframework.scheduling.quartz.SimpleTriggerBean">
+        <property name="jobDetail" ref="uploadDataFilesJobDetail"/>
+        <property name="startDelay" value="20000"/>
+        <property name="repeatInterval" value="300000"/>
+    </bean>
+    <bean name="uploadDataFilesJobDetail" class="org.springframework.scheduling.quartz.JobDetailBean">
+        <property name="jobClass" value="com.dell.acs.jobs.UploadDataFilesJob"/>
+        <property name="jobDataAsMap">
+            <map>
+                <entry key="configurationService" value-ref="configurationService"/>
+                <entry key="dataExportManager" value-ref="dataExportManagerImpl"/>
+            </map>
+        </property>
+    </bean>
+
+
+    <!--  CSV ProductFeed Processing job -->
+    <bean id="dataImportJobTrigger" class="org.springframework.scheduling.quartz.SimpleTriggerBean">
+        <property name="jobDetail" ref="dataImportJobDetail"/>
+        <property name="startDelay" value="30000"/>
+        <!--<property name="repeatInterval" value="3600000" />&lt;!&ndash; 1 hour &ndash;&gt;-->
+        <property name="repeatInterval" value="5000"/>
+        <property name="group" value="dataimportjob"/>
+    </bean>
+    <bean name="dataImportJobDetail" class="org.springframework.scheduling.quartz.JobDetailBean">
+        <property name="jobClass" value="com.dell.acs.jobs.DataImportJob"/>
+        <property name="jobDataAsMap">
+            <map>
+                <entry key="configurationService" value-ref="configurationService"/>
+                <entry key="dataImportManager" value-ref="dataImportManagerImpl"/>
+            </map>
+        </property>
+        <property name="volatility" value="true"/>
+        <property name="durability" value="false"/>
+    </bean>
+
+
+    <!-- process imported images / resizing -->
+    <bean id="imageProcessJobTrigger" class="org.springframework.scheduling.quartz.SimpleTriggerBean">
+        <property name="jobDetail" ref="imageProcessJobDetail"/>
+        <property name="startDelay" value="23000"/>
+        <property name="repeatInterval" value="23000"/>
+    </bean>
+    <bean name="imageProcessJobDetail" class="org.springframework.scheduling.quartz.JobDetailBean">
+        <property name="jobClass" value="com.dell.acs.jobs.ImageProcessJob"/>
+        <property name="jobDataAsMap">
+            <map>
+                <entry key="configurationService" value-ref="configurationService"/>
+                <entry key="dataImportManager" value-ref="dataImportManagerImpl"/>
+            </map>
+        </property>
+    </bean>
+
+
+    <!-- The default CouponEmailNotification bean definition -->
+    <bean id="defaultCouponNotificationJobTrigger" class="org.springframework.scheduling.quartz.SimpleTriggerBean">
+        <property name="jobDetail" ref="defaultCouponNotificationJobDetail"/>
+        <property name="startDelay" value="30000"/>
+        <property name="repeatInterval" value="3000000"/>
+        <!-- 10 minutes -->
+    </bean>
+    <bean name="defaultCouponNotificationJobDetail" class="org.springframework.scheduling.quartz.JobDetailBean">
+        <property name="jobClass" value="com.dell.acs.jobs.DefaultCouponNotificationJob"/>
+        <property name="jobDataAsMap">
+            <map>
+                <entry key="configurationService" value-ref="configurationService"/>
+                <entry key="facebookWallShareManager" value-ref="facebookWallShareManagerImpl"/>
+                <entry key="notificationManager" value-ref="notificationManager"/>
+                <entry key="facebookWallShareManager" value-ref="facebookWallShareManagerImpl"/>
+            </map>
+        </property>
+    </bean>
+
+    <!-- Data Export Job for OnBoarding process -->
+    <bean id="dataExportJobTrigger" class="org.springframework.scheduling.quartz.CronTriggerBean">
+        <property name="jobDetail" ref="dataExportJobDetail"/>
+        <!-- Run every 20 minutes once -->
+        <property name="cronExpression" value="0 0/5 * * * ?"/>
+        <!-- Run hourly once -->
+        <!--<property name="cronExpression" value="0 0 0/1 * * ?"/>-->
+        <!--every day at 3:00 am  -->
+        <!--<property name="cronExpression" value="0 0 3 ? * *"/>-->
+
+    </bean>
+    <bean name="dataExportJobDetail" class="org.springframework.scheduling.quartz.JobDetailBean">
+        <property name="jobClass" value="com.dell.acs.jobs.DataExportJob"/>
+        <property name="jobDataAsMap">
+            <map>
+                <entry key="configurationService" value-ref="configurationService"/>
+                <entry key="dataExportManager" value-ref="dataExportManagerImpl"/>
+                <entry key="retailerManager" value-ref="retailerManagerImpl"/>
+
+            </map>
+        </property>
+    </bean>
+
+
+    <!-- Data Import Clean Job for strucked Files process -->
+    <bean id="dataImportCleanUpJobTrigger" class="org.springframework.scheduling.quartz.SimpleTriggerBean">
+        <property name="jobDetail" ref="dataImportCleanUpJobDetail"/>
+        <property name="startDelay" value="10000"/>
+        <property name="repeatInterval" value="3600000"/>
+        <!-- 10 minutes -->
+    </bean>
+    <bean name="dataImportCleanUpJobDetail" class="org.springframework.scheduling.quartz.JobDetailBean">
+        <property name="jobClass" value="com.dell.acs.jobs.DataImportCleanUpJob"/>
+        <property name="jobDataAsMap">
+            <map>
+                <entry key="configurationService" value-ref="configurationService"/>
+                <entry key="dataImportManager" value-ref="dataImportManagerImpl"/>
+            </map>
+        </property>
+    </bean>
+
+    <!-- srcImage download job -->
+    <bean id="srcImageDownloadJobTrigger" class="org.springframework.scheduling.quartz.SimpleTriggerBean">
+        <property name="jobDetail" ref="srcImageDownloadJobDetail"/>
+        <property name="startDelay" value="10000"/>
+        <property name="repeatInterval" value="80000"/>
+        <!-- 10 minutes -->
+    </bean>
+    <bean name="srcImageDownloadJobDetail" class="org.springframework.scheduling.quartz.JobDetailBean">
+        <property name="jobClass" value="com.dell.acs.jobs.SrcImageDownloadJob"/>
+        <property name="jobDataAsMap">
+            <map>
+                <entry key="configurationService" value-ref="configurationService"/>
+                <entry key="imageDownloadManager" value-ref="imageDownloadManagerImpl"/>
+            </map>
+        </property>
+    </bean>
+
+    <!-- dataimport cleanup job -->
+    <bean id="ProductWeightComputationJobTrigger" class="org.springframework.scheduling.quartz.SimpleTriggerBean">
+        <property name="jobDetail" ref="ProductWeightComputationJobDetail"/>
+        <property name="startDelay" value="10000"/>
+        <property name="repeatInterval" value="60000"/>
+        <!-- compute ever 60 seconds -->
+    </bean>
+
+    <bean name="ProductWeightComputationJobDetail" class="org.springframework.scheduling.quartz.JobDetailBean">
+        <property name="jobClass" value="com.dell.acs.jobs.ProductWeightComputationJob"/>
+        <property name="jobDataAsMap">
+            <map>
+                <entry key="configurationService" value-ref="configurationService"/>
+                <entry key="productManager" value-ref="productManagerImpl"/>
+            </map>
+        </property>
+    </bean>
+
+
+</beans>

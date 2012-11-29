@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       default-init-method="init" default-destroy-method="destroy"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.1.xsd">
+
+    <!-- Scheduler -->
+    <bean class="org.springframework.scheduling.quartz.SchedulerFactoryBean">
+        <property name="jobDetails">
+            <list>
+                <ref bean="pushNotifcationJobDetail"/>
+                <ref bean="pwdRetrievalEmailJobDetail"/>
+            </list>
+        </property>
+        <property name="triggers">
+            <list>
+                <ref bean="pushNotifcationJobTrigger"/>
+                <ref bean="pwdRetrievalEmailJobTrigger"/>
+            </list>
+        </property>
+        <property name="taskExecutor" ref="quartzTaskExecutor"/>
+    </bean>
+
+    <bean id="quartzTaskExecutor" class="org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor">
+        <property name="corePoolSize" value="8"/>
+        <property name="maxPoolSize" value="16"/>
+        <property name="queueCapacity" value="100"/>
+    </bean>
+
+
+
+
+    <bean id="pushNotifcationJobTrigger" class="org.springframework.scheduling.quartz.SimpleTriggerBean">
+        <property name="jobDetail" ref="pushNotifcationJobDetail"/>
+        <property name="startDelay" value="10000"/>
+        <property name="repeatInterval" value="60000"/>
+        <!-- 1 minutes -->
+    </bean>
+
+    <bean name="pushNotifcationJobDetail" class="org.springframework.scheduling.quartz.JobDetailBean">
+        <property name="jobClass" value="com.bmsils.gcn.jobs.PushNotificationJob"/>
+        <property name="jobDataAsMap">
+            <map>
+                <entry key="configurationManager" value-ref="configurationManager"/>
+                <entry key="messageManager" value-ref="messageManagerImpl"/>
+                <entry key="inviteManager" value-ref="inviteManagerImpl"/>
+                <entry key="deviceManager" value-ref="deviceManagerImpl"/>
+                <entry key="pushNotificationManager" value-ref="pushNotificationManagerImpl"/>
+            </map>
+        </property>
+    </bean>
+
+    <bean id="pwdRetrievalEmailJobTrigger" class="org.springframework.scheduling.quartz.SimpleTriggerBean">
+        <property name="jobDetail" ref="pwdRetrievalEmailJobDetail"/>
+        <property name="startDelay" value="10000"/>
+        <property name="repeatInterval" value="60000"/>
+        <!-- 1 minutes -->
+    </bean>
+
+    <bean name="pwdRetrievalEmailJobDetail" class="org.springframework.scheduling.quartz.JobDetailBean">
+        <property name="jobClass" value="com.bmsils.gcn.jobs.PwdRetrievalEmailJob"/>
+        <property name="jobDataAsMap">
+            <map>
+                <entry key="configurationManager" value-ref="configurationManager"/>
+                <entry key="userManager" value-ref="userManagerImpl"/>
+                <entry key="emailManager" value-ref="emailManagerImpl"/>
+            </map>
+        </property>
+    </bean>
+</beans>

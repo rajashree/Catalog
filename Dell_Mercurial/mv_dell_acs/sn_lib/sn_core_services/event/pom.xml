@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+    <name>Sourcen Core Services - Event Module</name>
+    <groupId>com.sourcen.core.services</groupId>
+    <artifactId>event</artifactId>
+
+    <version>1.0</version>
+    <packaging>jar</packaging>
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.sourcen.core</groupId>
+        <artifactId>sn_core_parent</artifactId>
+        <relativePath>../../sn_core/build/parent/pom.xml</relativePath>
+        <version>1.0</version>
+    </parent>
+
+
+    <dependencies>
+
+        <dependency>
+            <groupId>com.sourcen.core</groupId>
+            <artifactId>sn_core</artifactId>
+            <version>1.0</version>
+            <type>jar</type>
+        </dependency>
+
+    </dependencies>
+
+</project>

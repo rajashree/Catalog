@@ -1,0 +1,41 @@
+<style>
+    #pixel-invalid,
+    #pixel-invalid-lt,
+    #pixel-invalid-mv,
+    #pixel-incorrect-mv,
+    #pixel-invalid-file{
+        margin-bottom: 20px;
+        color: red;
+        font-weight: bold;
+    }
+
+    #pixel-success {
+        margin-bottom: 20px;
+        color: green;
+        font-weight: bold;
+    }
+
+</style>
+
+<div id="pixel-success" style="display:none">
+    <span> Successfully updated the campaign</span>
+</div>
+<div id="pixel-invalid" style="display:none">
+    <span> Trying to update a wrong campaign. Please check the campaignID in the CSV.</span>
+</div>
+
+<div id="pixel-invalid-mv" style="display:none">
+    <span> Invalid URL for Marketvine pixel tracking. Please update the URLs in the CSV.</span>
+</div>
+
+<div id="pixel-invalid-lt" style="display:none">
+    <span> Invalid URL for LinkTracker pixel tracking. Please update the URLs in the CSV. </span>
+</div>
+
+<div id="pixel-incorrect-mv" style="display:none">
+    <span> Invalid URL for Marketvine pixel tracking. Please update the URLs in the CSV. </span>
+</div>
+
+<div id="pixel-invalid-file" style="display:none">
+    <span> Please upload a valid CSV file. </span>
+</div>

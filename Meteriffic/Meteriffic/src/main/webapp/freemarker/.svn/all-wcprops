@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/meteriffic/!svn/ver/2/trunk/WebContent/freemarker
+END
+registration-unavailable.ftl
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/meteriffic/!svn/ver/2/trunk/WebContent/freemarker/registration-unavailable.ftl
+END
+settings.ftl
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/meteriffic/!svn/ver/2/trunk/WebContent/freemarker/settings.ftl
+END
+Paginationdashboard.ftl
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/meteriffic/!svn/ver/2/trunk/WebContent/freemarker/Paginationdashboard.ftl
+END
+myAccount.ftl
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/meteriffic/!svn/ver/2/trunk/WebContent/freemarker/myAccount.ftl
+END
+forgotPassword.ftl
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/meteriffic/!svn/ver/2/trunk/WebContent/freemarker/forgotPassword.ftl
+END
+resetPassword.ftl
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/meteriffic/!svn/ver/2/trunk/WebContent/freemarker/resetPassword.ftl
+END
+signup.ftl
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/meteriffic/!svn/ver/2/trunk/WebContent/freemarker/signup.ftl
+END
+editProfile.ftl
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/meteriffic/!svn/ver/2/trunk/WebContent/freemarker/editProfile.ftl
+END
+resetPassword-unavailable.ftl
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/meteriffic/!svn/ver/2/trunk/WebContent/freemarker/resetPassword-unavailable.ftl
+END
+dashboard.ftl
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/meteriffic/!svn/ver/6/trunk/WebContent/freemarker/dashboard.ftl
+END
+changePassword.ftl
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/meteriffic/!svn/ver/2/trunk/WebContent/freemarker/changePassword.ftl
+END
+login.ftl
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/meteriffic/!svn/ver/2/trunk/WebContent/freemarker/login.ftl
+END
+logout.ftl
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/meteriffic/!svn/ver/2/trunk/WebContent/freemarker/logout.ftl
+END

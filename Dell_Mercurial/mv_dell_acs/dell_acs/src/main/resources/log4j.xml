@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd" >
+<log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/">
+    <!-- Appenders -->
+    <appender name="CONSOLE" class="org.apache.log4j.ConsoleAppender">
+        <param name="target" value="System.out"/>
+        <param name="threshold" value="DEBUG"/>
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern" value="%-5p %d{dd-MMM-yy hh:mm:ss} %c{1}:%M:%L %m%n"/>
+            <!-- <param name="ConversionPattern" value="%-5p %d{dd-MMM-yy hh:mm:ss} %c:%M:%L%n%m%n" /> -->
+        </layout>
+    </appender>
+
+
+    <appender name="LOGFILE" class="com.sourcen.core.util.logger.Log4JDailyRollingFileAppender">
+        <param name="maxFileSize" value="100MB"/>
+        <param name="maxBackupIndex" value="10"/>
+        <param name="useApplicationFileSystem" value="true"/>
+        <param name="File" value="app.log"/>
+        <param name="threshold" value="INFO"/>
+        <param name="BufferedIO" value="true"/>
+        <param name="BufferSize" value="1024"/>
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern" value="%-5p %d{dd-MMM-yy hh:mm:ss} %c:%M:%L %m%n"/>
+        </layout>
+    </appender>
+
+    <appender name="SERVICE_LOGFILE" class="com.sourcen.dataimport.logger.ServiceFileAppender">
+        <param name="maxFileSize" value="100MB"/>
+        <param name="maxBackupIndex" value="10"/>
+        <param name="useApplicationFileSystem" value="true"/>
+        <param name="File" value="dataimport_all.log"/>
+        <param name="threshold" value="INFO"/>
+        <param name="BufferedIO" value="true"/>
+        <param name="BufferSize" value="1024"/>
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern" value="%-5p %d{dd-MMM-yy hh:mm:ss} %c:%M:%L %m%n"/>
+        </layout>
+    </appender>
+
+    <appender name="HEARTBEATFILE" class="com.sourcen.core.util.logger.Log4JDailyRollingFileAppender">
+        <param name="useApplicationFileSystem" value="true"/>
+        <param name="DatePattern" value="'.'yyyy-MM-dd"/>
+        <param name="File" value="heartbeat.csv"/>
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern" value="%d{dd-MMM-yy hh:mm:ss},%m%n"/>
+        </layout>
+    </appender>
+
+    <appender name="ANALYTICSFILE" class="com.sourcen.core.util.logger.Log4JDailyRollingFileAppender">
+        <param name="useApplicationFileSystem" value="true"/>
+        <param name="DatePattern" value="'.'yyyy-MM-dd"/>
+        <param name="File" value="analytics.csv"/>
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern" value="%d{dd-MMM-yy hh:mm:ss},%m%n"/>
+        </layout>
+    </appender>
+<!--
+    <appender name="SYSLOGFILE" class="org.apache.log4j.net.SyslogAppender">
+        <param name="header" value="true"/>
+        <param name="facility" value="local3"/>
+        <param name="syslogHost" value="ena-iads-prod-linmon01.dmz.marketvine"/>
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern" value="%d{dd-MMM-yy hh:mm:ss},%m%n"/>
+        </layout>
+    </appender>
+-->
+    <appender name="jobFileAppender" class="com.sourcen.core.util.logger.Log4JRollingFileAppender">
+        <param name="maxFileSize" value="100MB"/>
+        <param name="maxBackupIndex" value="10"/>
+        <param name="useApplicationFileSystem" value="true"/>
+        <param name="File" value="image_download_job.log"/>
+        <param name="threshold" value="INFO"/>
+        <param name="BufferedIO" value="true"/>
+        <param name="BufferSize" value="1024"/>
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern" value="%-5p %d{dd-MMM-yy hh:mm:ss} %c:%M:%L %m%n"/>
+        </layout>
+    </appender>
+
+    <!-- Application Loggers -->
+    <logger name="com.dell">
+        <level value="DEBUG"/>
+    </logger>
+
+    <logger name="com.sourcen">
+        <level value="DEBUG"/>
+    </logger>
+    <logger name="com.sourcen.dataimport" >
+        <level value="INFO"/>
+    </logger>
+    <logger name="freemarker">
+        <level value="WARN"/>
+    </logger>
+
+
+    <logger name="org">
+        <level value="WARN"/>
+    </logger>
+    <logger name="org.dozer">
+        <level value="INFO"/>
+    </logger>
+    <logger name="com">
+        <level value="WARN"/>
+    </logger>
+    <logger name="net">
+        <level value="WARN"/>
+    </logger>
+
+    <!-- 3rdparty Loggers -->
+    <logger name="net.sf.ehcache">
+        <level value="WARN"/>
+    </logger>
+    <logger name="net.sf.ehcache.hibernate">
+        <level value="WARN"/>
+    </logger>
+    <logger name="com.mysql">
+        <level value="WARN"/>
+    </logger>
+
+    <logger name="org.hibernate.cache">
+        <level value="WARN"/>
+    </logger>
+
+    <logger name="org.springframework.core">
+        <level value="WARN"/>
+    </logger>
+
+    <logger name="org.springframework.beans">
+        <level value="WARN"/>
+    </logger>
+    <logger name="org.springframework.beans.factory">
+        <level value="WARN"/>
+    </logger>
+
+    <!-- bean creation loggers. -->
+    <logger name="org.springframework.beans.factory.support.DefaultListableBeanFactory">
+        <level value="INFO"/>
+    </logger>
+
+    <logger name="org.springframework.context">
+        <level value="WARN"/>
+    </logger>
+
+    <logger name="org.springframework.transaction">
+        <level value="INFO"/>
+    </logger>
+
+    <logger name="org.springframework.jdbc">
+        <level value="WARN"/>
+    </logger>
+
+    <logger name="org.springframework.orm">
+        <level value="WARN"/>
+    </logger>
+
+    <logger name="org.springframework.web">
+        <level value="INFO"/>
+    </logger>
+
+    <logger name="org.springframework.web.servlet">
+        <level value="INFO"/>
+    </logger>
+    <logger name="org.springframework.web.servlet.view">
+        <level value="WARN"/>
+    </logger>
+
+    <logger name="org.springframework.security">
+        <level value="WARN"/>
+    </logger>
+
+    <logger name="org.hibernate">
+        <level value="WARN"/>
+    </logger>
+
+    <!-- c3p0 logger -->
+    <logger name="com.mchange">
+        <level value="WARN"/>
+    </logger>
+
+    <logger name="com.dell.acs.dataimport.dataFile" additivity="false">
+        <level value="DEBUG"/>
+        <appender-ref ref="SERVICE_LOGFILE"/>
+    </logger>
+
+    <logger name="com.dell.acs.stat.heartbeat" additivity="false">
+        <level value="INFO"/>
+        <appender-ref ref="HEARTBEATFILE"/>
+    </logger>
+
+    <logger name="com.dell.acs.stat.analytics" additivity="false">
+        <level value="INFO"/>
+        <appender-ref ref="ANALYTICSFILE"/>
+    </logger>
+
+    <logger name="com.dell.acs.jobs" additivity="false">
+        <level value="INFO"/>
+        <appender-ref ref="jobFileAppender" />
+    </logger>
+
+    <!-- Root Logger -->
+    <root>
+        <priority value="ALL"/>
+        <appender-ref ref="CONSOLE"/>
+        <appender-ref ref="LOGFILE"/>
+    </root>
+
+
+</log4j:configuration>

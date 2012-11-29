@@ -1,7 +1,7 @@
 package com.curl;
 
-import org.apache.oro.text.*;
-import org.apache.oro.text.regex.*;
+import java.util.regex.MatchResult;
+import java.util.regex.Pattern;
 
 public class pattern {
    

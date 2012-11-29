@@ -1,0 +1,434 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+
+<head>
+
+<title>Dell ACS : Admin Console : Admin page</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<link rel="icon" href="/dell_importer/images/favicon.ico"
+	type="image/x-icon" />
+
+<link rel="shortcut icon" href="/dell_importer/images/favicon.ico"
+	type="image/x-icon" />
+
+
+
+<script type="text/javascript">
+	var basePath = '/dell_importer/';
+
+	var requestParams = {};
+
+	requestParams['openNodes'] = '';
+
+	requestParams['host'] = '';
+
+	requestParams['retailerSite'] = 'joevitale';
+
+	// simple handler for window.console.log
+
+	try {
+
+		window.console.log(new Date() + 'Initialized window.console.log');
+
+	} catch (e) {
+
+		try {
+
+			console.log(new Date() + 'Initialized console.log');
+
+			window.console = console;
+
+		} catch (e2) {
+
+			// we didn't find any loggers.
+
+			window.console = {
+
+				log : function() {
+
+					if (requestParams['alertConsole'] == 'true') {
+
+						var msg = "";
+
+						for ( var i = 0; i < arguments.length; i++) {
+
+							msg += arguments[i];
+
+						}
+
+						alert(new Date() + " - " + msg);
+
+					}
+
+				}
+
+			};
+
+			window.console.log('initialized custom logger');
+
+		}
+
+	}
+
+	if (console == undefined) {
+
+		console = window.console;
+
+	}
+</script>
+<link type="text/css" rel="stylesheet"
+	href="/dell_importer/css/normalize.css" />
+
+<link type="text/css" rel="stylesheet"
+	href="/dell_importer/css/style.css" />
+
+
+
+<script src="/dell_importer/js/jquery-1.7.1.js"></script>
+<script language="javaScript">
+	$(document).ready(
+			function() {
+				$("#selectedRetailerSite").change(function() {
+					redirect();
+				});
+				$("#host").change(function() {
+					redirect();
+				});
+				$(".node").click(function() {
+					var inner = "#" + $(this).attr("id") + "_inner";
+					var image = "#" + $(this).attr("id") + "_image";
+					var e = $(inner);
+					var ei = $(image);
+					var cls = e.attr('class');
+
+					if (cls == "visible") {
+						$(e).removeClass("visible").addClass("hidden");
+						$(ei).attr("src", "/dell_importer/images/closed.png");
+					} else {
+						$(e).removeClass("hidden").addClass("visible");
+						$(ei).attr("src", "/dell_importer/images/opened.png");
+					}
+				});
+				$("#refresh").click(function() {
+					redirect();
+				});
+
+				function redirect() {
+					var level = getOpenNodes();
+					var newUrl = "/dell_importer/admin/index.do?"
+							+ "retailerSite="
+							+ $("#selectedRetailerSite").val() + "&host="
+							+ escape($("#host").val()) + "&openNodes=" + level;
+					window.location.replace(newUrl);
+				}
+			});
+
+	function getOpenNodes() {
+		var result = "";
+
+		$(".visible").each(function(idx) {
+			var id = $(this).attr("id");
+			var pos = id.indexOf('_');
+			var epos = id.lastIndexOf('_');
+
+			var nodeId = id.substring(pos + 1, epos);
+
+			if (nodeId != "") {
+				result += id.substring(pos + 1, epos) + ",";
+			}
+		});
+
+		return result;
+	}
+</script>
+<style>
+.visible {
+	display: block
+}
+
+.hidden {
+	display: none
+}
+</style>
+</head>
+
+
+
+<body>
+
+	<div id="logo" class="admin_page">
+
+		<a href="/dell_importer/admin/index.do"> <img
+			src="/dell_importer/images/logo.png" alt="Dell" /></a>
+
+	</div>
+
+	<div id="page">
+
+		<div id="mainmenu"
+			style="padding: 10px; background: #FFF; display: block; height: 20px;">
+
+			<span style="float: right;"> <a
+				href="/dell_importer/admin/monitoring/dataImportProcesses.do">DataImport
+					Monitor</a> | <a href="/dell_importer/logout.do">Logout</a>
+
+			</span>
+
+		</div>
+
+		<div id="wrapper">
+
+
+
+			<h1>Admin page</h1>
+			<a href="#" id="refresh">Refresh</a> Retailer: <select
+				id="selectedRetailerSite">
+				<option value="-1">...select</option>
+				<option value="dell">dell</option>
+				<option value="joevitale" selected>joevitale</option>
+			</select> Host: <select id="host">
+				<option value="" selected>...select</option>
+			</select>
+			<hr />
+			<ul>
+				<span id="node_81" class="node"> <img id="node_81_image"
+					src="/dell_importer/images/closed.png" />
+					joevitale_feed_2012_06_11_18_11_15.zip &nbsp; 2012-08-16 14:11:06
+					&nbsp; 000:00:10:141 &nbsp; <img
+					src="/dell_importer/images/statusDone.png"></img> &nbsp;28 of 28
+				</span>
+				<li id="node_81_inner" class="hidden">
+					<table>
+						<tr>
+							<th>File</th>
+							<th>Type</th>
+							<th>Status</th>
+							<th>Creation Date</th>
+							<th>Started</th>
+							<th>Elapse</th>
+							<th>Step</th>
+							<th>Host</th>
+						</tr>
+						<tr>
+							<td>reviews-2012_06_11_18_11_15-2012_06_11_18_11_02.csv</td>
+							<td>ProductReview</td>
+							<td>Done</td>
+							<td>2012-08-16 14:11:06</td>
+							<td>2012-08-16 14:11:28</td>
+							<td>000:00:00:043</td>
+							<td>-</td>
+							<td>-</td>
+						</tr>
+						<tr>
+							<td>sliders-2012_06_11_18_11_15-2012_06_11_18_11_02.csv</td>
+							<td>ProductSlider</td>
+							<td>Done</td>
+							<td>2012-08-16 14:11:06</td>
+							<td>2012-08-16 14:11:33</td>
+							<td>000:00:00:044</td>
+							<td>-</td>
+							<td>-</td>
+						</tr>
+					</table>
+					<ul>
+						<span id="node_84" class="node"> <img id="node_84_image"
+							src="/dell_importer/images/closed.png" />
+							images-2012_06_11_18_11_15-2012_06_11_18_11_02.csv &nbsp;
+							2012-08-16 14:11:06 &nbsp; 000:00:06:995 &nbsp; <img
+							src="/dell_importer/images/statusDone.png"></img> &nbsp;14 of 14
+						</span>
+						<li id="node_84_inner" class="hidden">
+							<table>
+								<tr>
+									<th>File</th>
+									<th>Type</th>
+									<th>Status</th>
+									<th>Creation Date</th>
+									<th>Started</th>
+									<th>Elapse</th>
+									<th>Step</th>
+									<th>Host</th>
+								</tr>
+								<tr>
+									<td>images-2012_06_11_18_11_15-2012_06_11_18_11_02.csv</td>
+									<td>ProductImage</td>
+									<td>Preproces(Split)</td>
+									<td>2012-08-16 14:11:06</td>
+									<td>2012-08-16 14:11:06</td>
+									<td>000:00:05:816</td>
+									<td>-</td>
+									<td>-</td>
+								</tr>
+								<tr>
+									<td>images-2012_06_11_18_11_15-2012_06_11_18_11_02_1.csv</td>
+									<td>ProductImage</td>
+									<td>Done</td>
+									<td>2012-08-16 14:11:12</td>
+									<td>2012-08-16 14:11:18</td>
+									<td>000:00:00:853</td>
+									<td>10 of 10 (0000:085)</td>
+									<td>-</td>
+								</tr>
+								<tr>
+									<td>images-2012_06_11_18_11_15-2012_06_11_18_11_02_2.csv</td>
+									<td>ProductImage</td>
+									<td>Done</td>
+									<td>2012-08-16 14:11:12</td>
+									<td>2012-08-16 14:11:23</td>
+									<td>000:00:00:326</td>
+									<td>4 of 4 (0000:081)</td>
+									<td>-</td>
+								</tr>
+							</table>
+						</li>
+					</ul>
+					<ul>
+						<span id="node_83" class="node"> <img id="node_83_image"
+							src="/dell_importer/images/closed.png" />
+							products-2012_06_11_18_11_15-2012_06_11_18_11_02.csv &nbsp;
+							2012-08-16 14:11:06 &nbsp; 000:00:03:059 &nbsp; <img
+							src="/dell_importer/images/statusDone.png"></img> &nbsp;14 of 14
+						</span>
+						<li id="node_83_inner" class="hidden">
+							<table>
+								<tr>
+									<th>File</th>
+									<th>Type</th>
+									<th>Status</th>
+									<th>Creation Date</th>
+									<th>Started</th>
+									<th>Elapse</th>
+									<th>Step</th>
+									<th>Host</th>
+								</tr>
+								<tr>
+									<td>products-2012_06_11_18_11_15-2012_06_11_18_11_02.csv</td>
+									<td>Product</td>
+									<td>Preproces(Split)</td>
+									<td>2012-08-16 14:11:06</td>
+									<td>2012-08-16 14:11:06</td>
+									<td>000:00:00:930</td>
+									<td>-</td>
+									<td>-</td>
+								</tr>
+								<tr>
+									<td>products-2012_06_11_18_11_15-2012_06_11_18_11_02_1.csv</td>
+									<td>Product</td>
+									<td>Done</td>
+									<td>2012-08-16 14:11:07</td>
+									<td>2012-08-16 14:11:08</td>
+									<td>000:00:01:653</td>
+									<td>10 of 10 (0000:165)</td>
+									<td>-</td>
+								</tr>
+								<tr>
+									<td>products-2012_06_11_18_11_15-2012_06_11_18_11_02_2.csv</td>
+									<td>Product</td>
+									<td>Done</td>
+									<td>2012-08-16 14:11:07</td>
+									<td>2012-08-16 14:11:13</td>
+									<td>000:00:00:476</td>
+									<td>4 of 4 (0000:119)</td>
+									<td>-</td>
+								</tr>
+							</table>
+							<ul>
+								<span id="node_86" class="node"> <img id="node_86_image"
+									src="/dell_importer/images/closed.png" />
+									products-2012_06_11_18_11_15-2012_06_11_18_11_02_2.csv &nbsp;
+									292278994-08-17 07:12:55 &nbsp; - &nbsp; <img
+									src="/dell_importer/images/processRunning.gif"></img> <img
+									src="/dell_importer/images/processWaiting.png"></img> <img
+									src="/dell_importer/images/statusDone.png"></img> &nbsp;0 of 0
+								</span>
+								<li id="node_86_inner" class="hidden">
+									<table>
+										<tr>
+											<th>File</th>
+											<th>Type</th>
+											<th>Status</th>
+											<th>Creation Date</th>
+											<th>Started</th>
+											<th>Elapse</th>
+											<th>Step</th>
+											<th>Host</th>
+										</tr>
+									</table>
+									<ul>
+										<span id="node_85" class="node"> <img
+											id="node_85_image" src="/dell_importer/images/closed.png" />
+											products-2012_06_11_18_11_15-2012_06_11_18_11_02_1.csv &nbsp;
+											292278994-08-17 07:12:55 &nbsp; - &nbsp; <img
+											src="/dell_importer/images/processRunning.gif"></img> <img
+											src="/dell_importer/images/processWaiting.png"></img> <img
+											src="/dell_importer/images/statusDone.png"></img> &nbsp;0 of
+											0
+										</span>
+										<li id="node_85_inner" class="hidden">
+											<table>
+												<tr>
+													<th>File</th>
+													<th>Type</th>
+													<th>Status</th>
+													<th>Creation Date</th>
+													<th>Started</th>
+													<th>Elapse</th>
+													<th>Step</th>
+													<th>Host</th>
+												</tr>
+											</table>
+										</li>
+									</ul>
+								</li>
+							</ul>
+							<ul>
+								<span id="node_80" class="node"> <img id="node_80_image"
+									src="/dell_importer/images/closed.png" />
+									joevitale_images_2012_06_11_18_11_15.zip &nbsp; 2012-08-16
+									14:11:06 &nbsp; 000:00:00:390 &nbsp; <img
+									src="/dell_importer/images/statusDone.png"></img> &nbsp;0 of 0
+								</span>
+								<li id="node_80_inner" class="hidden">
+									<table>
+										<tr>
+											<th>File</th>
+											<th>Type</th>
+											<th>Status</th>
+											<th>Creation Date</th>
+											<th>Started</th>
+											<th>Elapse</th>
+											<th>Step</th>
+											<th>Host</th>
+										</tr>
+										<tr>
+											<td>images_zip-2012_06_11_18_11_15-2012_06_11_18_11_15.zip</td>
+											<td>images</td>
+											<td>Done</td>
+											<td>2012-08-16 14:11:06</td>
+											<td>2012-08-16 14:11:32</td>
+											<td>000:00:00:390</td>
+											<td>-</td>
+											<td>-</td>
+										</tr>
+									</table>
+								</li>
+							</ul>
+		</div>
+
+	</div>
+
+	<div id="footer">
+
+		Version: <span style="text-decoration: underline"> 1.0 #unknown</span>
+
+		built on 1969-12-31T18:00:00-0600
+	</div>
+
+</body>
+
+</html>
+

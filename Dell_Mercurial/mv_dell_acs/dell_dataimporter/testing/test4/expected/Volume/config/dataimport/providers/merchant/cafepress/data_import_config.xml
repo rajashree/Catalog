@@ -1,0 +1,57 @@
+<schema>
+
+    <table destinationTable="com.dell.acs.persistence.domain.Product" sourceTable="product" mapKeys="true">
+
+        <properties>
+            <property name="tableType" value="csv"/>
+            <!--<property name="encoding" value="UTF-16LE"/>-->
+            <property name="sheetIndex" value="0"/>
+            <property name="rowstoskip" value="1"/>
+            <property name="maxRows" value="100000"/>
+            <property name="isPathAbsolute" value="true"/>
+            <property name="mapKeys" value="true"/>
+            <property name="batchSize" value="100"/>
+            <property name="dataTypes.boolean.trueValues" value="true,1,yes,New"/>
+            <!--<property name="disableBatchUpdate" value="true"/>-->
+
+            <!-- decimal value of the character -->
+            <property name="separator" value="9"/>
+        </properties>
+
+        <keys>
+            <key type="primary" destinationKey="id" sourceKey="id,mpn"/>
+        </keys>
+
+        <column source="id" destination="productId" type="string"/>
+        <column source="title" destination="title" type="string"/>
+        <column source="description" destination="description" type="string"/>
+        <column source="siteName" destination="siteName" type="string"/>
+        <column source="google_product_category" destination="category1" type="string"/>
+        <column source="product_type" destination="properties.google_product_category" type="string"/>
+        <column source="link" destination="url" type="string" defaultValue="null"/>
+        <column source="adwords_publish" destination="properties.adwords_publish" type="string"/>
+        <column source="adwords_redirect" destination="properties.adwords_redirect" type="string"/>
+        <column source="image_link" destination="image.srcImageURL" type="string"/>
+        <column source="condition" destination="newProduct" type="boolean" defaultValue="true"/>
+        <column source="availability" destination="availability" type="int"
+        transformerClass="com.dell.acs.dataimport.cafepress.AvailabilityColumnTransformer"/>
+        <column source="price" destination="listPrice" type="float" defaultValue="0.0"/>
+        <column source="sale_price" destination="price" type="float"/>
+        <column source="sale_price_effective_date" destination="properties.sale_price_effective_date" type="string" defaultValue="null"/>
+        <column source="brand" destination="properties.brand" type="string" defaultValue="null"/>
+        <column source="mpn" destination="sku" type="string"/>
+        <column source="item_group_id" destination="properties.item_group_id" type="string" defaultValue="null"/>
+        <column source="color" destination="properties.color" type="string" defaultValue="null"/>
+        <column source="material" destination="properties.material" type="string" defaultValue="null"/>
+        <column source="size" destination="properties.size" type="string" defaultValue="null"/>
+        <column source="gender" destination="properties.gender" type="string" defaultValue="null"/>
+        <column source="age_group" destination="properties.age_group" type="string" defaultValue="null"/>
+        <column source="online_only" destination="properties.online_only" type="string" defaultValue="null"/>
+        <column source="payment_accepted" destination="properties.payment_accepted" type="string" defaultValue="null"/>
+        <column source="payment_notes" destination="properties.payment_notes" type="string" defaultValue="null"/>
+        <column source="GoogleAffiliateNetworkPublish" destination="properties.GoogleAffiliateNetworkPublish" type="string" defaultValue="null"/>
+        <column source="title,sale_price,mpn" destination="searchItemHash" type="string" />
+    </table>
+
+
+</schema>

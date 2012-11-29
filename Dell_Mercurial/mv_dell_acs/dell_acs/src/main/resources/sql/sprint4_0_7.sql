@@ -1,0 +1,2 @@
+ALTER TABLE t_campaign_category_items DROP CONSTRAINT UQ__t_campai__A60FBFFA30F848ED
+ALTER TABLE t_campaign_category_items DROP CONSTRAINT UQ__t_campai__F0AAC8092E1BDC42

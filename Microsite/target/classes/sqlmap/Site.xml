@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE sqlMap PUBLIC "-//iBATIS.com//DTD SQL Map 2.0//EN" "http://www.ibatis.com/dtd/sql-map-2.dtd">
+
+<sqlMap>
+
+
+	<typeAlias alias="site" type="com.sourcen.microsite.model.Site" />
+
+	<resultMap id="site" class="site">
+		<result property="id" column="sid" />
+		<result property="name" column="name" />
+		<result property="description" column="description" />		
+		<result property="theme" column="theme" />
+		<result property="username" column="username" />
+		<result property="status" column="status" />
+		<result property="created" column="created" />
+		<result property="modified" column="modified" />
+	</resultMap>
+
+	<select id="getSite" resultMap="site"
+		parameterClass="String">
+		SELECT * FROM sites WHERE NAME = #name#
+	</select>
+	<select id="getSiteById" resultMap="site"
+		parameterClass="String">
+		select * from sites where sid = #id#
+	</select>
+	<select id="getAllSites" resultMap="site"
+		parameterClass="String">
+		SELECT * FROM sites 
+	</select>
+	
+	<select id="listUserSites" resultMap="site"
+		parameterClass="String">
+		SELECT * FROM sites where username =#username#
+	</select>
+	
+	<insert id="saveSite"  	parameterClass="site">
+		 INSERT INTO sites (NAME,DESCRIPTION,THEME,USERNAME,STATUS,CREATED,MODIFIED)    VALUES (#name#, #description#,#theme#,#username#,#status#,#created#,#modified#)
+	   <selectKey resultClass="int" keyProperty="id">
+	      select last_insert_id() as id
+	    </selectKey>
+	</insert>
+	<update id="updateSite"  	parameterClass="site">
+		UPDATE sites set NAME=#name#,DESCRIPTION=#description#,THEME=#theme#,modified=#modified#,STATUS=#status# where SID=#id#
+	</update>
+	
+	
+	<delete id="deleteSite"  	parameterClass="String">
+		DELETE from sites where sid=#sid#
+	</delete>
+	
+	<insert id="savePageData"  	parameterClass="HashMap">
+		 INSERT INTO site_data (sid,pid,lid,data)    VALUES (#sid#,#pid#, #lid#,#data#)
+	   <selectKey resultClass="int" keyProperty="id">
+	      select last_insert_id() as id
+	    </selectKey>
+	</insert>
+	
+	<select id="getPageData" 	parameterClass="HashMap">
+		SELECT * FROM site_data  where sid=#sid# and and pid=#pid#
+	</select>
+	<select id="getAllPageData" 
+		parameterClass="HashMap">
+		select * FROM site_data where sid=#sid#
+	</select>
+	
+	<update id="updatePageData"  	parameterClass="HashMap">
+		UPDATE site_data set data=#data# where sid=#sid# and lid=#lid#
+	</update>
+	
+	
+	
+
+</sqlMap>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

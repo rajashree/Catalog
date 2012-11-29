@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema>
+
+    <table destinationTable="com.dell.dw.persistence.domain.D3LinkTrackerMetrics" sourceTable="linkTracker" mapKeys="true">
+
+        <properties>
+            <property name="tableType" value="csv"/>
+            <property name="sheetIndex" value="0"/>
+            <property name="rowstoskip" value="1"/>
+            <property name="maxRows" value="1000000"/>
+            <property name="isPathAbsolute" value="true"/>
+            <property name="mapKeys" value="true"/>
+            <property name="batchSize" value="100"/>
+            <!--<property name="disableBatchUpdate" value="true"/>-->
+            <!-- decimal value of the character -->
+            <property name="separator" value="9"/>
+        </properties>
+
+        <keys>
+            <key type="primary" destinationKey="id" sourceKey="clickId"/>
+        </keys>
+
+
+        <column source="Landing_DateODG_Click" destination="landingDate" type="date"/>
+        <column source="CountODG_Click" destination="clicks" type="int"/>
+        <column source="Clickstream_GuidODG_Click" destination="cookieId" type="string"/>
+        <column source="Click_IdODG_Click" destination="clickId" type="string"/>
+        <column source="Link_IdODG_Click" destination="linkId" type="long"/>
+        <column source="Project_IdODG_Click" destination="campaignId" type="string"/>
+        <column source="Offer_DescODG_Link" destination="description" type="string"/>
+
+    </table>
+
+    <table destinationTable="com.dell.dw.persistence.domain.D3RevenueMetrics" sourceTable="revenue" mapKeys="true">
+
+        <properties>
+            <property name="tableType" value="csv"/>
+            <property name="sheetIndex" value="0"/>
+            <property name="rowstoskip" value="1"/>
+            <property name="maxRows" value="1000000"/>
+            <property name="isPathAbsolute" value="true"/>
+            <property name="mapKeys" value="true"/>
+            <property name="batchSize" value="100"/>
+            <!--<property name="disableBatchUpdate" value="true"/>-->
+            <!-- decimal value of the character -->
+            <property name="separator" value="9"/>
+        </properties>
+
+        <keys>
+            <key type="primary" destinationKey="id" sourceKey="orderId"/>
+        </keys>
+
+        <column source="Landing_DateODG_Click" destination="landingDate" type="date"/>
+        <column source="Online_Order_Entered_Date" destination="purchaseDate" type="date"/>
+        <column source="Sub_Total_Tran_Amt" destination="revenue" type="float"/>
+        <column source="Click_To_Order_Days_Interval" destination="clickToOrderDaysInterval" type="int"/>
+        <column source="Order_Form_Id" destination="orderId" type="string"/>
+
+
+        <column source="Link_IdODG_Link" destination="linkId" type="long"/>
+        <column source="Offer_DescODG_Link" destination="description" type="string"/>
+        <column source="Project_IdODG_Project" destination="campaignId" type="string"/>
+
+    </table>
+</schema>

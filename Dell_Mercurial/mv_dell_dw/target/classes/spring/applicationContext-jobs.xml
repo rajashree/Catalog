@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       default-init-method="init" default-destroy-method="destroy"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.1.xsd">
+
+    <!-- Scheduler -->
+    <bean class="org.springframework.scheduling.quartz.SchedulerFactoryBean">
+        <property name="jobDetails">
+            <list>
+                <ref bean="gaDataSchedulerJobDetails"/>
+                <ref bean="gaDataImportJobDetails"/>
+                <ref bean="d3DataSchedulerJobDetails"/>
+                <ref bean="d3DataImportJobDetails"/>
+                <ref bean="sfOrderDataSchedulerJobDetails"/>
+                <ref bean="sfOrderDataImportJobDetails"/>
+                <ref bean="orderDataSchedulerJobDetails"/>
+                <ref bean="orderDataImportJobDetails"/>
+                <ref bean="otgDataSchedulerJobDetails"/>
+                <ref bean="otgDataImportJobDetails"/>
+                <ref bean="systemMonitorJobDetails"/>
+            </list>
+        </property>
+        <property name="triggers">
+            <list>
+                <ref bean="gaDataSchedulerJobTrigger"/>
+                <ref bean="gaDataImportJobTrigger"/>
+                <ref bean="d3DataSchedulerJobTrigger"/>
+                <ref bean="d3DataImportJobTrigger"/>
+                <ref bean="sfOrderDataSchedulerJobTrigger"/>
+                <ref bean="sfOrderDataImportJobTrigger"/>
+                <ref bean="orderDataSchedulerJobTrigger"/>
+                <ref bean="orderDataImportJobTrigger"/>
+                <ref bean="otgDataSchedulerJobTrigger"/>
+                <ref bean="otgDataImportJobTrigger"/>
+                <ref bean="systemMonitorJobTrigger"/>
+
+            </list>
+        </property>
+        <property name="taskExecutor" ref="quartzTaskExecutor"/>
+    </bean>
+
+    <bean id="quartzTaskExecutor" class="org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor">
+        <!-- spring uses a LinkedBlockingQueue, due to this corePoolSize and Max is just the same-->
+        <property name="corePoolSize" value="16"/>
+        <property name="maxPoolSize" value="16"/>
+        <property name="allowCoreThreadTimeOut" value="true"/>
+        <property name="keepAliveSeconds" value="10"/>
+        <property name="queueCapacity" value="100"/>
+    </bean>
+
+    <!-- Download GA job -->
+    <bean id="gaDataSchedulerJobTrigger" class="org.springframework.scheduling.quartz.SimpleTriggerBean">
+        <property name="jobDetail" ref="gaDataSchedulerJobDetails"/>
+        <property name="startDelay" value="1000"/>
+        <property name="repeatInterval" value="${analytics.gaDataSchedulerRepeatTimeInterval}"/>
+    </bean>
+    <bean name="gaDataSchedulerJobDetails" class="org.springframework.scheduling.quartz.JobDetailBean">
+        <property name="jobClass" value="com.dell.dw.jobs.ga.GADataSchedulerJob"/>
+        <property name="jobDataAsMap">
+            <map>
+                <entry key="configurationService" value-ref="configurationService"/>
+                <entry key="gaDataSchedulerManager" value-ref="gaDataSchedulerManager"/>
+            </map>
+        </property>
+    </bean>
+
+
+    <bean id="gaDataImportJobTrigger" class="org.springframework.scheduling.quartz.SimpleTriggerBean">
+        <property name="jobDetail" ref="gaDataImportJobDetails"/>
+        <property name="startDelay" value="300000"/>
+        <property name="repeatInterval" value="${analytics.gaDataImportRepeatTimeInterval}"/>
+    </bean>
+    <bean name="gaDataImportJobDetails" class="org.springframework.scheduling.quartz.JobDetailBean">
+        <property name="jobClass" value="com.dell.dw.jobs.ga.GADataImportJob"/>
+        <property name="jobDataAsMap">
+            <map>
+                <entry key="configurationService" value-ref="configurationService"/>
+                <entry key="gaDataImportManager" value-ref="gaDataImportManager"/>
+            </map>
+        </property>
+        <property name="volatility" value="true"/>
+        <property name="durability" value="false"/>
+
+    </bean>
+
+    <!-- D3 Scheduler Job -->
+    <bean id="d3DataSchedulerJobTrigger" class="org.springframework.scheduling.quartz.CronTriggerBean">
+        <property name="jobDetail" ref="d3DataSchedulerJobDetails"/>
+        <property name="startDelay" value="10000"/>
+        <!-- run every morning at 6 AM -->
+        <property name="cronExpression" value="${analytics.d3DataSchedulerCronJobTime}"/>
+    </bean>
+    <bean name="d3DataSchedulerJobDetails" class="org.springframework.scheduling.quartz.JobDetailBean">
+        <property name="jobClass" value="com.dell.dw.jobs.d3.D3DataSchedulerJob"/>
+        <property name="jobDataAsMap">
+            <map>
+                <entry key="configurationService" value-ref="configurationService"/>
+                <entry key="d3DataSchedulerManager" value-ref="d3DataSchedulerManagerImpl"/>
+            </map>
+        </property>
+    </bean>
+
+    <!-- D3 Import Job -->
+    <bean id="d3DataImportJobTrigger" class="org.springframework.scheduling.quartz.CronTriggerBean">
+        <property name="jobDetail" ref="d3DataImportJobDetails"/>
+        <property name="startDelay" value="30000"/>
+        <!-- run every morning at 6 AM -->
+        <property name="cronExpression" value="${analytics.d3DataImportCronJobTime}"/>
+    </bean>
+    <bean name="d3DataImportJobDetails" class="org.springframework.scheduling.quartz.JobDetailBean">
+        <property name="jobClass" value="com.dell.dw.jobs.d3.D3DataImportJob"/>
+        <property name="jobDataAsMap">
+            <map>
+                <entry key="configurationService" value-ref="configurationService"/>
+                <entry key="d3DataImportManager" value-ref="d3DataImportManagerImpl"/>
+            </map>
+        </property>
+        <property name="volatility" value="true"/>
+        <property name="durability" value="false"/>
+
+    </bean>
+
+    <!--Store Front Order Scheduler Job -->
+    <bean id="sfOrderDataSchedulerJobTrigger" class="org.springframework.scheduling.quartz.CronTriggerBean">
+        <property name="jobDetail" ref="sfOrderDataSchedulerJobDetails"/>
+        <property name="startDelay" value="10000"/>
+        <!-- run every morning at 6 AM -->
+        <property name="cronExpression" value="${analytics.sfOrderDataSchedulerCronJobTime}"/>
+    </bean>
+    <bean name="sfOrderDataSchedulerJobDetails" class="org.springframework.scheduling.quartz.JobDetailBean">
+        <property name="jobClass" value="com.dell.dw.jobs.storefront.SFOrderDataSchedulerJob"/>
+        <property name="jobDataAsMap">
+            <map>
+                <entry key="configurationService" value-ref="configurationService"/>
+                <entry key="sfOrderDataSchedulerManager" value-ref="sfOrderDataSchedulerManagerImpl"/>
+            </map>
+        </property>
+    </bean>
+
+    <!--Store Front Order Import Job -->
+    <bean id="sfOrderDataImportJobTrigger" class="org.springframework.scheduling.quartz.CronTriggerBean">
+        <property name="jobDetail" ref="sfOrderDataImportJobDetails"/>
+        <property name="startDelay" value="30000"/>
+        <!-- run every morning at 6 AM -->
+        <property name="cronExpression" value="${analytics.sfOrderDataImportCronJobTime}"/>
+    </bean>
+    <bean name="sfOrderDataImportJobDetails" class="org.springframework.scheduling.quartz.JobDetailBean">
+        <property name="jobClass" value="com.dell.dw.jobs.storefront.SFOrderDataImportJob"/>
+        <property name="jobDataAsMap">
+            <map>
+                <entry key="configurationService" value-ref="configurationService"/>
+                <entry key="sfOrderDataImportManager" value-ref="sfOrderDataImportManagerImpl"/>
+            </map>
+        </property>
+        <property name="volatility" value="true"/>
+        <property name="durability" value="false"/>
+
+    </bean>
+
+
+    <!-- Order Scheduler Job -->
+    <bean id="orderDataSchedulerJobTrigger" class="org.springframework.scheduling.quartz.CronTriggerBean">
+        <property name="jobDetail" ref="orderDataSchedulerJobDetails"/>
+        <property name="startDelay" value="10000"/>
+        <!-- run every morning at 6 AM -->
+        <property name="cronExpression" value="${analytics.orderDataSchedulerCronJobTime}"/>
+    </bean>
+    <bean name="orderDataSchedulerJobDetails" class="org.springframework.scheduling.quartz.JobDetailBean">
+        <property name="jobClass" value="com.dell.dw.jobs.order.OrderDataSchedulerJob"/>
+        <property name="jobDataAsMap">
+            <map>
+                <entry key="configurationService" value-ref="configurationService"/>
+                <entry key="orderDataSchedulerManager" value-ref="orderDataSchedulerManagerImpl"/>
+            </map>
+        </property>
+    </bean>
+
+    <!-- Order Import Job -->
+    <bean id="orderDataImportJobTrigger" class="org.springframework.scheduling.quartz.CronTriggerBean">
+        <property name="jobDetail" ref="orderDataImportJobDetails"/>
+        <property name="startDelay" value="30000"/>
+        <!-- run every morning at 6 AM -->
+        <property name="cronExpression" value="${analytics.orderDataImportCronJobTime}"/>
+    </bean>
+    <bean name="orderDataImportJobDetails" class="org.springframework.scheduling.quartz.JobDetailBean">
+        <property name="jobClass" value="com.dell.dw.jobs.order.OrderDataImportJob"/>
+        <property name="jobDataAsMap">
+            <map>
+                <entry key="configurationService" value-ref="configurationService"/>
+                <entry key="orderDataImportManager" value-ref="orderDataImportManagerImpl"/>
+            </map>
+        </property>
+        <property name="volatility" value="true"/>
+        <property name="durability" value="false"/>
+
+    </bean>
+
+    <!-- OTG Scheduler Job -->
+    <bean id="otgDataSchedulerJobTrigger" class="org.springframework.scheduling.quartz.CronTriggerBean">
+        <property name="jobDetail" ref="otgDataSchedulerJobDetails"/>
+        <property name="startDelay" value="10000"/>
+        <!-- run every morning at 6 AM -->
+        <property name="cronExpression" value="${analytics.otgDataSchedulerCronJobTime}"/>
+    </bean>
+    <bean name="otgDataSchedulerJobDetails" class="org.springframework.scheduling.quartz.JobDetailBean">
+        <property name="jobClass" value="com.dell.dw.jobs.otg.OTGDataSchedulerJob"/>
+        <property name="jobDataAsMap">
+            <map>
+                <entry key="configurationService" value-ref="configurationService"/>
+                <entry key="otgDataSchedulerManager" value-ref="otgDataSchedulerManagerImpl"/>
+            </map>
+        </property>
+    </bean>
+
+    <!-- OTG Import Job -->
+    <bean id="otgDataImportJobTrigger" class="org.springframework.scheduling.quartz.CronTriggerBean">
+        <property name="jobDetail" ref="otgDataImportJobDetails"/>
+        <property name="startDelay" value="30000"/>
+        <!-- run every morning at 6 AM -->
+        <property name="cronExpression" value="${analytics.otgDataImportCronJobTime}"/>
+    </bean>
+    <bean name="otgDataImportJobDetails" class="org.springframework.scheduling.quartz.JobDetailBean">
+        <property name="jobClass" value="com.dell.dw.jobs.otg.OTGDataImportJob"/>
+        <property name="jobDataAsMap">
+            <map>
+                <entry key="configurationService" value-ref="configurationService"/>
+                <entry key="otgDataImportManager" value-ref="otgDataImportManagerImpl"/>
+            </map>
+        </property>
+        <property name="volatility" value="true"/>
+        <property name="durability" value="false"/>
+
+    </bean>
+
+    <!-- System Monitoring Job -->
+    <bean id="systemMonitorJobTrigger" class="org.springframework.scheduling.quartz.SimpleTriggerBean">
+        <property name="jobDetail" ref="systemMonitorJobDetails"/>
+        <property name="startDelay" value="10000"/>
+        <property name="repeatInterval" value="${systemMonitor.systemMonitorJobRepeatTimeInterval}"/>
+    </bean>
+    <bean name="systemMonitorJobDetails" class="org.springframework.scheduling.quartz.JobDetailBean">
+        <property name="jobClass" value="com.dell.dw.jobs.monitoring.SystemMonitorJob"/>
+        <property name="jobDataAsMap">
+            <map>
+                <entry key="configurationService" value-ref="configurationService"/>
+                <entry key="systemMonitorManager" value-ref="systemMonitorManagerImpl"/>
+            </map>
+        </property>
+        <property name="volatility" value="true"/>
+        <property name="durability" value="false"/>
+
+    </bean>
+</beans>
