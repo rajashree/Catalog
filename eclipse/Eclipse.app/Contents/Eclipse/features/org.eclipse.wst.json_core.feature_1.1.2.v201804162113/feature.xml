@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="org.eclipse.wst.json_core.feature"
+      label="%featureName"
+      version="1.1.2.v201804162113"
+      provider-name="%providerName">
+
+   <description>
+      %description
+   </description>
+
+   <copyright>
+      %copyright
+   </copyright>
+
+   <license url="%licenseURL">
+      %license
+   </license>
+
+   <plugin
+         id="org.eclipse.json"
+         download-size="54"
+         install-size="104"
+         version="1.1.0.v201802171654"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.wst.json.schemaprocessor"
+         download-size="13"
+         install-size="17"
+         version="1.0.200.v201711201732"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.wst.json.core"
+         download-size="275"
+         install-size="599"
+         version="1.1.0.v201804162113"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.wst.json.bower.core"
+         download-size="11"
+         install-size="14"
+         version="1.0.0.v201711201732"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.wst.json.eslint.core"
+         download-size="11"
+         install-size="14"
+         version="1.0.0.v201711201732"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.wst.json.jshint.core"
+         download-size="11"
+         install-size="14"
+         version="1.0.0.v201711201732"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.wst.json.npm.core"
+         download-size="11"
+         install-size="14"
+         version="1.0.0.v201711201732"
+         unpack="false"/>
+
+</feature>

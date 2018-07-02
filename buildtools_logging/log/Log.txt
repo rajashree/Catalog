@@ -1,0 +1,1 @@
+INFO  2018-07-02 10:58:41,883 [main] -  Result  Hello World !!! 

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    Copyright (c) 2018 Remain Software
+    All rights reserved. This program and the accompanying materials
+    are made available under the terms of the Eclipse Public License v1.0
+    which accompanies this distribution, and is available at
+    http://www.eclipse.org/legal/epl-v10.html
+   
+    Contributors:
+        wim.jongman@remainsoftware.com - initial API and implementation
+ -->
+<feature
+      id="org.eclipse.tips.feature"
+      label="%featureName"
+      version="0.1.0.v20180608-1525"
+      provider-name="%providerName">
+
+   <description>
+      %description
+   </description>
+
+   <copyright>
+      %copyright
+   </copyright>
+
+   <license url="%licenseURL">
+      %license
+   </license>
+
+   <requires>
+      <import plugin="com.google.gson"/>
+   </requires>
+
+   <plugin
+         id="org.eclipse.tips.ui"
+         download-size="63"
+         install-size="115"
+         version="0.1.0.v20180606-2118"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.tips.core"
+         download-size="146"
+         install-size="166"
+         version="0.1.0.v20180604-1333"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.tips.json"
+         download-size="20"
+         install-size="33"
+         version="0.1.0.v20180604-1333"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.tips.ide"
+         download-size="323"
+         install-size="395"
+         version="0.1.0.v20180608-1525"
+         unpack="false"/>
+
+</feature>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="org.eclipse.jpt.jpa.eclipselink.feature"
+      label="%featureName"
+      version="3.4.101.v201803161350"
+      provider-name="%providerName"
+      plugin="org.eclipse.jpt.jpa.eclipselink.branding">
+
+   <description>
+      %description
+   </description>
+
+   <copyright>
+      %copyright
+   </copyright>
+
+   <license url="%licenseURL">
+      %license
+   </license>
+
+   <requires>
+      <import feature="org.eclipse.jpt.jpa.feature" version="3.2.0"/>
+      <import feature="org.eclipse.jpt.common.eclipselink.feature" version="1.2.0"/>
+   </requires>
+
+   <plugin
+         id="org.eclipse.persistence.antlr"
+         download-size="203"
+         install-size="432"
+         version="3.5.2.v201605171345"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.persistence.asm"
+         download-size="333"
+         install-size="758"
+         version="6.0.0.v201710052159"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.persistence.core"
+         download-size="5190"
+         install-size="13189"
+         version="2.7.1.v20171221-bd47e8f"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.persistence.jpa"
+         download-size="1422"
+         install-size="3899"
+         version="2.7.1.v20171221-bd47e8f"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.jpt.jpa.eclipselink.core"
+         download-size="1455"
+         install-size="3810"
+         version="2.4.101.v201803012210"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.jpt.jpa.eclipselink.ui"
+         download-size="1097"
+         install-size="2801"
+         version="2.4.101.v201803012210"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.jpt.jpa.eclipselink.core.ddlgen"
+         download-size="13"
+         install-size="20"
+         version="2.2.201.v201803012210"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.jpt.jpa.eclipselink.branding"
+         download-size="17"
+         install-size="21"
+         version="3.4.1.v201803012210"
+         unpack="false"/>
+
+</feature>

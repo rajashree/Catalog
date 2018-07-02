@@ -1,0 +1,42 @@
+
+<project name="buildtools_logging" default="build"  basedir=".">
+<property name="appname" value="${ant.project.name}"/>
+<property name="src" value="${basedir}/src"/>
+<property name="dest" value="${basedir}/build/classes"/>
+<property name="lib" value="${basedir}/build/lib"/>
+
+
+
+<target name="build" depends="clean,compile">
+ </target>
+
+<path id="compile.classpath">
+  <fileset dir="${lib}"> 
+		<include name="*.jar"/>
+  </fileset>
+</path>
+
+<target name="prepare">
+	<echo message="${appname} build is started"/>
+	<mkdir dir="${basedir}/build/classes"/>
+</target>  
+
+<target name="compile" depends="prepare">
+	<javac srcdir="${src}" destdir="${dest}">
+		<classpath refid="compile.classpath"/>
+	</javac>
+	<copy todir="${dest}">  
+			        <fileset dir="${src}">  
+			             <include name="**/Properties.properties"/>  
+			        </fileset>  
+	</copy>
+	
+</target>
+
+<target name="clean">
+<delete dir="${basedir}/build/classes"/>
+</target>
+
+	<target name="all" depends="clean,compile"></target>
+
+</project>

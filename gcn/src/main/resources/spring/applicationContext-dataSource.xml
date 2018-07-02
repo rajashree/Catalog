@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       default-init-method="init" default-destroy-method="destroy"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.1.xsd">
+
+    <!-- MAIN APPLICATION DATASOURCE -->
+    <alias alias="dataSource" name="ds_${datasource.beanName}"/>
+
+
+    <!-- ========= DATA SOURCES =========-->
+    <bean id="__baseDS" class="com.mchange.v2.c3p0.ComboPooledDataSource" destroy-method="close">
+
+
+        <property name="initialPoolSize" value="3"/>
+        <property name="minPoolSize" value="5"/>
+        <property name="maxPoolSize" value="50"/>
+        <property name="acquireIncrement" value="1"/>
+        <property name="maxIdleTime" value="500"/>
+        <property name="checkoutTimeout" value="1800000"/>
+        <property name="idleConnectionTestPeriod" value="500"/>
+        <property name="maxStatements" value="50"/>
+        <property name="preferredTestQuery" value="SELECT 1"/>
+        <property name="testConnectionOnCheckout" value="true"/>
+
+        <!--<property name="driverClass" value="org.gjt.mm.mysql.Driver"/>-->
+        <property name="driverClass" value="com.mysql.jdbc.Driver"/>
+        <property name="jdbcUrl" value="jdbc:mysql://127.0.0.1:3306/gcn?autoReconnect=true"/>
+        <property name="user" value="root"/>
+        <property name="password" value="mysqlroot"/>
+    </bean>
+
+    <bean id="ds_dev" parent="__baseDS">
+        <property name="jdbcUrl" value="jdbc:mysql://127.0.0.1:3306/gcn?autoReconnect=true"/>
+        <property name="user" value="root"/>
+        <property name="password" value="mysqlroot"/>
+    </bean>
+
+    <bean id="ds_remote" parent="__baseDS">
+            <property name="jdbcUrl" value="jdbc:mysql://127.0.0.1:3306/gcn?autoReconnect=true"/>
+            <property name="user" value="root"/>
+            <property name="password" value="mysqlroot"/>
+        </bean>
+
+
+    <bean id="ds_local" parent="__baseDS">
+        <property name="jdbcUrl" value="jdbc:mysql://127.0.0.1:3306/gcn?autoReconnect=true"/>
+        <property name="user" value="root"/>
+        <property name="password" value="mysqlroot"/>
+    </bean>
+
+</beans>
